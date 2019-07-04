@@ -1,0 +1,1 @@
+GET https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/drugs-v2/drug/91586 returned a response status of 500 Internal Server Error

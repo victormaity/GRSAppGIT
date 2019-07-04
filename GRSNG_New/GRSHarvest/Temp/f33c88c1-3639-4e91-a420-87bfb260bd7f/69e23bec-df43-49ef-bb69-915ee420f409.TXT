@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.FullRecordPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.externalpages.ExternalPage 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ExternalPages_Steps.iVerifyURLIsDisplayedInNewBrowserWindow(ExternalPages_Steps.java:539);
+✽.And I verify URL "https://kopernio.com/?utm_source=article_record_pages&utm_medium=web&utm_campaign=kopernio_article_record_pages&ref=wos-article" is displayed in new browser window(com.clarivateanalytics.wos.gui.cucumber.deployment/WOS_5.33_R1_stories.feature:14)

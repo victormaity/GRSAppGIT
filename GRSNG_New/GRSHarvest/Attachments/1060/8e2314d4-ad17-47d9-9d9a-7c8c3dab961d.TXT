@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node match="true" depth="3" leaf="true" name="Viral infections - unspecified agent" treeCode="1000022-4731-4746-" id="4746"></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.OntologyTreeOutput>

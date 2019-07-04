@@ -1,0 +1,10 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateAnalytics.cortellis.pages.localization.LocalizationBasePage.getWebElementBasedOnLocatorType(LocalizationBasePage.java:56);
+com.clarivateAnalytics.cortellis.pages.localization.LocalizationBasePage.verifyPageLocalizationsForChinese(LocalizationBasePage.java:177);
+com.clarivateAnalytics.cortellis.pages.localization.LocalizationBasePage$$FastClassBySpringCGLIB$$5bafc8d1.invoke(<generated>);
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204);
+org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:649);
+com.clarivateAnalytics.cortellis.pages.localization.LocalizationBasePage$$EnhancerBySpringCGLIB$$60f99eb0.verifyPageLocalizationsForChinese(<generated>);
+com.clarivateAnalytics.cortellis.LocalizationStepDefinitions.AdvancedSearch.AdvancedSearchPageStepDefinitions.i_Verify_the_Chinese_localization_display_for(AdvancedSearchPageStepDefinitions.java:31);
+✽.And i Verify the Chinese localization display for "AdvancedSearch"(Localization/AdvancedSearch/AdvancedSearch_Ch.feature:10)

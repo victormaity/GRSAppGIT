@@ -1,0 +1,102 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=unicode">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<title>GLOBAL REPORTING SYSTEM - Automatical Alert Mesage</title>
+</head>
+
+<body bgcolor=white lang=EN-US link="#005A84" vlink="#005A84" style='tab-interval:
+.5in'>
+
+<div class=WordSection1>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=520
+ style='width:390.0pt;mso-cellspacing:0in;background:white;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:0in 0in 0in 0in'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=520
+   style='width:390.0pt;mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:
+   0in 0in 0in 0in'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td valign=top style='background:#FF9100;padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='line-height:10.5pt'><span style='font-size:9.0pt;
+    font-family:"Arial","sans-serif";mso-fareast-font-family:"Times New Roman";
+    color:#505050'><img width=520 height=100 id="_x0000_i1025"
+    src="http://10.224.70.110/images/email_header.png"
+    alt="Global Reporting System Automatical Alert"><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:0in 0in 0in 0in' id=LeftColumn>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id=ContentColumns>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='line-height:12.5pt'><span style='font-size:9.0pt;
+    font-family:"Arial","sans-serif";mso-fareast-font-family:"Times New Roman";
+    color:#505050'><br/>
+    %main_text%<br/><br/>
+
+    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+     width="100%" style='width:100.0%;mso-cellspacing:0in;mso-yfti-tbllook:
+     1184;mso-padding-alt:0in 0in 0in 0in'>
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+      <td colspan=3 style='padding:0in 0in 0in 0in'>
+      <p class=MsoNormal style='line-height:10.5pt'><span style='font-size:
+      9.0pt;font-family:"Arial","sans-serif";mso-fareast-font-family:"Times New Roman";
+      color:#505050'><img border=0 height=1 id="_x0000_i1027"
+      src="http://newsimages.org/communications/images/tr_dotted_horiz.gif"><o:p></o:p></span></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:1;height:15.0pt'>
+      <td width="22%" style='width:22.0%;padding:0in 0in 0in 0in;height:15.0pt'>
+      <p class=MsoNormal style='line-height:9.0pt'><span style='font-size:7.5pt;
+      font-family:"Arial","sans-serif";mso-fareast-font-family:"Times New Roman";
+      color:#727272'>FOR MORE INFO PLEASE VISIT<o:p></o:p></span></p>
+      </td>
+      <td width="78%" style='width:78.0%;padding:0in 0in 0in 0in;height:15.0pt'>
+      <p class=MsoNormal align=right style='text-align:right;line-height:10.5pt'><span
+      style='font-size:9.0pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
+      "Times New Roman";color:#505050'><o:p></o:p></span></p>
+      </td>
+      <td style='padding:0in 0in 0in 0in;height:15.0pt'></td>
+     </tr>
+     <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+      <td colspan=3 style='padding:0in 0in 0in 0in'>
+      <p class=MsoNormal style='line-height:10.5pt'><span style='font-size:
+      9.0pt;font-family:"Arial","sans-serif";mso-fareast-font-family:"Times New Roman";
+      color:#505050'><img border=0 height=1 id="_x0000_i1028"
+      src="http://newsimages.org/communications/images/tr_dotted_horiz.gif"><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </table>
+    </td>
+   </tr>
+<!-- // end footer // --><!-- // end legalese // -->
+  </table>
+
+</div>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><img
+border=0 width=1 height=1 id="_x0000_i1029"
+src="http://info-lm.thomson.com/do/15416523/99187390/1.gif"><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

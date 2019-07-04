@@ -1,0 +1,1 @@
+http://access.dev-stable.clarivate.com/api/authorize

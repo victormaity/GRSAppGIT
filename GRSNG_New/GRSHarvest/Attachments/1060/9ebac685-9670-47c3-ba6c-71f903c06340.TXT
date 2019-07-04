@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.IdMappingsInput xmlns:ns2="local"><idList><id>D002177</id></idList><idType>Mesh</idType><taxonomyType>disease</taxonomyType></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.IdMappingsInput>

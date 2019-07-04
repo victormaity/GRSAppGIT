@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ExecutionTestSuiteModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsJava>true</IsJava>
+  <ExecutionTestSuites>
+    <ExecutionTestSuite>
+      <Name>Feature_PublicationCube</Name>
+      <Categories />
+      <Tests>
+        <string>PUB_0011113_Test</string>
+        <string>critical</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_PublicationCube</Name>
+      <Categories />
+      <Tests>
+        <string>PUB_0011114_Test</string>
+        <string>critical</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_PublicationCube</Name>
+      <Categories />
+      <Tests>
+        <string>PUB_0011115_Test</string>
+        <string>critical</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_PublicationCube</Name>
+      <Categories />
+      <Tests>
+        <string>PUB_0011127_Test</string>
+        <string>critical</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_PublicationCube</Name>
+      <Categories />
+      <Tests>
+        <string>PUB_0011126_Test</string>
+        <string>critical</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_PublicationCube</Name>
+      <Categories />
+      <Tests>
+        <string>PUB_0011112_Test</string>
+        <string>critical</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_PublicationCube</Name>
+      <Categories />
+      <Tests>
+        <string>PUB_0011116_Test</string>
+        <string>critical</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_PublicationCube</Name>
+      <Categories />
+      <Tests>
+        <string>PUB_0011125_Test</string>
+        <string>critical</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_PublicationCube</Name>
+      <Categories />
+      <Tests>
+        <string>PUB_0011120_Test</string>
+        <string>critical</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ABS_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ABS_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ADR_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ADR_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ALU_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ALU_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ART_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ART_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>AUT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>AUT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>AUTR_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>AUTR_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>AVA_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>AVA_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>BIB_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>BIB_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>BURL_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>BURL_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CHE_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CHE_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CIT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CIT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CLU_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CLU_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>COL_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>COL_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CONP_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CONP_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CONF_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CONF_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CON_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CON_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>COV_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>COV_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CRE_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CRE_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>DIS_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>DIS_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>DOC_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>DOC_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>EDI_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>EDI_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ENV_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ENV_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>EXT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>EXT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>GEN_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>GEN_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>GEO_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>GEO_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>GEOT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>GEOT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>HEAD_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>HEAD_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>HEA_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>HEA_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>IMP_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>IMP_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>JCR_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>JCR_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>KEY_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>KEY_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>LAN_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>LAN_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>MAJ_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>MAJ_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>MIS_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>MIS_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>MOD_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>MOD_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>NORT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>NORT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>NOR_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>NOR_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PAG_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>PAG_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PAR_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>PAR_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PUB_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>PUB_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PUBS_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>PUBS_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>SEQ_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>SEQ_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>SUB_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>SUB_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>TAX_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>TAX_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>DABS_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>DABS_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>DADD_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>DADD_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>DART_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>DART_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>DAUT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>DAUT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ABS_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ABS_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ADD_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ADD_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ART_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ART_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>AUT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>AUT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>AAD_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>AAD_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CHE_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CHE_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CIT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CIT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CLU_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CLU_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>COL_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>COL_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>COM_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>COM_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>CON_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>CON_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>DAT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>DAT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>DOC_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>DOC_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>EDI_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>EDI_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ENT_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ENT_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>GEN_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>GEN_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>GENS_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>GENS_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>GRA_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>GRA_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>HEA_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>HEA_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>IMP_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>IMP_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>INV_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>INV_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>JCR_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>JCR_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>KEY_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>KEY_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>MED_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>MED_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>NOR_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>NOR_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>OTH_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>OTH_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PAG_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>PAG_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PUB_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>PUB_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>SPA_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>SPA_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>SUB_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>SUB_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZRABS_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZRABS_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZRART_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZRART_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZRBIB_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZRBIB_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZRBIBU_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZRBIBU_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZRBRO_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZRBRO_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZRCLU_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZRCLU_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZRCOL_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZRCOL_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZRCON_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZRCON_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZRDOC_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZRDOC_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ZREDI_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>ZREDI_002_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>OP-195-Test</Name>
+      <Categories />
+      <Tests>
+        <string>regression</string>
+        <string>OP-196-Test</string>
+        <string>OP-197-Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features</Name>
+      <Categories />
+      <Tests>
+        <string>OPQA-xxxx</string>
+        <string>CheckFieldContent-Patent</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>LSD_001_Test</Name>
+      <Categories />
+      <Tests>
+        <string>critical</string>
+        <string>LSD_003_Test</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features</Name>
+      <Categories />
+      <Tests>
+        <string>OPQA-xxxx</string>
+        <string>CheckFieldContent-Patent</string>
+      </Tests>
+    </ExecutionTestSuite>
+  </ExecutionTestSuites>
+</ExecutionTestSuiteModel>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><EventTranscript id="2015286"><Name>Q3 2008 Cytori Therapeutics Earnings Conference Call</Name><Company>Macropore</Company><Drugs><Drug>Prospect</Drug><Drug>A-36</Drug></Drugs></EventTranscript>

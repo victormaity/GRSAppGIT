@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomyInput xmlns:ns2="local"><type>molfunction</type><treeCode>-4|-203997763|-228356956|-19007942|-554706027|-686071570|-1782029030|-920755651|-1465952079|-1440917917|</treeCode></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomyInput>

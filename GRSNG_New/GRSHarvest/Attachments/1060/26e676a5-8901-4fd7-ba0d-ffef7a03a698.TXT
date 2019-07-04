@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.IdMappingsInput xmlns:ns2="local"><idList><id>4295904886</id><id>4297643792</id><id>4295856055</id><id>4295904722</id></idList><idType>organizationId</idType><taxonomyType>Company</taxonomyType></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.IdMappingsInput>

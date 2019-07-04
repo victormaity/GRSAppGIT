@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomson.ls.soa.stack.soaservices.service.contract.soap.v4.search.TokenInput xmlns:ns2="local"><applicationID>ngapi#1756</applicationID><userID>API</userID><token>502404fe-2c66-4f24-b304-21c29ad90bf4</token></ns2:com.thomson.ls.soa.stack.soaservices.service.contract.soap.v4.search.TokenInput>

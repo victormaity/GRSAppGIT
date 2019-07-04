@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Meeting id="1713170" title="Alirocumab Effect on Glycemic Measures in Patients without Diabetes at Baseline"><ConferenceName>2015 American Heart Association Scientific Sessions</ConferenceName><StartDate>2015-11-07T00:00:00Z</StartDate><EndDate>2015-11-11T00:00:00Z</EndDate><City>Orlando</City><Country>US</Country></Meeting>

@@ -1,0 +1,1 @@
+          select * from(select COMPANY_ID from CI_PUBLIC_STAGING.JP_COMPANY order by dbms_random.value) where rownum<2     

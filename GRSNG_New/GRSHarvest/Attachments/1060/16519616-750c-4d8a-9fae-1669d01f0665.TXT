@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/tissue/search/muscle?operationType=hierarchy&treeCodeFilter=1-1445023346&fmt=json

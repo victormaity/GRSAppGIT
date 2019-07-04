@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/pathway/children/F28?fmt=json&includedescendants=1

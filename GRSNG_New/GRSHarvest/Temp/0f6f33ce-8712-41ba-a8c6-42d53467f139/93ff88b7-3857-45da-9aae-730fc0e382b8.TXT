@@ -1,0 +1,21 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-J27D56MDAI8', ip: '10.152.82.77', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6580, moz:profile: D:\Users\WoSWin7_08\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0be30008-dfb9-49e1-90d3-bd79e45e4085
+*** Element info: {Using=xpath, value=//div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]} 
+ sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79);
+sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97);
+sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102);
+sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53);
+sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38);
+sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193);
+java.nio.file.Files.readAttributes(Files.java:1737);
+java.nio.file.Files.size(Files.java:2332);
+com.clarivateanalytics.cucumberfactory.helpers.Export.SaveFileDialog.SaveFF(SaveFileDialog.java:93);
+com.clarivateanalytics.cucumberfactory.helpers.Export.SaveFileDialog.SaveAs(SaveFileDialog.java:39);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.iSendRecordToIncludingAnd(ResultSummaryPage_Steps.java:562);
+✽.And I send record to "otherFileFormat" including "fullrecord" and "plaintext"(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:324)

@@ -1,0 +1,1 @@
+https://produs-api.cortellis.int.clarivate.com/api-ws/ws/rs/patents-v3/patent/export/structure/poll/?token=e27c2df0-e70e-4a13-9de6-efb02d6476b9

@@ -1,0 +1,14 @@
+Tech info:
+Exception cause: java.nio.file.NoSuchFileException: D:\new\wosbdd_4Jan2019\citationReport.txt 
+ sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79);
+sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97);
+sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102);
+sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53);
+sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38);
+sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193);
+java.nio.file.Files.readAttributes(Files.java:1737);
+java.nio.file.Files.size(Files.java:2332);
+com.clarivateanalytics.cucumberfactory.helpers.Export.SaveFileDialog.SaveFF(SaveFileDialog.java:93);
+com.clarivateanalytics.cucumberfactory.helpers.Export.SaveFileDialog.SaveAs(SaveFileDialog.java:39);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.CitationReportPageSteps.iSaveTheFileWithTheAndVerifyTheSavedFile(CitationReportPageSteps.java:282);
+✽.Then I save the file with the "Save to Text File"(com.clarivateanalytics.wos.gui.cucumber.deployment/CitationReport.feature:235)

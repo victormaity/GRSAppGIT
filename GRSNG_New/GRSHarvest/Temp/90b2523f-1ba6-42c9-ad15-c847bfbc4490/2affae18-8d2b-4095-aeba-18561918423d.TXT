@@ -1,0 +1,40 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //*[contains(@class,'success-predictor-header-select-all-drug')]//*[@class='checkmark'][1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'INBASDPC06545', ip: '10.10.246.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:22835/, ignoreZoomSetting=true, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=true}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: fdc71fcf-2c73-4f7a-aefe-b050b977cd5a
+*** Element info: {Using=xpath, value=//*[contains(@class,'success-predictor-header-select-all-drug')]//*[@class='checkmark'][1]} 
+ java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348);
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69);
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38);
+com.sun.proxy.$Proxy31.getWrappedElement(Unknown Source);
+org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51);
+com.google.common.collect.Iterators$5.transform(Iterators.java:757);
+com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48);
+com.google.common.collect.Iterators.addAll(Iterators.java:374);
+com.google.common.collect.Lists.newArrayList(Lists.java:165);
+com.google.common.collect.Lists.newArrayList(Lists.java:150);
+org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:520);
+com.clarivateAnalytics.cortellis.pages.predictionPage.PredictionPage.selectAllDrugsInIntermediatePage(PredictionPage.java:1577);
+com.clarivateAnalytics.cortellis.pages.predictionPage.PredictionPage$$FastClassBySpringCGLIB$$156d6f51.invoke(<generated>);
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204);
+org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:649);
+com.clarivateAnalytics.cortellis.pages.predictionPage.PredictionPage$$EnhancerBySpringCGLIB$$d78cf530.selectAllDrugsInIntermediatePage(<generated>);
+com.clarivateAnalytics.cortellis.StepDefinitions.predictionPage.PredictionPageStepDef.iSelectTheSelectAllDrugsCheckboxInIntermediatePage(PredictionPageStepDef.java:898);
+✽.And I select the 'Select all Drugs' checkbox in Intermediate page(Smoke/SuccessPredictor/SuccessPredictor.feature:63)

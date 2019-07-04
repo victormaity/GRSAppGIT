@@ -1,0 +1,1 @@
+          SELECT * FROM (SELECT descendant_tree_code FROM ci_public.jp_action_tree_ad tree WHERE (descendant_depth - ancestor_depth)=1 ORDER BY dbms_random.value ) WHERE rownum < 2     

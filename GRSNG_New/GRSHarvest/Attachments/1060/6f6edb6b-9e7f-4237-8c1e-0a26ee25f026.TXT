@@ -1,0 +1,1 @@
+          Select * from (select distinct ancestor_tree_code from ls_srv.ng_tissue_tree_ad where descendant_depth = 1  and is_leaf = 'N' order by dbms_random.value)         WHERE rownum<2     

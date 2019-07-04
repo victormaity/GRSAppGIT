@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.runQuery" rc="OK">
+    <map>
+      <map name="Data">
+        <val name="Records"><![CDATA[<records>
+<REC><FUID>439186285CSCD1</FUID><UID>CSCD:4591213</UID><score>18.81222</score><static_data><summary type="src"><EWUID uid="CSCD:4591213" year="2012"><WUID seq_no="1" doc_id="439186285" coll_id="CSCD" fuid="439186285CSCD1"/><edition value="CSCD.CSCD"/></EWUID><pub_info has_abstract="Y" pubyear="2012" coverdate="2012" sortdate="2012-01-01" vol="43" issue="5"><page begin="152" end="156" page_count="5">152-156</page></pub_info><titles count="4"><title lang_id="zh-cn" type="item">中国与乌克兰黑土成土因素分析</title><title type="item">Soil-forming factor analysis of mollisols in China and Ukraine</title><title lang_id="zh-cn" type="source">东北农业大学学报</title><title type="source">Journal of Northeast Agricultural University</title></titles><names count="8"><name seq_no="1" role="author" lang_id="zh-cn" addr_no="1" unit_id="1"><display_name>谷思玉</display_name><full_name>谷思玉</full_name><first_name>思玉</first_name><last_name>谷</last_name><email_addr>gusiyu777@163.com</email_addr></name><name seq_no="2" role="author" lang_id="zh-cn" addr_no="1" unit_id="1"><display_name>郭爱玲</display_name><full_name>郭爱玲</full_name><first_name>爱玲</first_name><last_name>郭</last_name></name><name seq_no="3" role="author" lang_id="zh-cn" addr_no="1" unit_id="1"><display_name>汪睿</display_name><full_name>汪睿</full_name><first_name>睿</first_name><last_name>汪</last_name></name><name seq_no="4" role="author" lang_id="zh-cn" addr_no="1" unit_id="1"><display_name>宋秀丽</display_name><full_name>宋秀丽</full_name><first_name>秀丽</first_name><last_name>宋</last_name></name><name seq_no="1" role="author" addr_no="2" unit_id="2"><display_name>Gu Siyu</display_name><full_name>Gu Siyu</full_name><first_name>Siyu</first_name><last_name>Gu</last_name><email_addr>gusiyu777@163.com</email_addr></name><name seq_no="2" role="author" addr_no="2" unit_id="2"><display_name>Guo Ailing</display_name><full_name>Guo Ailing</full_name><first_name>Ailing</first_name><last_name>Guo</last_name></name><name seq_no="3" role="author" addr_no="2" unit_id="2"><display_name>Wang Rui</display_name><full_name>Wang Rui</full_name><first_name>Rui</first_name><last_name>Wang</last_name></name><name seq_no="4" role="author" addr_no="2" unit_id="2"><display_name>Song Xiuli</display_name><full_name>Song Xiuli</full_name><first_name>Xiuli</first_name><last_name>Song</last_name></name></names><doctypes count="1"><doctype>Article</doctype></doctypes></summary><fullrecord_metadata><languages count="1"><language type="primary">Chinese</language></languages><normalized_languages count="1"><language type="primary">Chinese</language></normalized_languages><normalized_doctypes count="1"><doctype>Article</doctype></normalized_doctypes><refs count="18"><ref doc_id="439186286"></ref><ref doc_id="439186287"></ref><ref doc_id="329147682"></ref><ref doc_id="439186293"></ref><ref doc_id="439186294"></ref><ref doc_id="335380033"></ref><ref doc_id="439186297"></ref><ref doc_id="439186298"></ref><ref doc_id="439186299"></ref><ref doc_id="332335142"></ref><ref doc_id="327971722"></ref><ref doc_id="439186302"></ref><ref doc_id="439186303"></ref><ref doc_id="439186304"></ref><ref doc_id="439186305"></ref><ref doc_id="439186306"></ref><ref doc_id="327751410"></ref><ref doc_id="439186309"></ref></refs><addresses count="2"><address_name><address_spec addr_no="1"><full_address lang_id="zh-cn">东北农业大学资源与环境学院, 哈尔滨, 黑龙江 150030, 中国</full_address><organizations count="1"><organization lang_id="zh-cn">东北农业大学资源与环境学院</organization></organizations><city lang_id="zh-cn">哈尔滨</city><province lang_id="zh-cn">黑龙江</province><country lang_id="zh-cn">中国</country><post_num>150030</post_num></address_spec><names count="4"><name seq_no="1" role="author" lang_id="zh-cn" addr_no="1" unit_id="1"><display_name>谷思玉</display_name><full_name>谷思玉</full_name><first_name>思玉</first_name><last_name>谷</last_name><email_addr>gusiyu777@163.com</email_addr></name><name seq_no="2" role="author" lang_id="zh-cn" addr_no="1" unit_id="1"><display_name>郭爱玲</display_name><full_name>郭爱玲</full_name><first_name>爱玲</first_name><last_name>郭</last_name></name><name seq_no="3" role="author" lang_id="zh-cn" addr_no="1" unit_id="1"><display_name>汪睿</display_name><full_name>汪睿</full_name><first_name>睿</first_name><last_name>汪</last_name></name><name seq_no="4" role="author" lang_id="zh-cn" addr_no="1" unit_id="1"><display_name>宋秀丽</display_name><full_name>宋秀丽</full_name><first_name>秀丽</first_name><last_name>宋</last_name></name></names></address_name><address_name><address_spec addr_no="2"><full_address>School of Resources and Environmental Sciences,Northeast Agricultural University, Harbin, Heilongjiang 150030, China</full_address><organizations count="1"><organization>School of Resources and Environmental Sciences,Northeast Agricultural University</organization></organizations><city>Harbin</city><province>Heilongjiang</province><country>China</country><post_num>150030</post_num></address_spec><names count="4"><name seq_no="5" role="author" addr_no="2" unit_id="2"><display_name>Gu Siyu</display_name><full_name>Gu Siyu</full_name><first_name>Siyu</first_name><last_name>Gu</last_name><email_addr>gusiyu777@163.com</email_addr></name><name seq_no="6" role="author" addr_no="2" unit_id="2"><display_name>Guo Ailing</display_name><full_name>Guo Ailing</full_name><first_name>Ailing</first_name><last_name>Guo</last_name></name><name seq_no="7" role="author" addr_no="2" unit_id="2"><display_name>Wang Rui</display_name><full_name>Wang Rui</full_name><first_name>Rui</first_name><last_name>Wang</last_name></name><name seq_no="8" role="author" addr_no="2" unit_id="2"><display_name>Song Xiuli</display_name><full_name>Song Xiuli</full_name><first_name>Xiuli</first_name><last_name>Song</last_name></name></names></address_name></addresses><category_info><headings count="1"><heading>Science &amp; Technology</heading></headings><subheadings count="1"><subheading>Life Sciences &amp; Biomedicine</subheading></subheadings><subjects count="2"><subject ascatype="traditional">AGRICULTURE MULTIDISCIPLINARY</subject><subject ascatype="extended">Agriculture</subject></subjects></category_info><fund_ack><grants count="3"><grant><grant_info lang_id="zh-cn">中科院黑土生态实验室基金课题资助</grant_info></grant><grant><grant_info lang_id="zh-cn">中科院对外合作重点项目资助</grant_info></grant><grant><grant_info lang_id="zh-cn">黑龙江留学回国基金项目</grant_info></grant></grants></fund_ack><keywords count="10"><keyword lang_id="zh-cn">黑土</keyword><keyword lang_id="zh-cn">软土</keyword><keyword lang_id="zh-cn">成土因素</keyword><keyword lang_id="zh-cn">中国</keyword><keyword lang_id="zh-cn">乌克兰</keyword><keyword>black soil</keyword><keyword>mollisols</keyword><keyword>soil-forming factor</keyword><keyword>China</keyword><keyword>Ukraine</keyword></keywords><abstracts count="2"><abstract lang_id="zh-cn"><abstract_text><p>阐述了黑土的概念,总结了中国和乌克兰黑土在分布上的异同;通过比较两国黑土在地形、气候、母质和植被等成土因素,认为两者虽同属黑土,但仍存在诸多差异,因此在保护和管理方面应因地制宜。</p></abstract_text></abstract><abstract><abstract_text><p>This paper expounded the concept of mollisols and summarized the similarities and differences of mollisols regional distribution in China and in Ukraine.By compared the terrain,climate,parent materials and vegetation types of the two kinds of mollisols it showed that even though the two kinds of mollisols belonged to the same category,they still had so many fine distinctions,which still had to protect and manage them properly.</p></abstract_text></abstract></abstracts></fullrecord_metadata><item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="itemType_cscd" coll_id="CSCD"><classi_num>S151+.2</classi_num><citation_total>18</citation_total></item></static_data><dynamic_data><citation_related><tc_list dedup_total_count="0"><silo_tc coll_id="GCI" local_count="0"/><silo_tc coll_id="BIOABS" local_count="0"/><silo_tc coll_id="INSPEC" local_count="0"/><silo_tc coll_id="CSCD" local_count="0"/><silo_tc coll_id="BCI" local_count="0"/><silo_tc coll_id="WOS" local_count="0"/><silo_tc coll_id="CCC" local_count="0"/><silo_tc coll_id="MEDLINE" local_count="0"/><silo_tc coll_id="CABI" local_count="0"/><silo_tc coll_id="FSTA" local_count="0"/><silo_tc coll_id="RSCI" local_count="0"/><silo_tc coll_id="ZOOREC" local_count="0"/><silo_tc coll_id="BIOSIS" local_count="0"/><silo_tc coll_id="SCIELO" local_count="0"/><silo_tc coll_id="DRCI" local_count="0"/><silo_tc coll_id="KJD" local_count="0"/></tc_list></citation_related><cluster_related><clustered_EWUIDs count="1"><EWUID uid="CSCD:4591213" year="2012"><WUID seq_no="1" doc_id="439186285" coll_id="CSCD" fuid="439186285CSCD1"/><edition value="CSCD.CSCD"/></EWUID></clustered_EWUIDs><identifiers count="5"><identifier type="ckey" value="GU S0152120043JS"/><identifier type="issn" value="1005-9369"/><identifier type="cn" value="23-1391/S"/><identifier type="urn" value="1005-9369(2012)43:5&lt;152:ZGYWKL&gt;2.0.TX;2-Y"/><identifier type="uid" self_ind="Y" value="CSCD:4591213"/></identifiers><entitled_EWUIDs count="1"><EWUID year="2012" uid="CSCD:4591213"><WUID coll_id="CSCD" fuid="439186285CSCD1" seq_no="1" doc_id="439186285" /><edition value="CSCD.CSCD" /></EWUID></entitled_EWUIDs></cluster_related><um_related><ta_list><ta count="0" type="60day"/><ta count="0" type="180day"/><ta count="0" type="365day"/><ta count="0" type="AllTime"/></ta_list></um_related></dynamic_data><dates availability_date="2012-10-25T23:59:59.00000" create_date="2012-10-25T04:29:21.014821" mod_date="2012-10-25T04:29:21.014821" extraction_date="2019-02-07T12:47:57.967Z" version="10"/></REC>
+</records>]]></val>
+        <list name="AnalyzeResults">
+          <map>
+            <val name="Name">OG</val>
+            <val name="TotalCount">70</val>
+            <val name="NoDataCount">0</val>
+            <list name="Values">
+              <map>
+                <val name="Key">COLLEGE OF AGRONOMY XINJIANG AGRICULTURAL UNIVERSITY</val>
+                <val name="Value">2</val>
+              </map>
+              <map>
+                <val name="Key">COTTON RESEARCH INSTITUTE CAAS</val>
+                <val name="Value">2</val>
+              </map>
+              <map>
+                <val name="Key">EAST CHINA UNIVERSITY OF SCIENCE AND TECHNOLOGY</val>
+                <val name="Value">2</val>
+              </map>
+              <map>
+                <val name="Key">SHANGHAI ENTRY EXIT INSPECTION AND QUARANTINE BUREAU</val>
+                <val name="Value">2</val>
+              </map>
+              <map>
+                <val name="Key">AGH UNIVERSITY OF SCIENCE AND TECHNOLOGY FACULTY OF METALS ENGINEERING AND INDUSTRIAL COMPUTER SCIENCE</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">BEIJING URANIUM GEOLOGY INSITUTE</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">CHANG AN UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">CHINESE ACADEMY OF SCIENCES</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">CHINESE ACADEMY OF SCIENCES NORTHEAST INSTITUTE OF GEOGRAPHY AND AGROECOLOGY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">COLLEGE OF AGRICULTURE AND FORESTRY LONGDONG UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">COLLEGE OF BIOTECHNOLOGY SOUTHWEST UNIVERSITY KEY SERICULTURAL LABORATORY OF MINISTRY OF AGRICULTURE</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">COLLEGE OF EARTH SCIENCES CHENGDU UNIVERSITY OF TECHNOLOGY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">COLLEGE OF FOOD ENGINEERING JILIN AGRICULTURAL UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">COLLEGE OF FOOD SCIENCE AND ENGINEERING JILIN AGRICULTURAL UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">COLLEGE OF HORTICULTURE ANHUI AGRICULTURAL UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">COLLEGE OF PLANT SCIENCE AND TECHNOLOGY BEIJING UNIVERSITY OF AGRICULTURE</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">COLLEGE OF SHIPBUILDING AND POWER ENGINEERING UNDER THE NAVAL ENGINEEIING UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">DEPARTMENT OF AGRONOMY IOWA STATE UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">DEPARTMENT OF BIO TECHNOLOGY BEIJING UNIVERSITY OF AGRICULTURE</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">DEPARTMENT OF GEOSCIENCES OF TEXAS TECH UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">DEPARTMENT OF LIFE AND ENVIRONMENTAL SCIENCES POLYTECHNIC UNIVERSITY OF MARCHE</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">DEPARTMENT OF MEDICAL INFORMATION FUZHOU GENERAL HOSPITAL OF NANJING COMMAND</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">DEPARTMENT OF OCCUPATIONAL AND ENVIRONMENTAL MEDICINE UNIVERSITY HOSPITAL OF COPENHAGEN</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">DEPARTMENT OF OCCUPATIONAL MEDICINE AARHUS UNIVERSITY HOSPITAL</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">DEPARTMENT OF TERRITORY INFORMATION AND MAPPING ENGINEERING XUZHOU NORMAL UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">DIPARTIMENTO DI SCIENZE AGRARIE E DEGLI ALIMENTI UNIVERSITA DI MODENA E REGGIO EMILIA</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">E I MARCINOVSKY INSTITUTE OF MEDICAL PARASITOLOGY AND TROPICAL MEDICINE</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">GEOGRAPHIC INFORMATION SCIENCE CENTER OF EXCELLENCE SOUTH DAKOTA STATE UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">GEOGRAPHY AND PLANNING DEPARTMENT AND ENVIRONMENTAL STUDIES PROGRAM GRAND VALLEY STATE UNIVERSITY</val>
+                <val name="Value">1</val>
+              </map>
+              <map>
+                <val name="Key">GUANGDONG UNIVERSITY OF TECHNOLOGY</val>
+                <val name="Value">1</val>
+              </map>
+            </list>
+          </map>
+        </list>
+      </map>
+      <map name="QueryResult">
+        <val name="QueryID">1</val>
+        <val name="RecordsSearched">3010576</val>
+        <val name="RecordsFound">48</val>
+        <val name="RecordsAvailable">48</val>
+        <list name="Warnings">
+        </list>
+      </map>
+    </map>
+  </fn>
+</response>

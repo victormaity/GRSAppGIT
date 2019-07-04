@@ -1,0 +1,1 @@
+http://mwa.us-west-2.produs.prod.cortellis.int.clarivate.com:8200/mr/ChemistryService/v1/patent/PA7116721/structure/generic/image

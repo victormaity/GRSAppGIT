@@ -1,0 +1,32 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//span[contains(text(),'Imperial College London')]/ancestor::tr[contains(@class,'item frozen ng-scope')]//input"}
+Command duration or timeout: 3.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'INBASDLP00628', ip: '10.10.245.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cd2d8b74-9f60-4b17-89ec-04ec2c4a134c
+*** Element info: {Using=xpath, value=.//span[contains(text(),'Imperial College London')]/ancestor::tr[contains(@class,'item frozen ng-scope')]//input}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'INBASDLP00628', ip: '10.10.245.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206);
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85);
+sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source);
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43);
+java.lang.reflect.Method.invoke(Method.java:498);
+com.thomsonreuters.cucumberfactory.typesfactory.Factory.InvocationHandlers.HTMLInvocationHandler.invoke(HTMLInvocationHandler.java:37);
+com.sun.proxy.$Proxy20.click(Unknown Source);
+com.thomsonreuters.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:56);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.CreateNewTilePageSteps.button_Update_Results_clicks(CreateNewTilePageSteps.java:277);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.CreateNewTilePageSteps.I_have_clicked_on_Update_results(CreateNewTilePageSteps.java:2772);
+✽.When I have clicked on Update results(src/test/resources/com.thomsonreuters.incites.cucumber/ExploreOrganizationsContext/OrganizationsByAttributesFilters.feature:52)

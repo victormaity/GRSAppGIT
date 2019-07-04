@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=%22Vertebral+Column+Resection+%28VCR%29+in+Congenital+Kyphoscoliosis+%28CKS%29%22&hits=20&offset=0&filtersEnabled=0&queryLanguage=ssql

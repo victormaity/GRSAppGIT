@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.ExportDrugResultsInput xmlns:ns2="local"><format>xls</format><query>cancer</query><offset>0</offset><hits>50</hits></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.ExportDrugResultsInput>

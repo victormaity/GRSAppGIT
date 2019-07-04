@@ -1,0 +1,1 @@
+          select tar_id from ls_srv.sita_target_synonyms where TSY_NAME='Gamma-aminobutyric acid (GABA) A receptor subunit delta'     

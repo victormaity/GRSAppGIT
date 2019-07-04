@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Indication id="2306" name="Citrullinuria"><Synonyms><Synonym>Citrullinemia</Synonym><Synonym>Argininosuccinic acid synthase deficiency disease</Synonym></Synonyms></Indication>

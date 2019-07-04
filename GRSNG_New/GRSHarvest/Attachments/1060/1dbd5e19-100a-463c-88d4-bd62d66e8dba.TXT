@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="192429"><Title>Roowin to manufacture and scale up Sirona's sodium glucose transporter inhibitor for diabetes</Title><Principal>Roowin SA</Principal><Partner>Sirona Biochem Corp</Partner><Type>Drug - Manufacturing/Supply</Type><Status>Active</Status></Deal>

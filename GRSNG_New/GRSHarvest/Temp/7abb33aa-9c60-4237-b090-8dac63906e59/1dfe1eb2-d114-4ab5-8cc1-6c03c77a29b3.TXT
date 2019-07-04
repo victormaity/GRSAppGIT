@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.ExportTrialRecordInput xmlns:ns2="local"><format>PDF</format><id>100003,100006,10000,100005,100001,100004,100002,1,100000</id></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.ExportTrialRecordInput>

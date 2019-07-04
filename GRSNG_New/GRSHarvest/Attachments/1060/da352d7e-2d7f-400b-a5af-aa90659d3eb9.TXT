@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput xmlns:ns2="local"><treeType>fluid</treeType><searchString>cell</searchString><treeCodeFilter>-1547554450%7C-981349676%7C</treeCodeFilter><operationType>flat</operationType></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput>

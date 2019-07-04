@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.TaxonomyOutput xmlns:ns2="local"><TaxonomyTree><Node depth="2" leaf="false" name="Anticancer" treeCode="CEL-CAN-" id="1545"></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.TaxonomyOutput>

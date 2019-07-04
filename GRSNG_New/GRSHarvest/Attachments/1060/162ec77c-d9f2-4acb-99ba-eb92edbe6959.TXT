@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><EventTranscript id="2290191"><Name>Enzon Pharmaceuticals, Inc. Commences Phase II Trial of PEG-SN38 - Conference Call</Name><Company>Enzon Pharmaceuticals Inc</Company><Drugs><Drug>pegfilgrastim</Drug><Drug>irinotecan</Drug><Drug>rituximab</Drug><Drug>firtecan pegol</Drug></Drugs></EventTranscript>

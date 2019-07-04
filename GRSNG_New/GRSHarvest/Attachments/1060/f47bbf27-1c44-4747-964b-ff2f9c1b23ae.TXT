@@ -1,0 +1,1 @@
+Ancestry,DevStatus,DevStatusId,Drug,DrugId,Endpoint,Indication,IndicationId,OriginatorSponsored,Patients,ProtocolTitle,TrialEndDateActual,TrialEndDateCalc,TrialEndDateEstimate,TrialEndDateGiven,TrialId,TrialStartDate,TrialStatus

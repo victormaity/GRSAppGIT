@@ -1,0 +1,20 @@
+﻿@model List<GlobalReportingSystem.Core.Models.Entities.Client>
+<label class="control-label bolder blue">Available machines:</label>
+<input type="hidden" id="hidden_machines_count" value="@Model.Count"></input>
+
+@foreach (var machine in Model)
+{
+    <div class="radio machine">
+        <label>
+            <input name="form-field-radio" type="radio" class="ace" id="@machine.ID">
+            <span class="lbl">@machine.RemoteMachineIP</span>
+        </label>
+    </div>
+}
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".ace").click(function() {
+            $(".btn-next").removeAttr("disabled");
+        });
+    });
+</script>

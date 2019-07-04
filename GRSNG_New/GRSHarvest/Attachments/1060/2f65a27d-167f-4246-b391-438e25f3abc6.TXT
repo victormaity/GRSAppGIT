@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/organism/search/virus?operationType=flat&treeCodeFilter=2961%7C-1643509425%7C&fmt=json

@@ -1,0 +1,1 @@
+{"ontologyTreeOutput":{"TaxonomyTree":{"Node":{"@depth":"4","@leaf":"false","@name":"Stem cell therapy by source","@treeCode":"BIO-CET-STM-SCS-","@id":"854","hitSynonyms":""}}}}

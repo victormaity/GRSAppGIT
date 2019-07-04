@@ -1,0 +1,24 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(text(),'View All Associated Data')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INHYIZLP05288', ip: '10.10.243.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 13640, moz:profile: C:\Users\BX0044~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 6babfbfa-5b31-4f5e-a3f2-7a21f238fc25
+*** Element info: {Using=xpath, value=//a[contains(text(),'View All Associated Data')]} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:58);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.I_click_link(ResultSummaryPage_Steps.java:419);
+✽.And I click link "Easy view Associated data count"(com.clarivateanalytics.wos.gui.cucumber.deployment/AssociatedData.feature:38)

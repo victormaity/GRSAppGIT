@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.AnalysisResultsPage_Steps.iVerifyTheTextIsDisplayed(AnalysisResultsPage_Steps.java:247);
+✽.Then I verify the text "No documents found" is displayed(com.clarivateanalytics.wos.gui.cucumber.deployment/TableofContents.feature:377)

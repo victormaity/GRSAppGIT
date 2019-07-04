@@ -1,0 +1,25 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//label[contains(text(),'2014')]/preceding-sibling::input)[1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBAAMPC03705', ip: '10.10.246.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 48472, moz:profile: C:\Users\rk00555359\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 44b2f0f5-a931-4284-89e3-cca4b1312792
+*** Element info: {Using=xpath, value=(//label[contains(text(),'2014')]/preceding-sibling::input)[1]} 
+ sun.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362);
+com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage.button_chooseLocalFile(SavedSearchesAndAlertsPage.java:164);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.SavedSearchesAndAlertsPage_Steps.iChooseALocallySavedFileFromCollectionOnPage(SavedSearchesAndAlertsPage_Steps.java:692);
+✽.Then I choose a locally saved file from "DII" collection on "Saved searches and alerts" page(com.clarivateanalytics.wos.gui.cucumber.deployment/CCIssues.feature:354)

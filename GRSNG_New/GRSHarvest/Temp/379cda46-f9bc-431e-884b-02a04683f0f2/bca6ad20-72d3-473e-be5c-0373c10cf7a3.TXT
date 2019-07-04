@@ -1,0 +1,1 @@
+https://produs-api.cortellis.int.clarivate.com/api-ws/ws/rs/regulatory-v2/regulatory/173133

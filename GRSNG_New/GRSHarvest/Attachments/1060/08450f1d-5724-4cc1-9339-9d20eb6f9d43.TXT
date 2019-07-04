@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="175461"><Title>Zeneca's dermatological products</Title><Principal>Bioglan Pharmaceuticals Co</Principal><Partner>Zeneca Ventures</Partner><Type>Drug - Asset Divestment</Type><Status>Active</Status></Deal>

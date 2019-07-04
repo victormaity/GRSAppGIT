@@ -1,0 +1,209 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>5.32_R2_Staging_Counter5Patch</test_cycle>
+    <url>http://www-uw2.staging1.prod-wos.com/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_03</user>
+    <ip>192.168.109.117</ip>
+    <start_time>03/28/2019 11:23:00</start_time>
+    <end_time>03/28/2019 11:32:36</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (32-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Acceptance WOS" start_time="3/28/2019 11:23:00 AM">
+    <TestCase name="WOS_AC_012" start_time="3/28/2019 11:23:23 AM" description="Author Search checking" criticality="" state="notcompleted" end_time="3/28/2019 11:24:45 AM">
+      <step type="pass" description="Prerequisite: Author Search Step 1: Check Page Display " expected="Page is displayed correctly" time="3/28/2019 11:23:26 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:23:24 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:24 AM">Clicking Link 'WOS'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:25 AM">General Search page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:23:25 AM">Clicking Link 'Author Search'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:26 AM">Author Search page was opened</substep>
+      </step>
+      <step type="pass" description="Enter several authors with intials into the several Search Rows and check &quot;Exact matches only&quot; checkbox for some of them. Click on the &quot;Select Research Domain&quot; button " expected="&quot;Select Research Domain&quot; page is opened correctly with proper results retrieved." time="3/28/2019 11:23:33 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:23:26 AM">Text: 'Smith' was sent to the ''Last Name' (row 1)' textbox (XPath("//input[@id='lastName_0']")), textbox content after sending is 'Smith'</substep>
+        <substep valid="True" time="3/28/2019 11:23:27 AM">Text: 'CE' was sent to the ''Initials' (row 1)' textbox (XPath("//input[@id='initial_0']")), textbox content after sending is 'CE'</substep>
+        <substep valid="True" time="3/28/2019 11:23:27 AM">Clicking Checkbox 'Exact Matches Only (row 1)'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:27 AM">Clicking Link 'Add Author Name Variant'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:28 AM">Text: 'johnson' was sent to the ''Last Name' (row 2)' textbox (XPath("//input[@id='lastName_1']")), textbox content after sending is 'johnson'</substep>
+        <substep valid="True" time="3/28/2019 11:23:28 AM">Text: 'j' was sent to the ''Initials' (row 2)' textbox (XPath("//input[@id='initial_1']")), textbox content after sending is 'j'</substep>
+        <substep valid="True" time="3/28/2019 11:23:28 AM">Clicking Link 'Add Author Name Variant'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:29 AM">Text: 'jordan' was sent to the ''Last Name' (row 3)' textbox (XPath("//input[@id='lastName_2']")), textbox content after sending is 'jordan'</substep>
+        <substep valid="True" time="3/28/2019 11:23:29 AM">Text: 'm' was sent to the ''Initials' (row 3)' textbox (XPath("//input[@id='initial_2']")), textbox content after sending is 'm'</substep>
+        <substep valid="True" time="3/28/2019 11:23:29 AM">Clicking Link 'Add Author Name Variant'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:30 AM">Text: 'robinson' was sent to the ''Last Name' (row 4)' textbox (XPath("//input[@id='lastName_3']")), textbox content after sending is 'robinson'</substep>
+        <substep valid="True" time="3/28/2019 11:23:30 AM">Text: 'd' was sent to the ''Initials' (row 4)' textbox (XPath("//input[@id='initial_3']")), textbox content after sending is 'd'</substep>
+        <substep valid="True" time="3/28/2019 11:23:30 AM">Clicking CheckBox 'Exact Matches Only (row 4)'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:30 AM">Clicking Link 'Add Author Name Variant'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:31 AM">Text: 'smith' was sent to the ''Last Name' (row 5)' textbox (XPath("//input[@id='lastName_4']")), textbox content after sending is 'smith'</substep>
+        <substep valid="True" time="3/28/2019 11:23:31 AM">Text: 'j' was sent to the ''Initials' (row 5)' textbox (XPath("//input[@id='initial_4']")), textbox content after sending is 'j'</substep>
+        <substep valid="True" time="3/28/2019 11:23:31 AM">Clicking Button 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:23:33 AM">Author Search page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:23:33 AM">Author Search step 2 page was opened</substep>
+      </step>
+      <step type="fail" description="Select several Research Domains and click on the &quot;Select Organization&quot; button" expected="&quot;Select Organization&quot; page is opened correcly with proper results retrieved." time="3/28/2019 11:24:26 AM" inputdata="" actual="Can't find Checkbox/Container 'Domain check box 'PHYSICAL SCIENCES''.">
+        <substep valid="False" time="3/28/2019 11:24:16 AM" tech_info=" &lt;br /&gt; Locator: 'XPath(&quot;//table[@id='domainsAreas']//input[@value='PHYSICAL SCIENCES']&quot;)'. &lt;br /&gt; Searching time (seconds): 5.0132413" screenshot="0e3a50ddd3fc4739aa04ae3cfc55642a.jpg" screenshot_driver="b6ff3c75f6854014868747ac88e1a9c9.jpg">Can't find Checkbox/Container 'Domain check box 'PHYSICAL SCIENCES''.</substep>
+        <substep valid="True" time="3/28/2019 11:24:16 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="3/28/2019 11:24:21 AM">Dispose was successfully done</substep>
+        <substep valid="True" time="3/28/2019 11:24:22 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="3/28/2019 11:24:26 AM">Dispose was successfully done</substep>
+      </step>
+      <step type="norun" description="Select several organizations or &quot;Include records that do not contain organization information&quot; checkbox and click on the &quot;Search&quot; button." expected="Author Search Results page is correctly opened with proper results retrieved" time="3/28/2019 11:23:23 AM" inputdata="" />
+    </TestCase>
+    <TestCase name="WOS_AC_012_1" start_time="3/28/2019 11:24:45 AM" description="Author Search results page checking" criticality="" state="pass" end_time="3/28/2019 11:32:36 AM">
+      <step type="pass" description="Prerequisite: Author Search Results page. Check Page Display " expected="Page is displayed correctly" time="3/28/2019 11:25:04 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:24:45 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:24:46 AM">Clicking Link 'WOS'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:24:47 AM">General Search page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:24:50 AM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:24:50 AM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:24:51 AM">Sign In Window was opened</substep>
+        <substep valid="True" time="3/28/2019 11:24:52 AM">Text box 'Email' is enabled</substep>
+        <substep valid="True" time="3/28/2019 11:24:52 AM">Text: 'quality.tester@testcases.com' was sent to the 'Email' textbox (XPath("//input[@id='email']")), textbox content after sending is 'quality.tester@testcases.com'</substep>
+        <substep valid="True" time="3/28/2019 11:24:53 AM">Text box 'Password' is enabled</substep>
+        <substep valid="True" time="3/28/2019 11:24:54 AM">Textbox: 'XPath("//input[@id='password']")' was cleared</substep>
+        <substep valid="True" time="3/28/2019 11:24:54 AM">Text: '!12345654321a' was sent to the 'Password' textbox (XPath("//input[@id='password']")), textbox content after sending is '!12345654321a'</substep>
+        <substep valid="True" time="3/28/2019 11:24:54 AM">Clicking Button 'SignIn'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:03 AM">General Search page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:25:03 AM">Clicking Link 'Author Search'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:04 AM">Author Search page was opened</substep>
+      </step>
+      <step type="pass" description="Refine by each category, exclude by some " expected="Refining and excluding are performed properly and are affected to the Record Sets tab." time="3/28/2019 11:25:10 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:25:04 AM">Text: 'Smith' was sent to the ''Last Name' (row 1)' textbox (XPath("//input[@id='lastName_0']")), textbox content after sending is 'Smith'</substep>
+        <substep valid="True" time="3/28/2019 11:25:04 AM">Text: 'CE' was sent to the ''Initials' (row 1)' textbox (XPath("//input[@id='initial_0']")), textbox content after sending is 'CE'</substep>
+        <substep valid="True" time="3/28/2019 11:25:04 AM">Clicking Checkbox 'Exact Matches Only (row 1)'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:05 AM">Clicking Button 'Finish Search'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:10 AM">Page title 'Author Search Results' is displayed. Author Search Results page was loaded.</substep>
+      </step>
+      <step type="pass" description="Check the search terms are highlighted " expected="Search terms are highlighted correctly" time="3/28/2019 11:25:43 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:25:10 AM">Checking/unchecking CheckBox 'ENERGY FUELS checkBoxin section Web of Science Categories'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:10 AM">Select item 'ENERGY FUELS' from section 'WEB OF SCIENCE CATEGORIES' in Refine Panel.</substep>
+        <substep valid="True" time="3/28/2019 11:25:11 AM">Click Refine button on Refine Panel : </substep>
+        <substep valid="True" time="3/28/2019 11:25:11 AM">Clicking Button 'Refine'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:14 AM">Clicking Link 'More...'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:15 AM">&lt;!XML Content&gt;&lt;b&gt;Text-name of Text 'Refined by' equals: Refined by: WEB OF SCIENCE CATEGORIES: (  ENERGY FUELS  )&lt;/b&gt; &lt;!XML Content&gt;</substep>
+        <substep valid="True" time="3/28/2019 11:25:19 AM">Navigate back to Author Search Results page.</substep>
+        <substep valid="True" time="3/28/2019 11:25:19 AM">Page title 'Author Search Results' is displayed. Author Search Results page was loaded.</substep>
+        <substep valid="True" time="3/28/2019 11:25:19 AM">Clicking Link 'More Options'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:31 AM">Checking/unchecking CheckBox 'Refine Value'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:31 AM">Clicking Button 'Exclude'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:36 AM">Clicking Link 'More...'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:37 AM">&lt;!XML Content&gt;&lt;b&gt;Text-name of Text 'Refined by' equals: Refined by:    [excluding]     DOCUMENT TYPES: (  MEETING ABSTRACT  )&lt;/b&gt; &lt;!XML Content&gt;</substep>
+        <substep valid="True" time="3/28/2019 11:25:38 AM">Navigate back to Results Summary page.</substep>
+        <substep valid="True" time="3/28/2019 11:25:42 AM">Navigate back to Author Search Results page.</substep>
+        <substep valid="True" time="3/28/2019 11:25:43 AM">Page title 'Author Search Results' is displayed. Author Search Results page was loaded.</substep>
+      </step>
+      <step type="pass" description="Check sort options in dropdown and perform sorting by every option " expected="Sort options are displeyed correctly and Sorting is performed properly" time="3/28/2019 11:29:21 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:25:43 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="3/28/2019 11:25:43 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:25:50 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:26:10 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:26:10 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:26:12 AM">Go to the next record.</substep>
+        <substep valid="True" time="3/28/2019 11:26:12 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:26:34 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:26:35 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:26:36 AM">Go to the next record.</substep>
+        <substep valid="True" time="3/28/2019 11:26:37 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:26:58 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:26:58 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:26:59 AM">Go to the next record.</substep>
+        <substep valid="True" time="3/28/2019 11:27:00 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:27:21 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:27:21 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:27:23 AM">Go to the next record.</substep>
+        <substep valid="True" time="3/28/2019 11:27:23 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:27:44 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:27:44 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:27:45 AM">Go to the next record.</substep>
+        <substep valid="True" time="3/28/2019 11:27:46 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:28:07 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:28:07 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:28:08 AM">Go to the next record.</substep>
+        <substep valid="True" time="3/28/2019 11:28:09 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:28:30 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:28:30 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:28:31 AM">Go to the next record.</substep>
+        <substep valid="True" time="3/28/2019 11:28:32 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:28:54 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:28:54 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:28:55 AM">Go to the next record.</substep>
+        <substep valid="True" time="3/28/2019 11:28:56 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:29:17 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:29:17 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:29:19 AM">Go to the next record.</substep>
+        <substep valid="True" time="3/28/2019 11:29:19 AM">Full Record page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:29:21 AM">Clicking Link 'More...'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:29:21 AM">Highlighted text equals 'smith' as expected. Highlighted text is 'Smith, CE'.</substep>
+        <substep valid="True" time="3/28/2019 11:29:21 AM">Clicking Link 'Return to Search Results'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Navigate to Analyze using link on the Refine panel " expected="Analyze page is displayed correctly" time="3/28/2019 11:29:33 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:29:24 AM">Clicking Link 'Click dropdown list'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:29:25 AM">'Sort by' list box contains all expected sort options</substep>
+        <substep valid="True" time="3/28/2019 11:29:30 AM">Clicking Link 'Times Cited: highest to lowest'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:29:33 AM">Check sorting by 'Times Cited -- highest to lowest' passed, sorting is descending</substep>
+      </step>
+      <step type="pass" description="Navigate to Citation Report using link below the Sort option dropdown " expected="Citation Report page is displayed properly" time="3/28/2019 11:29:38 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:29:33 AM">Clicking Button 'Analyze Results'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:29:35 AM">Results Analysis page was loaded</substep>
+        <substep valid="True" time="3/28/2019 11:29:35 AM">Clicking Link 'Back To Previous Page'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:29:38 AM">Page title 'Author Search Results' is displayed. Author Search Results page was loaded.</substep>
+      </step>
+      <step type="pass" description="Perform Print output for some option " expected="Print output for some options is performed correctly" time="3/28/2019 11:30:17 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:29:38 AM">Clicking Link 'Create Citation Report'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:29:45 AM">Citation Report page was loaded</substep>
+        <substep valid="True" time="3/28/2019 11:29:51 AM">Clicking Link 'Back To'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:29:52 AM">General Search page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:29:52 AM">Clicking Link 'Author Search'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:29:53 AM">Author Search page was opened</substep>
+        <substep valid="True" time="3/28/2019 11:29:53 AM">Text: 'Smith' was sent to the ''Last Name' (row 1)' textbox (XPath("//input[@id='lastName_0']")), textbox content after sending is 'Smith'</substep>
+        <substep valid="True" time="3/28/2019 11:29:53 AM">Text: '' was sent to the ''Initials' (row 1)' textbox (XPath("//input[@id='initial_0']")), textbox content after sending is ''</substep>
+        <substep valid="True" time="3/28/2019 11:29:54 AM">Clicking Button 'Finish Search'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:30:17 AM">Page title 'Author Search Results' is displayed. Author Search Results page was loaded.</substep>
+      </step>
+      <step type="pass" description="Perform Save output. Try for all formats and some options " expected="Save output for all formats and for some options is performed correctly" time="3/28/2019 11:30:38 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:30:17 AM">Clicking Button ''Format For Print' button'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:30:18 AM">Click 'Print' output button</substep>
+        <substep valid="True" time="3/28/2019 11:30:18 AM">Print Records Window was opened</substep>
+        <substep valid="True" time="3/28/2019 11:30:20 AM">Radio Button 'Records from to' is enabled</substep>
+        <substep valid="True" time="3/28/2019 11:30:20 AM">Clicking Radio Button 'Records from to'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:30:32 AM">TextBox 'Records from' is enabled</substep>
+        <substep valid="True" time="3/28/2019 11:30:33 AM">Text: '1' was sent to the 'Records from' textbox (TSHFactory.Selenium.Locators), textbox content after sending is '1'</substep>
+        <substep valid="True" time="3/28/2019 11:30:34 AM">Text: '10' was sent to the 'Records to' textbox (TSHFactory.Selenium.Locators), textbox content after sending is '10'</substep>
+        <substep valid="True" time="3/28/2019 11:30:35 AM">Clicking Button 'Print'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:30:37 AM">'Format for print' page was loaded</substep>
+        <substep valid="True" time="3/28/2019 11:30:38 AM">Clicking Button 'Close'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:30:38 AM">Page title 'Author Search Results' is displayed. Author Search Results page was loaded.</substep>
+      </step>
+      <step type="pass" description="Add some records to Marked List. Try for all options " expected="All selected records are added to Marked List for all options and Marked List icon is appeared below the record's number" time="3/28/2019 11:32:03 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:30:38 AM">Clicking Link 'Click dropdown list'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:30:39 AM">Clicking Link 'Save to Other File Formats'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:30:40 AM">Send To File Window was opened</substep>
+        <substep valid="True" time="3/28/2019 11:30:42 AM">Clicking Radio Button 'Records from to'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:31:05 AM">Text: '1' was sent to the 'Records from' textbox (TSHFactory.Selenium.Locators), textbox content after sending is '1'</substep>
+        <substep valid="True" time="3/28/2019 11:31:15 AM">Text: '10' was sent to the 'Records from' textbox (TSHFactory.Selenium.Locators), textbox content after sending is '10'</substep>
+        <substep valid="True" time="3/28/2019 11:31:17 AM">Dropdown: 'HTML' options were  requested to be selected in 'Drop down 'File Format'' dropdown (TSHFactory.Selenium.Locators), selected option in dropdown after selection is 'HTML' </substep>
+        <substep valid="True" time="3/28/2019 11:31:17 AM">Dropdown: 'HTML' option was requested to be selected in 'Drop down 'File Format'' dropdown (TSHFactory.Selenium.Locators), selected option in dropdown after selection is 'HTML' </substep>
+        <substep valid="True" time="3/28/2019 11:31:17 AM">Clicking Button 'Send'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:31:54 AM">Sending Records Window was opened</substep>
+        <substep valid="True" time="3/28/2019 11:32:03 AM">Page title 'Author Search Results' is displayed. Author Search Results page was loaded.</substep>
+      </step>
+      <step type="pass" description="Email some selected records.Try for all formats and some options " expected="E-mail options page is displaye cprrectly. E-mails are correctly sendet and received on specified on E-mail options page address" time="3/28/2019 11:32:29 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:32:03 AM">Checking/unchecking CheckBox 'checkbox for record #1'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:32:04 AM">Checking/unchecking CheckBox 'checkbox for record #2'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:32:04 AM">Clicking Button 'Add to Marked List button (output section)'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:32:29 AM">&lt;!XML Content&gt;&lt;b&gt;Text of Button 'Marked List' contains all requested texts.&lt;/b&gt; &lt;!XML Content&gt;</substep>
+      </step>
+      <step type="pass" description="Save some records to EndNote" expected="Processing Records page appears with Choose Destination dialog." time="3/28/2019 11:32:36 AM" inputdata="">
+        <substep valid="True" time="3/28/2019 11:32:29 AM" screenshot="39aa4cffb8e64661aeb18fca9cb8b4c5.jpg" screenshot_driver="32445d68b6bc417581555c9b0e4e5cda.jpg">'Email' output button was clicked</substep>
+        <substep valid="True" time="3/28/2019 11:32:29 AM">Email Records Window was opened</substep>
+        <substep valid="True" time="3/28/2019 11:32:30 AM">Clicking Link 'Cancel'. Expected result: True.</substep>
+        <substep valid="True" time="3/28/2019 11:32:30 AM">Page title 'Author Search Results' is displayed. Author Search Results page was loaded.</substep>
+        <substep valid="True" time="3/28/2019 11:32:30 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="3/28/2019 11:32:36 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

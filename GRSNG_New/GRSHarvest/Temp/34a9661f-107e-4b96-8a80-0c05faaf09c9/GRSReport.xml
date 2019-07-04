@@ -1,0 +1,74 @@
+<GRS_Report>
+  <client_info>
+    <project>SearchEngineTests</project>
+    <test_cycle>WOS _MWS _6.36.4</test_cycle>
+    <url>http://mws-uw2.qa1.dev-wos.com/esti/xrpc</url>
+    <environment>
+    </environment>
+    <user>michael.lelyakov@thomsonreuters.com</user>
+    <ip>192.168.229.74</ip>
+    <start_time>05/14/2019 12:04:47</start_time>
+    <end_time>05/14/2019 12:04:52</end_time>
+    <browser>No Browser</browser>
+    <os>Windows 7 (64-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="getReferences.FASTRDB.PositiveTests" start_time="5/14/2019 12:04:47 PM">
+    <TestCase name="SE_getReferences_0001" start_time="5/14/2019 12:04:47 PM" description="Retrieve parameters: Set Count as minimum value (1). Flow - Positive_getReferences_Count" criticality="" state="pass" end_time="5/14/2019 12:04:48 PM">
+      <step type="pass" description="Get valid SID for test case with ID '3'" expected="In Response get valid SIDs" time="5/14/2019 12:04:47 PM" inputdata="">
+        <substep valid="True" time="5/14/2019 12:04:47 PM">Positive_getReferences_Count - Retrieving the SID; username is 'fastwosall'; password is 'fastwosall'PositiveTestsCommonFlow: SID returned is: G2O3X9fKbB9vTBvo9yp</substep>
+      </step>
+      <step type="pass" description="Sending parent 'getReferencesByDoc' request with ID '1" expected="retrieving valid data" time="5/14/2019 12:04:48 PM" inputdata="" attachment="47ff0b7b2ee1411998e37e60693641ad$05549dc516964b8ebe31b5c64e203bf9_REQUEST.txt;038b1f3e0d104a88849e02b3eac99629$05549dc516964b8ebe31b5c64e203bf9_RESPONSE.txt">
+        <substep valid="True" time="5/14/2019 12:04:48 PM">Sending parent 'getReferencesByDoc' request with ID '1' and retrieving query id - response was returned for the parent request: Returned query id is '1'</substep>
+      </step>
+      <step type="pass" description="Send SE.getReferences request" expected="Sending request, then retrieving the GUID and response XML" time="5/14/2019 12:04:48 PM" inputdata="" attachment="783604a6e60448429f85b15051137800$cf7f90ee9f3b45db8177d980b0f009c3_REQUEST.txt;6cf586c9bba04fefb0337a45586ea2ac$cf7f90ee9f3b45db8177d980b0f009c3_RESPONSE.txt">
+        <substep valid="True" time="5/14/2019 12:04:48 PM">Positive_RP_FirstRecord_Count - Sending request, then retrieving the GUID and response XML Response has been recieved.</substep>
+        <substep valid="True" time="5/14/2019 12:04:48 PM">Positive_RP_FirstRecord_Count - Checking that returned Count in response matches with requested Response has 1 record(s).</substep>
+      </step>
+      <step type="pass" description="Close session G2O3X9fKbB9vTBvo9yp'" expected="Get valid Response" time="5/14/2019 12:04:48 PM" inputdata="">
+        <substep valid="True" time="5/14/2019 12:04:48 PM">Positive_getReferences_Count - Close session with SID: 'G2O3X9fKbB9vTBvo9yp Positive_getReferences_Count - Session was closed</substep>
+      </step>
+    </TestCase>
+    <TestCase name="SE_getReferences_0002" start_time="5/14/2019 12:04:48 PM" description="Retrieve parameters: Set Count as not default value (25). Flow - Positive_getReferences_Count" criticality="" state="pass" end_time="5/14/2019 12:04:49 PM">
+      <step type="pass" description="Get valid SID for test case with ID '15'" expected="In Response get valid SIDs" time="5/14/2019 12:04:48 PM" inputdata="">
+        <substep valid="True" time="5/14/2019 12:04:48 PM">Positive_getReferences_Count - Retrieving the SID; username is 'fastwosall'; password is 'fastwosall'PositiveTestsCommonFlow: SID returned is: G4Xw6UhIK3XMzX7MTeW</substep>
+      </step>
+      <step type="pass" description="Sending parent 'getReferencesByDoc' request with ID '1" expected="retrieving valid data" time="5/14/2019 12:04:48 PM" inputdata="" attachment="7cf0e68242c7473aa4bf0810fdbe6fd5$ab258de5bd7643aea2771a7dffac8680_REQUEST.txt;9e5ad6bf11c54b7f9fc8b01232cd9fe3$ab258de5bd7643aea2771a7dffac8680_RESPONSE.txt">
+        <substep valid="True" time="5/14/2019 12:04:48 PM">Sending parent 'getReferencesByDoc' request with ID '1' and retrieving query id - response was returned for the parent request: Returned query id is '1'</substep>
+      </step>
+      <step type="pass" description="Send SE.getReferences request" expected="Sending request, then retrieving the GUID and response XML" time="5/14/2019 12:04:49 PM" inputdata="" attachment="58c5dacd9a594890a3f63610168322a3$e0a06de478064e8e8841d4888e1b29ed_REQUEST.txt;0f2a77b2e5aa4cdaa9edcd679c456e0e$e0a06de478064e8e8841d4888e1b29ed_RESPONSE.txt">
+        <substep valid="True" time="5/14/2019 12:04:49 PM">Positive_RP_FirstRecord_Count - Sending request, then retrieving the GUID and response XML Response has been recieved.</substep>
+        <substep valid="True" time="5/14/2019 12:04:49 PM">Positive_RP_FirstRecord_Count - Checking that returned Count in response matches with requested Response has 25 record(s).</substep>
+      </step>
+      <step type="pass" description="Close session G4Xw6UhIK3XMzX7MTeW'" expected="Get valid Response" time="5/14/2019 12:04:49 PM" inputdata="">
+        <substep valid="True" time="5/14/2019 12:04:49 PM">Positive_getReferences_Count - Close session with SID: 'G4Xw6UhIK3XMzX7MTeW Positive_getReferences_Count - Session was closed</substep>
+      </step>
+    </TestCase>
+    <TestCase name="SE_getReferences_0014" start_time="5/14/2019 12:04:49 PM" description="Retrieve parameters: Send request 5 times with different values of  First Record. Flow - Positive_getReferences_FirstRecord" criticality="" state="pass" end_time="5/14/2019 12:04:52 PM">
+      <step type="pass" description="Get valid SID for test case with ID '1'" expected="In Response get valid SIDs" time="5/14/2019 12:04:49 PM" inputdata="">
+        <substep valid="True" time="5/14/2019 12:04:49 PM">Positive_getReferences_FirstRecord - Retrieving the SID; username is 'fastwosall'; password is 'fastwosall'PositiveTestsCommonFlow: SID returned is: G1vdqGqicw87Bia46vO</substep>
+      </step>
+      <step type="pass" description="Sending parent 'getReferencesByDoc' request with ID '1" expected="retrieving valid data" time="5/14/2019 12:04:50 PM" inputdata="" attachment="bb00584713464b1dbc5ac3bc236075ee$f2353241134646b7afea9c8553c73b58_REQUEST.txt;158c9a34a7f94b479b389992a22fa1a0$f2353241134646b7afea9c8553c73b58_RESPONSE.txt">
+        <substep valid="True" time="5/14/2019 12:04:50 PM">Sending parent 'getReferencesByDoc' request with ID '1' and retrieving query id - response was returned for the parent request: Returned query id is '1'</substep>
+      </step>
+      <step type="pass" description="Send SE.getReferences request" expected="Sending request, then retrieving the GUID and response XML" time="5/14/2019 12:04:50 PM" inputdata="" attachment="9250e9de480445bdbd6defb28a9c2b72$c9978b35905b43488a9953f5a6ab62c1_REQUEST.txt;08a34b8d94cd49b78b2b885808184cc2$c9978b35905b43488a9953f5a6ab62c1_RESPONSE.txt">
+        <substep valid="True" time="5/14/2019 12:04:50 PM">Positive_RP_FirstRecord_Count - Sending request, then retrieving the GUID and response XML Response has been recieved.</substep>
+      </step>
+      <step type="pass" description="Send SE.getReferences request" expected="Checking that returned RecordID matches with requested previously" time="5/14/2019 12:04:51 PM" inputdata="" attachment="881d95b956334ea9a6b648e74a424ad6$9c327d3d3b584f198e508b2db0b53f2e_REQUEST.txt;35b78668ce24452f8e5e0e0c3bb95980$9c327d3d3b584f198e508b2db0b53f2e_RESPONSE.txt">
+        <substep valid="True" time="5/14/2019 12:04:51 PM">Positive_RP_FirstRecord_Count - Checking that returned RecordID matches with requested previously</substep>
+        <substep valid="True" time="5/14/2019 12:04:51 PM">Positive_RP_FirstRecord_Count - Checking that returned RecordID matches with requested previouslyReturned RecordID is correct</substep>
+      </step>
+      <step type="pass" description="Send SE.getReferences request" expected="Checking that returned RecordID matches with requested previously" time="5/14/2019 12:04:51 PM" inputdata="" attachment="309e570d0fbb408f8d99d97b6e63ae30$0d350cf3eb9146ccb0c022e697669028_REQUEST.txt;5b47481fdae74c6881dd82409570e692$0d350cf3eb9146ccb0c022e697669028_RESPONSE.txt">
+        <substep valid="True" time="5/14/2019 12:04:51 PM">Positive_RP_FirstRecord_Count - Checking that returned RecordID matches with requested previously</substep>
+        <substep valid="True" time="5/14/2019 12:04:51 PM">Positive_RP_FirstRecord_Count - Checking that returned RecordID matches with requested previouslyReturned RecordID is correct</substep>
+      </step>
+      <step type="pass" description="Send SE.getReferences request" expected="Checking that returned RecordID matches with requested previously" time="5/14/2019 12:04:52 PM" inputdata="" attachment="1e2f80ad39584d8e82c43216d5b7f9ba$a8f460c2584543d58dc587d61a3f8245_REQUEST.txt;9aaff5a1553848b0aed209850ac6730f$a8f460c2584543d58dc587d61a3f8245_RESPONSE.txt">
+        <substep valid="True" time="5/14/2019 12:04:52 PM">Positive_RP_FirstRecord_Count - Checking that returned RecordID matches with requested previously</substep>
+        <substep valid="True" time="5/14/2019 12:04:52 PM">Positive_RP_FirstRecord_Count - Checking that returned RecordID matches with requested previouslyReturned RecordID is correct</substep>
+      </step>
+      <step type="pass" description="Close session G1vdqGqicw87Bia46vO'" expected="Get valid Response" time="5/14/2019 12:04:52 PM" inputdata="">
+        <substep valid="True" time="5/14/2019 12:04:52 PM">Positive_getReferences_FirstRecord - Close session with SID: 'G1vdqGqicw87Bia46vO Positive_getReferences_FirstRecord - Session was closed</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

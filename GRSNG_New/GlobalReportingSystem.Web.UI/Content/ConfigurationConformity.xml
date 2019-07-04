@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <project name="CortellisAPI">
+    <grsname frameName="15.1">
+      new
+    </grsname>
+    <grsname frameName="high">
+      high
+    </grsname>
+    <grsname frameName="critical">
+      critical
+    </grsname>
+    <grsname frameName="acceptance">
+      acceptance
+    </grsname>
+  </project>
+  <project name="CortellisCI">
+    <grsname frameName="15.1">
+      new
+    </grsname>
+    <grsname frameName="high">
+      high
+    </grsname>
+    <grsname frameName="critical">
+      critical
+    </grsname>
+    <grsname frameName="acceptance">
+      acceptance
+    </grsname>
+  </project>
+  <project name="CortellisCII">
+    <grsname frameName="15.1">
+      new
+    </grsname>
+    <grsname frameName="high">
+      high
+    </grsname>
+    <grsname frameName="critical">
+      critical
+    </grsname>
+    <grsname frameName="acceptance">
+      acceptance
+    </grsname>
+  </project>
+  <project name="CortellisSI">
+    <grsname frameName="15.1">
+      new
+    </grsname>
+    <grsname frameName="high">
+      high
+    </grsname>
+    <grsname frameName="critical">
+      critical
+    </grsname>
+    <grsname frameName="acceptance">
+      acceptance
+    </grsname>
+  </project>
+</configuration>

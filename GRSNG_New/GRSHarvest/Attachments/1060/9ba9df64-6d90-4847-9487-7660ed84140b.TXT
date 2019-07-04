@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="128685"><Title>Watson to market authorized generic version of Condylox in the US</Title><Principal>Actavis Inc</Principal><Partner>Watson Laboratories Inc</Partner><Type>Drug - Authorized Generic</Type><Status>Active</Status></Deal>

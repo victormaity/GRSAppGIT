@@ -1,0 +1,23 @@
+Tech info:
+Exception cause: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: lastName_0 (tried for 20 second(s) with 500 MILLISECONDS interval) 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408);
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69);
+com.clarivateanalytics.cucumberfactory.typesfactory.Factory.InvocationHandlers.HTMLInvocationHandler.invoke(HTMLInvocationHandler.java:24);
+com.sun.proxy.$Proxy25.click(Unknown Source);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:58);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.link_LearnMore(BasicSearchPage.java:313);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.I_click_link(ResultSummaryPage_Steps.java:408);
+✽.And I click link "Learn More"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.29_R3Stories.feature:1196)

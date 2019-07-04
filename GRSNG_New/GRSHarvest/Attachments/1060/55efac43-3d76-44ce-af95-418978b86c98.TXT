@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/drugs-v2/drug/export/search/structure/?query=biology&hits=10&format=xls&offset=0

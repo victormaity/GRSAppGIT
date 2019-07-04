@@ -1,0 +1,26 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: .//a[contains(text(),'Author Search')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-T8JHR40ALO2', ip: '10.152.82.49', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 13212, moz:profile: D:\Users\WoSWin7_09\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 58f1936a-64c9-4d72-8c6d-584b70009cf6
+*** Element info: {Using=xpath, value=.//a[contains(text(),'Author Search')]} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362);
+com.clarivateanalytics.wos.gui.cucumber.pages.SummaryPages.CitationReportPage.link_WithoutSelfCitations(CitationReportPage.java:125);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.AnalysisResultsPage_Steps.i_click_on_link_in_metric_box(AnalysisResultsPage_Steps.java:584);
+✽.And I click on "Without Self Citations Count" link in "Without Self Citations" metric box(com/clarivateanalytics/wos/gui/cucumber/Deployment/WoS_5.29_R3Stories.feature:1178)

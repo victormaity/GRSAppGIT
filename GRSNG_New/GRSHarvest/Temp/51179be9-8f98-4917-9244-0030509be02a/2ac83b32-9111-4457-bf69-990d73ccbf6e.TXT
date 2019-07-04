@@ -1,0 +1,11 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(@id,'createAlert')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-9AT441895C7', ip: '10.152.83.177', os.name: 'Windows Server 2008 R2', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4192, moz:profile: D:\Users\WoSWin7_10\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0f18e368-c1cf-4d02-89d1-3b2ec09600a8
+*** Element info: {Using=xpath, value=//a[contains(@id,'createAlert')]} 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.iClickOnLinkOnPage(ResultSummaryPage_Steps.java:1109);
+✽.And I click on link "Add Journals" on page "Saved Searches"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.30_R2_Stories.feature:3123)

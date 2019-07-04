@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Regulatory id="91944"><Title>Ivax Pharmaceuticals Caribe, Inc., 29-Jan-08-Feb-2007: EIR, FDA 483 and Correspondence</Title><Region>USA</Region><DocCategory>["Reference Document"]</DocCategory><DocType>["Inspection Report"]</DocType><Status>Valid</Status></Regulatory>

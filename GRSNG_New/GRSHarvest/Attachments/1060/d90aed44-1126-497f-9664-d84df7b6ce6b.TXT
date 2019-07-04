@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput xmlns:ns2="local" id="44"><Title>Male Sexual Dysfunction</Title><Teaser>
+  Facts about Male Sexual Dysfunction.
+  
+    Sexual dysfunction encompasses a series of conditions characterized by disturbances in sexual desire and in the psychophysiological changes associated with the sexual response cycle. Sexual dysfunction can be either physical or psychological in origin, and is highly prevalent. It can exist as a primary condition, generally hormonal in nature, altho...</Teaser></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput>

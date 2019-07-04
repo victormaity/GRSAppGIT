@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><taxonomyOutput><TaxonomyTree><Node depth="4" leaf="false" name="Gram negative bacterium infection" treeCode="INF-ORG-BAC-NEG-" id="137"/></TaxonomyTree></taxonomyOutput>

@@ -1,0 +1,1 @@
+https://produs-api.cortellis.int.clarivate.com/api-ws/ws/rs/drugdesign-v4/drug/search/structure/image?drugId=237995&size=32&format=json

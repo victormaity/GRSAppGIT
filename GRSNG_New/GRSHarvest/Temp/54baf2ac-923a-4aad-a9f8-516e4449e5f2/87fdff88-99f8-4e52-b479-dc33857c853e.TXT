@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.SearchHistoryPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.ResultsSummaryPage 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.iVerifyThatPageAllDBRefinedCitedReferenceSummaryResultsPageIsDisplayedForAnd(ResultSummaryPage_Steps.java:4789);
+✽.And I verify that page AllDB  Refined Cited Reference Summary Results page is displayed for "study" and "All Databases"(com.clarivateanalytics.wos.gui.cucumber.deployment/SearchHistory.feature:284)

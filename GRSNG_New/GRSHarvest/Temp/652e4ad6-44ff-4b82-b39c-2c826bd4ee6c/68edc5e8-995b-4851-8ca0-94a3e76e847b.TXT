@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.CitedReferencePage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.ResultsSummaryPage 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.iCheckTheFollowingRefineCategoriesAreByDefault(ResultSummaryPage_Steps.java:2440);
+✽.And I check the following refine categories are "closed" by default(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.25_Stories.feature:328)

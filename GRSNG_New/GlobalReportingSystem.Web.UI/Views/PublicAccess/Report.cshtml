@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "~/Views/Shared/_PublicAccessLayout.cshtml";
+}
+
+@model List<GlobalReportingSystem.Core.Models.GRS.TestCasesAndStepsModel>
+<div>
+    @foreach (var ts in @Model)
+    {
+        if (Model.Count == 1)
+        {
+        <div class="col-md-12">
+            @Html.Partial("TestResultsPartial", ts)
+        </div>
+        }
+        else
+        {
+        <div class="col-md-6">
+            @Html.Partial("TestResultsPartial", ts)
+        </div>
+        }
+
+    }
+</div>
+
+<script type="text/javascript">
+    function addTestRun() {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("PartialReport", "PublicAccess")",
+            async: false,
+            data: "{'testSuite':" + $('#hidden_user').val() + ", 'filter':''}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                $("#modal-step" + (parseInt(id) + 1) + " > div > div").html(msg);
+            }
+        });
+    }
+</script>

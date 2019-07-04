@@ -1,0 +1,925 @@
+﻿@{
+    ViewBag.Title = "Execution Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <h1>Execution Report
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Testcase execution report by Release and Team
+        </small>
+    </h1>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="widget-box">
+            <div class="widget-header">
+                <h4 class="widget-title lighter smaller">
+                    <i class="ace-icon fa fa-fighter-jet blue"></i>
+                    Execution Report
+                </h4>
+                <div class="widget-toolbar">
+                </div>
+            </div>
+
+            <div class="widget-body">
+                <div class="widget-main no-padding">
+                    <table class="table" style="margin: 0px!important; padding: 0px!important;">
+                        <tr>
+                            <td style="background-color:#F2F2F2!important; border:2px solid #DDDDDD!important;">
+                                <div class="col-sm-12" style="padding-left: 0px!important;">
+                                    <div align="middle" class="col-sm-3" style="text-align: left!important; padding-left: 0px!important; vertical-align: middle!important; padding-top: 6px!important;">
+                                        <table style="width:100%; border-collapse:collapse; padding:0px!important; margin:0px!important;">
+                                            <tr>
+                                                <td>
+                                                    <label class="col-sm-10 control-label no-padding-left">Filter Exectution Report of</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <select id="selFilterExecutionReport" style="width: 90%!important;">
+                                                        <option value="TODAY">Today</option>
+                                                        <option value="5DAYS">Last 5 days</option>
+                                                        <option value="10DAYS">Last 10 days</option>
+                                                        <option value="15DAYS">Last 15 days</option>
+                                                        <option value="30DAYS">Last 30 days</option>
+                                                        <option value="3MONTHS">Last 3 months</option>
+                                                        <option value="6MONTHS">Last 6 months</option>
+                                                        <option value="1YEAR">Last 1 year</option>
+                                                        <option value="BWDATE">Between dates</option>
+                                                        <option value="BYCYCLE">Test Cycle</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div align="middle" class="col-sm-3" style="text-align: left!important; padding-left: 0px!important; vertical-align: middle!important; padding-top: 6px!important;">
+                                        <table style="width:100%; border-collapse:collapse; padding:0px!important; margin:0px!important;">
+                                            <tr>
+                                                <td>
+                                                    <label class="col-sm-10 control-label no-padding-left">Select Release Name</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <select id="selFilterExecutionReportReleaseName" style="width: 90%!important;">
+                                                        <option value="ALL">ALL</option>
+                                                        @foreach(var releaseitem in Model.DDLReleaseNameList)
+                                                        {
+                                                            <option value="@releaseitem">@releaseitem</option>
+                                                        }
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div align="middle" class="col-sm-3" style="text-align: left!important; padding-left: 0px!important; vertical-align: middle!important; padding-top: 6px!important;">
+                                        <table style="width:100%; border-collapse:collapse; padding:0px!important; margin:0px!important;">
+                                            <tr>
+                                                <td>
+                                                    <label class="col-sm-10 control-label no-padding-left">Select Team Name</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <select id="selFilterExecutionReportTeamName" style="width: 90%!important;">
+                                                        <option value="ALL">ALL</option>    
+                                                        @foreach(var teamitem in Model.DDLTeamNameList)
+                                                        {
+                                                            <option value="@teamitem">@teamitem</option>
+                                                        }
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-sm-3" style="">
+                                        <span class="help-inline col-xs-12 col-sm-7">
+                                            <label class="middle">
+                                                <br />
+                                                <input type="button" value="Filter Execution Report" id="btnFilterExecutionReport" title="Filter Execution Report" class="btn btn-info btn-sm" onclick="FilterExecutionReport();">
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="divbwdate" class="col-sm-12" style="padding-left: 0px!important; margin-top:5px!important;">
+                                    <div align="middle" class="col-sm-6" style="text-align: left!important; padding-left: 0px!important; vertical-align: middle!important; padding: 5px!important; border: 1px solid #A9A9A9;">
+                                        <table style="width:100%; border-collapse:collapse; padding:0px!important; margin:0px!important;">
+                                            <tr>
+                                                <td>Start Date</td>
+                                                <td><input type="text" id="inpstartdate" class="datepicker dpsun" style="width: 100px" /></td>
+                                                <td></td>
+                                                <td>End Date</td>
+                                                <td><input type="text" id="inpenddate" class="datepicker dpsun" style="width: 100px" /></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="divTestCycle" align="middle" class="col-sm-3" style="text-align: left!important; padding-left: 0px!important; vertical-align: middle!important; padding-top: 6px!important;">
+                                        <table style="width:100%; border-collapse:collapse; padding:0px!important; margin:0px!important;">
+                                            <tr>
+                                                <td>
+                                                    <label class="col-sm-10 control-label no-padding-left">Select Test Cycle</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <select id="selFilterExecutionReportCycleName" style="width: 90%!important;">
+                                                        <option value="0">ALL</option>
+                                                        @foreach(var cycleitem in Model.TestcycleData)
+                                                        {
+                                                            <option value="@cycleitem.cid">@cycleitem.cname</option>
+                                                        }
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </td>
+                        </tr>
+                        @{ int TotalRow = Model.ExecutionReportModel.Count; }
+                        <tr>
+                            <td align="right" style="background-color:#F2F2F2!important; border:2px solid #DDDDDD!important; padding:0px!important;">
+
+                                <table style="border-collapse:collapse; width:auto">
+                                    <tr>
+                                        <td align="center" class="paddingleftright">
+                                            Total '@TotalRow' Record found.
+                                        </td>
+                                        <td align="center" class="paddingleftright">
+                                            <img id="imgpagefirst" src="~/Content/left_last_arrow.png" height="24" width="24" title="First" style="cursor:pointer;" />
+                                        </td>
+                                        <td align="center" class="paddingleftright">
+                                            <img id="imgpageprev" src="~/Content/left_arrow.png" height="24" width="24" title="Previous" style="cursor:pointer;" />
+                                        </td>
+                                        <td align="center" class="paddingleftright">
+                                            <span id="spnPagenum1" title="Current Page Number"></span></td>
+                                        <td align="center" class="paddingleftright">
+                                            <img id="imgpagenext" src="~/Content/right_arrow.png" height="24" width="24" title="Next" style="cursor:pointer;" />
+                                        </td>
+                                        <td align="center" class="paddingleftright">
+                                            <img id="imgpagelast" src="~/Content/right_last_arrow.png" height="24" width="24" title="Last" style="cursor:pointer;" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0px!important;">
+                                <table id="tblExecutionReport" class="table" style="margin: 0px!important; padding: 0px!important;">
+                                    
+                                    @*Repeat Loop From Here*@
+                                    @{var altRow = true;}
+                                    @foreach(var item in Model.ExecutionReportModel)
+                                    {
+                                    <tr id="@item.Rowid" style="border: 2px double #000000!important;">
+                                        <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6"); width:1%!important;" class="tdpadding">R<br />@item.Rowid</td>
+                                        <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6"); padding:0px!important;">
+                                            <table class="table">
+                                                <tr class="tr">
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding tdwidth23p">Release Name:</td>
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding">@item.ReleaseName</td>
+                                                </tr>
+                                                <tr class="tr">
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding tdwidth23p">Release Date (MM/DD/YYYY): </td>
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding">@item.ReleaseDate_MM_DD_YYYY</td>
+                                                </tr>
+                                                <tr class="tr">
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding tdwidth23p">Start Date Range (MM/DD/YYYY):</td>
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding">@item.DateRangeSTART.ToString("MM/dd/yyyy")</td>
+                                                </tr>
+                                                <tr class="tr">
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding tdwidth23p">End Date Range (MM/DD/YYYY): </td>
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding">@item.DateRangeEND.ToString("MM/dd/yyyy")</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding tdwidth23p">Team Name: </td>
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding">@item.TeamName</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding tdwidth23p">Component: </td>
+                                                    <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6");" class="tdpadding">@item.Component</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="padding: 0px!important; border: 1px solid #DDDDDD!important;">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td class="tddarkgrayback tdpadding fontheadenv">Environment</td>
+                                                                    <td align="center" style="width: 100px!important;" class="tddarkgrayback tdpadding fontheadenv">Total</td>
+                                                                    <td align="center" style="width: 100px!important;" class="tddarkgrayback tdpadding fontheadenv">Passed</td>
+                                                                    <td align="center" style="width: 100px!important;" class="tddarkgrayback tdpadding fontheadenv">Failed</td>
+                                                                    <td align="center" style="width: 100px!important;" class="tddarkgrayback tdpadding fontheadenv">Not Completed</td>
+                                                                    <td align="center" style="width: 100px!important;" class="tddarkgrayback tdpadding fontheadenv">No Run</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody style="min-height:0!important; max-height:100px!important; overflow-y:scroll">
+                                                            @foreach(var itemenv in item.ExecutionReportByEnvCount)
+                                                            {
+                                                            <tr>
+                                                                <td class="tdpadding fontheadenv">@itemenv.ENVURL</td>
+                                                                <td align="center" style="width: 100px!important;" class="tdpadding fontheadenv"><span style="color:darkblue!important; cursor:pointer!important; font-weight:600;" onclick="getCountAndVMInfo('@itemenv.TSIDS')">@itemenv.TOTAL</span></td>
+                                                                <td align="center" style="width: 100px!important;" class="tdpadding fontheadenv">@itemenv.PASSED</td>
+                                                                <td align="center" style="width: 100px!important;" class="tdpadding fontheadenv">@itemenv.FAILED</td>
+                                                                <td align="center" style="width: 100px!important;" class="tdpadding fontheadenv">@itemenv.NOTCOMPLETED</td>
+                                                                <td align="center" style="width: 100px!important;" class="tdpadding fontheadenv">@itemenv.NORUNED</td>
+                                                                </tr>
+                                                                }
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="background-color:@(altRow ? "#CCBADC" : "#D6F5D6"); width: 300px!important;">
+                                            <span style="display: none!important;" id="spnpass_@item.Rowid">@item.TotalPass</span>
+                                            <span style="display: none!important;" id="spnfail_@item.Rowid">@item.TotalFail</span>
+                                            <span style="display: none!important;" id="spnnotcompleted_@item.Rowid">@item.TotalNotCompleted</span>
+                                            <span style="display: none!important;" id="spnnorun_@item.Rowid">@item.TotalNoRun</span>
+                                            <div id="chart_div_@item.Rowid"></div>
+
+                                            <div class="col-sm-12" style="padding: 0px!important;">
+                                            @if(item.TotalPass  > 0)
+                                            {
+                                                <div title="Get passed testcases details" align="middle" class="col-sm-3" style="background-color:#109618; font-size:9px; color:white; font-size:9px; font-weight:600; cursor:pointer; padding:0px; border:1px solid black;" onclick="TSWTestCasesDetails('@item.PasstestsuitId', 'PA')">Pass</div>
+                                            }
+                                            @if(item.TotalFail  > 0)
+                                            {
+                                                <div title="Get failed testcases details" align="middle" class="col-sm-3" style="background-color:#E60000; font-size:9px; color:white; font-size:9px; font-weight:600; cursor:pointer; padding:0px; border:1px solid black;" onclick="TSWTestCasesDetails('@item.FailtestsuitId', 'FA')">Fail</div>
+                                            }
+                                            @if(item.TotalNotCompleted  > 0){
+                                                <div title="Get not-completed testcases details" align="middle" class="col-sm-3" style="background-color:#FF6347; font-size:9px; color:white; font-size:9px; font-weight:600; cursor:pointer; padding:0px; border:1px solid black;" onclick="TSWTestCasesDetails('@item.NotCompletedtestsuitId', 'NC')">Not Completed</div>
+                                            }
+                                            @if(item.TotalNoRun > 0)
+                                            {
+                                                <div title="Get no-run testcases details" align="middle" class="col-sm-3" style="background-color:#FF9900; font-size:9px; color:white; font-size:9px; font-weight:600; cursor:pointer; padding:0px; border:1px solid black;" onclick="TSWTestCasesDetails('@item.NoRuntestsuitId', 'NR')">No Run</div>
+                                            }
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    altRow = !altRow; 
+                                    }
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" style="background-color:#F2F2F2!important; border:2px solid #DDDDDD!important; padding:0px!important;">
+
+                                <table style="border-collapse:collapse; width:auto">
+                                    <tr>
+                                        <td align="center" class="paddingleftright">
+                                            Total '@TotalRow' Record found.
+                                        </td>
+                                        <td align="center" class="paddingleftright">
+                                            <img id="imgpagefirstf" src="~/Content/left_last_arrow.png" height="24" width="24" title="First" style="cursor:pointer;" />
+                                        </td>
+                                        <td align="center" class="paddingleftright">
+                                            <img id="imgpageprevf" src="~/Content/left_arrow.png" height="24" width="24" title="Previous" style="cursor:pointer;" />
+                                        </td>
+                                        <td align="center" class="paddingleftright">
+                                            <span id="spnPagenum2" title="Current Page Number"></span></td>
+                                        <td align="center" class="paddingleftright">
+                                            <img id="imgpagenextf" src="~/Content/right_arrow.png" height="24" width="24" title="Next" style="cursor:pointer;" />
+                                        </td>
+                                        <td align="center" class="paddingleftright">
+                                            <img id="imgpagelastf" src="~/Content/right_last_arrow.png" height="24" width="24" title="Last" style="cursor:pointer;" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /.widget-main -->
+            </div>
+            <!-- /.widget-body -->
+
+        </div>
+        <!-- /.widget-box -->
+    </div>
+</div>
+
+<div id="vmModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">    
+    <div>
+        <table style="width:100%; border-collapse:collapse;">
+            <tr>
+                <td class="modelheadertd" align="left" valign="middle" style="font-size: 14px!important; align-items:center; border-left: 2px solid darkgray!important; border-top: 2px solid darkgray!important; border-bottom: 2px solid darkgray!important;">Execution Summary</td>
+                <td class="modelheadertd" style="border-right: 2px solid darkgray!important; border-top: 2px solid darkgray!important; border-bottom: 2px solid darkgray!important;"><span id="modelclose1" class="modelclose">&times;</span></td>
+            </tr>
+        </table>    
+        <table style="width:100%; border-collapse:collapse;">
+            <tr>
+                <td style="color: #109618!important;" class="modeltd">Passed: <span id="modelSpnPassed" style="color: #109618!important; font-weight:500!important;"></span></td>
+                <td style="color: #E60000!important;" class="modeltd">Failed: <span id="modelSpnFailed" style="color: #E60000!important; font-weight:500!important;"></span></td>
+                <td style="color: #FF6347!important;" class="modeltd">Not Completed: <span id="modelSpnNotCompleted" style="color: #FF6347!important; font-weight:500!important;"></span></td>
+                <td style="color: #FF9900!important;" class="modeltd">No Run: <span id="modelSpnNoRun"  style="color: #FF9900!important; font-weight:500!important;"></span></td>                
+                <td style="color: #000000!important;" class="modeltd">Total: <span id="modelSpnTotal"   style="color: #000000!important; font-weight:500!important;"></span></td>
+            </tr>
+        </table>
+        <table id="envvmmodeltable" class="scroll" style="width:100%; border-collapse:collapse; border:1px solid black;">
+            <thead style="background-color:#808080!important;">
+                <th>
+                    <td style="width:190px!important;" align="center" class="tddarkgrayback tdpadding">Machine IP</td>
+                    <td style="width:220px!important;" align="center" class="tddarkgrayback tdpadding">OS</td>
+                    <td style="width:205px!important;" align="center" class="tddarkgrayback tdpadding">Browser</td>
+                </th>
+            </thead>
+            <tbody>
+            </tbody>                
+        </table>
+    </div>
+  </div>
+</div>
+
+<div id="tstcModel" class="modal">
+  <!-- Modal content -->
+  <div style="background-color: #fefefe; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; border-radius: 8px;">    
+    <div>
+        <table style="width:100%; border-collapse:collapse;">
+            <tr>
+                <td class="modelheadertd" align="left" valign="middle" style="font-size: 14px!important; align-items:center; border-left: 2px solid darkgray!important; border-top: 2px solid darkgray!important; border-bottom: 2px solid darkgray!important;">Execution Summary <span id="spnsummerytype"></span></td>
+                <td class="modelheadertd" style="border-right: 2px solid darkgray!important; border-top: 2px solid darkgray!important; border-bottom: 2px solid darkgray!important;"><span id="modelclose2" class="modelclose">&times;</span></td>
+            </tr>
+        </table>  
+        <div style="max-height:350px; overflow-y:scroll;">
+            <table id="tstcmodeltable" style="width:100%; border-collapse:collapse; border:1px solid black;">
+            <tbody>
+            </tbody>
+        </table>
+        </div>          
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+    .table {
+        border-collapse: collapse;
+        border: 1px solid #D0D1D7;
+        width: 100%!important;
+    }
+
+    .tr {
+    }
+
+    .tdgreenback {
+        border: 1px solid #D0D1D7;
+        color: white;
+        /*background-color: #08C900;*/
+        background-color: forestgreen;
+    }
+
+    .tdbalckback {
+        border: 1px solid #D0D1D7;
+        color: white;
+        background-color: #000000;
+    }
+
+    .tddarkgrayback {
+        border: 1px solid #D0D1D7;
+        color: white;
+        background-color: gray;
+        font-weight: 600;
+        font-family: Arial;
+    }
+
+    .tdwhiteback {
+        border: 1px solid #D0D1D7;
+        background-color: white!important;
+    }
+
+    .tdlightgrayback {
+        border: 1px solid #D0D1D7;
+        background-color: #F2F2F2!important;
+    }
+
+    .tdgrayback {
+        border: 1px solid #D0D1D7;
+        color: white;
+        background-color: gray;
+    }
+
+    .tdpadding {
+        padding: 3px!important;
+        border: 1px solid #DDDDDD!important;
+    }
+
+    .tdwidth30p {
+        width: 30%!important;
+    }
+
+    .tdwidth20p {
+        width: 20%!important;
+    }
+
+    .tdwidth23p {
+        width: 24%!important;
+    }
+
+    .fontheadenv {
+        font-family: Calibri!important;
+        font-size: 12px!important;
+    }
+
+    .paddingleftright {
+        padding: 0px 5px 0px 5px!important;
+        background-color: white!important;
+        border: 1px solid #D0D1D7!important;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        var currentdurationoption = getUrlVars()["duration"];
+        currentdurationoption = decodeURI(currentdurationoption);
+        if (currentdurationoption == "" || currentdurationoption == null || currentdurationoption == "undefined") {
+            $("#selFilterExecutionReport").val("5DAYS");
+            $("#divbwdate").hide();
+            $("#divTestCycle").hide();
+        }
+        else {
+            $("#selFilterExecutionReport").val(currentdurationoption);
+            if (currentdurationoption == "BWDATE") {
+                $("#divbwdate").show();
+                $("#divTestCycle").hide();
+            } else if (currentdurationoption == "BYCYCLE") {
+                $("#divbwdate").hide();
+                $("#divTestCycle").show();
+            } else {
+                $("#divbwdate").hide();
+                $("#divTestCycle").hide();
+            }
+        }
+        //-----------------------------------------------------------------------------------------------------------
+        var currentreleaseoption = getUrlVars()["release"];
+        currentreleaseoption = decodeURI(currentreleaseoption);
+        if (currentreleaseoption == "" || currentreleaseoption == null || currentreleaseoption == "undefined") { $("#selFilterExecutionReportReleaseName").val("ALL"); }
+        else { $("#selFilterExecutionReportReleaseName").val(currentreleaseoption); }
+        //-----------------------------------------------------------------------------------------------------------
+        var currentteamoption = getUrlVars()["team"];
+        currentteamoption = decodeURI(currentteamoption);
+        if (currentteamoption == "" || currentteamoption == null || currentteamoption == "undefined") { $("#selFilterExecutionReportTeamName").val("ALL"); }
+        else { $("#selFilterExecutionReportTeamName").val(currentteamoption); }
+        //-----------------------------------------------------------------------------------------------------------
+        var currentcycle = getUrlVars()["cycleid"];
+        currentcycle = decodeURI(currentcycle);
+        if (currentcycle == "" || currentcycle == null || currentcycle == "undefined") { $("#selFilterExecutionReportCycleName").val("0"); }
+        else { $("#selFilterExecutionReportCycleName").val(currentcycle); }
+        //-----------------------------------------------------------------------------------------------------------
+        var currentstartdateoption = getUrlVars()["startdate"];
+        currentstartdateoption = decodeURI(currentstartdateoption);
+        if (currentstartdateoption == "" || currentstartdateoption == null || currentstartdateoption == "undefined") { $("#inpstartdate").val(""); }
+        else { $("#inpstartdate").val(currentstartdateoption); }
+        //-----------------------------------------------------------------------------------------------------------
+        var currentenddateoption = getUrlVars()["enddate"];
+        currentenddateoption = decodeURI(currentenddateoption);
+        if (currentenddateoption == "" || currentenddateoption == null || currentenddateoption == "undefined") { $("#inpenddate").val(""); }
+        else { $("#inpenddate").val(currentenddateoption); }
+
+        $("#selFilterExecutionReport").on("change", function (e) {
+            var optionSelected = $("option:selected", this);
+            var valueSelected = this.value;
+            if (valueSelected == "BWDATE") { $("#divbwdate").show(); $("#divTestCycle").hide(); $("#selFilterExecutionReportCycleName").val("0"); }
+            else if (valueSelected == "BYCYCLE") { $("#divbwdate").hide(); $("#divTestCycle").show(); $("#selFilterExecutionReportCycleName").val("0"); }
+            else { $("#divbwdate").hide(); $("#divTestCycle").hide(); $("#selFilterExecutionReportCycleName").val("0"); }
+        });
+
+    });
+
+    function FilterExecutionReport() {
+        isfirststringadded = false;
+        var valueofdurationoption = $("#selFilterExecutionReport option:selected").val();
+        var valueofreleaseoption = $("#selFilterExecutionReportReleaseName option:selected").val();
+        var valueofteamoption = $("#selFilterExecutionReportTeamName option:selected").val();
+        var querystringinput = "";
+        if (valueofdurationoption == "" || valueofdurationoption == null || valueofdurationoption == "undefined") { } else { if (isfirststringadded == false) { querystringinput = "?duration=" + valueofdurationoption; isfirststringadded = true; } else { querystringinput = querystringinput + "&duration=" + valueofdurationoption; } }
+        if (valueofreleaseoption == "" || valueofreleaseoption == null || valueofreleaseoption == "undefined") { } else { if (isfirststringadded == false) { querystringinput = "?release=" + valueofreleaseoption; isfirststringadded = true; } else { querystringinput = querystringinput + "&release=" + valueofreleaseoption; } }
+        if (valueofteamoption == "" || valueofteamoption == null || valueofteamoption == "undefined") { } else { if (isfirststringadded == false) { querystringinput = "?team=" + valueofteamoption; isfirststringadded = true; } else { querystringinput = querystringinput + "&team=" + valueofteamoption; } }
+        if (valueofdurationoption == "BWDATE") {
+            var valueofstartdateoption = $("#inpstartdate").val();
+            var valueofenddateoption = $("#inpenddate").val();
+            if ((valueofstartdateoption != "" || valueofstartdateoption != null || valueofstartdateoption != "undefined")
+                && (valueofenddateoption != "" || valueofenddateoption != null || valueofenddateoption != "undefined")) {
+
+                if (isfirststringadded == false) {
+                    querystringinput = "?startdate=" + valueofstartdateoption;
+                    querystringinput = querystringinput + "&enddate=" + valueofenddateoption;
+                    isfirststringadded = true;
+                } else {
+                    querystringinput = querystringinput + "&startdate=" + valueofstartdateoption;
+                    querystringinput = querystringinput + "&enddate=" + valueofenddateoption;
+                }
+            }
+        }
+        var cid = $("#selFilterExecutionReportCycleName").val();
+        querystringinput = querystringinput + "&cycleid=" + cid;
+        window.location.href = window.location.protocol + "//" + window.location.hostname + window.location.pathname + querystringinput;
+    }
+
+    function getUrlVars() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+
+</script>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load('visualization', '1.0', { 'packages': ['corechart'] });
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+        for (var i = 1; i <= '@TotalRow'; i++) {
+            var pass_spn = $('#spnpass_' + i).html();
+            var fail_spn = $('#spnfail_' + i).html();
+            var notcompleted_spn = $('#spnnotcompleted_' + i).html();
+            var norun_spn = $('#spnnorun_' + i).html();
+            pa = parseInt(pass_spn);
+            fa = parseInt(fail_spn);
+            nc = parseInt(notcompleted_spn);
+            nr = parseInt(norun_spn);
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Result');
+            data.addColumn('number', 'Count');
+            data.addRows([['Pass', pa], ['Fail', fa], ['Not Completed', nc], ['No Run', nr]]);
+            var options = {
+                'title': 'Execution Report Chart',
+                'width': 282,
+                'height': 170,
+                pieHole: 0.55,
+                colors: ['#109618', '#E60000', '#FF6347', '#FF9900'],
+                //is3D: true,
+                pieSliceText: 'none',
+                //pieSliceTextStyle: { color: 'white' },
+                pieStartAngle: -45,
+                //legend: 'none',
+                //legend: { position: 'top', textStyle: { color: 'blue', fontSize: 16 } },
+                //legend: { position: 'none'},
+                //hAxis: { textPosition: 'none' },
+                //tooltip: { ignoreBounds: false }
+            };
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div_' + i));
+
+            //function selectHandler() {
+            //    var selectedItem = chart.getSelection()[0];
+            //    if (selectedItem) {
+            //        var topping = data.getValue(selectedItem.row, 0);
+            //        alert('The user selected ' + topping);
+            //    }
+            //}
+            //google.visualization.events.addListener(chart, 'select', selectHandler);
+
+            chart.draw(data, options);
+        }
+    }
+
+</script>
+
+<script>
+    var vmmodal = document.getElementById('vmModal');
+    var vmspan = document.getElementById("modelclose1");
+    vmspan.onclick = function () {
+        vmmodal.style.display = "none";
+        document.getElementById("modelSpnPassed").innerHTML = "";
+        document.getElementById("modelSpnFailed").innerHTML = "";
+        document.getElementById("modelSpnNoRun").innerHTML = "";
+        document.getElementById("modelSpnNotCompleted").innerHTML = "";
+        document.getElementById("modelSpnTotal").innerHTML = "";
+        $("#envvmmodeltable tbody").empty();
+    }
+
+    function getCountAndVMInfo(suitids) {
+        if (suitids != "") {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetCountAndVMInfo", "Home")',
+                data: "{ 'suitIds': '" + suitids + "'}",
+                async: true,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'html',
+                beforeSend: function () {
+                    document.getElementById("blockBack").style.display = '';
+                    document.getElementById("divmiddle").style.display = '';
+                },
+                complete: function () {
+                    document.getElementById("blockBack").style.display = 'none';
+                    document.getElementById("divmiddle").style.display = 'none';
+                },
+                error: function () {
+                },
+                success: function (response) {
+                    resp = jQuery.parseJSON(response)
+                    document.getElementById("modelSpnPassed").innerHTML = resp.TotalPass;
+                    document.getElementById("modelSpnFailed").innerHTML = resp.TotalFail;
+                    document.getElementById("modelSpnNoRun").innerHTML = resp.TotalNoRun;
+                    document.getElementById("modelSpnNotCompleted").innerHTML = resp.TotalNotCompleted;
+                    document.getElementById("modelSpnTotal").innerHTML = resp.Total;
+                    var vmdetails = resp.VMInfo;
+                    $("#envvmmodeltable tbody").empty();
+                    $.each(eval(vmdetails), function (i, itemenv) {
+                        var mip = itemenv.MachineIP;
+                        var mbr = itemenv.Browser;
+                        var mos = itemenv.OS;
+                        var popupvmtabmarkup = "<tr><td style='width:190px!important;' align='center' class='tdpadding'>" + mip + "</td><td style='width:220px!important;' align='center' class='tdpadding'>" + mos + "</td><td style='width:205px!important;' align='center' class='tdpadding'>" + mbr + "</td></tr>";
+                        $("#envvmmodeltable tbody").append(popupvmtabmarkup);
+                    });
+                    vmmodal.style.display = "block";
+                }
+            });
+        }
+        else { }
+    }
+
+</script>
+
+<style>
+    .modeltd {
+        border: 1px solid gray!important;
+        padding: 3px!important;
+    }
+
+    .modelheadertd {
+        border: none!important;
+        padding: 3px 5px 3px 5px!important;
+        background-color: #D0D1D7!important;
+        color: #000000!important;
+        font-weight: 500!important;
+        font-size: 14px!important;
+        line-height: 0.8!important;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 60px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        border-radius: 8px;
+    }
+
+    /* The Close Button */
+    .modelclose {
+        color: #FF0000!important;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+
+<style>
+    table.scroll { /* width: 100%; */ /* Optional */ /* border-collapse: collapse; */
+        border-spacing: 0; /*border: 1px solid black;*/
+    }
+
+        table.scroll tbody, table.scroll thead {
+            display: block;
+        }
+
+    thead tr th { /*height: 30px; line-height: 30px; text-align: left; */
+    }
+
+    table.scroll tbody {
+        max-height: 100px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    tbody { /*border-top: 1px solid black;*/
+    }
+
+        tbody td, thead th { /* width: 20%; */ /* Optional */ /*border-right: 1px solid black;*/ /* white-space: nowrap; */
+        }
+
+            tbody td:last-child, thead th:last-child {
+                border-right: none;
+            }
+</style>
+
+@*<script>
+      //// Change the selector if needed
+      //var $table = $('table.scroll'),
+      //    $bodyCells = $table.find('tbody tr:first').children(),
+      //    colWidth;
+
+      //// Adjust the width of thead cells when window resizes
+      //$(window).resize(function () {
+      //    // Get the tbody columns width array
+      //    colWidth = $bodyCells.map(function () {
+      //        return $(this).width();
+      //    }).get();
+
+      //    // Set the width of thead columns
+      //    $table.find('thead tr').children().each(function (i, v) {
+      //        $(v).width(colWidth[i]);
+      //    });
+      //}).resize(); // Trigger resize handler
+</script>*@
+
+<script>
+    recordPerPageMax = 5;
+    currentPageIndex = 0;
+
+    $(document).ready(function () {
+        tblpaginationNext("tblExecutionReport");
+        $("#imgpagefirst").click(function () { tblpaginationFisrt("tblExecutionReport"); });
+        $("#imgpageprev").click(function () { tblpaginationPrev("tblExecutionReport"); });
+        $("#imgpagenext").click(function () { tblpaginationNext("tblExecutionReport"); });
+        $("#imgpagelast").click(function () { tblpaginationLast("tblExecutionReport"); });
+        $("#imgpagefirstf").click(function () { tblpaginationFisrt("tblExecutionReport"); });
+        $("#imgpageprevf").click(function () { tblpaginationPrev("tblExecutionReport"); });
+        $("#imgpagenextf").click(function () { tblpaginationNext("tblExecutionReport"); });
+        $("#imgpagelastf").click(function () { tblpaginationLast("tblExecutionReport"); });
+    });
+
+    //General pagination on table tbody - START
+
+    function tblpaginationNext(tblid) {
+        totalRowCount = parseInt($("#" + tblid + " > tbody > tr").length);
+        totalpagereq = parseInt(totalRowCount / recordPerPageMax);
+        if (parseInt(totalRowCount % recordPerPageMax) > 0) { totalpagereq = totalpagereq + 1; }
+        loopRowcount = 0;
+        nextPageIndex = currentPageIndex + 1;
+        rowShowStartIndex = ((nextPageIndex * recordPerPageMax) - recordPerPageMax) + 1;
+        rowShowEndIndex = nextPageIndex * recordPerPageMax;
+        if (nextPageIndex > 0 && nextPageIndex <= totalpagereq) {
+            $("#" + tblid + " > tbody  > tr").each(function () { loopRowcount += 1; if (loopRowcount >= rowShowStartIndex && loopRowcount <= rowShowEndIndex) { $(this).show(); } else { $(this).hide(); } });
+            currentPageIndex = nextPageIndex;
+            $("#spnPagenum1").html("Page: " + currentPageIndex + " of " + totalpagereq);
+            $("#spnPagenum2").html("Page: " + currentPageIndex + " of " + totalpagereq);
+        }
+    }
+
+    function tblpaginationPrev(tblid) {
+        totalRowCount = parseInt($("#" + tblid + " > tbody > tr").length);
+        totalpagereq = parseInt(totalRowCount / recordPerPageMax);
+        if (parseInt(totalRowCount % recordPerPageMax) > 0) { totalpagereq = totalpagereq + 1; }
+        loopRowcount = 0;
+        prevPageIndex = currentPageIndex - 1;
+        rowShowStartIndex = ((prevPageIndex * recordPerPageMax) - recordPerPageMax) + 1;
+        rowShowEndIndex = prevPageIndex * recordPerPageMax;
+        if (prevPageIndex > 0 && prevPageIndex <= totalpagereq) {
+            $("#" + tblid + " > tbody  > tr").each(function () { loopRowcount += 1; if (loopRowcount >= rowShowStartIndex && loopRowcount <= rowShowEndIndex) { $(this).show(); } else { $(this).hide(); } });
+            currentPageIndex = prevPageIndex;
+            $("#spnPagenum1").html("Page: " + currentPageIndex + " of " + totalpagereq);
+            $("#spnPagenum2").html("Page: " + currentPageIndex + " of " + totalpagereq);
+        }
+
+    }
+
+    function tblpaginationFisrt(tblid) {
+        totalRowCount = parseInt($("#" + tblid + " > tbody > tr").length);
+        totalpagereq = parseInt(totalRowCount / recordPerPageMax);
+        if (parseInt(totalRowCount % recordPerPageMax) > 0) { totalpagereq = totalpagereq + 1; }
+        loopRowcount = 0;
+        firstPageIndex = 0 + 1;
+        rowShowStartIndex = ((firstPageIndex * recordPerPageMax) - recordPerPageMax) + 1;
+        rowShowEndIndex = firstPageIndex * recordPerPageMax;
+        if (firstPageIndex > 0 && firstPageIndex <= totalpagereq) {
+            $("#" + tblid + " > tbody  > tr").each(function () { loopRowcount += 1; if (loopRowcount >= rowShowStartIndex && loopRowcount <= rowShowEndIndex) { $(this).show(); } else { $(this).hide(); } });
+            currentPageIndex = firstPageIndex;
+            $("#spnPagenum1").html("Page: " + currentPageIndex + " of " + totalpagereq);
+            $("#spnPagenum2").html("Page: " + currentPageIndex + " of " + totalpagereq);
+        }
+    }
+
+    function tblpaginationLast(tblid) {
+        totalRowCount = parseInt($("#" + tblid + " > tbody > tr").length);
+        neetextpage = false;
+        totalpagereq = parseInt(totalRowCount / recordPerPageMax);
+        if (parseInt(totalRowCount % recordPerPageMax) > 0) { totalpagereq = totalpagereq + 1; }
+        loopRowcount = 0;
+        lastPageIndex = totalpagereq;
+        rowShowStartIndex = ((lastPageIndex * recordPerPageMax) - recordPerPageMax) + 1;
+        rowShowEndIndex = lastPageIndex * recordPerPageMax;
+        if (lastPageIndex > 0 && lastPageIndex <= totalpagereq) {
+            $("#" + tblid + " > tbody  > tr").each(function () { loopRowcount += 1; if (loopRowcount >= rowShowStartIndex && loopRowcount <= rowShowEndIndex) { $(this).show(); } else { $(this).hide(); } });
+            currentPageIndex = lastPageIndex;
+            $("#spnPagenum1").html("Page: " + currentPageIndex + " of " + totalpagereq);
+            $("#spnPagenum2").html("Page: " + currentPageIndex + " of " + totalpagereq);
+        }
+    }
+    //General pagination on table tbody - END
+</script>
+
+<script>
+    var tstcmodal = document.getElementById('tstcModel');
+    var tstcspan = document.getElementById("modelclose2");
+
+    tstcspan.onclick = function () {
+        tstcmodal.style.display = "none";
+        $("#tstcmodeltable tbody").empty();
+    }
+
+    function TSWTestCasesDetails(suitids, retype) {
+        var tsbackcolour = "#aa80ff";
+        var tcbackcolour = "#FFFFFF";
+        var sontext = "";
+
+        if (retype == "PA") { tcbackcolour = "#8cf392"; sontext = "(PASSED)"; }
+        else if (retype == "FA") { tcbackcolour = "#ff8080"; sontext = "(FAILED)"; }
+        else if (retype == "NC") { tcbackcolour = "#ff9380"; sontext = "(NOT COMPLETED)"; }
+        else if (retype == "NR") { tcbackcolour = "#ffcc80"; sontext = "(NO RUN)"; }
+        document.getElementById("spnsummerytype").innerHTML = sontext;
+
+        if (suitids != "") {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetSuitWithCasesInfo", "Home")',
+                data: "{ 'suitIds': '" + suitids + "'}",
+                async: true,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'html',
+                beforeSend: function () {
+                    document.getElementById("blockBack").style.display = '';
+                    document.getElementById("divmiddle").style.display = '';
+                },
+                complete: function () {
+                    document.getElementById("blockBack").style.display = 'none';
+                    document.getElementById("divmiddle").style.display = 'none';
+                },
+                error: function () {
+                },
+                success: function (response) {
+                    resp = jQuery.parseJSON(response)
+                    $("#tstcmodeltable tbody").empty();
+                    var newrowstoupdate = "";
+                    for (oi = 0; oi < resp.TotalRowCount; oi++) {
+                        var tsname = resp.TSTCInfo[oi].TestsuitName;
+                        newrowstoupdate = newrowstoupdate + "<tr><td style='border:1px solid black; background-color:" + tsbackcolour + "; padding:5px!important;'><div>" + tsname + "</div>";
+                        var innertab = "";
+                        if (resp.TSTCInfo[oi].TestcasesRowCount > 0) {
+                            innertab = "<div style='padding-left:20px; background-color: white;'><table style='width:100%; border-collapse:collapse; border:1px solid black;'><tr style='border: 1px solid black;'><td style='background-color:#A9A9A9;'>Test case Name</td><td style='background-color:#A9A9A9;'>Start</td><td style='background-color:#A9A9A9;'>End</td></tr>";
+                        }
+                        for (ii = 0 ; ii < resp.TSTCInfo[oi].TestcasesRowCount; ii++) {
+                            valtcname = resp.TSTCInfo[oi].TestCasesInfo[ii].TCName;
+                            valtcstart = resp.TSTCInfo[oi].TestCasesInfo[ii].TCStartTime;
+                            valtcend = resp.TSTCInfo[oi].TestCasesInfo[ii].TCEndTime;
+                            innertab = innertab + "<tr style='border: 1px solid black;'><td style='background-color:" + tcbackcolour + ";'>" + valtcname + "</td><td style='background-color:" + tcbackcolour + ";'>" + valtcstart + "</td><td style='background-color:" + tcbackcolour + ";'>" + valtcend + "</td></tr>";
+                        }
+                        if (resp.TSTCInfo[oi].TestcasesRowCount > 0) {
+                            innertab = innertab + "</table>";
+                        }
+                        newrowstoupdate = newrowstoupdate + innertab + "</div></td></tr>";
+                    }
+                    $("#tstcmodeltable tbody").append(newrowstoupdate);
+                    tstcmodal.style.display = "block";
+                }
+            });
+        }
+        else { }
+    }
+</script>
+
+<script>
+    $(function () {
+        $(".dpsun").datepicker({
+            showButtonPanel: true,
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: "mm/dd/yy",
+            showOn: "button",
+            buttonImage: "../Content/calnew.png",
+            buttonImageHeight: "28px",
+            buttonImageWidth: "28px",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+        $(".dpsun").datepicker("option", "minDate", null)
+        $(".dpsun").datepicker("option", "maxDate", null)
+        $('img[title="Select date"]').css({ 'height': '28px', 'width': '28px', 'cursor': 'pointer' });
+    });
+</script>
+<style type="text/css">
+    .ui-datepicker-trigger {
+        z-index: 999999999999!important;
+    }
+
+    .ui-datepicker {
+        z-index: 999999999999!important;
+    }
+</style>

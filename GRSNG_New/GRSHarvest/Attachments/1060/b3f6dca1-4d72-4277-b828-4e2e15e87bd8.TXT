@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialTaxonomySearchInput xmlns:ns2="local"><treeType>Inclusion criteria</treeType><searchString>inc-</searchString><treeCodeFilter>1000159-</treeCodeFilter><operationType>hierarchy</operationType></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialTaxonomySearchInput>

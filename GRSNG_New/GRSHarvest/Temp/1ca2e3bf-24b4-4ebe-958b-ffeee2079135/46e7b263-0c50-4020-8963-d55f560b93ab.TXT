@@ -1,0 +1,25 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: .//tr[contains(@id,'raMore')]//label[contains(text(),'2014')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBASDPC05316', ip: '10.10.242.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.2, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 16760, moz:profile: C:\Users\SG00449864.TECHMAH..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0e64864-f01c-4d2b-9f5d-886bb329dea9
+*** Element info: {Using=xpath, value=.//tr[contains(@id,'raMore')]//label[contains(text(),'2014')]} 
+ sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362);
+com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.BasicSearchPage.link_selectFromList(BasicSearchPage.java:88);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.ResultSummaryPage_Steps.iClickOnLinkOnPage(ResultSummaryPage_Steps.java:1218);
+✽.Then I click on link "select from list" on page "Basic Search"(com/clarivateanalytics/wos/gui/cucumber/Deployment/CCIssues.feature:341)

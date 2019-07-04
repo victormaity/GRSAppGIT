@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.auth.v1.TargetRecordsInput xmlns:ns2="local"><idList>90517410820643</idList></ns2:com.thomsonreuters.ls.service.contract.soap.auth.v1.TargetRecordsInput>

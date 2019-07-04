@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="159344"><Title>AstraZeneca and Imperial College London to conduct research on MLE-4901 for menopausal hot flushes</Title><Principal>Imperial College London</Principal><Partner>AstraZeneca plc</Partner><Type>Drug - Development Services</Type><Status>Active</Status></Deal>

@@ -1,0 +1,307 @@
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GRSExecutor.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GRSExecutor.pdb
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Core.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Windsor.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\ClosedXML.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\DocumentFormat.OpenXml.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.SqlServer.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Core.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Ionic.Zip.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Microsoft.Web.Infrastructure.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Mono.Cecil.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Helpers.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Mvc.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Razor.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.Deployment.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.Razor.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Http.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Data.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.BL.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Http.WebHost.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Facilities.WcfIntegration.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Net.Http.Formatting.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Newtonsoft.Json.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.Extended.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\QCClient.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\SharpSvn.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\LibGit2Sharp.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\TechTalk.JiraRestClient.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\nunit.framework.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\RestSharp.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Core.pdb
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.ServiceLocation.pdb
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Core.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Windsor.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\ClosedXML.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.SqlServer.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Ionic.Zip.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Helpers.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Mvc.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Razor.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.Deployment.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.Razor.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Http.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Data.pdb
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.BL.pdb
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Http.WebHost.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Facilities.WcfIntegration.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Net.Http.Formatting.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Newtonsoft.Json.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.Extended.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\QCClient.pdb
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\SharpSvn.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\nunit.framework.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\RestSharp.xml
+E:\Jenkins\workspace\GRSNG\GRSExecutor\bin\SharpPlink-x64.svnExe
+E:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csprojResolveAssemblyReference.cache
+E:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.Resource.resources
+E:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csproj.GenerateResource.Cache
+E:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.dll
+E:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GRSExecutor.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Core.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Windsor.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\ClosedXML.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\DocumentFormat.OpenXml.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.SqlServer.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Core.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Ionic.Zip.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Microsoft.Web.Infrastructure.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Mono.Cecil.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Helpers.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Mvc.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Razor.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.Deployment.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.Razor.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Http.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Data.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.BL.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Http.WebHost.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Facilities.WcfIntegration.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Net.Http.Formatting.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Newtonsoft.Json.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.Extended.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\QCClient.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\SharpSvn.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\LibGit2Sharp.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\TechTalk.JiraRestClient.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\nunit.framework.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\RestSharp.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.ServiceLocation.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Core.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Windsor.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\ClosedXML.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.SqlServer.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Ionic.Zip.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Helpers.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Mvc.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Razor.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.Deployment.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.WebPages.Razor.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Http.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Data.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Web.Http.WebHost.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Castle.Facilities.WcfIntegration.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\System.Net.Http.Formatting.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\Newtonsoft.Json.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\EntityFramework.Extended.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\SharpSvn.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\LibGit2Sharp.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\LibGit2Sharp.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\nunit.framework.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\RestSharp.xml
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\SharpPlink-x64.svnExe
+D:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csprojResolveAssemblyReference.cache
+D:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.Resource.resources
+D:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csproj.GenerateResource.Cache
+D:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GRSExecutor.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Core.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.BL.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\QCClient.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\NativeBinaries\amd64\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\NativeBinaries\x86\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\NativeBinaries\x86\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\LibGit2Sharp.dll.config
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.DataLINQ.dll
+D:\Jenkins\workspace\GRSNG\GRSExecutor\bin\GlobalReportingSystem.DataLINQ.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\NativeBinaries\amd64\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\NativeBinaries\x86\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\NativeBinaries\x86\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\LibGit2Sharp.dll.config
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GRSExecutor.dll.config
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GRSExecutor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GRSExecutor.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Castle.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Castle.Windsor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\ClosedXML.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\DocumentFormat.OpenXml.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\EntityFramework.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\EntityFramework.SqlServer.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Ionic.Zip.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Microsoft.Practices.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Microsoft.Web.Infrastructure.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Mono.Cecil.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Helpers.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Mvc.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Razor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.WebPages.Deployment.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.WebPages.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.WebPages.Razor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Http.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Data.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.BL.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Http.WebHost.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Castle.Facilities.WcfIntegration.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Net.Http.Formatting.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Newtonsoft.Json.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\EntityFramework.Extended.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\QCClient.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\SharpSvn.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.DataLINQ.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\LibGit2Sharp.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\TechTalk.JiraRestClient.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\nunit.framework.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\RestSharp.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Core.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.ServiceLocation.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Castle.Core.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Castle.Windsor.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\ClosedXML.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\EntityFramework.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\EntityFramework.SqlServer.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Ionic.Zip.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Helpers.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Mvc.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Razor.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.WebPages.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.WebPages.Deployment.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.WebPages.Razor.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Http.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Data.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.BL.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Web.Http.WebHost.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Castle.Facilities.WcfIntegration.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\System.Net.Http.Formatting.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\Newtonsoft.Json.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\EntityFramework.Extended.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\QCClient.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\SharpSvn.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\GlobalReportingSystem.DataLINQ.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\LibGit2Sharp.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\LibGit2Sharp.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\nunit.framework.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\RestSharp.xml
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\bin\SharpPlink-x64.svnExe
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csprojResolveAssemblyReference.cache
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.Resource.resources
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csproj.GenerateResource.Cache
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\LibGit2Sharp.dll.config
+E:\GRS_New\GRSNG\GRSExecutor\bin\NativeBinaries\amd64\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\NativeBinaries\amd64\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\NativeBinaries\x86\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\NativeBinaries\x86\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\NativeBinaries\osx\libgit2-785d8c4.dylib
+E:\GRS_New\GRSNG\GRSExecutor\bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+E:\GRS_New\GRSNG\GRSExecutor\bin\GRSExecutor.dll.config
+E:\GRS_New\GRSNG\GRSExecutor\bin\GRSExecutor.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\GRSExecutor.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\Castle.Core.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\Castle.Windsor.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\ClosedXML.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\DocumentFormat.OpenXml.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\EntityFramework.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\EntityFramework.SqlServer.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Core.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.ServiceLocation.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\Ionic.Zip.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\Microsoft.Practices.ServiceLocation.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\Microsoft.Web.Infrastructure.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\Mono.Cecil.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Helpers.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Mvc.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Razor.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.WebPages.Deployment.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.WebPages.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.WebPages.Razor.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Http.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Data.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.BL.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Http.WebHost.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\Castle.Facilities.WcfIntegration.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Net.Http.Formatting.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\Newtonsoft.Json.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\EntityFramework.Extended.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\QCClient.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.DataLINQ.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\SharpSvn.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\LibGit2Sharp.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\TechTalk.JiraRestClient.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\nunit.framework.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\RestSharp.dll
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Core.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Core.dll.config
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.ServiceLocation.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.ServiceLocation.dll.config
+E:\GRS_New\GRSNG\GRSExecutor\bin\Castle.Core.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\Castle.Windsor.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\ClosedXML.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\EntityFramework.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\EntityFramework.SqlServer.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\Ionic.Zip.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Helpers.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Mvc.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Razor.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.WebPages.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.WebPages.Deployment.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.WebPages.Razor.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Http.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Data.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.Data.dll.config
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.BL.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.BL.dll.config
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Web.Http.WebHost.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\Castle.Facilities.WcfIntegration.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\System.Net.Http.Formatting.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\Newtonsoft.Json.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\EntityFramework.Extended.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\QCClient.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\QCClient.dll.config
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.DataLINQ.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\GlobalReportingSystem.DataLINQ.dll.config
+E:\GRS_New\GRSNG\GRSExecutor\bin\SharpSvn.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\LibGit2Sharp.pdb
+E:\GRS_New\GRSNG\GRSExecutor\bin\LibGit2Sharp.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\nunit.framework.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\RestSharp.xml
+E:\GRS_New\GRSNG\GRSExecutor\bin\SharpPlink-x64.svnExe
+E:\GRS_New\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csprojAssemblyReference.cache
+E:\GRS_New\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.Resource.resources
+E:\GRS_New\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csproj.GenerateResource.cache
+E:\GRS_New\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csproj.CoreCompileInputs.cache
+E:\GRS_New\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.csproj.CopyComplete
+E:\GRS_New\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.dll
+E:\GRS_New\GRSNG\GRSExecutor\obj\Debug\GRSExecutor.pdb

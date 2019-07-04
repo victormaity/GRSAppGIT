@@ -1,0 +1,1 @@
+unexpected XML tag. expected: {v1.auth.soap.contract.service.ls.thomsonreuters.com}getReferenceRecordsResponse but found: {null}error

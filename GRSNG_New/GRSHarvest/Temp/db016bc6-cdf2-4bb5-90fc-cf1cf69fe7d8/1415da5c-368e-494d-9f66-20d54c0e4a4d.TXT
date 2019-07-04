@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.BasicSearchPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage 
+ com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.SavedSearchesAndAlertsPage_Steps.iVerifyThatStatusIsChangedToRenewAfterOFFSavedSearchIsActivated(SavedSearchesAndAlertsPage_Steps.java:543);
+✽.And I verify that status is changed to 'Renew' after 'OFF' saved search is activated(com/clarivateanalytics/wos/gui/cucumber/Deployment/SavedSearchesAndAlerts.feature:539)

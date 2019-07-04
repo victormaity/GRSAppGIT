@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput xmlns:ns2="local"><treeType>literature</treeType><searchString>oral</searchString><treeCodeFilter>0000-0012-</treeCodeFilter><operationType>toplevel</operationType></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput>

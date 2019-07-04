@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.I_access_page_for_record_number(ResultSummaryPage_Steps.java:204);
+✽.Then I access page "Full Record" for record number "1"(com.clarivateanalytics.wos.gui.cucumber.deployment/CitedReferenceList.feature:28)

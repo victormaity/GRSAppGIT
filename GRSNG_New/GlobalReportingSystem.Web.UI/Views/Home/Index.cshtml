@@ -1,0 +1,188 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model GlobalReportingSystem.Core.Models.GRS.HomePageStats
+
+
+<div class="page-header">
+    <h1>Dashboard
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            All the latest updates on project in available below
+        </small>
+    </h1>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="widget-box">
+            <div class="widget-header">
+                <h4 class="widget-title lighter smaller">
+                    <i class="ace-icon fa fa-fighter-jet blue"></i>
+                    Latest deliveries
+                </h4>
+                <div class="widget-toolbar">
+                    @if (Model.TestSuites.Count > 0)
+                    {
+                        <div class="btn-group dropup">
+                            <button data-toggle="dropdown" class="btn btn-sm btn-info dropdown-toggle">Show<i class="ace-icon fa fa-angle-down icon-on-right"></i></button>
+
+                            <button data-toggle="dropdown" class="dropdown-menu dropdown-info"></button>
+
+                            <ul class="dropdown-menu dropdown-danger">
+                                <li>
+                                    <a href="@Url.Action("Index", "Home", new { @deliveryItems = 10 })">10</a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("Index", "Home", new { @deliveryItems = 50 })">50</a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("Index", "Home", new { @deliveryItems = 100 })">100</a>
+                                </li>
+                            </ul>
+                        </div>
+                    }
+                </div>
+            </div>
+            @if(Model.TestSuites.Count > 0)
+            {
+            <div class="widget-body">
+                <div class="widget-main no-padding">
+                    <table style="font-size: xx-small" class="table table-bordered table-striped">
+                        <thead class="thin-border-bottom">
+                            <tr>
+                                <th>
+                                    <i class="ace-icon fa fa-caret-right blue"></i>name
+                                </th>
+
+                                <th>
+                                    <i class="ace-icon fa fa-caret-right blue"></i>time
+                                </th>
+
+                                <th>
+                                    <i class="ace-icon fa fa-caret-right blue"></i>status
+                                </th>
+
+                                <th>
+                                    <i class="ace-icon fa fa-caret-right blue"></i>part of
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var testSuite in Model.TestSuites)
+                            {
+                                <tr>
+                                    <td>
+                                        <a href="@Url.Action("Index", "TestCycle", new { @id = testSuite.TestCycle.ID, @testSuite = testSuite.ID })">@testSuite.TSName</a>
+                                    </td>
+                                    <td style="font-size: small">
+                                        @{
+                                            var firstOrDefault = testSuite.TestCases.OrderByDescending(p => p.ID).FirstOrDefault();
+                                        }
+                                        @if (firstOrDefault != null || testSuite.DeliveryTime.HasValue)
+                                        {
+                                            TimeSpan difference;
+                                            if (testSuite.DeliveryTime.HasValue)
+                                            {
+                                                difference = (DateTime.Now - testSuite.DeliveryTime.Value);
+                                            }
+                                            else
+                                            {
+                                                difference = (DateTime.Now - firstOrDefault.TCEndTime);
+                                            }
+                                            if (difference.TotalSeconds < 60)
+                                            {
+                                                <div class="time">
+                                                    <i class="ace-icon fa fa-clock-o"></i>
+                                                    <span class="green">@Math.Round(difference.TotalSeconds) sec</span>
+                                                </div>
+                                            }
+                                            else
+                                                if (difference.TotalMinutes < 60)
+                                                {
+                                                    <div class="time">
+                                                        <i class="ace-icon fa fa-clock-o"></i>
+                                                        <span class="green">@Math.Round(difference.TotalMinutes) min</span>
+                                                    </div>
+                                                }
+                                                else
+                                                    if (difference.TotalHours < 24)
+                                                    {
+                                                        <div class="time">
+                                                        <i class="ace-icon fa fa-clock-o"></i>
+                                                        <span class="green">@Math.Round(difference.TotalHours) hrs</span>
+                                                        </div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="time">
+                                                        <i class="ace-icon fa fa-clock-o"></i>
+                                                        <span class="green">@Math.Round(difference.TotalDays) day(s)</span>
+                                                        </div>
+                                                    }
+                                            }
+                                    </td>
+                                    <td>
+                                        @{
+                                            var total = 0;
+                                            var percentPassed = 0;
+                                            var percentFailed = 0;
+                                            var passedCount = testSuite.PassedTestCases.HasValue ? testSuite.PassedTestCases : 0;
+                                            var failedCount = testSuite.FailedTestCases.HasValue ? testSuite.FailedTestCases : 0;
+                                            if (testSuite.PassedTestCases.HasValue && testSuite.FailedTestCases.HasValue)
+                                            {
+                                                total = (int)testSuite.PassedTestCases + (int)testSuite.FailedTestCases;
+                                                percentPassed = (int)(0.5f + ((100f * testSuite.PassedTestCases) / total));
+                                                percentFailed = (int)(0.5f + ((100f * testSuite.FailedTestCases) / total));
+                                            }
+                                          }
+                                          <div data-rel="tooltip" title="" data-original-title="Passed: @passedCount Failed: @failedCount" class="progress progress-striped">
+                                            <div class="progress-bar progress-bar-success" style="width: @(percentPassed)%;"></div>
+                                            <div class="progress-bar progress-bar-danger" style="width: @(percentFailed)%;"></div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("Index", "TestCycle", new { @id = testSuite.TestCycle.ID })">@testSuite.TestCycle.CycleName</a>
+                                        </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.widget-main -->
+            </div>
+                <!-- /.widget-body -->
+            }
+            else
+            {
+                <div class="widget-body">
+                There are no updates yet...
+                    </div>
+            }
+            
+        </div>
+        <!-- /.widget-box -->
+    </div>
+    @*<div class="col-sm-6">
+        <div class="widget-box">
+            <div class="widget-header">
+                <h4 class="widget-title lighter smaller">
+                    <i class="ace-icon fa fa-fighter-jet blue"></i>
+                    Current regression statistics
+                </h4>
+            </div>
+
+            <div class="widget-body">
+                <div class="widget-main no-padding">
+                    Pie chart
+                </div>
+                <!-- /.widget-main -->
+            </div>
+            <!-- /.widget-body -->
+        </div>
+        <!-- /.widget-box -->
+    </div>*@
+</div>

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/139508/qa_automation/GRS_NextGen/GRSSikuli
+END
+SikuliRetrieveService.svc.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/124971/qa_automation/GRS_NextGen/GRSSikuli/SikuliRetrieveService.svc.cs
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/139508/qa_automation/GRS_NextGen/GRSSikuli/packages.config
+END
+SikuliService.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/120036/qa_automation/GRS_NextGen/GRSSikuli/SikuliService.asmx
+END
+Web.Release.config
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/120036/qa_automation/GRS_NextGen/GRSSikuli/Web.Release.config
+END
+Global.asax
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/120036/qa_automation/GRS_NextGen/GRSSikuli/Global.asax
+END
+GRSSikuli.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/139508/qa_automation/GRS_NextGen/GRSSikuli/GRSSikuli.csproj
+END
+Web.Debug.config
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/120036/qa_automation/GRS_NextGen/GRSSikuli/Web.Debug.config
+END
+Global.asax.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/129276/qa_automation/GRS_NextGen/GRSSikuli/Global.asax.cs
+END
+SikuliService.asmx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/127645/qa_automation/GRS_NextGen/GRSSikuli/SikuliService.asmx.cs
+END
+GetSikuli.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/129276/qa_automation/GRS_NextGen/GRSSikuli/GetSikuli.cs
+END
+ISikuliRetrieveService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/122713/qa_automation/GRS_NextGen/GRSSikuli/ISikuliRetrieveService.cs
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/139508/qa_automation/GRS_NextGen/GRSSikuli/Web.config
+END
+SikuliRetrieveService.svc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/122713/qa_automation/GRS_NextGen/GRSSikuli/SikuliRetrieveService.svc
+END

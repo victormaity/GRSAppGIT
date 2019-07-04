@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=trialContactNames%3AAndr%C3%A9-Michael+Beer&hits=10&offset=0&filtersEnabled=1&queryLanguage=ssql

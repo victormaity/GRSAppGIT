@@ -1,0 +1,1 @@
+          select drug_id,regulatory_designation_id from (select drug_id,regulatory_designation_id         from rs_drug.FF_DRUG_REGULATORY_DESIGNATION ORDER BY dbms_random.value)  where drug_id in(select drug_id from rs_drug.ff_drug)and rownum<5     

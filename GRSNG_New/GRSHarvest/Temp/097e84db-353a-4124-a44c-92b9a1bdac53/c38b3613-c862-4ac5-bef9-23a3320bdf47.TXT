@@ -1,0 +1,1 @@
+          select ID from CI_PUBLIC_STAGING.JP_THERAPY_AREA ORDER BY NAME     

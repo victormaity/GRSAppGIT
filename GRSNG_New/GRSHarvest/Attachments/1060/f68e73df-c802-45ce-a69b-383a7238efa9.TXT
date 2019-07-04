@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node match="false" depth="1" leaf="false" name="Testis tumor" treeCode="1000222-" id="1000222"></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.OntologyTreeOutput>

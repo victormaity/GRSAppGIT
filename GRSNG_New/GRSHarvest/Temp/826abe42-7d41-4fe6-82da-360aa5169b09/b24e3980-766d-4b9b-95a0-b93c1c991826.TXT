@@ -1,0 +1,12 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-IBO79FMVJOJ', ip: '10.152.83.116', os.name: 'Windows Server 2008 R2', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9920, moz:profile: D:\Users\WoSWin7_12\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 19ff90ca-3817-4bc2-b108-13c3e2123d37
+*** Element info: {Using=xpath, value=//div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]} 
+ com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.CompoundSearchPage.runSearch(CompoundSearchPage.java:214);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.I_perform_search_by_field_with_query_on_page(BasicSearchPage_Steps.java:220);
+✽.And I perform search by field "Compound Name" with query "CO" on page "Compound Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:623)

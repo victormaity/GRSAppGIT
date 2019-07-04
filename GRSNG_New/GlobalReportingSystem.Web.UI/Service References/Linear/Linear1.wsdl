@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RunTests">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RunTestsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="WaitForRelResults">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="executionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WaitForRelResultsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WaitForRelResultsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReRunTest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tcId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReRunTestResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RunTestsSoapIn">
+    <wsdl:part name="parameters" element="tns:RunTests" />
+  </wsdl:message>
+  <wsdl:message name="RunTestsSoapOut">
+    <wsdl:part name="parameters" element="tns:RunTestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WaitForRelResultsSoapIn">
+    <wsdl:part name="parameters" element="tns:WaitForRelResults" />
+  </wsdl:message>
+  <wsdl:message name="WaitForRelResultsSoapOut">
+    <wsdl:part name="parameters" element="tns:WaitForRelResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReRunTestSoapIn">
+    <wsdl:part name="parameters" element="tns:ReRunTest" />
+  </wsdl:message>
+  <wsdl:message name="ReRunTestSoapOut">
+    <wsdl:part name="parameters" element="tns:ReRunTestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LinearSoap">
+    <wsdl:operation name="RunTests">
+      <wsdl:input message="tns:RunTestsSoapIn" />
+      <wsdl:output message="tns:RunTestsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WaitForRelResults">
+      <wsdl:input message="tns:WaitForRelResultsSoapIn" />
+      <wsdl:output message="tns:WaitForRelResultsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReRunTest">
+      <wsdl:input message="tns:ReRunTestSoapIn" />
+      <wsdl:output message="tns:ReRunTestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LinearSoap" type="tns:LinearSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RunTests">
+      <soap:operation soapAction="http://tempuri.org/RunTests" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WaitForRelResults">
+      <soap:operation soapAction="http://tempuri.org/WaitForRelResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReRunTest">
+      <soap:operation soapAction="http://tempuri.org/ReRunTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LinearSoap12" type="tns:LinearSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RunTests">
+      <soap12:operation soapAction="http://tempuri.org/RunTests" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WaitForRelResults">
+      <soap12:operation soapAction="http://tempuri.org/WaitForRelResults" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReRunTest">
+      <soap12:operation soapAction="http://tempuri.org/ReRunTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Linear">
+    <wsdl:port name="LinearSoap" binding="tns:LinearSoap">
+      <soap:address location="http://10.236.4.153/nggrs/executor/Linear.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LinearSoap12" binding="tns:LinearSoap12">
+      <soap12:address location="http://10.236.4.153/nggrs/executor/Linear.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

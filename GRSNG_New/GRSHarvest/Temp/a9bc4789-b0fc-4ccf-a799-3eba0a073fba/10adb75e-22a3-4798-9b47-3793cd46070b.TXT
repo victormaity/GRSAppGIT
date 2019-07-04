@@ -1,0 +1,1 @@
+http://mwa.us-west-2.stable.dev.cortellis.int.clarivate.com:8335/mr/RestSearchService/v4/search?dataset=company&searchQuery=Cancer&queryLanguage=ssql&returnFields=companyId%2CcompanyActiveDrugIdAll&returnLimit=10&filters=companyActiveDrugIdAll%28totalOptionCount%3Dtrue%2CreturnLimit%3D10%29&offset=0

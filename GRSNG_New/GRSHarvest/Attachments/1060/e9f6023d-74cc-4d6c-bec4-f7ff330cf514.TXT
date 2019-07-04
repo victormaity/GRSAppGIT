@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput xmlns:ns2="local" id="157"><Title>Hepatocellular Carcinoma</Title><Teaser>
+  Facts about Hepatocellular Carcinoma.
+  
+    Hepatocellular carcinoma (HCC) is a primary epithelial tumor of the liver that is commonly associated with underlying chronic liver disease of viral, metabolic or autoimmune origin, or alcohol abuse. It is frequently, but not necessarily, preceded by cirrhosis (Best, J. et al., 2017; Villanueva, A., 2019), and is a leading cause of death in patien...</Teaser></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput>

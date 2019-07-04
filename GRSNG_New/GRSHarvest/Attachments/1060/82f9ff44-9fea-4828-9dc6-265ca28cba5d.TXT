@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Indication id="139" name="Graves disease"><Synonyms><Synonym>Graves' disease</Synonym><Synonym>Basedow disease</Synonym></Synonyms></Indication>

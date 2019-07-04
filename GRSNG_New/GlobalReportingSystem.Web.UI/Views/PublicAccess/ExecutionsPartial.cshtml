@@ -1,0 +1,173 @@
+﻿@model List<GlobalReportingSystem.Core.Models.Entities.TestsExecution>
+@foreach (var execution in Model)
+{
+    <tr id="@execution.ID">
+        <td executionid="@execution.ID">
+            <div class="radio execution">
+                <label>
+                    <input name="form-field-radio" id="form-field-select-exec" type="checkbox" class="ace" id="@execution.ID" onclick="enableExecutions();">
+                    <span class="lbl"></span>
+                </label>
+            </div>
+        </td>
+        <td executionid="@execution.ID">
+            @execution.Project.DisplayName
+        </td>
+        <td executionid="@execution.ID">
+            @(execution.Client1 != null ? execution.Client1.RemoteMachineIP : "")
+        </td>
+        <td executionid="@execution.ID">
+            <div style="width: 95%" class="tags">
+                @foreach (var test in execution.Tests.Split('|').Where(p => !string.IsNullOrEmpty(p)))
+                {
+                    <span title="@test" style="font-size: xx-small" class="tag">@test.Split('.').Last()</span>
+                }
+            </div>
+        </td>
+        <td executionid="@execution.ID">
+            @(execution.Browser ?? "")
+        </td>
+        <td executionid="@execution.ID">
+            @(execution.HostsConfiguration != null ? execution.HostsConfiguration.EnvironmentName : "")
+        </td>
+        <td executionid="@execution.ID">
+            @(execution.AccountForTestRun != null ? execution.AccountForTestRun.AccountName : "")
+        </td>
+        <td executionid="@execution.ID">
+            @(execution.ExecutionConfiguration != null ? execution.ExecutionConfiguration.Name : "")
+        </td>
+        @if (execution.Subscribers == null)
+        {
+            <td class="dialogInvoker" targetdialog="subscribers" onclick="updateSubscribers(@execution.ID);" executionid="@execution.ID"></td>
+        }
+        else
+        {
+            <td class="dialogInvoker" targetdialog="subscribers" onclick="updateSubscribers(@execution.ID);" executionid="@execution.ID">
+                @foreach (var item in @execution.Subscribers.Split(','))
+                {
+                    @item
+                    <br /> 
+                }
+            </td>
+        }
+        <td>
+            @(execution.Status ?? "Ready")
+        </td>
+        <td>
+            @foreach (var suite in execution.TestSuits)
+            {
+                var url = "http://" + (HttpContext.Current.Request.Url.Host) + ":" + ((HttpContext.Current.Request.Url.Port) + (HttpContext.Current.Request.ApplicationPath.Replace("/executor", "")) + "/PublicAccess/Report?testSuite=" + @suite.ID).Replace("//", "");
+                <label>
+                    <input name="form-field-test-suite-@execution.ID" id="@url" type="checkbox" class="ace"
+                           onclick="enableRequired('form-field-test-suite-@execution.ID','@execution.ID');"/>
+                    <span class="lbl" style="font-size: xx-small;">
+                        @suite.TSStart
+                    </span>
+                </label>
+                <br />
+            }
+            @if (execution.TestSuits.Count > 0)
+            {
+                <br />
+                <br />
+                <button id="opents-@execution.ID" class="btn btn-minier btn-white" onclick="openReport('form-field-test-suite-@execution.ID');" disabled="disabled">Open</button>
+            }
+        </td>
+
+        @{
+            var textRel = HttpContext.Current.Request.Url.AbsoluteUri.Split('?')[0].Replace("PublicAccess/ReturnHistory", "Execution/RunRel") +
+                                             "?type=linear&REL=" + (execution.RemoteExecutionLink) +
+                                             (execution.Client1 == null ? "" : "&vm=" + execution.Client1.RemoteMachineIP) +
+                                             (execution.HostsConfiguration == null ? "" : "&env=" + execution.HostsConfiguration.EnvironmentName) +
+                                             (execution.AccountForTestRun == null ? "" : "&account=" + execution.AccountForTestRun.AccountName);
+            <td><a style="cursor:pointer">@textRel</a>
+            </td>
+        }
+    </tr>
+}
+
+<script>
+    function enableExecutions() {
+        if ($("[id=form-field-select-exec]:checked").length != 0) {
+            $('#btnCoose').removeAttr('disabled');
+            $('#btnDelete').removeAttr('disabled');
+        } else {
+            $('#btnCoose').attr('disabled','disabled');
+            $('#btnDelete').attr('disabled','disabled');
+        }
+    }
+
+    function enableRequired(name,id) {
+        //debugger;
+        var checked = getCheckedBoxes(name);
+        var unchecked = getUncheckedBoxes(name);
+        if (checked.length == 0) {
+            $('#opents-'+id).attr('disabled','disabled');
+        }
+        else {
+            $('#opents-'+id).removeAttr('disabled');
+        }
+        if (checked.length >= 2) {
+            for (var i = 0; i < unchecked.length; i++) {
+                unchecked[i].setAttribute('disabled','disabled');
+            }
+        }
+        else if (checked.length < 2) {
+            for (var i = 0; i < unchecked.length; i++) {
+                unchecked[i].removeAttribute('disabled','disabled');
+            }
+        }
+    }
+
+    function openReport(name) {
+        //debugger;
+        var ts = getCheckedBoxes(name);
+        var link = ts[0].getAttribute('id');
+
+        if (ts.length > 1) {
+            link += "&testSuite2=" + ts[1].getAttribute('id').split('=')[1];
+        }
+
+        window.open(link, '_blank');
+        @*        $.ajax({
+            type: "POST",
+            url: "@Url.Action("ReturnExecutionsHistory", "PublicAccess")",
+                data: "{'user':'" + $('#hidden_user').val() + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function (msg) {
+                    $("#execution_body").html(msg);
+                }
+            });*@
+    }
+
+    function getCheckedBoxes(chkboxName) {
+        var checkboxes = document.getElementsByName(chkboxName);
+        var checkboxesChecked = [];
+        // loop over them all
+        for (var i = 0; i < checkboxes.length; i++) {
+            // And stick the checked ones onto an array...
+            if (checkboxes[i].checked) {
+                checkboxesChecked.push(checkboxes[i]);
+            }
+        }
+        // Return the array if it is non-empty, or null
+        return checkboxesChecked;//.length > 0 ? checkboxesChecked : null;
+    }
+
+    function getUncheckedBoxes(chkboxName) {
+        var checkboxes = document.getElementsByName(chkboxName);
+        var checkboxesUnchecked = [];
+        // loop over them all
+        for (var i = 0; i < checkboxes.length; i++) {
+            // And stick the checked ones onto an array...
+            if (!checkboxes[i].checked) {
+                checkboxesUnchecked.push(checkboxes[i]);
+            }
+        }
+        // Return the array if it is non-empty, or null
+        return checkboxesUnchecked;//.length > 0 ? checkboxesUnchecked : null;
+    }
+</script>

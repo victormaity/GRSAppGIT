@@ -1,0 +1,1467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\LibGit2Sharp.NativeBinaries.1.0.129\build\LibGit2Sharp.NativeBinaries.props" Condition="Exists('..\packages\LibGit2Sharp.NativeBinaries.1.0.129\build\LibGit2Sharp.NativeBinaries.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43618687-AEDB-4880-A9FD-810EC7BA790F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GlobalReportingSystem.Web.UI</RootNamespace>
+    <AssemblyName>GlobalReportingSystem.Web.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LibGit2Sharp, Version=0.22.0.0, Culture=neutral, PublicKeyToken=7cbde695407f0333, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibGit2Sharp.0.22.0\lib\net40\LibGit2Sharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocation.1.0.0\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.104.1\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSvn, Version=1.8019.4006.503, Culture=neutral, PublicKeyToken=d729672594885a28, processorArchitecture=x86">
+      <HintPath>..\packages\SharpSvn.1.8-x86.1.8019.4006.503\lib\net40\SharpSvn.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpSvn.UI, Version=1.8019.4006.503, Culture=neutral, PublicKeyToken=33789aa53ca44aa9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpSvn.1.8-x86.1.8019.4006.503\lib\net40\SharpSvn.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TechTalk.JiraRestClient">
+      <HintPath>..\packages\TechTalk.JiraRestClient.2.5.0\lib\net40-Client\TechTalk.JiraRestClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\DbAuthorizeAttribute.cs" />
+    <Compile Include="Controllers\AdminToolController.cs" />
+    <Compile Include="Controllers\ConfigurationController.cs" />
+    <Compile Include="Controllers\ExecutionController.cs" />
+    <Compile Include="Controllers\ExportToExcelController.cs" />
+    <Compile Include="Controllers\HelpController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LaunchController.cs" />
+    <Compile Include="Controllers\PublicAccessController.cs" />
+    <Compile Include="Controllers\QcExportController.cs" />
+    <Compile Include="Controllers\ReportingController.cs" />
+    <Compile Include="Controllers\TestCycleController.cs" />
+    <Compile Include="Controllers\UsersController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AnalysisService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ExecutorNg\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ExecutorService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Harvest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Linear\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LoadBalancedExecutionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SikuliService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.reuters.ime.apac.bjz.jira\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Castle.Core.dll" />
+    <Content Include="bin\Castle.Core.xml" />
+    <Content Include="bin\Castle.Facilities.WcfIntegration.dll" />
+    <Content Include="bin\Castle.Facilities.WcfIntegration.xml" />
+    <Content Include="bin\Castle.Windsor.dll" />
+    <Content Include="bin\Castle.Windsor.xml" />
+    <Content Include="bin\ClosedXML.dll" />
+    <Content Include="bin\ClosedXML.xml" />
+    <Content Include="bin\DocumentFormat.OpenXml.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.Extended.dll" />
+    <Content Include="bin\EntityFramework.Extended.xml" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\GlobalReportingSystem.BL.dll" />
+    <Content Include="bin\GlobalReportingSystem.BL.pdb" />
+    <Content Include="bin\GlobalReportingSystem.Core.dll" />
+    <Content Include="bin\GlobalReportingSystem.Core.pdb" />
+    <Content Include="bin\GlobalReportingSystem.Data.dll" />
+    <Content Include="bin\GlobalReportingSystem.Data.pdb" />
+    <Content Include="bin\GlobalReportingSystem.DataLINQ.dll" />
+    <Content Include="bin\GlobalReportingSystem.DataLINQ.pdb" />
+    <Content Include="bin\GlobalReportingSystem.ServiceLocation.dll" />
+    <Content Include="bin\GlobalReportingSystem.ServiceLocation.pdb" />
+    <Content Include="bin\GlobalReportingSystem.Web.UI.dll" />
+    <Content Include="bin\GlobalReportingSystem.Web.UI.pdb" />
+    <Content Include="bin\GRSExecutor.dll" />
+    <Content Include="bin\GRSExecutor.pdb" />
+    <Content Include="bin\Ionic.Zip.dll" />
+    <Content Include="bin\Ionic.Zip.xml" />
+    <Content Include="bin\LibGit2Sharp.dll" />
+    <Content Include="bin\LibGit2Sharp.pdb" />
+    <Content Include="bin\LibGit2Sharp.xml" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Mono.Cecil.dll" />
+    <Content Include="bin\NativeBinaries\amd64\git2-785d8c4.dll" />
+    <Content Include="bin\NativeBinaries\amd64\git2-785d8c4.pdb" />
+    <Content Include="bin\NativeBinaries\x86\git2-785d8c4.dll" />
+    <Content Include="bin\NativeBinaries\x86\git2-785d8c4.pdb" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\nunit.framework.dll" />
+    <Content Include="bin\nunit.framework.xml" />
+    <Content Include="bin\QCClient.dll" />
+    <Content Include="bin\QCClient.pdb" />
+    <Content Include="bin\RestSharp.dll" />
+    <Content Include="bin\RestSharp.xml" />
+    <Content Include="bin\SharpSvn.dll" />
+    <Content Include="bin\SharpSvn.UI.dll" />
+    <Content Include="bin\SharpSvn.UI.xml" />
+    <Content Include="bin\SharpSvn.xml" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.xml" />
+    <Content Include="bin\System.Web.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.xml" />
+    <Content Include="bin\System.Web.Http.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\TechTalk.JiraRestClient.dll" />
+    <Content Include="Content\ajax-loader.gif" />
+    <Content Include="Content\assets\avatars\avatar.png" />
+    <Content Include="Content\assets\avatars\avatar1.png" />
+    <Content Include="Content\assets\avatars\avatar2.png" />
+    <Content Include="Content\assets\avatars\avatar3.png" />
+    <Content Include="Content\assets\avatars\avatar4.png" />
+    <Content Include="Content\assets\avatars\avatar5.png" />
+    <Content Include="Content\assets\avatars\profile-pic.jpg" />
+    <Content Include="Content\assets\avatars\user.jpg" />
+    <Content Include="Content\assets\css\img\clear.png" />
+    <Content Include="Content\assets\css\img\loading.gif" />
+    <Content Include="Content\assets\js\bootstrap-editable.min.js" />
+    <Content Include="Content\assets\css\ace-fonts.css" />
+    <Content Include="Content\assets\css\ace-ie.min.css" />
+    <Content Include="Content\assets\css\ace-part2.min.css" />
+    <Content Include="Content\assets\css\ace-rtl.min.css" />
+    <Content Include="Content\assets\css\ace-skins.min.css" />
+    <Content Include="Content\assets\css\ace.min.css" />
+    <Content Include="Content\assets\css\ace.onpage-help.css" />
+    <Content Include="Content\assets\css\bootstrap-datetimepicker.css" />
+    <Content Include="Content\assets\css\bootstrap-editable.css" />
+    <Content Include="Content\assets\css\bootstrap-timepicker.css" />
+    <Content Include="Content\assets\css\bootstrap.min.css" />
+    <Content Include="Content\assets\css\chosen-sprite%402x.png" />
+    <Content Include="Content\assets\css\chosen-sprite.png" />
+    <Content Include="Content\assets\css\chosen.css" />
+    <Content Include="Content\assets\css\colorbox.css" />
+    <Content Include="Content\assets\css\colorpicker.css" />
+    <Content Include="Content\assets\css\datepicker.css" />
+    <Content Include="Content\assets\css\daterangepicker.css" />
+    <Content Include="Content\assets\css\dropzone.css" />
+    <Content Include="Content\assets\css\font-awesome.min.css" />
+    <Content Include="Content\assets\css\fullcalendar.css" />
+    <Content Include="Content\assets\css\fullcalendar.print.css" />
+    <Content Include="Content\assets\css\images\border.png" />
+    <Content Include="Content\assets\css\images\border1.png" />
+    <Content Include="Content\assets\css\images\border2.png" />
+    <Content Include="Content\assets\css\images\controls.png" />
+    <Content Include="Content\assets\css\images\ie6\borderBottomCenter.png" />
+    <Content Include="Content\assets\css\images\ie6\borderBottomLeft.png" />
+    <Content Include="Content\assets\css\images\ie6\borderBottomRight.png" />
+    <Content Include="Content\assets\css\images\ie6\borderMiddleLeft.png" />
+    <Content Include="Content\assets\css\images\ie6\borderMiddleRight.png" />
+    <Content Include="Content\assets\css\images\ie6\borderTopCenter.png" />
+    <Content Include="Content\assets\css\images\ie6\borderTopLeft.png" />
+    <Content Include="Content\assets\css\images\ie6\borderTopRight.png" />
+    <Content Include="Content\assets\css\images\loading.gif" />
+    <Content Include="Content\assets\css\images\loading_background.png" />
+    <Content Include="Content\assets\css\images\meteorshower.jpg" />
+    <Content Include="Content\assets\css\images\meteorshower2.jpg" />
+    <Content Include="Content\assets\css\images\overlay.png" />
+    <Content Include="Content\assets\css\images\pattern.jpg" />
+    <Content Include="Content\assets\css\images\pattern.png" />
+    <Content Include="Content\assets\css\images\spritemap%402x.png" />
+    <Content Include="Content\assets\css\images\spritemap.png" />
+    <Content Include="Content\assets\css\img\alpha.png" />
+    <Content Include="Content\assets\css\img\hue.png" />
+    <Content Include="Content\assets\css\img\saturation.png" />
+    <Content Include="Content\assets\css\jquery-ui.custom.min.css" />
+    <Content Include="Content\assets\css\jquery-ui.min.css" />
+    <Content Include="Content\assets\css\jquery.gritter.css" />
+    <Content Include="Content\assets\css\prettify.css" />
+    <Content Include="Content\assets\css\select2-spinner.gif" />
+    <Content Include="Content\assets\css\select2.css" />
+    <Content Include="Content\assets\css\select2.png" />
+    <Content Include="Content\assets\css\select2x2.png" />
+    <Content Include="Content\assets\css\sunburst.css" />
+    <Content Include="Content\assets\css\ui.jqgrid.css" />
+    <Content Include="Content\assets\css\uncompressed\ace-ie.css" />
+    <Content Include="Content\assets\css\uncompressed\ace-part2.css" />
+    <Content Include="Content\assets\css\uncompressed\ace-rtl.css" />
+    <Content Include="Content\assets\css\uncompressed\ace-skins.css" />
+    <Content Include="Content\assets\css\uncompressed\ace.css" />
+    <Content Include="Content\assets\css\uncompressed\bootstrap.css" />
+    <Content Include="Content\assets\css\uncompressed\chosen.css" />
+    <Content Include="Content\assets\css\uncompressed\font-awesome.css" />
+    <Content Include="Content\assets\css\uncompressed\jquery-ui.css" />
+    <Content Include="Content\assets\css\uncompressed\jquery-ui.custom.css" />
+    <Content Include="Content\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\assets\images\back_disabled.png" />
+    <Content Include="Content\assets\images\back_enabled.png" />
+    <Content Include="Content\assets\images\back_enabled_hover.png" />
+    <Content Include="Content\assets\images\forward_disabled.png" />
+    <Content Include="Content\assets\images\forward_enabled.png" />
+    <Content Include="Content\assets\images\forward_enabled_hover.png" />
+    <Content Include="Content\assets\images\gallery\image-1.jpg" />
+    <Content Include="Content\assets\images\gallery\image-2.jpg" />
+    <Content Include="Content\assets\images\gallery\image-3.jpg" />
+    <Content Include="Content\assets\images\gallery\image-4.jpg" />
+    <Content Include="Content\assets\images\gallery\image-5.jpg" />
+    <Content Include="Content\assets\images\gallery\image-6.jpg" />
+    <Content Include="Content\assets\images\gallery\thumb-1.jpg" />
+    <Content Include="Content\assets\images\gallery\thumb-2.jpg" />
+    <Content Include="Content\assets\images\gallery\thumb-3.jpg" />
+    <Content Include="Content\assets\images\gallery\thumb-4.jpg" />
+    <Content Include="Content\assets\images\gallery\thumb-5.jpg" />
+    <Content Include="Content\assets\images\gallery\thumb-6.jpg" />
+    <Content Include="Content\assets\images\sort_asc.png" />
+    <Content Include="Content\assets\images\sort_asc_disabled.png" />
+    <Content Include="Content\assets\images\sort_both.png" />
+    <Content Include="Content\assets\images\sort_desc.png" />
+    <Content Include="Content\assets\images\sort_desc_disabled.png" />
+    <Content Include="Content\assets\images\spritemap%402x.png" />
+    <Content Include="Content\assets\images\spritemap.png" />
+    <Content Include="Content\assets\img\clear.png" />
+    <Content Include="Content\assets\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\assets\img\glyphicons-halflings.png" />
+    <Content Include="Content\assets\img\loading.gif" />
+    <Content Include="Content\assets\js\ace-elements.min.js" />
+    <Content Include="Content\assets\js\ace-extra.min.js" />
+    <Content Include="Content\assets\js\ace.min.js" />
+    <Content Include="Content\assets\js\ace\ace.auto-container.js" />
+    <Content Include="Content\assets\js\ace\ace.auto-padding.js" />
+    <Content Include="Content\assets\js\ace\ace.autohide-sidebar.js" />
+    <Content Include="Content\assets\js\ace\ace.js" />
+    <Content Include="Content\assets\js\ace\ace.onpage-help.js" />
+    <Content Include="Content\assets\js\ace\ace.searchbox-autocomplete.js" />
+    <Content Include="Content\assets\js\ace\ace.settings-rtl.js" />
+    <Content Include="Content\assets\js\ace\ace.settings-skin.js" />
+    <Content Include="Content\assets\js\ace\ace.settings.js" />
+    <Content Include="Content\assets\js\ace\ace.sidebar-scroll-1.js" />
+    <Content Include="Content\assets\js\ace\ace.sidebar-scroll-2.js" />
+    <Content Include="Content\assets\js\ace\ace.sidebar.js" />
+    <Content Include="Content\assets\js\ace\ace.submenu-1.js" />
+    <Content Include="Content\assets\js\ace\ace.submenu-2.js" />
+    <Content Include="Content\assets\js\ace\ace.submenu-hover.js" />
+    <Content Include="Content\assets\js\ace\ace.touch-drag.js" />
+    <Content Include="Content\assets\js\ace\ace.widget-box.js" />
+    <Content Include="Content\assets\js\ace\ace.widget-on-reload.js" />
+    <Content Include="Content\assets\js\ace\elements.colorpicker.js" />
+    <Content Include="Content\assets\js\ace\elements.fileinput.js" />
+    <Content Include="Content\assets\js\ace\elements.scroller.js" />
+    <Content Include="Content\assets\js\ace\elements.spinner.js" />
+    <Content Include="Content\assets\js\ace\elements.treeview.js" />
+    <Content Include="Content\assets\js\ace\elements.typeahead.js" />
+    <Content Include="Content\assets\js\ace\elements.wizard.js" />
+    <Content Include="Content\assets\js\ace\elements.wysiwyg.js" />
+    <Content Include="Content\assets\js\additional-methods.min.js" />
+    <Content Include="Content\assets\js\bootbox.min.js" />
+    <Content Include="Content\assets\js\bootstrap-colorpicker.min.js" />
+    <Content Include="Content\assets\js\bootstrap-tag.min.js" />
+    <Content Include="Content\assets\js\bootstrap-wysiwyg.min.js" />
+    <Content Include="Content\assets\js\bootstrap.min.js" />
+    <Content Include="Content\assets\js\chosen.jquery.min.js" />
+    <Content Include="Content\assets\js\css.js" />
+    <Content Include="Content\assets\js\date-time\bootstrap-datepicker.min.js" />
+    <Content Include="Content\assets\js\date-time\bootstrap-datetimepicker.min.js" />
+    <Content Include="Content\assets\js\date-time\bootstrap-timepicker.min.js" />
+    <Content Include="Content\assets\js\date-time\daterangepicker.min.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.ar.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.az.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.bg.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.ca.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.cs.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.cy.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.da.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.de.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.el.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.es.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.et.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.fa.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.fi.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.fr.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.gl.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.he.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.hr.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.hu.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.id.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.is.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.it.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.ja.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.ka.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.kk.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.kr.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.lt.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.lv.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.mk.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.ms.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.nb.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.nl-BE.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.nl.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.no.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.pl.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.pt-BR.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.pt.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.ro.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.rs-latin.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.rs.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.ru.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.sk.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.sl.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.sq.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.sv.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.sw.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.th.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.tr.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.ua.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.uk.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.vi.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.zh-CN.js" />
+    <Content Include="Content\assets\js\date-time\locales\bootstrap-datepicker.zh-TW.js" />
+    <Content Include="Content\assets\js\date-time\moment.min.js" />
+    <Content Include="Content\assets\js\dropzone.js" />
+    <Content Include="Content\assets\js\dropzone.min.js" />
+    <Content Include="Content\assets\js\excanvas.min.js" />
+    <Content Include="Content\assets\js\flot\jquery.flot.min.js" />
+    <Content Include="Content\assets\js\flot\jquery.flot.pie.min.js" />
+    <Content Include="Content\assets\js\flot\jquery.flot.resize.min.js" />
+    <Content Include="Content\assets\js\fuelux\data\fuelux.tree-sample-demo-data.js" />
+    <Content Include="Content\assets\js\fuelux\fuelux.spinner.min.js" />
+    <Content Include="Content\assets\js\fuelux\fuelux.tree.min.js" />
+    <Content Include="Content\assets\js\fuelux\fuelux.wizard.min.js" />
+    <Content Include="Content\assets\js\fullcalendar.min.js" />
+    <Content Include="Content\assets\js\generic.js" />
+    <Content Include="Content\assets\js\html.js" />
+    <Content Include="Content\assets\js\html5shiv.js" />
+    <Content Include="Content\assets\js\javascript.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-ar.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-bg.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-bg1251.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-cat.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-cn.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-cs.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-da.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-de.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-dk.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-el.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-es.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-fa.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-fi.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-fr.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-gl.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-he.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-hr.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-hr1250.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-hu.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-id.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-is.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-it.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-ja.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-kr.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-lt.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-mne.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-nl.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-no.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-pl.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-pt-br.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-pt.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-ro.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-ru.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-sk.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-sr.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-sv.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-th.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-tr.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-tw.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-ua.js" />
+    <Content Include="Content\assets\js\jqGrid\i18n\grid.locale-vi.js" />
+    <Content Include="Content\assets\js\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="Content\assets\js\jquery-2.1.3.min.js" />
+    <Content Include="Content\assets\js\jquery-ui.custom.min.js" />
+    <Content Include="Content\assets\js\jquery-ui.min.js" />
+    <Content Include="Content\assets\js\jquery.autosize.min.js" />
+    <Content Include="Content\assets\js\jquery.colorbox-min.js" />
+    <Content Include="Content\assets\js\jquery.cookie.js" />
+    <Content Include="Content\assets\js\jquery.dataTables.bootstrap.js" />
+    <Content Include="Content\assets\js\jquery.dataTables.min.js" />
+    <Content Include="Content\assets\js\jquery.easy-pie-chart-older.js" />
+    <Content Include="Content\assets\js\jquery.easy-pie-chart.min.js" />
+    <Content Include="Content\assets\js\jquery.easypiechart.min.js" />
+    <Content Include="Content\assets\js\jquery.gritter.min.js" />
+    <Content Include="Content\assets\js\jquery.hotkeys.min.js" />
+    <Content Include="Content\assets\js\jquery.inputlimiter.1.3.1.min.js" />
+    <Content Include="Content\assets\js\jquery.knob-older.min.js" />
+    <Content Include="Content\assets\js\jquery.knob.min.js" />
+    <Content Include="Content\assets\js\jquery.maskedinput.min.js" />
+    <Content Include="Content\assets\js\jquery.min.js" />
+    <Content Include="Content\assets\js\jquery.mobile.custom.min.js" />
+    <Content Include="Content\assets\js\jquery.nestable.min.js" />
+    <Content Include="Content\assets\js\jquery.slimscroll.min.js" />
+    <Content Include="Content\assets\js\jquery.sparkline.min.js" />
+    <Content Include="Content\assets\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="Content\assets\js\jquery.validate.min.js" />
+    <Content Include="Content\assets\js\jquery1x.min.js" />
+    <Content Include="Content\assets\js\markdown\bootstrap-markdown.min.js" />
+    <Content Include="Content\assets\js\markdown\markdown.min.js" />
+    <Content Include="Content\assets\js\markdown\to-markdown.min.js" />
+    <Content Include="Content\assets\js\prettify.js" />
+    <Content Include="Content\assets\js\rainbow.js" />
+    <Content Include="Content\assets\js\respond.min.js" />
+    <Content Include="Content\assets\js\select2.min.js" />
+    <Content Include="Content\assets\js\spin.min.js" />
+    <Content Include="Content\assets\js\sticky-table-headers.js" />
+    <Content Include="Content\assets\js\uncompressed\ace-elements.js" />
+    <Content Include="Content\assets\js\uncompressed\ace-extra.js" />
+    <Content Include="Content\assets\js\uncompressed\ace.js" />
+    <Content Include="Content\assets\js\uncompressed\additional-methods.js" />
+    <Content Include="Content\assets\js\uncompressed\bootbox.js" />
+    <Content Include="Content\assets\js\uncompressed\bootstrap-colorpicker.js" />
+    <Content Include="Content\assets\js\uncompressed\bootstrap-tag.js" />
+    <Content Include="Content\assets\js\uncompressed\bootstrap-wysiwyg.js" />
+    <Content Include="Content\assets\js\uncompressed\bootstrap.js" />
+    <Content Include="Content\assets\js\uncompressed\chosen.jquery.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\bootstrap-datepicker.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\bootstrap-datetimepicker.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\bootstrap-timepicker.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\daterangepicker.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.bg.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.ca.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.cs.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.da.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.de.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.el.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.es.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.fi.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.fr.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.he.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.hr.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.hu.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.id.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.is.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.it.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.ja.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.kr.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.lt.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.lv.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.ms.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.nb.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.nl.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.pl.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.pt-BR.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.pt.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.ro.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.rs-latin.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.rs.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.ru.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.sk.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.sl.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.sv.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.sw.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.th.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.tr.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.uk.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.zh-CN.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\locales\bootstrap-datepicker.zh-TW.js" />
+    <Content Include="Content\assets\js\uncompressed\date-time\moment.js" />
+    <Content Include="Content\assets\js\uncompressed\dropzone.js" />
+    <Content Include="Content\assets\js\uncompressed\excanvas.js" />
+    <Content Include="Content\assets\js\uncompressed\flot\jquery.flot.js" />
+    <Content Include="Content\assets\js\uncompressed\flot\jquery.flot.pie.js" />
+    <Content Include="Content\assets\js\uncompressed\flot\jquery.flot.resize.js" />
+    <Content Include="Content\assets\js\uncompressed\fuelux\data\fuelux.tree-sample-demo-data.js" />
+    <Content Include="Content\assets\js\uncompressed\fuelux\fuelux.spinner.js" />
+    <Content Include="Content\assets\js\uncompressed\fuelux\fuelux.tree.js" />
+    <Content Include="Content\assets\js\uncompressed\fuelux\fuelux.wizard.js" />
+    <Content Include="Content\assets\js\uncompressed\fullcalendar.js" />
+    <Content Include="Content\assets\js\uncompressed\jqGrid\jquery.jqGrid.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery-ui.custom.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery-ui.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.autosize.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.colorbox.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.dataTables.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.easypiechart.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.gritter.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.hotkeys.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.inputlimiter.1.3.1.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.knob.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.maskedinput.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.mobile.custom.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.nestable.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.slimscroll.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.sparkline.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.ui.touch-punch.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery.validate.js" />
+    <Content Include="Content\assets\js\uncompressed\jquery1x.js" />
+    <Content Include="Content\assets\js\uncompressed\markdown\bootstrap-markdown.js" />
+    <Content Include="Content\assets\js\uncompressed\markdown\markdown.js" />
+    <Content Include="Content\assets\js\uncompressed\markdown\to-markdown.js" />
+    <Content Include="Content\assets\js\uncompressed\respond.src.js" />
+    <Content Include="Content\assets\js\uncompressed\select2.js" />
+    <Content Include="Content\assets\js\uncompressed\spin.js" />
+    <Content Include="Content\assets\js\uncompressed\x-editable\ace-editable.js" />
+    <Content Include="Content\assets\js\uncompressed\x-editable\bootstrap-editable.js" />
+    <Content Include="Content\assets\js\x-editable\ace-editable.min.js" />
+    <Content Include="Content\assets\js\x-editable\bootstrap-editable.js" />
+    <Content Include="Content\assets\js\x-editable\bootstrap-editable.min.js" />
+    <Content Include="Content\Calender_day.png" />
+    <Content Include="Content\calnew.png" />
+    <Content Include="Content\Circlecross_Red.png" />
+    <Content Include="Content\CircleTick_Green.png" />
+    <Content Include="Content\Cloud.png" />
+    <Content Include="Content\ConfigurationConformity.xml" />
+    <Content Include="Content\csstree\document.png" />
+    <Content Include="Content\csstree\folder-horizontal.png" />
+    <Content Include="Content\csstree\icons.png" />
+    <Content Include="Content\csstree\index.html" />
+    <Content Include="Content\csstree\toggle-small-expand.png" />
+    <Content Include="Content\csstree\toggle-small.png" />
+    <Content Include="Content\csstree\_styles.css" />
+    <Content Include="Content\css\CommonStyles.css" />
+    <Content Include="Content\DownArrow.png" />
+    <Content Include="Content\dummy.html" />
+    <Content Include="Content\flipclock\flipclock.css" />
+    <Content Include="Content\flipclock\flipclock.js" />
+    <Content Include="Content\gears.ico" />
+    <Content Include="Content\gritter\css\jquery.gritter.css" />
+    <Content Include="Content\gritter\images\gritter-light.png" />
+    <Content Include="Content\gritter\images\gritter-long.png" />
+    <Content Include="Content\gritter\images\gritter.png" />
+    <Content Include="Content\gritter\images\ie-spacer.gif" />
+    <Content Include="Content\gritter\images\trees.jpg" />
+    <Content Include="Content\gritter\index.html" />
+    <Content Include="Content\gritter\js\jquery.gritter.js" />
+    <Content Include="Content\gritter\js\jquery.gritter.min.js" />
+    <Content Include="Content\GRS.png" />
+    <Content Include="Content\img\advanced_system_settings.png" />
+    <Content Include="Content\img\computer_properties.png" />
+    <Content Include="Content\img\environment_variables.png" />
+    <Content Include="Content\img\gear.gif" />
+    <Content Include="Content\img\maven_proxy.png" />
+    <Content Include="Content\img\Power-Button-Green.png" />
+    <Content Include="Content\img\Power-Button-Red.png" />
+    <Content Include="Content\img\System_Properties.png" />
+    <Content Include="Content\img\tortoise_install.png" />
+    <Content Include="Content\img\update_tests.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\external\jquery\jquery.js" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\index.html" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\jquery-ui.css" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\jquery-ui.js" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\jquery-ui.min.js" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\jquery-ui.structure.min.css" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\jquery-ui.theme.css" />
+    <Content Include="Content\jquery-ui-1.11.2.custom\jquery-ui.theme.min.css" />
+    <Content Include="Content\jstree\jstree.min.js" />
+    <Content Include="Content\jstree\themes\default\32px.png" />
+    <Content Include="Content\jstree\themes\default\40px.png" />
+    <Content Include="Content\jstree\themes\default\style.min.css" />
+    <Content Include="Content\jstree\themes\default\throbber.gif" />
+    <Content Include="Content\left_arrow.png" />
+    <Content Include="Content\left_last_arrow.png" />
+    <Content Include="Content\RightArrow.png" />
+    <Content Include="Content\right_arrow.png" />
+    <Content Include="Content\right_last_arrow.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\tools\grs-agent.jar" />
+    <Content Include="GAgent\GAgent-java-AWS.zip" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\assets\css\less\ace-features.less" />
+    <Content Include="Content\assets\css\less\ace-nav.less" />
+    <Content Include="Content\assets\css\less\ace-responsive.less" />
+    <Content Include="Content\assets\css\less\ace-rtl2.less" />
+    <Content Include="Content\assets\css\less\ace.less" />
+    <Content Include="Content\assets\css\less\basic.less" />
+    <Content Include="Content\assets\css\less\bootstrap\mixins.less" />
+    <Content Include="Content\assets\css\less\bootstrap\variables.less" />
+    <Content Include="Content\assets\css\less\breadcrumbs.less" />
+    <Content Include="Content\assets\css\less\bs3-reset.less" />
+    <Content Include="Content\assets\css\less\buttons.less" />
+    <Content Include="Content\assets\css\less\dropdown.less" />
+    <Content Include="Content\assets\css\less\dropdown\colorpicker.less" />
+    <Content Include="Content\assets\css\less\dropdown\navbar-dropdown.less" />
+    <Content Include="Content\assets\css\less\dropdown\navbar-tabbed-dropdown.less" />
+    <Content Include="Content\assets\css\less\ext\bootstrap-tag.less" />
+    <Content Include="Content\assets\css\less\fonts.less" />
+    <Content Include="Content\assets\css\less\footer.less" />
+    <Content Include="Content\assets\css\less\form.less" />
+    <Content Include="Content\assets\css\less\form\checkbox.less" />
+    <Content Include="Content\assets\css\less\form\file.less" />
+    <Content Include="Content\assets\css\less\gallery.less" />
+    <Content Include="Content\assets\css\less\general.less" />
+    <Content Include="Content\assets\css\less\icon-animated.less" />
+    <Content Include="Content\assets\css\less\infobox.less" />
+    <Content Include="Content\assets\css\less\items.less" />
+    <Content Include="Content\assets\css\less\label-badge.less" />
+    <Content Include="Content\assets\css\less\mixins.less" />
+    <Content Include="Content\assets\css\less\navbar\collapsible.less" />
+    <Content Include="Content\assets\css\less\navbar\navbar-menu-form.less" />
+    <Content Include="Content\assets\css\less\navbar\toggle-button.less" />
+    <Content Include="Content\assets\css\less\navbar\user-buttons-move-down.less" />
+    <Content Include="Content\assets\css\less\navbar\user-buttons.less" />
+    <Content Include="Content\assets\css\less\navbar\user-dropdown-position.less" />
+    <Content Include="Content\assets\css\less\navbar\user-menu.less" />
+    <Content Include="Content\assets\css\less\other.less" />
+    <Content Include="Content\assets\css\less\page.error.less" />
+    <Content Include="Content\assets\css\less\page.inbox.less" />
+    <Content Include="Content\assets\css\less\page.invoice.less" />
+    <Content Include="Content\assets\css\less\page.login.less" />
+    <Content Include="Content\assets\css\less\page.pricing.less" />
+    <Content Include="Content\assets\css\less\page.profile.less" />
+    <Content Include="Content\assets\css\less\page.timeline.less" />
+    <Content Include="Content\assets\css\less\progressbar.less" />
+    <Content Include="Content\assets\css\less\scroll.less" />
+    <Content Include="Content\assets\css\less\searchbox.less" />
+    <Content Include="Content\assets\css\less\sidebar.less" />
+    <Content Include="Content\assets\css\less\sidebar\active.less" />
+    <Content Include="Content\assets\css\less\sidebar\compact.less" />
+    <Content Include="Content\assets\css\less\sidebar\ff_fix.less" />
+    <Content Include="Content\assets\css\less\sidebar\highlight.less" />
+    <Content Include="Content\assets\css\less\sidebar\horizontal.less" />
+    <Content Include="Content\assets\css\less\sidebar\hover.less" />
+    <Content Include="Content\assets\css\less\sidebar\min.less" />
+    <Content Include="Content\assets\css\less\sidebar\old-toggle-button.less" />
+    <Content Include="Content\assets\css\less\sidebar\responsive-1.less" />
+    <Content Include="Content\assets\css\less\sidebar\responsive-2.less" />
+    <Content Include="Content\assets\css\less\sidebar\responsive-3.less" />
+    <Content Include="Content\assets\css\less\sidebar\shortcuts-toggle.less" />
+    <Content Include="Content\assets\css\less\sidebar\sidebar-fixed.less" />
+    <Content Include="Content\assets\css\less\sidebar\sub-arrow.less" />
+    <Content Include="Content\assets\css\less\skins\no-skin.less" />
+    <Content Include="Content\assets\css\less\skins\skin-1.less" />
+    <Content Include="Content\assets\css\less\skins\skin-2.less" />
+    <Content Include="Content\assets\css\less\skins\skin-3.less" />
+    <Content Include="Content\assets\css\less\skins\skins.less" />
+    <Content Include="Content\assets\css\less\tab-accordion.less" />
+    <Content Include="Content\assets\css\less\tables.less" />
+    <Content Include="Content\assets\css\less\thirdparty-calendar.less" />
+    <Content Include="Content\assets\css\less\thirdparty-chosen.less" />
+    <Content Include="Content\assets\css\less\thirdparty-colorbox.less" />
+    <Content Include="Content\assets\css\less\thirdparty-dataTables.less" />
+    <Content Include="Content\assets\css\less\thirdparty-date.less" />
+    <Content Include="Content\assets\css\less\thirdparty-dropzone.less" />
+    <Content Include="Content\assets\css\less\thirdparty-editable.less" />
+    <Content Include="Content\assets\css\less\thirdparty-fuelux.less" />
+    <Content Include="Content\assets\css\less\thirdparty-gritter.less" />
+    <Content Include="Content\assets\css\less\thirdparty-jqgrid.less" />
+    <Content Include="Content\assets\css\less\thirdparty-jquery-ui.less" />
+    <Content Include="Content\assets\css\less\thirdparty-nestable.less" />
+    <Content Include="Content\assets\css\less\thirdparty-select2.less" />
+    <Content Include="Content\assets\css\less\thirdparty-slider.less" />
+    <Content Include="Content\assets\css\less\thirdparty-wysiwyg.less" />
+    <Content Include="Content\assets\css\less\tooltip-popover.less" />
+    <Content Include="Content\assets\css\less\utility.less" />
+    <Content Include="Content\assets\css\less\variables.less" />
+    <Content Include="Content\assets\css\less\widget.less" />
+    <Content Include="Content\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\assets\fonts\FontAwesome.otf" />
+    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\assets\font\cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" />
+    <Content Include="Content\assets\font\DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff" />
+    <Content Include="Content\assets\js\ace\readme" />
+    <Content Include="Content\assets\js\ace\scripts.json" />
+    <Content Include="pager\first.png" />
+    <Content Include="pager\last.png" />
+    <Content Include="pager\next.png" />
+    <Content Include="pager\pager.css" />
+    <Content Include="pager\prev.png" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Content\gritter\bower.json" />
+    <Content Include="Content\gritter\package.json" />
+    <Content Include="Content\gritter\README.markdown" />
+    <None Include="bin\GlobalReportingSystem.Web.UI.dll.config" />
+    <Content Include="bin\LibGit2Sharp.dll.config" />
+    <Content Include="bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so" />
+    <Content Include="bin\NativeBinaries\osx\libgit2-785d8c4.dylib" />
+    <Content Include="bin\SharpPlink-x64.svnExe" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <None Include="Resources\EmailTemplatePasswordRecovery.txt" />
+    <Content Include="Scripts\commonScripts.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.tablesorter.min.js" />
+    <Content Include="Scripts\jquery.tablesorter.pager.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\renderCucumberTests.js" />
+    <Content Include="Scripts\renderFramework.js" />
+    <Content Include="Scripts\renderReport.js" />
+    <Content Include="Scripts\renderTestSuite.js" />
+    <Content Include="Scripts\sikuliSupport.js" />
+    <None Include="Service References\AnalysisService\AnalysisService1.wsdl" />
+    <None Include="Service References\AnalysisService\configuration91.svcinfo" />
+    <None Include="Service References\AnalysisService\configuration.svcinfo" />
+    <Content Include="Scripts\tablesorter\jquery.tablesorter.combined.js" />
+    <Content Include="Scripts\tablesorter\jquery.tablesorter.combined.min.js" />
+    <None Include="Service References\AnalysisService\AnalysisService1.disco" />
+    <Content Include="Service References\AnalysisService\GlobalReportingSystem.Web.UI.AnalysisService.PerformAutoMigrationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\AnalysisService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ExecutorNg\configuration91.svcinfo" />
+    <None Include="Service References\ExecutorNg\configuration.svcinfo" />
+    <None Include="Service References\ExecutorNg\ExecutorNg1.disco" />
+    <Content Include="Service References\ExecutorNg\GlobalReportingSystem.Web.UI.ExecutorNg.PingByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ExecutorNg\GlobalReportingSystem.Web.UI.ExecutorNg.PingByIpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ExecutorNg\GlobalReportingSystem.Web.UI.ExecutorNg.StopResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ExecutorNg\GlobalReportingSystem.Web.UI.ExecutorNg.WaitForLbRelResultsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ExecutorNg\GlobalReportingSystem.Web.UI.ExecutorNg.WaitForLinearRelResultsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ExecutorNg\ExecutorNg1.wsdl" />
+    <None Include="Service References\ExecutorNg\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ExecutorService\configuration91.svcinfo" />
+    <None Include="Service References\ExecutorService\configuration.svcinfo" />
+    <None Include="Service References\ExecutorService\Executor1.disco" />
+    <Content Include="Service References\ExecutorService\GlobalReportingSystem.Web.UI.ExecutorService.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ExecutorService\GlobalReportingSystem.Web.UI.ExecutorService.GetAutocompleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ExecutorService\GlobalReportingSystem.Web.UI.ExecutorService.PingByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ExecutorService\GlobalReportingSystem.Web.UI.ExecutorService.PingByIPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ExecutorService\GlobalReportingSystem.Web.UI.ExecutorService.SendCommandToMachineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ExecutorService\GlobalReportingSystem.Web.UI.ExecutorService.SendConsoleCommandResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ExecutorService\Executor1.wsdl" />
+    <None Include="Service References\ExecutorService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\Harvest\GlobalReportingSystem.Web.UI.Harvest.AcceptReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Harvest\GlobalReportingSystem.Web.UI.Harvest.AcceptReportTestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Harvest\GlobalReportingSystem.Web.UI.Harvest.currentCycleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Harvest\GlobalReportingSystem.Web.UI.Harvest.isProjectExistsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Harvest\configuration91.svcinfo" />
+    <None Include="Service References\Harvest\configuration.svcinfo" />
+    <None Include="Service References\Harvest\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Harvest\ServiceConnector1.disco" />
+    <Content Include="Service References\Linear\GlobalReportingSystem.Web.UI.Linear.WaitForRelResultsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Linear\configuration91.svcinfo" />
+    <None Include="Service References\Linear\configuration.svcinfo" />
+    <None Include="Service References\Linear\Linear1.wsdl" />
+    <None Include="Service References\Linear\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Linear\Linear1.disco" />
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.AccountForTestRunModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.CreateRelExecutionStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.ExecutionConfigurationModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.FinishPortionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetConfigurationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetExecutionStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetFrameworkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetLoadBalancedElementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetPortionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetProjectByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetTestCycleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetTestExecutionByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.GetTestExecutionsByIpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.HostsConfigurationModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.LoadBalancedElement.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.ProjectModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.PutTestRunsByRelLbResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.PutTestRunsByRELResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.StartRELResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.TestCycleModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.TestExecutionsModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.UpdateLatestRelExecutionStatusEntryLevelRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.UpdateLatestRelExecutionStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LoadBalancedExecutionService\GlobalReportingSystem.Web.UI.LoadBalancedExecutionService.UpdateLatestRelExecutionStatusResultLevelRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\LoadBalancedExecutionService\configuration91.svcinfo" />
+    <None Include="Service References\LoadBalancedExecutionService\configuration.svcinfo" />
+    <None Include="Service References\LoadBalancedExecutionService\LoadBalancedExecutionService1.wsdl" />
+    <None Include="Service References\LoadBalancedExecutionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\LoadBalancedExecutionService\LoadBalancedExecutionService1.disco" />
+    <Content Include="Service References\SikuliService\GlobalReportingSystem.Web.UI.SikuliService.AddSikuliItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SikuliService\GlobalReportingSystem.Web.UI.SikuliService.GetSikuliItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SikuliService\GlobalReportingSystem.Web.UI.SikuliService.SikuliItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SikuliService\GlobalReportingSystem.Web.UI.SikuliService.UpdateSikuliItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\SikuliService\configuration91.svcinfo" />
+    <None Include="Service References\SikuliService\configuration.svcinfo" />
+    <None Include="Service References\SikuliService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SikuliService\SikuliService1.disco" />
+    <Content Include="sorter\asc.gif" />
+    <Content Include="sorter\bg.gif" />
+    <Content Include="sorter\desc.gif" />
+    <Content Include="sorter\style.css" />
+    <Content Include="tablesorter.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_AuthLayout.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Users\SelectProject.cshtml" />
+    <Content Include="Views\TestCycle\Index.cshtml" />
+    <Content Include="Views\Configuration\Index.cshtml" />
+    <Content Include="Views\Configuration\TestCycles.cshtml" />
+    <Content Include="Views\Reporting\Index.cshtml" />
+    <Content Include="Views\Execution\Linear.cshtml" />
+    <Content Include="Views\Execution\LoadBalanced.cshtml" />
+    <Content Include="Views\TestCycle\GetTestSuite.cshtml" />
+    <Content Include="Views\Configuration\Configurations.cshtml" />
+    <Content Include="Views\Configuration\Machines.cshtml" />
+    <Content Include="Views\Configuration\Accounts.cshtml" />
+    <Content Include="Views\Configuration\Environments.cshtml" />
+    <Content Include="Views\Configuration\Frameworks.cshtml" />
+    <Content Include="Views\TestCycle\GetSubSteps.cshtml" />
+    <Content Include="Views\Configuration\Project.cshtml" />
+    <Content Include="Views\TestCycle\GetTestSteps.cshtml" />
+    <Content Include="Views\TestCycle\RenderMainTable.cshtml" />
+    <Content Include="Views\TestCycle\GetTsLegend.cshtml" />
+    <Content Include="Views\Configuration\CustomStatuses.cshtml" />
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\jirasoapservice-v2.wsdl" />
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteAttachment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteAvatar.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteComment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteComponent.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteField.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteFilter.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteGroup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteIssue.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteIssueType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteNamedObject.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemotePermission.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemotePermissionScheme.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemotePriority.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteProject.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteProjectRole.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteProjectRoleActors.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteResolution.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteRoleActors.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteScheme.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteSecurityLevel.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteServerInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteUser.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteVersion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteWorklog.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Views\Reporting\CumulativeMain.cshtml" />
+    <Content Include="Views\Reporting\CumulativeTable.cshtml" />
+    <Content Include="Views\Execution\LoadBalancedMachine.cshtml" />
+    <Content Include="Views\Execution\LoadBalancedSection.cshtml" />
+    <Content Include="Views\TestCycle\ManualUpload.cshtml" />
+    <Content Include="Views\Execution\TestsForFramework.cshtml" />
+    <Content Include="Views\Execution\ChildrenNodes.cshtml" />
+    <Content Include="Views\Configuration\CustomStatusInfo.cshtml" />
+    <Content Include="Views\Configuration\SikuliObjectRepository.cshtml" />
+    <Content Include="Views\Configuration\UpdateSikuliObject.cshtml" />
+    <Content Include="Views\PublicAccess\TestsRun.cshtml" />
+    <Content Include="Views\Configuration\Users.cshtml" />
+    <Content Include="Views\PublicAccess\Report.cshtml" />
+    <Content Include="Views\Shared\_PublicAccessLayout.cshtml" />
+    <Content Include="Views\Shared\GetTestStepsForQuickView.cshtml" />
+    <Content Include="Views\Execution\TestsToAddForm.cshtml" />
+    <Content Include="Views\Execution\RelDisplayForm.cshtml" />
+    <Content Include="Views\PublicAccess\Step2Partial.cshtml" />
+    <Content Include="Views\PublicAccess\Step4Partial.cshtml" />
+    <Content Include="Views\PublicAccess\Step8Partial.cshtml" />
+    <Content Include="Views\PublicAccess\Step9Partial.cshtml" />
+    <Content Include="Views\PublicAccess\Step1Partial.cshtml" />
+    <Content Include="Views\PublicAccess\HistoryDisplayForm.cshtml" />
+    <Content Include="Views\PublicAccess\TestResultsPartial.cshtml" />
+    <Content Include="Views\PublicAccess\ExecutionsPartial.cshtml" />
+    <Content Include="Views\Reporting\QuickSummaryMain.cshtml" />
+    <Content Include="Views\Reporting\BugListMain.cshtml" />
+    <Content Include="Views\Reporting\BugStatisticsMain.cshtml" />
+    <Content Include="Views\Reporting\QuickSummaryTable.cshtml" />
+    <Content Include="Views\Reporting\BugListTable.cshtml" />
+    <Content Include="Views\Reporting\BugStatisticsTable.cshtml" />
+    <Content Include="Views\PublicAccess\GetTsLegend.cshtml" />
+    <Content Include="Views\PublicAccess\GetTestSuite.cshtml" />
+    <Content Include="Views\Users\RetrievePassword.cshtml" />
+    <Content Include="Views\Users\Register.cshtml" />
+    <Content Include="Views\TestCycle\GetTsIssues.cshtml" />
+    <Content Include="Views\Launch\Linear.cshtml" />
+    <Content Include="Views\Launch\RelDisplayForm.cshtml" />
+    <Content Include="Views\Launch\TestsToAddForm.cshtml" />
+    <Content Include="Views\Launch\TestsForFramework.cshtml" />
+    <Content Include="Views\Launch\ChildrenNodes.cshtml" />
+    <Content Include="Views\AdminTool\Index.cshtml" />
+    <Content Include="Views\AdminTool\GlobalNotifications.cshtml" />
+    <Content Include="Views\Launch\LoadBalanced.cshtml" />
+    <Content Include="Views\Launch\LoadBalancedMachine.cshtml" />
+    <Content Include="Views\Launch\LoadBalancedSection.cshtml" />
+    <Content Include="Views\Help\Index.cshtml" />
+    <Content Include="Views\Users\Profile.cshtml" />
+    <Content Include="Views\Configuration\UpdateConfigurations.cshtml" />
+    <Content Include="Views\Configuration\UpdateAccounts.cshtml" />
+    <Content Include="Views\Configuration\UpdateEnvironments.cshtml" />
+    <Content Include="Views\Configuration\UpdateTestCycles.cshtml" />
+    <Content Include="Views\Shared\Forbidden.cshtml" />
+    <Content Include="Views\Reporting\AnalysisMain.cshtml" />
+    <Content Include="Views\Reporting\AnalysisTableByCycle.cshtml" />
+    <Content Include="Views\Reporting\AnalysisTableByUser.cshtml" />
+    <Content Include="Web References\com.reuters.ime.apac.bjz.jira\RemoteComment6.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Views\Reporting\BugListTestCasesDetailsTable.cshtml" />
+    <Content Include="Views\Launch\TestsForCucumberFramework.cshtml" />
+    <Content Include="Views\Users\NotificationsSettings.cshtml" />
+    <Content Include="Views\AdminTool\UserAccesses.cshtml" />
+    <Content Include="Views\AdminTool\UsersTable.cshtml" />
+    <Content Include="Views\AdminTool\AddNewProject.cshtml" />
+    <Content Include="Views\AdminTool\AdminRights.cshtml" />
+    <Content Include="Views\AdminTool\CreateNewUser.cshtml" />
+    <Content Include="Views\AdminTool\DeleteOldRecord.cshtml" />
+    <Content Include="Views\AdminTool\UnTrackedFiles.cshtml" />
+    <Content Include="Views\AdminTool\ProjectTestSuits.cshtml" />
+    <Content Include="Views\AdminTool\ManageTrackingRowsAndLogs.cshtml" />
+    <Content Include="Views\Configuration\TeamInfos.cshtml" />
+    <Content Include="Views\Configuration\UpdateTeamInfo.cshtml" />
+    <Content Include="Views\Configuration\ReleaseInfos.cshtml" />
+    <Content Include="Views\Configuration\UpdateReleaseInfo.cshtml" />
+    <Content Include="Views\Home\ExecutionReport.cshtml" />
+    <Content Include="Views\Shared\_ReportLayout.cshtml" />
+    <Content Include="Views\Configuration\ExecutionGroupInfo.cshtml" />
+    <None Include="Service References\Harvest\ServiceConnector1.wsdl" />
+    <None Include="Service References\SikuliService\SikuliService1.wsdl" />
+    <Content Include="Views\Execution\TestsForCucumberFramework.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ControllerLogFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalReportingSystem.BL\GlobalReportingSystem.BL.csproj">
+      <Project>{8574b2f4-33dd-484a-b63f-b6e1558f3de7}</Project>
+      <Name>GlobalReportingSystem.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalReportingSystem.Core\GlobalReportingSystem.Core.csproj">
+      <Project>{057ffeb7-a56f-4d6f-b2f4-662ed3b211bd}</Project>
+      <Name>GlobalReportingSystem.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalReportingSystem.ServiceLocation\GlobalReportingSystem.ServiceLocation.csproj">
+      <Project>{b8bc7e85-3d14-49af-bdbc-763d48ddabe4}</Project>
+      <Name>GlobalReportingSystem.ServiceLocation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GRSExecutor\GRSExecutor.csproj">
+      <Project>{316ce94a-fd8c-40f3-ab98-f43bd11ca53c}</Project>
+      <Name>GRSExecutor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCClient\QCClient.csproj">
+      <Project>{c659a245-1b04-4c5d-a297-ea67d1bcafa7}</Project>
+      <Name>QCClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AnalysisService\" />
+    <WCFMetadataStorage Include="Service References\ExecutorNg\" />
+    <WCFMetadataStorage Include="Service References\ExecutorService\" />
+    <WCFMetadataStorage Include="Service References\Harvest\" />
+    <WCFMetadataStorage Include="Service References\Linear\" />
+    <WCFMetadataStorage Include="Service References\LoadBalancedExecutionService\" />
+    <WCFMetadataStorage Include="Service References\SikuliService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://jira.bjz.apac.ime.reuters.com/rpc/soap/jirasoapservice-v2%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.reuters.ime.apac.bjz.jira\</RelPath>
+      <UpdateFromURL>http://jira.bjz.apac.ime.reuters.com/rpc/soap/jirasoapservice-v2%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>GlobalReportingSystem_com_reuters_ime_apac_bjz_jira_JiraSoapServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60930/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

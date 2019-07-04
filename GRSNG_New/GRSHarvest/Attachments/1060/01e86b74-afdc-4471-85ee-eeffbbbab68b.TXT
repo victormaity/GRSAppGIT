@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugSourcesOutput xmlns:ns2="local"><Sources><Source id="1875631" type="CORPORATE">Almirall Prodesfarma SA - Company Website</Source><Source id="1683762" type="CORPORATE">Almirall Prodesfarma website</Source></Sources></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugSourcesOutput>

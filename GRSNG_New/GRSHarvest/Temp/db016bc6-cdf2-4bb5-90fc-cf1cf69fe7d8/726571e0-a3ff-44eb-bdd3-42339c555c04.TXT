@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.BasicSearchPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage 
+ com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.SavedSearchesAndAlertsPage_Steps.iChooseAnIncorrectFileFromTheLocalDriveInTab(SavedSearchesAndAlertsPage_Steps.java:779);
+✽.When I choose an incorrect file from the local drive in "Saved searches" tab(com/clarivateanalytics/wos/gui/cucumber/Deployment/SavedSearchesAndAlerts.feature:577)

@@ -1,0 +1,288 @@
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.dll.config
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Core.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Facilities.WcfIntegration.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Windsor.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.SqlServer.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.BL.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Core.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Data.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Newtonsoft.Json.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Net.Http.Formatting.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Helpers.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.WebHost.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Mvc.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Razor.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\QCClient.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpSvn.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\ClosedXML.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Ionic.Zip.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\TechTalk.JiraRestClient.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.Extended.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\nunit.framework.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\RestSharp.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.BL.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Core.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Data.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Core.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Facilities.WcfIntegration.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Windsor.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.SqlServer.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Newtonsoft.Json.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Net.Http.Formatting.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Helpers.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.WebHost.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Mvc.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Razor.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\QCClient.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpSvn.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\ClosedXML.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Ionic.Zip.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.Extended.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\nunit.framework.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\RestSharp.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpPlink-x64.svnExe
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.csprojResolveAssemblyReference.cache
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\amd64\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\x86\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\x86\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.dll.config
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.dll.config
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Core.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Facilities.WcfIntegration.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Windsor.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.SqlServer.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.BL.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Core.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Data.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Newtonsoft.Json.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Net.Http.Formatting.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Helpers.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.WebHost.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Mvc.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Razor.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\QCClient.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpSvn.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\ClosedXML.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Ionic.Zip.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\TechTalk.JiraRestClient.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.Extended.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\nunit.framework.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\RestSharp.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Data.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Core.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Facilities.WcfIntegration.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Windsor.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.SqlServer.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Newtonsoft.Json.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Net.Http.Formatting.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Helpers.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.WebHost.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Mvc.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Razor.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpSvn.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\ClosedXML.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Ionic.Zip.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.Extended.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\nunit.framework.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\RestSharp.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpPlink-x64.svnExe
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.csprojResolveAssemblyReference.cache
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.BL.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Core.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\QCClient.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.DataLINQ.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.DataLINQ.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\amd64\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\x86\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\x86\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.dll.config
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.dll.config
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Facilities.WcfIntegration.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Windsor.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.SqlServer.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.BL.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Data.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Newtonsoft.Json.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Net.Http.Formatting.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Helpers.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.WebHost.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Mvc.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Razor.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Razor.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\QCClient.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpSvn.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\ClosedXML.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.DataLINQ.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Ionic.Zip.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\TechTalk.JiraRestClient.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.Extended.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\nunit.framework.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\DocumentFormat.OpenXml.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\RestSharp.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.BL.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Core.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Data.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Core.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Facilities.WcfIntegration.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Windsor.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.SqlServer.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Newtonsoft.Json.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Net.Http.Formatting.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Helpers.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.WebHost.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Mvc.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Razor.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Razor.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\QCClient.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpSvn.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\ClosedXML.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.DataLINQ.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Ionic.Zip.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.Extended.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\nunit.framework.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\RestSharp.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpPlink-x64.svnExe
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.csprojResolveAssemblyReference.cache
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\amd64\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\amd64\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\x86\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\x86\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\osx\libgit2-785d8c4.dylib
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.ServiceLocation.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Core.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Facilities.WcfIntegration.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Windsor.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.SqlServer.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.BL.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Core.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Data.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Newtonsoft.Json.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Net.Http.Formatting.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Helpers.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.WebHost.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Mvc.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Razor.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Razor.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\QCClient.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\ClosedXML.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.DataLINQ.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Ionic.Zip.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpSvn.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\TechTalk.JiraRestClient.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.Extended.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\nunit.framework.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\DocumentFormat.OpenXml.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\RestSharp.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.BL.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.BL.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Core.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Core.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Data.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.Data.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Core.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Facilities.WcfIntegration.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Castle.Windsor.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.SqlServer.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Newtonsoft.Json.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Net.Http.Formatting.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Helpers.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Http.WebHost.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Mvc.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.Razor.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\System.Web.WebPages.Razor.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\QCClient.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\QCClient.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\ClosedXML.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.DataLINQ.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\GlobalReportingSystem.DataLINQ.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\Ionic.Zip.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpSvn.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\LibGit2Sharp.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\EntityFramework.Extended.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\nunit.framework.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\RestSharp.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\bin\Debug\SharpPlink-x64.svnExe
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.csprojAssemblyReference.cache
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.csproj.CoreCompileInputs.cache
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.csproj.CopyComplete
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.ServiceLocation\obj\Debug\GlobalReportingSystem.ServiceLocation.pdb

@@ -1,0 +1,23 @@
+Tech info:
+Exception cause: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-T8JHR40ALO2', ip: '10.152.82.49', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 18116, moz:profile: D:\Users\WoSWin7_09\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 483b5bee-7e37-417f-953a-dc2b000c2b4f 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657);
+org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:517);
+com.clarivateanalytics.wos.gui.cucumber.pages.base.BasePage.<init>(BasePage.java:36);
+com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.CitationReportPage.<init>(CitationReportPage.java:38);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.iClickOnLinkOnPage(ResultSummaryPage_Steps.java:963);
+✽.Then I click on link "create citation Report" on page "Result Summary"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.25_Stories.feature:616)

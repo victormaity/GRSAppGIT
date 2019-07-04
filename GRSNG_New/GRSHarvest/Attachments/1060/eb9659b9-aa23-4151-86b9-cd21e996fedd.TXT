@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Indication id="817" name="Degeneration"><Synonyms><Synonym>Degenerative disease</Synonym><Synonym>Chronic degenerative disorder</Synonym><Synonym>Degenerative disorder</Synonym><Synonym>Chronic degenerative disease</Synonym></Synonyms></Indication>

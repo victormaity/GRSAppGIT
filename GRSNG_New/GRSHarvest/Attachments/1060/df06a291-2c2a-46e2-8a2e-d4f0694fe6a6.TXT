@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/localization/search/viral?operationType=flat&treeCodeFilter=-1763153424&fmt=json

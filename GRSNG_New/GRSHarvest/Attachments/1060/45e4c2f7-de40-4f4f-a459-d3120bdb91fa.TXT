@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Regulatory id="24423"><Title>Policy: TPP International Strategy</Title><Region>Canada</Region><DocCategory>["Reference Document"]</DocCategory><DocType>["Other Document"]</DocType><Status>Valid</Status></Regulatory>

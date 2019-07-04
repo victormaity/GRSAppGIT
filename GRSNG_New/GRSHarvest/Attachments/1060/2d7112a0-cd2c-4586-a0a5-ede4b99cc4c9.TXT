@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=200034&hits=10&offset=0&filtersEnabled=1&queryLanguage=uiql

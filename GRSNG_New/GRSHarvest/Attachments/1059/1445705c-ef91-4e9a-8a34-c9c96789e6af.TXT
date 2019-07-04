@@ -1,0 +1,38 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='queryHeader']//span[@ng-bind-html='searchResult.searchStrategy.searchQueryText']"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'INBASDLP05543', ip: '10.10.247.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57456}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\VV0035~1\AppData\Local\Temp\scoped_dir7400_32406}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3c1183a6198a0607047b3d6caa1412cc
+*** Element info: {Using=xpath, value=.//*[@id='queryHeader']//span[@ng-bind-html='searchResult.searchStrategy.searchQueryText']} 
+ java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488);
+org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214);
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166);
+org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40);
+org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82);
+org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348);
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69);
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38);
+com.sun.proxy.$Proxy31.getText(Unknown Source);
+com.clarivateAnalytics.cortellis.pages.resultsPage.ResultsPage.compareSearchQuery(ResultsPage.java:4873);
+com.clarivateAnalytics.cortellis.pages.resultsPage.ResultsPage$$FastClassBySpringCGLIB$$826c8c3f.invoke(<generated>);
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204);
+org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:649);
+com.clarivateAnalytics.cortellis.pages.resultsPage.ResultsPage$$EnhancerBySpringCGLIB$$b01d125e.compareSearchQuery(<generated>);
+com.clarivateAnalytics.cortellis.StepDefinitions.resultsPage.ResultsPageStepDef.iVerifyThatTheSearchQueryInResultsPageHeaderContains(ResultsPageStepDef.java:3222);
+✽.And I verify that the Search Query in results page header contains "Medical Device Trials Result"(Customer_Investment/Cortellis Customer Impact - 19.3 - R1/Story-LSCCI-1.feature:30)

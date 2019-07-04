@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="132960"><Title>CIIRDF to award Matrix Pharma funding for the development of EDP-13 to treat lung and epithelial cancers</Title><Principal>Matrix Pharma (Canada) Inc</Principal><Partner>Canada-Israel Industrial Research and Development Fund</Partner><Type>Drug - Funding</Type><Status>Active</Status></Deal>

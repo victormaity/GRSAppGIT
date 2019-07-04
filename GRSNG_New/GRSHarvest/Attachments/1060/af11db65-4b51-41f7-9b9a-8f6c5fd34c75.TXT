@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/analytics-v2/taxonomy/company/search/pain?operationType=flat&fmt=json

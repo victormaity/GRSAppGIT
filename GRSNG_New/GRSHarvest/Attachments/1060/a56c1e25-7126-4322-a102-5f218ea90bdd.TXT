@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput xmlns:ns2="local" id="112"><Title>Huntington's Disease</Title><Teaser>
+  Facts about Huntington&amp;apos;s Disease.
+  
+    Huntington&amp;apos;s disease (HD, formerly known as Huntington&amp;apos;s chorea) is a monogenic, hereditary progressive neurodegenerative disorder characterized by the development of emotional, behavioral and psychiatric abnormalities, the loss of previously acquired intellectual and cognitive functioning, and the emergence of motor disturbances. The d...</Teaser></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput>

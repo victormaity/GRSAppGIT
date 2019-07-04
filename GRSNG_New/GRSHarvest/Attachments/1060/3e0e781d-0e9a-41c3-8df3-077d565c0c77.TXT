@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialSourcesInput xmlns:ns2="local"><trialId>126655</trialId></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialSourcesInput>

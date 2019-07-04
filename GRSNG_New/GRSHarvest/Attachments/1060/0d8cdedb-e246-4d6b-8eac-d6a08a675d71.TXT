@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/tissue/parent/-690189636%7C-1197492375%7C-1059393362%7C6732%7C?fmt=json

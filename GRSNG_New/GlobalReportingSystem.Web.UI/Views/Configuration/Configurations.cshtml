@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "Configurations";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model GlobalReportingSystem.Core.Models.GRS.ExecutionConfigurationsModel
+<div class="page-header">
+    <h1>
+        Execution Configurations
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Files which will be added to project prior to execution
+        </small>
+    </h1>
+</div>
+
+
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Available Configurations</h5>
+
+            <!-- #section:custom/widget-box.toolbar -->
+            <div class="widget-toolbar">
+                <div class="widget-menu">
+                    <a href="#modal-form" data-action="settings" role="button" data-toggle="modal">
+                        <i class="ace-icon fa fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- /section:custom/widget-box.toolbar -->
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                <table id="testcyclestable" class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>File Name</th>
+                            <th>File Content</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var environment in Model.Configurations)
+                        {
+                            <tr>
+                                <td>@environment.Name</td>
+                                <td>@environment.FileName</td>
+                                @if (environment.Content.Contains(Environment.NewLine) || environment.Content.Contains('\n'))
+                                {
+                                    <td style="white-space: pre; max-width: 75%; word-wrap: break-word;">@environment.Content</td>
+                                }
+                                else
+                                {
+                                    <td>@environment.Content</td>
+                                }
+                                <td>
+                                    <a href="@Url.Action("DeleteExecutionConfiguration", "Configuration", new { @id = environment.ID })">
+                                        <i class="fa fa-trash-o red bigger-130"></i>
+                                    </a>
+                                    &nbsp;
+                                    <a href="#update-@environment.ID" data-action="settings" role="button" data-toggle="modal" class="green" onclick="showForm('@environment.ID','false') ">
+                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                    </a>
+                                    <div aria-hidden="true" class="modal in" id="update-@environment.ID" style="display: none;" tabindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">x</button>
+                                                    <h4 class="blue bigger">Please change following fields</h4>
+                                                </div>
+                                                <div>
+                                                    @{ Html.RenderPartial("UpdateConfigurations", environment);}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div aria-hidden="true" class="modal" id="modal-form" style="display: none;" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">?</button>
+                <h4 class="blue bigger">Please fill the following fields</h4>
+            </div>
+            @using (Html.BeginForm("Configurations", "Configuration", FormMethod.Post, new { @id = "newProjectForm" }))
+            {
+                <div class="modal-body">
+                    <div>
+                        <label for="Configuration_Name">
+                            Name
+                        </label>
+
+                        <!-- #section:plugins/input.masked-input -->
+                        @Html.TextBoxFor(p => p.Configuration.Name, new { @class = "form-control", required = "required" })
+
+                        <!-- /section:plugins/input.masked-input -->
+                    </div>
+                    <hr />
+                    <div>
+                        <label for="Configuration_FileName">
+                            File Name
+                        </label>
+
+                        <!-- #section:plugins/input.masked-input -->
+                        @Html.TextBoxFor(p => p.Configuration.FileName, new { @class = "form-control", required = "required" })
+
+
+
+                        <!-- /section:plugins/input.masked-input -->
+                    </div>
+                    <hr />
+                    <div>
+                        <label for="Configuration_Content">
+                            File Content
+                        </label>
+                        @Html.TextAreaFor(p => p.Configuration.Content, new { @class = "autosize-transition form-control", @style = "overflow: hidden; word-wrap: break-word; resize: horizontal; min-height: 52px;", required = "required" })
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm" data-dismiss="modal">
+                        <i class="ace-icon fa fa-times"></i>
+                        Cancel
+                    </button>
+
+                    <button type="submit" class="btn btn-sm btn-primary">
+                        <i class="ace-icon fa fa-check"></i>
+                        Add
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

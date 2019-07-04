@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/fluid/search/cell?operationType=toplevel&treeCodeFilter=-1547554450%7C-1336358841%7C-318150887%7C14000%7C&fmt=json

@@ -1,0 +1,20 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.TimespanPageObject.resetTimespan(TimespanPageObject.java:101);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.TimespanPageObject.setTimespan(TimespanPageObject.java:96);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.enterSearchQuery(BasicSearchPage.java:137);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.runSearch(BasicSearchPage.java:162);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.I_perform_search_by_field_with_query_on_page(BasicSearchPage_Steps.java:176);
+?.When I perform search by field "Title" with query "Information" on page "Basic Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/AcceptanceTest.feature:82)

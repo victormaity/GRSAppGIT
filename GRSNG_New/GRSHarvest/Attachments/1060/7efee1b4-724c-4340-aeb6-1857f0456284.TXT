@@ -1,0 +1,1 @@
+Ancestry,ArmCount,DevStatus,DevStatusId,Drug,DrugId,Endpoint,EndpointReached,HasHealthyVolunteers,HighestDevStatusForInd,HighestDevStatusForIndId,Indication,IndicationId,ProtocolAcronym,ProtocolTitle,Sponsor,StudyType,TrialId,TrialStartDate,TrialStatus

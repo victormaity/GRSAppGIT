@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GRSDataBaseModelStoreContainer" CdmEntityContainer="GRSDataBaseEntities">
+    <EntitySetMapping Name="Accesses">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Access">
+        <MappingFragment StoreEntitySet="Access">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AttachedUser" ColumnName="AttachedUser" />
+          <ScalarProperty Name="AttachedProject" ColumnName="AttachedProject" />
+          <ScalarProperty Name="AttachedGuest" ColumnName="AttachedGuest" />
+          <ScalarProperty Name="DeliveryResult" ColumnName="DeliveryResult" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccountForTestRuns">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.AccountForTestRun">
+        <MappingFragment StoreEntitySet="AccountForTestRun">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="UserLogin" ColumnName="UserLogin" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Analysers">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Analyser">
+        <MappingFragment StoreEntitySet="Analysers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="TestSet" ColumnName="TestSet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Analyses">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Analysis">
+        <MappingFragment StoreEntitySet="Analysis">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="ParentTestCycle" ColumnName="ParentTestCycle" />
+          <ScalarProperty Name="RaisedDate" ColumnName="RaisedDate" />
+          <ScalarProperty Name="StepState" ColumnName="StepState" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="OldDefects" ColumnName="OldDefects" />
+          <ScalarProperty Name="ParentDefect" ColumnName="ParentDefect" />
+          <ScalarProperty Name="ParentStep" ColumnName="ParentStep" />
+          <ScalarProperty Name="GlobalPositionTCName" ColumnName="GlobalPositionTCName" />
+          <ScalarProperty Name="GlobalPositionStepNumber" ColumnName="GlobalPositionStepNumber" />
+          <ScalarProperty Name="CurrentDefects" ColumnName="CurrentDefects" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnalysisHistories">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.AnalysisHistory">
+        <MappingFragment StoreEntitySet="AnalysisHistory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentAnalysis" ColumnName="ParentAnalysis" />
+          <ScalarProperty Name="ChangesPerformedBy" ColumnName="ChangesPerformedBy" />
+          <ScalarProperty Name="PerformedAt" ColumnName="PerformedAt" />
+          <ScalarProperty Name="PerviousState" ColumnName="PerviousState" />
+          <ScalarProperty Name="NewState" ColumnName="NewState" />
+          <ScalarProperty Name="PreviousComments" ColumnName="PreviousComments" />
+          <ScalarProperty Name="NewComments" ColumnName="NewComments" />
+          <ScalarProperty Name="PreviousDefect" ColumnName="PreviousDefect" />
+          <ScalarProperty Name="NewDefect" ColumnName="NewDefect" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AutoAnalysisCaches">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.AutoAnalysisCache">
+        <MappingFragment StoreEntitySet="AutoAnalysisCache">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="TestSuiteName" ColumnName="TestSuiteName" />
+          <ScalarProperty Name="TestCaseName" ColumnName="TestCaseName" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="DefectID" ColumnName="DefectID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LastTimeUsed" ColumnName="LastTimeUsed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BaseProjects">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.BaseProject">
+        <MappingFragment StoreEntitySet="BaseProjects">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BaseProjectName" ColumnName="BaseProjectName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bugrackers">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Bugracker">
+        <MappingFragment StoreEntitySet="Bugrackers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Client">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RemoteMachineIP" ColumnName="RemoteMachineIP" />
+          <ScalarProperty Name="DefaultAccount" ColumnName="DefaultAccount" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="AssignedToExecution" ColumnName="AssignedToExecution" />
+          <ScalarProperty Name="InUse" ColumnName="InUse" />
+          <ScalarProperty Name="Firefox" ColumnName="Firefox" />
+          <ScalarProperty Name="Ie" ColumnName="Ie" />
+          <ScalarProperty Name="Chome" ColumnName="Chome" />
+          <ScalarProperty Name="windowsversion" ColumnName="windowsversion" />
+          <ScalarProperty Name="LastGUID" ColumnName="LastGUID" />
+          <ScalarProperty Name="freespace" ColumnName="freespace" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientsInformations">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.ClientsInformation">
+        <MappingFragment StoreEntitySet="ClientsInformation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ClientURL" ColumnName="ClientURL" />
+          <ScalarProperty Name="ClientEnvironment" ColumnName="ClientEnvironment" />
+          <ScalarProperty Name="ClientUser" ColumnName="ClientUser" />
+          <ScalarProperty Name="ClientIP" ColumnName="ClientIP" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="ClientBrowser" ColumnName="ClientBrowser" />
+          <ScalarProperty Name="ClientOS" ColumnName="ClientOS" />
+          <ScalarProperty Name="ClientFreeSpace" ColumnName="ClientFreeSpace" />
+          <ScalarProperty Name="UI" ColumnName="UI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Defects">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Defect">
+        <MappingFragment StoreEntitySet="Defects">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="BelongToTracker" ColumnName="BelongToTracker" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="DefectID" ColumnName="DefectID" />
+          <ScalarProperty Name="DefectTitle" ColumnName="DefectTitle" />
+          <ScalarProperty Name="DefectComments" ColumnName="DefectComments" />
+          <ScalarProperty Name="DefectState" ColumnName="DefectState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DistributedTests">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.DistributedTest">
+        <MappingFragment StoreEntitySet="DistributedTests">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToShedule" ColumnName="BelongToShedule" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="BelongToSession" ColumnName="BelongToSession" />
+          <ScalarProperty Name="StartedAt" ColumnName="StartedAt" />
+          <ScalarProperty Name="Logs" ColumnName="Logs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DistributionShedules">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.DistributionShedule">
+        <MappingFragment StoreEntitySet="DistributionShedules">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="LastSessionID" ColumnName="LastSessionID" />
+          <ScalarProperty Name="Machines" ColumnName="Machines" />
+          <ScalarProperty Name="Tests" ColumnName="Tests" />
+          <ScalarProperty Name="Environment" ColumnName="Environment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExecutionConfigurations">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.ExecutionConfiguration">
+        <MappingFragment StoreEntitySet="ExecutionConfigurations">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Features">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Feature">
+        <MappingFragment StoreEntitySet="Features">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeatureTags">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.FeatureTag">
+        <MappingFragment StoreEntitySet="FeatureTags">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilesStorages">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.FilesStorage">
+        <MappingFragment StoreEntitySet="FilesStorage">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guests">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Guest">
+        <MappingFragment StoreEntitySet="Guests">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HostsConfigurations">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.HostsConfiguration">
+        <MappingFragment StoreEntitySet="HostsConfiguration">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EnvironmentName" ColumnName="EnvironmentName" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="HostFileContent" ColumnName="HostFileContent" />
+          <ScalarProperty Name="ApplicationURL" ColumnName="ApplicationURL" />
+          <ScalarProperty Name="isBackDoor" ColumnName="isBackDoor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Issues">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Issue">
+        <MappingFragment StoreEntitySet="Issues">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="DefectId" ColumnName="DefectId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoadBalanceds">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.LoadBalanced">
+        <MappingFragment StoreEntitySet="LoadBalanced">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="SerializableContent" ColumnName="SerializableContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoadBalancedMachines">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.LoadBalancedMachine">
+        <MappingFragment StoreEntitySet="LoadBalancedMachines">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NewLoadBalancedId" ColumnName="NewLoadBalancedId" />
+          <ScalarProperty Name="MachineId" ColumnName="MachineId" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="EnvironmentId" ColumnName="EnvironmentId" />
+          <ScalarProperty Name="TargetTestCycle" ColumnName="TargetTestCycle" />
+          <ScalarProperty Name="ExecutionConfigurationId" ColumnName="ExecutionConfigurationId" />
+          <ScalarProperty Name="Browser" ColumnName="Browser" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Include" ColumnName="Include" />
+          <ScalarProperty Name="Exclude" ColumnName="Exclude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoadBalancedTests">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.LoadBalancedTest">
+        <MappingFragment StoreEntitySet="LoadBalancedTests">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NewLoadBalancedId" ColumnName="NewLoadBalancedId" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MachineIP" ColumnName="MachineIP" />
+          <ScalarProperty Name="StartedAt" ColumnName="StartedAt" />
+          <ScalarProperty Name="FinishedAt" ColumnName="FinishedAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginPageMonitors">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.LoginPageMonitor">
+        <MappingFragment StoreEntitySet="LoginPageMonitor">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="LoginPageName" ColumnName="LoginPageName" />
+          <ScalarProperty Name="LoginPageUrl" ColumnName="LoginPageUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewLoadBalanceds">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.NewLoadBalanced">
+        <MappingFragment StoreEntitySet="NewLoadBalanced">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="FrameworkId" ColumnName="FrameworkId" />
+          <ScalarProperty Name="RemoteExecutionLink" ColumnName="RemoteExecutionLink" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Subscribers" ColumnName="Subscribers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Project">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="QCLocation" ColumnName="QCLocation" />
+          <ScalarProperty Name="QCServer" ColumnName="QCServer" />
+          <ScalarProperty Name="Notification_ResultsDelivery" ColumnName="Notification_ResultsDelivery" />
+          <ScalarProperty Name="AssignedBugTracker" ColumnName="AssignedBugTracker" />
+          <ScalarProperty Name="CustomStatuses" ColumnName="CustomStatuses" />
+          <ScalarProperty Name="QcResultsPath" ColumnName="QcResultsPath" />
+          <ScalarProperty Name="SVNpath" ColumnName="SVNpath" />
+          <ScalarProperty Name="SVNlogin" ColumnName="SVNlogin" />
+          <ScalarProperty Name="SVNpassword" ColumnName="SVNpassword" />
+          <ScalarProperty Name="AutoAnalysis" ColumnName="AutoAnalysis" />
+          <ScalarProperty Name="QCTestPlan" ColumnName="QCTestPlan" />
+          <ScalarProperty Name="isPublic" ColumnName="isPublic" />
+          <ScalarProperty Name="isGUI" ColumnName="isGUI" />
+          <ScalarProperty Name="GITPath" ColumnName="GITPath" />
+          <ScalarProperty Name="IsGITDefault" ColumnName="IsGITDefault" />
+          <ScalarProperty Name="GITUsername" ColumnName="GITUsername" />
+          <ScalarProperty Name="GITPassword" ColumnName="GITPassword" />
+          <ScalarProperty Name="IsProjectUpdatingOnServer" ColumnName="IsProjectUpdatingOnServer" />
+          <ScalarProperty Name="ProjectUpdatingBy" ColumnName="ProjectUpdatingBy" />
+          <ScalarProperty Name="IsTestCaseUpdating" ColumnName="IsTestCaseUpdating" />
+          <ScalarProperty Name="TestCaseUpdatedBy" ColumnName="TestCaseUpdatedBy" />
+          <ScalarProperty Name="BaseProjectID" ColumnName="BaseProjectID" />
+          <ScalarProperty Name="ProjectTypeID" ColumnName="ProjectTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectTypes">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.ProjectType">
+        <MappingFragment StoreEntitySet="ProjectTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectTypeName" ColumnName="ProjectTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QCExportAssignments">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.QCExportAssignment">
+        <MappingFragment StoreEntitySet="QCExportAssignment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="TestSetName" ColumnName="TestSetName" />
+          <ScalarProperty Name="QCPath" ColumnName="QCPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelExecutionStatus">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.RelExecutionStatu">
+        <MappingFragment StoreEntitySet="RelExecutionStatus">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ExecutionId" ColumnName="ExecutionId" />
+          <ScalarProperty Name="MachineIP" ColumnName="MachineIP" />
+          <ScalarProperty Name="ExecutionStarted" ColumnName="ExecutionStarted" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsExecutionCompleted" ColumnName="IsExecutionCompleted" />
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+          <ScalarProperty Name="LastStatusCheckedAt" ColumnName="LastStatusCheckedAt" />
+          <ScalarProperty Name="CurrentStatusCheckedAt" ColumnName="CurrentStatusCheckedAt" />
+          <ScalarProperty Name="LastRowCount" ColumnName="LastRowCount" />
+          <ScalarProperty Name="LastRowId" ColumnName="LastRowId" />
+          <ScalarProperty Name="NewRowCount" ColumnName="NewRowCount" />
+          <ScalarProperty Name="NewRowId" ColumnName="NewRowId" />
+          <ScalarProperty Name="TestSuitIds" ColumnName="TestSuitIds" />
+          <ScalarProperty Name="ToAddress" ColumnName="ToAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelExecutionStatusLogs">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.RelExecutionStatusLog">
+        <MappingFragment StoreEntitySet="RelExecutionStatusLogs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MachineIP" ColumnName="MachineIP" />
+          <ScalarProperty Name="ServerDateTime" ColumnName="ServerDateTime" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelFroms">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.RelFrom">
+        <MappingFragment StoreEntitySet="RelFrom">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FromLocation" ColumnName="FromLocation" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelLogs">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.RelLog">
+        <MappingFragment StoreEntitySet="RelLogs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MachineIP" ColumnName="MachineIP" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="RelExecutionStatusID" ColumnName="RelExecutionStatusID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Scenarios">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.Scenario">
+        <MappingFragment StoreEntitySet="Scenarios">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BelongToClient" ColumnName="BelongToClient" />
+          <ScalarProperty Name="FrameworkLocation" ColumnName="FrameworkLocation" />
+          <ScalarProperty Name="Tests" ColumnName="Tests" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="ProfileHost" ColumnName="ProfileHost" />
+          <ScalarProperty Name="Browser" ColumnName="Browser" />
+          <ScalarProperty Name="Configuration" ColumnName="Configuration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SikuliObjects">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.SikuliObject">
+        <MappingFragment StoreEntitySet="SikuliObjects">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="parentProject" ColumnName="parentProject" />
+          <ScalarProperty Name="hash" ColumnName="hash" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="addedBy" ColumnName="addedBy" />
+          <ScalarProperty Name="modifiedBy" ColumnName="modifiedBy" />
+          <ScalarProperty Name="addedOn" ColumnName="addedOn" />
+          <ScalarProperty Name="modifiedOn" ColumnName="modifiedOn" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="isSikuli" ColumnName="isSikuli" />
+          <ScalarProperty Name="contentType" ColumnName="contentType" />
+          <ScalarProperty Name="cathegory" ColumnName="cathegory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubSteps">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.SubStep">
+        <MappingFragment StoreEntitySet="SubStep">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentStep" ColumnName="ParentStep" />
+          <ScalarProperty Name="SubStepValid" ColumnName="SubStepValid" />
+          <ScalarProperty Name="SubStepTime" ColumnName="SubStepTime" />
+          <ScalarProperty Name="SubStepMessage" ColumnName="SubStepMessage" />
+          <ScalarProperty Name="SubStepTechInfo" ColumnName="SubStepTechInfo" />
+          <ScalarProperty Name="SubStepScreenShot" ColumnName="SubStepScreenShot" />
+          <ScalarProperty Name="SubStepScreenShotDriver" ColumnName="SubStepScreenShotDriver" />
+          <ScalarProperty Name="AnalyzedStatus" ColumnName="AnalyzedStatus" />
+          <ScalarProperty Name="Defects" ColumnName="Defects" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestCases">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.TestCase">
+        <MappingFragment StoreEntitySet="TestCase">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentTestSuite" ColumnName="ParentTestSuite" />
+          <ScalarProperty Name="TCName" ColumnName="TCName" />
+          <ScalarProperty Name="TCState" ColumnName="TCState" />
+          <ScalarProperty Name="TCStartTime" ColumnName="TCStartTime" />
+          <ScalarProperty Name="TCEndTime" ColumnName="TCEndTime" />
+          <ScalarProperty Name="TCAttachments" ColumnName="TCAttachments" />
+          <ScalarProperty Name="TCDescription" ColumnName="TCDescription" />
+          <ScalarProperty Name="UI" ColumnName="UI" />
+          <ScalarProperty Name="isAnalyzed" ColumnName="isAnalyzed" />
+          <ScalarProperty Name="Criticality" ColumnName="Criticality" />
+          <ScalarProperty Name="qc_id" ColumnName="qc_id" />
+          <ScalarProperty Name="Hashtag" ColumnName="Hashtag" />
+          <ScalarProperty Name="AnalyzedBy" ColumnName="AnalyzedBy" />
+          <ScalarProperty Name="AnalyzedDate" ColumnName="AnalyzedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestCycles">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.TestCycle">
+        <MappingFragment StoreEntitySet="TestCycles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentProject" ColumnName="ParentProject" />
+          <ScalarProperty Name="CycleName" ColumnName="CycleName" />
+          <ScalarProperty Name="CycleStart" ColumnName="CycleStart" />
+          <ScalarProperty Name="CycleEnd" ColumnName="CycleEnd" />
+          <ScalarProperty Name="CycleComments" ColumnName="CycleComments" />
+          <ScalarProperty Name="CycleIsCurrent" ColumnName="CycleIsCurrent" />
+          <ScalarProperty Name="isInnactive" ColumnName="isInnactive" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="ReleaseName" ColumnName="ReleaseName" />
+          <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestsExecutions">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.TestsExecution">
+        <MappingFragment StoreEntitySet="TestsExecutions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="Tests" ColumnName="Tests" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="ProfileHost" ColumnName="ProfileHost" />
+          <ScalarProperty Name="Browser" ColumnName="Browser" />
+          <ScalarProperty Name="RemoteExecutionLink" ColumnName="RemoteExecutionLink" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FrameworkVersion" ColumnName="FrameworkVersion" />
+          <ScalarProperty Name="Configuration" ColumnName="Configuration" />
+          <ScalarProperty Name="AccaptanceCriteria" ColumnName="AccaptanceCriteria" />
+          <ScalarProperty Name="CategoriesInclude" ColumnName="CategoriesInclude" />
+          <ScalarProperty Name="CategoriesExclude" ColumnName="CategoriesExclude" />
+          <ScalarProperty Name="FailsToAlert" ColumnName="FailsToAlert" />
+          <ScalarProperty Name="Priroty" ColumnName="Priroty" />
+          <ScalarProperty Name="ExecutionType" ColumnName="ExecutionType" />
+          <ScalarProperty Name="Scheduling" ColumnName="Scheduling" />
+          <ScalarProperty Name="TargetTestCycle" ColumnName="TargetTestCycle" />
+          <ScalarProperty Name="LoginPageURL" ColumnName="LoginPageURL" />
+          <ScalarProperty Name="Subscribers" ColumnName="Subscribers" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="isNew" ColumnName="isNew" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestSteps">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.TestStep">
+        <MappingFragment StoreEntitySet="TestStep">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentTestCase" ColumnName="ParentTestCase" />
+          <ScalarProperty Name="StepStartTime" ColumnName="StepStartTime" />
+          <ScalarProperty Name="StepType" ColumnName="StepType" />
+          <ScalarProperty Name="StepScreenshot" ColumnName="StepScreenshot" />
+          <ScalarProperty Name="StepScreenshotDriver" ColumnName="StepScreenshotDriver" />
+          <ScalarProperty Name="StepExpected" ColumnName="StepExpected" />
+          <ScalarProperty Name="StepDescription" ColumnName="StepDescription" />
+          <ScalarProperty Name="StepActual" ColumnName="StepActual" />
+          <ScalarProperty Name="StepInputData" ColumnName="StepInputData" />
+          <ScalarProperty Name="UI" ColumnName="UI" />
+          <ScalarProperty Name="Attachments" ColumnName="Attachments" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestSuits">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.TestSuit">
+        <MappingFragment StoreEntitySet="TestSuits">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentProject" ColumnName="ParentProject" />
+          <ScalarProperty Name="ParentClientInfo" ColumnName="ParentClientInfo" />
+          <ScalarProperty Name="ParentTestCycle" ColumnName="ParentTestCycle" />
+          <ScalarProperty Name="TSName" ColumnName="TSName" />
+          <ScalarProperty Name="TSStart" ColumnName="TSStart" />
+          <ScalarProperty Name="UI" ColumnName="UI" />
+          <ScalarProperty Name="PreviousTestSuite" ColumnName="PreviousTestSuite" />
+          <ScalarProperty Name="isAcceptance" ColumnName="isAcceptance" />
+          <ScalarProperty Name="AcceptanceParent" ColumnName="AcceptanceParent" />
+          <ScalarProperty Name="Tester" ColumnName="Tester" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FailedTestCases" ColumnName="FailedTestCases" />
+          <ScalarProperty Name="PassedTestCases" ColumnName="PassedTestCases" />
+          <ScalarProperty Name="DedicatedLinearExecution" ColumnName="DedicatedLinearExecution" />
+          <ScalarProperty Name="DedicatedLbExecution" ColumnName="DedicatedLbExecution" />
+          <ScalarProperty Name="Hashtag" ColumnName="Hashtag" />
+          <ScalarProperty Name="DeliveryTime" ColumnName="DeliveryTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="USerFullName" ColumnName="USerFullName" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserAdmin" ColumnName="UserAdmin" />
+          <ScalarProperty Name="UserGlobalAdmin" ColumnName="UserGlobalAdmin" />
+          <ScalarProperty Name="UserQCLogin" ColumnName="UserQCLogin" />
+          <ScalarProperty Name="UserQCPassword" ColumnName="UserQCPassword" />
+          <ScalarProperty Name="UserBlocked" ColumnName="UserBlocked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserSessions">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.UserSession">
+        <MappingFragment StoreEntitySet="UserSessions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SessionOwner" ColumnName="SessionOwner" />
+          <ScalarProperty Name="LinkedProject" ColumnName="LinkedProject" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          <ScalarProperty Name="SessionStartDate" ColumnName="SessionStartDate" />
+          <ScalarProperty Name="SessionEndDate" ColumnName="SessionEndDate" />
+          <ScalarProperty Name="SessionIsEndless" ColumnName="SessionIsEndless" />
+          <ScalarProperty Name="SessionIP" ColumnName="SessionIP" />
+          <ScalarProperty Name="SessionBrowser" ColumnName="SessionBrowser" />
+          <ScalarProperty Name="SessionClosed" ColumnName="SessionClosed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_ActualTestSuites">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.vw_ActualTestSuites">
+        <MappingFragment StoreEntitySet="vw_ActualTestSuites">
+          <ScalarProperty Name="BelongToProject" ColumnName="BelongToProject" />
+          <ScalarProperty Name="TestSetName" ColumnName="TestSetName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_AnalyzedSubSteps">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.vw_AnalyzedSubSteps">
+        <MappingFragment StoreEntitySet="vw_AnalyzedSubSteps">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TSName" ColumnName="TSName" />
+          <ScalarProperty Name="isAnalyzed" ColumnName="isAnalyzed" />
+          <ScalarProperty Name="Defects" ColumnName="Defects" />
+          <ScalarProperty Name="AnalyzedStatus" ColumnName="AnalyzedStatus" />
+          <ScalarProperty Name="TSStart" ColumnName="TSStart" />
+          <ScalarProperty Name="TestCaseID" ColumnName="TestCaseID" />
+          <ScalarProperty Name="ClientBrowser" ColumnName="ClientBrowser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Defects">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.vw_Defects">
+        <MappingFragment StoreEntitySet="vw_Defects">
+          <ScalarProperty Name="Defects" ColumnName="Defects" />
+          <ScalarProperty Name="TCycleID" ColumnName="TCycleID" />
+          <ScalarProperty Name="Bugtracker" ColumnName="Bugtracker" />
+          <ScalarProperty Name="TCId" ColumnName="TCId" />
+          <ScalarProperty Name="TCName" ColumnName="TCName" />
+          <ScalarProperty Name="TCDescription" ColumnName="TCDescription" />
+          <ScalarProperty Name="qc_id" ColumnName="qc_id" />
+          <ScalarProperty Name="TSName" ColumnName="TSName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_FilesStorage">
+      <EntityTypeMapping TypeName="GRSDataBaseModel.vw_FilesStorage">
+        <MappingFragment StoreEntitySet="vw_FilesStorage">
+          <ScalarProperty Name="FilesStorage_ID" ColumnName="FilesStorage_ID" />
+          <ScalarProperty Name="FilesStorage_AddedBy" ColumnName="FilesStorage_AddedBy" />
+          <ScalarProperty Name="FilesStorage_BelongToProject" ColumnName="FilesStorage_BelongToProject" />
+          <ScalarProperty Name="FilesStorage_AddedDate" ColumnName="FilesStorage_AddedDate" />
+          <ScalarProperty Name="FilesStorage_Comments" ColumnName="FilesStorage_Comments" />
+          <ScalarProperty Name="FilesStorage_Name" ColumnName="FilesStorage_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="removeFramework" FunctionName="GRSDataBaseModel.Store.removeFramework" />
+    <FunctionImportMapping FunctionImportName="removeTestSuite" FunctionName="GRSDataBaseModel.Store.removeTestSuite" />
+    <FunctionImportMapping FunctionImportName="updateClient" FunctionName="GRSDataBaseModel.Store.updateClient" />
+  </EntityContainerMapping>
+</Mapping>

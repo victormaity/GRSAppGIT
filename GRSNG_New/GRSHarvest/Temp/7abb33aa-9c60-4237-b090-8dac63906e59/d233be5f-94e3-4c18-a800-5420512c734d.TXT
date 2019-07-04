@@ -1,0 +1,1 @@
+          select * from(select trial_id from RS_TRIAL.FF_TRIAL_COMM_SIGNIFICANT where rownum<10)order by dbms_random.value     

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><ontologyTreeOutput><TaxonomyTree><Node depth="1" leaf="false" name="Coronary artery disease" treeCode="1000099-" id="1000099"/></TaxonomyTree></ontologyTreeOutput>

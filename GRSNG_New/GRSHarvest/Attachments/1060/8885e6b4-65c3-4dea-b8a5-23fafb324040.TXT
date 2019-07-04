@@ -1,0 +1,1 @@
+AdverseSummary,Description,DevStatus,DevStatusId,Drugs,Indications,OutcomeSummary,ProtocolTitle,References,TreatmentSummary,TrialId,TrialStatus

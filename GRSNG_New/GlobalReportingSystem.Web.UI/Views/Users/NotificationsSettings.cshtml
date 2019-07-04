@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "NotificationsSettings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<GlobalReportingSystem.Core.Models.GRS.UserResultsNotificationModel>
+<div class="page-header">
+    <h1>
+        Notifications Settings
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Manage results delivery notifications
+        </small>
+    </h1>
+</div>
+<h2></h2>
+
+<table class="table table-striped table-bordered table-hover cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Project Name</th>
+            <th>Result delivery</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var access in Model)
+        {
+            <tr>
+                <td id="@access.ProjectId">@access.ProjectName</td>
+                <td class="tumbler">
+                    @if ((bool)access.DeliveryResult)
+                    {
+                        <button type="button" class="btn btn-xs btn-success">Turned on</button>
+                    }
+                    else
+                    {
+                        <button type="button" class="btn btn-xs btn-danger">Turned off</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    $("button").on("click", function () {
+        var projectId = $(this).parent().siblings("td").attr("id");
+        changeNotificationState(projectId, $(this).parents("tr"));
+    });
+
+    var changeNotificationState = function (projectId, rowObj) {
+        $.ajax({
+            type: "post",
+            url: "@Url.Action("UpdateNotificationsSettings", "Users")",
+            async: true,
+            data: "{'projectId':" + projectId + "}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                }
+                else {
+                    var isTurnedOn = rowObj.find("button").hasClass("btn-success");
+                    if (isTurnedOn) {
+                        rowObj.find("button").removeClass("btn-success");
+                        rowObj.find("button").addClass("btn-danger");
+                        rowObj.find("button").text("Turned off");
+                    }
+                    else {
+                        rowObj.find("button").removeClass("btn-danger");
+                        rowObj.find("button").addClass("btn-success");
+                        rowObj.find("button").text("Turned on");
+                    }
+                }
+            }
+        });
+    }
+
+</script>

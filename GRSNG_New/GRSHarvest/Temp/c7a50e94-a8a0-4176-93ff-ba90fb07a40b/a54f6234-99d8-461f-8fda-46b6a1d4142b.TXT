@@ -1,0 +1,1 @@
+https://produs-api.cortellis.int.clarivate.com/api-ws/ws/rs/diseasebriefings-v2/diseaseBriefingId/45/sectionId/1082

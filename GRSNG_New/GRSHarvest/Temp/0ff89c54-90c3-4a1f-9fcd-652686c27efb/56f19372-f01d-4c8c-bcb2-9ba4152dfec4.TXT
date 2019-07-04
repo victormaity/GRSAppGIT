@@ -1,0 +1,5 @@
+Tech info:
+Exception cause: java.util.NoSuchElementException: No value present 
+ com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.AdvancedSearchPage.clickRecordsSetByNumber(AdvancedSearchPage.java:516);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.BrowseJournalsPage_Steps.I_access_page_for_set(BrowseJournalsPage_Steps.java:74);
+✽.And I access page "Results summary" for set "1"(com/clarivateanalytics/wos/gui/cucumber/Deployment/ResultSummary.feature:323)

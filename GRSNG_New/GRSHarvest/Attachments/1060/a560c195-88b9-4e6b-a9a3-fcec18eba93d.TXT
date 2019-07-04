@@ -1,0 +1,1 @@
+          SELECT *         FROM         (SELECT a.idracnumber AS regulatorynumber         FROM idracng.document a         WHERE a.summary IS NOT NULL         ORDER BY dbms_random.value         )         WHERE rownum<4     

@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/taxonomy/Patient%20Segment/search/agent?operationType=toplevel&treeTypeFilter=1000222-

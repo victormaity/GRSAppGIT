@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/packages.config
+END
+QCClient.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/QCClient.csproj
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/App.config
+END

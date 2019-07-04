@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/analytics-v2/taxonomy/company/children/18767?includeDescendants=0&fmt=xml

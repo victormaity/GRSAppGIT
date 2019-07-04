@@ -1,0 +1,1 @@
+          Select rdt.type_name         from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION drd         join  ci_public_staging.jp_regulatory_designation_type rdt on (drd.DESIGNATION_TYPE_ID=rdt.type_id) where drd.DRUG_ID in (100134,100134)     

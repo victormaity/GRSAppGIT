@@ -1,0 +1,8 @@
+Tech info:
+Exception cause: java.lang.NumberFormatException: For input string: "US" 
+ sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043);
+sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110);
+java.lang.Double.parseDouble(Double.java:538);
+com.thomsonreuters.cucumberfactory.helpers.DataTypes.CustomCollections.IsStrictlySortedNumeric(CustomCollections.java:67);
+com.clarivateAnalytics.cortellis.StepDefinitions.SitesAndInvestigatorsStepdef.resultsInTableAreSortedByColumnInOrderOnPageSitesResults(SitesAndInvestigatorsStepdef.java:248);
+✽.And Results in table are sorted by column "Trial Count" in order "Highest to Lowest" on page 'Sites Results'(Mercer/19_Q1_SitesAndInvestigators/LS_40478[SiteResultsView]ListViewSorting.feature:28)

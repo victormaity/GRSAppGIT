@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.TopToolbar_Steps.iVerifyThePageIsRedirectedToThe(TopToolbar_Steps.java:136);
+✽.Then I verify the page is redirected to the "https://clarivate.com" when clicked on the "Clarivate link"(com/clarivateanalytics/wos/gui/cucumber/Deployment/BasicSearch.feature:664)

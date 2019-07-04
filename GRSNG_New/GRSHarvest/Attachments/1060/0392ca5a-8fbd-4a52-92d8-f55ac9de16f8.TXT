@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="236745"><Title>Getinge to distribute Ultra Clean Systems' ultrasonic systems including the Triton 36 and Triton 72 in the US and Canada</Title><Principal>Ultra Clean Systems Inc</Principal><Partner>Getinge AB</Partner><Type>Technology - Other Proprietary</Type><Status>Active</Status></Deal>

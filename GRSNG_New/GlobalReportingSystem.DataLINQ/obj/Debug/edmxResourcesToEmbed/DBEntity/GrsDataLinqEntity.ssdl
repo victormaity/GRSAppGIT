@@ -1,0 +1,1942 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GRSDataBaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Access">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AttachedUser" Type="int" />
+    <Property Name="AttachedProject" Type="int" />
+    <Property Name="AttachedGuest" Type="int" />
+    <Property Name="DeliveryResult" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AccountForTestRun">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="AccountName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UserLogin" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserPassword" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Analysers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User" Type="int" Nullable="false" />
+    <Property Name="TestSet" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Analysis">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="ParentTestCycle" Type="int" />
+    <Property Name="RaisedDate" Type="datetime" Nullable="false" />
+    <Property Name="StepState" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="500" />
+    <Property Name="OldDefects" Type="nvarchar" MaxLength="500" />
+    <Property Name="ParentDefect" Type="int" />
+    <Property Name="ParentStep" Type="int" Nullable="false" />
+    <Property Name="GlobalPositionTCName" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="GlobalPositionStepNumber" Type="int" Nullable="false" />
+    <Property Name="CurrentDefects" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="AnalysisHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentAnalysis" Type="int" />
+    <Property Name="ChangesPerformedBy" Type="int" />
+    <Property Name="PerformedAt" Type="datetime" Nullable="false" />
+    <Property Name="PerviousState" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NewState" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PreviousComments" Type="nvarchar" MaxLength="500" />
+    <Property Name="NewComments" Type="nvarchar" MaxLength="500" />
+    <Property Name="PreviousDefect" Type="int" />
+    <Property Name="NewDefect" Type="int" />
+  </EntityType>
+  <EntityType Name="AutoAnalysisCache">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectID" Type="int" Nullable="false" />
+    <Property Name="TestSuiteName" Type="nvarchar(max)" />
+    <Property Name="TestCaseName" Type="nvarchar(max)" />
+    <Property Name="ErrorMessage" Type="nvarchar(max)" />
+    <Property Name="DefectID" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="uniqueidentifier" />
+    <Property Name="LastTimeUsed" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BaseProjects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BaseProjectName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bugrackers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="300" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+    <Property Name="Login" Type="nvarchar" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RemoteMachineIP" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="DefaultAccount" Type="int" />
+    <Property Name="AddedBy" Type="int" Nullable="false" />
+    <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="500" />
+    <Property Name="AssignedToExecution" Type="bit" Nullable="false" />
+    <Property Name="InUse" Type="bit" Nullable="false" />
+    <Property Name="Firefox" Type="nvarchar" MaxLength="20" />
+    <Property Name="Ie" Type="nvarchar" MaxLength="20" />
+    <Property Name="Chome" Type="nvarchar" MaxLength="20" />
+    <Property Name="windowsversion" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastGUID" Type="uniqueidentifier" />
+    <Property Name="freespace" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="ClientsInformation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientURL" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ClientEnvironment" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="ClientUser" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="ClientIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+    <Property Name="ClientBrowser" Type="nvarchar" MaxLength="50" />
+    <Property Name="ClientOS" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="ClientFreeSpace" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UI" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Defects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="BelongToTracker" Type="int" />
+    <Property Name="AddedBy" Type="int" />
+    <Property Name="DefectID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DefectTitle" Type="nvarchar" MaxLength="300" />
+    <Property Name="DefectComments" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DefectState" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DistributedTests">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToShedule" Type="int" />
+    <Property Name="TestName" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="BelongToSession" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="StartedAt" Type="datetime" />
+    <Property Name="Logs" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="DistributionShedules">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="LastSessionID" Type="uniqueidentifier" />
+    <Property Name="Machines" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Tests" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Environment" Type="int" />
+  </EntityType>
+  <EntityType Name="ExecutionConfigurations">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="300" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="300" />
+    <Property Name="Content" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Features">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Path" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="FeatureTags">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectId" Type="int" Nullable="false" />
+    <Property Name="Tags" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="FilesStorage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileContent" Type="varbinary(max)" Nullable="false" />
+    <Property Name="AddedBy" Type="int" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Guests">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="HostsConfiguration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EnvironmentName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="HostFileContent" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ApplicationURL" Type="nvarchar" MaxLength="1000" />
+    <Property Name="isBackDoor" Type="bit" />
+  </EntityType>
+  <EntityType Name="Issues">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="DefectId" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="nvarchar" MaxLength="1" />
+    <Property Name="Title" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="LoadBalanced">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="SerializableContent" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LoadBalancedMachines">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NewLoadBalancedId" Type="int" />
+    <Property Name="MachineId" Type="int" />
+    <Property Name="AccountId" Type="int" />
+    <Property Name="EnvironmentId" Type="int" />
+    <Property Name="TargetTestCycle" Type="int" />
+    <Property Name="ExecutionConfigurationId" Type="int" />
+    <Property Name="Browser" Type="nvarchar" MaxLength="30" />
+    <Property Name="Priority" Type="nvarchar" MaxLength="300" />
+    <Property Name="Include" Type="nvarchar" MaxLength="500" />
+    <Property Name="Exclude" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="LoadBalancedTests">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NewLoadBalancedId" Type="int" />
+    <Property Name="TestName" Type="nvarchar" MaxLength="500" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="MachineIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartedAt" Type="datetime" />
+    <Property Name="FinishedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="LoginPageMonitor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="LoginPageName" Type="nvarchar" MaxLength="1000" />
+    <Property Name="LoginPageUrl" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="NewLoadBalanced">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="FrameworkId" Type="int" />
+    <Property Name="RemoteExecutionLink" Type="uniqueidentifier" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="Subscribers" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="500" />
+    <Property Name="QCLocation" Type="nvarchar" MaxLength="500" />
+    <Property Name="QCServer" Type="nvarchar" MaxLength="300" />
+    <Property Name="Notification_ResultsDelivery" Type="bit" />
+    <Property Name="AssignedBugTracker" Type="int" />
+    <Property Name="CustomStatuses" Type="nvarchar(max)" />
+    <Property Name="QcResultsPath" Type="nvarchar" MaxLength="500" />
+    <Property Name="SVNpath" Type="nvarchar" MaxLength="500" />
+    <Property Name="SVNlogin" Type="nvarchar" MaxLength="50" />
+    <Property Name="SVNpassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="AutoAnalysis" Type="bit" />
+    <Property Name="QCTestPlan" Type="nvarchar" MaxLength="500" />
+    <Property Name="isPublic" Type="bit" Nullable="false" />
+    <Property Name="isGUI" Type="bit" Nullable="false" />
+    <Property Name="GITPath" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsGITDefault" Type="nvarchar" MaxLength="10" />
+    <Property Name="GITUsername" Type="nvarchar" MaxLength="100" />
+    <Property Name="GITPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsProjectUpdatingOnServer" Type="bit" />
+    <Property Name="ProjectUpdatingBy" Type="int" />
+    <Property Name="IsTestCaseUpdating" Type="bit" />
+    <Property Name="TestCaseUpdatedBy" Type="int" />
+    <Property Name="BaseProjectID" Type="int" />
+    <Property Name="ProjectTypeID" Type="int" />
+  </EntityType>
+  <EntityType Name="ProjectTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectTypeName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QCExportAssignment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="TestSetName" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="QCPath" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="RelExecutionStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ExecutionId" Type="int" Nullable="false" />
+    <Property Name="MachineIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ExecutionStarted" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+    <Property Name="IsExecutionCompleted" Type="bit" Nullable="false" />
+    <Property Name="CurrentStatus" Type="nvarchar" MaxLength="20" />
+    <Property Name="LastStatusCheckedAt" Type="datetime" Nullable="false" />
+    <Property Name="CurrentStatusCheckedAt" Type="datetime" Nullable="false" />
+    <Property Name="LastRowCount" Type="bigint" />
+    <Property Name="LastRowId" Type="bigint" />
+    <Property Name="NewRowCount" Type="bigint" />
+    <Property Name="NewRowId" Type="bigint" />
+    <Property Name="TestSuitIds" Type="nvarchar(max)" />
+    <Property Name="ToAddress" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="RelExecutionStatusLogs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MachineIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ServerDateTime" Type="datetime" Nullable="false" />
+    <Property Name="Message" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="RelFrom">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FromLocation" Type="nvarchar(max)" />
+    <Property Name="CreatedAt" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RelLogs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MachineIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" Nullable="false" />
+    <Property Name="RelExecutionStatusID" Type="bigint" />
+    <Property Name="Message" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Scenarios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="BelongToClient" Type="int" />
+    <Property Name="FrameworkLocation" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Tests" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Account" Type="int" />
+    <Property Name="ProfileHost" Type="int" />
+    <Property Name="Browser" Type="nvarchar" MaxLength="2" />
+    <Property Name="Configuration" Type="int" />
+  </EntityType>
+  <EntityType Name="SikuliObjects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parentProject" Type="int" />
+    <Property Name="hash" Type="nvarchar" MaxLength="32" />
+    <Property Name="name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="addedBy" Type="int" />
+    <Property Name="modifiedBy" Type="int" />
+    <Property Name="addedOn" Type="datetime" />
+    <Property Name="modifiedOn" Type="datetime" />
+    <Property Name="content" Type="varbinary(max)" />
+    <Property Name="isSikuli" Type="nvarchar" MaxLength="50" />
+    <Property Name="contentType" Type="nvarchar" MaxLength="50" />
+    <Property Name="cathegory" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="SubStep">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentStep" Type="int" />
+    <Property Name="SubStepValid" Type="bit" Nullable="false" />
+    <Property Name="SubStepTime" Type="datetime" Nullable="false" />
+    <Property Name="SubStepMessage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SubStepTechInfo" Type="nvarchar(max)" />
+    <Property Name="SubStepScreenShot" Type="nvarchar" MaxLength="300" />
+    <Property Name="SubStepScreenShotDriver" Type="nvarchar" MaxLength="300" />
+    <Property Name="AnalyzedStatus" Type="uniqueidentifier" />
+    <Property Name="Defects" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TestCase">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentTestSuite" Type="int" />
+    <Property Name="TCName" Type="nvarchar" MaxLength="500" />
+    <Property Name="TCState" Type="nvarchar" MaxLength="100" />
+    <Property Name="TCStartTime" Type="datetime" Nullable="false" />
+    <Property Name="TCEndTime" Type="datetime" Nullable="false" />
+    <Property Name="TCAttachments" Type="nvarchar(max)" />
+    <Property Name="TCDescription" Type="nvarchar(max)" />
+    <Property Name="UI" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="isAnalyzed" Type="bit" Nullable="false" />
+    <Property Name="Criticality" Type="nvarchar" MaxLength="50" />
+    <Property Name="qc_id" Type="nvarchar" MaxLength="500" />
+    <Property Name="Hashtag" Type="nvarchar" MaxLength="100" />
+    <Property Name="AnalyzedBy" Type="int" />
+    <Property Name="AnalyzedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TestCycles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentProject" Type="int" />
+    <Property Name="CycleName" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="CycleStart" Type="datetime" Nullable="false" />
+    <Property Name="CycleEnd" Type="datetime" Nullable="false" />
+    <Property Name="CycleComments" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CycleIsCurrent" Type="bit" />
+    <Property Name="isInnactive" Type="bit" />
+    <Property Name="TeamName" Type="nvarchar(max)" />
+    <Property Name="ReleaseName" Type="nvarchar(max)" />
+    <Property Name="ReleaseDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TestsExecutions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="Client" Type="int" />
+    <Property Name="Tests" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Account" Type="int" />
+    <Property Name="ProfileHost" Type="int" />
+    <Property Name="Browser" Type="nvarchar" MaxLength="2" />
+    <Property Name="RemoteExecutionLink" Type="uniqueidentifier" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="FrameworkVersion" Type="int" />
+    <Property Name="Configuration" Type="int" />
+    <Property Name="AccaptanceCriteria" Type="nvarchar(max)" />
+    <Property Name="CategoriesInclude" Type="nvarchar(max)" />
+    <Property Name="CategoriesExclude" Type="nvarchar(max)" />
+    <Property Name="FailsToAlert" Type="int" />
+    <Property Name="Priroty" Type="nvarchar" MaxLength="200" />
+    <Property Name="ExecutionType" Type="nvarchar" MaxLength="10" />
+    <Property Name="Scheduling" Type="nvarchar(max)" />
+    <Property Name="TargetTestCycle" Type="int" />
+    <Property Name="LoginPageURL" Type="int" />
+    <Property Name="Subscribers" Type="nvarchar(max)" />
+    <Property Name="AddedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="isNew" Type="bit" />
+  </EntityType>
+  <EntityType Name="TestStep">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentTestCase" Type="int" />
+    <Property Name="StepStartTime" Type="datetime" Nullable="false" />
+    <Property Name="StepType" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="StepScreenshot" Type="nvarchar" MaxLength="300" />
+    <Property Name="StepScreenshotDriver" Type="nvarchar" MaxLength="300" />
+    <Property Name="StepExpected" Type="nvarchar(max)" />
+    <Property Name="StepDescription" Type="nvarchar(max)" />
+    <Property Name="StepActual" Type="nvarchar(max)" />
+    <Property Name="StepInputData" Type="nvarchar(max)" />
+    <Property Name="UI" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Attachments" Type="nvarchar(max)" />
+    <Property Name="SortOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="TestSuits">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentProject" Type="int" />
+    <Property Name="ParentClientInfo" Type="int" />
+    <Property Name="ParentTestCycle" Type="int" />
+    <Property Name="TSName" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="TSStart" Type="datetime" Nullable="false" />
+    <Property Name="UI" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PreviousTestSuite" Type="int" />
+    <Property Name="isAcceptance" Type="bit" />
+    <Property Name="AcceptanceParent" Type="uniqueidentifier" />
+    <Property Name="Tester" Type="int" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="500" />
+    <Property Name="FailedTestCases" Type="int" />
+    <Property Name="PassedTestCases" Type="int" />
+    <Property Name="DedicatedLinearExecution" Type="int" />
+    <Property Name="DedicatedLbExecution" Type="int" />
+    <Property Name="Hashtag" Type="nvarchar" MaxLength="100" />
+    <Property Name="DeliveryTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="USerFullName" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="UserEmail" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="UserAdmin" Type="bit" Nullable="false" />
+    <Property Name="UserGlobalAdmin" Type="bit" Nullable="false" />
+    <Property Name="UserQCLogin" Type="nvarchar" MaxLength="200" />
+    <Property Name="UserQCPassword" Type="nvarchar" MaxLength="200" />
+    <Property Name="UserBlocked" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserSessions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SessionOwner" Type="int" />
+    <Property Name="LinkedProject" Type="int" />
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SessionStartDate" Type="datetime" Nullable="false" />
+    <Property Name="SessionEndDate" Type="datetime" Nullable="false" />
+    <Property Name="SessionIsEndless" Type="bit" Nullable="false" />
+    <Property Name="SessionIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SessionBrowser" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="SessionClosed" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'GRSDataBase.dbo.vw_ActualTestSuites' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_ActualTestSuites">
+    <Key>
+      <PropertyRef Name="TestSetName" />
+    </Key>
+    <Property Name="BelongToProject" Type="int" />
+    <Property Name="TestSetName" Type="nvarchar" MaxLength="300" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'GRSDataBase.dbo.vw_AnalyzedSubSteps' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_AnalyzedSubSteps">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="TSName" />
+      <PropertyRef Name="isAnalyzed" />
+      <PropertyRef Name="TSStart" />
+      <PropertyRef Name="TestCaseID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="TSName" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="isAnalyzed" Type="bit" Nullable="false" />
+    <Property Name="Defects" Type="nvarchar(max)" />
+    <Property Name="AnalyzedStatus" Type="uniqueidentifier" />
+    <Property Name="TSStart" Type="datetime" Nullable="false" />
+    <Property Name="TestCaseID" Type="int" Nullable="false" />
+    <Property Name="ClientBrowser" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'GRSDataBase.dbo.vw_Defects' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_Defects">
+    <Key>
+      <PropertyRef Name="TCycleID" />
+      <PropertyRef Name="TCId" />
+      <PropertyRef Name="TSName" />
+    </Key>
+    <Property Name="Defects" Type="nvarchar(max)" />
+    <Property Name="TCycleID" Type="int" Nullable="false" />
+    <Property Name="Bugtracker" Type="nvarchar" MaxLength="500" />
+    <Property Name="TCId" Type="int" Nullable="false" />
+    <Property Name="TCName" Type="nvarchar" MaxLength="500" />
+    <Property Name="TCDescription" Type="nvarchar(max)" />
+    <Property Name="qc_id" Type="nvarchar" MaxLength="500" />
+    <Property Name="TSName" Type="nvarchar" MaxLength="300" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'GRSDataBase.dbo.vw_FilesStorage' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_FilesStorage">
+    <Key>
+      <PropertyRef Name="FilesStorage_ID" />
+      <PropertyRef Name="FilesStorage_AddedBy" />
+      <PropertyRef Name="FilesStorage_AddedDate" />
+    </Key>
+    <Property Name="FilesStorage_ID" Type="int" Nullable="false" />
+    <Property Name="FilesStorage_AddedBy" Type="int" Nullable="false" />
+    <Property Name="FilesStorage_BelongToProject" Type="int" />
+    <Property Name="FilesStorage_AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="FilesStorage_Comments" Type="nvarchar(max)" />
+    <Property Name="FilesStorage_Name" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <Association Name="FK__Access__Attached__5629CD9C">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Access" Type="Self.Access" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Access">
+        <PropertyRef Name="AttachedUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Access__Attached__571DF1D5">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Access" Type="Self.Access" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Access">
+        <PropertyRef Name="AttachedProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Access__Attached__5812160E">
+    <End Role="Guests" Type="Self.Guests" Multiplicity="0..1" />
+    <End Role="Access" Type="Self.Access" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Guests">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Access">
+        <PropertyRef Name="AttachedGuest" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AccountFo__Belon__59063A47">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AccountForTestRun" Type="Self.AccountForTestRun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AccountForTestRun">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Analysis__Belong__59FA5E80">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Analysis" Type="Self.Analysis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Analysis">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Analysis__Parent__5AEE82B9">
+    <End Role="TestCycles" Type="Self.TestCycles" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Analysis" Type="Self.Analysis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestCycles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Analysis">
+        <PropertyRef Name="ParentTestCycle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Analysis__Parent__5BE2A6F2">
+    <End Role="Defects" Type="Self.Defects" Multiplicity="0..1" />
+    <End Role="Analysis" Type="Self.Analysis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Defects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Analysis">
+        <PropertyRef Name="ParentDefect" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalysisH__Chang__5CD6CB2B">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="AnalysisHistory" Type="Self.AnalysisHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AnalysisHistory">
+        <PropertyRef Name="ChangesPerformedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalysisH__NewDe__5DCAEF64">
+    <End Role="Defects" Type="Self.Defects" Multiplicity="0..1" />
+    <End Role="AnalysisHistory" Type="Self.AnalysisHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Defects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AnalysisHistory">
+        <PropertyRef Name="NewDefect" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalysisH__Paren__5EBF139D">
+    <End Role="Analysis" Type="Self.Analysis" Multiplicity="0..1" />
+    <End Role="AnalysisHistory" Type="Self.AnalysisHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Analysis">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AnalysisHistory">
+        <PropertyRef Name="ParentAnalysis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalysisH__Previ__5FB337D6">
+    <End Role="Defects" Type="Self.Defects" Multiplicity="0..1" />
+    <End Role="AnalysisHistory" Type="Self.AnalysisHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Defects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AnalysisHistory">
+        <PropertyRef Name="PreviousDefect" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Clients__AddedBy__60A75C0F">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Clients" Type="Self.Clients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Clients">
+        <PropertyRef Name="AddedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Clients__BelongT__619B8048">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Clients" Type="Self.Clients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Clients">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Clients__Default__628FA481">
+    <End Role="AccountForTestRun" Type="Self.AccountForTestRun" Multiplicity="0..1" />
+    <End Role="Clients" Type="Self.Clients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountForTestRun">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Clients">
+        <PropertyRef Name="DefaultAccount" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Defects__AddedBy__6383C8BA">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Defects" Type="Self.Defects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Defects">
+        <PropertyRef Name="AddedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Defects__BelongT__6477ECF3">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1" />
+    <End Role="Defects" Type="Self.Defects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Defects">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Defects__BelongT__656C112C">
+    <End Role="Bugrackers" Type="Self.Bugrackers" Multiplicity="0..1" />
+    <End Role="Defects" Type="Self.Defects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bugrackers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Defects">
+        <PropertyRef Name="BelongToTracker" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Distribut__Belon__66603565">
+    <End Role="DistributionShedules" Type="Self.DistributionShedules" Multiplicity="0..1" />
+    <End Role="DistributedTests" Type="Self.DistributedTests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DistributionShedules">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DistributedTests">
+        <PropertyRef Name="BelongToShedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Distribut__Belon__6754599E">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1" />
+    <End Role="DistributionShedules" Type="Self.DistributionShedules" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DistributionShedules">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Distribut__Envir__68487DD7">
+    <End Role="HostsConfiguration" Type="Self.HostsConfiguration" Multiplicity="0..1" />
+    <End Role="DistributionShedules" Type="Self.DistributionShedules" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HostsConfiguration">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DistributionShedules">
+        <PropertyRef Name="Environment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Execution__Belon__3DE82FB7">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ExecutionConfigurations" Type="Self.ExecutionConfigurations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ExecutionConfigurations">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FilesStor__Added__6E01572D">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="FilesStorage" Type="Self.FilesStorage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FilesStorage">
+        <PropertyRef Name="AddedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FilesStor__Belon__6EF57B66">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FilesStorage" Type="Self.FilesStorage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FilesStorage">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostsConf__Belon__6C190EBB">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="HostsConfiguration" Type="Self.HostsConfiguration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="HostsConfiguration">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Issues__BelongTo__6D0D32F4">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Issues" Type="Self.Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Issues">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoadBalan__Accou__6EF57B66">
+    <End Role="AccountForTestRun" Type="Self.AccountForTestRun" Multiplicity="0..1" />
+    <End Role="LoadBalancedMachines" Type="Self.LoadBalancedMachines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountForTestRun">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LoadBalancedMachines">
+        <PropertyRef Name="AccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoadBalan__Belon__6E01572D">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LoadBalanced" Type="Self.LoadBalanced" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LoadBalanced">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoadBalan__Envir__51851410">
+    <End Role="HostsConfiguration" Type="Self.HostsConfiguration" Multiplicity="0..1" />
+    <End Role="LoadBalancedMachines" Type="Self.LoadBalancedMachines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HostsConfiguration">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LoadBalancedMachines">
+        <PropertyRef Name="EnvironmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoadBalan__Execu__70DDC3D8">
+    <End Role="ExecutionConfigurations" Type="Self.ExecutionConfigurations" Multiplicity="0..1" />
+    <End Role="LoadBalancedMachines" Type="Self.LoadBalancedMachines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExecutionConfigurations">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LoadBalancedMachines">
+        <PropertyRef Name="ExecutionConfigurationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoadBalan__Machi__71D1E811">
+    <End Role="Clients" Type="Self.Clients" Multiplicity="0..1" />
+    <End Role="LoadBalancedMachines" Type="Self.LoadBalancedMachines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LoadBalancedMachines">
+        <PropertyRef Name="MachineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoadBalan__NewLo__72C60C4A">
+    <End Role="NewLoadBalanced" Type="Self.NewLoadBalanced" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LoadBalancedMachines" Type="Self.LoadBalancedMachines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewLoadBalanced">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LoadBalancedMachines">
+        <PropertyRef Name="NewLoadBalancedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoadBalan__NewLo__74AE54BC">
+    <End Role="NewLoadBalanced" Type="Self.NewLoadBalanced" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LoadBalancedTests" Type="Self.LoadBalancedTests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewLoadBalanced">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LoadBalancedTests">
+        <PropertyRef Name="NewLoadBalancedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoadBalan__Targe__73BA3083">
+    <End Role="TestCycles" Type="Self.TestCycles" Multiplicity="0..1" />
+    <End Role="LoadBalancedMachines" Type="Self.LoadBalancedMachines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestCycles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LoadBalancedMachines">
+        <PropertyRef Name="TargetTestCycle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NewLoadBa__Belon__76969D2E">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1" />
+    <End Role="NewLoadBalanced" Type="Self.NewLoadBalanced" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="NewLoadBalanced">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NewLoadBa__Frame__778AC167">
+    <End Role="FilesStorage" Type="Self.FilesStorage" Multiplicity="0..1" />
+    <End Role="NewLoadBalanced" Type="Self.NewLoadBalanced" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FilesStorage">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="NewLoadBalanced">
+        <PropertyRef Name="FrameworkId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Projects__Assign__787EE5A0">
+    <End Role="Bugrackers" Type="Self.Bugrackers" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Projects" Type="Self.Projects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bugrackers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Projects">
+        <PropertyRef Name="AssignedBugTracker" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__QCExportA__Belon__797309D9">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="QCExportAssignment" Type="Self.QCExportAssignment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="QCExportAssignment">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Scenarios__Accou__7A672E12">
+    <End Role="AccountForTestRun" Type="Self.AccountForTestRun" Multiplicity="0..1" />
+    <End Role="Scenarios" Type="Self.Scenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountForTestRun">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Scenarios">
+        <PropertyRef Name="Account" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Scenarios__Belon__7B5B524B">
+    <End Role="Clients" Type="Self.Clients" Multiplicity="0..1" />
+    <End Role="Scenarios" Type="Self.Scenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Scenarios">
+        <PropertyRef Name="BelongToClient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Scenarios__Confi__7C4F7684">
+    <End Role="ExecutionConfigurations" Type="Self.ExecutionConfigurations" Multiplicity="0..1" />
+    <End Role="Scenarios" Type="Self.Scenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExecutionConfigurations">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Scenarios">
+        <PropertyRef Name="Configuration" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Scenarios__Profi__4589517F">
+    <End Role="HostsConfiguration" Type="Self.HostsConfiguration" Multiplicity="0..1" />
+    <End Role="Scenarios" Type="Self.Scenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HostsConfiguration">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Scenarios">
+        <PropertyRef Name="ProfileHost" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SikuliObj__added__7E37BEF6">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="SikuliObjects" Type="Self.SikuliObjects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SikuliObjects">
+        <PropertyRef Name="addedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SikuliObj__modif__7F2BE32F">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="SikuliObjects" Type="Self.SikuliObjects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SikuliObjects">
+        <PropertyRef Name="modifiedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SikuliObj__paren__00200768">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SikuliObjects" Type="Self.SikuliObjects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SikuliObjects">
+        <PropertyRef Name="parentProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SubStep__ParentS__35BCFE0A">
+    <End Role="TestStep" Type="Self.TestStep" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SubStep" Type="Self.SubStep" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestStep">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SubStep">
+        <PropertyRef Name="ParentStep" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestCase__Parent__2C3393D0">
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TestCase" Type="Self.TestCase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestSuits">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestCase">
+        <PropertyRef Name="ParentTestSuite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestCycle__Paren__02FC7413">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1" />
+    <End Role="TestCycles" Type="Self.TestCycles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestCycles">
+        <PropertyRef Name="ParentProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestsExec__Accou__24285DB4">
+    <End Role="AccountForTestRun" Type="Self.AccountForTestRun" Multiplicity="0..1" />
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountForTestRun">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestsExecutions">
+        <PropertyRef Name="Account" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestsExec__Belon__22401542">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1" />
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestsExecutions">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestsExec__Clien__2334397B">
+    <End Role="Clients" Type="Self.Clients" Multiplicity="0..1" />
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestsExecutions">
+        <PropertyRef Name="Client" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestsExec__Confi__3EDC53F0">
+    <End Role="ExecutionConfigurations" Type="Self.ExecutionConfigurations" Multiplicity="0..1" />
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExecutionConfigurations">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestsExecutions">
+        <PropertyRef Name="Configuration" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestsExec__Frame__3552E9B6">
+    <End Role="FilesStorage" Type="Self.FilesStorage" Multiplicity="0..1" />
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FilesStorage">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestsExecutions">
+        <PropertyRef Name="FrameworkVersion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestsExec__Profi__251C81ED">
+    <End Role="HostsConfiguration" Type="Self.HostsConfiguration" Multiplicity="0..1" />
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HostsConfiguration">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestsExecutions">
+        <PropertyRef Name="ProfileHost" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestsExec__Targe__4D2A7347">
+    <End Role="TestCycles" Type="Self.TestCycles" Multiplicity="0..1" />
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestCycles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestsExecutions">
+        <PropertyRef Name="TargetTestCycle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestStep__Parent__30F848ED">
+    <End Role="TestCase" Type="Self.TestCase" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TestStep" Type="Self.TestStep" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestCase">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestStep">
+        <PropertyRef Name="ParentTestCase" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestSuits__Paren__0C85DE4D">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestSuits">
+        <PropertyRef Name="ParentProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestSuits__Paren__0D7A0286">
+    <End Role="ClientsInformation" Type="Self.ClientsInformation" Multiplicity="0..1" />
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientsInformation">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestSuits">
+        <PropertyRef Name="ParentClientInfo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestSuits__Paren__0E6E26BF">
+    <End Role="TestCycles" Type="Self.TestCycles" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestCycles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestSuits">
+        <PropertyRef Name="ParentTestCycle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestSuits__Previ__0F624AF8">
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="0..1" />
+    <End Role="TestSuits1" Type="Self.TestSuits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestSuits">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestSuits1">
+        <PropertyRef Name="PreviousTestSuite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestSuits__Teste__10566F31">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestSuits">
+        <PropertyRef Name="Tester" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserSessi__Linke__114A936A">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserSessions" Type="Self.UserSessions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserSessions">
+        <PropertyRef Name="LinkedProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserSessi__Sessi__123EB7A3">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="UserSessions" Type="Self.UserSessions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserSessions">
+        <PropertyRef Name="SessionOwner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Analysers_TestSuits">
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Analysers" Type="Self.Analysers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestSuits">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Analysers">
+        <PropertyRef Name="TestSet" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Analysers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Analysers" Type="Self.Analysers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Analysers">
+        <PropertyRef Name="User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientsInformation_ClientsInformation">
+    <End Role="ClientsInformation" Type="Self.ClientsInformation" Multiplicity="1" />
+    <End Role="ClientsInformation1" Type="Self.ClientsInformation" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ClientsInformation">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ClientsInformation1">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LoginPageMonitor_Projects">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LoginPageMonitor" Type="Self.LoginPageMonitor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LoginPageMonitor">
+        <PropertyRef Name="BelongToProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewLoadBalanced_NewLoadBalanced">
+    <End Role="NewLoadBalanced" Type="Self.NewLoadBalanced" Multiplicity="1" />
+    <End Role="NewLoadBalanced1" Type="Self.NewLoadBalanced" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="NewLoadBalanced">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="NewLoadBalanced1">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestCase_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TestCase" Type="Self.TestCase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestCase">
+        <PropertyRef Name="AnalyzedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestsExec_LoginPageMonitor">
+    <End Role="LoginPageMonitor" Type="Self.LoginPageMonitor" Multiplicity="0..1" />
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoginPageMonitor">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestsExecutions">
+        <PropertyRef Name="LoginPageURL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestsExecutions_TestsExecutions">
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="1" />
+    <End Role="TestsExecutions1" Type="Self.TestsExecutions" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TestsExecutions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestsExecutions1">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestSuits_NewLoadBalanced">
+    <End Role="NewLoadBalanced" Type="Self.NewLoadBalanced" Multiplicity="0..1" />
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewLoadBalanced">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestSuits">
+        <PropertyRef Name="DedicatedLbExecution" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestSuits_TestsExecutions">
+    <End Role="TestsExecutions" Type="Self.TestsExecutions" Multiplicity="0..1" />
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestsExecutions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestSuits">
+        <PropertyRef Name="DedicatedLinearExecution" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestSuits_TestSuits">
+    <End Role="TestSuits" Type="Self.TestSuits" Multiplicity="1" />
+    <End Role="TestSuits1" Type="Self.TestSuits" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TestSuits">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestSuits1">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="removeFramework" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="removeTestSuite" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="updateClient" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="clientId" Type="int" Mode="In" />
+    <Parameter Name="ff" Type="nvarchar" Mode="In" />
+    <Parameter Name="ie" Type="nvarchar" Mode="In" />
+    <Parameter Name="ch" Type="nvarchar" Mode="In" />
+    <Parameter Name="win" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="GRSDataBaseModelStoreContainer">
+    <EntitySet Name="Access" EntityType="Self.Access" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AccountForTestRun" EntityType="Self.AccountForTestRun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Analysers" EntityType="Self.Analysers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Analysis" EntityType="Self.Analysis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AnalysisHistory" EntityType="Self.AnalysisHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AutoAnalysisCache" EntityType="Self.AutoAnalysisCache" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaseProjects" EntityType="Self.BaseProjects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bugrackers" EntityType="Self.Bugrackers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clients" EntityType="Self.Clients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClientsInformation" EntityType="Self.ClientsInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Defects" EntityType="Self.Defects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DistributedTests" EntityType="Self.DistributedTests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DistributionShedules" EntityType="Self.DistributionShedules" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExecutionConfigurations" EntityType="Self.ExecutionConfigurations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Features" EntityType="Self.Features" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FeatureTags" EntityType="Self.FeatureTags" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FilesStorage" EntityType="Self.FilesStorage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Guests" EntityType="Self.Guests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HostsConfiguration" EntityType="Self.HostsConfiguration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Issues" EntityType="Self.Issues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoadBalanced" EntityType="Self.LoadBalanced" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoadBalancedMachines" EntityType="Self.LoadBalancedMachines" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoadBalancedTests" EntityType="Self.LoadBalancedTests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoginPageMonitor" EntityType="Self.LoginPageMonitor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewLoadBalanced" EntityType="Self.NewLoadBalanced" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Projects" EntityType="Self.Projects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProjectTypes" EntityType="Self.ProjectTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QCExportAssignment" EntityType="Self.QCExportAssignment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RelExecutionStatus" EntityType="Self.RelExecutionStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RelExecutionStatusLogs" EntityType="Self.RelExecutionStatusLogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RelFrom" EntityType="Self.RelFrom" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RelLogs" EntityType="Self.RelLogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Scenarios" EntityType="Self.Scenarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SikuliObjects" EntityType="Self.SikuliObjects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SubStep" EntityType="Self.SubStep" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestCase" EntityType="Self.TestCase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestCycles" EntityType="Self.TestCycles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestsExecutions" EntityType="Self.TestsExecutions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestStep" EntityType="Self.TestStep" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestSuits" EntityType="Self.TestSuits" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserSessions" EntityType="Self.UserSessions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vw_ActualTestSuites" EntityType="Self.vw_ActualTestSuites" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_ActualTestSuites].[BelongToProject] AS [BelongToProject], 
+    [vw_ActualTestSuites].[TestSetName] AS [TestSetName]
+    FROM [dbo].[vw_ActualTestSuites] AS [vw_ActualTestSuites]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_AnalyzedSubSteps" EntityType="Self.vw_AnalyzedSubSteps" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_AnalyzedSubSteps].[ID] AS [ID], 
+    [vw_AnalyzedSubSteps].[TSName] AS [TSName], 
+    [vw_AnalyzedSubSteps].[isAnalyzed] AS [isAnalyzed], 
+    [vw_AnalyzedSubSteps].[Defects] AS [Defects], 
+    [vw_AnalyzedSubSteps].[AnalyzedStatus] AS [AnalyzedStatus], 
+    [vw_AnalyzedSubSteps].[TSStart] AS [TSStart], 
+    [vw_AnalyzedSubSteps].[TestCaseID] AS [TestCaseID], 
+    [vw_AnalyzedSubSteps].[ClientBrowser] AS [ClientBrowser]
+    FROM [dbo].[vw_AnalyzedSubSteps] AS [vw_AnalyzedSubSteps]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_Defects" EntityType="Self.vw_Defects" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_Defects].[Defects] AS [Defects], 
+    [vw_Defects].[TCycleID] AS [TCycleID], 
+    [vw_Defects].[Bugtracker] AS [Bugtracker], 
+    [vw_Defects].[TCId] AS [TCId], 
+    [vw_Defects].[TCName] AS [TCName], 
+    [vw_Defects].[TCDescription] AS [TCDescription], 
+    [vw_Defects].[qc_id] AS [qc_id], 
+    [vw_Defects].[TSName] AS [TSName]
+    FROM [dbo].[vw_Defects] AS [vw_Defects]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_FilesStorage" EntityType="Self.vw_FilesStorage" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_FilesStorage].[FilesStorage_ID] AS [FilesStorage_ID], 
+    [vw_FilesStorage].[FilesStorage_AddedBy] AS [FilesStorage_AddedBy], 
+    [vw_FilesStorage].[FilesStorage_BelongToProject] AS [FilesStorage_BelongToProject], 
+    [vw_FilesStorage].[FilesStorage_AddedDate] AS [FilesStorage_AddedDate], 
+    [vw_FilesStorage].[FilesStorage_Comments] AS [FilesStorage_Comments], 
+    [vw_FilesStorage].[FilesStorage_Name] AS [FilesStorage_Name]
+    FROM [dbo].[vw_FilesStorage] AS [vw_FilesStorage]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Access__Attached__5629CD9C" Association="Self.FK__Access__Attached__5629CD9C">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Access" EntitySet="Access" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Access__Attached__571DF1D5" Association="Self.FK__Access__Attached__571DF1D5">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="Access" EntitySet="Access" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Access__Attached__5812160E" Association="Self.FK__Access__Attached__5812160E">
+      <End Role="Guests" EntitySet="Guests" />
+      <End Role="Access" EntitySet="Access" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AccountFo__Belon__59063A47" Association="Self.FK__AccountFo__Belon__59063A47">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="AccountForTestRun" EntitySet="AccountForTestRun" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Analysis__Belong__59FA5E80" Association="Self.FK__Analysis__Belong__59FA5E80">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="Analysis" EntitySet="Analysis" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Analysis__Parent__5AEE82B9" Association="Self.FK__Analysis__Parent__5AEE82B9">
+      <End Role="TestCycles" EntitySet="TestCycles" />
+      <End Role="Analysis" EntitySet="Analysis" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Analysis__Parent__5BE2A6F2" Association="Self.FK__Analysis__Parent__5BE2A6F2">
+      <End Role="Defects" EntitySet="Defects" />
+      <End Role="Analysis" EntitySet="Analysis" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalysisH__Chang__5CD6CB2B" Association="Self.FK__AnalysisH__Chang__5CD6CB2B">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AnalysisHistory" EntitySet="AnalysisHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalysisH__NewDe__5DCAEF64" Association="Self.FK__AnalysisH__NewDe__5DCAEF64">
+      <End Role="Defects" EntitySet="Defects" />
+      <End Role="AnalysisHistory" EntitySet="AnalysisHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalysisH__Paren__5EBF139D" Association="Self.FK__AnalysisH__Paren__5EBF139D">
+      <End Role="Analysis" EntitySet="Analysis" />
+      <End Role="AnalysisHistory" EntitySet="AnalysisHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalysisH__Previ__5FB337D6" Association="Self.FK__AnalysisH__Previ__5FB337D6">
+      <End Role="Defects" EntitySet="Defects" />
+      <End Role="AnalysisHistory" EntitySet="AnalysisHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Clients__AddedBy__60A75C0F" Association="Self.FK__Clients__AddedBy__60A75C0F">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Clients" EntitySet="Clients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Clients__BelongT__619B8048" Association="Self.FK__Clients__BelongT__619B8048">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="Clients" EntitySet="Clients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Clients__Default__628FA481" Association="Self.FK__Clients__Default__628FA481">
+      <End Role="AccountForTestRun" EntitySet="AccountForTestRun" />
+      <End Role="Clients" EntitySet="Clients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Defects__AddedBy__6383C8BA" Association="Self.FK__Defects__AddedBy__6383C8BA">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Defects" EntitySet="Defects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Defects__BelongT__6477ECF3" Association="Self.FK__Defects__BelongT__6477ECF3">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="Defects" EntitySet="Defects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Defects__BelongT__656C112C" Association="Self.FK__Defects__BelongT__656C112C">
+      <End Role="Bugrackers" EntitySet="Bugrackers" />
+      <End Role="Defects" EntitySet="Defects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Distribut__Belon__66603565" Association="Self.FK__Distribut__Belon__66603565">
+      <End Role="DistributionShedules" EntitySet="DistributionShedules" />
+      <End Role="DistributedTests" EntitySet="DistributedTests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Distribut__Belon__6754599E" Association="Self.FK__Distribut__Belon__6754599E">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="DistributionShedules" EntitySet="DistributionShedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Distribut__Envir__68487DD7" Association="Self.FK__Distribut__Envir__68487DD7">
+      <End Role="HostsConfiguration" EntitySet="HostsConfiguration" />
+      <End Role="DistributionShedules" EntitySet="DistributionShedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Execution__Belon__3DE82FB7" Association="Self.FK__Execution__Belon__3DE82FB7">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="ExecutionConfigurations" EntitySet="ExecutionConfigurations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FilesStor__Added__6E01572D" Association="Self.FK__FilesStor__Added__6E01572D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="FilesStorage" EntitySet="FilesStorage" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FilesStor__Belon__6EF57B66" Association="Self.FK__FilesStor__Belon__6EF57B66">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="FilesStorage" EntitySet="FilesStorage" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostsConf__Belon__6C190EBB" Association="Self.FK__HostsConf__Belon__6C190EBB">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="HostsConfiguration" EntitySet="HostsConfiguration" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Issues__BelongTo__6D0D32F4" Association="Self.FK__Issues__BelongTo__6D0D32F4">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="Issues" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoadBalan__Accou__6EF57B66" Association="Self.FK__LoadBalan__Accou__6EF57B66">
+      <End Role="AccountForTestRun" EntitySet="AccountForTestRun" />
+      <End Role="LoadBalancedMachines" EntitySet="LoadBalancedMachines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoadBalan__Belon__6E01572D" Association="Self.FK__LoadBalan__Belon__6E01572D">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="LoadBalanced" EntitySet="LoadBalanced" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoadBalan__Envir__51851410" Association="Self.FK__LoadBalan__Envir__51851410">
+      <End Role="HostsConfiguration" EntitySet="HostsConfiguration" />
+      <End Role="LoadBalancedMachines" EntitySet="LoadBalancedMachines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoadBalan__Execu__70DDC3D8" Association="Self.FK__LoadBalan__Execu__70DDC3D8">
+      <End Role="ExecutionConfigurations" EntitySet="ExecutionConfigurations" />
+      <End Role="LoadBalancedMachines" EntitySet="LoadBalancedMachines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoadBalan__Machi__71D1E811" Association="Self.FK__LoadBalan__Machi__71D1E811">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="LoadBalancedMachines" EntitySet="LoadBalancedMachines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoadBalan__NewLo__72C60C4A" Association="Self.FK__LoadBalan__NewLo__72C60C4A">
+      <End Role="NewLoadBalanced" EntitySet="NewLoadBalanced" />
+      <End Role="LoadBalancedMachines" EntitySet="LoadBalancedMachines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoadBalan__NewLo__74AE54BC" Association="Self.FK__LoadBalan__NewLo__74AE54BC">
+      <End Role="NewLoadBalanced" EntitySet="NewLoadBalanced" />
+      <End Role="LoadBalancedTests" EntitySet="LoadBalancedTests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoadBalan__Targe__73BA3083" Association="Self.FK__LoadBalan__Targe__73BA3083">
+      <End Role="TestCycles" EntitySet="TestCycles" />
+      <End Role="LoadBalancedMachines" EntitySet="LoadBalancedMachines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NewLoadBa__Belon__76969D2E" Association="Self.FK__NewLoadBa__Belon__76969D2E">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="NewLoadBalanced" EntitySet="NewLoadBalanced" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NewLoadBa__Frame__778AC167" Association="Self.FK__NewLoadBa__Frame__778AC167">
+      <End Role="FilesStorage" EntitySet="FilesStorage" />
+      <End Role="NewLoadBalanced" EntitySet="NewLoadBalanced" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Projects__Assign__787EE5A0" Association="Self.FK__Projects__Assign__787EE5A0">
+      <End Role="Bugrackers" EntitySet="Bugrackers" />
+      <End Role="Projects" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__QCExportA__Belon__797309D9" Association="Self.FK__QCExportA__Belon__797309D9">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="QCExportAssignment" EntitySet="QCExportAssignment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Scenarios__Accou__7A672E12" Association="Self.FK__Scenarios__Accou__7A672E12">
+      <End Role="AccountForTestRun" EntitySet="AccountForTestRun" />
+      <End Role="Scenarios" EntitySet="Scenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Scenarios__Belon__7B5B524B" Association="Self.FK__Scenarios__Belon__7B5B524B">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="Scenarios" EntitySet="Scenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Scenarios__Confi__7C4F7684" Association="Self.FK__Scenarios__Confi__7C4F7684">
+      <End Role="ExecutionConfigurations" EntitySet="ExecutionConfigurations" />
+      <End Role="Scenarios" EntitySet="Scenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Scenarios__Profi__4589517F" Association="Self.FK__Scenarios__Profi__4589517F">
+      <End Role="HostsConfiguration" EntitySet="HostsConfiguration" />
+      <End Role="Scenarios" EntitySet="Scenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SikuliObj__added__7E37BEF6" Association="Self.FK__SikuliObj__added__7E37BEF6">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SikuliObjects" EntitySet="SikuliObjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SikuliObj__modif__7F2BE32F" Association="Self.FK__SikuliObj__modif__7F2BE32F">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SikuliObjects" EntitySet="SikuliObjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SikuliObj__paren__00200768" Association="Self.FK__SikuliObj__paren__00200768">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="SikuliObjects" EntitySet="SikuliObjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SubStep__ParentS__35BCFE0A" Association="Self.FK__SubStep__ParentS__35BCFE0A">
+      <End Role="TestStep" EntitySet="TestStep" />
+      <End Role="SubStep" EntitySet="SubStep" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestCase__Parent__2C3393D0" Association="Self.FK__TestCase__Parent__2C3393D0">
+      <End Role="TestSuits" EntitySet="TestSuits" />
+      <End Role="TestCase" EntitySet="TestCase" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestCycle__Paren__02FC7413" Association="Self.FK__TestCycle__Paren__02FC7413">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="TestCycles" EntitySet="TestCycles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestsExec__Accou__24285DB4" Association="Self.FK__TestsExec__Accou__24285DB4">
+      <End Role="AccountForTestRun" EntitySet="AccountForTestRun" />
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestsExec__Belon__22401542" Association="Self.FK__TestsExec__Belon__22401542">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestsExec__Clien__2334397B" Association="Self.FK__TestsExec__Clien__2334397B">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestsExec__Confi__3EDC53F0" Association="Self.FK__TestsExec__Confi__3EDC53F0">
+      <End Role="ExecutionConfigurations" EntitySet="ExecutionConfigurations" />
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestsExec__Frame__3552E9B6" Association="Self.FK__TestsExec__Frame__3552E9B6">
+      <End Role="FilesStorage" EntitySet="FilesStorage" />
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestsExec__Profi__251C81ED" Association="Self.FK__TestsExec__Profi__251C81ED">
+      <End Role="HostsConfiguration" EntitySet="HostsConfiguration" />
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestsExec__Targe__4D2A7347" Association="Self.FK__TestsExec__Targe__4D2A7347">
+      <End Role="TestCycles" EntitySet="TestCycles" />
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestStep__Parent__30F848ED" Association="Self.FK__TestStep__Parent__30F848ED">
+      <End Role="TestCase" EntitySet="TestCase" />
+      <End Role="TestStep" EntitySet="TestStep" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestSuits__Paren__0C85DE4D" Association="Self.FK__TestSuits__Paren__0C85DE4D">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="TestSuits" EntitySet="TestSuits" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestSuits__Paren__0D7A0286" Association="Self.FK__TestSuits__Paren__0D7A0286">
+      <End Role="ClientsInformation" EntitySet="ClientsInformation" />
+      <End Role="TestSuits" EntitySet="TestSuits" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestSuits__Paren__0E6E26BF" Association="Self.FK__TestSuits__Paren__0E6E26BF">
+      <End Role="TestCycles" EntitySet="TestCycles" />
+      <End Role="TestSuits" EntitySet="TestSuits" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestSuits__Previ__0F624AF8" Association="Self.FK__TestSuits__Previ__0F624AF8">
+      <End Role="TestSuits" EntitySet="TestSuits" />
+      <End Role="TestSuits1" EntitySet="TestSuits" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestSuits__Teste__10566F31" Association="Self.FK__TestSuits__Teste__10566F31">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TestSuits" EntitySet="TestSuits" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserSessi__Linke__114A936A" Association="Self.FK__UserSessi__Linke__114A936A">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="UserSessions" EntitySet="UserSessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserSessi__Sessi__123EB7A3" Association="Self.FK__UserSessi__Sessi__123EB7A3">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserSessions" EntitySet="UserSessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Analysers_TestSuits" Association="Self.FK_Analysers_TestSuits">
+      <End Role="TestSuits" EntitySet="TestSuits" />
+      <End Role="Analysers" EntitySet="Analysers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Analysers_Users" Association="Self.FK_Analysers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Analysers" EntitySet="Analysers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientsInformation_ClientsInformation" Association="Self.FK_ClientsInformation_ClientsInformation">
+      <End Role="ClientsInformation" EntitySet="ClientsInformation" />
+      <End Role="ClientsInformation1" EntitySet="ClientsInformation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LoginPageMonitor_Projects" Association="Self.FK_LoginPageMonitor_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="LoginPageMonitor" EntitySet="LoginPageMonitor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewLoadBalanced_NewLoadBalanced" Association="Self.FK_NewLoadBalanced_NewLoadBalanced">
+      <End Role="NewLoadBalanced" EntitySet="NewLoadBalanced" />
+      <End Role="NewLoadBalanced1" EntitySet="NewLoadBalanced" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestCase_Users" Association="Self.FK_TestCase_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TestCase" EntitySet="TestCase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestsExec_LoginPageMonitor" Association="Self.FK_TestsExec_LoginPageMonitor">
+      <End Role="LoginPageMonitor" EntitySet="LoginPageMonitor" />
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestsExecutions_TestsExecutions" Association="Self.FK_TestsExecutions_TestsExecutions">
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+      <End Role="TestsExecutions1" EntitySet="TestsExecutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestSuits_NewLoadBalanced" Association="Self.FK_TestSuits_NewLoadBalanced">
+      <End Role="NewLoadBalanced" EntitySet="NewLoadBalanced" />
+      <End Role="TestSuits" EntitySet="TestSuits" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestSuits_TestsExecutions" Association="Self.FK_TestSuits_TestsExecutions">
+      <End Role="TestsExecutions" EntitySet="TestsExecutions" />
+      <End Role="TestSuits" EntitySet="TestSuits" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestSuits_TestSuits" Association="Self.FK_TestSuits_TestSuits">
+      <End Role="TestSuits" EntitySet="TestSuits" />
+      <End Role="TestSuits1" EntitySet="TestSuits" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

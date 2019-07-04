@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=trialCities%3AAlcoy&hits=10&offset=1&filtersEnabled=0&queryLanguage=ssql

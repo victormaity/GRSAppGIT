@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/literature/search/oral?operationType=hierarchy&treeCodeFilter=0000-0012-0070-&fmt=json

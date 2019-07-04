@@ -1,0 +1,1 @@
+Action,ActionId,AuthorityGroup,Company,CompanyId,Country,CountryId,Drug,DrugId,EntityType,HighestDevStatus,HighestDevStatusForInd,HighestDevStatusForIndId,HighestDevStatusId,Indication,IndicationId,IsActiveCompany,LatestChange,ParentCompany,ParentCompanyId,Status,StatusDate,StatusId,StatusSortCode,TherapyArea,TherapyAreaId

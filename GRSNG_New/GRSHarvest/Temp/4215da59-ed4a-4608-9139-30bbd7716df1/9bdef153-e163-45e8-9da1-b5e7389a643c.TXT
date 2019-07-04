@@ -1,0 +1,29 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[@id='timespan']//span[@class='select2-selection__arrow'])[1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBAAMPC03705', ip: '10.10.247.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 16076, moz:profile: C:\Users\rk00555359\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 4b3e8367-f080-4aaa-8bde-e52b87244f2a
+*** Element info: {Using=xpath, value=(//div[@id='timespan']//span[@class='select2-selection__arrow'])[1]} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.TimespanPageObject.resetTimespan(TimespanPageObject.java:101);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.TimespanPageObject.setTimespan(TimespanPageObject.java:96);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.enterSearchQuery(BasicSearchPage.java:138);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.runSearch(BasicSearchPage.java:163);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.I_perform_search_by_field_with_query_on_page(BasicSearchPage_Steps.java:176);
+✽.And I perform search by field "Topic" with query "oil" on page "Basic Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.32_R3_stories.feature:347)

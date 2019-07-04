@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><sourceSummaryOutput><SourceId>1197315</SourceId><Description>Clinical Trial Registry</Description><Title>NCT01331018: Gene Therapy for Fanconi Anemia</Title><Origin>Fred Hutchinson Cancer Research Center</Origin><PublicationDetails><Year>2011</Year></PublicationDetails></sourceSummaryOutput>

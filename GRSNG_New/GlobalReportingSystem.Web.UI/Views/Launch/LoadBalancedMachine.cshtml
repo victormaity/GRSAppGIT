@@ -1,0 +1,131 @@
+﻿@model GlobalReportingSystem.Core.Models.Entities.LoadBalancedMachine
+
+<div machineId="@Model.ID" class="col-xs-12 col-sm-5 widget-container-col ui-sortable">
+    <div class="widget-box widget-color-blue">
+        <!-- #section:custom/widget-box.options.collapsed -->
+        <div class="widget-header widget-header-small">
+            <h6 class="widget-title">
+                <a machineid="@Model.ID" class="white dialogInvoker" targetdialog="machines">
+                    <i class="ace-icon fa fa-laptop"></i>
+                    @( Model.Client == null ? "Machine" : Model.Client.RemoteMachineIP)
+                </a>
+            </h6>
+
+            <div class="widget-toolbar">
+                <a @*href="@Url.Action("RemoveLoadBalancedMachine", new { @id = Model.ID })"*@ onclick="removeLoadBalancedMachine(@Model.ID)">
+                    <i class="red ace-icon fa fa-times"></i>
+                </a>
+                @if (Model.Client != null)
+                {
+                    <a onclick="stopNunit(@Model.MachineId)">
+                        <i class="white-opaque ace-icon fa fa-stop"></i>
+                    </a>
+                    <a data-action="collapse">
+                        <i class="ace-icon fa fa-chevron-up"></i>
+                    </a>
+                }
+            </div>
+        </div>
+
+        <!-- /section:custom/widget-box.options.collapsed -->
+        <div class="widget-body machine" style="height: 150px; overflow: auto;">
+            <div style="font-size: xx-small" class="widget-main">
+                <table>
+                    <tr>
+                        <td id="addEnvironment">
+                            <a class="dialogInvoker" machineId="@Model.ID" targetDialog="environments">Envrironment:</a>
+                        </td>
+                        <td>@(Model.HostsConfiguration != null ? Model.HostsConfiguration.EnvironmentName : " NO")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="dialogInvoker" machineId="@Model.ID" targetDialog="accounts">Account:</a>
+                        </td>
+                        <td>@(Model.AccountForTestRun != null ? Model.AccountForTestRun.AccountName : " NO")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="dialogInvoker" machineId="@Model.ID" targetDialog="browsers">Browser:</a>
+                        </td>
+                        <td>@(Model.Browser ?? " NO")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="dialogInvoker" machineId="@Model.ID" targetDialog="configurations">Config:</a>
+                        </td>
+                        <td>@(Model.ExecutionConfiguration != null ? Model.ExecutionConfiguration.Name : " NO")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="dialogInvoker" machineId="@Model.ID" onclick="updatePriorities(@Model.ID);" targetDialog="priority">Priority:</a>
+                        </td>
+                        <td>@(Model.Priority ?? " NO")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="dialogInvoker" machineid="@Model.ID" onclick="updateCategories(this, @(Model.NewLoadBalanced.FrameworkId != null? Model.NewLoadBalanced.FrameworkId: -1), true);" targetdialog="include_exclude">Include:</a>
+                        </td>
+                        <td>@(Model.Include != null ?Model.Include.Replace(",", ", ") : " NO")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="dialogInvoker" machineId="@Model.ID" onclick="updateCategories(this, @(Model.NewLoadBalanced.FrameworkId != null? Model.NewLoadBalanced.FrameworkId: -1), false);" targetDialog="include_exclude">Exclude:</a>
+                        </td>
+                        <td>@(Model.Exclude!= null ? Model.Exclude.Replace(",", ", ") : " NO")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="dialogInvoker" machineId="@Model.ID" targetDialog="testcycles">Target TC:</a>
+                        </td>
+                        <td>@(Model.TestCycle != null ? Model.TestCycle.CycleName : " ACTIVE")
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script type="text/javascript">
+    $(".dialogInvoker").click(function (e) {
+        $(".ui-dialog:visible").find(".dialog").dialog("close");
+        var machineId = $(this).attr("machineid");
+        var targetDialog = $(this).attr("targetdialog");
+        var obj = $("#" + targetDialog + ">a");
+        if (machineId != -2) {
+            for (var i = 0; i < obj.length; i++) {
+                //var theHref = obj[i].attributes["href"].value;
+                //theHref = theHref.substring(0, theHref.lastIndexOf('=') + 1) + machineId;
+                //obj[i].attributes["href"].value = theHref;
+                //debugger;
+                var theHref = obj[i].attributes["onclick"].value;
+                theHref = theHref.substring(0, theHref.lastIndexOf(',') + 1) + machineId + ")";
+                obj[i].attributes["onclick"].value = theHref;
+            }
+        }
+        var x = e.pageX - $(document).scrollLeft();
+        var y = e.pageY - $(document).scrollTop();
+        var theDialog = $("#" + targetDialog).dialog({ autoOpen: false });
+        theDialog.dialog("option", "position", [x, y]);
+        theDialog.dialog("open");
+    });
+
+    function stopNunit(imageId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("Stop")",
+            data: "{ 'imageId': '" + imageId + "' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () { },
+        error: function () 
+        { 
+            //debugger; 
+        },
+            success: function (msg) {
+                //debugger;
+                ShowMessage(msg.type, msg.text);
+            }
+        });
+    }
+</script>

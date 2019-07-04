@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/ner?text=Meiotic%20recombination%20protein%20REC114&fmt=json

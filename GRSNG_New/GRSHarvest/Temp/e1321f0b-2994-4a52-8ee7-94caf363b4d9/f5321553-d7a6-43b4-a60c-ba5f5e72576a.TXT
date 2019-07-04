@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomson.ls.soa.stack.soaservices.service.soap.v2.export.ExportTokenInput xmlns:ns2="local"><applicationID>ngapi#1756</applicationID><userID>API</userID><token>927bd0dc-7c0a-423c-b5e5-72b756fac7ff</token></ns2:com.thomson.ls.soa.stack.soaservices.service.soap.v2.export.ExportTokenInput>

@@ -1,0 +1,18 @@
+Tech info:
+Exception cause: java.util.NoSuchElementException: No value present 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:58);
+com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.BasicSearchPage.runSearch(BasicSearchPage.java:181);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.BasicSearchPage_Steps.I_perform_search_by_field_with_query_on_page(BasicSearchPage_Steps.java:181);
+✽.When I perform search by field "Topic" with query "((Francesco OR McAfee) AND G*Y NOT 'Jr.')" on page "BasicSearch"(com/clarivateanalytics/wos/gui/cucumber/Deployment/ResultSummary.feature:629)

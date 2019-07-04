@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.MarkedListPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.CitationReportPage 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.CitationReportPageSteps.i_click_on_link_in_metric_box(CitationReportPageSteps.java:382);
+✽.Then I click on "Analyze" link in "Citing Articles" metric box(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.29_R3Stories.feature:184)

@@ -1,0 +1,54 @@
+﻿@model List<GlobalReportingSystem.Core.Models.Entities.User>
+@*<div class="control-group">
+    <label class="control-label bolder blue">Please enter subscribers separated by ',' or choose from existing:</label>
+    <br />
+    <input id="subscribers" type="text" class="ace" style="width: 1000px">
+
+    @foreach (var user in Model)
+    {
+        <div class="checkbox">
+            <label>
+                <input name="form-field-checkbox" type="checkbox" class="ace">
+                <span class="lbl">@user.UserEmail</span>
+            </label>
+        </div>
+    }
+</div>*@
+
+<div class="">
+    <div class="widget-box">
+        <div class="widget-header">
+            <h4 class="widget-title">Please enter subscribers separated by ',' or choose from existing</h4>
+        </div>
+
+        <div class="widget-body">
+            <div class="widget-main no-padding">
+                <form>
+                    <!-- <legend>Form</legend> -->
+                    <fieldset id="subscribers_set">
+                        <input id="subscribers" type="text" class="ace" style="width: 100%">
+
+                        @foreach (var user in Model)
+                        {
+                            <div class="checkbox">
+                                <label>
+                                    <input name="form-field-checkbox" type="checkbox" class="ace" id="@user.UserEmail">
+                                    <span class="lbl">@user.UserEmail</span>
+                                </label>
+                            </div>
+                        }
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#subscribers").click();
+        $(".ace").click(function () {
+            $(".btn-next").removeAttr("disabled");
+        });
+    });
+</script>

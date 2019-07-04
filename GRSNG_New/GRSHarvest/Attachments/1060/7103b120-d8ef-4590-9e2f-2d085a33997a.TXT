@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/ner?text=tripartite%20motif%20containing%2015&fmt=json

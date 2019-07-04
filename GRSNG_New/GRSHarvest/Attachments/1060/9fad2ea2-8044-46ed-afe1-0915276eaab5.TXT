@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><EventTranscript id="12549076"><Name>bluebird bio Inc to Present New Data at the European Hematology Association (EHA) Congress Conference Call</Name><Company>bluebird bio Inc</Company><Drugs><Drug>betibeglogene darolentivec</Drug><Drug>Strimvelis</Drug></Drugs></EventTranscript>

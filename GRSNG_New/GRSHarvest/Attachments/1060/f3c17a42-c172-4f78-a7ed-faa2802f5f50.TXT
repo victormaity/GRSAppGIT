@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="136281"><Title>Hawthorn to develop CoPlex's haw-AD-14 for Alzheimer's and neurodegenerative disease worldwide</Title><Principal>CoPlex Therapeutics LLC</Principal><Partner>Hawthorn Pharmaceuticals Inc</Partner><Type>Drug - Development/Commercialization License</Type><Status>Active</Status></Deal>

@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=cold&hits=2000&sortby=trialPhase&offset=1500&filtersEnabled=0&queryLanguage=ssql

@@ -1,0 +1,69 @@
+﻿@model  GlobalReportingSystem.Core.Models.Entities.ExecutionConfiguration
+<div class="modal-body">
+    <div>
+        <label class="labelForm">
+            Name
+        </label>
+        <div class="input-group">
+            <input type="text" id="modelName-@Model.ID" class="form-control labelForm" value="@Model.Name" />
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            File Name
+        </label>
+        <div class="input-group">
+            <input type="text" id="modelFileName-@Model.ID" class="form-control labelForm" value="@Model.FileName" />
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            File Content
+        </label>
+        <div class="input-group">
+            <textarea id="modelFileContent-@Model.ID" class="form-control labelForm" style="height: 152px;">@Model.Content</textarea>
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-sm" data-dismiss="modal">
+        <i class="ace-icon fa fa-times"></i>
+        Cancel
+    </button>
+
+    <button type="submit" class="btn btn-sm btn-primary" onclick="updateConfiguration(@Model.ID)">
+        <i class="ace-icon fa fa-check"></i>
+        Edit
+    </button>
+</div>
+
+<script>
+    function updateConfiguration(id) {
+        var name = $("#modelName-" + id)[0].value;
+        var fileName = $("#modelFileName-" + id)[0].value;
+        var content = $("#modelFileContent-" + id).val();
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("EditExecutionConfiguration")",
+            data: "{ 'id': " + id + ", 'name':'" + name + "','fileName':'" + fileName + "', 'content':'" + content + "'}",
+            contentType: "application/json; charset=utf-8",
+            success: function () {
+                location.reload();
+            }
+        });
+    }
+</script>

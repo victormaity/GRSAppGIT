@@ -1,0 +1,65 @@
+﻿@*@using System.EnterpriseServices
+@using System.Web.Services.Protocols*@
+
+@*<div id="modal-form-cucumber" class="modal" tabindex="-1">*@
+<div id="modal-form" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="blue bigger">Please select tests to add <i id="loadingBar" class="fa fa-spinner fa-spin"></i></h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        To update your project feature file and tags from GIT, Click =>
+                        <button class="btn btn-sm btn-primary" id="updateFeatureAndTagsModel" title="Update features and tags from GIT version control repository.">
+                            <i class="ace-icon fa fa-check"></i>
+                            Update Features & Tags
+                        </button>
+                    </div>
+                    <br />
+                    <div class="alert alert-success" role="alert">
+                        <span><strong>Runner settings:</strong> -Dcucumber.options=</span>
+                        <span id="featureTags"></span>
+                        <span id="additionalTags"></span>
+                    </div>
+                    <br />
+                    <div style="font-size: small" id="tests">
+                        <div class="tabbable">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs padding-18 tab-size-bigger" id="myTab">
+                                <li class="active">
+                                    <a data-toggle="tab" href="#features">
+                                        <i class="green glyphicon glyphicon-leaf"></i>
+                                        Features
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#tags">
+                                        <span class="green">@@</span>
+                                        Tags
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content no-border padding-24">
+                                <div id="features" class="tab-pane fade in active"></div>
+                                <div id="tags" class="tab-pane fade"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm" data-dismiss="modal">
+                        <i class="ace-icon fa fa-times"></i>
+                        Cancel
+                    </button>
+
+                    <button id="addnewtests" class="btn btn-sm btn-primary">
+                        <i class="ace-icon fa fa-check"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>

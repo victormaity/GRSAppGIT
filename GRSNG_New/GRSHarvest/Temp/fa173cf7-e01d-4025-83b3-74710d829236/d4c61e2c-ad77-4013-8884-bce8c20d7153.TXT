@@ -1,0 +1,26 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'INBASDPC05316', ip: '10.10.243.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\SG00449864\AppData\Local\Temp\rust_mozprofile.9Yc5J1YdKCPb, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8228, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: e7c3bfce-c052-4d78-9c73-d7c43ae3623d
+*** Element info: {Using=xpath, value=//div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408);
+com.clarivateanalytics.wos.gui.cucumber.pages.SummaryPages.ResultsSummaryPage.button_FreeFullTextfromPublisher(ResultsSummaryPage.java:1886);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.ResultSummaryPage_Steps.iClickButton(ResultSummaryPage_Steps.java:786);
+✽.And I click button "Free Full Text from Publisher"(com/clarivateanalytics/wos/gui/cucumber/Deployment/P1defects.feature:173)

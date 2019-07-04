@@ -1,0 +1,15 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Accession Number
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-J27D56MDAI8', ip: '10.152.82.77', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: driver.version: unknown 
+ org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.DropDown.selectByVisibleText(DropDown.java:86);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.SearchFieldRowPageObject.enterData(SearchFieldRowPageObject.java:92);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.SearchFieldRowPageObject.enterData(SearchFieldRowPageObject.java:150);
+com.clarivateanalytics.wos.gui.cucumber.pages.interfaces.SearchFieldRows.fillSearchFieldRows(SearchFieldRows.java:78);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.enterSearchQuery(BasicSearchPage.java:135);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.runSearch(BasicSearchPage.java:162);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.I_perform_search_by_field_with_query_on_page(BasicSearchPage_Steps.java:176);
+✽.And I perform search by field "Accession Number" with query "SCIELO:S0034-71672013000400020" on page "Basic Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/MarkedList.feature:118)

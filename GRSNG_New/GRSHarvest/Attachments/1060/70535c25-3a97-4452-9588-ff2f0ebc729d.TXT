@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.deals.v2.DealRecordsInput xmlns:ns2="local"><idList>148996,152615,152622,247673,257321</idList></ns2:com.thomsonreuters.ls.service.contract.soap.deals.v2.DealRecordsInput>

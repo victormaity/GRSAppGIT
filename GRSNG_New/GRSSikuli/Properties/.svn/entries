@@ -1,0 +1,40 @@
+8
+
+dir
+151790
+http://sourcecontrol.int.thomsonreuters.com:8091/svn/qa_automation/GRS_NextGen/GRSSikuli/Properties
+http://sourcecontrol.int.thomsonreuters.com:8091/svn
+
+
+
+2014-10-14T10:56:12.047042Z
+120036
+aphilip
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4576ea35-741e-0410-a346-fc41942853a1
+
+AssemblyInfo.cs
+file
+
+
+
+
+2015-05-14T14:40:41.675000Z
+a4317f9c4bdf83ac3603fd1c14e38eae
+2014-10-14T10:56:12.047042Z
+120036
+aphilip
+

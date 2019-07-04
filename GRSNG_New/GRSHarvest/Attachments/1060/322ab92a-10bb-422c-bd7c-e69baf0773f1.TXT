@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput xmlns:ns2="local"><treeType>TECH</treeType><searchString>pain</searchString><treeCodeFilter>BIO-</treeCodeFilter><operationType>toplevel</operationType></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput>

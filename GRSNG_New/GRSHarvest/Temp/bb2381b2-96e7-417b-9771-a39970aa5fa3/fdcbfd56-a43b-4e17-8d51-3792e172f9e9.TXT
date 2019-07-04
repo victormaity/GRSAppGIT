@@ -1,0 +1,20 @@
+Tech info:
+Exception cause: org.openqa.selenium.UnhandledAlertException: : 
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBASDPC05844', ip: '10.10.247.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12824, moz:profile: C:\Users\RR00478812\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 03757b33-b488-4ca8-acc7-56699fdf75d1
+*** Element info: {Using=xpath, value=//button[contains(@onclick,'overlay_resp_close')]} 
+ org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362);
+com.clarivateanalytics.wos.gui.cucumber.pages.overlays.SaveSearchCreateSearchAlertOverlay.button_responseOverlayClose(SaveSearchCreateSearchAlertOverlay.java:68);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.SearchHistoryPageSteps.iSaveTheSearchWithTheNameAndDescriptionOnPage(SearchHistoryPageSteps.java:68);
+✽.Then I save the search with the name "savedSearch" and description "" on page "Search History"(com.clarivateanalytics.wos.gui.cucumber.deployment/SavedSearchesAndAlerts.feature:583)

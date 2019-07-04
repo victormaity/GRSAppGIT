@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.AdvancedSearchPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.SearchHistoryPage 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.SearchHistoryPageSteps.iVerifyTheResultCountRetrievedForTheSearchWithForCollectionOnPage(SearchHistoryPageSteps.java:362);
+✽.Then I verify the Result count retrieved for the search with "OG=("Monterrey Inst Technol" OR "Tecnologico de Monterrey" OR "Tecnol Monterrey" OR ITESM or "Instituto Tecnologico de Estudios Superiores de Monterrey")" for collection "Web of Science Core Collection" on "Advanced Search" page(com.clarivateanalytics.wos.gui.cucumber.deployment/CCIssues.feature:1405)

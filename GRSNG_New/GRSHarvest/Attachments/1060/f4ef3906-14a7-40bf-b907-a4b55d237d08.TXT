@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/site/search/?fmt=xls&query=siteRecruitmentInfoTrialId%3A5740&hits=10&offset=0

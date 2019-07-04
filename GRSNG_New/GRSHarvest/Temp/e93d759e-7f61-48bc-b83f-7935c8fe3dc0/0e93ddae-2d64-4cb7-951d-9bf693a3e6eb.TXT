@@ -1,0 +1,14 @@
+Tech info:
+Exception cause: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'INBASDPC05093', ip: '10.10.246.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 66ddb393-8f35-46c8-b35e-40ae64c5ed26 
+ com.thomsonreuters.cucumberfactory.typesfactory.Factory.InvocationHandlers.HTMLInvocationHandler.invoke(HTMLInvocationHandler.java:34);
+com.sun.proxy.$Proxy20.click(Unknown Source);
+com.thomsonreuters.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:56);
+com.thomsonreuters.incites.cucumber.pages.AnaliticsPages.AnaliticsPage.navigatorClick(AnaliticsPage.java:98);
+com.thomsonreuters.incites.cucumber.pages.AnaliticsPages.AnaliticsPage.NavigateToCreateNewTilePage(AnaliticsPage.java:125);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.ManageIndicatorsWindowSteps.I_have_removed_indicator_with_pop_up_Manage_Indicators_from_Result_table_on_page_Explore_People(ManageIndicatorsWindowSteps.java:131);
+✽.When I have removed indicator "Category Normalized Citation Impact" with pop-up 'Manage Indicators' from Result table on page "Explore Journals"(src/test/resources/com.thomsonreuters.incites.cucumber/ExploreJournals/JournalsRemoveIndicators.feature:9)

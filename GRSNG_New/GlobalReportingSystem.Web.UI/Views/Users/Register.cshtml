@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+@model GlobalReportingSystem.Core.Models.GRS.AuthenticationModel
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        <strong>
+            <i class="ace-icon fa fa-times"></i>
+            Error
+        </strong>
+        @ViewBag.ErrorMessage
+        <br>
+    </div>
+}
+
+<div id="signup-box" class="signup-box visible widget-box no-border">
+    <div class="widget-body">
+        <div class="widget-main">
+            <h4 class="header green lighter bigger">
+                <i class="ace-icon fa fa-users blue"></i>
+                New User Registration
+            </h4>
+
+            <div class="space-6"></div>
+            <p>Enter your details to begin: </p>
+
+            @using (Html.BeginForm("Register", "Users", FormMethod.Post))
+            {
+                <fieldset>
+                    <label class="block clearfix">
+                        <span class="block input-icon input-icon-right">
+                            @Html.TextBoxFor(p => p.Email, new { @class = "form-control", @placeholder = "Email" })
+                            <i class="ace-icon fa fa-envelope"></i>
+                        </span>
+                    </label>
+                    
+                       <label class="block clearfix">
+                        <span class="block input-icon input-icon-right">
+                            @Html.TextBoxFor(p => p.FullName, new { @class = "form-control", @placeholder = "Full Name" })
+                            <i class="ace-icon fa fa-user"></i>
+                        </span>
+                    </label>
+
+                    <label class="block clearfix">
+                        <span class="block input-icon input-icon-right">
+                            @Html.TextBoxFor(p => p.Login, new { @class = "form-control", @placeholder = "Login" })
+                            <i class="ace-icon fa fa-user"></i>
+                        </span>
+                    </label>
+
+                    <div class="space-24"></div>
+
+                    <div class="clearfix">
+                        <button type="reset" class="width-30 pull-left btn btn-sm">
+                            <i class="ace-icon fa fa-refresh"></i>
+                            <span class="bigger-110">Reset</span>
+                        </button>
+
+                        <button type="submit" class="width-65 pull-right btn btn-sm btn-success">
+                            <span class="bigger-110">Register</span>
+
+                            <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                        </button>
+                    </div>
+                </fieldset>
+            }
+        </div>
+
+        <div class="toolbar center">
+            <a href="@Url.Action("Index")" class="back-to-login-link">
+                <i class="ace-icon fa fa-arrow-left"></i>
+                Back to login
+            </a>
+        </div>
+    </div>
+    <!-- /.widget-body -->
+</div>
+<!-- /.signup-box -->

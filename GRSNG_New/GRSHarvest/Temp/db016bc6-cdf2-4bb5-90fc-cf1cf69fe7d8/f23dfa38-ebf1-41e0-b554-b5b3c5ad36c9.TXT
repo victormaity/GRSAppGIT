@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.BasicSearchPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage 
+ com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.SavedSearchesAndAlertsPage_Steps.iDisplayRecordsFromInTab(SavedSearchesAndAlertsPage_Steps.java:415);
+✽.And I display records from "Current Contents Connect" in "Saved searches" tab(com/clarivateanalytics/wos/gui/cucumber/Deployment/SavedSearchesAndAlerts.feature:717)

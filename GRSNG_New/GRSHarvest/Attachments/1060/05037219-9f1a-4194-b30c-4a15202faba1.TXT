@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugResultsInput xmlns:ns2="local"><query>drugAddedDate:1999-07-14</query></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugResultsInput>

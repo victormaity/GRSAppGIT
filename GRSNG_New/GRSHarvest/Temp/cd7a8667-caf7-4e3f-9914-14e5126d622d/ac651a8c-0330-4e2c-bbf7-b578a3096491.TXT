@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/ls-dri-api-ws/ddi/ws/rs/auth-v1/token

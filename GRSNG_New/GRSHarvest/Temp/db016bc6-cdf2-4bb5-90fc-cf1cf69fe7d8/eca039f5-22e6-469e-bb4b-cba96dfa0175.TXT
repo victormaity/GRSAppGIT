@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.BasicSearchPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage 
+ com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.SavedSearchesAndAlertsPage_Steps.iVerifyTheErrorMessageWhenSearchIsExecutedWithoutSelectingAFileLocally(SavedSearchesAndAlertsPage_Steps.java:697);
+✽.And I verify the error message "Please select a valid saved history file." when search is executed without selecting a file locally(com/clarivateanalytics/wos/gui/cucumber/Deployment/SavedSearchesAndAlerts.feature:633)

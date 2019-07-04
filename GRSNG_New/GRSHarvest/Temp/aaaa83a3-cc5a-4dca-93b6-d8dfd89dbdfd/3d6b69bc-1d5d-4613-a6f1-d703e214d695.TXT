@@ -1,0 +1,7 @@
+Tech info:
+Exception cause: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: lastName_0 (tried for 20 second(s) with 500 MILLISECONDS interval) 
+ org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80);
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.SearchTypesListPageObject.selectAuthorSearch(SearchTypesListPageObject.java:110);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.CommonSteps.I_select_search(CommonSteps.java:81);
+✽.Then I select search "AUTHORSEARCH"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.29_R3Stories.feature:1041)

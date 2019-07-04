@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><trialSourcesOutput><Sources><Source id="1469079" type="SERIAL">Infusional mitoxantrone plus bolus melphalan as a stem cell transplant conditioning regimen for multiple myeloma</Source></Sources></trialSourcesOutput>

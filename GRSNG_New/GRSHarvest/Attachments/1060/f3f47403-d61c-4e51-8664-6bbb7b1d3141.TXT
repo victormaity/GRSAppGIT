@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Journal id="1000" title="Wy-47846 effects of noradrenergic and serotonergic neuronal activity"><PublicationName>Neuroscience</PublicationName><PublicationVolume>22</PublicationVolume><PublicationIssue></PublicationIssue><PublicationPageStart>S350</PublicationPageStart><PublicationPageEnd></PublicationPageEnd></Journal>

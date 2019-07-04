@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><sourceSummaryOutput><SourceId>607494</SourceId><Description>Corporate Publication</Description><Title>Company website</Title><Authors><Author>Invirion Inc</Author></Authors><Origin>Company World Wide Web site</Origin><PublicationDetails><Date>2001-12-31T00:00:00Z</Date></PublicationDetails></sourceSummaryOutput>

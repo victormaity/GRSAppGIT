@@ -1,0 +1,7 @@
+Tech info:
+Exception cause: java.util.NoSuchElementException: No value present 
+ java.util.Optional.get(Optional.java:135);
+com.clarivateanalytics.wos.gui.cucumber.pages.AccessoryClasses.TopOutputSectionPageObject.selectSortList(TopOutputSectionPageObject.java:332);
+com.clarivateanalytics.wos.gui.cucumber.pages.AccessoryClasses.TopOutputSectionPageObject.selectOptionForSortBy(TopOutputSectionPageObject.java:125);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.ResultSummaryPage_Steps.iSelectSortByOption(ResultSummaryPage_Steps.java:789);
+✽.And I select sort by option "Publication Date -- newest to oldest"(com/clarivateanalytics/wos/gui/cucumber/Deployment/ResultSummary.feature:31)

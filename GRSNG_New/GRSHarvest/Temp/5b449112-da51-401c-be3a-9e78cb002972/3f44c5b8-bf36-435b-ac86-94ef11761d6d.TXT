@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.iVerifyAllTheLinksInTheHelpMenu(BasicSearchPage_Steps.java:650);
+✽.Then I verify all the 'links' in the help menu(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:908)

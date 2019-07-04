@@ -1,0 +1,24 @@
+Tech info:
+Exception cause: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-J27D56MDAI8', ip: '10.152.82.77', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12032, moz:profile: D:\Users\WoSWin7_08\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fea072a6-9881-49fa-bd3a-64a24ab3f18a 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657);
+org.openqa.selenium.remote.RemoteWebDriver.getWindowHandles(RemoteWebDriver.java:505);
+com.clarivateanalytics.wos.gui.cucumber.pages.base.BasePage.<init>(BasePage.java:67);
+com.clarivateanalytics.wos.gui.cucumber.pages.externalpages.ExternalPage.<init>(ExternalPage.java:14);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.FooterPageObject.clickLinkByName(FooterPageObject.java:96);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.SharedReferencePageSteps.External_Page_contains_URL(SharedReferencePageSteps.java:146);
+✽.Then I select item "Clarivate Link" in Footer section to verify page contains "/clarivate.com" URL(com.clarivateanalytics.wos.gui.cucumber.deployment/SharedReference.feature:143)

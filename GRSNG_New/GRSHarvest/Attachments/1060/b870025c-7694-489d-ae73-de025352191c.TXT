@@ -1,0 +1,1 @@
+{"ontologyTreeOutput":{"TaxonomyTree":{"Node":{"@depth":"10","@leaf":"true","@name":"ADP ribosylation factor like protein 4C","@treeCode":"PTG-ENZ-003-006-005-002-ARF-ARL-004-00C-","@id":"PTGT-13753","@blockSelection":"false"}}}}

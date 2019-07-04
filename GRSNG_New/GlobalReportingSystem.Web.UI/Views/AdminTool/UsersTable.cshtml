@@ -1,0 +1,124 @@
+﻿@model GlobalReportingSystem.Core.Models.GRS.ProjectAndUsersModel
+<div class="input-group" style="width:400px; float: right;">
+    <input id="filter" type="text" class="form-control" placeholder="Type here...">
+    <span class="input-group-addon">Filter</span>
+</div>
+<br />
+<br/>
+<!-- /section:custom/widget-box.toolbar -->
+
+<table id="usersTable" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Login</th>
+            <th>Email</th>
+            <th>Is Admin</th>
+            <th>Assign on project</th>
+        </tr>
+    </thead>
+    <tbody class="searchable">
+        @foreach (var user in Model.User)
+        {
+            <tr>
+                <td>@user.USerFullName</td>
+                <td>@user.UserName</td>
+                <td>@user.UserEmail</td>
+                @if (user.UserGlobalAdmin)
+                {
+                    <td>Yes</td>
+                }
+                else
+                {
+                    <td>No</td>
+                }
+                <td>
+                    @{ var access = user.Accesses.FirstOrDefault(p => p.AttachedProject == Model.Project.ID); }
+                    @if (access == null)
+                    {
+                        <a class="green" title="Add User on Project" onclick="asignUser(@Model.Project.ID, @user.ID)">
+                            <i class="ace-icon fa fa-plus fa-2"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="green" title="Remove User from Assignees" onclick="unasignUser(@Model.Project.ID, @user.ID)">
+                            <i class="ace-icon fa fa-times fa-2 red"></i>
+                        </a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+
+        (function ($) {
+
+            $('#filter').keyup(function () {
+
+                var rex = new RegExp($(this).val(), 'i');
+                $('.searchable tr').hide();
+                $('.searchable tr').filter(function () {
+                    return rex.test($(this).text());
+                }).show();
+
+            })
+
+        }(jQuery));
+
+    });
+
+</script>
+
+
+@*<div aria-hidden="true" class="modal" id="modal-form" style="display: none;" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h4 class="blue bigger">Please fill the following fields</h4>
+                </div>
+
+                @using (Html.BeginForm("Users", "Configuration", FormMethod.Post))
+                {
+                    <div class="modal-body">
+                        <div>
+                            <label for="form-field-mask-1">
+                                IP Adress
+                                <small class="text-success">(display)</small>
+                            </label>
+
+                            <!-- #section:plugins/input.masked-input -->
+                            <div class="input-group">
+                                @Html.TextBoxFor(p => p.User, new { @class = "form-control" })
+                                 <!--  <input class="" type="text" id="form-field-mask-1"> -->
+                                <span class="input-group-btn">
+                                    <p class="btn btn-sm btn-default">
+                                        <i class="ace-icon fa fa-pencil bigger-110"></i>
+                                    </p>
+                                </span>
+                            </div>
+
+                            <!-- /section:plugins/input.masked-input -->
+                        </div>
+                        <hr />
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-sm" data-dismiss="modal">
+                            <i class="ace-icon fa fa-times"></i>
+                            Cancel
+                        </button>
+
+                        <button type="submit" class="btn btn-sm btn-primary">
+                            <i class="ace-icon fa fa-check"></i>
+                            Add
+                        </button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>*@
+

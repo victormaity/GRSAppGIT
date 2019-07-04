@@ -1,0 +1,25 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id='show_journal_overlay_1']/p[1]/span[2]/img
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'INBASDPC05844', ip: '10.10.246.148', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\RR0047~1\AppData\Local\Temp\rust_mozprofile.ko9JwtfT9zkX, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=54.0, platformVersion=10.0, moz:processID=8552, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 287e8e37-8a1b-443c-a930-400193202244
+*** Element info: {Using=xpath, value=//*[@id='show_journal_overlay_1']/p[1]/span[2]/img} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:58);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.CitedReferenceSearchStep1Page.runSearch(CitedReferenceSearchStep1Page.java:109);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.I_perform_search_by_field_with_query_on_page(BasicSearchPage_Steps.java:226);
+✽.When I perform search by field "Cited Author" with query "Smith" on page "Cited Reference Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:187)

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/QcEntities
+END
+TestPlan.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/QcEntities/TestPlan.cs
+END
+TestLab.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/QcEntities/TestLab.cs
+END
+TestRun.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/QcEntities/TestRun.cs
+END

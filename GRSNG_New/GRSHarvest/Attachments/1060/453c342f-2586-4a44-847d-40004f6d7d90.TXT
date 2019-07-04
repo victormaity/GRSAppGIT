@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/molfunction/search/acid?operationType=flat&treeCodeFilter=-4%7C-1005343639%7C-749058023%7C-898659605&fmt=json

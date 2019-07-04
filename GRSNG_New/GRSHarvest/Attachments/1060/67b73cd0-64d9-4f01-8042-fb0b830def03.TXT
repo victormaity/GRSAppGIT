@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/ner?text=cancer%20Small%20molecule%20therapeutic%20pain%20omeprazole%20%20Monoclonal%20Hypertension%20antibody&fmt=json

@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.DrillDownReportsSteps.Page_is_displayed_with_visualization(DrillDownReportsSteps.java:762);
+✽.Then Page "Explore Organizations" is displayed with visualization "Trend Graph"(com.thomsonreuters.incites.cucumber/InstitutionProfileSystemReports/InstitutionProfileCNCIOverallTile.feature:10)

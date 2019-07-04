@@ -1,0 +1,11 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class='navBar clearfix']|//*[@class='bau-header-nav-bar']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBASDPC05844', ip: '10.10.246.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 18660, moz:profile: C:\Users\RR0047~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 726dc62d-7123-4ee9-bfd0-b42d52ff508b
+*** Element info: {Using=xpath, value=//*[@class='navBar clearfix']|//*[@class='bau-header-nav-bar']} 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.SavedSearchesAndAlertsPage_Steps.iAccessPageFromPageSavedSearchesAndAlerts(SavedSearchesAndAlertsPage_Steps.java:57);
+✽.And I access page "Add Journals" from  page 'Saved Searches and Alerts'(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:1024)

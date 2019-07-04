@@ -1,0 +1,27 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//li[.//h4[text()='Collaborations']]//button"}
+Command duration or timeout: 30.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'INBAHRPC02806', ip: '10.10.246.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bc1895ee-e61b-4982-8ce5-2442365fa867
+*** Element info: {Using=xpath, value=.//li[.//h4[text()='Collaborations']]//button} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206);
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355);
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69);
+com.thomsonreuters.cucumberfactory.typesfactory.Factory.InvocationHandlers.HTMLInvocationHandler.invoke(HTMLInvocationHandler.java:27);
+com.sun.proxy.$Proxy20.isDisplayed(Unknown Source);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.ResearchPerformancePageSteps.navigateToFromReports(ResearchPerformancePageSteps.java:109);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.ResearchPerformancePageSteps.I_have_clicked_on_button_from_drop_down_for_tile_on_page(ResearchPerformancePageSteps.java:220);
+✽.When I have clicked on button "View Data" from drop-down "Configure tile" for tile "Collaborating Countries/Regions by Subject Area: Web of Science Documents " on page "Collaborations"(com.thomsonreuters.incites.cucumber/CollaborationsSystemReports/CollaboratingCountriesBySubjectAreaWoSDocsTile.feature:71)

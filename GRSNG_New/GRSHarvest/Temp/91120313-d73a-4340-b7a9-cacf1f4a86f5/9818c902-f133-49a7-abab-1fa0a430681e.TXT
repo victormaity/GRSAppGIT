@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.CitingArticlesPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.AdvancedSearchPage 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.AdvancedSearchPage_Steps.iPerformAnotherSearchByQueryOnPage(AdvancedSearchPage_Steps.java:121);
+✽.And I perform another search by query "TI=(ANALYSIS OF PROSPECTIVE AREAS IN NORTHERN AND WESTERN PARTS OF VOLGA-URAL OIL AND GAS BEARING REGION WHERE NEW OIL AND GAS FIELDS MAY BE LOCATED.)" on page "Advanced Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.27_Stories.feature:512)

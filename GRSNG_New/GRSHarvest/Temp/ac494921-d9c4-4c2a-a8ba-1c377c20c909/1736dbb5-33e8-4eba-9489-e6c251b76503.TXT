@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/deals-v2/deal/search?query=finger&fmt=xls&hits=100&offset=0

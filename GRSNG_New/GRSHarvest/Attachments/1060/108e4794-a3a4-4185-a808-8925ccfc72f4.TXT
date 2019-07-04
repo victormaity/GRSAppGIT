@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/process/search/response?operationType=hierarchy&treeCodeFilter=1366013955%7C-353461689&fmt=json

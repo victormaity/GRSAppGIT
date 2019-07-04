@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.CitationReportPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.AnalysisResultsPage 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.AnalysisResultsPage_Steps.iVerifyTheQueryDisplayedInThePageNavigatedFromThePageIsSameAsTheQueryOnCitationReportPage(AnalysisResultsPage_Steps.java:213);
+✽.And I verify the query displayed in the "Result Analysis" page navigated from the page "Basic Search" is same as the query on 'Citation Report' page(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.29_R3Stories.feature:662)

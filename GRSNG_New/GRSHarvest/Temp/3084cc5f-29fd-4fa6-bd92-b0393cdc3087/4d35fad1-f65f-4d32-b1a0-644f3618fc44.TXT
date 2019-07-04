@@ -1,0 +1,1 @@
+{"id":"8e5b2537-3a3b-4a8a-bb82-09d9f67e9375","dataset":"regulatory","time":9,"normalizedUIQL":null,"lastDatasetUpdate":"2019-04-13T00:43:11Z","PagedResults":{"total":0,"firstRow":0,"lastRow":0},"DatasetCounts":[],"HitTerms":{},"serviceExecutionTime":19}

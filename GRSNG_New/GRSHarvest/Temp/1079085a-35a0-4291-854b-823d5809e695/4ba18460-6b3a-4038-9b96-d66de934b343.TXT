@@ -1,0 +1,1 @@
+          SELECT * FROM (SELECT DISTINCT descendant_tree_code FROM ci_public.jp_technology_tree_ad where descendant_tree_code like '%-_%-_%') WHERE rownum < 2     

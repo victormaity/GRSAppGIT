@@ -1,0 +1,1 @@
+          select * from (select TSY_NAME from ls_srv.sita_target_synonyms  order by dbms_random.value         )where rownum <2     

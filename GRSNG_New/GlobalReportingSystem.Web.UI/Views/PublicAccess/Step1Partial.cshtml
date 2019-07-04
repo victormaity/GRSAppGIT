@@ -1,0 +1,341 @@
+﻿@model List<GlobalReportingSystem.Core.Models.Entities.Project>
+<input type="hidden" id="hidden_project" value="" />
+<input type="hidden" id="hidden_tests" value="" />
+<input type="hidden" id="hidden_framework" value="" />
+<input type="hidden" id="hidden_browser" value="" />
+<input type="hidden" id="hidden_client" value="" />
+<input type="hidden" id="hidden_account" value="" />
+<input type="hidden" id="hidden_hostConf" value="" />
+<input type="hidden" id="hidden_execConf" value="" />
+<input type="hidden" id="hidden_subscribers" value="" />
+<div class="row">
+    <div class="col-xs-12">
+        <!-- PAGE CONTENT BEGINS -->
+        <div id="modal-wizard">
+            <div class="">
+                <div class="modal-content">
+                    <div class="modal-header" data-target="#modal-step-contents">
+                        <ul class="wizard-steps">
+                            <li data-target="#modal-step1" class="active">
+                                <span class="step">1</span>
+                                <span class="title">Choose project</span>
+                            </li>
+                            <li data-target="#modal-step2">
+                                <span class="step">2</span>
+                                <span class="title">Select machine</span>
+                            </li>
+                            <li data-target="#modal-step3">
+                                <span class="step">3</span>
+                                <span class="title">Choose tests to run</span>
+                            </li>
+                            <li data-target="#modal-step4">
+                                <span class="step">4</span>
+                                <span class="title">Configuration</span>
+                            </li>
+                            <li data-target="#modal-step5">
+                                <span class="step">5</span>
+                                <span class="title">Email notifications</span>
+                            </li>
+                            <li data-target="#modal-step6">
+                                <span class="step">6</span>
+                                <span class="title">Finish</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-body step-content" id="modal-step-contents">
+
+                        <div class="step-pane active" id="modal-step1">
+                            <div class="">
+                                <div class="control-group">
+                                    <label class="control-label bolder blue">Available projects:</label>
+
+                                    @foreach (var project in Model)
+                                    {
+                                        <div class="radio project">
+                                            <label>
+                                                <input name="form-field-radio" type="radio" class="ace" id="@project.ID">
+                                                <span class="lbl">@project.DisplayName</span>
+                                            </label>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-pane" id="modal-step2">
+                            <div class="">
+                                <div class="control-group">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-pane" id="modal-step3">
+                            <div class="">
+                                <div class="control-group">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-pane" id="modal-step4">
+                            <div class="">
+                                <div class="control-group">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-pane" id="modal-step5">
+                            <div class="">
+                                <div class="control-group">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-pane" id="modal-step6">
+                            <div class="">
+                                <div class="control-group">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer wizard-actions">
+                        <button class="btn btn-sm btn-prev">
+                            <i class="ace-icon fa fa-arrow-left"></i>
+                            Prev
+                        </button>
+
+                        <button class="btn btn-success btn-sm btn-next" data-last="Finish" onclick="changeStep()">
+                            Next
+                                    <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                        </button>
+
+                        <a title="Show History" href="#modal-form-history" class="btn btn-danger btn-sm pull-left" data-dismiss="modal" data-action="settings" role="button" data-toggle="modal" onclick="showHistory()">Execution Repository
+                        </a>
+                        @*                        <a title="Show REL" href="#modal-form-history" data-action="settings" role="button" data-toggle="modal">
+                            <i class="fa fa-external-link"></i>
+                        </a>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE CONTENT ENDS -->
+    </div>
+    <!-- /.col -->
+</div>
+
+
+<script type="text/javascript" src="@Url.Content("~/Scripts/renderFramework.js")"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#modal-wizard .modal-header').ace_wizard();
+        $(".btn-next").attr("disabled", "disabled");
+        $(".ace").click(function () {
+            $(".btn-next").removeAttr("disabled");
+        });
+        $(".btn-next").click(function () {
+            $(".btn-next").attr("disabled", "disabled");
+        });
+        $(".modal-header > ul > li > span").click(function () {
+            return false;
+        });
+    });
+
+    function startExecution(id) {
+        //debugger;
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("RunWithWaiter", "Execution")",
+            data: "{ 'type': 'linear', 'executionId':" + id + "}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+                ShowMessage("Message", "Execution was started successfully");
+            },
+            error: function () { },
+            success: function (msg) {
+                //$.unblockUI(); $.unblockUI(); $.unblockUI();
+                //if (msg.type == "Error") {
+                //debugger;
+                    ShowMessage(msg.type, msg.text);
+                //} else {
+                //    $("#results").html("<br/>Please see REPORT(s) here:<div>" + msg.text + "</div>");
+                //}
+            }
+        });
+    }
+
+    function showHistory() {
+        blockUI();
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("ReturnHistory", "PublicAccess")",
+            async: false,
+            data: "{'user':'" + $('#hidden_user').val() + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { $.unblockUI(); },
+            success: function (msg) {
+                $.unblockUI();
+                $("body").append(msg);
+                //window.location.href="#modal-form-history";
+                //$("#history").html(msg);
+            }
+        });
+    }
+
+    function changeStep() {
+        var id = $(".step-pane.active").attr("id").replace("modal-step", "");
+
+        var action = "";
+        var dataValue = "";
+
+        if (id == 1) {
+            var projId = $(".radio.project > label > input:checked").attr("id");
+            action = "@Url.Action("ReturnMachines", "PublicAccess")";
+            dataValue = "{'projectId':" + projId + "}";
+            $('#hidden_project').val(projId);
+        } else if (id == 2) {
+            blockUI();
+
+            $('#hidden_client').val($(".radio.machine > label > input:checked").attr("id"));
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("ReturnTestFramework", "PublicAccess")",
+                async: false,
+                data: "{'projectId':" + $('#hidden_project').val() + "}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function (msg) {
+                    $.unblockUI();
+                    action = "@Url.Action("RenderTestsForFramework", "Execution")";
+                    dataValue = "{'id':'" + msg + "'}";
+                    $('#hidden_framework').val(msg);
+                }
+            });
+@*        } else if (id == 3) {
+            action = "@Url.Action("ReturnBrowsers", "PublicAccess")";
+            var selectedElements = $("label[chosen='1']");
+            var arr = new Array();
+            for (var x = 0; x < selectedElements.length; x++) {
+                arr.push(selectedElements[x].attributes["path"].value);
+            }
+            $('#hidden_tests').val(arr);
+        } else if (id == 4) {
+            action = "@Url.Action("ReturnEnvironments", "PublicAccess")";
+            dataValue = "{'projectId':" + $('#hidden_project').val() + "}";
+            $('#hidden_browser').val($(".radio.browser > label > input:checked").attr("id"));
+        } else if (id == 5) {
+            action = "@Url.Action("ReturnAccounts", "PublicAccess")";
+            dataValue = "{'projectId':" + $('#hidden_project').val() + "}";
+            $('#hidden_hostConf').val($(".radio.configuration > label > input:checked").attr("id"));*@
+        } else if (id == 3) {
+            action = "@Url.Action("ReturnConfiguration", "PublicAccess")";
+            dataValue = "{'projectId':" + $('#hidden_project').val() + "}";
+            //$('#hidden_account').val($(".radio.account > label > input:checked").attr("id"));
+
+            var selectedElements = $("label[chosen='1']");
+            var arr = new Array();
+            for (var x = 0; x < selectedElements.length; x++) {
+                arr.push(selectedElements[x].attributes["path"].value);
+            }
+            $('#hidden_tests').val(arr);
+        } else if (id == 4) {
+            blockUI();
+            action = "@Url.Action("ReturnSubscribers", "PublicAccess")";
+            dataValue = "{'projectId':" + $('#hidden_project').val() + "}";
+            $('#hidden_execConf').val($(".radio.execconfiguration > label > input:checked").attr("id"));
+            $('#hidden_account').val($(".radio.account > label > input:checked").attr("id"));
+            $('#hidden_hostConf').val($(".radio.configuration > label > input:checked").attr("id"));
+            $('#hidden_browser').val($(".radio.browser > label > input:checked").attr("id"));
+        } else if (id == 5) {
+            var checkboxes = $("#subscribers_set > div > label > input:checked");
+            var subscribersTextbox = $("#subscribers").val().replace(" ", "");
+            var subscribersCheckbox = [];
+
+            if (checkboxes.length != 0) {
+                for (var i = 0; i < checkboxes.length; i++) {
+                    subscribersCheckbox.push(checkboxes[i].getAttribute('id'));
+                }
+            }
+
+            if (checkboxes.length != 0 && subscribersTextbox.length != 0)
+                $('#hidden_subscribers').val(subscribersTextbox + ',' + subscribersCheckbox.join());
+            else if (subscribersTextbox.length != 0)
+                $('#hidden_subscribers').val(subscribersTextbox);
+            else if (checkboxes.length != 0)
+                $('#hidden_subscribers').val(subscribersCheckbox.join());
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("AddFullLinearExecution", "Execution")",
+                async: false,
+                data: "{'user':'" + $('#hidden_user').val() + "', 'projId':'" + $('#hidden_project').val() + "', 'tests':'" + $('#hidden_tests').val() +
+                    "', 'frameworkId':'" + $('#hidden_framework').val() + "', 'browser':'" + $('#hidden_browser').val() +
+                    "', 'client':'" + $('#hidden_client').val() + "', 'account':'" + $('#hidden_account').val() +
+                    "', 'hostConf':'" + $('#hidden_hostConf').val() + "', 'execConf':'" + $('#hidden_execConf').val() +
+                    "', 'subscribers':'" + $('#hidden_subscribers').val() + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function (msg) {
+                    $.unblockUI();
+                    action = "@Url.Action("ReturnExecution", "PublicAccess")";
+                    dataValue = "{'executionId':" + msg + "}";
+                }
+            });
+        }
+
+    $.ajax({
+        type: "POST",
+        url: action,
+        async: false,
+        data: dataValue,
+        contentType: "application/json; charset=utf-8",
+        dataType: "html",
+        beforeSend: function () { },
+        error: function () { },
+        success: function (msg) {
+            //debugger;
+            $.unblockUI();
+            $("#modal-step" + (parseInt(id) + 1) + " > div > div").html(msg);
+        }
+    });
+
+
+        //debugger;
+        //if (id == 1 && $("div.radio.machine > label > input").length == 1) {
+        //    $("div.radio.machine > label > input")[0].click();
+        //    $("div.modal-header").wizard().data('wizard').next();
+        //    $("#hidden_client").val($("div.radio.machine > label > input").attr('id'));
+        //    changeStep();
+        //}
+        //else if (id == 3 && $("div.radio.browser > label > input").length == 1) {
+        //    $(".radio.browser > label > input")[0].click();
+        //    $("div.modal-header").wizard().data('wizard').next();
+        //    $("#hidden_client").val($("div.radio.browser > label > input").attr('id'));
+        //    changeStep();
+        //}
+        //else if (id == 4 && $("div.radio.configuration > label > input").length == 1) {
+        //    $("div.radio.configuration > label > input")[0].click();
+        //    $("div.modal-header").wizard().data('wizard').next();
+        //    $("#hidden_client").val($("div.radio.configuration > label > input").attr('id'));
+        //    changeStep();
+        //}
+        //else if (id == 5 && $("div.radio.account > label > input").length == 1) {
+        //    $("div.radio.account > label > input")[0].click();
+        //    $("div.modal-header").wizard().data('wizard').next();
+        //    $("#hidden_client").val($("div.radio.account > label > input").attr('id'));
+        //    changeStep();
+        //}
+        //else if (id == 6 && $("div.radio.execconfiguration > label > input").length == 1) {
+        //    $("div.radio.execconfiguration > label > input")[0].click();
+        //    $("div.modal-header").wizard().data('wizard').next();
+        //    $("#hidden_client").val($("div.radio.execconfiguration > label > input").attr('id'));
+        //    changeStep();
+        //}
+    }
+</script>

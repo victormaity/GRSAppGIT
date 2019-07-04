@@ -1,0 +1,1 @@
+          select * from(select SUB_NAME from LS_SRV.JPA_GLOBAL_REG_COMPARISON order by dbms_random.value)WHERE rownum<2     

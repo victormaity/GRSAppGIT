@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.BasicSearchPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage 
+ com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.SavedSearchesAndAlertsPage_Steps.iSelectCheckboxesInTab(SavedSearchesAndAlertsPage_Steps.java:161);
+✽.Then I select "all" checkboxes in "saved searches" tab(com/clarivateanalytics/wos/gui/cucumber/Deployment/SavedSearchesAndAlerts.feature:514)

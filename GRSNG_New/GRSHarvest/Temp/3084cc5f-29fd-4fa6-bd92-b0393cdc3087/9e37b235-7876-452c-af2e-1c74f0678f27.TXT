@@ -1,0 +1,1 @@
+http://mwa.us-west-2.stable.dev.cortellis.int.clarivate.com:8335/mr/RestSearchService/v4/search?dataset=regulatory%28breadth%3D%22extended%22%29&searchQuery=can&returnFields=regulatoryTopicForDB&returnLimit=100&sortBy=regulatoryStatus

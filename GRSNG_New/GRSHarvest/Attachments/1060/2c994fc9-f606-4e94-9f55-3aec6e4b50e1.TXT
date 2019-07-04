@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.TaxonomyInput xmlns:ns2="local"><type>indication</type><treeCode>CAR-VAS-</treeCode></ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.TaxonomyInput>

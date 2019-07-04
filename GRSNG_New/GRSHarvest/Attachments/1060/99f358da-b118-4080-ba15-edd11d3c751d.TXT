@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=trialCities%3A%3A1000008&hits=10&offset=1&filtersEnabled=1&queryLanguage=ssql

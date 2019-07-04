@@ -1,0 +1,1 @@
+          SELECT *         FROM         (SELECT drug_id         FROM LS_SRV.ng_drug_change_history a         JOIN LS_SRV.ng_change_type b         ON a.change_type_id=b.change_type_id         JOIN LS_SRV.ng_drug_change_history_entl c         ON a.change_type_id=c.change_type_id         WHERE extended     ='Y'         ORDER BY dbms_random.value         )         WHERE rownum<2     

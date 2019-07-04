@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C659A245-1B04-4C5D-A297-EA67D1BCAFA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QCClient</RootNamespace>
+    <AssemblyName>QCClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\RestClient.cs" />
+    <Compile Include="Entities\QcEntities\TestLab.cs" />
+    <Compile Include="Entities\QcEntities\TestPlan.cs" />
+    <Compile Include="Entities\QcEntities\TestRun.cs" />
+    <Compile Include="Entities\XmlEntities\RunStepEntity.cs" />
+    <Compile Include="Entities\XmlEntities\DesignStepEntities.cs" />
+    <Compile Include="Entities\XmlEntities\DesignStepEntity.cs" />
+    <Compile Include="Entities\XmlEntities\DomainEntity.cs" />
+    <Compile Include="Entities\XmlEntities\Entities.cs" />
+    <Compile Include="Entities\XmlEntities\Field.cs" />
+    <Compile Include="Entities\XmlEntities\Fields.cs" />
+    <Compile Include="Entities\XmlEntities\FoldersSearchResults.cs" />
+    <Compile Include="Entities\XmlEntities\LockStatusEntity.cs" />
+    <Compile Include="Entities\XmlEntities\ProjectEntity.cs" />
+    <Compile Include="Entities\XmlEntities\ResourceDescriptorEntity.cs.cs" />
+    <Compile Include="Entities\XmlEntities\RunEntities.cs" />
+    <Compile Include="Entities\XmlEntities\RunEntity.cs" />
+    <Compile Include="Entities\XmlEntities\TestEntities.cs" />
+    <Compile Include="Entities\XmlEntities\TestEntity.cs" />
+    <Compile Include="Entities\XmlEntities\TestInstanceEntities.cs" />
+    <Compile Include="Entities\XmlEntities\TestInstanceEntity.cs" />
+    <Compile Include="Entities\XmlEntities\TestLabFolderEntity.cs" />
+    <Compile Include="Entities\XmlEntities\TestPlanFolderEntity.cs" />
+    <Compile Include="Entities\XmlEntities\TestSetEntities.cs" />
+    <Compile Include="Entities\XmlEntities\TestSetEntity.cs" />
+    <Compile Include="Entities\XmlEntities\VersionParametersEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\CookieWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\Helper.cs" />
+    <Compile Include="Tools\Serializer.cs" />
+    <Compile Include="Tools\TestSetMigrationState.cs" />
+    <Compile Include="UnitTests\UTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

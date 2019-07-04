@@ -1,0 +1,59 @@
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.dll.config
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\QCClient.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\nunit.framework.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\QCClient.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\nunit.framework.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.csprojResolveAssemblyReference.cache
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.dll.config
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\QCClient.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\nunit.framework.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\nunit.framework.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.csprojResolveAssemblyReference.cache
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.Core\bin\Debug\QCClient.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.dll.config
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\QCClient.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\nunit.framework.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\QCClient.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\bin\Debug\nunit.framework.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.csprojResolveAssemblyReference.cache
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\GlobalReportingSystem.Core.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\QCClient.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\nunit.framework.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\QCClient.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\QCClient.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\bin\Debug\nunit.framework.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.csprojAssemblyReference.cache
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.csproj.CoreCompileInputs.cache
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.csproj.CopyComplete
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.Core\obj\Debug\GlobalReportingSystem.Core.pdb

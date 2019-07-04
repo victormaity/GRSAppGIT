@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/taxonomy/endpoints/search/agent?operationType=flat&treeTypeFilter=1000022-4731-

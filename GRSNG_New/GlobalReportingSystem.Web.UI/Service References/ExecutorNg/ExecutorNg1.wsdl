@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ng.executor.webclient.agent.grs.thomsonreuters.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ng.executor.webclient.agent.grs.thomsonreuters.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ng.executor.webclient.agent.grs.thomsonreuters.com/">
+      <s:element name="PingById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PingByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PingByIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PingByIp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PingByIpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PingByIpResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StartLinear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="executionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StartLinearResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="StartLoadBalanced">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="executionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StartLoadBalancedResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Stop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="WaitForLinearRelResults">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="executionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WaitForLinearRelResultsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WaitForLinearRelResultsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WaitForLbRelResults">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="executionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WaitForLbRelResultsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WaitForLbRelResultsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PingByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:PingById" />
+  </wsdl:message>
+  <wsdl:message name="PingByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:PingByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="PingByIpSoapIn">
+    <wsdl:part name="parameters" element="tns:PingByIp" />
+  </wsdl:message>
+  <wsdl:message name="PingByIpSoapOut">
+    <wsdl:part name="parameters" element="tns:PingByIpResponse" />
+  </wsdl:message>
+  <wsdl:message name="StartLinearSoapIn">
+    <wsdl:part name="parameters" element="tns:StartLinear" />
+  </wsdl:message>
+  <wsdl:message name="StartLinearSoapOut">
+    <wsdl:part name="parameters" element="tns:StartLinearResponse" />
+  </wsdl:message>
+  <wsdl:message name="StartLoadBalancedSoapIn">
+    <wsdl:part name="parameters" element="tns:StartLoadBalanced" />
+  </wsdl:message>
+  <wsdl:message name="StartLoadBalancedSoapOut">
+    <wsdl:part name="parameters" element="tns:StartLoadBalancedResponse" />
+  </wsdl:message>
+  <wsdl:message name="StopSoapIn">
+    <wsdl:part name="parameters" element="tns:Stop" />
+  </wsdl:message>
+  <wsdl:message name="StopSoapOut">
+    <wsdl:part name="parameters" element="tns:StopResponse" />
+  </wsdl:message>
+  <wsdl:message name="WaitForLinearRelResultsSoapIn">
+    <wsdl:part name="parameters" element="tns:WaitForLinearRelResults" />
+  </wsdl:message>
+  <wsdl:message name="WaitForLinearRelResultsSoapOut">
+    <wsdl:part name="parameters" element="tns:WaitForLinearRelResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WaitForLbRelResultsSoapIn">
+    <wsdl:part name="parameters" element="tns:WaitForLbRelResults" />
+  </wsdl:message>
+  <wsdl:message name="WaitForLbRelResultsSoapOut">
+    <wsdl:part name="parameters" element="tns:WaitForLbRelResultsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ExecutorNgSoap">
+    <wsdl:operation name="PingById">
+      <wsdl:input message="tns:PingByIdSoapIn" />
+      <wsdl:output message="tns:PingByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PingByIp">
+      <wsdl:input message="tns:PingByIpSoapIn" />
+      <wsdl:output message="tns:PingByIpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartLinear">
+      <wsdl:input message="tns:StartLinearSoapIn" />
+      <wsdl:output message="tns:StartLinearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartLoadBalanced">
+      <wsdl:input message="tns:StartLoadBalancedSoapIn" />
+      <wsdl:output message="tns:StartLoadBalancedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Stop">
+      <wsdl:input message="tns:StopSoapIn" />
+      <wsdl:output message="tns:StopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WaitForLinearRelResults">
+      <wsdl:input message="tns:WaitForLinearRelResultsSoapIn" />
+      <wsdl:output message="tns:WaitForLinearRelResultsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WaitForLbRelResults">
+      <wsdl:input message="tns:WaitForLbRelResultsSoapIn" />
+      <wsdl:output message="tns:WaitForLbRelResultsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExecutorNgSoap" type="tns:ExecutorNgSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PingById">
+      <soap:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/PingById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PingByIp">
+      <soap:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/PingByIp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartLinear">
+      <soap:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/StartLinear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartLoadBalanced">
+      <soap:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/StartLoadBalanced" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Stop">
+      <soap:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/Stop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WaitForLinearRelResults">
+      <soap:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/WaitForLinearRelResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WaitForLbRelResults">
+      <soap:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/WaitForLbRelResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExecutorNgSoap12" type="tns:ExecutorNgSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PingById">
+      <soap12:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/PingById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PingByIp">
+      <soap12:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/PingByIp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartLinear">
+      <soap12:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/StartLinear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartLoadBalanced">
+      <soap12:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/StartLoadBalanced" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Stop">
+      <soap12:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/Stop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WaitForLinearRelResults">
+      <soap12:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/WaitForLinearRelResults" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WaitForLbRelResults">
+      <soap12:operation soapAction="http://ng.executor.webclient.agent.grs.thomsonreuters.com/WaitForLbRelResults" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExecutorNg">
+    <wsdl:port name="ExecutorNgSoap" binding="tns:ExecutorNgSoap">
+      <soap:address location="http://10.236.4.153/nggrs/executor/ExecutorNg.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExecutorNgSoap12" binding="tns:ExecutorNgSoap12">
+      <soap12:address location="http://10.236.4.153/nggrs/executor/ExecutorNg.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1 @@
+          (SELECT * FROM         (SELECT dl.deal_id FROM CI_PUBLIC.jp_deal dl ORDER BY dbms_random.value)         WHERE rownum<2         )     

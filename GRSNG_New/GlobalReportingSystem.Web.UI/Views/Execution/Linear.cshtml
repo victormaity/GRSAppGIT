@@ -1,0 +1,801 @@
+﻿@{
+    ViewBag.Title = "Linear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Configuration
+@model GlobalReportingSystem.Core.Models.GRS.LinearExecutionViewModel
+<div class="page-header">
+    <h1>
+        Linear
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Tests order
+        </small>
+    </h1>
+</div>
+
+
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Linear Model</h5>
+
+            <!-- #section:custom/widget-box.toolbar -->
+            <div class="widget-toolbar">
+                <div class="widget-menu">
+                    <a data-action="fullscreen" class="orange2">
+                        <i class="ace-icon fa fa-expand"></i>
+                    </a>
+                    <a class="dialogInvoker" executionid="-2" targetdialog="frameworks" data-action="settings" role="button" data-toggle="modal">
+                        <i class="ace-icon fa fa-plus"></i>
+                    </a>
+                    <a title="Start All" data-action="settings" role="button" data-toggle="modal" onclick="startExecutionAll([@String.Join(",", Model.TestsExecutions.Select(p => p.TestsExecution.ID).ToList())])">
+                        <i class="ace-icon fa fa-play"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- /section:custom/widget-box.toolbar -->
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+@if (Model.ProjectInfo.Project.TestCycles.Count == 0)
+{
+    <span>There is no test cycles assigned to project. Please, go to configuration to add it.</span>
+}
+else
+{ 
+                <table style="font-size: xx-small" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>
+                                Machine
+                            </th>
+                            <th>
+                                Tests
+                            </th>
+                            <th>
+                                Browser
+                            </th>
+                            <th>
+                                Environment
+                            </th>
+                            <th>
+                                Account
+                            </th>
+                            <th>
+                                Configuration
+                            </th>
+                            <th>
+                                Framework
+                            </th>
+                            <th>
+                                Include
+                            </th>
+                            <th>
+                                Exclude
+                            </th>
+                            <th>
+                                Priority
+                            </th>
+                            <th>
+                                Target Test Cycle
+                            </th>
+                            <th>
+                                Nolio Subscribers
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            @foreach (var execution in Model.TestsExecutions)
+                            {
+                                <tr id="@execution.TestsExecution.ID">
+                                    <td>
+                                        <div class="btn-group">
+                                            <button data-toggle="dropdown" class="btn btn-inverse btn-xs dropdown-toggle">
+                                                <i class="fa fa-info-circle"></i>
+                                                <span class="ace-icon fa fa-caret-down icon-on-right"></span>
+                                            </button>
+
+                                            <ul class="dropdown-menu dropdown-inverse">
+                                                <li>
+                                                    <a href="#modal-form" data-action="settings" role="button" onclick="loadTests(@execution.TestsExecution.FrameworkVersion);setSectionId(@execution.TestsExecution.ID);" data-toggle="modal"><i class="fa fa-plus-circle"></i>&nbsp; Add Tests</a>
+                                                </li>
+                                                <li>
+                                                    <a id="ping_btn" onclick="pingLinear(@execution.TestsExecution.ID);"><i class="fa fa-check-circle-o"></i>&nbsp; Ping</a>
+                                                </li>
+                                                <li>
+                                                    <a id="start_exec" onclick="startExecution(@execution.TestsExecution.ID)"><i class="fa fa-play"></i>&nbsp; Start</a>
+                                                </li>
+                                                <li>
+                                                    <a id="stop_exec" onclick="stopExecution(@execution.TestsExecution.ID)"><i class="fa fa-stop"></i>&nbsp; Stop</a>
+                                                </li>
+                                                <li>
+                                                    <a onclick="removeLinearElement(@execution.TestsExecution.ID)"><i class="fa fa-trash-o"></i>&nbsp; Delete</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#modal-form2" data-action="settings" role="button" data-toggle="modal" onclick="ShowRELInForm('@execution.TestsExecution.RemoteExecutionLink','@(execution.TestsExecution.Client1 == null ? "" : @execution.TestsExecution.Client1.RemoteMachineIP)','@(execution.TestsExecution.HostsConfiguration == null ? "" : @execution.TestsExecution.HostsConfiguration.EnvironmentName)','@(execution.TestsExecution.AccountForTestRun == null ? "" : @execution.TestsExecution.AccountForTestRun.AccountName)');">
+                                                        <i class="fa fa-external-link"></i>&nbsp; Show Rel
+                                                    </a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td class="dialogInvoker" targetdialog="machines" executionid="@execution.TestsExecution.ID">
+                                        @(execution.TestsExecution.Client1 != null ? execution.TestsExecution.Client1.RemoteMachineIP : "")
+                                    </td>
+                                    <td style="max-width: 500px" targetdialog="tests">
+                                        <div style="width: 95%" class="tags">
+                                            @foreach (var test in execution.TestsExecution.Tests.Split('|').Where(p => !string.IsNullOrEmpty(p)))
+                                            {
+                                                <span title="@test" style="font-size: xx-small" class="tag">
+                                                    @test.Split('.').Last()
+                                                    <a onclick="removeLinearTest(@execution.TestsExecution.ID, '@test')" type="button" class="close">×</a>
+                                                </span>
+                                            }
+                                        </div>
+                                    </td>
+                                    <td class="dialogInvoker" targetdialog="browsers" executionid="@execution.TestsExecution.ID">
+                                        @(execution.TestsExecution.Browser ?? "")
+                                    </td>
+                                    <td class="dialogInvoker" targetdialog="environments" executionid="@execution.TestsExecution.ID">
+                                        @(execution.TestsExecution.HostsConfiguration != null ? execution.TestsExecution.HostsConfiguration.EnvironmentName : "")
+                                    </td>
+                                    <td class="dialogInvoker" targetdialog="accounts" executionid="@execution.TestsExecution.ID">
+                                        @(execution.TestsExecution.AccountForTestRun != null ? execution.TestsExecution.AccountForTestRun.AccountName : "")
+                                    </td>
+                                    <td class="dialogInvoker" targetdialog="configurations" executionid="@execution.TestsExecution.ID">
+                                        @(execution.TestsExecution.ExecutionConfiguration != null ? execution.TestsExecution.ExecutionConfiguration.Name : "")
+                                    </td>
+                                    <td>
+                                        @(execution.FilesStorage != null ? execution.FilesStorage.FilesStorage_Name : "")
+                                    </td>
+                                    @{
+                                if (execution.FilesStorage != null)
+                                {
+                                    <td class="dialogInvoker" targetdialog="include_exclude" executionid="@execution.TestsExecution.ID" onclick=" updatecategories(this, @execution.FilesStorage.FilesStorage_ID , true); ">
+                                        @execution.TestsExecution.CategoriesInclude.Replace(",", ", ")
+                                    </td>
+                                        <td class="dialogInvoker" targetdialog="include_exclude" executionid="@execution.TestsExecution.ID" onclick=" updatecategories(this, @execution.FilesStorage.FilesStorage_ID , false); ">
+                                            @execution.TestsExecution.CategoriesExclude.Replace(",", ", ")
+                                        </td>
+                                }
+                                else
+                                {
+                                    <td class="dialogInvoker" targetdialog="include_exclude" executionid="@execution.TestsExecution.ID">
+                                        @execution.TestsExecution.CategoriesInclude
+                                    </td>
+                                        <td class="dialogInvoker" targetdialog="include_exclude" executionid="@execution.TestsExecution.ID">
+                                            @execution.TestsExecution.CategoriesExclude
+                                        </td>
+                                }
+                                    }
+
+                                    <td class="dialogInvoker" targetdialog="priority" onclick="updatePriorities(@execution.TestsExecution.ID);" executionid="@execution.TestsExecution.ID">
+                                        @execution.TestsExecution.Priroty
+                                    </td>
+                                    <td class="dialogInvoker" targetdialog="testcycles" executionid="@execution.TestsExecution.ID">
+                                        @if (execution.TestsExecution.TestCycle != null)
+                                        {
+                                            @(execution.TestsExecution.TestCycle.ID !=
+                                          Model.ProjectInfo.Project.TestCycles.SingleOrDefault(p => p.CycleIsCurrent.HasValue && p.CycleIsCurrent.Value).ID
+                                              ? execution.TestsExecution.TestCycle.CycleName : "ACTIVE")
+                                        }
+                                    </td>
+                                    @if (execution.TestsExecution.Subscribers == null)
+                                    {
+                                        <td class="dialogInvoker" targetdialog="subscribers" onclick="updateSubscribers(@execution.TestsExecution.ID);" executionid="@execution.TestsExecution.ID"></td>
+                                    }
+                                    else
+                                    {
+                                        <td class="dialogInvoker" targetdialog="subscribers" onclick="updateSubscribers(@execution.TestsExecution.ID);" executionid="@execution.TestsExecution.ID">
+                                            @foreach (var item in @execution.TestsExecution.Subscribers.Split(','))
+                                            {
+                                                @item
+                                                <br />
+                                            }
+                                        </td>
+                                    }
+                                </tr>
+                            }
+                    </tbody>
+                </table>
+}
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="@Url.Content("~/Content/assets/js/bootstrap-tag.min.js")"></script>
+</div>
+@{Html.RenderPartial("TestsToAddForm");}
+@{Html.RenderPartial("RelDisplayForm");}
+@if (Model.ProjectInfo.Project.TestCycles.Count > 0)
+{
+    <div title="Select IP Address" id="machines" style="display: none" class="dialog">
+        @foreach (var ip in Model.ProjectInfo.Project.Clients.OrderBy(p => p.RemoteMachineIP))
+        {
+            <a onclick="setLinearMachine(@ip.ID,'@ip.RemoteMachineIP',-1)" class="btn btn-primary btn-minier">
+                <i class="ace-icon fa fa-laptop"></i>
+                @ip.RemoteMachineIP
+            </a>
+            <br />
+        }
+    </div>
+    <div title="Select Account" id="accounts" style="display: none" class="dialog">
+        @foreach (var ip in Model.ProjectInfo.Project.AccountForTestRuns.OrderBy(p => p.AccountName))
+        {
+            <a onclick="setLinearAccount(@ip.ID,'@ip.AccountName',-1)" class="btn btn-primary btn-minier">
+                <i class="ace-icon fa fa-user"></i>
+                @ip.AccountName
+            </a>
+            <br />
+        }
+    </div>
+    <div title="Select Environment" id="environments" style="display: none" class="dialog">
+        @foreach (var ip in Model.ProjectInfo.Project.HostsConfigurations.OrderBy(p => p.EnvironmentName))
+        {
+            <a onclick="setLinearEnvironment(@ip.ID,'@ip.EnvironmentName',-1)" class="btn btn-primary btn-minier">
+                <i class="ace-icon fa fa-flask align-top bigger-125"></i>
+                @ip.EnvironmentName
+            </a>
+            <br />
+        }
+    </div>
+    <div title="Select Browser" id="browsers" style="display: none" class="dialog">
+        <a onclick="setLinearBrowser('IE',-1)" class="btn btn-primary btn-minier">
+            <i class="ace-icon fa fa-globe"></i>
+            Internet Explorer
+        </a>
+        <br />
+        <a onclick="setLinearBrowser('FF',-1)" class="btn btn-primary btn-minier">
+            <i class="ace-icon fa fa-globe"></i>
+            Firefox
+        </a>
+        <br />
+        <a onclick="setLinearBrowser('CH',-1)" class="btn btn-primary btn-minier">
+            <i class="ace-icon fa fa-globe"></i>
+            Google Chrome
+        </a>
+        <br />
+    </div>
+    <div title="Select Configuration" id="configurations" style="display: none" class="dialog">
+        @foreach (var ip in Model.ProjectInfo.Project.ExecutionConfigurations.OrderBy(p => p.Name))
+        {
+            <a onclick="setLinearExecutionConfiguration(@ip.ID,'@ip.Name',-1)" class="btn btn-primary btn-minier">
+                <i class="ace-icon fa fa-wrench"></i>
+                @ip.Name
+            </a>
+            <br />
+        }
+    </div>
+    <div title="Select Priority" id="priority" machineid="" style="display: none" class="dialog">
+        @foreach (var priority in ConfigurationManager.AppSettings["executionPriorities"].Split('_'))
+        {
+            <input type="checkbox" value="@priority" />@priority
+
+            <br />
+        }
+        <button class="btn btn-primary" onclick="SetPriority()">Save</button>
+    </div>
+
+    <div title="Select Subscribers" id="subscribers" machineid="" style="display: none" class="dialog">
+        @foreach (var subscriber in Model.ProjectInfo.Users)
+        {
+            <input type="checkbox" value="@subscriber" />@subscriber
+
+            <br />
+        }
+        <button class="btn btn-primary" onclick="SetSubscriber()">Add</button>
+    </div>
+
+
+    <div id="include_exclude" title="Categories" style="display: none; font-size: smaller" class="dialog">
+        <i class="fa fa-spinner fa-spin"></i>
+        <div id="include_exclude_container"></div>
+        <button class="btn btn-primary" onclick="AddCategory()">Include</button>
+    </div>
+    <div title="Select target test cycle" id="testcycles" style="display: none" class="dialog">
+        @foreach (var ip in Model.ProjectInfo.Project.TestCycles.Where(p => !p.isInnactive.HasValue || !p.isInnactive.Value).OrderByDescending(p => p.ID))
+        {
+            <a onclick="setLinearTestCycle(@ip.ID,'@ip.CycleName',-1)" class="btn btn-primary btn-minier">
+                <i class="ace-icon fa fa-repeat align-top bigger-125"></i>
+                @ip.CycleName
+            </a>
+            <br />
+        }
+        @{
+    var tCycle = Model.ProjectInfo.Project.TestCycles.SingleOrDefault(p => p.CycleIsCurrent.HasValue && p.CycleIsCurrent.Value);
+    <a onclick="setLinearTestCycle(@tCycle.ID,'@tCycle.CycleName',-1)" class="btn btn-primary btn-minier">
+        <i class="ace-icon fa fa-repeat align-top bigger-125"></i>
+        ACTIVE
+    </a>
+        }
+        <br />
+    </div>
+
+    <div title="Please select framework" id="frameworks" style="display: none" class="dialog">
+        @foreach (var ip in Model.ProjectInfo.FilesStorages.OrderBy(p => p.FilesStorage_Name))
+        {
+            <a href="@Url.Action("AddLinearElement", new { @frameworkId = ip.FilesStorage_ID })" class="btn btn-primary btn-minier">
+                <i class="ace-icon fa fa-flask align-top bigger-125"></i>
+                @ip.FilesStorage_Name
+            </a>
+            <br />
+        }
+    </div>
+}
+
+    @*----------------------------------------------- dialogs and scripts---------------------------------------*@
+    <script type="text/javascript" src="@Url.Content("~/Content/assets/js/jquery-ui.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/renderFramework.js")"></script>
+    <script type="text/javascript">
+        function ShowRELInForm(REL, vm, environment, account) {
+            var textREL = window.location.href.split('?')[0].replace("Linear", "RunRel") + "?type=linear&REL=" + REL;
+            if (vm != "")
+                textREL += "&vm=" + vm;
+            if (environment != "")
+                textREL += "&env=" + environment;
+            if (account != "")
+                textREL += "&account=" + account;
+	    textREL = textREL.replace(/ /g, '%20');
+            $("#model-bodyREL")[0].innerHTML = "<a href='" + textREL + "'>" + textREL + "</a>";
+        }
+
+        function SetPriority() {
+            var machineId = $("#priority").attr("machineId");
+            var priors = new Array();
+            var checkboxes = $("#priority>input:checked");
+            for (var x = 0; x < checkboxes.length; x++) {
+                priors.push(checkboxes[x].attributes["value"].value);
+            }
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SetPriorityForExecution", "Execution")",
+                async: true,
+                data: "{'id':'" + machineId + "', priorities:'" + priors + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                    $("#priority>i").show();
+                },
+                error: function () {
+                },
+                success: function (response) {
+                    if (response != "") {
+                        $("#priority>i").hide();
+                        ShowMessage(response.type, response.text);
+                    }
+                    else { location.reload(); }
+                }
+            });
+        }
+
+        function SetSubscriber() {
+            var machineId = $("#subscribers").attr("machineId");
+            var subscribers = new Array();
+            var checkboxes = $("#subscribers>input:checked");
+            for (var x = 0; x < checkboxes.length; x++) {
+                subscribers.push(checkboxes[x].attributes["value"].value);
+            }
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SetSubscriberForExecution", "Execution")",
+                async: true,
+                data: "{'id':'" + machineId + "', subscribers:'" + subscribers + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                    $("#subscribers>i").show();
+                },
+                error: function () {
+                },
+                success: function (response) {
+                    if (response != "") {
+                        $("#subscribers>i").hide();
+                        ShowMessage(response.type, response.text);
+                    }
+                    else { location.reload(); }
+                }
+            });
+        }
+
+        function updatePriorities(id) {
+            $("#priority").attr("machineId", id);
+        }
+
+        function updateSubscribers(id) {
+            $("#subscribers").attr("machineId", id);
+        }
+
+        function AddCategory() {
+            var machineId = $("#include_exclude").attr("machineid");
+            var checkboxes = $("#include_exclude_container>input:checked");
+            var cats = new Array();
+            var include = $("#include_exclude>button").text() == "Include";
+            for (var x = 0; x < checkboxes.length; x++) {
+                cats.push(checkboxes[x].attributes["value"].value);
+            }
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SetCategotyForExecution", "Execution")",
+                async: true,
+                data: "{'id':'" + machineId + "', categories:'" + cats + "', 'include':" + include + "}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                    $("#include_exclude>i").show();
+                },
+                error: function () {
+                },
+                success: function (response) {
+                    if (response != "") {
+                        $("#include_exclude>i").hide();
+                        ShowMessage(response.type, response.text);
+                    }
+                    else { location.reload(); }
+                }
+            });
+        }
+        function updateCategories(element, id, include) {
+            if (include) {
+                $("#include_exclude>button").text("Include");
+
+            } else {
+                $("#include_exclude>button").text("Exclude");
+            }
+            $("#include_exclude").attr("machineid", element.attributes["executionid"].value);
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("GetCategoriesForFramework", "Execution")",
+                async: true,
+                data: "{'id':'" + id + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                    $("#include_exclude>i").show();
+                },
+                error: function () {
+                },
+                success: function (msg) {
+                    $("#include_exclude>i").hide();
+
+                    if (msg.type == "Error") {
+                        ShowMessage(msg.type, msg.text);
+                    }
+                    else {
+                        var executionid = element.attributes["executionid"].value;
+                        $.ajax({
+                            type: "POST",
+                            url: "@Url.Action("GetCategoriesForExecution", "Execution")",
+                            async: true,
+                            data: "{'id':'" + executionid + "','include':'" + include + "'}",
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            beforeSend: function () {
+                            },
+                            error: function () {
+                            },
+                            success: function (selectedCategories) {
+                                if (msg.type == "Error") {
+                                    $("#include_exclude>i").hide();
+                                    ShowMessage(msg.type, msg.text);
+                                } else {
+                                    $("#include_exclude_container").empty();
+                                    if (msg.length == 0) {
+                                        $("#include_exclude_container").append("<i class='fa fa-exclamation-circle red'></i>No categories detected for selected framework");
+                                        $("#include_exclude>button").addClass("disabled");
+                                    } else {
+                                        $("#include_exclude>button").removeClass("disabled");
+                                        for (var category in msg) {
+                                            $("#include_exclude_container").append("<input type='checkbox' value='" + msg[category] + "' />" + msg[category] + "<br />");
+                                            for (var i in selectedCategories) {
+                                                if (msg[category] == selectedCategories[i]) {
+                                                    $("#include_exclude_container>input[value='" + msg[category] + "']").prop('checked', true);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        });
+                    }
+                }
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(".dialogInvoker").click(function (e) {
+            $(".ui-dialog:visible").find(".dialog").dialog("close");
+            var machineId = $(this).attr("executionid");
+            var targetDialog = $(this).attr("targetdialog");
+            var obj = $("#" + targetDialog + ">a");
+            if (machineId != -2) {
+                for (var i = 0; i < obj.length; i++) {
+                    var theHref = obj[i].attributes["onclick"].value;
+                    theHref = theHref.substring(0, theHref.lastIndexOf(',') + 1) + machineId + ')';
+                    obj[i].attributes["onclick"].value = theHref;
+                }
+            }
+            var x = e.pageX - $(document).scrollLeft();
+            var y = e.pageY - $(document).scrollTop();
+            var theDialog = $("#" + targetDialog).dialog({ autoOpen: false });
+            theDialog.dialog("option", "position", [x, y]);
+            theDialog.dialog("open");
+        });
+    </script>
+
+    <script type="text/javascript">
+        function loadTests(id) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("RenderTestsForFramework", "Execution")",
+                async: true,
+                data: "{'id':'" + id + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () {
+                    $("#loadingBar").show();
+                },
+                error: function ()
+                { },
+                success: function (msg) {
+                    $("#loadingBar").hide();
+                    if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                        ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                    } else {
+                        $("#tests").html(msg);
+                    }
+                }
+            });
+        }
+
+        function setSectionId(id) {
+            $("#addnewtests").attr("onclick", "addTests(" + id + ")");
+        }
+
+        function addTests(id) {
+            var selectedElements = $("label[chosen='1']");
+
+            var key = "AddAll";
+            if ($("#addAllTestSets:checked").length != 0)
+                key = "AddAllTestSets";
+            else if ($("#addAllTestCases:checked").length != 0)
+                key = "AddAllTestCases";
+
+            var arr = new Array();
+            for (var x = 0; x < selectedElements.length; x++) {
+                arr.push(selectedElements[x].attributes["path"].value);
+            }
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("AddLiearTests")",
+                data: "{ 'executionId': " + id + ", 'tests':'" + arr + "', 'key':'" + key + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                    $("#loadingBar").show();
+                },
+                error: function () {
+                },
+                success: function (msg) {
+                    if (msg.type == "Error") {
+                        ShowMessage(msg.type, msg.text);
+                    } else {
+                        $("#loadingBar").hide();
+                        location.reload();
+                    }
+                }
+            });
+        }
+
+        function startExecution(id) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("StartLinear")",
+                data: "{ 'executionId': " + id + "}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                    $("tr[id='" + id + "'] > td > div > button").attr("disabled", "true");
+                    $("tr[id='" + id + "'] > td > div > button > i").addClass("fa-spin");
+                },
+                error: function () { },
+                success: function (msg) {
+                    $("tr[id='" + id + "'] > td > div > button").removeAttr("disabled");
+                    $("tr[id='" + id + "'] > td > div > button > i").removeClass("fa-spin");
+                    ShowMessage(msg.type, msg.text);
+                    //location.reload();
+                }
+            });
+        }
+
+        function startExecutionAll(ids) {
+            for (var i = 0, len = ids.length; i < len; i++) {
+                startExecution(ids[i]);
+            }
+        }
+
+        function removeLinearElement(id) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("RemoveLinearElement")",
+                data: "{ 'id': " + id + "}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () {
+                    $("tr[id='" + id + "'] > td > div > button").attr("disabled", "true");
+                    $("tr[id='" + id + "'] > td > div > button > i").addClass("fa-spin");
+                },
+                error: function () { },
+                success: function () {
+                    $("tr[id='" + id + "']").remove();
+                }
+            });
+        }
+
+        function removeLinearTest(id, name) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("RemoveLinearTest")",
+                data: "{ 'executionid': " + id + ", 'testname':'" + name + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () {
+                    $("#" + id).find("span[title='" + name + "']").remove();
+                },
+                error: function () { },
+                success: function () { }
+            });
+        }
+
+        function setLinearMachine(clientId, ip, executionId) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SetLinearMachine")",
+                data: "{ 'clientId': " + clientId + ", 'executionId':'" + executionId + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function () {
+                    $("tr[id='" + executionId + "'] > td[targetdialog='machines']").text(ip);
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                }
+            });
+        }
+
+        function setLinearAccount(accountId, name, executionId) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SetLinearAccount")",
+                data: "{ 'accountid': " + accountId + ", 'executionid':'" + executionId + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function () {
+                    $("tr[id='" + executionId + "'] > td[targetdialog='accounts']").text(name);
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                }
+            });
+        }
+
+        function setLinearEnvironment(environmentid, name, executionId) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SetLinearEnvironment")",
+                data: "{ 'environmentid': " + environmentid + ", 'executionid':'" + executionId + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function () {
+                    $("tr[id='" + executionId + "'] > td[targetdialog='environments']").text(name);
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                }
+            });
+        }
+
+        function setLinearBrowser(browser, executionId) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SetLinearBrowser")",
+                data: "{ 'browser': '" + browser + "', 'executionid':'" + executionId + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function () {
+                    $("tr[id='" + executionId + "'] > td[targetdialog='browsers']").text(browser);
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                }
+            });
+        }
+
+        function setLinearExecutionConfiguration(confId, name, executionId) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SetLinearExecutionConfiguration")",
+                data: "{ 'confid': " + confId + ", 'executionid':'" + executionId + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function () {
+                    $("tr[id='" + executionId + "'] > td[targetdialog='configurations']").text(name);
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                }
+            });
+        }
+
+        function setLinearTestCycle(cycleid, name, executionId) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SetLinearTestCycle")",
+                data: "{ 'cycleid': " + cycleid + ", 'executionid':'" + executionId + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function () {
+                    $("tr[id='" + executionId + "'] > td[targetdialog='testcycles']").text(name);
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                }
+            });
+        }
+
+        function stopExecution(id) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("StopExecution")",
+                data: "{ 'executionId': " + id + ", 'type':'linear'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                    $("tr[id='" + id + "'] > td > div > button").attr("disabled", "true");
+                    $("tr[id='" + id + "'] > td > div > button > i").addClass("fa-spin");
+                },
+                error: function () { },
+                success: function (msg) {
+                    $("tr[id='" + id + "'] > td > div > button").removeAttr("disabled");
+                    $("tr[id='" + id + "'] > td > div > button > i").removeClass("fa-spin");
+                    ShowMessage(msg.type, msg.text);
+                    //location.reload();
+                }
+            });
+        }
+
+        function pingLinear(id) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("PingLinear")",
+                data: "{ 'executionId': " + id + "}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "text",
+                async: true,
+                beforeSend: function () {
+                    $("tr[id='" + id + "'] > td > div > button").attr("disabled", "true");
+                    $("tr[id='" + id + "'] > td > div > button > i").addClass("fa-spin");
+                    //disabled = "true"
+                },
+                error: function () { },
+                success: function (msg) {
+                    $("tr[id='" + id + "'] > td > div > button").removeAttr("disabled");
+                    $("tr[id='" + id + "'] > td > div > button > i").removeClass("fa-spin");
+                    if (msg == "free")
+                        $("tr[id='" + id + "']").css({ 'background': "#EAFFE7" });
+                    else if (msg == "busy")
+                        $("tr[id='" + id + "']").css({ 'background': "#FFFDD4" });
+                    else
+                        $("tr[id='" + id + "']").css({ 'background': "#FFE8D1" });
+                }
+            });
+        }
+    </script>

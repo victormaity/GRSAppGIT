@@ -1,0 +1,6 @@
+Tech info:
+Exception cause: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //img[contains(@alt,'Publons') and @class='large'] (tried for 20 second(s) with 500 MILLISECONDS interval) 
+ org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82);
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.ExternalPages_Steps.iCheckThatTheURLIsLaunchedInANewPageAfterClickingOnPublonsLink(ExternalPages_Steps.java:298);
+✽.And I check that the URL "https://publons.com/in/researcher/cn/" is launched in a new page after clicking on publons link(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.30_R2_Stories.feature:235)

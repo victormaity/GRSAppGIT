@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><EventTranscript id="4906556"><Name>Pharmacyclics at Morgan Stanley Healthcare Conference</Name><Company>Pharmacyclics Inc</Company><Drugs><Drug>temsirolimus</Drug><Drug>dasatinib</Drug><Drug>ofatumumab</Drug><Drug>ibrutinib</Drug><Drug>bendamustine</Drug><Drug>rituximab</Drug><Drug>bortezomib</Drug></Drugs></EventTranscript>

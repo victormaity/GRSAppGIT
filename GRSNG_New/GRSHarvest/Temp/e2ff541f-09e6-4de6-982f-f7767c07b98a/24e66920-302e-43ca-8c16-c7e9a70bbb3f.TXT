@@ -1,0 +1,10 @@
+Tech info:
+Exception cause: org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-9AT441895C7', ip: '10.152.83.177', os.name: 'Windows Server 2008 R2', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 17840, moz:profile: D:\Users\WoSWin7_10\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 9cad9f75-0d58-4dc5-99b2-22eb2d846232 
+ com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.AdvancedSearchPage.clickRecordsSetByNumber(AdvancedSearchPage.java:510);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BrowseJournalsPage_Steps.I_access_page_for_set(BrowseJournalsPage_Steps.java:71);
+✽.And I access page "Results summary" for set "1"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.27_Stories.feature:677)

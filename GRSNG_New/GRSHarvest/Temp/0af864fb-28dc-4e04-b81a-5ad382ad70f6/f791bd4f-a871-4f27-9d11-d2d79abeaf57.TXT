@@ -1,0 +1,18 @@
+Tech info:
+Exception cause: java.nio.file.NoSuchFileException: D:\GitClarivate\Project\Latest\Jun\wos-gui_bdd\savedrecs.txt 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:58);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.runSearch(BasicSearchPage.java:164);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.I_perform_search_by_field_with_query_on_page(BasicSearchPage_Steps.java:176);
+✽.When I perform search by field "Title" with query "Effects of Eugenol on Haemoproteus columbae in domestic pigeons (Columba livia domestica) from Riyadh, Saudi Arabia" on page "Basic Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:1315)

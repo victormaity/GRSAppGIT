@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomson.ls.soa.stack.soaservices.service.contract.soap.v4.search.SearchOutput xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="local" xsi:type="xs:string">0888368e-cf68-4348-b7a9-6efdfdc6c989</ns2:com.thomson.ls.soa.stack.soaservices.service.contract.soap.v4.search.SearchOutput>

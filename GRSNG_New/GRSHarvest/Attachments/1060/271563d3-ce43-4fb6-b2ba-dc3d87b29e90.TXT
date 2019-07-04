@@ -1,0 +1,1 @@
+          select FULL_SORT_ORDER from RS_DRUG.FF_DRUG_DEVELOPMENT_CURRENT  where drug_id= '65391'     

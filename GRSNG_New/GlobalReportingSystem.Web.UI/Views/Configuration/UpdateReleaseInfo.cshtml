@@ -1,0 +1,102 @@
+﻿@model  GlobalReportingSystem.Core.Models.Entities.ReleaseInfo
+<div class="modal-body">
+    <div>
+        <label class="labelForm">
+            Release Name
+            <small class="text-success">(display)</small>
+        </label>
+        <div class="input-group">
+            <input type="text" id="modelReleaseName-@Model.ID" class="form-control labelForm" value="@Model.ReleaseName" />
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            Release Date
+            <small class="text-success"></small>
+        </label>
+
+
+        <div class="input-group">
+            <input type="text" id="modelReleaseDate-@Model.ID" class="datepicker widthbox dpsun" value="@Model.ReleaseDate.ToShortDateString()" style="width: 100%" readonly />            
+        </div>
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            Comments
+        </label>
+        <div class="input-group">
+            <input type="textarea" id="modelComment-@Model.ID" class="form-control labelForm" value="@Model.Comment" />
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-sm" data-dismiss="modal">
+        <i class="ace-icon fa fa-times"></i>
+        Cancel
+    </button>
+
+    <button type="submit" class="btn btn-sm btn-primary" onclick="updateReleaseInfo(@Model.ID)">
+        <i class="ace-icon fa fa-check"></i>
+        Edit
+    </button>
+</div>
+
+<script type="text/javascript">
+    function updateReleaseInfo(id) {
+        var releasename = $("#modelReleaseName-" + id)[0].value;
+        var releasedate = $("#modelReleaseDate-" + id)[0].value;        
+        var comment = $("#modelComment-" + id)[0].value;
+
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("UpdateReleaseInfo")",            
+            data: "{ 'ReleaseInfoId': " + id + ", 'ReleaseName':'" + releasename + "','ReleaseDate':'" + releasedate + "', 'Comment':'" + comment + "'}",
+            contentType: "application/json; charset=utf-8",
+            success: function () {
+                location.reload();
+            }
+        });
+    }
+</script>
+
+<script>
+    $(function () {
+        $(".dpsun").datepicker({
+            showButtonPanel: true,
+            changeMonth: true,
+            changeYear: true,            
+            dateFormat: "mm/dd/yy",
+            showOn: "button",
+            buttonImage: "../Content/calnew.png",
+            buttonImageHeight: "28px",
+            buttonImageWidth: "28px",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+        $(".dpsun").datepicker("option", "minDate", null)
+        $(".dpsun").datepicker("option", "maxDate", null)
+        $('img[title="Select date"]').css({ 'height': '28px', 'width': '28px', 'cursor': 'pointer' });
+    });
+</script>
+<style type="text/css">
+    .ui-datepicker-trigger {
+        z-index: 999999999999!important;
+    }
+
+    .ui-datepicker {
+        z-index: 999999999999!important;
+    }
+
+    .widthbox {
+        width: 221px!important;
+    }
+</style>

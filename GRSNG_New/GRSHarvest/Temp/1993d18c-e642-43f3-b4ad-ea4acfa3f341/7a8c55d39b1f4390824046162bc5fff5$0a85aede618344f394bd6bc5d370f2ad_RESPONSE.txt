@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.runQuery" rc="OK">
+    <map>
+      <map name="Data">
+        <val name="Records"><![CDATA[<records>
+<REC><FUID>285717461CCC1</FUID><UID>CCC:000276078300011</UID><score>15.5304575</score><static_data><summary type="src"><EWUID uid="CCC:000276078300011" year="2009"><WUID seq_no="1" doc_id="285717461" coll_id="CCC" fuid="285717461CCC1"/><edition value="CCC.CCCA"/></EWUID><pub_info sortdate="2009-11-01" pubyear="2009" has_abstract="Y" coverdate="NOV 2009" pubmonth="NOV" vol="8" issue="4" pubtype="Journal"><page begin="367" end="375" page_count="9">367-375</page></pub_info><titles count="6"><title type="source">MYCOLOGICAL PROGRESS</title><title type="source_abbrev">MYCOL PROG</title><title type="abbrev_11">MYCOL PROG</title><title type="abbrev_29">MYCOL PROG</title><title type="item">Erysiphe kenjiana (Erysiphales), a new invasive fungus in Europe</title><title type="abbrev_iso">Mycol. Prog.</title></titles><names count="4"><name seq_no="1" role="author" reprint="Y" addr_no="1"><display_name>Heluta, Vasyl</display_name><full_name>Heluta, Vasyl</full_name><wos_standard>Heluta, V</wos_standard><first_name>Vasyl</first_name><last_name>Heluta</last_name><email_addr>vheluta@botany.kiev.ua</email_addr></name><name seq_no="2" role="author" addr_no="2"><display_name>Takamatsu, Susumu</display_name><full_name>Takamatsu, Susumu</full_name><wos_standard>Takamatsu, S</wos_standard><first_name>Susumu</first_name><last_name>Takamatsu</last_name></name><name seq_no="3" role="author" addr_no="1"><display_name>Voytyuk, Svitlana</display_name><full_name>Voytyuk, Svitlana</full_name><wos_standard>Voytyuk, S</wos_standard><first_name>Svitlana</first_name><last_name>Voytyuk</last_name></name><name seq_no="4" role="author" addr_no="2"><display_name>Shiroya, Yoshiaki</display_name><full_name>Shiroya, Yoshiaki</full_name><wos_standard>Shiroya, Y</wos_standard><first_name>Yoshiaki</first_name><last_name>Shiroya</last_name></name></names><doctypes count="1"><doctype>Article</doctype></doctypes><publishers><publisher><address_spec addr_no="1"><full_address>TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY</full_address><url_spec><url>http://www.springer.com</url></url_spec><city>HEIDELBERG</city></address_spec><names count="1"><name role="publisher" seq_no="1" addr_no="1"><display_name>SPRINGER HEIDELBERG</display_name><full_name>SPRINGER HEIDELBERG</full_name></name></names></publisher></publishers></summary><fullrecord_metadata><languages count="1"><language type="primary">English</language></languages><normalized_languages count="1"><language type="primary">English</language></normalized_languages><normalized_doctypes count="1"><doctype>Article</doctype></normalized_doctypes><implied_refs count="50"><ref doc_id="361624"></ref><ref doc_id="6116274"></ref><ref doc_id="63718891"></ref><ref doc_id="46183434"></ref><ref doc_id="360386"></ref><ref doc_id="68345870"></ref><ref doc_id="31592759"></ref><ref doc_id="31592769"></ref><ref doc_id="6116445"></ref><ref doc_id="292544661"></ref><ref doc_id="292544690"></ref><ref doc_id="67684715"></ref><ref doc_id="53283592"></ref><ref doc_id="292544720"></ref><ref doc_id="225858"></ref><ref doc_id="292544730"></ref><ref doc_id="292544736"></ref><ref doc_id="292544764"></ref><ref doc_id="292544768"></ref><ref doc_id="292544770"></ref><ref doc_id="3287009"></ref><ref doc_id="14281777"></ref><ref doc_id="39560860"></ref><ref doc_id="3260900"></ref><ref doc_id="67684920"></ref><ref doc_id="292544863"></ref><ref doc_id="258197829"></ref><ref doc_id="1034108"></ref><ref doc_id="292544907"></ref><ref doc_id="1032979"></ref><ref doc_id="83830744"></ref><ref doc_id="287472281"></ref><ref doc_id="39560929"></ref><ref doc_id="257392778"></ref><ref doc_id="144319"></ref><ref doc_id="68930785"></ref><ref doc_id="85995606"></ref><ref doc_id="288143299"></ref><ref doc_id="287750038"></ref><ref doc_id="287431794"></ref><ref doc_id="36798979"></ref><ref doc_id="514387"></ref><ref doc_id="136208"></ref><ref doc_id="46498154"></ref><ref doc_id="292545037"></ref><ref doc_id="292545038"></ref><ref doc_id="279278"></ref><ref doc_id="220272"></ref><ref doc_id="28343167"></ref><ref doc_id="46183460"></ref></implied_refs><addresses count="2"><address_name><address_spec addr_no="1"><full_address>Natl Acad Sci Ukraine, MG Kholodny Inst Bot, UA-01601 Kiev, Ukraine</full_address><organizations count="1"><organization>Natl Acad Sci Ukraine</organization></organizations><suborganizations count="1"><suborganization>MG Kholodny Inst Bot</suborganization></suborganizations><city>Kiev</city><country>Ukraine</country><zip location="BC">UA-01601</zip></address_spec><names count="2"><name seq_no="1" role="author" reprint="Y" addr_no="1"><display_name>Heluta, Vasyl</display_name><full_name>Heluta, Vasyl</full_name><wos_standard>Heluta, V</wos_standard><first_name>Vasyl</first_name><last_name>Heluta</last_name><email_addr>vheluta@botany.kiev.ua</email_addr></name><name seq_no="3" role="author" addr_no="1"><display_name>Voytyuk, Svitlana</display_name><full_name>Voytyuk, Svitlana</full_name><wos_standard>Voytyuk, S</wos_standard><first_name>Svitlana</first_name><last_name>Voytyuk</last_name></name></names></address_name><address_name><address_spec addr_no="2"><full_address>Mie Univ, Grad Sch Bioresources, Tsu, Mie 5148507, Japan</full_address><organizations count="1"><organization>Mie Univ</organization></organizations><suborganizations count="1"><suborganization>Grad Sch Bioresources</suborganization></suborganizations><city>Tsu</city><state>Mie</state><country>Japan</country><zip location="AP">5148507</zip></address_spec><names count="2"><name seq_no="2" role="author" addr_no="2"><display_name>Takamatsu, Susumu</display_name><full_name>Takamatsu, Susumu</full_name><wos_standard>Takamatsu, S</wos_standard><first_name>Susumu</first_name><last_name>Takamatsu</last_name></name><name seq_no="4" role="author" addr_no="2"><display_name>Shiroya, Yoshiaki</display_name><full_name>Shiroya, Yoshiaki</full_name><wos_standard>Shiroya, Y</wos_standard><first_name>Yoshiaki</first_name><last_name>Shiroya</last_name></name></names></address_name></addresses><reprint_addresses count="1"><address_name><address_spec addr_no="1"><full_address>Natl Acad Sci Ukraine, MG Kholodny Inst Bot, 2 Tereshchenkivska St, UA-01601 Kiev, Ukraine</full_address><organizations count="1"><organization>Natl Acad Sci Ukraine</organization></organizations><suborganizations count="1"><suborganization>MG Kholodny Inst Bot</suborganization></suborganizations><street>2 Tereshchenkivska St</street><city>Kiev</city><country>Ukraine</country><zip location="BC">UA-01601</zip></address_spec><names count="1"><name seq_no="1" role="author" reprint="Y" addr_no="1"><display_name>Heluta, Vasyl</display_name><full_name>Heluta, Vasyl</full_name><wos_standard>Heluta, V</wos_standard><first_name>Vasyl</first_name><last_name>Heluta</last_name><email_addr>vheluta@botany.kiev.ua</email_addr></name></names></address_name></reprint_addresses><category_info><headings count="1"><heading>Science &amp; Technology</heading></headings><subheadings count="1"><subheading>Life Sciences &amp; Biomedicine</subheading></subheadings><subjects count="2"><subject ascatype="traditional">BIOLOGY</subject><subject ascatype="extended">Life Sciences &amp; Biomedicine - Other Topics</subject></subjects></category_info><keywords count="5"><keyword>Invasion</keyword><keyword>Molecular phylogeny</keyword><keyword>Powdery mildew fungi</keyword><keyword>Ukraine</keyword><keyword>Ulmus</keyword></keywords><abstracts count="1"><abstract><abstract_text count="1"><p>An Asian powdery mildew fungus Erysiphe (Uncinula) kenjiana (Erysiphales, Ascomycota) has been found in Ukraine. This is the first record of this fungus in Europe. In 2007, E. kenjiana was collected on four Ulmus species in Kiev. All locations adjoined railways or an airport. Development of E. kenjiana was epiphytotic. This species was not found on elms surveyed at towns situated north-east, east or south of Kiev. The fungus may have been brought directly to Ukraine by rail or air transport. In 2008, the fungus was also collected in Chernihiv situated northeast of Kiev. It is likely that E. kenjiana will spread over all Ukraine and into countries of central and western Europe in 2009 or later. Molecular phylogenetic analyses using D1/D2 domains of the 28S rDNA and ITS sequences revealed that the Ulmaceae-Cannabaceae-parasitic powdery mildews, including E. kenjiana, form a clade with strong supports, suggesting that these species diverged from a single ancestor and expanded their host ranges within the Ulmaceae and allied Cannabaceae. This hypothesis is supported by these species sharing the unique morphology of enlarged apices on their chasmothecial appendages. These fungi formed part of a larger grouping with species on Fagaceae, Nothofagaceae, Rosaceae, and Sapindaceae with strong statistical supports. These results suggest that Uncinula-like powdery mildew fungi on these plant families exhibit close evolutionary relationships with their hosts.</p></abstract_text></abstract></abstracts></fullrecord_metadata><item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="itemType_ccc" coll_id="CCC"><ids avail="N">575PB</ids><bib_id>8 (4): 367-375 NOV 2009</bib_id><bib_pages type="Journal"/><sq>C1570J0</sq><bib_pagecount type="Journal">108</bib_pagecount><keywords_plus count="7"><keyword>POWDERY MILDEW FUNGUS</keyword><keyword>CATALPA-BIGNONIOIDES</keyword><keyword>RIBOSOMAL DNA</keyword><keyword>PHYLOGENY</keyword><keyword>ELEVATA</keyword><keyword>SPP.</keyword><keyword>UK</keyword></keywords_plus><subjects count="1"><subject edition="CCCA" code="BIO">BIOLOGY</subject></subjects><tocseq>10</tocseq></item><contributors count="1"><contributor><name seq_no="1" role="researcher_id" r_id="L-5526-2019"><display_name>Takamatsu, Susumu</display_name><full_name>Takamatsu, Susumu</full_name><first_name>Susumu</first_name><last_name>Takamatsu</last_name></name></contributor></contributors></static_data><dynamic_data><citation_related><tc_list dedup_total_count="10"><silo_tc coll_id="INSPEC" local_count="0"/><silo_tc coll_id="RSCI" local_count="0"/><silo_tc coll_id="CABI" local_count="0"/><silo_tc coll_id="CSCD" local_count="0"/><silo_tc coll_id="FSTA" local_count="0"/><silo_tc coll_id="SCIELO" local_count="0"/><silo_tc coll_id="GCI" local_count="0"/><silo_tc coll_id="MEDLINE" local_count="0"/><silo_tc coll_id="DRCI" local_count="0"/><silo_tc coll_id="BIOSIS" local_count="0"/><silo_tc coll_id="WOS" local_count="4"/><silo_tc coll_id="ZOOREC" local_count="0"/><silo_tc coll_id="BCI" local_count="10"/><silo_tc coll_id="CCC" local_count="0"/><silo_tc coll_id="BIOABS" local_count="0"/><silo_tc coll_id="KJD" local_count="0"/></tc_list></citation_related><cluster_related><clustered_EWUIDs count="6"><EWUID uid="WOS:000276078300011" year="2009"><WUID seq_no="1" doc_id="285717461" coll_id="WOS" fuid="285717461WOS1"/><edition value="WOS.SCI"/></EWUID><EWUID uid="CCC:000276078300011" year="2009"><WUID seq_no="1" doc_id="285717461" coll_id="CCC" fuid="285717461CCC1"/><edition value="CCC.CCCA"/></EWUID><EWUID uid="BCI:BCI201000216180" year="2009"><WUID seq_no="1" doc_id="285717461" coll_id="BCI" fuid="285717461BCI1"/><edition value="BCI.BCI"/></EWUID><EWUID uid="BIOABS:BACD201000163462" year="2009"><WUID seq_no="1" doc_id="285717461" coll_id="BIOABS" fuid="285717461BIOABS1"/><edition value="BIOABS.ABSTRACTS"/></EWUID><EWUID uid="BIOSIS:PREV201000216180" year="2009"><WUID seq_no="1" doc_id="285717461" coll_id="BIOSIS" fuid="285717461BIOSIS1"/><edition value="BIOSIS.PREVIEWS"/></EWUID><EWUID uid="CABI:20093342748" year="2009"><WUID seq_no="1" doc_id="285717461" coll_id="CABI" fuid="285717461CABI1"/><edition value="CABI.ABSTRACTS"/></EWUID></clustered_EWUIDs><identifiers count="8"><identifier type="ckey" value="0000000002775410"/><identifier type="issn" value="1617-416X"/><identifier type="uid" value="CABI:20093342748"/><identifier type="uid" self_ind="Y" value="CCC:000276078300011"/><identifier type="uid" value="BCI:BCI201000216180"/><identifier type="uid" value="WOS:000276078300011"/><identifier type="uid" value="BIOSIS:PREV201000216180"/><identifier type="uid" value="BIOABS:BACD201000163462"/></identifiers><entitled_EWUIDs count="6"><EWUID year="2009" uid="WOS:000276078300011"><WUID coll_id="WOS" fuid="285717461WOS1" seq_no="1" doc_id="285717461" /><edition value="WOS.SCI" /></EWUID><EWUID year="2009" uid="CCC:000276078300011"><WUID coll_id="CCC" fuid="285717461CCC1" seq_no="1" doc_id="285717461" /><edition value="CCC.CCCA" /></EWUID><EWUID year="2009" uid="BCI:BCI201000216180"><WUID coll_id="BCI" fuid="285717461BCI1" seq_no="1" doc_id="285717461" /><edition value="BCI.BCI" /></EWUID><EWUID year="2009" uid="BIOSIS:PREV201000216180"><WUID coll_id="BIOSIS" fuid="285717461BIOSIS1" seq_no="1" doc_id="285717461" /><edition value="BIOSIS.PREVIEWS" /></EWUID><EWUID year="2009" uid="BIOABS:BACD201000163462"><WUID coll_id="BIOABS" fuid="285717461BIOABS1" seq_no="1" doc_id="285717461" /><edition value="BIOABS.ABSTRACTS" /></EWUID><EWUID year="2009" uid="CABI:20093342748"><WUID coll_id="CABI" fuid="285717461CABI1" seq_no="1" doc_id="285717461" /><edition value="CABI.ABSTRACTS" /></EWUID></entitled_EWUIDs></cluster_related><um_related><ta_list><ta count="0" type="60day"/><ta count="1" type="180day"/><ta count="0" type="365day"/><ta count="12" type="AllTime"/></ta_list></um_related></dynamic_data><dates availability_date="2009-11-01T23:59:59.00000" create_date="2009-12-15T16:43:55.354299" mod_date="2009-12-15T16:43:55.354299" extraction_date="2019-05-09T03:08:40.064Z" version="22"/></REC>
+</records>]]></val>
+        <list name="AnalyzeResults">
+          <map>
+            <val name="Name">AU</val>
+            <val name="TotalCount">871</val>
+            <val name="NoDataCount">0</val>
+            <list name="Values">
+              <map>
+                <val name="Key">ANONYMOUS</val>
+                <val name="Value">7</val>
+              </map>
+              <map>
+                <val name="Key">RENGEL Z</val>
+                <val name="Value">7</val>
+              </map>
+              <map>
+                <val name="Key">BOOTH RE</val>
+                <val name="Value">6</val>
+              </map>
+              <map>
+                <val name="Key">BREWSTER JT</val>
+                <val name="Value">6</val>
+              </map>
+              <map>
+                <val name="Key">TANG C</val>
+                <val name="Value">6</val>
+              </map>
+              <map>
+                <val name="Key">SEREGINA LY</val>
+                <val name="Value">5</val>
+              </map>
+              <map>
+                <val name="Key">SINITSYNA L</val>
+                <val name="Value">5</val>
+              </map>
+              <map>
+                <val name="Key">ZEROVA MD</val>
+                <val name="Value">5</val>
+              </map>
+              <map>
+                <val name="Key">DVORYAK S</val>
+                <val name="Value">4</val>
+              </map>
+              <map>
+                <val name="Key">SHEN JB</val>
+                <val name="Value">4</val>
+              </map>
+              <map>
+                <val name="Key">SWEETINGHAM MW</val>
+                <val name="Value">4</val>
+              </map>
+              <map>
+                <val name="Key">TANG CX</val>
+                <val name="Value">4</val>
+              </map>
+              <map>
+                <val name="Key">VOITENKO VP</val>
+                <val name="Value">4</val>
+              </map>
+              <map>
+                <val name="Key">ZHANG FS</val>
+                <val name="Value">4</val>
+              </map>
+              <map>
+                <val name="Key">CHECHULIN Y</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">HASKER E</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">LAMBERS H</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">RADZEVICH SP</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">SHU LZ</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">SIDORENKO AP</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">THOMAS GJ</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">TURCHENKO LV</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">VAISERMAN AM</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">VAN DER WERF MJ</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">VEEN J</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">YEGOROVA OB</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">YEKELCHYK S</val>
+                <val name="Value">3</val>
+              </map>
+              <map>
+                <val name="Key">AASTED A</val>
+                <val name="Value">2</val>
+              </map>
+              <map>
+                <val name="Key">ABRAMENKO IV</val>
+                <val name="Value">2</val>
+              </map>
+              <map>
+                <val name="Key">ADHIKARI K</val>
+                <val name="Value">2</val>
+              </map>
+            </list>
+          </map>
+        </list>
+      </map>
+      <map name="QueryResult">
+        <val name="QueryID">1</val>
+        <val name="RecordsSearched">13926591</val>
+        <val name="RecordsFound">318</val>
+        <val name="RecordsAvailable">318</val>
+        <list name="Warnings">
+        </list>
+      </map>
+    </map>
+  </fn>
+</response>

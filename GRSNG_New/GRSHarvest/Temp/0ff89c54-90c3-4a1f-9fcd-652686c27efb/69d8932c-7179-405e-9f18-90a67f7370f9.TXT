@@ -1,0 +1,14 @@
+Tech info:
+Exception cause: java.util.NoSuchElementException: No value present 
+ org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:118);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408);
+com.clarivateanalytics.wos.gui.cucumber.pages.SummaryPages.ResultsSummaryPage.link_More(ResultsSummaryPage.java:1883);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.ResultSummaryPage_Steps.iVerifyThatTitleIsDisplayedOnPage(ResultSummaryPage_Steps.java:3263);
+✽.And I verify that title "Refined by: DOCUMENT TYPES: ( BOOK )" is displayed on page "Result Summary"(com/clarivateanalytics/wos/gui/cucumber/Deployment/ResultSummary.feature:869)

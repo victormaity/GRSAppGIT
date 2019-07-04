@@ -1,0 +1,2 @@
+ArmCount,Biomarkers,Condition,Controls,DevStatus,DevStatusId,Drug,DrugId,EnrollmentCount,Interventions,Patients,ProtocolAcronym,ProtocolTitle,Reference,Sponsor,TrialId,TrialStartDate,TrialStatus
+1,APOE epsilon4; Abeta; Complement factor I; P-tau; tau,Alzheimers disease,null,Phase 1/Phase 2 Clinical,C12,GSK-933776A,57403,50,GSK-933776A,50,null,A Clinical Study to Assess Single and Repeat Doses of a New Medication (GSK-933776) in Patients With Alzheimer's Disease,106006; 2006-004014-41; BA1106006; NCT00459550,GlaxoSmithKline plc,1,"MARCH    , 12, 2007",Completed

@@ -1,0 +1,841 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>5.32_R2_Release2</test_cycle>
+    <url>https://tokenclient.wos-non-prod.oneplatform.build/tokens/QA1/client_ssl.cgi/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_06</user>
+    <ip>192.168.229.74</ip>
+    <start_time>02/22/2019 08:57:20</start_time>
+    <end_time>02/22/2019 09:10:49</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (64-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Search History" start_time="2/22/2019 8:57:20 AM">
+    <TestCase name="CSCD_SH_058" start_time="2/22/2019 8:57:39 AM" description="History full message" criticality="" state="pass" end_time="2/22/2019 9:10:49 AM">
+      <step type="pass" description="Prerequisite:1. Search History / CSCD. Search History table contains 200 sets Try to create a new set. Check the display of history full message" expected="The 'Your Search History, which lists all of the searches created during this session, is full. To run more searches, delete some or all of the existing sets from the Search History table on the Advanced Search or Search History page.' error message is displayed, when user attempts to Create 201 set" time="2/22/2019 9:10:40 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 8:57:40 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:40 AM">Clicking Link 'CSCD'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:42 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:43 AM">Clicking Link 'Advanced Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:44 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:44 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:57:44 AM">Text: 'ts=(the and 1)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 1)'</substep>
+        <substep valid="True" time="2/22/2019 8:57:44 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:46 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:46 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:57:46 AM">Text: 'ts=(the and 2)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 2)'</substep>
+        <substep valid="True" time="2/22/2019 8:57:46 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:48 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:48 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:57:48 AM">Text: 'ts=(the and 3)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 3)'</substep>
+        <substep valid="True" time="2/22/2019 8:57:48 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:50 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:50 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:57:50 AM">Text: 'ts=(the and 4)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 4)'</substep>
+        <substep valid="True" time="2/22/2019 8:57:50 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:51 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:52 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:57:52 AM">Text: 'ts=(the and 5)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 5)'</substep>
+        <substep valid="True" time="2/22/2019 8:57:52 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:53 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:53 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:57:54 AM">Text: 'ts=(the and 6)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 6)'</substep>
+        <substep valid="True" time="2/22/2019 8:57:54 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:55 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:55 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:57:56 AM">Text: 'ts=(the and 7)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 7)'</substep>
+        <substep valid="True" time="2/22/2019 8:57:56 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:57 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:57 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:57:57 AM">Text: 'ts=(the and 8)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 8)'</substep>
+        <substep valid="True" time="2/22/2019 8:57:57 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:59 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:59 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:57:59 AM">Text: 'ts=(the and 9)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 9)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:00 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:01 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:01 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:01 AM">Text: 'ts=(the and 10)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 10)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:01 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:03 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:03 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:03 AM">Text: 'ts=(the and 11)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 11)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:03 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:05 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:05 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:05 AM">Text: 'ts=(the and 12)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 12)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:05 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:07 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:07 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:07 AM">Text: 'ts=(the and 13)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 13)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:07 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:09 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:09 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:09 AM">Text: 'ts=(the and 14)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 14)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:09 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:11 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:11 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:11 AM">Text: 'ts=(the and 15)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 15)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:11 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:13 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:13 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:13 AM">Text: 'ts=(the and 16)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 16)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:13 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:15 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:15 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:15 AM">Text: 'ts=(the and 17)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 17)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:15 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:17 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:17 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:17 AM">Text: 'ts=(the and 18)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 18)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:17 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:19 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:19 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:19 AM">Text: 'ts=(the and 19)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 19)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:19 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:21 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:21 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:21 AM">Text: 'ts=(the and 20)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 20)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:21 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:23 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:23 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:23 AM">Text: 'ts=(the and 21)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 21)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:23 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:25 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:25 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:25 AM">Text: 'ts=(the and 22)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 22)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:25 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:27 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:27 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:27 AM">Text: 'ts=(the and 23)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 23)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:27 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:29 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:29 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:29 AM">Text: 'ts=(the and 24)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 24)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:29 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:31 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:31 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:31 AM">Text: 'ts=(the and 25)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 25)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:31 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:33 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:33 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:33 AM">Text: 'ts=(the and 26)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 26)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:34 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:35 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:35 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:35 AM">Text: 'ts=(the and 27)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 27)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:36 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:37 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:37 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:38 AM">Text: 'ts=(the and 28)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 28)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:38 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:39 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:40 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:40 AM">Text: 'ts=(the and 29)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 29)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:40 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:41 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:41 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:42 AM">Text: 'ts=(the and 30)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 30)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:42 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:43 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:44 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:44 AM">Text: 'ts=(the and 31)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 31)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:44 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:46 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:46 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:46 AM">Text: 'ts=(the and 32)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 32)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:46 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:48 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:48 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:48 AM">Text: 'ts=(the and 33)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 33)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:48 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:50 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:50 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:50 AM">Text: 'ts=(the and 34)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 34)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:50 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:52 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:52 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:52 AM">Text: 'ts=(the and 35)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 35)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:52 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:54 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:54 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:54 AM">Text: 'ts=(the and 36)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 36)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:54 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:56 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:56 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:56 AM">Text: 'ts=(the and 37)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 37)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:56 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:58 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:58 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:58:58 AM">Text: 'ts=(the and 38)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 38)'</substep>
+        <substep valid="True" time="2/22/2019 8:58:58 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:00 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:00 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:00 AM">Text: 'ts=(the and 39)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 39)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:00 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:02 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:02 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:02 AM">Text: 'ts=(the and 40)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 40)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:03 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:04 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:04 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:05 AM">Text: 'ts=(the and 41)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 41)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:05 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:06 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:06 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:07 AM">Text: 'ts=(the and 42)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 42)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:07 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:09 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:09 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:09 AM">Text: 'ts=(the and 43)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 43)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:09 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:11 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:11 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:11 AM">Text: 'ts=(the and 44)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 44)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:11 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:13 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:13 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:13 AM">Text: 'ts=(the and 45)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 45)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:13 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:15 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:15 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:15 AM">Text: 'ts=(the and 46)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 46)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:16 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:17 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:18 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:18 AM">Text: 'ts=(the and 47)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 47)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:18 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:20 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:20 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:20 AM">Text: 'ts=(the and 48)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 48)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:20 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:23 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:23 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:23 AM">Text: 'ts=(the and 49)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 49)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:23 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:25 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:25 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:25 AM">Text: 'ts=(the and 50)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 50)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:25 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:27 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:27 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:28 AM">Text: 'ts=(the and 51)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 51)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:28 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:29 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:30 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:30 AM">Text: 'ts=(the and 52)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 52)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:30 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:32 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:32 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:32 AM">Text: 'ts=(the and 53)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 53)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:32 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:34 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:34 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:34 AM">Text: 'ts=(the and 54)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 54)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:34 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:36 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:37 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:37 AM">Text: 'ts=(the and 55)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 55)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:37 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:39 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:40 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:40 AM">Text: 'ts=(the and 56)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 56)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:40 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:42 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:42 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:42 AM">Text: 'ts=(the and 57)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 57)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:42 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:44 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:44 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:44 AM">Text: 'ts=(the and 58)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 58)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:45 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:46 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:47 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:47 AM">Text: 'ts=(the and 59)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 59)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:47 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:49 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:49 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:49 AM">Text: 'ts=(the and 60)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 60)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:49 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:51 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:52 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:52 AM">Text: 'ts=(the and 61)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 61)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:52 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:54 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:54 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:54 AM">Text: 'ts=(the and 62)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 62)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:54 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:57 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:57 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 8:59:58 AM">Text: 'ts=(the and 63)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 63)'</substep>
+        <substep valid="True" time="2/22/2019 8:59:58 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:00 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:00 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:00 AM">Text: 'ts=(the and 64)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 64)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:00 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:03 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:03 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:03 AM">Text: 'ts=(the and 65)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 65)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:03 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:05 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:05 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:05 AM">Text: 'ts=(the and 66)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 66)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:05 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:08 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:09 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:09 AM">Text: 'ts=(the and 67)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 67)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:09 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:11 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:11 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:11 AM">Text: 'ts=(the and 68)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 68)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:11 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:14 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:14 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:14 AM">Text: 'ts=(the and 69)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 69)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:14 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:16 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:17 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:17 AM">Text: 'ts=(the and 70)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 70)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:17 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:20 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:20 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:20 AM">Text: 'ts=(the and 71)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 71)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:20 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:22 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:23 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:23 AM">Text: 'ts=(the and 72)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 72)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:23 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:26 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:26 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:26 AM">Text: 'ts=(the and 73)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 73)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:26 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:28 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:28 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:29 AM">Text: 'ts=(the and 74)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 74)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:29 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:32 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:32 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:32 AM">Text: 'ts=(the and 75)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 75)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:32 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:34 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:35 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:35 AM">Text: 'ts=(the and 76)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 76)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:35 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:37 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:38 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:38 AM">Text: 'ts=(the and 77)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 77)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:38 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:40 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:40 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:40 AM">Text: 'ts=(the and 78)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 78)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:40 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:43 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:44 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:44 AM">Text: 'ts=(the and 79)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 79)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:44 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:46 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:46 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:47 AM">Text: 'ts=(the and 80)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 80)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:47 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:49 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:49 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:50 AM">Text: 'ts=(the and 81)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 81)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:50 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:53 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:54 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:54 AM">Text: 'ts=(the and 82)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 82)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:54 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:56 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:57 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:00:57 AM">Text: 'ts=(the and 83)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 83)'</substep>
+        <substep valid="True" time="2/22/2019 9:00:57 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:00 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:00 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:01 AM">Text: 'ts=(the and 84)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 84)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:01 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:03 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:03 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:03 AM">Text: 'ts=(the and 85)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 85)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:03 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:07 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:07 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:07 AM">Text: 'ts=(the and 86)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 86)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:07 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:09 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:10 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:10 AM">Text: 'ts=(the and 87)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 87)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:10 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:12 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:13 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:13 AM">Text: 'ts=(the and 88)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 88)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:13 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:16 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:16 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:16 AM">Text: 'ts=(the and 89)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 89)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:16 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:19 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:19 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:19 AM">Text: 'ts=(the and 90)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 90)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:20 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:23 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:24 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:24 AM">Text: 'ts=(the and 91)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 91)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:24 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:26 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:26 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:27 AM">Text: 'ts=(the and 92)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 92)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:27 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:30 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:31 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:31 AM">Text: 'ts=(the and 93)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 93)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:31 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:33 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:34 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:34 AM">Text: 'ts=(the and 94)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 94)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:34 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:37 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:38 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:38 AM">Text: 'ts=(the and 95)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 95)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:38 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:40 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:41 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:41 AM">Text: 'ts=(the and 96)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 96)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:41 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:43 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:44 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:44 AM">Text: 'ts=(the and 97)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 97)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:44 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:47 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:47 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:47 AM">Text: 'ts=(the and 98)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 98)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:48 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:49 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:50 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:50 AM">Text: 'ts=(the and 99)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 99)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:51 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:54 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:55 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:55 AM">Text: 'ts=(the and 100)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 100)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:55 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:57 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:58 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:01:58 AM">Text: 'ts=(the and 101)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 101)'</substep>
+        <substep valid="True" time="2/22/2019 9:01:59 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:01 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:02 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:02 AM">Text: 'ts=(the and 102)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 102)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:03 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:05 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:06 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:06 AM">Text: 'ts=(the and 103)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 103)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:06 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:10 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:11 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:11 AM">Text: 'ts=(the and 104)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 104)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:11 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:13 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:14 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:14 AM">Text: 'ts=(the and 105)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 105)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:15 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:18 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:19 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:19 AM">Text: 'ts=(the and 106)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 106)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:19 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:23 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:24 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:24 AM">Text: 'ts=(the and 107)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 107)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:24 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:27 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:28 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:28 AM">Text: 'ts=(the and 108)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 108)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:28 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:30 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:31 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:31 AM">Text: 'ts=(the and 109)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 109)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:31 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:33 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:35 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:35 AM">Text: 'ts=(the and 110)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 110)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:35 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:38 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:39 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:39 AM">Text: 'ts=(the and 111)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 111)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:39 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:41 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:42 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:43 AM">Text: 'ts=(the and 112)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 112)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:43 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:55 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:55 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:55 AM">Text: 'ts=(the and 113)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 113)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:55 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:57 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:57 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:02:57 AM">Text: 'ts=(the and 114)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 114)'</substep>
+        <substep valid="True" time="2/22/2019 9:02:58 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:00 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:00 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:00 AM">Text: 'ts=(the and 115)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 115)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:00 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:02 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:02 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:02 AM">Text: 'ts=(the and 116)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 116)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:02 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:04 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:05 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:05 AM">Text: 'ts=(the and 117)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 117)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:05 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:07 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:07 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:08 AM">Text: 'ts=(the and 118)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 118)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:08 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:10 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:10 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:10 AM">Text: 'ts=(the and 119)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 119)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:10 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:12 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:13 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:13 AM">Text: 'ts=(the and 120)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 120)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:13 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:15 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:15 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:15 AM">Text: 'ts=(the and 121)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 121)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:15 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:18 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:18 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:18 AM">Text: 'ts=(the and 122)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 122)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:18 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:20 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:21 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:21 AM">Text: 'ts=(the and 123)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 123)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:21 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:24 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:25 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:25 AM">Text: 'ts=(the and 124)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 124)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:25 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:28 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:28 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:28 AM">Text: 'ts=(the and 125)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 125)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:29 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:31 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:31 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:31 AM">Text: 'ts=(the and 126)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 126)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:31 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:33 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:34 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:34 AM">Text: 'ts=(the and 127)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 127)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:34 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:36 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:37 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:37 AM">Text: 'ts=(the and 128)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 128)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:37 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:39 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:40 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:40 AM">Text: 'ts=(the and 129)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 129)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:40 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:43 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:43 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:43 AM">Text: 'ts=(the and 130)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 130)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:43 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:45 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:46 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:46 AM">Text: 'ts=(the and 131)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 131)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:46 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:48 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:49 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:49 AM">Text: 'ts=(the and 132)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 132)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:49 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:51 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:52 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:52 AM">Text: 'ts=(the and 133)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 133)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:52 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:54 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:55 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:55 AM">Text: 'ts=(the and 134)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 134)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:55 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:57 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:58 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:03:58 AM">Text: 'ts=(the and 135)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 135)'</substep>
+        <substep valid="True" time="2/22/2019 9:03:58 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:01 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:01 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:02 AM">Text: 'ts=(the and 136)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 136)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:02 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:04 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:05 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:05 AM">Text: 'ts=(the and 137)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 137)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:05 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:08 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:09 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:09 AM">Text: 'ts=(the and 138)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 138)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:09 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:11 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:12 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:12 AM">Text: 'ts=(the and 139)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 139)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:12 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:14 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:15 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:15 AM">Text: 'ts=(the and 140)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 140)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:15 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:18 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:18 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:19 AM">Text: 'ts=(the and 141)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 141)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:19 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:21 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:22 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:22 AM">Text: 'ts=(the and 142)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 142)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:22 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:24 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:25 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:25 AM">Text: 'ts=(the and 143)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 143)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:26 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:28 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:29 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:29 AM">Text: 'ts=(the and 144)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 144)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:29 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:32 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:33 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:33 AM">Text: 'ts=(the and 145)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 145)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:33 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:35 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:36 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:36 AM">Text: 'ts=(the and 146)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 146)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:36 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:39 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:40 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:40 AM">Text: 'ts=(the and 147)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 147)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:40 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:42 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:44 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:44 AM">Text: 'ts=(the and 148)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 148)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:44 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:46 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:47 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:48 AM">Text: 'ts=(the and 149)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 149)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:48 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:50 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:51 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:52 AM">Text: 'ts=(the and 150)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 150)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:52 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:54 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:55 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:55 AM">Text: 'ts=(the and 151)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 151)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:55 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:58 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:59 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:04:59 AM">Text: 'ts=(the and 152)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 152)'</substep>
+        <substep valid="True" time="2/22/2019 9:04:59 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:02 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:04 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:04 AM">Text: 'ts=(the and 153)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 153)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:04 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:06 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:08 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:08 AM">Text: 'ts=(the and 154)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 154)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:08 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:11 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:12 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:12 AM">Text: 'ts=(the and 155)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 155)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:12 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:15 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:17 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:17 AM">Text: 'ts=(the and 156)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 156)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:17 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:20 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:22 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:22 AM">Text: 'ts=(the and 157)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 157)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:22 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:25 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:27 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:27 AM">Text: 'ts=(the and 158)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 158)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:27 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:29 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:31 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:31 AM">Text: 'ts=(the and 159)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 159)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:31 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:34 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:35 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:35 AM">Text: 'ts=(the and 160)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 160)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:36 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:38 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:39 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:40 AM">Text: 'ts=(the and 161)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 161)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:40 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:43 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:44 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:44 AM">Text: 'ts=(the and 162)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 162)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:45 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:48 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:49 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:50 AM">Text: 'ts=(the and 163)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 163)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:50 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:52 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:54 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:05:54 AM">Text: 'ts=(the and 164)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 164)'</substep>
+        <substep valid="True" time="2/22/2019 9:05:54 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:58 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:00 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:00 AM">Text: 'ts=(the and 165)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 165)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:00 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:02 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:05 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:05 AM">Text: 'ts=(the and 166)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 166)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:05 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:08 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:10 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:10 AM">Text: 'ts=(the and 167)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 167)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:10 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:13 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:15 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:15 AM">Text: 'ts=(the and 168)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 168)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:15 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:18 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:21 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:21 AM">Text: 'ts=(the and 169)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 169)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:21 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:24 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:26 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:26 AM">Text: 'ts=(the and 170)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 170)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:27 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:29 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:32 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:32 AM">Text: 'ts=(the and 171)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 171)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:32 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:35 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:37 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:38 AM">Text: 'ts=(the and 172)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 172)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:38 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:41 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:43 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:43 AM">Text: 'ts=(the and 173)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 173)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:44 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:46 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:49 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:49 AM">Text: 'ts=(the and 174)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 174)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:49 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:51 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:06:54 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:06:54 AM">Text: 'ts=(the and 175)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 175)'</substep>
+        <substep valid="True" time="2/22/2019 9:06:54 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:58 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:00 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:07:01 AM">Text: 'ts=(the and 176)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 176)'</substep>
+        <substep valid="True" time="2/22/2019 9:07:01 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:03 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:06 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:07:06 AM">Text: 'ts=(the and 177)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 177)'</substep>
+        <substep valid="True" time="2/22/2019 9:07:07 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:10 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:13 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:07:13 AM">Text: 'ts=(the and 178)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 178)'</substep>
+        <substep valid="True" time="2/22/2019 9:07:14 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:17 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:19 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:07:20 AM">Text: 'ts=(the and 179)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 179)'</substep>
+        <substep valid="True" time="2/22/2019 9:07:20 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:23 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:27 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:07:27 AM">Text: 'ts=(the and 180)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 180)'</substep>
+        <substep valid="True" time="2/22/2019 9:07:27 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:30 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:33 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:07:33 AM">Text: 'ts=(the and 181)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 181)'</substep>
+        <substep valid="True" time="2/22/2019 9:07:34 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:37 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:41 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:07:41 AM">Text: 'ts=(the and 182)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 182)'</substep>
+        <substep valid="True" time="2/22/2019 9:07:41 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:45 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:48 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:07:48 AM">Text: 'ts=(the and 183)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 183)'</substep>
+        <substep valid="True" time="2/22/2019 9:07:48 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:51 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:55 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:07:55 AM">Text: 'ts=(the and 184)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 184)'</substep>
+        <substep valid="True" time="2/22/2019 9:07:55 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:58 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:02 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:08:02 AM">Text: 'ts=(the and 185)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 185)'</substep>
+        <substep valid="True" time="2/22/2019 9:08:02 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:08:06 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:10 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:08:10 AM">Text: 'ts=(the and 186)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 186)'</substep>
+        <substep valid="True" time="2/22/2019 9:08:10 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:08:14 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:17 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:08:17 AM">Text: 'ts=(the and 187)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 187)'</substep>
+        <substep valid="True" time="2/22/2019 9:08:17 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:08:21 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:24 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:08:25 AM">Text: 'ts=(the and 188)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 188)'</substep>
+        <substep valid="True" time="2/22/2019 9:08:25 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:08:28 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:32 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:08:32 AM">Text: 'ts=(the and 189)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 189)'</substep>
+        <substep valid="True" time="2/22/2019 9:08:33 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:08:36 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:40 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:08:40 AM">Text: 'ts=(the and 190)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 190)'</substep>
+        <substep valid="True" time="2/22/2019 9:08:41 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:08:45 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:49 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:08:49 AM">Text: 'ts=(the and 191)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 191)'</substep>
+        <substep valid="True" time="2/22/2019 9:08:49 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:08:53 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:58 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:08:58 AM">Text: 'ts=(the and 192)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 192)'</substep>
+        <substep valid="True" time="2/22/2019 9:08:58 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:02 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:09:07 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:09:07 AM">Text: 'ts=(the and 193)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 193)'</substep>
+        <substep valid="True" time="2/22/2019 9:09:07 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:11 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:09:15 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:09:16 AM">Text: 'ts=(the and 194)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 194)'</substep>
+        <substep valid="True" time="2/22/2019 9:09:16 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:20 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:09:24 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:09:24 AM">Text: 'ts=(the and 195)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 195)'</substep>
+        <substep valid="True" time="2/22/2019 9:09:25 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:29 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:09:34 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:09:34 AM">Text: 'ts=(the and 196)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 196)'</substep>
+        <substep valid="True" time="2/22/2019 9:09:34 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:38 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:09:42 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:09:43 AM">Text: 'ts=(the and 197)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 197)'</substep>
+        <substep valid="True" time="2/22/2019 9:09:43 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:47 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:09:52 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:09:52 AM">Text: 'ts=(the and 198)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 198)'</substep>
+        <substep valid="True" time="2/22/2019 9:09:52 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:56 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:10:01 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:10:01 AM">Text: 'ts=(the and 199)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 199)'</substep>
+        <substep valid="True" time="2/22/2019 9:10:02 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:10:07 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:10:12 AM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="2/22/2019 9:10:12 AM">Text: 'ts=(the and 200)' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'ts=(the and 200)'</substep>
+        <substep valid="True" time="2/22/2019 9:10:12 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:10:17 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:10:35 AM">Clicking Link 'Basic Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:10:37 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:10:38 AM">Clicking Link 'Advanced Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:10:40 AM">Advanced Search page was opened</substep>
+      </step>
+      <step type="pass" description="Click the Select All button" expected="The page is redisplayed with all Sets checkboxes in marked state of Delete sets column." time="2/22/2019 9:10:40 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 9:10:40 AM">Clicking Button ''Select All sets' button'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Click the Delete button" expected="All the search sets are deleted and empty Search History table is displayed with the message as &quot;There are no search sets to display. Use the search options to create new search sets.&quot;" time="2/22/2019 9:10:49 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 9:10:41 AM">Clicking Button 'Delete sets button'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:10:43 AM">Advanced Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:10:43 AM">Text of Text 'No search sets' equals: 'There are no search sets to display.'. &lt;br /&gt; Current text is: 'There are no search sets to display.'</substep>
+        <substep valid="True" time="2/22/2019 9:10:43 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 9:10:49 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

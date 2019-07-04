@@ -1,0 +1,29 @@
+Tech info:
+Exception cause: org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: A script on this page may be busy, or it may have stopped responding. You can stop the script now, open the script in the debugger, or let the script continue.
+
+Script: chrome://global/content/bindings/resizer.xml:31): A script on this page may be busy, or it may have stopped responding. You can stop the script now, open the script in the debugger, or let the script continue.
+
+Script: chrome://global/content/bindings/resizer.xml:31
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'INBASDLP00628', ip: '10.10.247.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b2fb7387-5927-4b7b-9124-79270af26a7c 
+ sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206);
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492);
+org.openqa.selenium.By$ByCssSelector.findElement(By.java:430);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355);
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69);
+com.thomsonreuters.cucumberfactory.typesfactory.Factory.InvocationHandlers.HTMLInvocationHandler.invoke(HTMLInvocationHandler.java:27);
+com.sun.proxy.$Proxy20.clear(Unknown Source);
+com.thomsonreuters.cucumberfactory.typesfactory.Types.TextInput.clear(TextInput.java:72);
+com.thomsonreuters.cucumberfactory.typesfactory.Types.TextInput.enterText(TextInput.java:33);
+com.thomsonreuters.incites.cucumber.pages.SignInPage.LogIn(SignInPage.java:77);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SIgnInPageSteps.I_am_logged_in_to_application(SIgnInPageSteps.java:44);
+✽.Given I am logged in to application(src/test/resources/com.thomsonreuters.incites.cucumber/LJURSystemReports/JournalsByJNCITile.feature:16)

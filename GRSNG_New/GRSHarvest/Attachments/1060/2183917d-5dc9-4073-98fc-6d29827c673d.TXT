@@ -1,0 +1,1 @@
+          select * from(SELECT tsy_name FROM targets_staging.sita_target_synonyms order by dbms_random.value)         where rownum <2     

@@ -1,0 +1,279 @@
+﻿@{
+    ViewBag.Title = "Admin Right";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header">
+    <h1>Admin Tool
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Manage Admin Rights
+        </small>
+    </h1>
+</div>
+
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Manage Admin Rights & Users Access</h5>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                @{
+                    if(ViewBag.CanShow == true)
+                    {
+                        <table id="testcyclestable" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>User Full Name</th>
+                                    <th>User Email</th>
+                                    <th>IsAdmin</th>
+                                    <th>Is Global Admin</th>
+                                    <th>Is User Blocked</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var uitem in Model.UserModelAdminAccess)
+                                    {
+                                        var tabRowID = "tr"+ uitem.ID;
+                                        <tr id="@tabRowID">
+                                            <td>@uitem.UserName</td>
+                                            <td>@uitem.UserFullName</td>
+                                            <td>@uitem.UserEmail</td>
+                                            <td align="center">@if(@uitem.UserAdmin) {
+                                                    <img src="~/Content/CircleTick_Green.png" title="Click to unassigned from User Admin role" onclick="UnassignFromUserAdmin(@uitem.ID)" style="height: 24px; width: 24px; cursor: pointer" />
+                                                } else {
+                                                    <img src="~/Content/Circlecross_Red.png" title="Click to assigned User Admin role" onclick="AssignToUserAdmin(@uitem.ID)" style="height: 24px; width: 24px; cursor: pointer" />
+                                                }
+                                            </td>
+                                            <td align="center">@if(@uitem.UserGlobalAdmin){
+                                                    <img src="~/Content/CircleTick_Green.png" title="Click to unassigned from Global User Admin role" onclick="UnassignFromGlobalAdmin(@uitem.ID)" style="height: 24px; width: 24px; cursor: pointer" />
+                                                } else {
+                                                    <img src="~/Content/Circlecross_Red.png" title="Click to assigned Global User Admin role" onclick="AssignToGlobalAdmin(@uitem.ID)" style="height: 24px; width: 24px; cursor: pointer" />
+                                                }
+                                            </td>
+                                            <td align="center" style="width:110px!important;">@if(@uitem.UserBlocked){
+                                                    <span>Blocked</span>
+                                                <div style="color: blue; text-decoration: underline; cursor: pointer; padding: 0px!important; margin: 0px!important;" onclick="UnBlockUser(@uitem.ID)">Unblock</div>
+                                                } else {
+                                                    <span>Not Blocked</span>
+                                                <div style="color: blue; text-decoration: underline; cursor: pointer; padding: 0px!important; margin: 0px!important;" onclick="BlockUser(@uitem.ID)">Block</div>
+                                                }
+                                            </td>
+                                        </tr>
+                                }
+                                }
+                            </tbody>
+                        </table>
+                }
+                    else
+                    {
+                        <div style="height: auto; padding: 15px!important; background-color: #E6E6E6; font-size: 14px; color: #DC143C; font-weight: 600; text-align: center">
+                            You are not authorized to visit this page.
+                        </div>
+                }
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    function UnassignFromUserAdmin(UID) {
+        var datatosend = JSON.stringify({ "userId": UID });
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("UnAssignUserAdminRight", "AdminTool")',
+            async: true,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: datatosend,
+            beforeSend: function () {
+                document.getElementById("blockBack").style.display = '';
+                document.getElementById("divmiddle").style.display = '';
+            },
+            complete: function () {
+                document.getElementById("blockBack").style.display = 'none';
+                document.getElementById("divmiddle").style.display = 'none';
+            },
+            error: function () {
+            },
+            success: function (response) {
+                ShowMessage(response.type, response.text);
+                var trowid = 'tr' + UID;
+                if (response.status == "USER ADMIN") {
+                    $("#" + trowid + " td:nth-child(4)").html("<img src='../Content/CircleTick_Green.png' title='Click to unassigned from User Admin role' onclick='UnassignFromUserAdmin(" + UID + ")' style='height: 24px; width: 24px; cursor: pointer' />");
+                }
+                else {
+                    $("#" + trowid + " td:nth-child(4)").html("<img src='../Content/Circlecross_Red.png' title='Click to assigned User Admin role' onclick='AssignToUserAdmin(" + UID + ")' style='height: 24px; width: 24px; cursor: pointer' />");
+                }
+            }
+        });
+    }
+
+    function AssignToUserAdmin(UID) {
+        var datatosend = JSON.stringify({ "userId": UID });
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("AssignUserAdminRight", "AdminTool")',
+            async: true,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: datatosend,
+            beforeSend: function () {
+                document.getElementById("blockBack").style.display = '';
+                document.getElementById("divmiddle").style.display = '';
+            },
+            complete: function () {
+                document.getElementById("blockBack").style.display = 'none';
+                document.getElementById("divmiddle").style.display = 'none';
+            },
+            error: function () {
+            },
+            success: function (response) {
+                ShowMessage(response.type, response.text);
+                var trowid = 'tr' + UID;
+                if (response.status == "USER ADMIN") {
+                    $("#" + trowid + " td:nth-child(4)").html("<img src='../Content/CircleTick_Green.png' title='Click to unassigned from User Admin role' onclick='UnassignFromUserAdmin(" + UID + ")' style='height: 24px; width: 24px; cursor: pointer' />");
+                }
+                else {
+                    $("#" + trowid + " td:nth-child(4)").html("<img src='../Content/Circlecross_Red.png' title='Click to assigned User Admin role' onclick='AssignToUserAdmin(" + UID + ")' style='height: 24px; width: 24px; cursor: pointer' />");
+                }
+            }
+        });
+    }
+
+    function UnassignFromGlobalAdmin(UID) {
+        var datatosend = JSON.stringify({ "userId": UID });
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("UnAssignGlobalAdminRight", "AdminTool")',
+            async: true,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: datatosend,
+            beforeSend: function () {
+                document.getElementById("blockBack").style.display = '';
+                document.getElementById("divmiddle").style.display = '';
+            },
+            complete: function () {
+                document.getElementById("blockBack").style.display = 'none';
+                document.getElementById("divmiddle").style.display = 'none';
+            },
+            error: function () {
+            },
+            success: function (response) {
+                ShowMessage(response.type, response.text);
+                var trowid = 'tr' + UID;
+                if (response.status == "GLOBAL ADMIN") {
+                    $("#" + trowid + " td:nth-child(5)").html("<img src='../Content/CircleTick_Green.png' title='Click to unassigned from Global User Admin role' onclick='UnassignFromGlobalAdmin(" + UID + ")' style='height: 24px; width: 24px; cursor: pointer' />");
+                }
+                else {
+                    $("#" + trowid + " td:nth-child(5)").html("<img src='../Content/Circlecross_Red.png' title='Click to assigned Global User Admin role' onclick='AssignToGlobalAdmin(" + UID + ")' style='height: 24px; width: 24px; cursor: pointer' />");
+                }
+            }
+        });
+    }
+
+    function AssignToGlobalAdmin(UID) {
+        var datatosend = JSON.stringify({ "userId": UID });
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("AssignGlobalAdminRight", "AdminTool")',
+            async: true,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: datatosend,
+            beforeSend: function () {
+                document.getElementById("blockBack").style.display = '';
+                document.getElementById("divmiddle").style.display = '';
+            },
+            complete: function () {
+                document.getElementById("blockBack").style.display = 'none';
+                document.getElementById("divmiddle").style.display = 'none';
+            },
+            error: function () {
+            },
+            success: function (response) {
+                ShowMessage(response.type, response.text);
+                var trowid = 'tr' + UID;
+                if (response.status == "GLOBAL ADMIN") {
+                    $("#" + trowid + " td:nth-child(5)").html("<img src='../Content/CircleTick_Green.png' title='Click to unassigned from Global User Admin role' onclick='UnassignFromGlobalAdmin(" + UID + ")' style='height: 24px; width: 24px; cursor: pointer' />");
+                }
+                else {
+                    $("#" + trowid + " td:nth-child(5)").html("<img src='../Content/Circlecross_Red.png' title='Click to assigned Global User Admin role' onclick='AssignToGlobalAdmin(" + UID + ")' style='height: 24px; width: 24px; cursor: pointer' />");
+                }
+            }
+        });
+    }
+
+    function BlockUser(UID) {
+        var datatosend = JSON.stringify({ "userId": UID });
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("BlockUser", "AdminTool")',
+            async: true,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: datatosend,
+            beforeSend: function () {
+                document.getElementById("blockBack").style.display = '';
+                document.getElementById("divmiddle").style.display = '';
+            },
+            complete: function () {
+                document.getElementById("blockBack").style.display = 'none';
+                document.getElementById("divmiddle").style.display = 'none';
+            },
+            error: function () {
+            },
+            success: function (response) {
+                ShowMessage(response.type, response.text);
+                var trowid = 'tr' + UID;
+                if (response.status == "BLOCKED") {
+                    $("#" + trowid + " td:nth-child(6)").html("<span>Blocked</span><div style='color: blue; text-decoration: underline; cursor: pointer; padding: 0px!important; margin: 0px!important;' onclick='UnBlockUser(" + UID + ")'>Unblock</div>");
+                }
+                else {
+                    $("#" + trowid + " td:nth-child(6)").html("<span>Not Blocked</span><div style='color: blue; text-decoration: underline; cursor: pointer; padding: 0px!important; margin: 0px!important;' onclick='BlockUser(" + UID + ")'>Block</div>");
+                }
+            }
+        });
+    }
+
+    function UnBlockUser(UID) {
+        var datatosend = JSON.stringify({ "userId": UID });
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("UnBlockUser", "AdminTool")',
+            async: true,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: datatosend,
+            beforeSend: function () {
+                document.getElementById("blockBack").style.display = '';
+                document.getElementById("divmiddle").style.display = '';
+            },
+            complete: function () {
+                document.getElementById("blockBack").style.display = 'none';
+                document.getElementById("divmiddle").style.display = 'none';
+            },
+            error: function () {
+            },
+            success: function (response) {
+                ShowMessage(response.type, response.text);
+                var trowid = 'tr' + UID;
+                if (response.status == "BLOCKED") {
+                    $("#" + trowid + " td:nth-child(6)").html("<span>Blocked</span><div style='color: blue; text-decoration: underline; cursor: pointer; padding: 0px!important; margin: 0px!important;' onclick='UnBlockUser(" + UID + ")'>Unblock</div>");
+                }
+                else {
+                    $("#" + trowid + " td:nth-child(6)").html("<span>Not Blocked</span><div style='color: blue; text-decoration: underline; cursor: pointer; padding: 0px!important; margin: 0px!important;' onclick='BlockUser(" + UID + ")'>Block</div>");
+                }
+            }
+        });
+    }
+
+
+</script>

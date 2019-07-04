@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.BasicSearchPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage 
+ com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.SavedSearchesAndAlertsPage_Steps.iVerifyThatRecordsAreRemovedFromTheListAfterDeleteOperationFromTab(SavedSearchesAndAlertsPage_Steps.java:506);
+✽.And I verify that records "1;;2" are removed from the list after delete operation from "Saved Searches" tab(com/clarivateanalytics/wos/gui/cucumber/Deployment/SavedSearchesAndAlerts.feature:528)

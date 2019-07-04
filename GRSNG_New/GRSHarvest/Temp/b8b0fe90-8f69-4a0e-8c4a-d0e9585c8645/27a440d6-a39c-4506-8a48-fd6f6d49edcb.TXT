@@ -1,0 +1,1 @@
+http://mwa.us-west-2.stable.dev.cortellis.int.clarivate.com:8200/mr/ChemistrySIService/v1/molFile?drugId=70002

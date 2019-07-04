@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TaxonomyInput xmlns:ns2="local"><type>companiesSponsor</type><treeCode>1088768</treeCode></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TaxonomyInput>

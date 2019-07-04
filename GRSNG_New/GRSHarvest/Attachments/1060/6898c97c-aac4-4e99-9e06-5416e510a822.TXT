@@ -1,0 +1,1 @@
+{"ontologyTreeOutput":{"TaxonomyTree":{"Node":[{"@depth":"4","@leaf":"false","@name":"Chimeric monoclonal antibody","@treeCode":"IMM-ABY-CHI-MON-","@id":"166","hitSynonyms":""},{"@depth":"4","@leaf":"false","@name":"Humanized antibody","@treeCode":"IMM-ABY-CHI-HUM-","@id":"538","hitSynonyms":""}]}}}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ExecutionTestSuiteModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsJava>true</IsJava>
+  <ExecutionTestSuites>
+    <ExecutionTestSuite>
+      <Name>CustomerCare_CoreScenarios</Name>
+      <Categories />
+      <Tests>
+        <string>Upgrade_Exception</string>
+        <string>InCites_User_Registration</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>SmokeTestCases</Name>
+      <Categories />
+      <Tests>
+        <string>MPL_Admin_Login</string>
+        <string>MPL_User_Login</string>
+      </Tests>
+    </ExecutionTestSuite>
+  </ExecutionTestSuites>
+</ExecutionTestSuiteModel>

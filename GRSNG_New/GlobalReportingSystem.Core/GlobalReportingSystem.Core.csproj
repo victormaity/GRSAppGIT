@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{057FFEB7-A56F-4D6F-B2F4-662ED3B211BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GlobalReportingSystem.Core</RootNamespace>
+    <AssemblyName>GlobalReportingSystem.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="Abstract\BL.Helper\ISerializer.cs" />
+    <Compile Include="Abstract\BL.Helper\ISessionHelper.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IManageExportToExcel.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IEmailer.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IManageConfigurationProvider.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IManageExecutionProvider.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IManageHomeProvider.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IManageLaunchProvider.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IManageReportingProvider.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IManageTestCycleProvider.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IManageUserProvider.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IManageQcProvider.cs" />
+    <Compile Include="Abstract\ProviderInterfaces\IMangaeRelReportProvider.cs" />
+    <Compile Include="Constants\Labels.cs" />
+    <Compile Include="Constants\Messages.cs" />
+    <Compile Include="Constants\Statuses.cs" />
+    <Compile Include="Enums\CurrentStatusType.cs" />
+    <Compile Include="Enums\IssueStatusType.cs" />
+    <Compile Include="Enums\MachinesStatusType.cs" />
+    <Compile Include="Enums\TestsToExecute.cs" />
+    <Compile Include="Models\Entities\Access.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AccountForTestRun.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Analyser.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Analysis.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AnalysisHistory.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AutoAnalysisCache.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\BaseProject.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Bugracker.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Client.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\ClientsInformation.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Defect.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\DistributedTest.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\DistributionShedule.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Entities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\ExecutionConfiguration.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Feature.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\FeatureTag.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\FilesStorage.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\GrpExecutionInfo.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Guest.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\HostsConfiguration.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Issue.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\LoadBalanced.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\LoadBalancedMachine.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\LoadBalancedTest.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\LoginPageMonitor.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\NewLoadBalanced.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Project.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\ProjectGroup.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\ProjectType.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\QCExportAssignment.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\ReleaseInfo.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\RelExecutionStatu.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\RelExecutionStatusLog.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\RelFrom.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\RelLog.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Scenario.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\SikuliObject.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\SubStep.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\TeamInfo.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\TestCase.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\TestCycle.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\TestsExecution.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\TestStep.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\TestSuit.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\User.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\UserSession.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\vw_ActualTestSuites.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\vw_AnalyzedSubSteps.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\vw_Defects.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\vw_FilesStorage.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Executor\AccountForTestRunModel.cs" />
+    <Compile Include="Models\Executor\ExecutionConfigurationModel.cs" />
+    <Compile Include="Models\Executor\ExportToExcel.cs" />
+    <Compile Include="Models\Executor\HostsConfigurationModel.cs" />
+    <Compile Include="Models\Executor\LoadBalancedModel.cs" />
+    <Compile Include="Models\Executor\ProjectModel.cs" />
+    <Compile Include="Models\Executor\Report.cs" />
+    <Compile Include="Models\Executor\TestCycleModel.cs" />
+    <Compile Include="Models\Executor\TestExecutionsModel.cs" />
+    <Compile Include="Models\GRS\AdminToolGlobalNotificationsModel.cs" />
+    <Compile Include="Models\GRS\AuthenticationModel.cs" />
+    <Compile Include="Models\GRS\BugListModel.cs" />
+    <Compile Include="Models\GRS\BugStatisticsModel.cs" />
+    <Compile Include="Models\GRS\ExecutionReportModel.cs" />
+    <Compile Include="Models\GRS\FeatureTagsFromLocalProjectFolder.cs" />
+    <Compile Include="Models\GRS\JenkinsReportCountStatus.cs" />
+    <Compile Include="Models\GRS\JsTreeItemModel.cs" />
+    <Compile Include="Models\GRS\JiraIssueModel.cs" />
+    <Compile Include="Models\GRS\ExecutionGroupModel.cs" />
+    <Compile Include="Models\GRS\ResultReturnModel.cs" />
+    <Compile Include="Models\GRS\RunRelReportProp.cs" />
+    <Compile Include="Models\GRS\TeamInfoModel.cs" />
+    <Compile Include="Models\GRS\TestsuitManageModel.cs" />
+    <Compile Include="Models\GRS\TrackingExecutionsAndLogs.cs" />
+    <Compile Include="Models\GRS\UserModelAdminAccess.cs" />
+    <Compile Include="Models\GRS\UserResultsNotificationModel.cs" />
+    <Compile Include="Models\GRS\UsersAndCyclesModel.cs" />
+    <Compile Include="Models\GRS\ExportToExcelModel.cs" />
+    <Compile Include="Models\GRS\LoadBalancedLaunchModel.cs" />
+    <Compile Include="Models\GRS\CyclesModel.cs" />
+    <Compile Include="Models\GRS\DB\CustomStatuses.cs" />
+    <Compile Include="Models\GRS\DB\DBExtentions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\GRS\DB\Node.cs" />
+    <Compile Include="Models\GRS\ExecutionAccountsModel.cs" />
+    <Compile Include="Models\GRS\ExecutionConfigurationsModel.cs" />
+    <Compile Include="Models\GRS\ExecutionEnvironmentsModel.cs" />
+    <Compile Include="Models\GRS\ExecutionMachniesModel.cs" />
+    <Compile Include="Models\GRS\ExecutionTestSuiteModel.cs" />
+    <Compile Include="Models\GRS\HandleErrorInfo.cs" />
+    <Compile Include="Models\GRS\HomePageStats.cs" />
+    <Compile Include="Models\GRS\ItemId.cs" />
+    <Compile Include="Models\GRS\LinearExecutionLaunchModel.cs" />
+    <Compile Include="Models\GRS\LinearExecutionViewModel.cs" />
+    <Compile Include="Models\GRS\LoadBalancedViewModel.cs" />
+    <Compile Include="Models\GRS\NodesAndId.cs" />
+    <Compile Include="Models\GRS\ProjectAndUsersModel.cs" />
+    <Compile Include="Models\GRS\ProjectConfigurationModel.cs" />
+    <Compile Include="Models\GRS\ReportCommulativeModel.cs" />
+    <Compile Include="Models\GRS\TestCasesAndProject.cs" />
+    <Compile Include="Models\GRS\TestCasesAndStepsModel.cs" />
+    <Compile Include="Models\GRS\TestStepAndProjectAndAnalysis.cs" />
+    <Compile Include="Models\GRS\PublicAccess\FullConfigurationModel.cs" />
+    <Compile Include="Models\GRS\TestSuiteIssuesModel.cs" />
+    <Compile Include="Models\GRS\UserProfileModel.cs" />
+    <Compile Include="Models\Sikuli\SikuliItem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Analyzer\" />
+    <Folder Include="Models\Harvest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QCClient\QCClient.csproj">
+      <Project>{c659a245-1b04-4c5d-a297-ea67d1bcafa7}</Project>
+      <Name>QCClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\Entities\Entities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Entities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

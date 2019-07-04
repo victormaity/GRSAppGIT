@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomyInput xmlns:ns2="local"><type>fluid</type><treeCode>-951984997|-467176522|</treeCode></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomyInput>

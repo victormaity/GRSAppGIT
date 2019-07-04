@@ -1,0 +1,52 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>Test_R3_Changes</test_cycle>
+    <url>https://tokenclient.wos-non-prod.oneplatform.build/tokens/QA1/client_ssl.cgi/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_03</user>
+    <ip>192.168.109.117</ip>
+    <start_time>04/15/2019 02:52:10</start_time>
+    <end_time>04/15/2019 02:54:34</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (32-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Quick_Output" start_time="4/15/2019 2:52:10 PM">
+    <TestCase name="Medline_ConO_001" start_time="4/15/2019 2:52:35 PM" description="Check display the Confirmation Overlay for sending to Email" criticality="High" state="fail" end_time="4/15/2019 2:54:34 PM">
+      <step type="pass" description="1. Prerequisite: 1. Medline Results Summary page is opened Select some individual checkboxes on Results Summary" expected="" time="4/15/2019 2:52:50 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 2:52:35 PM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 2:52:36 PM">Clicking Link 'MEDLINE'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 2:52:37 PM">General Search page was opened</substep>
+        <substep valid="True" time="4/15/2019 2:52:37 PM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="4/15/2019 2:52:37 PM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="4/15/2019 2:52:37 PM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 2:52:39 PM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="4/15/2019 2:52:39 PM">Check clear sreen</substep>
+        <substep valid="True" time="4/15/2019 2:52:39 PM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 2:52:40 PM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 2:52:50 PM">Enter search field - search field = Title, search term = From the Local to the Global</substep>
+        <substep valid="True" time="4/15/2019 2:52:50 PM">Clicking Button 'Search'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="2. Click on Email icon at the top or at the bottom of page" expected="" time="4/15/2019 2:52:56 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 2:52:55 PM" screenshot="ad8d5884a8db4a1eb3a38721c876988f.jpg" screenshot_driver="5e86fe91f73b44709ffb56ee04fdacb3.jpg">'Email' output button was clicked</substep>
+        <substep valid="True" time="4/15/2019 2:52:55 PM">Clicking Button ''Export' button'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 2:52:56 PM">Email Records Window was opened</substep>
+      </step>
+      <step type="fail" description="3. Enter valid email address in &quot;Email To&quot; field and hit on &quot;Send Email&quot; button" expected="Processing Overlay is displayed" time="4/15/2019 2:54:34 PM" inputdata="" actual="Unexpected runtime error  : Tried to run command without establishing a connection">
+        <substep valid="True" time="4/15/2019 2:52:57 PM">Text box 'To' is enabled</substep>
+        <substep valid="True" time="4/15/2019 2:52:57 PM">Text: 'newthomsontesting@gmail.com' was sent to the 'To' textbox (XPath(".//input[@id='emailAddress']")), textbox content after sending is 'newthomsontesting@gmail.com'</substep>
+        <substep valid="True" time="4/15/2019 2:53:03 PM">Dropdown: 'Full Record     ' options were  requested to be selected in 'Drop down 'Record content'' dropdown (XPath(".//span[contains(text(),'Email Records')]/../..//select[@id='bib_fields']")), selected option in dropdown after selection is 'Full Record     ' </substep>
+        <substep valid="True" time="4/15/2019 2:53:03 PM">Dropdown: 'Full Record' option was requested to be selected in 'Drop down 'Record content'' dropdown (XPath(".//span[contains(text(),'Email Records')]/../..//select[@id='bib_fields']")), selected option in dropdown after selection is 'Full Record     ' </substep>
+        <substep valid="True" time="4/15/2019 2:53:03 PM">Clicking Button 'Send Email'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 2:53:04 PM">&lt;!XML Content&gt;&lt;b&gt;Text of Text 'Title' contains all requested texts.&lt;/b&gt; &lt;!XML Content&gt;</substep>
+        <substep valid="False" time="4/15/2019 2:54:30 PM" tech_info=" &lt;br /&gt;Locators: &lt;br /&gt; XPath(&quot;Locator is never used!!!&quot;) &lt;br /&gt; Searching time (seconds): 0.7172433" screenshot="41a2c7d4e2cd40768ae5ec200ec59eb4.jpg">2 Can't find Text 'Title'</substep>
+        <substep valid="True" time="4/15/2019 2:54:30 PM" tech_info="&lt;br /&gt; Clickers that were requested to click: 'Jquery, SeleniumClick'.  &lt;br /&gt; Clickers that was send actions methods to element: SeleniumClick. Clicking time (seconds): 86.6529579">Clicking exception: 2 Can't find Text 'Title'</substep>
+        <substep valid="False" time="4/15/2019 2:54:30 PM" screenshot="aa0deadcc25c410c9e696af75c7082b9.jpg">Unexpected runtime error  : Tried to run command without establishing a connection</substep>
+        <substep valid="True" time="4/15/2019 2:54:30 PM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="4/15/2019 2:54:34 PM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

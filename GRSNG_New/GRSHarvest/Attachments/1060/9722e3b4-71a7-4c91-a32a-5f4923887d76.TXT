@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomyInput xmlns:ns2="local"><type>organism</type><treeCode>4539|1410|4538|1383|-441207802|2887|-955300162|-1471082801|4478|3080|-1866115821|</treeCode></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomyInput>

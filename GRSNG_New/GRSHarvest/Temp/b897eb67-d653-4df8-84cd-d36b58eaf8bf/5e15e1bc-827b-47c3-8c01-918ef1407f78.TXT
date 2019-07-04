@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.patents.v3.soap.DcrStructureImageInput xmlns:ns2="local"><dcrNumber>2882005</dcrNumber><size>tb</size></ns2:com.thomsonreuters.ls.service.contract.patents.v3.soap.DcrStructureImageInput>

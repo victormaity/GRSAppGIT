@@ -1,0 +1,1 @@
+          SELECT DRUG_ID         FROM ls_srv.jp_drug_development_current         WHERE reference_id IS NOT NULL         AND status_date    IS NOT NULL         AND rownum<100         ORDER BY dbms_random.value     

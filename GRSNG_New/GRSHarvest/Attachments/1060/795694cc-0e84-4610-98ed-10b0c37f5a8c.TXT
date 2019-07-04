@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput xmlns:ns2="local"><treeType>process</treeType><searchString>response</searchString><treeCodeFilter>-1664862110%7C-217603000%7C</treeCodeFilter><operationType>flat</operationType></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput>

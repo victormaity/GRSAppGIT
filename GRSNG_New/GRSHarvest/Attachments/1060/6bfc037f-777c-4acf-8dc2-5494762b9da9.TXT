@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Indication id="2001" name="Tropical spastic paraparesis"><Synonyms><Synonym>Tropical spastic paraperesis</Synonym><Synonym>HTLV I associated myelopathies</Synonym></Synonyms></Indication>

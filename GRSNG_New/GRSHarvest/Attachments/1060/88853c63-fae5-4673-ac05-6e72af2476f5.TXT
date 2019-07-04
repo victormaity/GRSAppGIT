@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugRecordInput xmlns:ns2="local"><id>99562</id></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugRecordInput>

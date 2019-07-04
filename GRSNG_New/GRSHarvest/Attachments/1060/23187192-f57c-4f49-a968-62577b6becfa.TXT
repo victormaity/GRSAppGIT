@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node depth="4" leaf="false" name="Stem cell therapy by source" treeCode="BIO-CET-STM-SCS-" id="854"><hitSynonyms></hitSynonyms></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.OntologyTreeOutput>

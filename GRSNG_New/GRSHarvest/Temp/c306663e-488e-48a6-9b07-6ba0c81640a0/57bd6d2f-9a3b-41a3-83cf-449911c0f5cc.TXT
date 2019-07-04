@@ -1,0 +1,33 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == .//*[@id='qsearch']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'INBASDPC06545', ip: '10.10.247.248', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:9161/, ignoreZoomSetting=true, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=true}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 1daa7151-2c10-440d-b4b5-5e1927be5336
+*** Element info: {Using=xpath, value=.//*[@id='qsearch']} 
+ java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348);
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69);
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38);
+com.sun.proxy.$Proxy31.clear(Unknown Source);
+com.clarivateAnalytics.cortellis.pages.HomePageRedesign.QuickSearchBar.inputTextInQuickSearchBar(QuickSearchBar.java:107);
+com.clarivateAnalytics.cortellis.pages.HomePageRedesign.QuickSearchBar$$FastClassBySpringCGLIB$$2f3e9650.invoke(<generated>);
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204);
+org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:649);
+com.clarivateAnalytics.cortellis.pages.HomePageRedesign.QuickSearchBar$$EnhancerBySpringCGLIB$$3447534f.inputTextInQuickSearchBar(<generated>);
+com.clarivateAnalytics.cortellis.StepDefinitions.QuickSearchStepDef.I_perform_Quick_Search_by(QuickSearchStepDef.java:97);
+✽.Given I perform Quick Search by "pain"(Smoke/SmokeReportExport/SmokeReportExport.feature:6)

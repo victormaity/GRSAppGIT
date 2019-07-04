@@ -1,0 +1,58 @@
+﻿@model  GlobalReportingSystem.Core.Models.Entities.TeamInfo
+<div class="modal-body">
+    <div>
+        <label class="labelForm">
+            Team Name
+            <small class="text-success">(display)</small>
+        </label>
+        <div class="input-group">
+            <input type="text" id="modelName-@Model.ID" class="form-control labelForm" value="@Model.TeamName" />
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+    </div>    
+    <hr />
+    <div>
+        <label class="labelForm">
+            Comments
+        </label>
+        <div class="input-group">
+            <input type="textarea" id="modelComment-@Model.ID" class="form-control labelForm" value="@Model.Comment" />
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+    </div>
+    <hr />    
+</div>
+<div class="modal-footer">
+    <button class="btn btn-sm" data-dismiss="modal">
+        <i class="ace-icon fa fa-times"></i>
+        Cancel
+    </button>
+
+    <button type="submit" class="btn btn-sm btn-primary" onclick="updateTeamInfo(@Model.ID)">
+        <i class="ace-icon fa fa-check"></i>
+        Edit
+    </button>
+</div>
+
+
+<script type="text/javascript">
+    function updateTeamInfo(id) {
+        var teamname = $("#modelName-" + id)[0].value;        
+        var comment = $("#modelComment-" + id)[0].value;
+        
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("UpdateTeamInfo")",
+            data: "{ 'TeamInfoId': " + id + ", 'TeamName':'" + teamname + "', 'Comment':'" + comment + "' }",
+            contentType: "application/json; charset=utf-8",
+            success: function () {
+                location.reload();
+            }
+        });
+    }
+</script>

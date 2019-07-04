@@ -1,0 +1,275 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>Test_5.33_R1_QA2_Iteration</test_cycle>
+    <url>https://tokenclient.wos-non-prod.oneplatform.build/tokens/QA2/client_ssl.cgi/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_07</user>
+    <ip>192.168.209.75</ip>
+    <start_time>06/20/2019 12:51:36</start_time>
+    <end_time>06/20/2019 01:15:15</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (64-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Acceptance INSPEC" start_time="6/20/2019 12:51:36 PM">
+    <TestCase name="INSPEC_AC_008" start_time="6/20/2019 12:51:57 PM" description="Journal List Search Aid" criticality="" state="fail" end_time="6/20/2019 1:05:05 PM">
+      <step type="pass" description="Prerequisite: Inspec Journal List: Check Page Display" expected="Page is displayed correctly" time="6/20/2019 12:52:13 PM" inputdata="">
+        <substep valid="True" time="6/20/2019 12:51:57 PM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:51:58 PM">Clicking Link 'INSPEC'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:52:00 PM">General Search page was opened</substep>
+        <substep valid="True" time="6/20/2019 12:52:00 PM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="6/20/2019 12:52:00 PM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="6/20/2019 12:52:00 PM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:52:02 PM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="6/20/2019 12:52:02 PM">Check clear sreen</substep>
+        <substep valid="True" time="6/20/2019 12:52:02 PM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:52:03 PM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:52:08 PM">Enter search field - search field = Publication Name</substep>
+        <substep valid="True" time="6/20/2019 12:52:11 PM">Clicking Link 'Search Aid'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:52:13 PM">Inspec Journal List page was loaded.</substep>
+      </step>
+      <step type="pass" description="Click on all alpha and numeric links" expected="Results page with correct result is displayed." time="6/20/2019 1:04:13 PM" inputdata="">
+        <substep valid="True" time="6/20/2019 12:52:14 PM">Clicking Link 'Alpha link: A'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:52:16 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:52:27 PM">The first symbol of all values in the table is 'A' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:52:34 PM">Clicking Link 'Alpha link: B'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:52:36 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:52:47 PM">The first symbol of all values in the table is 'B' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:52:54 PM">Clicking Link 'Alpha link: C'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:52:56 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:53:07 PM">The first symbol of all values in the table is 'C' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:53:14 PM">Clicking Link 'Alpha link: D'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:53:16 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:53:27 PM">The first symbol of all values in the table is 'D' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:53:34 PM">Clicking Link 'Alpha link: E'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:53:36 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:53:48 PM">The first symbol of all values in the table is 'E' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:53:55 PM">Clicking Link 'Alpha link: F'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:53:57 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:54:08 PM">The first symbol of all values in the table is 'F' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:54:15 PM">Clicking Link 'Alpha link: G'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:54:17 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:54:28 PM">The first symbol of all values in the table is 'G' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:54:35 PM">Clicking Link 'Alpha link: H'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:54:37 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:54:48 PM">The first symbol of all values in the table is 'H' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:54:55 PM">Clicking Link 'Alpha link: I'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:54:57 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:55:08 PM">The first symbol of all values in the table is 'I' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:55:15 PM">Clicking Link 'Alpha link: J'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:55:17 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:55:28 PM">The first symbol of all values in the table is 'J' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:55:35 PM">Clicking Link 'Alpha link: K'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:55:37 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:55:49 PM">The first symbol of all values in the table is 'K' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:55:56 PM">Clicking Link 'Alpha link: L'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:55:58 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:56:09 PM">The first symbol of all values in the table is 'L' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:56:16 PM">Clicking Link 'Alpha link: M'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:56:18 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:56:29 PM">The first symbol of all values in the table is 'M' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:56:36 PM">Clicking Link 'Alpha link: N'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:56:39 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:56:49 PM">The first symbol of all values in the table is 'N' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:56:56 PM">Clicking Link 'Alpha link: O'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:56:59 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:57:09 PM">The first symbol of all values in the table is 'O' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:57:16 PM">Clicking Link 'Alpha link: P'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:57:19 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:57:29 PM">The first symbol of all values in the table is 'P' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:57:36 PM">Clicking Link 'Alpha link: Q'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:57:39 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:57:50 PM">The first symbol of all values in the table is 'Q' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:57:57 PM">Clicking Link 'Alpha link: R'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:58:00 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:58:10 PM">The first symbol of all values in the table is 'R' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:58:17 PM">Clicking Link 'Alpha link: S'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:58:20 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:58:30 PM">The first symbol of all values in the table is 'S' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:58:37 PM">Clicking Link 'Alpha link: T'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:58:40 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:58:50 PM">The first symbol of all values in the table is 'T' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:58:57 PM">Clicking Link 'Alpha link: U'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:58:59 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:59:10 PM">The first symbol of all values in the table is 'U' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:59:17 PM">Clicking Link 'Alpha link: V'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:59:19 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:59:30 PM">The first symbol of all values in the table is 'V' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:59:37 PM">Clicking Link 'Alpha link: W'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 12:59:39 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 12:59:51 PM">The first symbol of all values in the table is 'W' as expected.</substep>
+        <substep valid="True" time="6/20/2019 12:59:58 PM">Clicking Link 'Alpha link: X'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:00:00 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:00:11 PM">The first symbol of all values in the table is 'X' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:00:18 PM">Clicking Link 'Alpha link: Y'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:00:20 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:00:31 PM">The first symbol of all values in the table is 'Y' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:00:38 PM">Clicking Link 'Alpha link: Z'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:00:41 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:00:51 PM">The first symbol of all values in the table is 'Z' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:00:58 PM">Clicking Link 'Alpha link: 0'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:01:01 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:01:11 PM">The first symbol of all values in the table is '0' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:01:18 PM">Clicking Link 'Alpha link: 1'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:01:20 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:01:31 PM">The first symbol of all values in the table is '1' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:01:38 PM">Clicking Link 'Alpha link: 2'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:01:41 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:01:52 PM">The first symbol of all values in the table is '2' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:01:59 PM">Clicking Link 'Alpha link: 3'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:02:02 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:02:12 PM">The first symbol of all values in the table is '3' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:02:19 PM">Clicking Link 'Alpha link: 4'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:02:22 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:02:32 PM">The first symbol of all values in the table is '4' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:02:39 PM">Clicking Link 'Alpha link: 5'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:02:41 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:02:52 PM">The first symbol of all values in the table is '5' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:02:59 PM">Clicking Link 'Alpha link: 6'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:03:01 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:03:12 PM">The first symbol of all values in the table is '6' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:03:19 PM">Clicking Link 'Alpha link: 7'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:03:21 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:03:32 PM">The first symbol of all values in the table is '7' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:03:39 PM">Clicking Link 'Alpha link: 8'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:03:41 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:03:53 PM">The first symbol of all values in the table is '8' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:04:00 PM">Clicking Link 'Alpha link: 9'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:04:02 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:04:13 PM">The first symbol of all values in the table is '9' as expected.</substep>
+      </step>
+      <step type="pass" description="Enter term in query box and click on Find button" expected="Results page with correct result is displayed." time="6/20/2019 1:04:21 PM" inputdata="">
+        <substep valid="True" time="6/20/2019 1:04:19 PM">Enter 'automated' into Find editbox.</substep>
+        <substep valid="True" time="6/20/2019 1:04:19 PM">Clicking Button 'Find'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:04:20 PM">Click 'Find' button</substep>
+        <substep valid="True" time="6/20/2019 1:04:21 PM">All values in table contain 'automated' as expected.</substep>
+      </step>
+      <step type="fail" description="Add some records to search query and click &quot;Ok&quot; button" expected="Chosen records are added to the respective search field on Basic Search page" time="6/20/2019 1:04:43 PM" inputdata="" actual="Text in search field number 1 is '10TH INTERNATIONAL CONFERENCE ON AUTOMATED DEDUCTION PROCEEDINGS OR 10TH INTERNATIONAL CONFERENCE ON AUTOMATED DEDUCTION PROCEEDINGS'. Expected query was '10TH INTERNATIONAL CONFERENCE ON AUTOMATED DEDUCTION PROCEEDINGS'.">
+        <substep valid="True" time="6/20/2019 1:04:24 PM">Click button 'add' for record number '1' in Search Aids table</substep>
+        <substep valid="True" time="6/20/2019 1:04:24 PM">Clicking Image 'ADD'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:04:26 PM">Clicking Button 'OK'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:04:34 PM">General Search page was opened</substep>
+        <substep valid="False" time="6/20/2019 1:04:34 PM" screenshot="352f14857b0044419a2af1d06ee7dc07.jpg" screenshot_driver="ca5df81b0b1c42c78645361b96a7f7e0.jpg">Text in search field number 1 is '10TH INTERNATIONAL CONFERENCE ON AUTOMATED DEDUCTION PROCEEDINGS OR 10TH INTERNATIONAL CONFERENCE ON AUTOMATED DEDUCTION PROCEEDINGS'. Expected query was '10TH INTERNATIONAL CONFERENCE ON AUTOMATED DEDUCTION PROCEEDINGS'.</substep>
+        <substep valid="True" time="6/20/2019 1:04:34 PM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="6/20/2019 1:04:39 PM">Dispose was successfully done</substep>
+        <substep valid="True" time="6/20/2019 1:04:39 PM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="6/20/2019 1:04:43 PM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+    <TestCase name="INSPEC_AC_011" start_time="6/20/2019 1:05:05 PM" description="Inspec Author Index Search Aid" criticality="" state="fail" end_time="6/20/2019 1:15:15 PM">
+      <step type="pass" description="Prerequisite: INSPEC Author Search Aid Check Author Index Page Display" expected="Page is displayed correctly" time="6/20/2019 1:05:20 PM" inputdata="">
+        <substep valid="True" time="6/20/2019 1:05:05 PM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:05:06 PM">Clicking Link 'INSPEC'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:05:07 PM">General Search page was opened</substep>
+        <substep valid="True" time="6/20/2019 1:05:08 PM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="6/20/2019 1:05:08 PM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="6/20/2019 1:05:08 PM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:05:10 PM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="6/20/2019 1:05:10 PM">Check clear sreen</substep>
+        <substep valid="True" time="6/20/2019 1:05:10 PM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:05:10 PM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:05:16 PM">Enter search field - search field = Author</substep>
+        <substep valid="True" time="6/20/2019 1:05:19 PM">Clicking Link 'Search Aid'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:05:20 PM">Author Index page was loaded.</substep>
+      </step>
+      <step type="pass" description="Check all Alpha links" expected="All Alpha links work correctly" time="6/20/2019 1:14:32 PM" inputdata="">
+        <substep valid="True" time="6/20/2019 1:05:21 PM">Clicking Link 'Alpha link: A'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:05:26 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:05:36 PM">The first symbol of all values in the table is 'A' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:05:43 PM">Clicking Link 'Alpha link: B'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:05:47 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:05:58 PM">The first symbol of all values in the table is 'B' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:06:05 PM">Clicking Link 'Alpha link: C'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:06:09 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:06:19 PM">The first symbol of all values in the table is 'C' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:06:26 PM">Clicking Link 'Alpha link: D'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:06:30 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:06:41 PM">The first symbol of all values in the table is 'D' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:06:49 PM">Clicking Link 'Alpha link: E'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:06:52 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:07:03 PM">The first symbol of all values in the table is 'E' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:07:10 PM">Clicking Link 'Alpha link: F'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:07:13 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:07:24 PM">The first symbol of all values in the table is 'F' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:07:31 PM">Clicking Link 'Alpha link: G'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:07:35 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:07:45 PM">The first symbol of all values in the table is 'G' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:07:52 PM">Clicking Link 'Alpha link: H'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:07:56 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:08:07 PM">The first symbol of all values in the table is 'H' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:08:14 PM">Clicking Link 'Alpha link: I'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:08:17 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:08:27 PM">The first symbol of all values in the table is 'I' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:08:34 PM">Clicking Link 'Alpha link: J'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:08:38 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:08:50 PM">The first symbol of all values in the table is 'J' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:08:57 PM">Clicking Link 'Alpha link: K'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:09:01 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:09:12 PM">The first symbol of all values in the table is 'K' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:09:19 PM">Clicking Link 'Alpha link: L'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:09:23 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:09:33 PM">The first symbol of all values in the table is 'L' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:09:40 PM">Clicking Link 'Alpha link: M'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:09:44 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:09:55 PM">The first symbol of all values in the table is 'M' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:10:02 PM">Clicking Link 'Alpha link: N'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:10:06 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:10:16 PM">The first symbol of all values in the table is 'N' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:10:23 PM">Clicking Link 'Alpha link: O'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:10:26 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:10:37 PM">The first symbol of all values in the table is 'O' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:10:44 PM">Clicking Link 'Alpha link: P'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:10:48 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:11:00 PM">The first symbol of all values in the table is 'P' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:11:07 PM">Clicking Link 'Alpha link: Q'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:11:09 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:11:20 PM">The first symbol of all values in the table is 'Q' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:11:27 PM">Clicking Link 'Alpha link: R'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:11:31 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:11:41 PM">The first symbol of all values in the table is 'R' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:11:48 PM">Clicking Link 'Alpha link: S'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:11:52 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:12:03 PM">The first symbol of all values in the table is 'S' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:12:10 PM">Clicking Link 'Alpha link: T'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:12:14 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:12:24 PM">The first symbol of all values in the table is 'T' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:12:31 PM">Clicking Link 'Alpha link: U'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:12:34 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:12:45 PM">The first symbol of all values in the table is 'U' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:12:52 PM">Clicking Link 'Alpha link: V'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:12:55 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:13:07 PM">The first symbol of all values in the table is 'V' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:13:14 PM">Clicking Link 'Alpha link: W'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:13:17 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:13:28 PM">The first symbol of all values in the table is 'W' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:13:35 PM">Clicking Link 'Alpha link: X'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:13:38 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:13:49 PM">The first symbol of all values in the table is 'X' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:13:56 PM">Clicking Link 'Alpha link: Y'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:14:00 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:14:10 PM">The first symbol of all values in the table is 'Y' as expected.</substep>
+        <substep valid="True" time="6/20/2019 1:14:18 PM">Clicking Link 'Alpha link: Z'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:14:22 PM">Search Aid page was loaded.</substep>
+        <substep valid="True" time="6/20/2019 1:14:32 PM">The first symbol of all values in the table is 'Z' as expected.</substep>
+      </step>
+      <step type="pass" description="Check 'Move to' functionality" expected="'Move to' is working correctly" time="6/20/2019 1:14:56 PM" inputdata="">
+        <substep valid="True" time="6/20/2019 1:14:39 PM">Textbox: 'XPath("//input[@name='movetoValue']")' was cleared</substep>
+        <substep valid="True" time="6/20/2019 1:14:39 PM">Text: 'ali' was sent to the 'Move To' textbox (XPath("//input[@name='movetoValue']")), textbox content after sending is 'ali'</substep>
+        <substep valid="True" time="6/20/2019 1:14:39 PM">Clicking Button 'Move To'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:14:55 PM">Text 'No Results' is not displayed It wasn't found. Locator: 'XPath("//td[contains(text(), 'No Results')]")'</substep>
+        <substep valid="True" time="6/20/2019 1:14:56 PM">All values in table contain 'ali' as expected.</substep>
+      </step>
+      <step type="fail" description="Add some records to search query and click 'Ok' button" expected="Chosen records are added to the query on Search page" time="6/20/2019 1:15:15 PM" inputdata="" actual="Text in search field number 1 is 'ALI OR ALI'. Expected query was 'ALI'.">
+        <substep valid="True" time="6/20/2019 1:14:59 PM">Click button 'add' for record number '1' in Search Aids table</substep>
+        <substep valid="True" time="6/20/2019 1:14:59 PM">Clicking Image 'ADD'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:15:01 PM">Clicking Button 'OK'. Expected result: True.</substep>
+        <substep valid="True" time="6/20/2019 1:15:10 PM">General Search page was opened</substep>
+        <substep valid="False" time="6/20/2019 1:15:10 PM" screenshot="2c6c307a986a4856b77d452ae54eff56.jpg" screenshot_driver="d8e95b0f8bba4d1fa9e715e73aded9ab.jpg">Text in search field number 1 is 'ALI OR ALI'. Expected query was 'ALI'.</substep>
+        <substep valid="True" time="6/20/2019 1:15:10 PM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="6/20/2019 1:15:15 PM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput xmlns:ns2="local" id="123"><Title>Female Infertility</Title><Teaser>
+  Facts about Female Infertility.
+  
+    The general clinical definition of infertility (also referred to as subfertility) is the inability of a couple to conceive a child after 12 months of regular unprotected intercourse or exposure to sperm (Zegers-Hochschild, F. et al., 2017; Mélodie, V.B. and Christine, W., 2018). The standard definition of infertility implies that a couple is attempting ...</Teaser></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput>

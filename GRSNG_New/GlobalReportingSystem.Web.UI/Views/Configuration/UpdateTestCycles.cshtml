@@ -1,0 +1,231 @@
+﻿@model  GlobalReportingSystem.Core.Models.GRS.ForPartial
+<div class="modal-body">
+    <div>
+        <label class="labelForm">
+            Cycle Name<span style="color: red;"> *</span>
+            <small class="text-success">(display)</small>
+        </label>
+        <div class="input-group">
+            <input type="text" id="modelName-@Model.CycleData.ID" class="form-control labelForm" value="@Model.CycleData.CycleName" />
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <span id="spnErrorCycleName" style="color: red;"></span>
+        <hr />
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            Start Date<span style="color: red;"> *</span>
+            <small class="text-success">(begining of regression)</small>
+        </label>
+        <div class="input-group">
+            <input type="text" id="modelStart-@Model.CycleData.ID" class="dpsun widthbox" value="@Model.CycleData.CycleStart.ToShortDateString()" />
+        </div>
+        <span id="spnErrorStartDate" style="color: red"></span>
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            End Date<span style="color: red;"> *</span>
+            <small class="text-success">(end of regression)</small>
+        </label>
+        <div class="input-group">
+            <input type="text" id="modelEnd-@Model.CycleData.ID" class="dpsun widthbox" value="@Model.CycleData.CycleEnd.ToShortDateString()" />            
+        </div>
+        <span id="spnErrorEndDate" style="color: red"></span>
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            Comments
+        </label>
+        <div class="input-group">
+            <input type="textarea" id="modelComments-@Model.CycleData.ID" class="form-control labelForm" value="@Model.CycleData.CycleComments" />
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            Release Name<span style="color: red;"> *</span>
+        </label>
+        <div class="input-group">
+            <select id="selReleaseId" name="ReleaseId" class="width250">
+                <option value="0">-- Select Release --</option>
+                @{
+                    foreach(var rel in Model.ReleaseFromDb) 
+                    {
+                        if(@rel.Text == Model.CycleData.ReleaseName)
+                        {
+                            <option value="@rel.Value" selected>@rel.Text</option>
+                }
+                        else{
+                            <option value="@rel.Value">@rel.Text</option>
+                }
+                    }
+                }
+            </select>
+            @if(Model.ReleaseFromDb.Count() == 0)
+            {
+                <div style="color: red;">Note: Please ask your project admin to add Release name.</div>
+            }
+            <table>
+                <tr>
+                    <td colspan="4" style="padding: 5px;">Current release details</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">Release Name:</td>
+                    <td style="color: red; font-weight: 500; padding: 5px;">@Model.CycleData.ReleaseName</td>
+                    <td style="width: 20px"></td>
+                </tr>
+            </table>
+        </div>
+        <span id="spnErrorReleaseName" style="color: red"></span>
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            Team Name<span style="color: red;"> *</span>
+        </label>
+        <div class="input-group">
+            <select id="selTeamId" name="TeamId" class="width250">
+                <option value="0">-- Select Team --</option>
+                @{
+                    foreach(var rel in Model.TeamFromDb)
+                    {
+                        if(@rel.Text == Model.CycleData.TeamName)
+                        {
+                            <option value="@rel.Value" selected>@rel.Text</option>
+                }
+                        else{
+                            <option value="@rel.Value">@rel.Text</option>
+                }
+                    }
+                }
+            </select>
+            @if(Model.TeamFromDb.Count() == 0)
+            {
+                <div style="color: red;">Note: Please ask your project admin to add Team name.</div>
+            }
+            <table>
+                <tr>
+                    <td colspan="4" style="padding: 5px;">Current team details</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">Team Name:</td>
+                    <td style="color: red; font-weight: 500; padding: 5px;">@Model.CycleData.TeamName</td>
+                </tr>
+            </table>
+        </div>
+        <span id="spnErrorTeamName" style="color: red"></span>
+    </div>
+    <hr />
+</div>
+<div class="modal-footer">
+    <button class="btn btn-sm" data-dismiss="modal">
+        <i class="ace-icon fa fa-times"></i>
+        Cancel
+    </button>
+
+    <button type="submit" class="btn btn-sm btn-primary" onclick="updateTestCycle(@Model.CycleData.ID)">
+        <i class="ace-icon fa fa-check"></i>
+        Edit
+    </button>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        jQuery(function ($) {
+            $("#spnErrorCycleName").html("");
+            $("#spnErrorStartDate").html("");
+            $("#spnErrorEndDate").html("");
+            $("#spnErrorReleaseName").html("");
+            $("#spnErrorTeamName").html("");
+        });
+    });
+</script>
+<script type="text/javascript">
+
+    function updateTestCycle(id) {
+        var _cycleName = $("#modelName-" + id)[0].value;
+        var _startDate = $("#modelStart-" + id)[0].value;
+        var _endDate = $("#modelEnd-" + id)[0].value;
+        var _comments = $("#modelComments-" + id)[0].value;
+        var _releaseId = $("#selReleaseId").val();
+        var _teamId = $("#selTeamId").val();
+        //Validation required for cycle Name, Start date, end date, release id and team id
+        $("#spnErrorCycleName").html("");
+        $("#spnErrorStartDate").html("");
+        $("#spnErrorEndDate").html("");
+        $("#spnErrorReleaseName").html("");
+        $("#spnErrorTeamName").html("");
+        //conditions
+        var isValid = true;
+        if (_cycleName == "") { isValid = false; $("#spnErrorCycleName").html("Please enter cycle name."); }
+        if (_startDate == "") { isValid = false; $("#spnErrorStartDate").html("Please select start date."); }
+        if (_endDate == "") { isValid = false; $("#spnErrorEndDate").html("please select end date."); }
+        if (_releaseId == "" || _releaseId == "0") { isValid = false; $("#spnErrorReleaseName").html("Please select release name."); }
+        if (_teamId == "" || _teamId == "0") { isValid = false; $("#spnErrorTeamName").html("please select team name."); }
+        if (isValid == true) {
+            $("#spnErrorCycleName").html("");
+            $("#spnErrorStartDate").html("");
+            $("#spnErrorEndDate").html("");
+            $("#spnErrorReleaseName").html("");
+            $("#spnErrorTeamName").html("");
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("EditTestCycle")",
+                data: "{ 'id': " + id + ", 'name':'" + _cycleName + "','start':'" + _startDate + "', 'end':'" + _endDate + "', 'comment':'" + _comments + "', 'releaseid':'" + _releaseId + "', 'teamid':'" + _teamId + "'}",
+                contentType: "application/json; charset=utf-8",
+                success: function () {
+                    location.reload();
+                }
+            });
+        }
+    }
+</script>
+<script>
+    $(function () {
+        $(".dpsun").datepicker({
+            showButtonPanel: true,
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: "mm/dd/yy",
+            showOn: "button",
+            buttonImage: "../Content/calnew.png",
+            buttonImageHeight: "28px",
+            buttonImageWidth: "28px",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+        $(".dpsun").datepicker("option", "minDate", null)
+        $(".dpsun").datepicker("option", "maxDate", null)
+        $('img[title="Select date"]').css({ 'height': '28px', 'width': '28px', 'cursor': 'pointer' });
+    });
+</script>
+<style type="text/css">
+    .ui-datepicker-trigger {
+        z-index: 999999999999!important;
+    }
+
+    .ui-datepicker {
+        z-index: 999999999999!important;
+    }
+
+    .widthbox {
+        width: 221px!important;
+    }
+
+    .width100p {
+        width: 100%;
+    }
+
+    .width250 {
+        width: 250px;
+    }
+</style>

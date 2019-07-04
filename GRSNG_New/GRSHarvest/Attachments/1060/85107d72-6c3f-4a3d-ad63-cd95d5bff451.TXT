@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/ner?text=AstraZeneca%20Virus%20recombinant%20cancer%20omeprazole%20Insulin%20Progesterone%20receptor%20agonist%20olvanil%20Insulin%20ligand%20Leukemia%20Chronic%20obstructive%20pulmonary%20Metabolic%20disorder%20Geraete%20personality%20disorders&fmt=json

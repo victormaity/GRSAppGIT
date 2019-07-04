@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node depth="3" leaf="false" name="Anticancer antibody" treeCode="CEL-CAN-ANB-" id="55684" count="908"><hitSynonyms></hitSynonyms></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyTreeOutput>

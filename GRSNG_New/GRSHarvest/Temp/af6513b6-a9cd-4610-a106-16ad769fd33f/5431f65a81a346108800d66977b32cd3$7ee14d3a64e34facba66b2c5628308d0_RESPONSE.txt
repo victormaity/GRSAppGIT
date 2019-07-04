@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.runQuery" rc="OK">
+    <map>
+      <map name="Data">
+        <val name="Records"><![CDATA[<records>
+<REC><FUID>335534053CABI1</FUID><UID>CABI:20093200175</UID><score>7.1144423</score><static_data><summary type="src"><EWUID uid="CABI:20093200175" year="2009"><WUID seq_no="1" doc_id="335534053" coll_id="CABI" fuid="335534053CABI1"/><edition value="CABI.ABSTRACTS"/></EWUID><pub_info sortdate="2009-01-01" coverdate="2009" pubyear="2009" issue="3" has_abstract="Y" vol="45"><page begin="128" end="133" page_count="6">128-133</page></pub_info><titles count="2"><title type="item">Distribution characteristics of avian influenza viruses in wild birds.</title><title type="source">Scientia Silvae Sinicae</title></titles><names count="4"><name seq_no="1" role="author" display="Y"><display_name>Wang YuLong</display_name><full_name>Wang YuLong</full_name><first_name>YuLong</first_name><last_name>Wang</last_name></name><name seq_no="2" role="author" display="Y"><display_name>Hua YuPing</display_name><full_name>Hua YuPing</full_name><first_name>YuPing</first_name><last_name>Hua</last_name></name><name seq_no="3" role="author" display="N"><display_name>Wang, Y. L.</display_name><full_name>Wang, Y. L.</full_name><first_name>Y. L.</first_name><last_name>Wang</last_name></name><name seq_no="4" role="author" display="N"><display_name>Hua, Y. P.</display_name><full_name>Hua, Y. P.</full_name><first_name>Y. P.</first_name><last_name>Hua</last_name></name></names><doctypes count="1"><doctype>Journal article</doctype></doctypes><publishers><publisher><address_spec addr_no="1"><full_address>Beijing</full_address><country>China</country></address_spec><names count="1"><name seq_no="1" role="publisher"><display_name>Editorial Department of Scientia Silvae Sinicae</display_name></name></names></publisher></publishers></summary><fullrecord_metadata><languages count="2"><language type="primary">Chinese</language><language type="summary">English</language></languages><normalized_languages count="2"><language type="primary">Chinese</language><language type="summary">English</language></normalized_languages><normalized_doctypes count="1"><doctype>Article</doctype></normalized_doctypes><descriptive_ref_count>45 ref.</descriptive_ref_count><implied_refs count="45"><ref doc_id="2170518"></ref><ref doc_id="63929404"></ref><ref doc_id="42039997"></ref><ref doc_id="5897590"></ref><ref doc_id="291834918"></ref><ref doc_id="37317242"></ref><ref doc_id="47697246"></ref><ref doc_id="56794099"></ref><ref doc_id="291834931"></ref><ref doc_id="335560066"></ref><ref doc_id="335560073"></ref><ref doc_id="260472031"></ref><ref doc_id="335560076"></ref><ref doc_id="49854836"></ref><ref doc_id="291834970"></ref><ref doc_id="46210285"></ref><ref doc_id="42040090"></ref><ref doc_id="311984"></ref><ref doc_id="335560087"></ref><ref doc_id="42040142"></ref><ref doc_id="14463906"></ref><ref doc_id="80358195"></ref><ref doc_id="5533052"></ref><ref doc_id="2801313"></ref><ref doc_id="33250488"></ref><ref doc_id="64224979"></ref><ref doc_id="49273246"></ref><ref doc_id="289166379"></ref><ref doc_id="640524"></ref><ref doc_id="14463957"></ref><ref doc_id="57667598"></ref><ref doc_id="291835038"></ref><ref doc_id="495685737"></ref><ref doc_id="16814543"></ref><ref doc_id="14463974"></ref><ref doc_id="5532836"></ref><ref doc_id="291835051"></ref><ref doc_id="2801590"></ref><ref doc_id="291835056"></ref><ref doc_id="291835059"></ref><ref doc_id="42040057"></ref><ref doc_id="3983719"></ref><ref doc_id="47158610"></ref><ref doc_id="313411"></ref><ref doc_id="335560152"></ref></implied_refs><addresses count="1"><address_name><address_spec addr_no="1"><full_address>College of Wildlife Resources, Northeast Forestry University, Harbin 150040, China.</full_address><url_spec><url>http://lyke.chinajournal.net.cn</url></url_spec></address_spec></address_name></addresses><category_info><headings count="1"><heading>Science &amp; Technology</heading></headings><subheadings count="1"><subheading>Life Sciences &amp; Biomedicine</subheading></subheadings><subjects count="6"><subject ascatype="traditional">ZOOLOGY</subject><subject ascatype="traditional">PATHOLOGY</subject><subject ascatype="traditional">INFECTIOUS DISEASES</subject><subject ascatype="extended">Zoology</subject><subject ascatype="extended">Pathology</subject><subject ascatype="extended">Infectious Diseases</subject></subjects></category_info><abstracts count="1"><abstract><abstract_text><p>Avian influenzaviruses (AIV) are widely distributed on wild birds. The wild waterfowls are particularly natural reservoirs of avian influenzavirus. Migration of wild birds could not be overlooked during avian influenzavirus outbreaks. This article discusses the prevalence of every AIV subtype infecting wild birds worldwide, distribution characteristic of AIV in wild birds, influenzaviruses in ducks, disease transmission of AIV in migratory birds, seasonal variation of AIV infection in wild birds and the role of natural environment reservoirs in the transmission of influenzaviruses.</p></abstract_text></abstract></abstracts></fullrecord_metadata><item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="itemType_cabi" coll_id="CABI"><index><ccs><cc><cabi_code>YY700</cabi_code><cabi_description>Pathogens, Parasites and Infectious Diseases (Wild Animals) (NEW March 2000)</cabi_description></cc></ccs><scs><sc><subject_code>7A</subject_code><subject_description>Poultry</subject_description></sc><sc><subject_code>0I</subject_code><subject_description>Veterinary Science</subject_description></sc><sc><subject_code>0V</subject_code><subject_description>Veterinary Science</subject_description></sc><sc><subject_code>CA</subject_code><subject_description>CAB ABSTRACTS 1973-Current</subject_description></sc><sc><subject_code>EC</subject_code></sc><sc><subject_code>TR</subject_code></sc><sc><subject_code>ZA</subject_code><subject_description>Animalscience</subject_description></sc><sc><subject_code>KG</subject_code></sc><sc><subject_code>VE</subject_code><subject_description>VetMed Resource</subject_description></sc><sc><subject_code>ZS</subject_code></sc></scs><des><de>avian influenza</de><de>avian influenza A viruses</de><de>disease prevalence</de><de>disease transmission</de><de>epidemiology</de><de>outbreaks</de><de>poultry</de><de>seasonal variation</de><de>wild birds</de><de>wildlife</de></des><ids><id>avian influenzavirus</id><id>bird flu</id><id>bird grippe</id><id>bird influenza</id><id>domesticated birds</id><id>Influenzavirus</id><id>seasonal changes</id><id>seasonal fluctuations</id></ids><ods><od>birds</od><od>ducks</od><od>Influenza A virus</od></ods><ups><up>Orthomyxoviridae</up><up>negative-sense ssRNA viruses</up><up>ssRNA viruses</up><up>RNA viruses</up><up>viruses</up><up>Anatidae</up><up>Anseriformes</up><up>birds</up><up>vertebrates</up><up>Chordata</up><up>animals</up><up>poultry</up><up>eukaryotes</up><up>Influenzavirus A</up></ups></index><editions><edition>ABSTRACTS</edition></editions><op>OPS\P</op><ex>20090722</ex><co>©2009 CAB International</co></item></static_data><dynamic_data><citation_related><tc_list dedup_total_count="6"><silo_tc coll_id="DRCI" local_count="0"/><silo_tc coll_id="ZOOREC" local_count="0"/><silo_tc coll_id="MEDLINE" local_count="0"/><silo_tc coll_id="CABI" local_count="0"/><silo_tc coll_id="BIOABS" local_count="0"/><silo_tc coll_id="FSTA" local_count="0"/><silo_tc coll_id="RSCI" local_count="0"/><silo_tc coll_id="CSCD" local_count="6"/><silo_tc coll_id="WOS" local_count="0"/><silo_tc coll_id="INSPEC" local_count="0"/><silo_tc coll_id="CCC" local_count="0"/><silo_tc coll_id="SCIELO" local_count="0"/><silo_tc coll_id="KJD" local_count="0"/><silo_tc coll_id="GCI" local_count="0"/><silo_tc coll_id="BCI" local_count="0"/><silo_tc coll_id="BIOSIS" local_count="0"/></tc_list></citation_related><cluster_related><clustered_EWUIDs count="2"><EWUID uid="CABI:20093200175" year="2009"><WUID seq_no="1" doc_id="335534053" coll_id="CABI" fuid="335534053CABI1"/><edition value="CABI.ABSTRACTS"/></EWUID><EWUID uid="CSCD:3753037" year="2009"><WUID seq_no="2" doc_id="335534053" coll_id="CSCD" fuid="335534053CSCD2"/><edition value="CSCD.CSCD"/></EWUID></clustered_EWUIDs><identifiers count="5"><identifier type="ckey" value="0000000039758123"/><identifier type="accession_no" value="20093200175"/><identifier type="issn" value="1001-7488"/><identifier type="uid" self_ind="Y" value="CABI:20093200175"/><identifier type="uid" value="CSCD:3753037"/></identifiers><entitled_EWUIDs count="2"><EWUID year="2009" uid="CABI:20093200175"><WUID coll_id="CABI" fuid="335534053CABI1" seq_no="1" doc_id="335534053" /><edition value="CABI.ABSTRACTS" /></EWUID><EWUID year="2009" uid="CSCD:3753037"><WUID coll_id="CSCD" fuid="335534053CSCD2" seq_no="2" doc_id="335534053" /><edition value="CSCD.CSCD" /></EWUID></entitled_EWUIDs></cluster_related><um_related><ta_list><ta count="0" type="60day"/><ta count="0" type="180day"/><ta count="0" type="365day"/><ta count="0" type="AllTime"/></ta_list></um_related></dynamic_data><dates availability_date="2009-01-01T23:59:59.00000" create_date="2010-08-20T18:40:09.168174" mod_date="2010-08-20T18:40:09.168174" extraction_date="2019-02-07T18:27:58.534Z" version="11"/></REC>
+</records>]]></val>
+        <list name="AnalyzeResults">
+          <map>
+            <val name="Name">AU</val>
+            <val name="TotalCount">100000</val>
+            <val name="NoDataCount">0</val>
+            <list name="Values">
+              <map>
+                <val name="Key">ALBINO L F T</val>
+                <val name="Value">134</val>
+              </map>
+              <map>
+                <val name="Key">ALEXANDER D J</val>
+                <val name="Value">110</val>
+              </map>
+              <map>
+                <val name="Key">ANONYMOUS</val>
+                <val name="Value">617</val>
+              </map>
+              <map>
+                <val name="Key">BUHR R J</val>
+                <val name="Value">105</val>
+              </map>
+              <map>
+                <val name="Key">BUYSE J</val>
+                <val name="Value">144</val>
+              </map>
+              <map>
+                <val name="Key">CAPUA I</val>
+                <val name="Value">147</val>
+              </map>
+              <map>
+                <val name="Key">CHENG ANCHUN</val>
+                <val name="Value">105</val>
+              </map>
+              <map>
+                <val name="Key">COX N A</val>
+                <val name="Value">116</val>
+              </map>
+              <map>
+                <val name="Key">DECUYPERE E</val>
+                <val name="Value">269</val>
+              </map>
+              <map>
+                <val name="Key">DUCATELLE R</val>
+                <val name="Value">139</val>
+              </map>
+              <map>
+                <val name="Key">FURUSE M</val>
+                <val name="Value">145</val>
+              </map>
+              <map>
+                <val name="Key">HAESEBROUCK F</val>
+                <val name="Value">156</val>
+              </map>
+              <map>
+                <val name="Key">HAFEZ H M</val>
+                <val name="Value">115</val>
+              </map>
+              <map>
+                <val name="Key">HARGIS B M</val>
+                <val name="Value">109</val>
+              </map>
+              <map>
+                <val name="Key">HOCKING P M</val>
+                <val name="Value">109</val>
+              </map>
+              <map>
+                <val name="Key">JUNQUEIRA O M</val>
+                <val name="Value">105</val>
+              </map>
+              <map>
+                <val name="Key">KIDD M T</val>
+                <val name="Value">119</val>
+              </map>
+              <map>
+                <val name="Key">KORELESKI J</val>
+                <val name="Value">107</val>
+              </map>
+              <map>
+                <val name="Key">LEESON S</val>
+                <val name="Value">124</val>
+              </map>
+              <map>
+                <val name="Key">LILLEHOJ H S</val>
+                <val name="Value">130</val>
+              </map>
+              <map>
+                <val name="Key">LIU XIUFAN</val>
+                <val name="Value">123</val>
+              </map>
+              <map>
+                <val name="Key">MANDAL A B</val>
+                <val name="Value">113</val>
+              </map>
+              <map>
+                <val name="Key">NESTOR K E</val>
+                <val name="Value">126</val>
+              </map>
+              <map>
+                <val name="Key">PARSONS C M</val>
+                <val name="Value">108</val>
+              </map>
+              <map>
+                <val name="Key">RAVINDRAN V</val>
+                <val name="Value">114</val>
+              </map>
+              <map>
+                <val name="Key">ROSTAGNO H S</val>
+                <val name="Value">132</val>
+              </map>
+              <map>
+                <val name="Key">SIEGEL P B</val>
+                <val name="Value">118</val>
+              </map>
+              <map>
+                <val name="Key">SWAYNE D E</val>
+                <val name="Value">138</val>
+              </map>
+              <map>
+                <val name="Key">WALDROUP P W</val>
+                <val name="Value">125</val>
+              </map>
+              <map>
+                <val name="Key">WEBSTER R G</val>
+                <val name="Value">129</val>
+              </map>
+            </list>
+          </map>
+        </list>
+      </map>
+      <map name="QueryResult">
+        <val name="QueryID">1</val>
+        <val name="RecordsSearched">3297469</val>
+        <val name="RecordsFound">110327</val>
+        <val name="RecordsAvailable">100000</val>
+        <list name="Warnings">
+        </list>
+      </map>
+    </map>
+  </fn>
+</response>

@@ -1,0 +1,110 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>Test_Delete</test_cycle>
+    <url>https://tokenclient.wos-non-prod.oneplatform.build/tokens/QA1/client_ssl.cgi/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_06</user>
+    <ip>192.168.229.74</ip>
+    <start_time>06/11/2019 11:50:47</start_time>
+    <end_time>06/11/2019 11:53:48</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (64-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Quick_Output" start_time="6/11/2019 11:50:47 AM">
+    <TestCase name="DII_ConO_001" start_time="6/11/2019 11:51:07 AM" description="Check display the Confirmation Overlay for sending to Email" criticality="High" state="fail" end_time="6/11/2019 11:52:32 AM">
+      <step type="pass" description="Prerequisite: 1. DII Results Summary page is opened Select some individual checkboxes on Results Summary" expected="" time="6/11/2019 11:51:29 AM" inputdata="">
+        <substep valid="True" time="6/11/2019 11:51:07 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:08 AM">Clicking Link 'DII'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:10 AM">General Search page was opened</substep>
+        <substep valid="True" time="6/11/2019 11:51:10 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="6/11/2019 11:51:10 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="6/11/2019 11:51:10 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:12 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="6/11/2019 11:51:12 AM">Check clear sreen</substep>
+        <substep valid="True" time="6/11/2019 11:51:12 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:13 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:22 AM">Enter search field - search field = Title, search term = oil</substep>
+        <substep valid="True" time="6/11/2019 11:51:22 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:28 AM">Checking/unchecking CheckBox 'checkbox for record #1'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:29 AM">Checking/unchecking CheckBox 'checkbox for record #2'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Click on Email icon at the top or at the bottom of page" expected="" time="6/11/2019 11:51:31 AM" inputdata="">
+        <substep valid="True" time="6/11/2019 11:51:29 AM">Clicking Button ''Export' button'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:30 AM">Clicking Button 'E-mail the selected records'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:31 AM">E-mail output options page was opened</substep>
+      </step>
+      <step type="pass" description="Enter valid email address in &quot;Email To&quot; field and hit on &quot;Send Email&quot; button" expected="Processing Overlay is displayed Please note: Options Overlay no longer is displayed" time="6/11/2019 11:51:07 AM" inputdata="" />
+      <step type="pass" description="Check display of Confirmation Overlay" expected="Confirmation Overlay is displayed after finish of emailing process. Please Note: Processing Overlay no longer is displayed" time="6/11/2019 11:51:07 AM" inputdata="" />
+      <step type="pass" description="Check &quot;Records Emailed&quot; heading is displayed at the top of Overlay in orange color and bold-face" expected="&quot;Records Emailed &quot; heading is displayed at the top of Overlay in orange color and bold-face" time="6/11/2019 11:51:07 AM" inputdata="" />
+      <step type="pass" description="Check display of Confirmation Text" expected="Confirmation Text is displayed bellow Heading and separated by grey horizontal line in the following formats: N records emailed to : email address, where N- count of outputted records NOTE: &quot;N records emailed to :&quot; text is displayed NOT in boldface &quot;1 record emailed to:&quot; is displayed if one record was selected on Step 1." time="6/11/2019 11:51:07 AM" inputdata="" />
+      <step type="fail" description="Check that email address entered on Step2 is displayed in bold face" expected="The email address entered on Step2 is displayed in bold face" time="6/11/2019 11:51:37 AM" inputdata="" actual="2 Can't find Text ''">
+        <substep valid="True" time="6/11/2019 11:51:31 AM">Text: 'newthomsontesting@gmail.com' was sent to the 'Email Records To' textbox (TSHFactory.Selenium.Locators), textbox content after sending is 'newthomsontesting@gmail.com'</substep>
+        <substep valid="True" time="6/11/2019 11:51:31 AM">&lt;!XML Content&gt;&lt;b&gt;Text of Text 'Title' contains all requested texts.&lt;/b&gt; &lt;!XML Content&gt;</substep>
+        <substep valid="True" time="6/11/2019 11:51:31 AM">Clicking Button 'Send E-mail'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:51:32 AM">&lt;!XML Content&gt;&lt;b&gt;Text of Text 'Title' contains all requested texts.&lt;/b&gt; &lt;!XML Content&gt;</substep>
+        <substep valid="False" time="6/11/2019 11:51:37 AM" tech_info=" &lt;br /&gt;Locators: &lt;br /&gt; XPath(&quot;Locator is never used!!!&quot;) &lt;br /&gt; Searching time (seconds): 5.0124507" screenshot="8c82048615b74d3eb30f75628b88f4d0.jpg" screenshot_driver="03f0dc1f9bd7420cac3dbe2c8b1caccc.jpg">2 Can't find Text ''</substep>
+        <substep valid="True" time="6/11/2019 11:51:37 AM" tech_info="&lt;br /&gt; Clickers that were requested to click: 'Jquery, SeleniumClick'.  &lt;br /&gt; Clickers that was send actions methods to element: SeleniumClick. Clicking time (seconds): 5.7839597">Clicking exception: 2 Can't find Text ''</substep>
+      </step>
+      <step type="pass" description="Check that Confirmation Overlay is disappeared after 1,5 seconds" expected="Confirmation Overlay is disappeared after 1,5 seconds" time="6/11/2019 11:52:12 AM" inputdata="">
+        <substep valid="True" time="6/11/2019 11:52:03 AM" tech_info="&lt;br /&gt;Locators: &lt;br /&gt; XPath(&quot;Locator is never used!!!&quot;)">Container 'Email Records Pop up' is not displayed. It wasn't found.</substep>
+        <substep valid="True" time="6/11/2019 11:52:03 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="6/11/2019 11:52:08 AM">Dispose was successfully done</substep>
+        <substep valid="True" time="6/11/2019 11:52:08 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="6/11/2019 11:52:12 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+    <TestCase name="KJD_ConO_002" start_time="6/11/2019 11:52:32 AM" description="Check display the Confirmation Overlay for sending to my.endnote.com" criticality="Medium High" state="fail" end_time="6/11/2019 11:53:48 AM">
+      <step type="pass" description="Prerequisite: 1. KJD Results Summary page is opened 2. User is Signed In. Click on arrow in &quot;Send To&quot; drop-box" expected="" time="6/11/2019 11:53:06 AM" inputdata="">
+        <substep valid="True" time="6/11/2019 11:52:35 AM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:52:36 AM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:52:37 AM">Sign In Window was opened</substep>
+        <substep valid="True" time="6/11/2019 11:52:38 AM">Text box 'Email' is enabled</substep>
+        <substep valid="True" time="6/11/2019 11:52:38 AM">Text: 'quality.tester@testcases.com' was sent to the 'Email' textbox (XPath("//input[@id='email']")), textbox content after sending is 'quality.tester@testcases.com'</substep>
+        <substep valid="True" time="6/11/2019 11:52:39 AM">Text box 'Password' is enabled</substep>
+        <substep valid="True" time="6/11/2019 11:52:39 AM">Textbox: 'XPath("//input[@id='password']")' was cleared</substep>
+        <substep valid="True" time="6/11/2019 11:52:40 AM">Text: '!12345654321a' was sent to the 'Password' textbox (XPath("//input[@id='password']")), textbox content after sending is '!12345654321a'</substep>
+        <substep valid="True" time="6/11/2019 11:52:40 AM">Clicking Button 'SignIn'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:52:49 AM">General Search page was opened</substep>
+        <substep valid="True" time="6/11/2019 11:52:50 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:52:50 AM">Clicking Link 'KCI - KJD'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:52:52 AM">General Search page was opened</substep>
+        <substep valid="True" time="6/11/2019 11:52:52 AM">Click 'Clear All Fields' button</substep>
+        <substep valid="True" time="6/11/2019 11:52:52 AM">Clicking Button 'Clear All Fields'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:52:55 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="6/11/2019 11:52:55 AM">Check clear sreen</substep>
+        <substep valid="True" time="6/11/2019 11:52:55 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:52:56 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:53:05 AM">Enter search field - search field = Title, search term = Bending Reality: Adventures in Global Plastic Surgery</substep>
+        <substep valid="True" time="6/11/2019 11:53:06 AM">Clicking Button 'Search'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Select my.endnote.com item" expected="" time="6/11/2019 11:52:32 AM" inputdata="" />
+      <step type="pass" description="Click on linked text in drop-box menu" expected="Options Overlay is displayed" time="6/11/2019 11:53:15 AM" inputdata="">
+        <substep valid="True" time="6/11/2019 11:53:13 AM">Clicking Button ''Export' button'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:53:14 AM">Clicking Button 'my.endnote.com'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:53:15 AM">Send To MyEndNote.com Window Window was opened</substep>
+      </step>
+      <step type="pass" description="Click on &quot;Send&quot; button" expected="Processing Overlay is displayed Please note: Options Overlay no longer is displayed" time="6/11/2019 11:52:32 AM" inputdata="" />
+      <step type="pass" description="Check display of Confirmation Overlay" expected="Confirmation Overlay is displayed after finish of sending process. Please Note: Processing Overlay no longer is displayed" time="6/11/2019 11:52:32 AM" inputdata="" />
+      <step type="pass" description="Check &quot;Records Sent To my.endnote.com&quot; heading is displayed at the top of Overlay in orange color and bold-face " expected="&quot;Records Sent To my.endnote.com&quot; heading is displayed at the top of Overlay in orange color and bold-face" time="6/11/2019 11:52:32 AM" inputdata="" />
+      <step type="pass" description="Check display of Confirmation Text" expected="Confirmation Text is displayed bellow Heading and separated by grey horizontal line in the following formats:N records sent to my.endnote.com, where N- count of outputted records NOTE: &quot;N records sent to my.endnote.com&quot; text is displayed NOT in boldface&quot;1 record sent to my.endnote.com&quot; is displayed if one record was sending to my.endnote.com." time="6/11/2019 11:52:32 AM" inputdata="" />
+      <step type="fail" description="Check that Confirmation Overlay is disappeared after 1,5 seconds" expected="Confirmation Overlay is disappeared after 1,5 seconds" time="6/11/2019 11:53:48 AM" inputdata="" actual="2 Can't find Text ''">
+        <substep valid="True" time="6/11/2019 11:53:16 AM">Dropdown: 'Full Record' options were  requested to be selected in 'Drop down 'Record content'' dropdown (TSHFactory.Selenium.Locators), selected option in dropdown after selection is 'Full Record' </substep>
+        <substep valid="True" time="6/11/2019 11:53:16 AM">Dropdown: 'Full Record' option was requested to be selected in 'Drop down 'Record content'' dropdown (TSHFactory.Selenium.Locators), selected option in dropdown after selection is 'Full Record' </substep>
+        <substep valid="True" time="6/11/2019 11:53:16 AM">Textbox: 'XPath("//span[contains(text(), 'Export Records to EndNote Online')]/../..//input[@id='markFrom']")' was cleared</substep>
+        <substep valid="True" time="6/11/2019 11:53:16 AM">Textbox: 'XPath("//span[contains(text(), 'Export Records to EndNote Online')]/../..//input[@id='markTo']")' was cleared</substep>
+        <substep valid="True" time="6/11/2019 11:53:16 AM">Text: '1' was sent to the 'Records from' textbox (XPath("//span[contains(text(), 'Export Records to EndNote Online')]/../..//input[@id='markFrom']")), textbox content after sending is '1'</substep>
+        <substep valid="True" time="6/11/2019 11:53:16 AM">Text: '1' was sent to the 'Records to' textbox (XPath("//span[contains(text(), 'Export Records to EndNote Online')]/../..//input[@id='markTo']")), textbox content after sending is '1'</substep>
+        <substep valid="True" time="6/11/2019 11:53:16 AM">&lt;!XML Content&gt;&lt;b&gt;Text of Text 'Title' contains all requested texts.&lt;/b&gt; &lt;!XML Content&gt;</substep>
+        <substep valid="True" time="6/11/2019 11:53:17 AM">Clicking Button 'Send'. Expected result: True.</substep>
+        <substep valid="True" time="6/11/2019 11:53:17 AM">&lt;!XML Content&gt;&lt;b&gt;Text of Text 'Title' contains all requested texts.&lt;/b&gt; &lt;!XML Content&gt;</substep>
+        <substep valid="False" time="6/11/2019 11:53:22 AM" tech_info=" &lt;br /&gt;Locators: &lt;br /&gt; XPath(&quot;Locator is never used!!!&quot;) &lt;br /&gt; Searching time (seconds): 5.0138894" screenshot="45d1a60409434f2a8790e5b787eda994.jpg" screenshot_driver="fb73e08be2964972a3b8b18a9a68fcdc.jpg">2 Can't find Text ''</substep>
+        <substep valid="True" time="6/11/2019 11:53:22 AM" tech_info="&lt;br /&gt; Clickers that were requested to click: 'Jquery, SeleniumClick'.  &lt;br /&gt; Clickers that was send actions methods to element: SeleniumClick. Clicking time (seconds): 5.7475486">Clicking exception: 2 Can't find Text ''</substep>
+        <substep valid="True" time="6/11/2019 11:53:43 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="6/11/2019 11:53:48 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

@@ -1,0 +1,1 @@
+{"companyTreeTaxonomyOutput":{"serviceExecutionTime":173,"TaxonomyTree":{"Node":{"@match":"true","@depth":"1","@leaf":"false","@name":"Redbiotec AG","@treeCode":"1047778","@id":"1047778"}}}}

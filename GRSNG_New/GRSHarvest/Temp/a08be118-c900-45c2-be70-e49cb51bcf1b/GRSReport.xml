@@ -1,0 +1,91 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>Test_R3_Changes</test_cycle>
+    <url>http://www-uw2.staging1.prod-wos.com/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_03</user>
+    <ip>192.168.109.117</ip>
+    <start_time>05/28/2019 03:03:48</start_time>
+    <end_time>05/28/2019 03:05:43</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (32-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Acceptance INSPEC" start_time="5/28/2019 3:03:48 PM">
+    <TestCase name="INSPEC_AC_006" start_time="5/28/2019 3:04:07 PM" description="Inspec Search History" criticality="" state="pass" end_time="5/28/2019 3:05:43 PM">
+      <step type="pass" description="INSPEC Check Search History page display " expected="Search History page is displayed correctly" time="5/28/2019 3:04:30 PM" inputdata="">
+        <substep valid="True" time="5/28/2019 3:04:07 PM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:08 PM">Clicking Link 'INSPEC'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:09 PM">General Search page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:12 PM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:13 PM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:14 PM">Sign In Window was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:14 PM">Text box 'Email' is enabled</substep>
+        <substep valid="True" time="5/28/2019 3:04:15 PM">Text: 'quality.tester@testcases.com' was sent to the 'Email' textbox (XPath("//input[@id='email']")), textbox content after sending is 'quality.tester@testcases.com'</substep>
+        <substep valid="True" time="5/28/2019 3:04:16 PM">Text box 'Password' is enabled</substep>
+        <substep valid="True" time="5/28/2019 3:04:16 PM">Textbox: 'XPath("//input[@id='password']")' was cleared</substep>
+        <substep valid="True" time="5/28/2019 3:04:16 PM">Text: '!12345654321a' was sent to the 'Password' textbox (XPath("//input[@id='password']")), textbox content after sending is '!12345654321a'</substep>
+        <substep valid="True" time="5/28/2019 3:04:16 PM">Clicking Button 'SignIn'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:26 PM">General Search page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:28 PM">Clicking Link 'Search History'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:29 PM">Search History page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:29 PM">Clicking Link 'Back To'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:30 PM">General Search page was opened</substep>
+      </step>
+      <step type="pass" description="Check run of some search " expected="Run of some search is performed correctly" time="5/28/2019 3:04:39 PM" inputdata="">
+        <substep valid="True" time="5/28/2019 3:04:32 PM">Clicking Link 'Advanced Search'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:33 PM">Advanced Search page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:33 PM">Textbox: 'XPath("//textarea[@id='value(input1)']")' was cleared</substep>
+        <substep valid="True" time="5/28/2019 3:04:33 PM">Text: 'TS=Petrogénesis' was sent to the 'Search Form' textbox (XPath("//textarea[@id='value(input1)']")), textbox content after sending is 'TS=Petrogénesis'</substep>
+        <substep valid="True" time="5/28/2019 3:04:33 PM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:35 PM">Advanced Search page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:37 PM">Clicking Link 'Search History'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:39 PM">Search History page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:39 PM">Query from Search history table : 'TS=Petrogénesis'. Expected query : 'TS=Petrogénesis'. Query set number : 1</substep>
+      </step>
+      <step type="pass" description="Check Combine some general and advanced searches by Or and AND" expected="Combine some general and advanced searches by Or and AND is performed correctly" time="5/28/2019 3:05:36 PM" inputdata="">
+        <substep valid="True" time="5/28/2019 3:04:39 PM">Clicking Link 'Web of Science'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:41 PM">General Search page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:41 PM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:42 PM">Clicking Link 'INSPEC'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:43 PM">Advanced Search page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:55 PM">Clicking Link 'Basic Search'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:57 PM">General Search page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:04:57 PM">Click 'Clear All Fields' button</substep>
+        <substep valid="True" time="5/28/2019 3:04:57 PM">Clicking Button 'Clear All Fields'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:04:59 PM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="5/28/2019 3:04:59 PM">Check clear sreen</substep>
+        <substep valid="True" time="5/28/2019 3:04:59 PM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:00 PM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:10 PM">Enter search field - search field = Topic, search term = bird*</substep>
+        <substep valid="True" time="5/28/2019 3:05:10 PM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:17 PM">Clicking Link 'Search History'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:19 PM">Search History page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:05:19 PM">Select combine checkbox for record number '# 1'</substep>
+        <substep valid="True" time="5/28/2019 3:05:19 PM">Clicking Checkbox 'Combine'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:19 PM">Select combine checkbox for record number '# 2'</substep>
+        <substep valid="True" time="5/28/2019 3:05:20 PM">Clicking Checkbox 'Combine'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:20 PM">Selecting Radio Button 'Radiobutton AND'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:21 PM">Clicking Button 'Combine selected sets button'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:27 PM">Search History page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:05:27 PM">Select combine checkbox for record number '# 1'</substep>
+        <substep valid="True" time="5/28/2019 3:05:27 PM">Clicking Checkbox 'Combine'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:28 PM">Select combine checkbox for record number '# 2'</substep>
+        <substep valid="True" time="5/28/2019 3:05:28 PM">Clicking Checkbox 'Combine'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:29 PM">Selecting Radio Button 'Radiobutton OR'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:29 PM">Clicking Button 'Combine selected sets button'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:36 PM">Search History page was opened</substep>
+      </step>
+      <step type="pass" description="Check deleting of some search " expected="Deleting of some search is performed correctly" time="5/28/2019 3:05:43 PM" inputdata="">
+        <substep valid="True" time="5/28/2019 3:05:36 PM">Select delete checkbox for record number '# 4'</substep>
+        <substep valid="True" time="5/28/2019 3:05:36 PM">Clicking Checkbox 'Delete'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:37 PM">Clicking Button 'Delete sets button'. Expected result: True.</substep>
+        <substep valid="True" time="5/28/2019 3:05:38 PM">Search History page was opened</substep>
+        <substep valid="True" time="5/28/2019 3:05:38 PM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="5/28/2019 3:05:43 PM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

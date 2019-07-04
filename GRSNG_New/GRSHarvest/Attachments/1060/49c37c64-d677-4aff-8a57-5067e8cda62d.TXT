@@ -1,0 +1,1 @@
+          select * from (select DRUG_ID from RS_DRUG.FF_DRUG_PH_HIGHEST_LAUNCH_DTL order by dbms_random.value)where rownum =1     

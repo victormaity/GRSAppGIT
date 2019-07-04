@@ -1,0 +1,40 @@
+8
+
+dir
+151790
+http://sourcecontrol.int.thomsonreuters.com:8091/svn/qa_automation/GRS_NextGen/QCClient/Properties
+http://sourcecontrol.int.thomsonreuters.com:8091/svn
+
+
+
+2015-04-20T13:40:13.997327Z
+132465
+c152496
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4576ea35-741e-0410-a346-fc41942853a1
+
+AssemblyInfo.cs
+file
+
+
+
+
+2015-05-14T14:40:10.843000Z
+973af51c7ae791c046d22244e8b86814
+2015-04-20T13:40:13.997327Z
+132465
+c152496
+

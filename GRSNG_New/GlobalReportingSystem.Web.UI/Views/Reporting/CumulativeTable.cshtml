@@ -1,0 +1,220 @@
+﻿@using DocumentFormat.OpenXml.Office.CustomUI
+@using GlobalReportingSystem
+@using GlobalReportingSystem.Core.Models.GRS
+@model List<GlobalReportingSystem.Core.Models.GRS.ReportCommulativeModel>
+@{
+    var browsers = Model.Select(p => p.Browser).GroupBy(p => p.Name).Distinct().ToList();
+
+    if (@Model.Count != 0)
+    {
+    <div class="page-header">
+        <h1>@Model.First().TestCycleName</h1>
+    </div>
+    }
+    <table class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th rowspan="2">Test Suite</th>
+                @foreach (var browser in browsers)
+                {
+                    <th colspan="@(6 + browser.First().AvailableStatuses.Count)" id="@browser.Key">@browser.Key</th>
+                }
+                <th rowspan="2">Bugs</th>
+                <th rowspan="2">Time</th>
+                <th rowspan="2">Analyzed by</th>
+                <th rowspan="2">Comments</th>
+            </tr>
+            <tr>
+                @foreach (var browser in browsers)
+                {
+                    <th title="Passed">P</th>
+                    <th title="Failed">F</th>
+                    <th title="NotCompleted">NC</th>
+                    for (var x = 0; x < browser.First().AvailableStatuses.Count; x++)
+                    {
+                    <th title="@browser.First().AvailableStatuses[x]">@browser.First().AvailableStatusesIds[x]</th>
+                    }
+                    <th title="Not Analyzed">N/A</th>
+                    <th title="Analyzed">A</th>
+                    <th title="Total">T</th>
+                }
+            </tr>
+        </thead>
+
+        <tbody>
+            @{
+                var totalPrep = new List<int>();
+                var statusesCount = 6 + (browsers.Count == 0 ? 0 : browsers.First().First().AvailableStatuses.Count);
+                var customStatusesCount = browsers.Count == 0 ? 0 : browsers.First().First().AvailableStatuses.Count;
+
+                var groupedModel = Model.OrderBy(p => p.TestSiuteName).GroupBy(p => p.TestSiuteName).ToList();
+
+                var totalTime = new TimeSpan();
+                var totalBugs = new List<string>();
+
+                foreach (var group in groupedModel)
+                {
+                    var bugs = new List<string>();
+                    var comments = String.Empty;
+                    var time = new TimeSpan();
+                    
+                <tr>
+                    @if (browsers.Count() > 1 && group.Key.Length > 50)
+                    {
+                        var shortSuiteName = group.Key;
+                        shortSuiteName = String.Concat(group.Key.Substring(0, 47), "...");
+                        <td title="@group.Key">@shortSuiteName</td>
+                    }
+                    else
+                    {
+                        <td>@group.Key</td>
+                    }
+
+
+                    @for (int i = 0; i < browsers.Count(); i++)
+                    {
+                        GlobalReportingSystem.Core.Models.GRS.ReportCommulativeModel item = null;
+                        if (group.Any(p => p.Browser.Name == browsers[i].Key))
+                        {
+                            item = group.First(p => p.Browser.Name == browsers[i].Key);
+                            totalPrep.Add(@item.Browser.Pass);
+                            totalPrep.Add(@item.Browser.Fail);
+                            totalPrep.Add(@item.Browser.NotCompleted);
+                        <td>@item.Browser.Pass</td>
+                        <td>@item.Browser.Fail</td>
+                        <td>@item.Browser.NotCompleted</td>
+                            for (int j = 0; j < item.Browser.AvailableStatuses.Count; j++)
+                            {
+                                var index = item.Browser.CustomStatuses.Select(p => p.Name).ToList().IndexOf(item.Browser.AvailableStatuses[j]);
+                                if (index != -1)
+                                {
+                                    totalPrep.Add(@item.Browser.CustomStatuses[index].Status);
+                        <td>@(item.Browser.CustomStatuses[index].Status)</td>
+                                }
+                                else
+                                {
+                                    totalPrep.Add(0);
+                        <td>0</td>
+                                }
+                            }
+                            totalPrep.Add(@item.Browser.NotAnalyzed);
+                            totalPrep.Add(@item.Browser.Analyzed);
+                        <td>@item.Browser.NotAnalyzed</td>
+                        <td>@item.Browser.Analyzed</td>
+                            totalPrep.Add(item.Browser.Fail + item.Browser.Pass + item.Browser.NotCompleted);
+                        <td>@(item.Browser.Fail + item.Browser.Pass + item.Browser.NotCompleted)</td>
+                        
+                            bugs.AddRange(item.Bugs);
+                            totalBugs.AddRange(item.Bugs);
+                            comments += item.Comments;
+                            if (!String.IsNullOrEmpty(comments))
+                            {
+                                comments += '\n';
+                            }
+
+                            time += item.Time;
+                            totalTime += item.Time;
+                        }
+                        else
+                        {
+                            totalPrep.AddRange(new int[] { 0, 0, 0, 0, 0, 0 });
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                            for (int j = 0; j < customStatusesCount; j++)
+                            {
+                                totalPrep.Add(0);
+                        <td></td>
+                            }
+                            
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        }
+
+                    }
+                    <td>
+                        @{
+                    foreach (var bug in bugs.Distinct())
+                    {
+                            <a style='cursor: pointer' target='_blank' title='@bug' 
+                                   href='@group.First().Bugtracker.TrimEnd('/')/browse/@bug'>@bug&nbsp;</a>
+                    }
+                        }
+
+                        @*@String.Join(", ", bugs.Distinct())*@
+                    </td>
+                    <td>@time.ToString(@"hh\:mm\:ss")</td>
+                    <td>@String.Join(" ;", group.Select(p => p.Tester).Distinct())</td>
+                    <td class="edit" data-type="text" data-pk="@group.First().TestSiuteId" data-title="Enter comment" title="@comments.Trim()">@comments.Trim()</td>
+                </tr>
+                }
+                var total = new List<int>();
+
+                for (int i = 0; i < browsers.Count() * statusesCount; i++)
+                {
+                    int sum = 0;
+                    for (int k = 0; k < groupedModel.Count; k++)
+                    {
+                        sum += totalPrep[i + (browsers.Count() * statusesCount) * k];
+                    }
+                    total.Add(sum);
+                }
+            
+                <tr>
+                    <td>Total</td>
+                    @foreach (var count in total)
+                    {
+                        <td>@count</td>
+                    }
+                    <td>@{
+                        foreach (var bug in totalBugs.Distinct())
+                        {
+                        <a style='cursor: pointer' target='_blank' title='@bug' 
+                                   href='@Model.First().Bugtracker.TrimEnd('/')/browse/@bug'>@bug&nbsp;</a>
+                        }
+                    }</td>
+                    <td>@totalTime.ToString(@"hh\:mm\:ss")</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+}
+<style>
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        padding: 1px;
+    }
+</style>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //debugger;
+        //$.fn.editable.defaults.mode = 'inline';
+        $('.edit').editable({
+            type: 'text',
+            emptytext: 'click to add',
+            emptyclass: 'text-muted',
+            placement: 'left',
+            url: 'AddTestSuiteComment',
+            error: function (response, newValue) {
+                if (response.status === 500) {
+                    return 'Service unavailable. Please try later.';
+                } else {
+                    return response.responseText;
+                }
+            },
+            success: function (response, newValue) {
+                if (newValue.length > 30) {
+                    newValue.replace(newValue.substring(27), '');
+                }
+            }
+        });
+
+    });
+
+    $(function () {
+        $("table").stickyTableHeaders();
+    });
+
+</script>

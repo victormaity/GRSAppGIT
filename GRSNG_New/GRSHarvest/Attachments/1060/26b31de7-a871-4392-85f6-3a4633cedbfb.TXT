@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.SearchTaxonomyInput xmlns:ns2="local"><type>TA</type><searchString>can</searchString><expandHierarchy>0</expandHierarchy><showDuplicates>0</showDuplicates></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.SearchTaxonomyInput>

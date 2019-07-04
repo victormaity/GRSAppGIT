@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "GlobalNotifications";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model GlobalReportingSystem.Core.Models.GRS.AdminToolGlobalNotificationsModel
+<div class="page-header">
+    <h1>Global notifications
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Create messages for all users of GRS here
+        </small>
+    </h1>
+</div>
+
+@using (Html.BeginForm("GlobalNotifications", "AdminTool", FormMethod.Post))
+{
+    <div class="center">
+        @Html.TextAreaFor(p => p.Message, new { @class = "autosize-transition form-control" })<br/>
+        <button type="submit" class="btn btn-sm btn-success">Submit</button>
+    </div>
+}
+

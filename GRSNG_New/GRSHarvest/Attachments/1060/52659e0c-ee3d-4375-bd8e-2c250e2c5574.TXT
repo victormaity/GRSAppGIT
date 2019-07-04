@@ -1,0 +1,1 @@
+          Select Awarded_indication from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION where DRUG_ID='84386'     

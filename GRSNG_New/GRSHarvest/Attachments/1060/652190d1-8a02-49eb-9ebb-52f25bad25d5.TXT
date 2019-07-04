@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Regulatory id="109502"><Title>Outdated : EMEA EPAR EMEA/H/C/169 Revision 20 : EXELON (rivastigmine)</Title><Region>European Union</Region><DocCategory>["Reference Document"]</DocCategory><DocType>["EPAR","Product Approval Document"]</DocType><Status>Outdated</Status></Regulatory>

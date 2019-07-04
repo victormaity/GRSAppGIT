@@ -1,0 +1,1 @@
+https://prodeu-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search/?fmt=xls&query=Sentinel%20Lymph%20Node%20Mapping%20in%20Detecting%20Cancer%20That%20Has%20Spread%20to%20Lymph%20Nodes%20in%20Patients%20With%20Non-Small%20Cell%20Lung%20Cancer&hits=10&offset=0

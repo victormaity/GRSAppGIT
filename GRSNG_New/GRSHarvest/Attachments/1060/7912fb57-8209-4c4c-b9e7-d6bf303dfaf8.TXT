@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><ontologyTreeOutput><TaxonomyTree><Node depth="2" leaf="false" name="Drug screening" treeCode="DRU-SCR-" id="237"><hitSynonyms/></Node><Node depth="2" leaf="false" name="Rational drug design method" treeCode="DRU-RDD-" id="1026"><hitSynonyms/></Node></TaxonomyTree></ontologyTreeOutput>

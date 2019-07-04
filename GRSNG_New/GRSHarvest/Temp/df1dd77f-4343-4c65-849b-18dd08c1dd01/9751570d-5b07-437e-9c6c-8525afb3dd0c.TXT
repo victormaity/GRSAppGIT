@@ -1,0 +1,23 @@
+Tech info:
+Exception cause: org.openqa.selenium.ElementNotInteractableException: Element <a class="subnav-link snowplow-help-suggest-data-correction" href="https://support.clarivate.com/ScientificandAcademicResearch/s/datachanges/"> could not be scrolled into view
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBASDPC05316', ip: '10.10.242.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190618025334, moz:headless: false, moz:processID: 27068, moz:profile: C:\Users\gs00507392\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f56f3e89-d230-40a2-8fe6-762c0b4e133d 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:58);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.TopToolbarPageObject.ClickOnLinkUnderMenu(TopToolbarPageObject.java:354);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.TopToolbar_Steps.iClickOnLinkUnderMenu(TopToolbar_Steps.java:62);
+✽.And I click on link "Suggest Data Correction" under "Help" menu(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.30_R2_Stories.feature:1632)

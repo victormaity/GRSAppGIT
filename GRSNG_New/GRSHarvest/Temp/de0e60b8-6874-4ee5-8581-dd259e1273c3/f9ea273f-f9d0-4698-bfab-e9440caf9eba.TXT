@@ -1,0 +1,18 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:58);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.AdvancedSearchPage.clickOnLinkForTheCreatedSetOnPage(AdvancedSearchPage.java:986);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.AdvancedSearchPage_Steps.I_have_clicked_on_link_for_the_created_set_on_page(AdvancedSearchPage_Steps.java:55);
+?.And I click on link "Edit" for created set on page "Advanced Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/AcceptanceTest.feature:9)

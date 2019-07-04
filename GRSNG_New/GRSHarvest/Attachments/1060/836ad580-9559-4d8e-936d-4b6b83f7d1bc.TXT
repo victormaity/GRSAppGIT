@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Regulatory id="199588"><Title>SGK Directive: Working Procedures and Principles of the Reimbursement Commission, 03-Jul-2014</Title><Region>Turkey</Region><DocCategory>["Reference Document"]</DocCategory><DocType>["Directive"]</DocType><Status>Valid</Status></Regulatory>

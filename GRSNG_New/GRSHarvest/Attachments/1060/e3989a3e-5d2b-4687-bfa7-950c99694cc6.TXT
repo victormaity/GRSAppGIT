@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/idMappings/Company/companyId?ids=18767,1090001,20547,1020761,18077

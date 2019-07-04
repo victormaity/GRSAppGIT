@@ -1,0 +1,79 @@
+8
+
+dir
+151790
+http://sourcecontrol.int.thomsonreuters.com:8091/svn/qa_automation/GRS_NextGen/QCClient
+http://sourcecontrol.int.thomsonreuters.com:8091/svn
+
+
+
+2015-04-20T13:40:13.997327Z
+132465
+c152496
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4576ea35-741e-0410-a346-fc41942853a1
+
+App.config
+file
+
+
+
+
+2015-05-14T14:40:10.972000Z
+3f9b7c50015ca8be5ec84127bb37e2cb
+2015-04-20T13:40:13.997327Z
+132465
+c152496
+
+Client
+dir
+
+Entities
+dir
+
+Properties
+dir
+
+QCClient.csproj
+file
+
+
+
+
+2015-05-14T14:40:10.978000Z
+dea4eec8d49c4a1bf356d1af474a6a65
+2015-04-20T13:40:13.997327Z
+132465
+c152496
+
+Tools
+dir
+
+UnitTests
+dir
+
+packages.config
+file
+
+
+
+
+2015-05-14T14:40:10.969000Z
+6ec8f560a18e99ebe3d4bc33f717644e
+2015-04-20T13:40:13.997327Z
+132465
+c152496
+

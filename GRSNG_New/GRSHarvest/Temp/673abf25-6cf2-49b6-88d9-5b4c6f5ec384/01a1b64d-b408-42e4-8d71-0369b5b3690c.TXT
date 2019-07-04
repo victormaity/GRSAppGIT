@@ -1,0 +1,9 @@
+Tech info:
+Exception cause: org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBAAMPC03705', ip: '10.10.246.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 31296, moz:profile: C:\Users\rk00555359\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 799a1056-664e-45af-b50c-3f1e20f94d12 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.iClickOnLinkOnPage(ResultSummaryPage_Steps.java:1167);
+✽.And I click on link "backtopreviouspage" on page "saved searches"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.30_R2_Stories.feature:3198)

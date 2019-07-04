@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/drugs-v2/drug/export/search/structure/poll/?token=4e5fdafc-a218-4a5e-9d8f-678091cb7327

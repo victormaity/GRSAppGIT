@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput xmlns:ns2="local" id="136"><Title>Infant Respiratory Distress Syndrome</Title><Teaser>
+  Facts about Infant Respiratory Distress Syndrome.
+  
+    Infant respiratory distress syndrome (IRDS), also called respiratory distress syndrome of the newborn or hyaline membrane disease, is a life-threatening lung disorder that most frequently affects low- (&amp;lt;2,500 g) to extremely-low-birthweight (&amp;lt;1000 g) and premature infants (Lin, H.J. et al., 2015; McPherson, C. and Wambach, J.A., ...</Teaser></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput>

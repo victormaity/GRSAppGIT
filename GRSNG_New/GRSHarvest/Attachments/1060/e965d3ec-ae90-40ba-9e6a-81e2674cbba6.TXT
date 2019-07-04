@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/ner?text=Receptor%20tyrosine-protein%20kinase%20erbB-2%20%28isoform%20b%29&fmt=json

@@ -1,0 +1,1 @@
+{"ontologyTreeOutput":{"TaxonomyTree":{"Node":{"@match":"false","@depth":"4","@leaf":"false","@name":"cell wall part","@treeCode":"-230938077|1899|-376809608|-1215897923|","@id":"-1215897923"}}}}

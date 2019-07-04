@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/localization/parent/-230938077%7C1899%7C-376809608%7C-1215897923%7C-482709706%7C?fmt=json

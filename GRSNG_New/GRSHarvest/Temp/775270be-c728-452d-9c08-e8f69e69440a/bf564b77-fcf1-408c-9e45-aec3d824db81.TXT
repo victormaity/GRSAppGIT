@@ -1,0 +1,1 @@
+GET https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/targets-v2/targets?idList=90517410820643,55621 returned a response status of 500 Internal Server Error

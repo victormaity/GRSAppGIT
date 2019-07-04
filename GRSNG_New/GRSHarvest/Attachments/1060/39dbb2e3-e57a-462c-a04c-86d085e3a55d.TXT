@@ -1,0 +1,1 @@
+          Select jp_patent.patent_id from ci_public_staging.jp_patent         WHERE rownum<3      

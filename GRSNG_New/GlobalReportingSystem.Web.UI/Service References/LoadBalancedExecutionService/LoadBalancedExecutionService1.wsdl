@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="GetLoadBalancedElement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoadBalancedElementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLoadBalancedElementResult" type="tns:LoadBalancedElement" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LoadBalancedElement">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Machines" type="tns:ArrayOfMachine" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tests" type="tns:ArrayOfTest" />
+          <s:element minOccurs="0" maxOccurs="1" name="Framework" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProjectId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMachine">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Machine" nillable="true" type="tns:Machine" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Machine">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ip" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Account" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Browser" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Profile" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Include" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Exclude" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Priority" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Configuration" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TargetTestCycle" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoginPage" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Test" nillable="true" type="tns:Test" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Test">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Started" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Finished" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAccountResult" type="tns:AccountForTestRunModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AccountForTestRunModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserLogin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTestCycle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTestCycleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTestCycleResult" type="tns:TestCycleModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TestCycleModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CycleName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CycleStart" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CycleEnd" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CycleComments" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CycleIsCurrent" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="isInnactive" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileResult" type="tns:HostsConfigurationModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HostsConfigurationModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EnvironmentName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HostFileContent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplicationURL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="isBackDoor" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetConfiguration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetConfigurationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetConfigurationResult" type="tns:ExecutionConfigurationModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExecutionConfigurationModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPortion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="elementId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPortionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPortionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FinishPortion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="elementId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="portion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FinishPortionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFramework">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFrameworkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFrameworkResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTestExecutionById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTestExecutionByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTestExecutionByIdResult" type="tns:TestExecutionsModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TestExecutionsModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BelongToProject" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Client" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tests" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Account" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfileHost" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Browser" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemoteExecutionLink" nillable="true" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FrameworkVersion" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Configuration" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccaptanceCriteria" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoriesInclude" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoriesExclude" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FailsToAlert" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Priroty" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExecutionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Scheduling" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TargetTestCycle" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoginPageURL" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTestExecutionsByIp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="projectId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTestExecutionsByIpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTestExecutionsByIpResult" type="tns:ArrayOfTestExecutionsModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTestExecutionsModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TestExecutionsModel" nillable="true" type="tns:TestExecutionsModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PutTestRunsByREL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="text" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PutTestRunsByRELResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PutTestRunsByRelLb">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="text" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PutTestRunsByRelLbResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="StartLoadBalanced">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="execution" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StartLoadBalancedResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="StartREL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="executionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StartRELResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StartRELResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectByIdResult" type="tns:ProjectModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProjectModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DisplayName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsGITDefault" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="SvnPath" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SvnLogin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SvnPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GitPath" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GitLogin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GitPassword" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateRelExecutionStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecutionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsExecutionCompleted" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="currentstatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StatusComment" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateRelExecutionStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateRelExecutionStatusResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLatestRelExecutionStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RelStatusID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="ExecutionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsExecutionCompleted" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="currentstatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StatusComment" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLatestRelExecutionStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateLatestRelExecutionStatusResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLatestRelExecutionStatusEntryLevelRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RelStatusID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="LastRowCount" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="LastRowId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLatestRelExecutionStatusEntryLevelRecordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateLatestRelExecutionStatusResultLevelRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RelStatusID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="NewRowCount" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="NewRowId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="TestSuitIds" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLatestRelExecutionStatusResultLevelRecordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetExecutionStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RelStatusID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExecutionStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExecutionStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceCurrentDateTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServiceCurrentDateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetServiceCurrentDateTimeResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetLoadBalancedElementSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLoadBalancedElement" />
+  </wsdl:message>
+  <wsdl:message name="GetLoadBalancedElementSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLoadBalancedElementResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAccount" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTestCycleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTestCycle" />
+  </wsdl:message>
+  <wsdl:message name="GetTestCycleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTestCycleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetConfigurationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="GetConfigurationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPortionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPortion" />
+  </wsdl:message>
+  <wsdl:message name="GetPortionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPortionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FinishPortionSoapIn">
+    <wsdl:part name="parameters" element="tns:FinishPortion" />
+  </wsdl:message>
+  <wsdl:message name="FinishPortionSoapOut">
+    <wsdl:part name="parameters" element="tns:FinishPortionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFrameworkSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFramework" />
+  </wsdl:message>
+  <wsdl:message name="GetFrameworkSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFrameworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTestExecutionByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTestExecutionById" />
+  </wsdl:message>
+  <wsdl:message name="GetTestExecutionByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTestExecutionByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTestExecutionsByIpSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTestExecutionsByIp" />
+  </wsdl:message>
+  <wsdl:message name="GetTestExecutionsByIpSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTestExecutionsByIpResponse" />
+  </wsdl:message>
+  <wsdl:message name="PutTestRunsByRELSoapIn">
+    <wsdl:part name="parameters" element="tns:PutTestRunsByREL" />
+  </wsdl:message>
+  <wsdl:message name="PutTestRunsByRELSoapOut">
+    <wsdl:part name="parameters" element="tns:PutTestRunsByRELResponse" />
+  </wsdl:message>
+  <wsdl:message name="PutTestRunsByRelLbSoapIn">
+    <wsdl:part name="parameters" element="tns:PutTestRunsByRelLb" />
+  </wsdl:message>
+  <wsdl:message name="PutTestRunsByRelLbSoapOut">
+    <wsdl:part name="parameters" element="tns:PutTestRunsByRelLbResponse" />
+  </wsdl:message>
+  <wsdl:message name="StartLoadBalancedSoapIn">
+    <wsdl:part name="parameters" element="tns:StartLoadBalanced" />
+  </wsdl:message>
+  <wsdl:message name="StartLoadBalancedSoapOut">
+    <wsdl:part name="parameters" element="tns:StartLoadBalancedResponse" />
+  </wsdl:message>
+  <wsdl:message name="StartRELSoapIn">
+    <wsdl:part name="parameters" element="tns:StartREL" />
+  </wsdl:message>
+  <wsdl:message name="StartRELSoapOut">
+    <wsdl:part name="parameters" element="tns:StartRELResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProjectById" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateRelExecutionStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateRelExecutionStatus" />
+  </wsdl:message>
+  <wsdl:message name="CreateRelExecutionStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateRelExecutionStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLatestRelExecutionStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLatestRelExecutionStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLatestRelExecutionStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLatestRelExecutionStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLatestRelExecutionStatusEntryLevelRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLatestRelExecutionStatusEntryLevelRecord" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLatestRelExecutionStatusEntryLevelRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLatestRelExecutionStatusEntryLevelRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLatestRelExecutionStatusResultLevelRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLatestRelExecutionStatusResultLevelRecord" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLatestRelExecutionStatusResultLevelRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLatestRelExecutionStatusResultLevelRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExecutionStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExecutionStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetExecutionStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExecutionStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceCurrentDateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceCurrentDateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceCurrentDateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceCurrentDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LoadBalancedExecutionServiceSoap">
+    <wsdl:operation name="GetLoadBalancedElement">
+      <wsdl:input message="tns:GetLoadBalancedElementSoapIn" />
+      <wsdl:output message="tns:GetLoadBalancedElementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccount">
+      <wsdl:input message="tns:GetAccountSoapIn" />
+      <wsdl:output message="tns:GetAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTestCycle">
+      <wsdl:input message="tns:GetTestCycleSoapIn" />
+      <wsdl:output message="tns:GetTestCycleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <wsdl:input message="tns:GetProfileSoapIn" />
+      <wsdl:output message="tns:GetProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConfiguration">
+      <wsdl:input message="tns:GetConfigurationSoapIn" />
+      <wsdl:output message="tns:GetConfigurationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPortion">
+      <wsdl:input message="tns:GetPortionSoapIn" />
+      <wsdl:output message="tns:GetPortionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FinishPortion">
+      <wsdl:input message="tns:FinishPortionSoapIn" />
+      <wsdl:output message="tns:FinishPortionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFramework">
+      <wsdl:input message="tns:GetFrameworkSoapIn" />
+      <wsdl:output message="tns:GetFrameworkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTestExecutionById">
+      <wsdl:input message="tns:GetTestExecutionByIdSoapIn" />
+      <wsdl:output message="tns:GetTestExecutionByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTestExecutionsByIp">
+      <wsdl:input message="tns:GetTestExecutionsByIpSoapIn" />
+      <wsdl:output message="tns:GetTestExecutionsByIpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PutTestRunsByREL">
+      <wsdl:input message="tns:PutTestRunsByRELSoapIn" />
+      <wsdl:output message="tns:PutTestRunsByRELSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PutTestRunsByRelLb">
+      <wsdl:input message="tns:PutTestRunsByRelLbSoapIn" />
+      <wsdl:output message="tns:PutTestRunsByRelLbSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartLoadBalanced">
+      <wsdl:input message="tns:StartLoadBalancedSoapIn" />
+      <wsdl:output message="tns:StartLoadBalancedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartREL">
+      <wsdl:input message="tns:StartRELSoapIn" />
+      <wsdl:output message="tns:StartRELSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectById">
+      <wsdl:input message="tns:GetProjectByIdSoapIn" />
+      <wsdl:output message="tns:GetProjectByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRelExecutionStatus">
+      <wsdl:input message="tns:CreateRelExecutionStatusSoapIn" />
+      <wsdl:output message="tns:CreateRelExecutionStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLatestRelExecutionStatus">
+      <wsdl:input message="tns:UpdateLatestRelExecutionStatusSoapIn" />
+      <wsdl:output message="tns:UpdateLatestRelExecutionStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLatestRelExecutionStatusEntryLevelRecord">
+      <wsdl:input message="tns:UpdateLatestRelExecutionStatusEntryLevelRecordSoapIn" />
+      <wsdl:output message="tns:UpdateLatestRelExecutionStatusEntryLevelRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLatestRelExecutionStatusResultLevelRecord">
+      <wsdl:input message="tns:UpdateLatestRelExecutionStatusResultLevelRecordSoapIn" />
+      <wsdl:output message="tns:UpdateLatestRelExecutionStatusResultLevelRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExecutionStatus">
+      <wsdl:input message="tns:GetExecutionStatusSoapIn" />
+      <wsdl:output message="tns:GetExecutionStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceCurrentDateTime">
+      <wsdl:input message="tns:GetServiceCurrentDateTimeSoapIn" />
+      <wsdl:output message="tns:GetServiceCurrentDateTimeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoadBalancedExecutionServiceSoap" type="tns:LoadBalancedExecutionServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLoadBalancedElement">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetLoadBalancedElement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccount">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestCycle">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetTestCycle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConfiguration">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPortion">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetPortion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinishPortion">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/FinishPortion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFramework">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetFramework" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestExecutionById">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetTestExecutionById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestExecutionsByIp">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetTestExecutionsByIp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutTestRunsByREL">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/PutTestRunsByREL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutTestRunsByRelLb">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/PutTestRunsByRelLb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartLoadBalanced">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/StartLoadBalanced" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartREL">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/StartREL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectById">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetProjectById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRelExecutionStatus">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/CreateRelExecutionStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLatestRelExecutionStatus">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/UpdateLatestRelExecutionStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLatestRelExecutionStatusEntryLevelRecord">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/UpdateLatestRelExecutionStatusEntryLevelRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLatestRelExecutionStatusResultLevelRecord">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/UpdateLatestRelExecutionStatusResultLevelRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExecutionStatus">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetExecutionStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceCurrentDateTime">
+      <soap:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetServiceCurrentDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoadBalancedExecutionServiceSoap12" type="tns:LoadBalancedExecutionServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLoadBalancedElement">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetLoadBalancedElement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccount">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestCycle">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetTestCycle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConfiguration">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetConfiguration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPortion">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetPortion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinishPortion">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/FinishPortion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFramework">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetFramework" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestExecutionById">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetTestExecutionById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestExecutionsByIp">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetTestExecutionsByIp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutTestRunsByREL">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/PutTestRunsByREL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutTestRunsByRelLb">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/PutTestRunsByRelLb" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartLoadBalanced">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/StartLoadBalanced" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartREL">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/StartREL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectById">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetProjectById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRelExecutionStatus">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/CreateRelExecutionStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLatestRelExecutionStatus">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/UpdateLatestRelExecutionStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLatestRelExecutionStatusEntryLevelRecord">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/UpdateLatestRelExecutionStatusEntryLevelRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLatestRelExecutionStatusResultLevelRecord">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/UpdateLatestRelExecutionStatusResultLevelRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExecutionStatus">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetExecutionStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceCurrentDateTime">
+      <soap12:operation soapAction="http://loadbalanced.webclient.agent.grs.thomsonreuters.com/GetServiceCurrentDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoadBalancedExecutionService">
+    <wsdl:port name="LoadBalancedExecutionServiceSoap" binding="tns:LoadBalancedExecutionServiceSoap">
+      <soap:address location="http://10.236.4.153/nggrs/executor/LoadBalancedExecutionService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoadBalancedExecutionServiceSoap12" binding="tns:LoadBalancedExecutionServiceSoap12">
+      <soap12:address location="http://10.236.4.153/nggrs/executor/LoadBalancedExecutionService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

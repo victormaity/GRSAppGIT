@@ -1,0 +1,1268 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Activities.Expressions
+@model GlobalReportingSystem.Core.Models.Entities.TestCycle
+<script src="@Url.Content("~/Scripts/renderTestSuite.js")"></script>
+<div class="page-header">
+    <h1>Test Cycles
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Please choose test suite to work with
+        </small>
+        <input type="hidden" id="testCycleID" value="@Model.ID"/>
+    </h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-4 widget-container-col" id="main_panel">
+        <div class="widget-box">
+            <div class="widget-header">
+                <h5 class="widget-title" id="notation">Notation</h5>
+                <div class="widget-toolbar">
+                    <div class="widget-menu">
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-light-blue dropdown-caret dropdown-closer">
+                        </ul>
+                    </div>
+
+                    <a data-action="fullscreen" class="orange2">
+                        <i class="ace-icon fa fa-expand"></i>
+                    </a>
+
+                    <a data-action="collapse">
+                        <i class="ace-icon fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="widget-body">
+                <div class="widget-main">
+                    <div class="widget-main" id="testLegend"></div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-box">
+            <div class="widget-header">
+                @{ var name = Model.CycleName.Length > 30 ? Model.CycleName.Substring(0, 30) + "..." : Model.CycleName; }
+                <h5 class="widget-title" title="@Model.CycleName">@name</h5>
+                <div class="widget-toolbar">
+                    <div class="widget-menu">
+                        <a>
+                            <i id="testsuiteloading" class="ace-icon loading-icon fa-spinner fa" style="cursor: none"></i>
+                        </a>
+                        <a data-action="settings" data-toggle="dropdown">
+                            <i class="ace-icon fa fa-bars" style="cursor: pointer"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-light-blue dropdown-caret dropdown-closer">
+                            <li>
+                                <a data-toggle="tab" href="#dropdown2" onclick="deleteSelectedTestSuits(@Model.ID)"><i class="fa fa-trash-o"></i>Delete</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#dropdown2" onclick="showModal()"><i class="fa fa-exchange"></i>Migrate</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#dropdown2" onclick="startAutoAnalyzeMultiple(@Model.ID ,1)" style="cursor: pointer" disabled="disabled" title="Analyze for test cases with the same name"><i class="fa fa-bar-chart-o"></i>Analyze simple</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#dropdown2" onclick="startAutoAnalyzeMultiple(@Model.ID ,2)" style="cursor: pointer" disabled="disabled" title="Analyze from all test cases in the project"><i class="fa fa-bar-chart-o"></i>Analyze extended</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#dropdown2" onclick="mergeTestSuite(@Model.ID)"><i class="fa fa-files-o"></i>Merge</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#dropdown2" onclick="selectAllTree();"><i class="fa fa-check-circle-o"></i>Select All</a>
+                                <div>
+                                    <input type="hidden" value="false" id="selectAll">
+                                </div>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#dropdown2" onclick="deselectAllTree();"><i class="fa fa-circle-o"></i>Deselect All</a>
+                            </li>
+                            <li>
+                                @* <a data-toggle="tab" href="#dropdown2"><i class="fa fa-download"></i>Manual Upload</a>*@
+                                <a data-toggle="tab" href="#dropdown2" onclick="manualUpload()"><i class="fa fa-download"></i>Manual Upload</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a data-toggle="tab" onclick="exportInQcSelectedTestSuits(@Model.ID)" href="#dropdown2"><i class="fa fa-floppy-o"></i>Export to QC</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" onclick="exportToExcelSelectedTestSuits(@Model.ID)" href="#dropdown2"><i class="fa fa-floppy-o"></i>Export test sets to EXCEL</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a data-action="fullscreen" class="orange2">
+                        <i class="ace-icon fa fa-expand" style="cursor: pointer"></i>
+                    </a>
+
+                    <a data-action="collapse">
+                        <i class="ace-icon fa fa-chevron-up" style="cursor: pointer"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="widget-body">
+                <div class="widget-main">
+                    <div class="center">
+                        <span class="input-icon">
+                            <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+                            <i class="ace-icon fa fa-search nav-search-icon"></i>
+                        </span>
+                    </div>
+                    <br />
+                    <div id="jstreeview">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget-box">
+            <div class="widget-header">
+                <h5 class="widget-title" id="issuestitle">Issues</h5>
+                <div class="widget-toolbar">
+                    <div class="widget-menu">
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-light-blue dropdown-caret dropdown-closer">
+                        </ul>
+                    </div>
+
+                    <a data-action="fullscreen" class="orange2">
+                        <i class="ace-icon fa fa-expand"></i>
+                    </a>
+
+                    <a data-action="collapse">
+                        <i class="ace-icon fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="widget-body">
+                <div class="widget-main">
+                    <div id="issues"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-8 widget-container-col">
+        <div class="widget-box">
+            <div class="widget-header">
+                <h5 class="widget-title" id="tc_container">Test Cases
+                </h5>
+                <input id="ts_id" type="hidden" value="">
+                <div class="widget-toolbar">
+                    <div class="widget-menu">
+                        <a data-action="settings" data-toggle="dropdown">
+                            <i class="ace-icon fa fa-bars"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-light-blue dropdown-caret dropdown-closer">
+                            <li>
+                                <a data-toggle="tab" onclick="startAutoAnalyze(1)" disabled="disabled" style="cursor: pointer" title="Analyze for test cases with the same name"><i class="fa fa-bar-chart-o"></i>Analyze simple</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" onclick="startAutoAnalyze(2)" disabled="disabled" style="cursor: pointer" title="Analyze from all test cases in the project"><i class="fa fa-bar-chart-o"></i>Analyze extended</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a data-action="fullscreen" class="orange2">
+                        <i class="ace-icon fa fa-expand"></i>
+                    </a>
+
+                    <a data-action="reload">
+                        <i class="ace-icon fa fa-refresh" onclick="renderLegend($('#ts_id').val());renderTestSuite($('#ts_id').val(), '', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")');"></i>
+                    </a>
+
+                    <a data-action="collapse">
+                        <i class="ace-icon fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="widget-body">
+                <div class="widget-main" id="testSuite"></div>
+            </div>
+            <div aria-hidden="true" class="modal" id="modal-form" style="display: none; /* max-width: 1000px !important; max-height: 1000px !important*/" tabindex="-1">
+                <div class="modal-dialog" style="width: 1200px !important">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h4 class="blue bigger" id="titleAttachment"></h4>
+                        </div>
+                        <div id="modalBody"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-migrate" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="blue bigger">Select test cycle to migrate:</h4>
+                        </div>
+                        <div class="container-fluid">
+                            <form id="migrate-form" class="form-horizontal" method="post">
+                                <br />
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <select class="col-xs-10 col-sm-5" name="targetTestCycle">
+                                            @foreach (var testCycle in Model.Project.TestCycles)
+                                            {
+                                                //display only enabled cycles
+                                                if (!testCycle.CycleName.SequenceEqual(Model.CycleName))
+                                                {
+                                                    if (testCycle.isInnactive.HasValue)
+                                                    {
+                                                        if (!(bool)testCycle.isInnactive)
+                                                        {
+                                                            <option value="@testCycle.ID">@testCycle.CycleName</option>
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <option value="@testCycle.ID">@testCycle.CycleName</option>
+                                                    }
+                                                }
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <input type="submit" value="Submit" class="btn btn-success">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="updateSameSubStepsModal" role="dialog">
+                <div class="modal-dialog">
+                    <form role="form" id="updateSameSubStepsModalForm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Analyze based on selected sub step</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input type="checkbox" name="checkedStep">
+                                    <label for="checkedStep">Apply to all not-analyzed substeps in step</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="allSubsteps">
+                                    <label for="allSubsteps">Apply to all not-analyzed substeps with the same error in current test suite</label>
+                                </div>
+                                <input type="hidden" name="subStepId" id="subStepId">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="defectModal" role="dialog">
+     <div class="modal-dialog">
+                    <form role="form" id="">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Defect Details</h4>
+                            </div>
+                            <div class="modal-body">
+                                Summary: <p id="summary"></p><br />
+                                Status: <p id="status"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <a id="jiraUrl" href="" target="_blank" class="btn btn-success">Go to Jira</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+</div>
+<style>
+    .jstree-default .jstree-clicked {
+        background-color: #6fb3e0;
+        color: white;
+    }
+    </style>
+@*Scripts section*@
+<script src="@Url.Content("~/Scripts/renderReport.js")"></script>
+<script type="text/javascript">
+   
+    
+
+    $('#defectModal').on('show.bs.modal', function (event) {
+        var button = jQuery(event.relatedTarget);
+        var id = button.data('identifier');
+        var modal = $(this);
+        modal.find('#jiraUrl').attr("href", "http://jira.bjz.apac.ime.reuters.com/browse/" + id);
+        modal.find('.modal-title').html("Defect Details : " +id + " <i id='spinner' class='fa fa-spinner fa-spin'></i>");
+    
+        $.ajax({
+            url: "@Url.Action("GetJiraIssue", "TestCycle")",
+            async: true,
+            data: "{'id':'" + id + "'}",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+
+                modal.find('#summary').text(data.Summary);
+                modal.find('#status').text(data.Status);
+                $("#spinner").remove();
+            },
+            fail: function (data) {
+
+            }
+        });
+        });
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (location.href.indexOf("?testSuite=") > -1) {
+            var tsId = location.href.split("?testSuite=")[1];
+            renderLegend(tsId);
+            renderTestSuite(tsId, '', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")');
+        }
+        $("#selectAll").val("false");
+        $("#migrate-form").submit(migrateTestSuite);
+        $("#updateSameSubStepsModalForm").submit(updateSameSubSteps);
+    });
+    function showModal() {
+        $('#modal-migrate').modal();
+    }
+
+    var updateSameSubSteps = function (event) {
+        event.preventDefault();
+        var checkedStep = false;
+        var allSubsteps = false;
+        var subStepId = 0;
+        var serializedData = $("#updateSameSubStepsModalForm").serialize();
+        //debugger;
+        if (serializedData.indexOf("checkedStep") > -1) {
+            checkedStep = true;
+        }
+        if (serializedData.indexOf("allSubsteps") > -1) {
+            allSubsteps = true;
+        }
+        if (serializedData.indexOf("subStepId") > -1) {
+            subStepId = serializedData.substring(serializedData.indexOf("subStepId") + "subStepId=".length);
+        }
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("UpdateSameSubSteps", "TestCycle")",
+            data: '{ "subStepId": ' + subStepId + ', "allSubsteps":' + allSubsteps + ', "checkedStep":' + checkedStep + '}',
+            contentType: "application/json; charset=utf-8",
+            success: function (msg) {
+                if (msg && msg.type == "Error") {
+                    ShowMessage(msg.type, msg.text);
+                }
+            }
+        });
+        $("#updateSameSubStepsModal").modal('hide');
+        return false;
+    };
+
+    @*var migrateTestSuite = function (event) {
+        event.preventDefault();
+        var checkedtmp = $(".suitselect").has("*[chosen='1']").siblings("a");
+        if (checkedtmp.length != 0) {
+            var checkedIds = new Array();
+            for (var i = 0; i < checkedtmp.length; i++) {
+                checkedIds.push($(checkedtmp[i]).attr("id"));
+            }
+            var targetTC = $("select[name='targetTestCycle']").val();
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("MigrateTestSuites", "TestCycle")",
+                data: '{ "testSuitesIds": [' + checkedIds + '], "targetTestCycle":' + targetTC + '}',
+                contentType: "application/json; charset=utf-8",
+                beforeSend: function () {
+                    $('#modal-migrate').modal("hide");
+                },
+                success: function (msg) {
+                    if (msg.type == "Error") {
+                        ShowMessage(msg.type, msg.text);
+                    } else {
+                        location.reload();
+                    }
+                }
+            });
+        } else {
+            ShowMessage("Message", "Please select test sets to migrate!");
+        }
+        return false;
+    }
+    allValuesSame = function (array) {
+        for (var i = 1; i < array.length; i++) {
+            if (array[i] !== array[0])
+                return false;
+        }
+        return true;
+    };*@
+
+    @*function getSelectedTestSuitIds() {
+        var tsInclude = new Array();
+        var tsExclude = new Array();
+        var ipInclude = new Array();
+        var ipExclude = new Array();
+        var fnInclude = new Array();
+        var fnExclude = new Array();
+
+        $("i.testset[chosen=1]").parent().next().each(function () { tsInclude.push(this.id); });
+        $("i.testset[chosen=0]").parent().next().each(function () { tsExclude.push(this.id); });
+
+        $("i.testsetip[chosen=1]").parent().parent().next().each(function () { ipInclude.push(this.id); });
+        $("i.testsetip[chosen=0]").parent().parent().next().each(function () { ipExclude.push(this.id); });
+
+        $("i.testsetfn[chosen=1]").parent().parent().each(function () { fnInclude.push($(this).attr("title").split(" ")[0].trim()); });
+        $("i.testsetfn[chosen=0]").parent().parent().each(function () { fnExclude.push($(this).attr("title").split(" ")[0].trim()); });
+
+        var ids;
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("GetSelectedTestSuitIds", "TestCycle")",
+            async: false,
+            beforeSend: function () {
+                $("#testsuiteloading").addClass("fa-spin");
+            },
+            data: "{ tsInclude: " + JSON.stringify(tsInclude) + " , ipInclude: " + JSON.stringify(ipInclude) + " , fnInclude: " +
+                JSON.stringify(fnInclude) + " , selectAll: " + ($("#selectAll").val() == "true") + " , tsExclude: " +
+                JSON.stringify(tsExclude) + " , ipExclude: " + JSON.stringify(ipExclude) + " , fnExclude: " + JSON.stringify(fnExclude) + " }",
+            traditional: true,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            error: function () { },
+            success: function (msg) {
+                $("#testsuiteloading").removeClass("fa-spin");
+                if (msg.type == "Error") {
+                    ShowMessage(msg.type, msg.text);
+                } else {
+                    ids = msg.text;
+                }
+            }
+        });
+
+        return ids;
+    }*@
+
+    @*function checkIfTesetsBelongsSameSet(ids) {
+        var result = false;
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("CheckIfTesetsBelongsSameSet", "TestCycle")",
+            async: false,
+            beforeSend: function () {
+                $("#testsuiteloading").addClass("fa-spin");
+            },
+            data: "{ testSuits: " + JSON.stringify(ids) + " }",
+            traditional: true,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            error: function (response, error)
+            { },
+            success: function (msg) {
+                $("#testsuiteloading").removeClass("fa-spin");
+                if (msg.type == "Error") {
+                    ShowMessage(msg.type, msg.text);
+                } else {
+                    result = msg.text;
+                }
+            }
+        });
+        return result;
+    }*@
+
+
+    @*var mergeTestSuite = function () {
+        //var checkedtmp = $(".suitselect").has("*[chosen='1']").siblings("a");
+        //if (checkedtmp.length > 1) {
+        //    var checkedIds = new Array();
+        //    var parentTestSet = new Array();
+        //    for (var i = 0; i < checkedtmp.length; i++) {
+        //        checkedIds.push($(checkedtmp[i]).attr("id"));
+        //        parentTestSet.push($(checkedtmp[i]).parents('ul').parent('li').attr("key"));
+        //    }
+        //debugger;
+        var checkedIds = getSelectedTestSuitIds();
+        if (checkedIds.length != 0) {
+            if (checkIfTesetsBelongsSameSet(checkedIds) == true) {
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("MergeTestSuites", "TestCycle")",
+                    data: '{ "testSuitesIdsToMerge": [' + checkedIds + ']}',
+                    contentType: "application/json; charset=utf-8",
+                    beforeSend: function () {
+                        $("#testsuiteloading").addClass("fa-spin");
+                    },
+                    success: function (msg) {
+                        if (msg.type == "Error") {
+                            ShowMessage(msg.type, msg.text);
+                            $("#testsuiteloading").removeClass("fa-spin");
+                        } else {
+                            location.reload();
+                        }
+                    }
+                });
+            } else {
+                $("#testsuiteloading").removeClass("fa-spin");
+                ShowMessage("Message", "You can merge elements only from one test set!");
+            }
+        } else {
+            ShowMessage("Message", "Please select two or more test sets to merge!");
+        }
+        return false;
+    };*@
+
+    @*function grsQcExport() {
+        //get selected test suites
+        //var ids = new Array();
+        //var excludedIds = new Array();
+        //$("i[chosen=1]").parent().next().each(function () { ids.push(this.id); });
+        //$("i[chosen=0]").parent().next().each(function () { excludedIds.push(this.id); });
+        //var dataString = "";
+        //if ($("#selectAll").val() == "true") {
+        //    dataString = '{testSuitesIds:" ' + excludedIds + '"' + ", 'selectAll':'" + ($("#selectAll").val() == "true").toString() + "'}";
+        //} else {
+        //    dataString = '{testSuitesIds:" ' + ids + '"' + ", 'selectAll':'" + ($("#selectAll").val() == "true").toString() + "'}";
+        //}
+
+        var ids = getSelectedTestSuitIds();
+        if (ids.length != 0) {
+            // var checkedtmp = $(".suitselect").has("*[chosen='1']").siblings("a");
+            //if (ids.length != 0 || $("#selectAll").val() === "true") {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("QcExport", "QcExport")",
+                data: '{ "testSuitesIds": ' + JSON.stringify(ids) + '}',
+                //data: dataString,
+                contentType: "application/json; charset=utf-8",
+                beforeSend: function () {
+                    ShowMessage("Message", "Export has been started.");
+                },
+                success: function (msg) {
+                    if (msg.type == "Error") {
+                        ShowMessage(msg.type, msg.text);
+                    }
+                }
+            });
+        }
+        else {
+            ShowMessage("Message", "Please choose at least one test set!");
+        }
+    }
+
+    function grsExportSets() {
+        var ids = getSelectedTestSuitIds();
+        if (ids.length != 0) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("ExportTestSets", "ExportToExcel")",
+                data: '{ "ids": ' + JSON.stringify(ids) + '}',
+                //data: dataString,
+                contentType: "application/json; charset=utf-8",
+                beforeSend: function () {
+                    ShowMessage("Message", "Export has been started.");
+                    $("#testsuiteloading").addClass("fa-spin");
+                },
+                success: function (msg) {
+                    if (msg.type == "Error") {
+                        ShowMessage(msg.type, msg.text);
+                    }
+                    else {
+                        ShowMessage("Message", "Report was generated");
+                        window.location.href = msg.text;
+                    }
+                    $("#testsuiteloading").removeClass("fa-spin");
+                }
+            });
+        }
+        else {
+            ShowMessage("Message", "Please choose at least one test set!");
+        }
+    }*@
+
+    @*function DeleteTestSuite() {
+        //debugger;
+        var ids = getSelectedTestSuitIds();
+        if (ids.length != 0) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("RemoveTestSuits", "TestCycle")",
+                beforeSend: function () {
+                    $("#testsuiteloading").addClass("fa-spin");
+                },
+                /*  data: '{ tsIds: " ' + ids + ' "}',*/
+                data: "{tsIds:" + JSON.stringify(ids) + "}",
+                traditional: true,
+                /*  data: "{ vals: "+ids+" }",*/
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    $("#testsuiteloading").removeClass("fa-spin");
+                    if (msg.type == "Error") {
+                        ShowMessage(msg.type, msg.text);
+                    } else {
+                        window.location.href = location.href.split("?testSuite")[0];
+                    }
+                }
+            });
+        } else {
+            ShowMessage("Message", "No selected TestSets for deleting");
+        }
+    }*@
+
+
+    function renderLegend(tsId) {
+        if (!isNaN(tsId)) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("GetTsLegend", "TestCycle")",
+                async: true,
+                data: "{'id':" + tsId + "}",
+
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () {
+                    //debugger;
+                    $("#notation").append("<img align='middle' src='@Url.Content("~/Content/assets/css/images/loading.gif")'/>");
+                },
+                error: function () { },
+                success: function (msg) {
+                    if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                        ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                    } else {
+                        $("#notation").html("Notation");
+                        $("#testLegend").html(msg);
+                    }
+                }
+            });
+        }
+    }
+
+    function renderIssues(tsId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("GetTsIssues", "TestCycle")",
+            async: true,
+            data: "{'id':" + tsId + "}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                //debugger;
+                $("#issuestitle").append("<img align='middle' src='@Url.Content("~/Content/assets/css/images/loading.gif")'/>");
+            },
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    $("#issuestitle").html("Issues");
+                    $("#issues").html(msg);
+                }
+            }
+        });
+    }
+
+    function RemoveAllDuplicates(tsId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("RemoveAllDuplicates", "TestCycle")",
+            async: true,
+            data: "{'id':" + tsId + "}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                //debugger;
+                $("#issuestitle").append("<img align='middle' src='@Url.Content("~/Content/assets/css/images/loading.gif")'/>");
+            },
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    renderIssues(tsId);
+                }
+            }
+        });
+    }
+
+    function RemoveAllDuplicatesForCycle(tsId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("RemoveAllDuplicatesForTestCycle", "TestCycle")",
+            async: true,
+            data: "",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                //debugger;
+                $("#issuestitle").append("<img align='middle' src='@Url.Content("~/Content/assets/css/images/loading.gif")'/>");
+            },
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    renderIssues(tsId);
+                }
+            }
+        });
+    }
+
+    function RemoveDuplicate(tsId, tsName) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("RemoveDuplicate", "TestCycle")",
+            async: true,
+            data: "{'id':" + tsId + ",'name':'" + tsName + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                //debugger;
+                $("#issuestitle").append("<img align='middle' src='@Url.Content("~/Content/assets/css/images/loading.gif")'/>");
+            },
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    renderIssues(tsId);
+                }
+            }
+        });
+    }
+
+    function renderTestSuite(tsId, filter) {
+        $('.css-treeview').find('li:has(ul)').find(' > label').css('font-weight', 'normal');
+        var elements = $('#' + tsId).parents('li');
+        jQuery.each(elements, function () {
+            $(this).find('> label').css('font-weight', 'bold');
+        });
+
+        var tsName = "";
+        $.post("@Url.Action("GetTestSuiteName", "TestCycle")", { id: tsId })
+            .done(function (data) {
+                tsName = data;
+            });
+
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("GetTestSuite", "TestCycle")",
+            async: true,
+            data: "{'id':" + tsId + ", 'filter':'" + filter + "'}",
+
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                $("#tc_container").append("<img align='middle' src='@Url.Content("~/Content/assets/css/images/loading.gif")'/>");
+            },
+            error: function () { },
+            success: function (msg) {
+                renderIssues(tsId);
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    $("#tc_container").html(tsName);
+                    $("#ts_id").val(tsId);
+                    $("#testSuite").html(msg);
+                    if (location.href.indexOf("?testSuite=") == -1) {
+                        history.pushState(null, null, "?testSuite=" + tsId);
+                    } else {
+                        history.replaceState(null, null, "?testSuite=" + tsId);
+                    }
+                }
+            }
+        });
+    }
+    function removeTestCase(tcId) {
+        if (confirm("Do you want to delete this test case?")) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("RemoveTestCase", "TestCycle")",
+                async: true,
+                data: "{'tcId':" + tcId + "}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                    $("#TC_" + tcId + " > td > a:last > i").addClass("fa-spin");
+                },
+                error: function () { },
+                success: function (msg) {
+                    //if got an error show it
+                    if (msg.type == "Error") {
+                        ShowMessage(msg.type, msg.text);
+                    }
+                    else {
+                        $("#TC_" + tcId + " > td > a:last > i").removeClass("fa-spin");
+                        $("#TC_" + tcId + " > td").css({
+                            "background-color": "#aaa"
+                        });
+                        renderLegend($('#ts_id').val());
+                    }
+                }
+
+            });
+        }
+    }
+    @*function renderTestSteps(tcId) {
+        if ($("tr[key='TC " + tcId + "']").length == 0) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("GetTestSteps", "TestCycle")",
+                async: true,
+                data: "{'id':" + tcId + "}",
+
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () {
+                    $("#TC_" + tcId + " > td > a:first > i").addClass("fa-spin");
+                },
+                error: function () { },
+                success: function (msg) {
+
+                    if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                        ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                    } else {
+                        if ($("tr[key='TC " + tcId + "']").length == 0)
+                        {
+                            $('html, body').animate({
+                            scrollTop: $("#TC_" + tcId).offset().top
+                        }, 1000);
+
+                            $("#TC_" + tcId + " > td > a:first > i").removeClass("fa-spin");
+                            $("#TC_" + tcId).after(msg.trim());
+                        }
+                    }
+                }
+
+            });
+        }
+        else {
+            var tags = $("tr[key='TC " + tcId + "']");
+
+            if (tags[0].getAttribute("style") == null) {
+                var tagsStepsAndSubSteps = $("tr[key*='TC " + tcId + "']");
+                for (var i = 0; i < tagsStepsAndSubSteps.length; i++) {
+                    tagsStepsAndSubSteps[i].setAttribute("style", "display:none");
+                }
+            } else {
+                for (var i = 0; i < tags.length; i++) {
+                    tags[i].removeAttribute("style");
+                }
+                $('html, body').animate({
+                    scrollTop: $("#TC_" + tcId).offset().top
+                }, 1000);
+            }
+        }
+    }*@
+
+    function renderSubSteps(tsId, tcId) {
+        if ($("tr[key='TS " + tsId + " TC " + tcId + "']").length == 0) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("GetSubSteps", "TestCycle")",
+                async: true,
+                data: "{'id':" + tsId + "}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () {
+                    $($("#" + tsId + " > td > div > i")[0]).addClass("fa-spin");
+                },
+                error: function () { },
+                success: function (msg) {
+                    if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                        ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                    } else {
+                        if ($("tr[key='TS " + tsId + " TC " + tcId + "']").length == 0) {
+                            $('html, body').animate({
+                                scrollTop: $("#" + tsId).offset().top
+                            }, 1000);
+
+                            $($("#" + tsId + " > td > div > i")[0]).removeClass("fa-spin");
+                            $("tbody > #" + tsId).after(msg.trim());
+                        }
+                    }
+                }
+            });
+        } else {
+            var tags = $("tr[key='TS " + tsId + " TC " + tcId + "']");
+
+            if (tags[0].getAttribute("style") == null) {
+                for (var i = 0; i < tags.length; i++) {
+                    tags[i].setAttribute("style", "display:none");
+                }
+            } else {
+                for (var i = 0; i < tags.length; i++) {
+                    tags[i].removeAttribute("style");
+                }
+                $('html, body').animate({
+                    scrollTop: $("tbody > #" + tsId).offset().top
+                }, 1000);
+            }
+        }
+    }
+
+    //$(".editablePart").focusout(function () {
+    //    var control = this;
+    //    var id = $(this).attr("id").split("-")[1];
+
+    //    setTimeout(function () {
+    //        var tr = $(control).parent();
+    //        var flag = true;
+    //        $("tr[key='" + tr.attr('key') + "'] > td > input");
+    //        $.each($("tr[key='" + tr.attr('key') + "'] > td > input"), function (key, val) {
+    //            if ($("#" + val.id).is(':focus')) {
+    //                flag = false;
+    //            }
+    //        });
+    //        if ($("#SS_curr_stat-" + id + " > div > select").is(':focus')) {
+    //            flag = false;
+    //        }
+    //        if (flag) {
+    //            //var status = $("#SS_glob_stat-" + id + " > input").val();
+
+    //            var tempStatus = $("#SS_curr_stat-" + id + " > div > select").val();
+    //            var status = "";
+    //            if (!(isNaN(tempStatus) || tempStatus == "Pass" || tempStatus == "Fail"))
+    //                status = $("#SS_curr_stat-" + id + " > div > select").val();
+    //            var currDef = $("#SS_curr_def-" + id + " > input").val();
+
+    //            //debugger;
+    //            editSubStep(id, status, currDef);
+
+    //            $("#SS_curr_stat-" + id + " > div").hide();
+    //            $("#SS_curr_stat-" + id + " > a").text($("#SS_curr_stat-" + id + " > div > select").val());
+    //            $("#SS_curr_stat-" + id + " > a").show();
+
+    //            //$("#SS_glob_stat-" + id).html("<div>" + status + "</div>");
+    //            $("#SS_curr_def-" + id).html("<div>" + currDef + "</div>");
+    //            $("#SS_old_def-" + id).html("<div>" + $("#SS_old_def-" + id + " > input").val() + "</div>");
+    //        }
+    //    }, 10);
+    //});
+
+    function manualUpload() {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("ManualUpload", "TestCycle")",
+            async: true,
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            error: function () { },
+            success: function (msg) {
+                if ($("#main_panel_content").length != 0) {
+                    $("#main_panel_content").replaceWith(msg.trim());
+                } else {
+                    $("#main_panel > div:first").before(msg.trim());
+                }
+            }
+        });
+    }
+
+    @*function startAutoAnalyzeMultiple(type) {
+        var ids = getSelectedTestSuitIds();
+        if (ids.length != 0) {
+
+            //var ids = new Array();
+            //var excludedIds = new Array();
+            //$("i[chosen=1]").parent().next().each(function () { ids.push(this.id); });
+            //$("i[chosen=0]").parent().next().each(function () { excludedIds.push(this.id); });
+            //var dataString = "";
+            //if ($("#selectAll").val() == "true") {
+            //    dataString = '{suiteIds:" ' + excludedIds + '"' + ", 'selectAll':'" + ($("#selectAll").val() == "true").toString() + "', 'type':'" + type + "'}";
+            //} else {
+            //    dataString = '{suiteIds:" ' + ids + '"' + ", 'selectAll':'" + ($("#selectAll").val() == "true").toString() + "', 'type':'" + type + "'}";
+            //}
+
+            //var selectedItems = $($(".suitselect > [chosen=1]").parent().parent().parent()).find("input");
+            //var countOfDone = 0;
+            //for (var i = 0; i < selectedItems.length; i++) {
+            //    (function (i) {
+            //var selectedCheckBox = selectedItems[i].parentNode.getElementsByTagName("label")[0].getElementsByTagName("a")[0].getElementsByTagName("i")[0];
+            //debugger;
+            for (var i in ids) {
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("StartAutoAnalyze", "TestCycle")",
+                    async: true,
+                    //data: "{'suiteId':" + selectedItems[i].getAttribute("id") + ", 'type':" + type + "}",
+                    data: "{'suiteIds':" + JSON.stringify(ids[i]) + ", 'type':'" + type + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "html",
+                    beforeSend: function () {
+                        $("i[chosen=1]").removeClass("fa-check-circle-o");
+                        $("i[chosen=1]").addClass("fa-circle-o-notch fa-spin");
+                        ShowMessage("Message", "Auto analysis is started");
+                    },
+                    error: function () { },
+                    success: function (msg) {
+                        if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                            ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                        }
+                        else {
+                            renderLegend($("#testLegend > table").attr("id"));
+                        }
+                        $("i[chosen=1]").removeClass("fa-circle-o-notch fa-spin");
+                        $("i[chosen=1]").addClass("fa-check-circle-o");
+                        ShowMessage("Message", "Auto analysis is done");
+                    }
+                });
+                //    })(i)
+            }
+        }
+
+    }*@
+
+    function startAutoAnalyze(type) {
+        var id = $("#testSuite").parent().parent()[0].getElementsByClassName("widget-body")[0].getElementsByClassName("widget-main")[0].getElementsByClassName("widget-body")[0].getAttribute("id");
+        var tsName = $("#tc_container").html();
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("StartAutoAnalyze", "TestCycle")",
+            async: true,
+            data: '{suiteIds:" ' + id + '"' + ", 'selectAll':'false', 'type':'" + type + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                $("#testSuite").html("");
+                $("#tc_container").append("<img align='middle' src='@Url.Content("~/Content/assets/css/images/loading.gif")'/>");
+            },
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                }
+                else {
+                    renderLegend(id);
+                }
+                $("#tc_container").html(tsName);
+                renderTestSuite(id, '', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")');
+            }
+        });
+    }
+
+    //function suitselectorClick(obj) {
+    //    if ($(obj).attr("chosen") == "1") {
+    //        $(obj).attr("chosen", "0");
+    //        $(obj).addClass("fa-circle-o");
+    //        $(obj).removeClass("fa-check-circle-o");
+
+    //        var flag1 = true;
+    //        var siblings1 = $(obj).parent().parent().parent().parent().find("label > a > i");
+    //        if (siblings1.length > 0) {
+    //            siblings1.each(function () {
+    //                if ($(this).attr("chosen") == "1")
+    //                    flag1 = false;
+    //            });
+    //        };
+    //        if (flag1) {
+    //            var parent01 = $(obj).parent().parent().parent().parent().parent().find("label > a > i")[0];
+    //            $(parent01).attr("chosen", "0");
+    //            $(parent01).addClass("fa-circle-o");
+    //            $(parent01).removeClass("fa-check-circle-o");
+    //        }
+
+
+    //        var flag2 = true;
+    //        var siblings2 = $(obj).parent().parent().parent().parent().parent().find("label > a > i");
+    //        if (siblings2.length > 0) {
+    //            siblings2.each(function () {
+    //                if ($(this).attr("chosen") == "1")
+    //                    flag2 = false;
+    //            });
+    //        };
+    //        if (flag2) {
+    //            var parent02 = $(obj).parent().parent().parent().parent().parent().parent().parent().find("label > a > i")[0];
+    //            $(parent02).attr("chosen", "0");
+    //            $(parent02).addClass("fa-circle-o");
+    //            $(parent02).removeClass("fa-check-circle-o");
+    //        }
+    //    } else {
+    //        $(obj).attr("chosen", "1");
+    //        $(obj).removeClass("fa-circle-o");
+    //        $(obj).addClass("fa-check-circle-o");
+    //        var parent11 = $(obj).parent().parent().parent().parent().parent().find("label > a > i")[0];
+    //        $(parent11).attr("chosen", "1");
+    //        $(parent11).removeClass("fa-circle-o");
+    //        $(parent11).addClass("fa-check-circle-o");
+    //        var parent12 = $(obj).parent().parent().parent().parent().parent().parent().parent().find("label > a > i")[0];
+    //        $(parent12).attr("chosen", "1");
+    //        $(parent12).removeClass("fa-circle-o");
+    //        $(parent12).addClass("fa-check-circle-o");
+    //    }
+    //}
+
+    //function suitselectorIpClick(obj) {
+    //    if ($(obj).attr("chosen") == "1") {
+    //        $(obj).attr("chosen", "0");
+    //        $(obj).addClass("fa-circle-o");
+    //        $(obj).removeClass("fa-check-circle-o");
+
+    //        var children = $(obj).parent().parent().parent().find("label > a > i");
+    //        if (children.length > 0) {
+    //            children.each(function () {
+    //                $(this).attr("chosen", "0");
+    //                $(this).addClass("fa-circle-o");
+    //                $(this).removeClass("fa-check-circle-o");
+    //            });
+    //        };
+
+    //        var flag = true;
+    //        var siblings = $(obj).parent().parent().parent().find("label > a > i");
+    //        if (siblings.length > 0) {
+    //            siblings.each(function () {
+    //                if ($(this).attr("chosen") == "1")
+    //                    flag = false;
+    //            });
+    //        };
+    //        if (flag) {
+    //            var parent = $(obj).parent().parent().parent().parent().parent().find("label > a > i")[0];
+    //            $(parent).attr("chosen", "0");
+    //            $(parent).addClass("fa-circle-o");
+    //            $(parent).removeClass("fa-check-circle-o");
+    //        }
+    //    } else {
+    //        $(obj).attr("chosen", "1");
+    //        $(obj).removeClass("fa-circle-o");
+    //        $(obj).addClass("fa-check-circle-o");
+    //        var children1 = $(obj).parent().parent().parent().find("label > a > i");
+    //        if (children1.length > 0) {
+    //            children1.each(function () {
+    //                $(this).attr("chosen", "1");
+    //                $(this).removeClass("fa-circle-o");
+    //                $(this).addClass("fa-check-circle-o");
+    //            });
+    //        };
+    //        var parent1 = $(obj).parent().parent().parent().parent().parent().find("label > a > i")[0];
+    //        $(parent1).attr("chosen", "1");
+    //        $(parent1).removeClass("fa-circle-o");
+    //        $(parent1).addClass("fa-check-circle-o");
+    //    }
+    //}
+
+    //function suitselectorFnClick(obj) {
+    //    if ($(obj).attr("chosen") == "1") {
+    //        $(obj).attr("chosen", "0");
+    //        $(obj).addClass("fa-circle-o");
+    //        $(obj).removeClass("fa-check-circle-o");
+
+    //        var children = $(obj).parent().parent().parent().find("label > a > i");
+    //        if (children.length > 0) {
+    //            children.each(function () {
+    //                $(this).attr("chosen", "0");
+    //                $(this).addClass("fa-circle-o");
+    //                $(this).removeClass("fa-check-circle-o");
+    //            });
+    //        };
+    //    } else {
+    //        $(obj).attr("chosen", "1");
+    //        $(obj).removeClass("fa-circle-o");
+    //        $(obj).addClass("fa-check-circle-o");
+    //        var children1 = $(obj).parent().parent().parent().find("label > a > i");
+    //        if (children1.length > 0) {
+    //            children1.each(function () {
+    //                $(this).attr("chosen", "1");
+    //                $(this).removeClass("fa-circle-o");
+    //                $(this).addClass("fa-check-circle-o");
+    //            });
+    //        };
+    //    }
+    //}
+
+    //function selectAll() {
+    //    $("#selectAll").val("true");
+    //    $(".suitselect i").each(function () {
+    //        $(this).attr("chosen", "1");
+    //        $(this).removeClass("fa-circle-o");
+    //        $(this).addClass("fa-check-circle-o");
+    //    });
+    //}
+    //function deselectAll() {
+    //    $("#selectAll").val("false");
+    //    $(".suitselect i").each(function () {
+    //        $(this).attr("chosen", "0");
+    //        $(this).addClass("fa-circle-o");
+    //        $(this).removeClass("fa-check-circle-o");
+    //    });
+    //}
+
+    function deleteOldDefect(defectId, stepId) {
+        //$("#olddef-" + defectId).remove();
+        //$("div[id*='olddef-" + defectId + "']").remove();
+        var toDelete = $("div[id*='olddef-" + defectId + "']");
+        if (toDelete.length > 1) {
+            toDelete = toDelete[0];
+        }
+        toDelete.remove();
+        $("[data-toggle=popover]").popover("hide");
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("DeleteOldDefects", "TestCycle")",
+            async: true,
+            data: "{'stepId':" + stepId + ", 'defectId':'" + defectId.replace('olddef-', '') + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                }
+            }
+        });
+    }
+
+    function edit(id) {
+        //debugger;
+
+        $("#SS_curr_stat-" + id + " > div").show();//hide()
+        $("#SS_curr_stat-" + id + " > a").hide();
+        $("#SS_curr_stat-" + id + " > i").hide();
+
+        //if (!isNaN($("#SS_glob_stat-" + id + " > div").val())) {
+        //    $("#SS_glob_stat-" + id).html("<input id='inp_gstat_" + id + "' value ='" + $("#SS_glob_stat-" + id + " > div").text().trim() + "' type='text' style='font-size: 13px; height: 20px; width: 90%;'/>");
+        //    $("#SS_glob_stat-" + id + " > input").focus();
+        //}
+        setTimeout(function () {
+            if (!isNaN($("#SS_curr_def-" + id + " > div").val())) {
+                $("#SS_curr_def-" + id).html("<input id='inp_cdef_" + id + "' value ='" + $("#SS_curr_def-" + id + " > div").text().trim() + "' type='text' style='font-size: 13px; height: 20px; width: 90%;'/>");
+                $("#SS_curr_def-" + id + " > input").focus();
+            }
+            //if (!isNaN($("#SS_old_def-" + id + " > div").val())) {
+            //    $("#SS_old_def-" + id).html("<input id='inp_odef_" + id + "' value ='" + $("#SS_old_def-" + id + " > div").text().trim() + "' type='text' style='font-size: 13px; height: 20px; width: 90%;'/>");
+            //    $("#SS_old_def-" + id + " > input").focus();
+            //}
+        }, 10);
+    }
+
+    function editSubStep(ssId, state, status, defects) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("EditSubStep", "TestCycle")",
+            async: true,
+            data: "{'id':'" + ssId + "', 'state':'" + state + "', 'analyzedStatus':'" + status + "', 'defects':'" + defects + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                }
+                else {
+                    renderLegend($("#testLegend > table").attr("id"));
+                }
+            }
+        });
+    }
+</script>

@@ -1,0 +1,1 @@
+          select status_id from RS_DRUG.FF_DRUG_DEVELOPMENT_CURRENT  where drug_id= '4469'     

@@ -1,0 +1,28 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#username"}
+Command duration or timeout: 30.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'INBASDPC05093', ip: '10.53.248.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f2be8dc4-1f94-4824-8005-56ae0a238937
+*** Element info: {Using=css selector, value=#username} 
+ sun.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206);
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492);
+org.openqa.selenium.By$ByCssSelector.findElement(By.java:430);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355);
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69);
+com.thomsonreuters.cucumberfactory.typesfactory.Factory.InvocationHandlers.HTMLInvocationHandler.invoke(HTMLInvocationHandler.java:27);
+com.sun.proxy.$Proxy20.clear(Unknown Source);
+com.thomsonreuters.cucumberfactory.typesfactory.Types.TextInput.clear(TextInput.java:72);
+com.thomsonreuters.cucumberfactory.typesfactory.Types.TextInput.enterText(TextInput.java:33);
+com.thomsonreuters.incites.cucumber.pages.SignInPage.LogIn(SignInPage.java:77);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SIgnInPageSteps.I_am_logged_in_to_application(SIgnInPageSteps.java:44);
+✽.Given I am logged in to application(src/test/resources/com.thomsonreuters.incites.cucumber/ExploreJournals/JournalsRemoveIndicators.feature:8)

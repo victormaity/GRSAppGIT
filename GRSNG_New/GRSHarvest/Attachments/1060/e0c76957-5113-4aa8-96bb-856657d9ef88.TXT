@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="140837"><Title>Prasco to market authorized generic version of Leo Pharma's Dovonex Cream in the US</Title><Principal>Leo Pharma Inc</Principal><Partner>Prasco Laboratories</Partner><Type>Drug - Authorized Generic</Type><Status>Active</Status></Deal>

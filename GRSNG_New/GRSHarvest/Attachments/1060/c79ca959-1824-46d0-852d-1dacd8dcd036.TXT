@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/cellline/search/line?operationType=flat&treeCodeFilter=10000%7C13651%7C&fmt=json

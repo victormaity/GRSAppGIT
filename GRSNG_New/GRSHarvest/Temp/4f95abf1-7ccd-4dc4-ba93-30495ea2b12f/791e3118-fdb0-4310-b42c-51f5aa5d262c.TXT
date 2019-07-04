@@ -1,0 +1,5 @@
+Tech info:
+Exception cause: java.nio.file.NoSuchFileException: D:\Ria\Wos_BDD\wos-gui_bdd\savedrecs.txt 
+ com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.ResultsSummaryPage.selectRecordByNumber(ResultsSummaryPage.java:867);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.I_mark_checkbox_es(ResultSummaryPage_Steps.java:312);
+✽.And I mark "all on page" checkbox(es)(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:580)

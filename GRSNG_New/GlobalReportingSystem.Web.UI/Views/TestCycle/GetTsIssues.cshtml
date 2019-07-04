@@ -1,0 +1,59 @@
+﻿@model  GlobalReportingSystem.Core.Models.GRS.TestSuiteIssuesModel
+<div class="small">
+    @if (Model.Duplicates.Count != 0)
+    {
+    
+        <p>Duplicates for current test suite found (@Model.Duplicates.Count):</p>
+        <br />
+    
+        <table class="table table-bordered">
+            <tr>
+                <th>Test</th>
+                <th>Count</th>
+                <th>Action</th>
+            </tr>
+
+            @foreach (var testGroup in Model.Duplicates)
+            {
+                <tr>
+                    <td>@testGroup.Key</td>
+                    <td>@testGroup.Count()</td>
+                    <td><a onclick="RemoveDuplicate(@Model.Id, '@testGroup.Key');"><i class="fa fa-times red"></i>Remove</a></td>
+                </tr>
+            }
+
+        </table>
+        <a onclick="RemoveAllDuplicates(@Model.Id);">Remove test suite duplicates</a> <br />
+        <br />
+
+    }
+    else
+    {
+        <p>Duplicates for current test suite are not found</p>
+    }
+
+    @if (Model.CycleDuplicates.Count != 0)
+    {
+        <p>Duplicates for entire test cycle found (@Model.CycleDuplicates.Count):</p>
+        <table class="table table-bordered">
+            <tr>
+                <th>Suite</th>
+                <th>Count</th>
+            </tr>
+
+            @foreach (var testGroup in Model.CycleDuplicates)
+            {
+                <tr>
+                    <td title="@testGroup.TestSuiteName"><a href="@Url.Action("Index", "TestCycle", new {@id=Request.Cookies["CurrentCycle"].Value, @testSuite=testGroup.TestSuiteId})">@(testGroup.TestSuiteName.Length > 35 ? testGroup.TestSuiteName.Substring(0, 29) + "..." : testGroup.TestSuiteName)</a></td>
+                    <td>@testGroup.CountOfDuplicates</td>
+                </tr>
+            }
+            cycyle 
+        </table>
+        <a onclick="RemoveAllDuplicatesForCycle();">Remove test cycle duplicates</a>
+    }
+    else
+    {
+        <p>Duplicates for entire test cycle are not found</p>
+    }
+</div>

@@ -1,0 +1,1 @@
+HTTP transport error: java.net.UnknownHostException: stable-api.cortellis.int.clarivate.com

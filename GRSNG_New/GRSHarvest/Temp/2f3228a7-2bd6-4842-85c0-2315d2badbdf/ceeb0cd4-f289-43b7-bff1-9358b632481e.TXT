@@ -1,0 +1,8 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: SciELO Collections
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-QGK70MTRG55', ip: '10.152.82.125', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: driver.version: unknown 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.I_access_page_for_record_number(ResultSummaryPage_Steps.java:202);
+✽.And I access page "Full Record" for record number "1"(com.clarivateanalytics.wos.gui.cucumber.deployment/BasicSearch.feature:450)

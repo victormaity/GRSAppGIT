@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node match="true" depth="1" leaf="false" name="Chemical concept" treeCode="CHE-" id="631"></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyTreeOutput>

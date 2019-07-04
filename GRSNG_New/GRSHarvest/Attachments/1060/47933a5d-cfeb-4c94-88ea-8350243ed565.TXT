@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="123082"><Title>Bayer HealthCare to develop Ardea's MEK inhibitor series worldwide for cancer indications</Title><Principal>Ardea Biosciences Inc</Principal><Partner>Bayer HealthCare AG</Partner><Type>Drug - Development/Commercialization License</Type><Status>Active</Status></Deal>

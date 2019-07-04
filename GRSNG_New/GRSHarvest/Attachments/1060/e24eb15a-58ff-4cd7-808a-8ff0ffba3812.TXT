@@ -1,0 +1,1 @@
+Error processing API service: Invalid taxonomy type [target]. Available options: Action, Company, TA/Indication, TECH/Technology.

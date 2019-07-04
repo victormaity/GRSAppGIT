@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=%22A+cohort%C2%A0study+to+assess+the+hypothesis+that+glucagon-like+peptide+1+%28GLP-1%29+therapy+would+positively+impact+on+inflammation+and+macrophage+polarization%C2%A0in+obese+type+2+diabetes+mellitus+%28T2DM%29+patients%22&hits=20&offset=0&filtersEnabled=1&queryLanguage=ssql

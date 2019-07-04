@@ -1,0 +1,33 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //*[@id='helpMenuButton']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'WIN-F98Q4HHC1AC', ip: '10.152.82.179', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:7251/, ignoreZoomSetting=true, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=true}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 7b8cd43e-2029-4e8d-b2c0-af722ddc124a
+*** Element info: {Using=xpath, value=//*[@id='helpMenuButton']} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348);
+org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69);
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38);
+com.sun.proxy.$Proxy30.isDisplayed(Unknown Source);
+com.clarivateAnalytics.cortellis.pages.HomePageRedesign.HeaderAndFooter.HeaderAndFooter.verifyMenuLinkIsDisplayed(HeaderAndFooter.java:99);
+com.clarivateAnalytics.cortellis.pages.HomePageRedesign.HeaderAndFooter.HeaderAndFooter$$FastClassBySpringCGLIB$$8c830e4a.invoke(<generated>);
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204);
+org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:649);
+com.clarivateAnalytics.cortellis.pages.HomePageRedesign.HeaderAndFooter.HeaderAndFooter$$EnhancerBySpringCGLIB$$1d8f5609.verifyMenuLinkIsDisplayed(<generated>);
+com.clarivateAnalytics.cortellis.StepDefinitions.HomePageRedesign.HeaderAndFooter.HeaderAndFooterCommonStepDefs.iVerifyLinkIsDisplayedOnNewHomePage(HeaderAndFooterCommonStepDefs.java:59);
+?.And I verify "Help Menu" link is displayed on new Home Page(CortellisRegressionSuite/HeaderFooter/HeaderFooter.feature:7)

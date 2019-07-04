@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Indication id="3652" name="Cervix injury"><Synonyms><Synonym>Injury to the cervix</Synonym><Synonym>Cervical injury</Synonym><Synonym>Uterine cervix injury</Synonym></Synonyms></Indication>

@@ -1,0 +1,1 @@
+{"actionTreeTaxonomyOutput":{"serviceExecutionTime":8,"TaxonomyTree":{"Node":{"@depth":"4","@leaf":"false","@name":"LCE2D gene modulator","@treeCode":"GTG-STR-LCE-02D-","@id":"30954"}}}}

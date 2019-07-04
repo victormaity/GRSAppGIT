@@ -1,0 +1,23 @@
+﻿@model GlobalReportingSystem.Core.Models.Entities.TestsExecution
+<label class="control-label bolder blue">Execution was created successfully!</label>
+<br />
+
+<button class="btn btn-sm btn-success" onclick="startExecution(@Model.ID);">
+    Start
+	<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+</button>
+<br />
+<br />
+
+REL:<div id="rel"></div>
+
+<div id="results">
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var textREL = window.location.href.split('?')[0].replace("PublicAccess/TestsRun", "Execution/RunRel") +
+            "?type=linear&REL=@(Model.RemoteExecutionLink.ToString())@(Model.Client1 == null ? "" : "&vm=" + Model.Client1.RemoteMachineIP)@(Model.HostsConfiguration == null ? "" :"&env=" + Model.HostsConfiguration.EnvironmentName)@(Model.AccountForTestRun == null ? "" : "&account=" + Model.AccountForTestRun.AccountName)";
+        $("#rel")[0].innerHTML = "<a target='_blank' href='" + textREL + "'>" + textREL + "</a>";
+    });
+</script>

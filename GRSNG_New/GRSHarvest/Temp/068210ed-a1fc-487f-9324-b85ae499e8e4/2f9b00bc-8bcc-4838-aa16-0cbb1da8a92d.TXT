@@ -1,0 +1,1 @@
+http://mwa.eu-west-1.prodeu.prod.cortellis.int.clarivate.com:8335/mr/RestSearchService/v4/search?dataset=nextgendealall%28breadth%3D%22extended%22%29&searchQuery=indicationsAncestorsPrimaryOnly%3A%3A438&queryLanguage=ssql&returnFields=indicationsWithPrimary&returnLimit=20

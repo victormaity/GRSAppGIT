@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.CitedReferenceSearchStep1Page 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.iSelectTheFieldFromTheDropdownOnPage(BasicSearchPage_Steps.java:1237);
+✽.When I select the field "Cited Work" from the dropdown on page "Cited Reference Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/CCIssues.feature:1432)

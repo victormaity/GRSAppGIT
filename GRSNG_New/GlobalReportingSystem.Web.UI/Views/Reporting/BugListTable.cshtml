@@ -1,0 +1,63 @@
+﻿@model List<GlobalReportingSystem.Core.Models.GRS.BugListModel>
+@{
+    ViewBag.Title = "BugList";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <div id="bugList">
+            <table class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th title="Bug ID">Bug ID</th>
+                        <th title="Bug URL">Bug URL</th>
+                        <th title="Tests Failed by Bug">Tests Failed by Bug</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @{
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.BugID</td>
+                                <td><a href="@item.BugUrl">@item.BugUrl</a></td>
+                                <td><a data-load-remote="@Url.Action("BugListTestCasesDetailsTable", "Reporting", new { bugId = item.BugID, cycleId = @item.TCycleId})" data-remote-target="#myModal .modal-content" data-toggle="modal" data-target="#myModal">@item.BugCount</a></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    $('#myModal').on('show.bs.modal', function () {
+        //debugger;
+        $("#myModal .modal-body").html('Loading content&nbsp;<i class="fa fa-spinner blue fa-spin"></i>');
+        $("#myModal .modal-title").html('Test Cases failed by bug&nbsp;<i class="fa fa-spinner blue fa-spin"></i>');
+    });
+
+    $('[data-load-remote]').on('click', function (e) {
+        e.preventDefault();
+        //debugger;
+        var $this = $(this);
+        var remote = $this.data('load-remote');
+        if (remote) {
+            $($this.data('remote-target')).load(remote);
+        }
+    });
+</script>

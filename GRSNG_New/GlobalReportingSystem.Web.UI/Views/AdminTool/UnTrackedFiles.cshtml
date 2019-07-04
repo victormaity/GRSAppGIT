@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "Untracked files";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header">
+    <h1>Admin Tool
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Untracked files
+        </small>
+    </h1>
+</div>
+
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Manage untracked files</h5>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                @{
+                    if(ViewBag.CanShow == true)
+                    {
+                        <table id="testcyclestable" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="text-align: left!important; vertical-align: bottom!important;">
+                                    <p style="text-decoration: underline!important;">UPLOADED TEMP FILES</p>
+                                    <p style="text-align: justify!important;">Files continuously getting stored on server from user testing framework side. When tester execute their testcase, at the end of execution, results need to send to the GRS from testing framework side. Testing framework placed testing result in the form of JSON/XML files, Screenshot and text file into a single folder and zipped it and upload to the GRS server using web service. GRS service unzipped this direcotry and read that result file and placed to the right location to the database and copy screenshot and text file and placed to the right location for future purpose and delete that zipped and unzipped files/directory. Sometimes, because of exception, server fail to delete this directory/Files. This directory/Files take space to the server and this needs to clean.</p>
+                                </td>
+                                <td style="text-align: right!important; vertical-align: bottom!important;">
+                                    <p style="text-align: justify!important; color: maroon;">This will permanently delete all the temp direcotry and files older than one month from today's date</p>
+                                    <div id='btnDeleteUploadedTempFiles' class='btn btn-info btn-sm' title="Delete uploaded temp files">Delete uploaded temp files</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left!important; vertical-align: bottom!important;">
+                                    <p style="text-decoration: underline!important;">CUMULATIVE REPORT TEMP FILES</p>
+                                    <p style="text-align: justify!important;">When user request for Cumulative report, this action fetch data from database based on user's request and plased into excel file and stored to the server and allow user to download to their machine. After this downloading, This files need to clean form server because data is already in server and system know the format of report file. This file unnecessarly occupy server disk space and need to clean.</p>
+                                </td>
+                                <td style="text-align: right!important; vertical-align: bottom!important;">
+                                    <p style="text-align: justify!important; color: maroon;">This will permanently delete all the temp direcotry and files older than one month from today's date</p>
+                                    <div id='btnDeleteWebUITempFiles' class='btn btn-info btn-sm' title="Delete uploaded temp files">Delete cumulative report temp files</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left!important; vertical-align: bottom!important;">
+                                    <p style="text-decoration: underline!important;">CHATS</p>
+                                    <p style="text-align: justify!important;">When testing framework upload result to the server, server calculate number of pass, fail and not run. And generate chart to send to the user in email. Few days, after this action, There is no requirement to keep this file on server and need to clean.</p>
+                                </td>
+                                <td style="text-align: right!important; vertical-align: bottom!important;">
+                                    <p style="text-align: justify!important; color: maroon;">This will permanently delete all the temp direcotry and files older than one month from today's date</p>
+                                    <div id='btnDeleteChartFiles' class='btn btn-info btn-sm' title="Delete uploaded temp files">Delete chart files</div>
+                                </td>
+                            </tr>
+                        </table>
+                }
+                    else
+                    {
+                        <div style="height: auto; padding: 15px!important; background-color: #E6E6E6; font-size: 14px; color: #DC143C; font-weight: 600; text-align: center">
+                            You are not authorized to visit this page.
+                        </div>
+                }
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $("#btnDeleteUploadedTempFiles").click(function () {
+        if (confirm("Please confirm! \n\nDo you really want to delete files/directory.\n\nOnce files/directories will delete, can not revert back. \nUPLOADED")) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("DeleteUploadedTempFiles", "AdminTool")',
+                async: true,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                beforeSend: function () {
+                    document.getElementById("blockBack").style.display = '';
+                    document.getElementById("divmiddle").style.display = '';
+                },
+                complete: function () {
+                    document.getElementById("blockBack").style.display = 'none';
+                    document.getElementById("divmiddle").style.display = 'none';
+                },
+                error: function () {
+                },
+                success: function (response) {
+                    ShowMessage(response.type, response.text);
+                }
+            });
+        }
+    });
+
+    $("#btnDeleteWebUITempFiles").click(function () {
+        if (confirm("Please confirm! \n\nDo you really want to delete files/directory.\n\nOnce files/directories will delete, can not revert back.\nCUMULATIVE")) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("DeleteWebUITempFiles", "AdminTool")',
+                async: true,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                beforeSend: function () {
+                    document.getElementById("blockBack").style.display = '';
+                    document.getElementById("divmiddle").style.display = '';
+                },
+                complete: function () {
+                    document.getElementById("blockBack").style.display = 'none';
+                    document.getElementById("divmiddle").style.display = 'none';
+                },
+                error: function () {
+                },
+                success: function (response) {
+                    ShowMessage(response.type, response.text);
+                }
+            });
+        }
+    });
+
+    $("#btnDeleteChartFiles").click(function () {
+        if (confirm("Please confirm! \n\nDo you really want to delete files/directory.\n\nOnce files/directories will delete, can not revert back.\nCHART")) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("DeleteChartFiles", "AdminTool")',
+                async: true,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                beforeSend: function () {
+                    document.getElementById("blockBack").style.display = '';
+                    document.getElementById("divmiddle").style.display = '';
+                },
+                complete: function () {
+                    document.getElementById("blockBack").style.display = 'none';
+                    document.getElementById("divmiddle").style.display = 'none';
+                },
+                error: function () {
+                },
+                success: function (response) {
+                    ShowMessage(response.type, response.text);
+                }
+            });
+        }
+    });
+
+</script>

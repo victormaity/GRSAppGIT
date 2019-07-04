@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.SynonymsIdInput xmlns:ns2="local"><idList><id>129349148250283</id><id>1637046786648053</id></idList><taxonomyType>target</taxonomyType></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.SynonymsIdInput>

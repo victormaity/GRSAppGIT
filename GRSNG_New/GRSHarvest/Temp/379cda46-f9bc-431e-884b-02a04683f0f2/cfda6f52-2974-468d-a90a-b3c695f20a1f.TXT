@@ -1,0 +1,1 @@
+          select * from(select idracnumber as regulatoryNumber         from idracng.document where productcategory='Drugs and Biologics ; Medical Devices and IVDs' ORDER BY dbms_random.value         )WHERE rownum < 2     

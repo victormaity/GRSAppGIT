@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=Hoital+Cl%C3%ADnic+i&hits=10&offset=0&filtersEnabled=1&queryLanguage=uiql

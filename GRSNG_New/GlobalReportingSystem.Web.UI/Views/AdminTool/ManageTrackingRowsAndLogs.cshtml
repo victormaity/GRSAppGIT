@@ -1,0 +1,299 @@
+﻿@{
+    ViewBag.Title = "Manage RelExecutions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header">
+    <h1>Admin Tool
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Manage Rel Execution Tracking Row
+        </small>
+    </h1>
+</div>
+
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Manage Rel Execution Tracking Row</h5>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                @{
+                    if(ViewBag.CanShow == true)
+                    {
+
+                <table style="width: 100%; border-collapse: separate; border-spacing: 8px;">
+                    <tr>
+                        <td style="width: 150px!important;">Virtual Machine IP<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                        <td style="width: 250px!important;">
+                            <input type="text" id="txtvmip" style="width: 210px!important;" />
+                        </td>
+                        <td>
+                            <span id="spnvmipErrorMessage" style="color: #db0b0b;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 150px!important;"></td>
+                        <td colspan="2">
+                            <div>
+                                <span>
+                                    <label class="middle">
+                                        <input type="button" value="Get Tracking Rows" id="btnGetTrackingRows" title="Get tracking rows data" class="btn btn-info btn-sm" style="font-weight: bold;">
+                                    </label>
+                                </span>
+                                <span style="margin-left: 10px!important;">
+                                    <label class="middle">
+                                        <input type="button" value="Reset" id="btnReset" title="Reset input field" class="btn btn-info btn-sm" style="font-weight: bold;">
+                                    </label>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div>
+                    <table class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                        <tr>
+                            <td>Machine IP&nbsp;&nbsp;:&nbsp;&nbsp;<span id="spndispPname"></span>
+                            </td>
+                            <td align="right" style="text-align: right">
+                                <span style="margin-left: 10px!important;">
+                                    <label class="middle">
+                                        <input type="button" id="txtDeleteIndividualTestSuitConf" value="Delete selected RelExecution" title="Delete selected RelExecution tracking item." class="btn btn-info btn-sm" style="font-weight: bold;" />
+                                    </label>
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table id="tblTrackingData" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="cbAll" title="Select All" /></th>
+                                <th>Project Name</th>
+                                <th>Cycle Name</th>
+                                <th>Tests</th>
+                                <th>Execution Started At</th>
+                                <th>Latest Status Checked At</th>
+                                <th>Current Status</th>
+                                <th>Last Row Count</th>
+                                <th>Last Row Id</th>
+                                <th>New Row Count</th>
+                                <th>New Row Id</th>
+                                <th>TestSuitIds</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                }
+                    else
+                    {
+                        <div style="height: auto; padding: 15px!important; background-color: #E6E6E6; font-size: 14px; color: #DC143C; font-weight: 600; text-align: center">
+                            You are not authorized to visit this page.
+                        </div>
+                }
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("#txtvmip").val("");
+        $("#spnvmipErrorMessage").html("");
+        DeleteEachRowInTbody();
+        $("#cbAll").prop('checked', false);
+
+        $('#btnGetTrackingRows').click(function () {
+            $("#spnvmipErrorMessage").html("");
+            var vmipdata = $("#txtvmip").val();
+
+            if (vmipdata != null && vmipdata != "") {                
+                var pattern = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+                if (pattern.test(vmipdata)) {
+                
+                    //Post IP address
+                    var datatosend = JSON.stringify({ "MachineIP": vmipdata });
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("GetTrackingRowsData", "AdminTool")',
+                        async: true,
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: 'json',
+                        data: datatosend,
+                        beforeSend: function () {
+                            document.getElementById("blockBack").style.display = '';
+                            document.getElementById("divmiddle").style.display = '';
+                        },
+                        complete: function () {
+                            document.getElementById("blockBack").style.display = 'none';
+                            document.getElementById("divmiddle").style.display = 'none';
+                        },
+                        error: function () {
+                        },
+                        success: function (response) {
+                            if (response.atogetdata == true) {
+                                if (response.recordCount > 0) {
+                                    DeleteEachRowInTbody();
+                                    AddTrackRelExecutionDataRow(response.relExecution);
+                                }
+                                else {
+                                    DeleteEachRowInTbody();
+                                    AddRowWithDefaultMessage(response.text)
+                                }
+                            }
+                            else {
+                                ShowMessage(response.type, response.text);
+                            }
+                        }
+                    });
+                }
+                else {
+                    $("#spnvmipErrorMessage").html("Invalid IP Address!");
+                }
+            }
+            else {
+                $("#spnvmipErrorMessage").html("Please enter virtual machine IP address");
+            }
+        });
+
+        $('#btnReset').click(function () {
+            $("#txtvmip").val("");
+            $("#spnvmipErrorMessage").html("");
+        });
+
+        $("#cbAll").change(function () {
+            if (this.checked) {
+                $("#tblTrackingData > tbody > tr").find('input[type="checkbox"]').each(function () {
+                    $(this).prop('checked', true);
+                });
+            } else {
+                $("#tblTrackingData > tbody > tr").find('input[type="checkbox"]').each(function () {
+                    $(this).prop('checked', false);
+                });
+            }
+        });
+
+        $("#txtDeleteIndividualTestSuitConf").click(function () {
+            //check is any row selected
+            isAnyRowSelected = false;
+            $('#tblTrackingData > tbody  > tr').find('input[type="checkbox"]').each(function () {
+                if ($(this).is(":checked") === true) {
+                    isAnyRowSelected = true;
+                }
+            });
+
+            if (isAnyRowSelected) {
+                if (confirm("\nPlease confirm! \n\nDo you really want to delete selected Rel Execution Tracking Data Row(s).\n\nOnce record will delete, can not revert back.")) {
+                    var relExTrIds = [];
+                    $('#tblTrackingData tbody tr').each(function () {
+                        var trowid = this.id;
+                        if ($("#" + trowid).find('input[type="checkbox"]').is(":checked")) {
+                            relExTrId = trowid.replace('trow_', '');
+                            relExTrIds.push(relExTrId);
+                        }
+                    });
+                    var datatosenddelRow = JSON.stringify({ "RelExeTrackRowIds": relExTrIds });
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("DeleteTrackingRowsAndLogs", "AdminTool")',
+                        async: true,
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: 'json',
+                        data: datatosenddelRow,
+                        beforeSend: function () {
+                            document.getElementById("blockBack").style.display = '';
+                            document.getElementById("divmiddle").style.display = '';
+                        },
+                        complete: function () {
+                            document.getElementById("blockBack").style.display = 'none';
+                            document.getElementById("divmiddle").style.display = 'none';
+                        },
+                        error: function () {
+                        },
+                        success: function (response) {
+                            if (response.atogetdata) {
+                                if (response.deleted == true) {
+                                    $.each(relExTrIds, function (index, value) {
+                                        $("#trow_" + value).remove();
+                                    });
+                                    ShowMessage(response.type, response.text);
+                                }
+                                else {
+                                    ShowMessage(response.type, response.text);
+                                }
+                            }
+                            else {
+                                ShowMessage(response.type, response.text);
+                            }
+                            
+                        }
+                    });
+                }
+                else { }
+            }
+            else {
+                alert("You have not selected any tracking row.");
+            }
+        });
+    });
+
+    function DeleteEachRowInTbody() {
+        //Clear each row from table
+        $('#tblTrackingData > tbody  > tr').each(function () {
+            $(this).remove();
+        });
+    }
+
+    function AddTrackRelExecutionDataRow(resultToBind) {
+        var crow = "";
+        $.each(resultToBind, function () {
+            var markup = "";
+            markup = "<tr id='trow_" + this.RelExeID + "'>";
+            markup = markup + "<td><input type='checkbox' name='tsuitbrowcb' class='trcbrow' id='tbcbrow_" + this.RelExeID + "' onclick='tsuitrbrowcb()' /></td>";
+            markup = markup + "<td style='word-break: break-all!important;'>" + this.ProjectName + "</td>";
+            markup = markup + "<td style='word-break: break-all!important;'>" + this.CycleName + "</td>";
+            markup = markup + "<td style='word-break: break-all!important;'>" + this.Tests + "</td>";
+            markup = markup + "<td>" + this.ExecutionStarted + "</td>";
+            markup = markup + "<td>" + this.LatestStatusCheckedAt + "</td>";
+            markup = markup + "<td>" + this.CurrentStatus + "</td>";
+            markup = markup + "<td>" + this.LastRowCount + "</td>";
+            markup = markup + "<td>" + this.LastRowId + "</td>";
+            markup = markup + "<td>" + this.NewRowCount + "</td>";
+            markup = markup + "<td>" + this.NewRowId + "</td>";
+            markup = markup + "<td style='word-break: break-all!important; width:200px'>" + this.TestSuitIds + "</td>";
+            markup = markup + "</tr>";
+            crow = crow + markup;
+        });
+        $("#tblTrackingData tbody").append(crow);
+    }
+
+    function AddRowWithDefaultMessage(messageDisplay) {
+        var markup = "<tr><td colspan='12'>" + messageDisplay + "</td></tr>";
+        $("#tblTrackingData tbody").append(markup);
+    }
+
+    function tsuitrbrowcb() {
+        eachrowcheckedabc = true;
+        $('#tblTrackingData > tbody  > tr').find('input[type="checkbox"]').each(function () {
+            if ($(this).is(":checked") === false) {
+                eachrowcheckedabc = false;
+            }
+        });
+        if (eachrowcheckedabc) {
+            $("#cbAll").prop('checked', true);
+        }
+        else {
+            $("#cbAll").prop('checked', false);
+        }
+    }
+
+</script>
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/118507/qa_automation/GRS_NextGen/TestConsoleApplication
+END
+TestConsoleApplication.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/118507/qa_automation/GRS_NextGen/TestConsoleApplication/TestConsoleApplication.csproj
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/118354/qa_automation/GRS_NextGen/TestConsoleApplication/packages.config
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/118347/qa_automation/GRS_NextGen/TestConsoleApplication/Program.cs
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/118354/qa_automation/GRS_NextGen/TestConsoleApplication/App.config
+END

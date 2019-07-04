@@ -1,0 +1,25 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//td[contains(text(),'ETAB GABARD EURL')]/parent::tr//button[contains(text(),'Add')])[1]|//*[contains(text(),'ETAB GABARD EURL')]/parent::td[1]/preceding-sibling::td//button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'INBASDPC09883', ip: '10.10.243.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\ss00501688\AppData\Local\Temp\rust_mozprofile.tEQuBWIuhb0S, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0.4, platformVersion=10.0, moz:processID=24728, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 4b0f9322-c621-4b86-84c1-a957bd8f2dc6
+*** Element info: {Using=xpath, value=(//td[contains(text(),'ETAB GABARD EURL')]/parent::tr//button[contains(text(),'Add')])[1]|//*[contains(text(),'ETAB GABARD EURL')]/parent::td[1]/preceding-sibling::td//button} 
+ sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408);
+com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.SearchAidPage.button_addTermsFromSearchAid(SearchAidPage.java:123);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.SearchAidSteps.iAddTheTermsToTheFieldOnPageWithFlagValue(SearchAidSteps.java:97);
+✽.And I add the terms to the field "Assignee Name List" on page "Search Aid" with flag value "Y"(com/clarivateanalytics/wos/gui/cucumber/Deployment/WoS_5.26_Stories.feature:262)

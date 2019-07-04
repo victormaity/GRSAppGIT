@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><ontologyTreeOutput><TaxonomyTree><Node depth="2" leaf="true" name="Biological therapeutic" treeCode="THE-BIO-" id="761"><hitSynonyms/></Node><Node depth="2" leaf="true" name="Small molecule therapeutic" treeCode="THE-SML-" id="762"><hitSynonyms/></Node></TaxonomyTree></ontologyTreeOutput>

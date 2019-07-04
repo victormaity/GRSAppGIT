@@ -1,0 +1,29 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Accession Number
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-J27D56MDAI8', ip: '10.152.82.77', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: driver.version: unknown 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657);
+org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:517);
+com.clarivateanalytics.wos.gui.cucumber.pages.base.BasePage.<init>(BasePage.java:34);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.<init>(BasicSearchPage.java:38);
+sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+java.lang.Class.newInstance(Class.java:442);
+com.clarivateanalytics.wos.gui.cucumber.helpers.CommonMethods.setPageByClass(CommonMethods.java:882);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.CollectionDropdownPageObject.selectCollection(CollectionDropdownPageObject.java:79);
+com.clarivateanalytics.wos.gui.cucumber.pages.interfaces.SelectCollectionDropdownInterface.selectCollection(SelectCollectionDropdownInterface.java:19);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.CommonSteps.I_select_collection(CommonSteps.java:58);
+✽.Given I select collection "Russian Science Citation Index"(com.clarivateanalytics.wos.gui.cucumber.deployment/MarkedList.feature:389)

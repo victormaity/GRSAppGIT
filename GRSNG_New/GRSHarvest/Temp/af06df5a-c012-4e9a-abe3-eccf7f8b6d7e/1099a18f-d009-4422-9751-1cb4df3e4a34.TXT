@@ -1,0 +1,26 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'WIN-T8JHR40ALO2', ip: '10.152.82.49', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=D:\Users\WoSWin7_09\AppData\Local\Temp\1\rust_mozprofile.0Vq2PFbFZlaz, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=6.1, moz:processID=29880, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: a94ce91b-cd15-4dfa-8897-78e414f06934
+*** Element info: {Using=xpath, value=//div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408);
+com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage.button_open(SavedSearchesAndAlertsPage.java:275);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.SavedSearchesAndAlertsPage_Steps.iClickOnButtonForAnExistingSearch(SavedSearchesAndAlertsPage_Steps.java:100);
+✽.And I click on button "Open" for an existing search for record number "0"(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:1072)

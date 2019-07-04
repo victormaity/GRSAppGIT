@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ExecutionTestSuiteModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsJava>true</IsJava>
+  <ExecutionTestSuites>
+    <ExecutionTestSuite>
+      <Name>Feature_CreateLseUser</Name>
+      <Categories />
+      <Tests>
+        <string>CreateUserSimple</string>
+        <string>CreateUserSimpleNegative_1</string>
+        <string>CreateUserSimpleNegative_2</string>
+        <string>RetrieveFieldsValidation</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_DeleteUser</Name>
+      <Categories />
+      <Tests>
+        <string>DeleteUser</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_GetUserIDBasedOnUserName</Name>
+      <Categories />
+      <Tests>
+        <string>GetUserIDBasedOnUserName</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_GetUserNameBasedOnUserId</Name>
+      <Categories />
+      <Tests>
+        <string>GetUserNameBasedOnUserId</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_SteamSmokeTestsSpring</Name>
+      <Categories />
+      <Tests>
+        <string>SteamSmokeTestsSpring</string>
+      </Tests>
+    </ExecutionTestSuite>
+  </ExecutionTestSuites>
+</ExecutionTestSuiteModel>

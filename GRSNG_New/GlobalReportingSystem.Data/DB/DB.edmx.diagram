@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1384a82903a74fd2ab76b482ffbb9d7a" Name="Diagram1">
+        <EntityTypeShape EntityType="GRSDataBaseModel.Access" Width="1.5" PointX="8.25" PointY="45.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.AccountForTestRun" Width="1.5" PointX="5.25" PointY="35.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Analyser" Width="1.5" PointX="20" PointY="61.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Analysis" Width="1.5" PointX="7.5" PointY="60.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.AnalysisHistory" Width="1.5" PointX="12.75" PointY="50.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.AutoAnalysisCache" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.BaseProject" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Bugracker" Width="1.5" PointX="0.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Client" Width="1.5" PointX="7.5" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.ClientsInformation" Width="1.5" PointX="15.5" PointY="60.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Defect" Width="1.5" PointX="5.25" PointY="46.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.DistributedTest" Width="1.5" PointX="9.75" PointY="54.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.DistributionShedule" Width="1.5" PointX="7.5" PointY="49.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.ExecutionConfiguration" Width="1.5" PointX="5.25" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Feature" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.FeatureTag" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.FilesStorage" Width="1.5" PointX="10.25" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.GrpExecutionInfo" Width="1.5" PointX="7.5" PointY="53.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Guest" Width="1.5" PointX="6" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.HostsConfiguration" Width="1.5" PointX="5.25" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Issue" Width="1.5" PointX="5.25" PointY="60.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.LoadBalanced" Width="1.5" PointX="5.25" PointY="63.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.LoadBalancedMachine" Width="1.5" PointX="9.75" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.LoadBalancedTest" Width="1.5" PointX="17.75" PointY="43.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.LoginPageMonitor" Width="1.5" PointX="5.25" PointY="66" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.NewLoadBalanced" Width="1.5" PointX="15.5" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.ExecutionGroup" Width="1.5" PointX="5.25" PointY="68.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Project" Width="1.5" PointX="3" PointY="41.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.ProjectType" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.QCExportAssignment" Width="1.5" PointX="5.25" PointY="71.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.ReleaseInfo" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.RelExecutionStatu" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.RelExecutionStatusLog" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.RelFrom" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.RelLog" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.Scenario" Width="1.5" PointX="12.75" PointY="43.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.SikuliObject" Width="1.5" PointX="10.25" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.SubStep" Width="1.5" PointX="27.5" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.TeamInfo" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.TestCase" Width="1.5" PointX="23" PointY="60" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.TestCycle" Width="1.5" PointX="5.25" PointY="79.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.TestsExecution" Width="1.5" PointX="12.5" PointY="55.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.TestStep" Width="1.5" PointX="25.25" PointY="60.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.TestSuit" Width="1.5" PointX="17.75" PointY="58.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.User" Width="1.5" PointX="5.25" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.UserSession" Width="1.5" PointX="5.25" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.vw_ActualTestSuites" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.vw_AnalyzedSubSteps" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.vw_Defects" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GRSDataBaseModel.vw_FilesStorage" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Access__Attached__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Access__Attached__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Access__Attached__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__AccountFo__Belon__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Clients__Default__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__LoadBalan__Accou__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Scenarios__Accou__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestsExec__Accou__24285DB4" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_Analysers_TestSuits" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_Analysers_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Analysis__Belong__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Analysis__Parent__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Analysis__Parent__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__AnalysisH__Paren__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__AnalysisH__Chang__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__AnalysisH__NewDe__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__AnalysisH__Previ__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Defects__BelongT__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Projects__Assign__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Clients__AddedBy__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Clients__BelongT__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__LoadBalan__Machi__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Scenarios__Belon__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestsExec__Clien__2334397B" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestSuits__Paren__0D7A0286" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_ClientsInformation_ClientsInformation" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Defects__AddedBy__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Defects__BelongT__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Distribut__Belon__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Distribut__Belon__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Distribut__Envir__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Execution__Belon__3DE82FB7" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__LoadBalan__Execu__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Scenarios__Confi__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestsExec__Confi__3EDC53F0" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__FilesStor__Added__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__FilesStor__Belon__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__NewLoadBa__Frame__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestsExec__Frame__3552E9B6" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_GrpExecutionInfo_ExecutionGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_GrpExecutionInfo_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__HostsConf__Belon__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__LoadBalan__Envir__51851410" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Scenarios__Profi__4589517F" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestsExec__Profi__251C81ED" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__Issues__BelongTo__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__LoadBalan__Belon__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__LoadBalan__NewLo__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__LoadBalan__Targe__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__LoadBalan__NewLo__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_LoginPageMonitor_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_TestsExec_LoginPageMonitor" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__NewLoadBa__Belon__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_NewLoadBalanced_NewLoadBalanced" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_TestSuits_NewLoadBalanced" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_ExecutionGroup_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__QCExportA__Belon__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__SikuliObj__paren__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestCycle__Paren__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestsExec__Belon__22401542" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestSuits__Paren__0C85DE4D" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__UserSessi__Linke__114A936A" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__SikuliObj__added__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__SikuliObj__modif__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__SubStep__ParentS__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestCase__Parent__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestStep__Parent__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_TestCase_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestsExec__Targe__4D2A7347" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestSuits__Paren__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_TestsExecutions_TestsExecutions" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_TestSuits_TestsExecutions" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestSuits__Previ__0F624AF8" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__TestSuits__Teste__10566F31" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK_TestSuits_TestSuits" ManuallyRouted="false" />
+        <AssociationConnector Association="GRSDataBaseModel.FK__UserSessi__Sessi__123EB7A3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

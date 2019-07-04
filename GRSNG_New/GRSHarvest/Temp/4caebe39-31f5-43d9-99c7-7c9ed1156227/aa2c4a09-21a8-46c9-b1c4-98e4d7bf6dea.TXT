@@ -1,0 +1,1 @@
+GET http://mwa.us-west-2.stable.dev.cortellis.int.clarivate.com:8335/mr/RestSearchService/v4/search?dataset=nextgendrugall&searchQuery=Cancer&queryLanguage=ssql&returnFields=drugId%2CdrugActiveCompanyIdAll&returnLimit=10&filters=drugActiveCompanyIdAll%28totalOptionCount%3Dtrue%29&offset=0 returned a response status of 502 Bad Gateway

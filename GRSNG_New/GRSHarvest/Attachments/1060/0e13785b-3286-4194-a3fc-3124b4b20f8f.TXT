@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput xmlns:ns2="local" id="33"><Title>Gastroesophageal Reflux Disease</Title><Teaser>
+  Facts about Gastroesophageal Reflux Disease.
+  
+    Gastroesophageal reflux disease (GERD or GORD) is one the most common gastrointestinal tract disorders, and continues to increase in prevalence (Kung, Y.M. et al., 2017). It belongs to the class of functional gastrointestinal (GI) disorders, which are characterized by disturbances in function rather than in structure of the GI tract. Other ...</Teaser></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput>

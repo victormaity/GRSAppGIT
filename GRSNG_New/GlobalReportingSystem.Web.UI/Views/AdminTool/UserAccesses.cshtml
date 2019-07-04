@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<GlobalReportingSystem.Core.Models.Entities.Project>
+<div class="page-header">
+    <h1>
+        Users
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Create or subscribe user on projects
+        </small>
+    </h1>
+</div>
+<div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuProjects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Select Project
+        <span class="caret"></span>
+    </button>
+    <i id="loading"></i>
+    <ul class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuProjects">
+        @foreach (var project in Model)
+        {
+            <li><a id="@project.ID">@project.DisplayName</a></li>
+        }
+    </ul>
+</div>
+<br />
+<br />
+<div class="row">
+    <div class="col-xs-12">
+        <div id="usersTable"></div>
+    </div>
+</div>
+<style>
+    .scrollable-menu {
+        height: auto;
+        max-height: 200px;
+        overflow-x: hidden;
+    }
+    .scrollable-menu li{
+        cursor: pointer;
+    }
+</style>
+<script>
+
+    $(".dropdown > ul > li > a").on("click", function () {
+        //debugger;
+        $("#usersTable").html("");
+        $("#loading").addClass("fa fa-spinner blue fa-spin");
+        $(".dropdown > button").text($(this).text());
+        var projectId = $(this).attr("id");
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("UsersTable", "AdminTool")",
+            data: '{ "projectId": ' + projectId + '}',
+            //data: dataString,
+            contentType: "application/json; charset=utf-8",
+            beforeSend: function () {
+
+            },
+            success: function (msg) {
+                if (msg.type == "Error") {
+                    ShowMessage(msg.type, msg.text);
+                    $("#loading").removeClass("fa fa-spinner blue fa-spin");
+                }
+                else {
+                    $("#loading").removeClass("fa fa-spinner blue fa-spin");
+                    $("#usersTable").html(msg.trim());
+                }
+            }
+        });
+    });
+
+    var unasignUser = function (projectId, userId) {
+        //debugger;
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("UnassignUserFromProject", "AdminTool")",
+            data: '{ "projectId": "' + projectId + '", "userId": "' + userId + '"}',
+            contentType: "application/json; charset=utf-8",
+            beforeSend: function () {
+                $("#usersTable").css("opacity", "0.6").css("filter", "alpha(opacity=60)");
+                $("#loading").addClass("fa fa-spinner blue fa-spin");
+            },
+            success: function (msg) {
+                if (msg.type == "Error") {
+                    ShowMessage(msg.type, msg.text);
+                    $("#loading").removeClass("fa fa-spinner blue fa-spin");
+                }
+                else {
+                    
+                    $("#usersTable").html(msg.trim());
+                    $("#usersTable").css("opacity", "1").css("filter", "alpha(opacity=100)");
+                    $("#loading").removeClass("fa fa-spinner blue fa-spin");
+                }
+            }
+        });
+    }
+
+    var asignUser = function (projectId, userId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("AssignUserOnProject", "AdminTool")",
+            data: '{ "projectId": "' + projectId + '", "userId": "' + userId + '"}',
+        contentType: "application/json; charset=utf-8",
+        beforeSend: function () {
+            $("#usersTable").css("opacity","0.6").css("filter", "alpha(opacity=60)");
+            $("#loading").addClass("fa fa-spinner blue fa-spin");
+        },
+        success: function (msg) {
+            if (msg.type == "Error") {
+                ShowMessage(msg.type, msg.text);
+                $("#loading").removeClass("fa fa-spinner blue fa-spin");
+            }
+            else {
+                
+                $("#usersTable").html(msg.trim());
+                $("#usersTable").css("opacity", "1").css("filter", "alpha(opacity=100)");
+                $("#loading").removeClass("fa fa-spinner blue fa-spin");
+            }
+        }
+    });
+    }
+
+</script>

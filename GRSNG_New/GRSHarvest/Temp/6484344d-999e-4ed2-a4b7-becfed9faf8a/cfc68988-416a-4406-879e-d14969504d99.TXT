@@ -1,0 +1,27 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id='select2-databases-container']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBASDPC09883', ip: '10.10.246.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 38936, moz:profile: C:\Users\ss00501688\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: b5a14d24-24bf-4625-a517-ffdc388ce85d
+*** Element info: {Using=xpath, value=//span[@id='select2-databases-container']} 
+ sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.SearchTypesListPageObject.buttonBasicSearch(SearchTypesListPageObject.java:41);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.SearchTypesListPageObject.expandSearchTypesList(SearchTypesListPageObject.java:82);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.SearchTypesListPageObject.selectBasicSearch(SearchTypesListPageObject.java:117);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.CommonSteps.I_select_search(CommonSteps.java:78);
+✽.Then I select search "Basic Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.25_Stories.feature:520)

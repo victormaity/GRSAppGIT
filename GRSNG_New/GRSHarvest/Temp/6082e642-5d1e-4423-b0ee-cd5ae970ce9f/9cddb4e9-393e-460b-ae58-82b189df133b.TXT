@@ -1,0 +1,24 @@
+Tech info:
+Exception cause: org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'WIN-T8JHR40ALO2', ip: '10.152.82.49', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=D:\Users\WoSWin7_09\AppData\Local\Temp\1\rust_mozprofile.IQTYvd5Vvtms, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=6.1, moz:processID=2920, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: b542dabd-0913-4009-98c8-223369185055 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408);
+com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage.label_savedSerachError(SavedSearchesAndAlertsPage.java:127);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.SavedSearchesAndAlertsPage_Steps.iVerifyTheErrorMessageWhenSearchIsExecutedWithoutSelectingAFileLocally(SavedSearchesAndAlertsPage_Steps.java:513);
+✽.And I verify the error message "Please select a valid saved history file." when search is executed without selecting a file locally(com.clarivateanalytics.wos.gui.cucumber.deployment/SavedSearchesAndAlerts.feature:685)

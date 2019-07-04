@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><ontologyTreeOutput><TaxonomyTree><Node depth="1" leaf="false" name="Astellas Pharma Inc" treeCode="1013295" id="1013295"/></TaxonomyTree></ontologyTreeOutput>

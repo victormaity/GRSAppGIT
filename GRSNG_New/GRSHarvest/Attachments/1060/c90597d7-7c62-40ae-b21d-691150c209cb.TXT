@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput xmlns:ns2="local" id="86"><Title>Coronaviruses: SARS-CoV and MERS-CoV</Title><Teaser>
+  Facts about Coronaviruses.
+  
+    Coronaviruses are a group of large, enveloped, positive-sense, single-stranded RNA viruses belonging to the order Nidovirales, family Coronaviridae, subfamily Coronavirinae. Twenty-six different species are known (Cleri, D.J. et al., 2010) and have been divided into four genera (alpha, beta, gamma and delta) characterized by different antigenic cross-reactiv...</Teaser></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput>

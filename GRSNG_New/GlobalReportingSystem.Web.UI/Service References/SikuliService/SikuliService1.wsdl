@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UpdateSikuliItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sessionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cathegory" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSikuliItemResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSikuliItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSikuliItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSikuliItemResult" type="tns:SikuliItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SikuliItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RemoveSikuliItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveSikuliItemResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddSikuliItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="sessionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddSikuliItemResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UpdateSikuliItemSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSikuliItem" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSikuliItemSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSikuliItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSikuliItemSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSikuliItem" />
+  </wsdl:message>
+  <wsdl:message name="GetSikuliItemSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSikuliItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveSikuliItemSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveSikuliItem" />
+  </wsdl:message>
+  <wsdl:message name="RemoveSikuliItemSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveSikuliItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddSikuliItemSoapIn">
+    <wsdl:part name="parameters" element="tns:AddSikuliItem" />
+  </wsdl:message>
+  <wsdl:message name="AddSikuliItemSoapOut">
+    <wsdl:part name="parameters" element="tns:AddSikuliItemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SikuliServiceSoap">
+    <wsdl:operation name="UpdateSikuliItem">
+      <wsdl:input message="tns:UpdateSikuliItemSoapIn" />
+      <wsdl:output message="tns:UpdateSikuliItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSikuliItem">
+      <wsdl:input message="tns:GetSikuliItemSoapIn" />
+      <wsdl:output message="tns:GetSikuliItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSikuliItem">
+      <wsdl:input message="tns:RemoveSikuliItemSoapIn" />
+      <wsdl:output message="tns:RemoveSikuliItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSikuliItem">
+      <wsdl:input message="tns:AddSikuliItemSoapIn" />
+      <wsdl:output message="tns:AddSikuliItemSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SikuliServiceSoap" type="tns:SikuliServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateSikuliItem">
+      <soap:operation soapAction="http://tempuri.org/UpdateSikuliItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSikuliItem">
+      <soap:operation soapAction="http://tempuri.org/GetSikuliItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSikuliItem">
+      <soap:operation soapAction="http://tempuri.org/RemoveSikuliItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSikuliItem">
+      <soap:operation soapAction="http://tempuri.org/AddSikuliItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SikuliServiceSoap12" type="tns:SikuliServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateSikuliItem">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSikuliItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSikuliItem">
+      <soap12:operation soapAction="http://tempuri.org/GetSikuliItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSikuliItem">
+      <soap12:operation soapAction="http://tempuri.org/RemoveSikuliItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSikuliItem">
+      <soap12:operation soapAction="http://tempuri.org/AddSikuliItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SikuliService">
+    <wsdl:port name="SikuliServiceSoap" binding="tns:SikuliServiceSoap">
+      <soap:address location="http://10.236.4.153/nggrs/sikuli/SikuliService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SikuliServiceSoap12" binding="tns:SikuliServiceSoap12">
+      <soap12:address location="http://10.236.4.153/nggrs/sikuli/SikuliService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

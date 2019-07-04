@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Regulatory id="202265"><Title>EMA EPAR EMEA/H/C/170 Revision 21: COMTESS (entacapone)</Title><Region>European Union</Region><DocCategory>["Reference Document"]</DocCategory><DocType>["EPAR","Product Approval Document"]</DocType><Status>Valid</Status></Regulatory>

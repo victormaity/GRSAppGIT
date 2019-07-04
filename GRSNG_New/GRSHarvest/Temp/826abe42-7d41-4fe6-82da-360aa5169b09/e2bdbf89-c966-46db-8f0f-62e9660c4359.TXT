@@ -1,0 +1,26 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-IBO79FMVJOJ', ip: '10.152.83.116', os.name: 'Windows Server 2008 R2', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9920, moz:profile: D:\Users\WoSWin7_12\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 19ff90ca-3817-4bc2-b108-13c3e2123d37
+*** Element info: {Using=xpath, value=//div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657);
+org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:517);
+com.clarivateanalytics.wos.gui.cucumber.pages.base.BasePage.<init>(BasePage.java:34);
+com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.ResultsSummaryPage.<init>(ResultsSummaryPage.java:99);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.runSearch(BasicSearchPage.java:163);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.I_perform_search_by_field_with_query_on_page(BasicSearchPage_Steps.java:179);
+✽.And I perform search by field "Inventor" with query "HASHA R" on page "Basic Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:564)

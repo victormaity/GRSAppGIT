@@ -1,0 +1,1 @@
+{"ontologyTreeOutput":{"TaxonomyTree":{"Node":{"@depth":"1","@leaf":"false","@name":"Cardiovascular disease","@treeCode":"CAR-","@id":"57","hitSynonyms":""}}}}

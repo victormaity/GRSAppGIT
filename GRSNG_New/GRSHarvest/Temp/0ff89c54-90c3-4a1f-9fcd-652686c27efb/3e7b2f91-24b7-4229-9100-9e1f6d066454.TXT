@@ -1,0 +1,12 @@
+Tech info:
+Exception cause: java.util.NoSuchElementException: No value present 
+ org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:118);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275);
+org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:159);
+com.clarivateanalytics.wos.gui.cucumber.pages.SummaryPages.ResultsSummaryPage.checkRefineCategoryIsExpanded(ResultsSummaryPage.java:447);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.ResultSummaryPage_Steps.iClickOnLinkForTheRefineCategory(ResultSummaryPage_Steps.java:1942);
+✽.Then I click on "More Options ResultSummary" link for the refine category "Databases"(com/clarivateanalytics/wos/gui/cucumber/Deployment/ResultSummary.feature:849)

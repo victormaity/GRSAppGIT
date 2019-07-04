@@ -1,0 +1,1 @@
+Error consuming internal services: invalid Disease idType [genego indication] Sub Data type. Available options: [siCondition, ORPHANET, MEDDRA, ciIndication, MeSH, omicsDisease, ICD10, ICD9]

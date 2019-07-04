@@ -1,0 +1,41 @@
+8
+
+dir
+151790
+http://sourcecontrol.int.thomsonreuters.com:8091/svn/qa_automation/GRS_NextGen/GRSHarvest/Content/images
+http://sourcecontrol.int.thomsonreuters.com:8091/svn
+
+
+
+2015-02-16T14:40:13.154669Z
+127614
+oalekse
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4576ea35-741e-0410-a346-fc41942853a1
+
+logo_header.png
+file
+
+
+
+
+2015-05-14T14:40:33.812000Z
+b70e1351bc3f6dbd592446274eab61fd
+2015-02-16T14:40:13.154669Z
+127614
+oalekse
+has-props
+

@@ -1,0 +1,5 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ java.util.Objects.requireNonNull(Objects.java:203);
+com.clarivate.stepdefinitions.ppc.ScanSoftOcrStepDefs.checkThatScansoftOCRProgramConvertsTheIMAGEFileWhichArePresentInsideTheIMAGEFolderOfPatentFolderToTxtFilesAndPlaceThemInTEXTFolderOfPatentFolder(ScanSoftOcrStepDefs.java:33);
+✽.Then Check that Scansoft OCR program converts the IMAGE file which are present inside the IMAGE folder of Patent folder to txt files and place them in TEXT folder of Patent folder(ScanSoftOcr.feature:13)

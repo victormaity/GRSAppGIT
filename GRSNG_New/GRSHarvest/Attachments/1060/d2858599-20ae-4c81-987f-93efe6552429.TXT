@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="144730"><Title>Shasun Pharmaceuticals to manufacture and commercialize huperzine-A for Debiopharm</Title><Principal>Shasun Pharmaceuticals Ltd</Principal><Partner>Debiopharm SA</Partner><Type>Drug - Manufacturing/Supply</Type><Status>Active</Status></Deal>

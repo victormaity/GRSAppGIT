@@ -1,0 +1,185 @@
+﻿@using System.Text.RegularExpressions
+@using GlobalReportingSystem
+@using GlobalReportingSystem.BL.CustomStatuses
+@using GlobalReportingSystem.Core.Abstract
+@using GlobalReportingSystem.Web.UI.Properties
+@model GlobalReportingSystem.Core.Models.GRS.TestStepAndProject
+@using System.Web.Configuration
+@{
+    var attachmentsPath = WebConfigurationManager.AppSettings["attachmentsPath"];
+}
+@foreach (var subStep in Model.TestStepAndCustomStatus)
+{
+    var color = "#90EE90";
+    if (subStep.SubStep.SubStepValid == false)
+    {
+        color = "#FF7568";
+    }
+    var subStepVal = subStep.SubStep.SubStepMessage;
+    var techInfo = subStep.SubStep.SubStepTechInfo;
+    <tr bgcolor=@color key="TS @Model.TestStep.ID TC @Model.TestStep.ParentTestCase">
+
+        @if (!String.IsNullOrEmpty(subStepVal) && (subStepVal.Contains("&lt;html&gt;") || subStepVal.Contains("<html>")))
+        {
+
+            <td colspan="5" style="white-space: normal; max-width: 850px; word-wrap: break-word;">
+
+                    <i class="fa fa-chevron-right grey"></i>
+                &nbsp; @subStep.SubStep.SubStepTime - @HttpUtility.HtmlDecode(subStepVal)
+                @if (techInfo != null)
+                { <b>Tech Info:</b>@Html.Raw(HttpUtility.HtmlDecode(techInfo))}
+            </td>
+        }
+        else
+        {
+            <td colspan="5" style="white-space: normal; max-width: 850px; word-wrap: break-word;">
+                
+                <i class="fa fa-chevron-right grey"></i>
+                &nbsp; @subStep.SubStep.SubStepTime - @Html.Raw(HttpUtility.HtmlDecode(subStepVal))
+                @if (techInfo != null)
+                { <b>Tech Info:</b>@Html.Raw(HttpUtility.HtmlDecode(techInfo))}
+            </td>
+        }
+        @* <td colspan="5" style="white-space: normal; max-width: 850px; word-wrap: break-word;"><i class="fa fa-chevron-right grey"></i>
+            &nbsp; @subStep.SubStep.SubStepTime - @Html.Raw(HttpUtility.HtmlDecode(subStepVal))
+            @if (techInfo != null)
+            { <b>Tech Info:</b>@Html.Raw(HttpUtility.HtmlDecode(techInfo))}
+        </td>*@
+
+        <td id="SS_curr_stat-@subStep.SubStep.ID" class="editablePart" style="width: 8%;">
+            @if (!subStep.SubStep.SubStepValid && subStep.SubStep.AnalyzedStatus.HasValue)
+            {
+                <i class="fa fa-wrench grey updateModal" data-toggle="modal" data-target="#updateSameSubStepsModal" style="margin-right:3px;"></i>
+            }
+            else
+            {
+                <i class="fa fa-wrench grey updateModal" data-toggle="modal" data-target="#updateSameSubStepsModal" style="margin-right:3px; display:none;"></i>
+            }
+            <input type="hidden" name="isAnalized" value="@subStep.SubStep.AnalyzedStatus.HasValue">
+            <a style="cursor: pointer; color: #777777; font-weight:800;" id="SS_status-@subStep.SubStep.ID" onclick="edit(@subStep.SubStep.ID);">@(subStep.CustomStatus ?? (subStep.SubStep.SubStepValid ? "Pass" : "Fail"))</a>
+            <div style="display: none;">
+                <select style="font-size: 13px; padding: 0; width: 100%; height: 20px; margin: 0">
+                    @if (subStep.SubStep.AnalyzedStatus == null)
+                    {
+                        <option>@(subStep.SubStep.SubStepValid ? "Pass" : "Fail")</option>
+                    }
+@*<option>@(subStep.SubStep.SubStepValid ? "Fail" : "Pass")</option>*@
+                    @foreach (var status in Model.CustomStatusesList)
+                    {
+                        <option>
+                            @status
+                        </option>
+                    }
+                </select>
+            </div>
+        </td>
+        <td id="SS_glob_stat-@subStep.SubStep.ID" class="editablePart" style="width: 8%;">
+            <div>
+                @* @(subStep.SubStep.AnalyzedStatus == null ? "" : subStep.CustomStatus*)*@
+            </div>
+        </td>
+        <td id="SS_curr_def-@subStep.SubStep.ID" class="editablePart" style="width: 8%;">
+            <div style="visibility: visible">@String.Join(" ", subStep.SubStep.Defects)</div>
+        </td>
+        <td id="SS_old_def-@subStep.SubStep.ID" @*class="editablePart"*@ style="width: 8%;">
+            <div></div>
+            @*            @{
+                string url = Model.Bugtracker.Contains("Jira") ? String.Concat(Model.Bugtracker, "browse/") : Model.Bugtracker;
+                if (subStep.Defects != null)
+                {
+                    var bugs = subStep.Defects.Replace(" ", "").Split(',').ToList();
+                    foreach (var bug in bugs)
+                    {
+                        <a style='cursor:pointer;color:#777777;' href ='@url@bug' target='_blank'>@bug</a>
+                    }
+                }
+            }*@
+        </td>
+        <td colspan="2" style="width: 8%;">
+            @{
+                    if (subStep.SubStep.SubStepScreenShot != null)
+                    {
+                        foreach (var screenshot in subStep.SubStep.SubStepScreenShot.Split(';'))
+                        {
+                            var ext = screenshot.ToLower().Split('.').Last();
+                            var cl = "fa fa-file-image-o";
+                <span title="@screenshot.Split('$').Last()">
+                    <a href="#modal-form" onclick="showscreenshot('@screenshot', 'true', 'false', '@attachmentsPath')" data-action="settings" role="button" data-toggle="modal">
+                        <i class="@cl"></i>
+                    </a>
+                </span>
+                        }
+                    }
+                    if (subStep.SubStep.SubStepScreenShotDriver != null)
+                    {
+                        foreach (var screenshot in subStep.SubStep.SubStepScreenShotDriver.Split(';'))
+                        {
+                            var ext = screenshot.ToLower().Split('.').Last();
+                            var cl = "fa fa-file-image-o";
+                <span title="@screenshot.Split('$').Last()">
+                    <a href="#modal-form" onclick="showscreenshot('@screenshot', 'true', 'false', '@attachmentsPath') " data-action="settings" role="button" data-toggle="modal">
+                        <i class="@cl"></i>
+                    </a>
+                </span>
+                        }
+                    }
+
+            }
+        </td>
+    </tr>
+}
+
+<script type="text/javascript">
+    $(document).on("click", ".updateModal", function () {
+        var mySSId = $(this).parent().attr("id").split("-")[1];
+        $(".modal-body #subStepId").val(mySSId);
+    });
+    $(".editablePart").focusout(
+        function () {
+            var control = this;
+            var id = $(this).attr("id").split("-")[1];
+            var beforeStatus = $("#SS_curr_stat-" + id + " > a")[0].innerHTML;
+            setTimeout(function () {
+                var tr = $(control).parent();
+                var flag = true;
+                $("tr[key='" + tr.attr('key') + "'] > td > input");
+                $.each($("tr[key='" + tr.attr('key') + "'] > td > input"), function (key, val) {
+                    if ($("#" + val.id).is(':focus')) {
+                        flag = false;
+                    }
+                });
+                if ($("#SS_curr_stat-" + id + " > div > select").is(':focus')) {
+                    flag = false;
+                }
+                if (flag) {
+                    //var status = $("#SS_glob_stat-" + id + " > input").val();
+                    //debugger;
+                    var tempStatus = $("#SS_curr_stat-" + id + " > div > select").val();
+                    var status = "";
+                    if (!(tempStatus.length == 0 || tempStatus == "Pass" || tempStatus == "Fail"))
+                        if ($("#SS_curr_stat-" + id + " > div > select").length > 0)
+                            status = $("#SS_curr_stat-" + id + " > div > select").val();
+                    var currDef = "";
+
+                    if ($("#SS_curr_def-" + id + " > input").length > 0)
+                        currDef = $("#SS_curr_def-" + id + " > input").val();
+
+                    editSubStep(id, beforeStatus, status, currDef);
+
+                    $("#SS_curr_stat-" + id + " > div").hide();
+                    $("#SS_curr_stat-" + id + " > a").text($("#SS_curr_stat-" + id + " > div > select").val());
+                    $("#SS_curr_stat-" + id + " > a").show();
+                    $("#SS_curr_stat-" + id + " > i").show();
+
+                    //$("#SS_glob_stat-" + id).html("<div>" + status + "</div>");
+                    $("#SS_curr_def-" + id).html("<div>" + currDef + "</div>");
+                    if ($("#SS_old_def-" + id + " > input").length != 0)
+                        $("#SS_old_def-" + id).html("<div>" + $("#SS_old_def-" + id + " > input").val() + "</div>");
+                    if ($("#SS_curr_stat-" + id + " > a").text() != "Fail")
+                    {
+                        $("#SS_curr_stat-" + id + " > i").css("display", "auto");
+                    }
+                }
+            }, 100);
+        });
+</script>

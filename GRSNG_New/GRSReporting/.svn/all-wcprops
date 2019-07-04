@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting/packages.config
+END
+Web.Release.config
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting/Web.Release.config
+END
+Global.asax
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting/Global.asax
+END
+ReportingService.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting/ReportingService.asmx
+END
+GRSReporting.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting/GRSReporting.csproj
+END
+Web.Debug.config
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting/Web.Debug.config
+END
+ReportingService.asmx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting/ReportingService.asmx.cs
+END
+Global.asax.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting/Global.asax.cs
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/121332/qa_automation/GRS_NextGen/GRSReporting/Web.config
+END

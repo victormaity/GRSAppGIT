@@ -1,0 +1,438 @@
+﻿@{
+    ViewBag.Title = "Project";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model GlobalReportingSystem.Core.Models.GRS.ProjectConfigurationModel
+<div class="page-header">
+    <h1>Project configurations
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Expand each section in order to perform configuration
+        </small>
+    </h1>
+</div>
+<div class="row">
+    @using (Html.BeginForm("Project", "Configuration", FormMethod.Post))
+    {
+        <div class="widget-container-col ui-sortable">
+            <!-- #section:custom/widget-box -->
+            <div class="widget-box">
+                <div class="widget-header widget-header-small">
+                    <h5 class="widget-title smaller">Project configurations</h5>
+                    <!-- #section:custom/widget-box.tabbed -->
+                    <div class="widget-toolbar no-border">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="active">
+                                <a id="atagSummery" data-toggle="tab" href="#summary">Summary</a>
+                            </li>
+                            <li>
+                                <a id="atagQC" data-toggle="tab" href="#qc">Quality center</a>
+                            </li>
+                            <li>
+                                <a id="atagSVNGIT" data-toggle="tab" href="#svn">SVN & GIT</a>
+                            </li>
+                            <li>
+                                <a id="atagBTracker" data-toggle="tab" href="#bugtracker">Bug tracker</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- /section:custom/widget-box.tabbed -->
+                </div>
+
+                <div class="widget-body">
+                    <div class="widget-main padding-6">
+                        <div class="tab-content">
+                            <div id="summary" class="tab-pane in active">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right">Project identificator </label>
+
+                                        <div class="col-sm-9">
+                                            @Html.TextBoxFor(p => p.ProjectId, new { @class = "col-xs-10 col-sm-5" })
+                                            <br />
+                                            <br />
+                                            @Html.ValidationMessageFor(p => p.ProjectId, "", new {@class="validationColor"})
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right">Project display name </label>
+
+                                        <div class="col-sm-9">
+                                            @Html.TextBoxFor(p => p.DisplayName, new { @class = "col-xs-10 col-sm-5" })
+                                            <br />
+                                            <br />
+                                            @Html.ValidationMessageFor(p => p.DisplayName, "", new {@class="validationColor"})
+                                        </div>
+                                    </div>
+                                    <label class="middle">
+                                        @Html.CheckBoxFor(p => p.EmailNotification)
+                                        <span class="lbl">Send email with execution results</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="qc" class="tab-pane">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right">Server location </label>
+
+                                        <div class="col-sm-9">
+                                            @Html.TextBoxFor(p => p.QcLocation, new { @class = "col-xs-10 col-sm-5" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right">Domain/Project </label>
+
+                                        <div class="col-sm-9">
+                                            @Html.TextBoxFor(p => p.QcDomProj, new { @class = "col-xs-10 col-sm-5" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right">Results Path </label>
+
+                                        <div class="col-sm-9">
+                                            @Html.TextBoxFor(p => p.QcResultsPath, new { @class = "col-xs-10 col-sm-5" })                                            
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right">Testplan Path </label>
+
+                                        <div class="col-sm-9">
+                                            @Html.TextBoxFor(p => p.QcTestPlanPath, new { @class = "col-xs-10 col-sm-5" })
+                                        </div>
+                                    </div>
+                                    <label class="middle">
+                                        @Html.CheckBoxFor(p => p.QcRewriteTestPlan)
+                                        <span class="lbl">Rewrite test plan paths for each test set</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="svn" class="tab-pane">
+                                <div class="form-horizontal">
+
+                                    <div class="form-group">
+                                        <table style="width: 100%; border-collapse: collapse;">
+                                            <tr>
+                                                <td style="width: 30%; padding: 5px 10px 5px 10px; background-color: #6FB3E0;" align="left">
+                                                    <span style="margin-right: 40px;">Select your repository location</span>
+                                                    @Html.RadioButtonFor(m => m.IsGITDefaultAccount, "false", new { id = "rbsvn", style="margin-right:4px;" })
+                                                    <span style="margin-right: 20px">SVN</span>
+                                                    @Html.RadioButtonFor(m => m.IsGITDefaultAccount, "true", new { id = "rbgit", style="margin-right:4px; margin-left: 20px;" })
+                                                    <span>GIT</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table style="width: 100%; border-collapse: collapse;">
+                                                        <tr>
+                                                            <td style="width: 80%;" align="left" valign="top">
+                                                                <table style="width: 100%!important; border-collapse: collapse">
+                                                                    <tr>
+                                                                        <td valign="top" style="padding: 2px 10px 10px 10px!important;">
+                                                                            <div id="innsvndiv">
+                                                                                <table style="width: 100%; border-collapse: collapse;">
+                                                                                    <tr>
+                                                                                        <td colspan="2" style="background-color: #007ACC!important; padding: 5px!important; color: #ffffff!important; font-weight: 600!important;" align="left">SVN Settings</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 30%!important;">Solution repository path </td>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 70%!important;">@Html.TextBoxFor(p => p.SvnRepo, new { style="width:100%!important;" })</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 30%!important;">SVN account </td>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 70%!important;">@Html.TextBoxFor(p => p.SvnUser, new { style="width:100%!important;" })</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 30%!important;">SVN password </td>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 70%!important;">@Html.PasswordFor(p => p.SvnPassword, new { @value = Model.SvnPassword, style="width:100%!important;" })</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div id="inngitdiv">
+                                                                                <table style="width: 100%; border-collapse: collapse;">
+                                                                                    <tr>
+                                                                                        <td colspan="2" style="background-color: #007ACC!important; padding: 5px!important; color: #ffffff!important; font-weight: 600!important;" align="left">GIT Settings</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 30%!important;">GIT Path </td>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 70%!important;">@Html.TextBoxFor(p => p.GITPath, new { @value = Model.GITPath, style="width:100%!important;" })</td>
+                                                                                    </tr>
+                                                                                    @*<tr>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 30%!important;">GIT account </td>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 70%!important;">@Html.TextBoxFor(p => p.GITUser, new { style="width:100%!important;" })</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 30%!important;">GIT password </td>
+                                                                                        <td align="left" style="padding: 3px 20px 3px 20px!important; width: 70%!important;">@Html.PasswordFor(p => p.GITPassword, new { style="width:100%!important;" })</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="2" align="left" style="padding: 3px 20px 3px 20px!important; width: 30%!important;"><b style="color:maroon">Note:</b>&nbsp;<span style="color:black">if you are using GIT.SAMI.INT.THOMOSNREUTERS.COM, then default username and password will be provided by system.</span></td>
+                                                                                    </tr>*@
+
+                                                                                </table>
+
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="width: 20%; padding-top: 8px; padding-bottom: 8px!important;" align="center" valign="middle">
+                                                                <div id='sync' class='btn btn-info btn-sm' title="">Update Tests</div>
+                                                                <img src="~/Content/img/Help.png" title="HELP ?" onclick="helpopenpop();" style="margin-left: 10px; cursor: pointer; height: 16px; width: 16px;" />
+                                                                <div id="light" class="white_content" style="font-family: Calibri; font-size: 14px;">
+                                                                    To change the repository, Select respective radio button, then click "Submit" and then click button "Update Tests". 
+                                                                    <br />
+                                                                    <br />
+                                                                    <div class='btn btn-info btn-sm' onclick="helpclosepop();">Close</div>
+                                                                    <br />
+                                                                </div>
+                                                                <div id="fade" class="black_overlay"></div>
+                                                                <div></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    @*<div id="innsvnsettings">
+                                        <div class="form-group" style="background-color: #007ACC!important;">
+                                            <label class="col-sm-3 control-label no-padding-right" style="color: #ffffff!important; font-weight: 600!important;">SVN Settings</label>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label no-padding-right">Solution repository path </label>
+                                            <div class="col-sm-9">
+                                                @Html.TextBoxFor(p => p.SvnRepo, new { @class = "col-xs-10 col-sm-5" })                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label no-padding-right">SVN account </label>
+                                            <div class="col-sm-9">
+                                                @Html.TextBoxFor(p => p.SvnUser, new { @class = "col-xs-10 col-sm-5" })
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label no-padding-right">SVN password </label>
+
+                                            <div class="col-sm-9">
+                                                @Html.PasswordFor(p => p.SvnPassword, new { @value = Model.SvnPassword, @class = "col-xs-10 col-sm-5" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    *@
+                                    @*<div id="inngitsettings">
+                                        <div class="form-group" style="background-color: #007ACC!important;">
+                                            <label class="col-sm-3 control-label no-padding-right" style="color: #ffffff!important; font-weight: 600!important;">GIT Settings</label>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label no-padding-right">GIT Path </label>
+                                            <div class="col-sm-9">
+                                                @Html.TextBoxFor(p => p.GITPath, new { @value = Model.GITPath, @class = "col-xs-10 col-sm-5" })                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label no-padding-right">GIT account </label>
+                                            <div class="col-sm-9">
+                                                @Html.TextBoxFor(p => p.GITUser, new { @value = Model.GITUser, @class = "col-xs-10 col-sm-5" })
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label no-padding-right">GIT Password </label>
+                                            <div class="col-sm-9">
+                                                @Html.PasswordFor(p => p.GITPassword, new { @value = Model.GITPassword, @class = "col-xs-10 col-sm-5" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    *@
+                                    @*<div class="form-group" style="background-color: #007ACC!important;">
+                                        <label class="col-sm-3 control-label no-padding-right" style="color: #ffffff!important; font-weight: 600!important;">Default Setting </label>
+                                    </div>
+                                    *@
+                                    @*<div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right">GIT as default account </label>
+                                        <div class="col-sm-1">
+                                            @{
+                                                if(Model.IsGITDefaultAccount == true)
+                                                {                                        
+                                                    @Html.CheckBoxFor(m => m.IsGITDefaultAccount, new { @checked = "checked", @class = "col-xs-10 col-sm-5" });
+                                                }
+                                                else
+                                                {
+                                                    @Html.CheckBoxFor(m => m.IsGITDefaultAccount, new { @checked = "", @class = "col-xs-10 col-sm-5" });
+                                                }
+                                            }
+                                        </div>
+                                    </div>
+                                    *@
+                                    @*<div class="form-group" style="background-color: #CCCEDB!important; padding-top: 5px!important;">
+                                        <label class="col-sm-3 control-label no-padding-right" style="color: #0072C6!important; font-weight: 600!important;">Update Your Tests</label>
+                                        <div class="col-sm-9">
+                                            <span class="help-inline col-xs-12 col-sm-7">
+                                                <label class="middle">
+                                                    <a href='@Url.Action("PerformSvnSync")' id='sync' class='btn btn-info btn-sm'>Update Tests</a>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    *@
+
+                                </div>
+                            </div>
+
+                            <div id="bugtracker" class="tab-pane">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right">Select issues tracker </label>
+                                        <div class="col-sm-9">
+                                            @Html.DropDownListFor(p => p.CurrentBugTracker, new SelectList(Model.Bugtrackers, "Id", "Name", Model.CurrentBugTracker), "Please select bugtracker", new { @class = "col-xs-10 col-sm-5" })
+                                            <span class="help-inline col-xs-12 col-sm-7">
+                                                <label class="middle">
+                                                    <input type="button" value="Update Issues" id="ButtonUpdateIssues" class="btn btn-info btn-sm" onclick=" updateIssues(); ">
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            @Html.HiddenFor(m => m.Selectedtab, new { id = "hdnseltab", @value = Model.Selectedtab })
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /section:custom/widget-box -->
+        </div>
+    <div class="center">
+        <button class="btn btn-info" type="submit">
+            <i class="ace-icon fa fa-check bigger-110"></i>
+            Submit
+        </button>
+    </div>
+    }
+</div>
+
+<hr>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //Postback after submit message
+        var displaymessage = '@ViewBag.Message';
+        if (displaymessage != "") {
+            var myObj = {};
+            myObj["type"] = "Message";
+            myObj["text"] = displaymessage;
+            var jsondata = JSON.stringify(myObj);
+            ShowMessage(jQuery.parseJSON(jsondata).type, jQuery.parseJSON(jsondata).text);
+        }
+
+        var seltab = '@ViewBag.SelectedTab';
+        if (seltab == 1) { document.getElementById("hdnseltab").value = "1"; document.getElementById("atagSummery").click(); }
+        else if (seltab == 2) { document.getElementById("hdnseltab").value = "2"; document.getElementById("atagQC").click(); }
+        else if (seltab == 3) { document.getElementById("hdnseltab").value = "3"; document.getElementById("atagSVNGIT").click(); }
+        else if (seltab == 4) { document.getElementById("hdnseltab").value = "4"; document.getElementById("atagBTracker").click(); }
+        else { document.getElementById("hdnseltab").value = "1"; }
+
+        //By Default on page load
+        if ($("#rbgit").is(':checked')) {
+            $("#innsvndiv").hide();
+            $("#inngitdiv").show();
+            $("#sync").attr('title', 'Your project will update from GIT repository.');
+        }
+        else if ($("#rbsvn").is(':checked')) {
+            $("#inngitdiv").hide();
+            $("#innsvndiv").show();
+            $("#sync").attr('title', 'Your project will update from SVN repository.');
+        }
+
+        //Tab reselect
+        $("#atagSummery").click(function () { document.getElementById("hdnseltab").value = "1"; });
+        $("#atagQC").click(function () { document.getElementById("hdnseltab").value = "2"; });
+        $("#atagSVNGIT").click(function () { document.getElementById("hdnseltab").value = "3"; });
+        $("#atagBTracker").click(function () { document.getElementById("hdnseltab").value = "4"; });
+
+        //when user selects radio button git or svn
+        $("#rbgit, #rbsvn").change(function () {
+            if ($("#rbsvn").is(':checked')) {
+                $("#inngitdiv").hide(1000);
+                $("#innsvndiv").show(1000);
+            }
+            else if ($("#rbgit").is(':checked')) {
+                $("#innsvndiv").hide(1000);
+                $("#inngitdiv").show(1000);
+            }
+        });
+
+        $("#sync").click(function () {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("PerformSvnSync", "Configuration")',
+                async: true,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'html',
+                beforeSend: function () {
+                    //$("#ButtonUpdateIssues").html("<i class='fa fa-spinner fa-spin' style='color:white'></i>");
+                    document.getElementById("blockBack").style.display = '';
+                    document.getElementById("divmiddle").style.display = '';
+                },
+                complete: function () {
+                    document.getElementById("blockBack").style.display = 'none';
+                    document.getElementById("divmiddle").style.display = 'none';
+                },
+                error: function () {
+                },
+                success: function (response) {
+                    ShowMessage(jQuery.parseJSON(response).type, jQuery.parseJSON(response).text);
+                    //$("#ButtonUpdateIssues").html("");                    
+                }
+            });
+        });
+
+
+    });
+
+    function updateIssues() {
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("UpdateIssues", "Configuration")',
+            async: true,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'html',
+            beforeSend: function () {
+                $("#ButtonUpdateIssues").html("<i class='fa fa-spinner fa-spin' style='color:white'></i>");
+            },
+            error: function () {
+            },
+            success: function (response) {
+                ShowMessage(jQuery.parseJSON(response).type, jQuery.parseJSON(response).text);
+                $("#ButtonUpdateIssues").html("");
+            }
+        });
+    }
+
+    function helpopenpop() {
+        document.getElementById('light').style.display = 'block';
+        document.getElementById('fade').style.display = 'block';
+    }
+    function helpclosepop() {
+        document.getElementById('light').style.display = 'none';
+        document.getElementById('fade').style.display = 'none';
+    }
+
+</script>
+<style type="text/css">
+    .validationColor {
+        color: red;
+    }
+</style>

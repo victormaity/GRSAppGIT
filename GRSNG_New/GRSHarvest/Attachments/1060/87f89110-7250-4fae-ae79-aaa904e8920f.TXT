@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=%22Magnetic+resonance+imaging+%28MRI%29+for+abdominal+aortic+aneurysms+to+predict+rupture+or+surgery%22&hits=20&offset=0&filtersEnabled=0&queryLanguage=ssql

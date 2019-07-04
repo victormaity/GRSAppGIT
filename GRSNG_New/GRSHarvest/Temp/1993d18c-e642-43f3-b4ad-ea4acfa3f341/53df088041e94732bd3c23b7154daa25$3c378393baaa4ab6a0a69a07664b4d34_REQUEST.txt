@@ -1,0 +1,20 @@
+<request xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.runAnalyzes">
+    <list>
+      <val name="QueryID">1</val>
+      <list>
+        <map name="AnalyzeParameters">
+          <val name="ReturnTotalCount">1</val>
+          <val name="CountNoData">1</val>
+          <map name="Field">
+            <val name="Name">AU</val>
+            <val name="Threshold">1</val>
+            <val name="MaxRows">50</val>
+            <val name="SortType">Field</val>
+            <val name="Sort">A</val>
+          </map>
+        </map>
+      </list>
+    </list>
+  </fn>
+</request>

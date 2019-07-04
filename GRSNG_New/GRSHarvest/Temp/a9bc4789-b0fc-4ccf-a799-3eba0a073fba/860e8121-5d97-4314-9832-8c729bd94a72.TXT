@@ -1,0 +1,1 @@
+GET http://mwa.us-west-2.stable.dev.cortellis.int.clarivate.com:8335/mr/RestSearchService/v4/search?dataset=company%28breadth%3D%22extended%22%29&searchQuery=companyId%3A1017264&queryLanguage=ssql&returnFields=companyId%2CcompanyActiveDrugIdAll&returnLimit=10&filters=companyActiveDrugIdAll%28totalOptionCount%3Dtrue%29&offset=0 returned a response status of 502 Bad Gateway

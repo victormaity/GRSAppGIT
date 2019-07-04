@@ -1,0 +1,1 @@
+          select drug_id from (select drug_id from rs_drug.FF_DRUG_REGULATORY_DESIGNATION where regulatory_designation_id =1 ORDER BY dbms_random.value ) where rownum<2     

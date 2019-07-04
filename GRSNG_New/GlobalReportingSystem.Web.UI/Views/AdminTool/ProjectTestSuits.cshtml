@@ -1,0 +1,319 @@
+﻿@{
+    ViewBag.Title = "Manage Testsuits";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header">
+    <h1>Admin Tool
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Manage Test Suits
+        </small>
+    </h1>
+</div>
+
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Manage Test Suits</h5>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                @{
+                    if(ViewBag.CanShow == true)
+                    {
+
+                <table style="width: 100%; border-collapse: separate; border-spacing: 8px;">
+                    <tr>
+                        <td style="width: 150px!important;">Project Name<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                        <td style="width: 250px!important;">
+                            <select style="width: 240px;" id="selectProject">
+                                <option value="0">--Please Select Project--</option>
+                                @{
+                                            foreach(var item in Model)
+                                            {
+                                                <option value="@item.Value.ToString()">@item.Text</option>
+                                }
+                                        }
+                            </select>
+                        </td>
+                        <td>
+                            <span id="spnProjectNameErrorMessage" style="color: #db0b0b;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 150px!important;">Select Date<span style="color: #db0b0b;">*</span></td>
+                        <td style="width: 250px!important;">
+                            <input type="text" id="datepickerDateBefore" style="width: 210px;" readonly>
+                        </td>
+                        <td><span id="spnDateErrorMessage" style="color: #db0b0b;"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 150px!important;"></td>
+                        <td colspan="2">
+                            <div>
+                                <span>
+                                    <label class="middle">
+                                        <input type="button" value="Get Testsuits" id="btnGetTestSuitDetails" title="Get testsuits generated before selected date" class="btn btn-info btn-sm" style="font-weight: bold;">
+                                    </label>
+                                </span>
+                                <span style="margin-left: 10px!important;">
+                                    <label class="middle">
+                                        <input type="button" value="Reset" id="btnReset" title="Reset input field" class="btn btn-info btn-sm" style="font-weight: bold;">
+                                    </label>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div>
+                    <table class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                        <tr>
+                            <td>Project Name&nbsp;&nbsp;:&nbsp;&nbsp;<span id="spndispPname"></span>
+                            </td>
+                            <td align="right" style="text-align: right">
+                                <span style="margin-left: 10px!important;">
+                                    <label class="middle">
+                                        <input type="button" id="txtDeleteIndividualTestSuitConf" value="Delete selected Testsuit" title="Delete selected Testsuits and it's related testcase/test step/sub steps." class="btn btn-info btn-sm" style="font-weight: bold;" />
+                                    </label>
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table id="tblTestSuit" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="cbAll" title="Select All" /></th>
+                                <th>Testsuit Name</th>
+                                <th>Start Time</th>
+                                <th>Total Failed Testcase</th>
+                                <th>Total Passed Testcase</th>
+                                <th>Testcycle Name</th>
+                                <th>clientIP</th>
+                                <th>Client Environment</th>
+                                <th>client User</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                }
+                    else
+                    {
+                        <div style="height: auto; padding: 15px!important; background-color: #E6E6E6; font-size: 14px; color: #DC143C; font-weight: 600; text-align: center">
+                            You are not authorized to visit this page.
+                        </div>
+                }
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("#datepickerDateBefore").datepicker({
+            showButtonPanel: true,
+            changeMonth: true,
+            changeYear: true,
+            maxDate: "0",
+            dateFormat: "dd/mm/yy",
+            showOn: "button",
+            buttonImage: "../Content/calnew.png",
+            buttonImageHeight: "28px",
+            buttonImageWidth: "28px",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+        $('img[title="Select date"]').css({ 'height': '28px', 'width': '28px', 'cursor': 'pointer' });
+        $("#selectProject").val("0");
+        $('#datepickerDateBefore').val("");
+        $("#spnProjectNameErrorMessage").html("");
+        $("#spnDateErrorMessage").html("");
+        DeleteEachRowInTbody();
+        $("#cbAll").prop('checked', false);
+        $('#btnGetTestSuitDetails').click(function () {
+            $("#spnProjectNameErrorMessage").html("");
+            $("#spnDateErrorMessage").html("");
+
+            var id = $('#selectProject').val();
+            var isProjectSelected = false;
+            if (id != null && id != "" != undefined) {
+                var parseid = parseInt(id);
+                if (id > 0) {
+                    isProjectSelected = true;
+                }
+            }
+
+            var seldate = $('#datepickerDateBefore').val();
+            var isDateSelected = false;
+            if (seldate != null && seldate != "" && seldate != undefined) {
+                isDateSelected = true;
+            }
+
+            if (isProjectSelected) { $("#spnProjectNameErrorMessage").html(""); }
+            else { $("#spnProjectNameErrorMessage").html("Please select project."); }
+            if (isDateSelected) { $("#spnDateErrorMessage").html(""); }
+            else { $("#spnDateErrorMessage").html("Please select date from calendar."); }
+
+            if (isProjectSelected && isDateSelected) {
+                var datatosend = JSON.stringify({ "projectId": id, "datebefore": seldate });
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("GetProjectTestSuits", "AdminTool")',
+                    async: true,
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'json',
+                    data: datatosend,
+                    beforeSend: function () {
+                        document.getElementById("blockBack").style.display = '';
+                        document.getElementById("divmiddle").style.display = '';
+                    },
+                    complete: function () {
+                        document.getElementById("blockBack").style.display = 'none';
+                        document.getElementById("divmiddle").style.display = 'none';
+                    },
+                    error: function () {
+                    },
+                    success: function (response) {
+                        $("#spndispPname").html(response.pname)
+                        if (response.recordCount > 0) {
+                            DeleteEachRowInTbody();
+                            AddTestSuitDataRow(response.suits);
+                        }
+                        else {
+                            DeleteEachRowInTbody();
+                            AddRowWithDefaultMessage(response.text)
+                        }
+                    }
+                });
+            }
+        });
+
+        $('#btnReset').click(function () {
+            $("#selectProject").val("0");
+            $('#datepickerDateBefore').val("");
+            $("#spnProjectNameErrorMessage").html("");
+            $("#spnDateErrorMessage").html("");
+        });
+
+        $("#cbAll").change(function () {
+            if (this.checked) {
+                $("#tblTestSuit > tbody > tr").find('input[type="checkbox"]').each(function () {
+                    $(this).prop('checked', true);
+                });
+            } else {
+                $("#tblTestSuit > tbody > tr").find('input[type="checkbox"]').each(function () {
+                    $(this).prop('checked', false);
+                });
+            }
+        });
+
+        $("#txtDeleteIndividualTestSuitConf").click(function () {
+            //check is any row selected
+            isAnyRowSelected = false;
+            $('#tblTestSuit > tbody  > tr').find('input[type="checkbox"]').each(function () {
+                if ($(this).is(":checked") === true) {
+                    isAnyRowSelected = true;
+                }
+            });
+
+            if (isAnyRowSelected) {
+                if (confirm("\nPlease confirm! \n\nDo you really want to delete selected Testsuit(s).\n\nOnce record will delete, can not revert back.")) {
+                    var tsids = [];
+                    $('#tblTestSuit tbody tr').each(function () {
+                        var trowid = this.id;
+                        if ($("#" + trowid).find('input[type="checkbox"]').is(":checked")) {
+                            tsid = trowid.replace('trow_', '');
+                            tsids.push(tsid);
+                        }
+                    });
+                    var datatosenddelRow = JSON.stringify({ "TestSuitIDArr": tsids });
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("DeleteTestsuitsByIds", "AdminTool")',
+                        async: true,
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: 'json',
+                        data: datatosenddelRow,
+                        beforeSend: function () {
+                            document.getElementById("blockBack").style.display = '';
+                            document.getElementById("divmiddle").style.display = '';
+                        },
+                        complete: function () {
+                            document.getElementById("blockBack").style.display = 'none';
+                            document.getElementById("divmiddle").style.display = 'none';
+                        },
+                        error: function () {
+                        },
+                        success: function (response) {
+                            $.each(tsids, function (index, value) {
+                                $("#trow_" + value).remove();
+                            });
+                            ShowMessage(response.type, response.text);
+                        }
+                    });
+                }
+                else { }
+            }
+            else {
+                alert("You have not selected any Testsuit row.");
+            }
+        });
+    });
+
+    function DeleteEachRowInTbody() {
+        //Clear each row from table
+        $('#tblTestSuit > tbody  > tr').each(function () {
+            $(this).remove();
+        });
+    }
+
+    function AddTestSuitDataRow(resultToBind) {
+        var crow = "";
+        $.each(resultToBind, function () {
+            var rowstart = "<tr id='trow_" + this.ID + "'>";
+            var colcheckbox = "<td><input type='checkbox' name='tsuitbrowcb' class='trcbrow' id='tbcbrow_" + this.ID + "' onclick='tsuitrbrowcb()' /></td>";
+            var coltsname = "<td>" + this.TestsuitName + "</td>";
+            var coltsstart = "<td>" + this.StartTime + "</td>";
+            var coltstotalpassed = "<td>" + this.TotalFailedTestcase + "</td>";
+            var coltotalfailed = "<td>" + this.TotalPassedTestcase + "</td>";
+            var coltcyclename = "<td>" + this.TestcycleName + "</td>";
+            var coltsclientip = "<td>" + this.clientIP + "</td>";
+            var coltsenvironment = "<td>" + this.ClientEnvironment + "</td>";
+            var coltsuser = "<td>" + this.clientUser + "</td>";
+            var rowend = "</tr>";
+            var row = rowstart + colcheckbox + coltsname + coltsstart + coltstotalpassed + coltotalfailed + coltcyclename + coltsclientip + coltsenvironment + coltsuser + rowend;
+            crow = crow + row;
+        });
+        $("#tblTestSuit tbody").append(crow);
+    }
+
+    function AddRowWithDefaultMessage(messageDisplay) {
+        var markup = "<tr><td colspan='9'>" + messageDisplay + "</td></tr>";
+        $("#tblTestSuit tbody").append(markup);
+    }
+
+    function tsuitrbrowcb() {
+        eachrowcheckedabc = true;
+        $('#tblTestSuit > tbody  > tr').find('input[type="checkbox"]').each(function () {
+            if ($(this).is(":checked") === false) {
+                eachrowcheckedabc = false;
+            }
+        });
+        if (eachrowcheckedabc) {
+            $("#cbAll").prop('checked', true);
+        }
+        else {
+            $("#cbAll").prop('checked', false);
+        }
+    }
+
+</script>
+

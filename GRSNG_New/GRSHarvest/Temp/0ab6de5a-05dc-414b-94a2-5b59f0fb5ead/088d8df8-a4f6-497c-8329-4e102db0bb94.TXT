@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.conference.v2.soap.CommonExportRecordInput xmlns:ns2="local"><format>PDF</format><id>455001</id></ns2:com.thomsonreuters.ls.service.contract.conference.v2.soap.CommonExportRecordInput>

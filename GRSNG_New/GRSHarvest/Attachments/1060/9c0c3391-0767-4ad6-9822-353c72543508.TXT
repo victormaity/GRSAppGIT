@@ -1,0 +1,1 @@
+Action,ActionId,AuthorityGroup,Company,CompanyId,CompanyOwnershipRelationship,Country,CountryId,Drug,DrugId,DrugRelationship,EntityType,HighestPatStatus,HighestPatStatusForCnty,HighestPatStatusId,HighestPatStatusIdForCnty,Indication,IndicationId,LatestChange,ParentCompany,ParentCompanyId,Patent,PatentId,Status,StatusDate,StatusId,StatusSortCode,TherapyArea,TherapyAreaId

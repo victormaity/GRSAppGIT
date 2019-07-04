@@ -1,0 +1,26 @@
+<request xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.getReferences">
+    <list>
+      <val name="QueryID">1</val>
+      <map name="RetrieveParameters">
+        <val name="FirstRecord">1</val>
+        <val name="Count">5</val>
+        <list name="Fields">
+          <map>
+            <val name="Language">en</val>
+            <val name="Name">PY</val>
+            <val name="Sort">D</val>
+          </map>
+        </list>
+        <map name="Options">
+          <val name="View">Fields</val>
+        </map>
+        <list name="CollectionFields">
+          <map name="WOS">
+            <val name="CollectionName">WOS</val>
+          </map>
+        </list>
+      </map>
+    </list>
+  </fn>
+</request>

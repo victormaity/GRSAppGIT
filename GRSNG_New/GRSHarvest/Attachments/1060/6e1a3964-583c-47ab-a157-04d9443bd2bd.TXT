@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=trialId%3A78401&hits=20&offset=0&filtersEnabled=0&queryLanguage=ssql

@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Create New User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model GlobalReportingSystem.Core.Models.GRS.AdminToolCreateNewUserModel
+<div class="page-header">
+    <h1>Admin Tool
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Create New User
+        </small>
+    </h1>
+</div>
+
+@using (Html.BeginForm("CreateNewUser", "AdminTool", FormMethod.Post))
+{
+    <div>
+    @{
+        if(ViewBag.CanShow == true)
+        {
+            <table style="width: 100%; border-collapse: separate; border-spacing: 8px;">
+                <tr>
+                                <td style="width: 150px!important;">Username&nbsp;<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                                <td style="width: 250px!important;">@Html.TextBoxFor(model => model.UserName, new { id = "txtUserName", @class="textboxstyle" })</td>
+                                <td>@Html.ValidationMessageFor(model => model.UserName, "", new {@class="validationColor"})</td>
+                            </tr>
+                <tr>
+                                <td style="width: 150px!important;">User Full Name&nbsp;<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                                <td style="width: 250px!important;">@Html.TextBoxFor(model => model.UserFullName, new { id = "txtUserFullName", @class="textboxstyle" })</td>
+                                <td>@Html.ValidationMessageFor(model => model.UserFullName, "", new { @class="validationColor" })</td>
+                            </tr>
+                <tr>
+                                <td style="width: 150px!important;">Email Address&nbsp;<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                                <td style="width: 250px!important;">@Html.TextBoxFor(model => model.UserEmail, new { id = "txtUserEmail", @class="textboxstyle" })</td>
+                                <td>@Html.ValidationMessageFor(model => model.UserEmail, "", new {@class="validationColor"})</td>
+                            </tr>
+                <tr>
+                                <td style="width: 150px!important;">User Admin&nbsp;<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                                <td style="width: 250px!important;">
+                                    <div class="editor-field">
+                                        @Html.RadioButtonFor(model => model.IsAdmin, true ) Yes&nbsp;&nbsp;
+                                        @Html.RadioButtonFor(model => model.IsAdmin, false, new { @checked = true } ) No
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                <tr>
+                                <td style="width: 150px!important;">User Global Admin&nbsp;<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                                <td style="width: 250px!important;">
+                                    <div class="editor-field">
+                                        @Html.RadioButtonFor(model => model.IsGlobalAdmin, true ) Yes&nbsp;&nbsp;
+                                        @Html.RadioButtonFor(model => model.IsGlobalAdmin, false, new { @checked = true } ) No
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                <tr>
+                    <td style="width: 150px!important;">Project Name&nbsp;<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                    <td style="width: 250px!important;">@Html.DropDownListFor(model => model.ProjectID, new SelectList(Model.ProjectLists, "Value", "Text", Model.ProjectID))</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" class="btn btn-sm btn-success">Submit</button></td>
+                </tr>
+            </table>
+        }
+        else
+        {
+            <div style="height: auto; padding: 15px!important; background-color: #E6E6E6; font-size: 14px; color: #DC143C; font-weight: 600; text-align: center">
+                            You are not authorized to visit this page.
+                        </div>
+        }
+    }
+    </div>
+}
+
+<script>
+    $(document).ready(function () {
+        var ismessage = "@ViewBag.Message";
+        if (ismessage != null && ismessage != "") {
+            ShowMessage("Message", "@ViewBag.Message");
+        }
+
+    });
+</script>
+
+<style type="text/css">
+    .textboxstyle {
+        width: 230px!important;
+    }
+
+    .validationColor {
+        color: red;
+    }
+</style>

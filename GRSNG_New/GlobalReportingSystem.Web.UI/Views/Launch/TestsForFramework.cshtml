@@ -1,0 +1,42 @@
+﻿@using System.EnterpriseServices
+@using System.Web.Services.Protocols
+@model GlobalReportingSystem.Core.Models.GRS.NodesAndId
+@{
+  
+}
+
+@if (Model != null)
+{
+    <div class="css-treeview">
+        <ul>
+            <li>
+                <input type="checkbox" />
+
+
+                <label path="@Model.Node.Value" chosen="0" onclick=" setDraggable($(this));$('.btn.btn-success.btn-sm.btn-next').removeAttr('disabled'); " class="draggableTest" otype="test" oid="@Model.id.ToString()">@Model.Node.Value</label>
+                @if (Model.Node.Children.Count > 0)
+                {
+                    <ul>
+                        @foreach (var n in Model.Node.Children)
+                        {
+                            var name = Model.Node.Value + "__" + n.Value;
+                            string ret = n.Value;
+                            if (n.Value.Length > 30)
+                            {
+                                ret = n.Value.Substring(0, 27) + "...";
+                            }
+                            <li id="@name">
+                                <input type="checkbox" onchange="downloadChildren(@Model.id, '@name', '@Url.Action("DownloadChildren")');"/>
+                                <label path="@(Model.Node.Value)__@(n.Value)" class="draggableTest"
+                                           title="@(n.Value)" otype="test" chosen="0" onclick="setDraggable($(this));$('.btn.btn-success.btn-sm.btn-next').removeAttr('disabled');"
+                                           oid="id.ToString(CultureInfo.InvariantCulture)">
+                                    @ret
+                                </label>
+                            </li>
+                        }
+                    </ul>
+                }
+            </li>
+        </ul>
+    </div>
+}

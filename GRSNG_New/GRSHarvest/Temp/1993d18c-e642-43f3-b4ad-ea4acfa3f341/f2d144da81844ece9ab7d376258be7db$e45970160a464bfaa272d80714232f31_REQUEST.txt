@@ -1,0 +1,52 @@
+<request xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.runQuery">
+    <list>
+      <map name="QueryParameters">
+        <val name="DatabaseID">CCC</val>
+        <val name="UserQuery">TS=(Kiev)</val>
+        <map name="TimeSpan">
+          <val name="Begin">1993-01-01</val>
+          <val name="End">2009-12-31</val>
+          <null name="ApplyTo" />
+          <null name="SymbolicDate" />
+        </map>
+        <val name="EventQueryType">no</val>
+        <val name="QueryLanguage">en</val>
+      </map>
+      <map name="RetrieveParameters">
+        <val name="FirstRecord">1</val>
+        <val name="Count">1</val>
+        <list name="Fields">
+          <map>
+            <val name="Name">PY</val>
+            <val name="Sort">D</val>
+          </map>
+        </list>
+        <null name="Collection" />
+        <map name="Options">
+          <val name="View">Fields</val>
+          <val name="HighLight">Off</val>
+          <val name="RecordIDs">Off</val>
+        </map>
+        <list name="CollectionFields">
+          <map name="CCC">
+            <val name="CollectionName">CCC</val>
+          </map>
+        </list>
+        <list name="AnalyzeParameters">
+          <map>
+            <val name="ReturnTotalCount">1</val>
+            <val name="CountNoData">0</val>
+            <map name="Field">
+              <val name="Name">AU</val>
+              <val name="Threshold">1</val>
+              <val name="MaxRows">30</val>
+              <val name="SortType">Field</val>
+              <val name="Sort">A</val>
+            </map>
+          </map>
+        </list>
+      </map>
+    </list>
+  </fn>
+</request>

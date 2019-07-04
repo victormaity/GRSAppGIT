@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.personalizationpages.SubscribedDatabasesPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.iVerifyOnlyOneDatabaseSelectionDropdownIsDisplayed(BasicSearchPage_Steps.java:1217);
+✽.Then I verify only one database selection dropdown is displayed(com.clarivateanalytics.wos.gui.cucumber.deployment/CCIssues.feature:915)

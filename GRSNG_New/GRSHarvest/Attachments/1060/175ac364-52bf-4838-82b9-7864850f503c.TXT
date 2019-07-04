@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/drugs-v2/drug/sources?idList=101468%2C101483%2C101584%2C405414%2C101890%2C101892%2C101894%2C101895%2C101897%2C404438

@@ -1,0 +1,5 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.AdvancedSearchPage.clickRecordsSetByNumber(AdvancedSearchPage.java:550);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.AdvancedSearchPage_Steps.I_access_page_for_set(AdvancedSearchPage_Steps.java:206);
+✽.And I access page "Results summary" for set "1"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.26_Stories.feature:246)

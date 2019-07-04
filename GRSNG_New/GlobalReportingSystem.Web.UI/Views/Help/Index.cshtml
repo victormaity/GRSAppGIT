@@ -1,0 +1,808 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <h1>Help</h1>
+</div>
+<div class="tabbable">
+    <ul class="nav nav-tabs padding-18 tab-size-bigger" id="myTab">
+
+        <li class="active">
+            <a data-toggle="tab" href="#faq-tab-3">
+                <i class="orange ace-icon fa fa-credit-card bigger-120"></i>
+                General Info
+            </a>
+        </li>
+
+        <li>
+            <a data-toggle="tab" href="#faq-tab-2">
+                <i class="blue ace-icon fa fa-terminal bigger-120"></i>
+                Linear Execution
+            </a>
+        </li>
+
+        <li>
+            <a data-toggle="tab" href="#faq-tab-4">
+                <i class="blue ace-icon fa fa-terminal bigger-120"></i>
+                Load Balanced Execution
+            </a>
+        </li>
+
+        <li>
+            <a data-toggle="tab" href="#faq-tab-1">
+                <i class="blue ace-icon fa fa-terminal bigger-120"></i>
+                Java GAgent Installation
+            </a>
+        </li>
+    </ul>
+
+    <div class="tab-content no-border padding-24">
+        <div id="faq-tab-3" class="tab-pane fade in active">
+            <h4 class="blue">
+                <i class="orange ace-icon fa fa-credit-card bigger-110"></i>
+                Global Reporting System Info
+            </h4>
+
+
+            <div class="space-8"></div>
+
+            <div id="faq-list-3" class="panel-group accordion-style1 accordion-style2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-3-1" data-parent="#faq-list-3" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-plus smaller-80" data-icon-hide="ace-icon fa fa-minus" data-icon-show="ace-icon fa fa-plus"></i>&nbsp;
+                            1. Sign in
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-3-1">
+                        <div class="panel-body">
+                            Each GRS user has default credentials (user/password) used to perform authentication. Each account has a set of project subscriptions. After signing in, the user will be prompted to select a project from the list of projects to which he is subscribed.
+                        </div>
+
+                        <div>
+                            <div class="panel-body">
+                                <img src="Content/img/login_page.png" class="img-responsive" />
+                                (Login page)
+                            </div>
+                            <div class="panel-body">
+                                <img src="Content/img/select_project.png" class="img-responsive" />
+                                (Project selection section)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-3-2" data-parent="#faq-list-3" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-plus smaller-80" data-icon-hide="ace-icon fa fa-minus" data-icon-show="ace-icon fa fa-plus"></i>&nbsp;
+                            2. Dashboard
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-3-2">
+                        <div class="panel-body">
+                            After the project selection, the user will be redirected to the Dashboard, where she/he can observe latest test results deliveries, execute new test set, change project settings or choose a test cycle and perform the analysis of the results.
+                        </div>
+
+                        <div>
+                            <div class="panel-body">
+                                <img src="Content/img/dashboard.png" class="img-responsive" />
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            The Dashboard has 5 main areas:
+
+                            1.	<b>Dashboard</b> – main page
+
+                            2.	<b>Cycles</b> – List of available cycles for current project.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/cycles.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            How to create new cycles will be described in section “Test cycles“ in “Configuration” tab.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-3-3" data-parent="#faq-list-3" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-plus smaller-80" data-icon-hide="ace-icon fa fa-minus" data-icon-show="ace-icon fa fa-plus"></i>&nbsp;
+                            3.	Configuration
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-3-3">
+                        <div class="panel-body">
+                            <b>Configuration</b> – project configuration tab.
+
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/configuration.png" class="img-responsive" />
+                                </div>
+                            </div>
+
+                            3.1 <b>Test Cycles management tab.</b>
+                            When a brand new project is created in GRS, it does not have any test cycles and all results will be stored in the “Not Defined” test cycle. In order to create our Test Cycle, we need to go to the Configuration -> Test Cycles functionality, click the “+” button and fill in all the fields:
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/cycles_management.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/cycles_management_2.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/cycles_management_3.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            On this page, the user will see all available test cycles created from the beginning. Each Test Cycle has Name, Start Date(Started column), End Date(Finished  column), Comments, Active, Enabled and Action columns. ‘Active’ indicates which test cycle is active at the moment and all results delivered to the server will be placed into this test cycle.
+                            <b>NOTE:</b> only one Test Cycle can be active at the same time.
+                            3.2	<b>Project</b> – this submenu required for detailed project adjustment. Usually used by project admins.
+                            3.3	<b>Admin tool</b> – this submenu available only for project admins or global admins.
+                            3.4	<b>Execution</b>  - Execution management tab. Please see detailed information in HOW TO EXECUTE TEST CASES section below.
+
+                            3.4.1 <b>Machines</b> – this element contains the list of all and assigned to current project VMs.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/machines.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            If you need to release VM from current project click -
+                            <img src="Content/img/flag.png" class="img-responsive" />
+                            , if you need to assign VM to current project click
+                            <img src="Content/img/child.png" class="img-responsive" />
+
+                            3.4.2 <b>Accounts</b> - This section contains accounts (combination of user/password) which be used for tests execution.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/account.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            To create new account click (+) icon.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/account_2.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            Fill this fields. Click Add and it will be available in accounts list.
+                            
+                            3.4.3  <b>Environments</b>
+                            This section contains parameters for the application URL and the host file contents (Windows\System32\drivers\etc\hosts). For instance, if your application has several instances (stages): qa, dev, production, live and you need to run your tests against those instances – you need to create one widget per application’s instance and use it while configuring test executions.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/environment.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            To create new instance click (+) icon, fill this fields, click Add and it will be available in hosts list.
+                            
+                            3.4.4 <b>Frameworks</b>
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/framework.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            This section contains a set of widgets that represent archives with test cases to be executed on the target machine. Users can upload them by dragging and dropping zip files to the Files Area:
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/framework_upload.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            After successful uploading, the current page will be reloaded and the new framework will appear in the Frameworks list:
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/framework_2.png" class="img-responsive" />
+                                </div>
+                            </div>
+
+                            3.4.5 <b>Configurations</b>
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/execution_configuration.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            If any particular framework requires any additional files with configurations within the same directory with tests, this functionality can be used for creation of them.
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-3-4" data-parent="#faq-list-3" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-plus smaller-80" data-icon-hide="ace-icon fa fa-minus" data-icon-show="ace-icon fa fa-plus"></i>&nbsp;
+                            4. Reporting
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-3-4">
+                        <div class="panel-body">
+                            <b>Reporting</b> – Reporting section. This ability provide to generate reports from target test cycle. 
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/reporting.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/reporting_2.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="#faq-3-5" data-parent="#faq-list-3" data-toggle="collapse" class="accordion-toggle collapsed">
+                                <i class="ace-icon fa fa-plus smaller-80" data-icon-hide="ace-icon fa fa-minus" data-icon-show="ace-icon fa fa-plus"></i>&nbsp;
+                                5. Execution
+                            </a>
+                        </div>
+
+                        <div class="panel-collapse collapse" id="faq-3-5">
+                            <div class="panel-body">
+                                <img src="Content/img/execution.png" class="img-responsive" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq-tab-2" class="tab-pane fade">
+            <h4 class="blue">
+                <i class="green ace-icon fa fa-question-circle bigger-110"></i>
+                Test Cases execution based on Linear execution
+            </h4>
+
+            <div class="space-8"></div>
+
+            <div id="faq-list-2" class="panel-group accordion-style1 accordion-style2">
+                                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-2-1" data-parent="#faq-list-2" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+						Preparation
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-2-1">
+                        <div class="panel-body">
+                            On Configuration -> Project -> Settings -> SVN tab press 'UpdateTests' button
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/update_tests.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-2-2" data-parent="#faq-list-2" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+                            Tests Execution
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-2-2">
+                        <div class="panel-body">
+                            This is one of the key features of GRS. It allows the user to run tests from any host or virtual machine using the web page interface. Click “Execution->Linear” in the main menu in order to open the execution module:
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/linear_execution.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            You can create new test set or execute existing. To create new one click (+) icon and select framework from the proposed list. New test set will be added in the end of test sets list. Now we have to fill all required cells in particular test case.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/linear_execution_2.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            To add parameters you have to click on particular cell and all available options will appear in dropdown list.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/linear_execution_3.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            <b>NOTE:</b> You have to fill all mandatory cells - (Machine, Tests, Browser(GUI tests only) , Environment, Account )
+                            To add tests you should click
+                            <img src="Content/img/linear_execution_4.png" class="img-responsive" />
+                            and choose Add Tests  in drop down menu
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/linear_execution_5.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            Then tree with available for this framework (chosen earlier) will appear. Select required and click ADD.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/linear_execution_6.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            Now test case scheduling  is finished. 
+                            To execute this test set click 
+                            <img src="Content/img/linear_execution_4.png" class="img-responsive" />
+                            and then
+                            <img src="Content/img/linear_execution_7.png" class="img-responsive" />
+                            .
+
+                            Congratulations 
+                            <img src="Content/img/linear_execution_8.png" class="img-responsive" />
+                            To confirm that execution started successfully, please go on selected VM, NUnit console should be opened. 
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/linear_execution_9.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq-tab-4" class="tab-pane fade">
+            <h4 class="blue">
+                <i class="green ace-icon fa fa-question-circle bigger-110"></i>
+                Test Cases execution based on Load Balanced execution
+            </h4>
+
+            <div class="space-8"></div>
+
+            <div id="faq-list-4" class="panel-group accordion-style1 accordion-style2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-4-1" data-parent="#faq-list-4" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+                            1.	Project selection
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-4-1">
+                        <div class="panel-body">
+                            In top-right corner click on Welcome drop-down and choose “Change Project” option
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            Select project and press “Proceed ->” button.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_2.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-4-2" data-parent="#faq-list-4" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+                            2.	Project update
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-4-2">
+                        <div class="panel-body">
+                            Select “Configuration -> Settings” then select SVN tab. Then press Update Tests button. After that press “Submit” button.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_3.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-4-3" data-parent="#faq-list-4" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+                            3.	Test cycle creation
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-4-3">
+                        <div class="panel-body">
+                            Select “Configuration -> Test Cycles” then press “+” button to add test cycle.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_4.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            In new window enter the cycle name and change the end date. Then press “ADD” button.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_5.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-4-4" data-parent="#faq-list-4" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+                            4.	Test cycle activation
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-4-4">
+                        <div class="panel-body">
+                            Find your test cycle in list and select “Activate action” (“v” in column “Actions”).
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_6.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            After activation the appropriate symbol should be displayed in “Active” column.
+BEFORE ACTIVATION PLEASE ENSURE THAT CURRENT TEST CYCLE IS FINISHED. BY ACTIVATION OF NEW CYCLE THE PREVIOUS CYCLE WILL BE STOPPED.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_7.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-4-5" data-parent="#faq-list-4" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+                            5.	Create new execution
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-4-5">
+                        <div class="panel-body">
+                            Select “Execution -> New -> Load Balanced”. Than press “+” button to add new execution.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_8.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            After that press “Load Balanced” again to reload page and display new execution
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_9.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-4-6" data-parent="#faq-list-4" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+                            6.	Machines settings
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-4-6">
+                        <div class="panel-body">
+                            Add Machines to your execution by clicking “+” button.
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_10.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            Select IP for each of machines from currently available by clicking on
+                            <img src="Content/img/load_balanced_11.png" class="img-responsive" />
+                            button:
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_12.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            In case of missing required IP in the list please check if this machine is added to project.
+Each machine should be configured by (click on each link on machine):
+-	Environment (QA1 / QA2 / Staging)
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_13.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            -	Account ()
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_14.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            -	Browser (FF)
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_15.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            Perform PING to selected machines by clicking on LING icon. All machines should be green colored in case of successful:
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_16.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-4-7" data-parent="#faq-list-4" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+                            7.	Test selection
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-4-7">
+                        <div class="panel-body">
+                            Press  “+” to open test selection dialog:
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_17.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            Select “All_Features” or separate features by expanding tree and clicking on appropriate items:
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_18.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            Then press ADD button
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_19.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            Select “Select All” and then “Reset Selected” in drop-down of selected tests list 
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_20.png" class="img-responsive" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_21.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-4-8" data-parent="#faq-list-4" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-right smaller-80" data-icon-hide="ace-icon fa fa-chevron-down align-top" data-icon-show="ace-icon fa fa-chevron-right"></i>&nbsp;
+                            8.	Test cycle start
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-4-8">
+                        <div class="panel-body">
+                            Start test execution by pressing START button:
+                            <div>
+                                <div class="panel-body">
+                                    <img src="Content/img/load_balanced_21.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq-tab-1" class="tab-pane fade">
+            <h4 class="blue">
+                <i class="ace-icon fa fa-check bigger-110"></i>
+                Guide
+            </h4>
+
+            <div class="space-8"></div>
+
+            <div id="faq-list-1" class="panel-group accordion-style2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-parent="#faq-list-1" data-toggle="modal">
+                            &nbsp;1. Install Java
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-parent="#faq-list-1" data-toggle="modal">
+                            &nbsp;2. Install Maven
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-parent="#faq-list-1" data-toggle="modal">
+                            &nbsp;3. If proxy on image is required then in ‘...\apache-maven\conf\settings.xml’ edit proxy section with appropriate data.
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="panel-body">
+                            <img src="Content/img/maven_proxy.png" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-parent="#faq-list-1" data-toggle="modal">
+                            &nbsp;4. Install TortoiseSVN with following extensions:
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="panel-body">
+                            <img src="Content/img/tortoise_install.png" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-parent="#faq-list-1" data-toggle="modal">
+                            &nbsp;5. Copy <a href="https://nuget.codeplex.com/downloads/get/222685" target="_blank">nuget.exe</a> to C:\Windows folder
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-parent="#faq-list-1" data-toggle="modal">
+                            &nbsp;6. Put in Environment Variables paths to: nunit, maven, java, svn.exe, msbuild.exe (approx path C:\Windows\Microsoft.NET\Framework64\v4.0.30319)
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="panel-body">
+                            <img src="Content/img/computer_properties.png" class="img-responsive" />&nbsp;
+                            <img src="Content/img/advanced_system_settings.png" class="img-responsive" />&nbsp;
+                            <img src="Content/img/System_Properties.png" class="img-responsive" />&nbsp;
+                            <img src="Content/img/environment_variables.png" class="img-responsive" />&nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-parent="#faq-list-1" data-toggle="modal">
+                            &nbsp;7. Create folder ‘grs-agent’ by path ‘C:\Program Files’
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-parent="#faq-list-1" data-toggle="modal">
+                            &nbsp;8. Check out project from <a href="http://sourcecontrol.int.thomsonreuters.com:8091/svn/qa_automation/grs-agent" target="_blank">here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-parent="#faq-list-1" data-toggle="modal">
+                            &nbsp;9. Add to Windows ->  Startup shortcut for ‘C:\Program Files\grs-agent\start.bat’
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-1-2" data-parent="#faq-list-1" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-left pull-right" data-icon-hide="ace-icon fa fa-chevron-down" data-icon-show="ace-icon fa fa-chevron-left"></i>
+
+                            <i class="ace-icon fa fa-sort-amount-desc"></i>
+                            &nbsp; Can I have nested questions?
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-1-2">
+                        <div class="panel-body">
+                            <div id="faq-list-nested-1" class="panel-group accordion-style1 accordion-style2">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a href="#faq-list-1-sub-1" data-parent="#faq-list-nested-1" data-toggle="collapse" class="accordion-toggle collapsed">
+                                            <i class="ace-icon fa fa-plus smaller-80 middle" data-icon-hide="ace-icon fa fa-minus" data-icon-show="ace-icon fa fa-plus"></i>&nbsp;
+									   Enim eiusmod high life accusamus terry?
+                                        </a>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="faq-list-1-sub-1">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a href="#faq-list-1-sub-2" data-parent="#faq-list-nested-1" data-toggle="collapse" class="accordion-toggle collapsed">
+                                            <i class="ace-icon fa fa-plus smaller-80 middle" data-icon-hide="ace-icon fa fa-minus" data-icon-show="ace-icon fa fa-plus"></i>&nbsp;
+									  Food truck quinoa nesciunt laborum eiusmod?
+                                        </a>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="faq-list-1-sub-2">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a href="#faq-list-1-sub-3" data-parent="#faq-list-nested-1" data-toggle="collapse" class="accordion-toggle collapsed">
+                                            <i class="ace-icon fa fa-plus smaller-80 middle" data-icon-hide="ace-icon fa fa-minus" data-icon-show="ace-icon fa fa-plus"></i>&nbsp;
+									  Cupidatat skateboard dolor brunch?
+                                        </a>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="faq-list-1-sub-3">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-1-3" data-parent="#faq-list-1" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-left pull-right" data-icon-hide="ace-icon fa fa-chevron-down" data-icon-show="ace-icon fa fa-chevron-left"></i>
+
+                            <i class="ace-icon fa fa-credit-card bigger-130"></i>
+                            &nbsp; Single-origin coffee nulla assumenda shoreditch et?
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-1-3">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-1-4" data-parent="#faq-list-1" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-left pull-right" data-icon-hide="ace-icon fa fa-chevron-down" data-icon-show="ace-icon fa fa-chevron-left"></i>
+
+                            <i class="ace-icon fa fa-files-o bigger-130"></i>
+                            &nbsp; Sunt aliqua put a bird on it squid?
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-1-4">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#faq-1-5" data-parent="#faq-list-1" data-toggle="collapse" class="accordion-toggle collapsed">
+                            <i class="ace-icon fa fa-chevron-left pull-right" data-icon-hide="ace-icon fa fa-chevron-down" data-icon-show="ace-icon fa fa-chevron-left"></i>
+
+                            <i class="ace-icon fa fa-cog bigger-130"></i>
+                            &nbsp; Brunch 3 wolf moon tempor sunt aliqua put?
+                        </a>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq-1-5">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</div>

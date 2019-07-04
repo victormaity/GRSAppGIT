@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities
+END
+ResourceDescriptorEntity.cs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/ResourceDescriptorEntity.cs.cs
+END
+ProjectEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/ProjectEntity.cs
+END
+Field.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/Field.cs
+END
+RunStepEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/RunStepEntity.cs
+END
+Fields.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/Fields.cs
+END
+TestEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/TestEntity.cs
+END
+TestEntities.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/TestEntities.cs
+END
+TestSetEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/TestSetEntity.cs
+END
+TestSetEntities.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/TestSetEntities.cs
+END
+RunEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/RunEntity.cs
+END
+DesignStepEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/DesignStepEntity.cs
+END
+RunEntities.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/RunEntities.cs
+END
+TestPlanFolderEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/TestPlanFolderEntity.cs
+END
+TestLabFolderEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/TestLabFolderEntity.cs
+END
+DesignStepEntities.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/DesignStepEntities.cs
+END
+TestInstanceEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/TestInstanceEntity.cs
+END
+FoldersSearchResults.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/FoldersSearchResults.cs
+END
+TestInstanceEntities.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/TestInstanceEntities.cs
+END
+DomainEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/DomainEntity.cs
+END
+VersionParametersEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/VersionParametersEntity.cs
+END
+Entities.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/Entities.cs
+END
+LockStatusEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Entities/XmlEntities/LockStatusEntity.cs
+END

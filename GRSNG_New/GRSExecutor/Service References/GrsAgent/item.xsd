@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://webserver.agent.grs.thomsonreuters.com/" targetNamespace="http://webserver.agent.grs.thomsonreuters.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Exception" type="tns:Exception" />
+  <xs:element name="executeCustomCommand" type="tns:executeCustomCommand" />
+  <xs:element name="executeCustomCommandResponse" type="tns:executeCustomCommandResponse" />
+  <xs:element name="getLastReportIdsLb" type="tns:getLastReportIdsLb" />
+  <xs:element name="getLastReportIdsLbResponse" type="tns:getLastReportIdsLbResponse" />
+  <xs:element name="getVersion" type="tns:getVersion" />
+  <xs:element name="getVersionResponse" type="tns:getVersionResponse" />
+  <xs:element name="ping" type="tns:ping" />
+  <xs:element name="pingResponse" type="tns:pingResponse" />
+  <xs:element name="removeLastReports" type="tns:removeLastReports" />
+  <xs:element name="removeLastReportsResponse" type="tns:removeLastReportsResponse" />
+  <xs:element name="startLinear" type="tns:startLinear" />
+  <xs:element name="startLinearResponse" type="tns:startLinearResponse" />
+  <xs:element name="startLoadbalanced" type="tns:startLoadbalanced" />
+  <xs:element name="startLoadbalancedResponse" type="tns:startLoadbalancedResponse" />
+  <xs:element name="stop" type="tns:stop" />
+  <xs:element name="stopResponse" type="tns:stopResponse" />
+  <xs:complexType name="startLoadbalanced">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="startLoadbalancedResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="removeLastReports">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="removeLastReportsResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLastReportIdsLb">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+      <xs:element name="arg1" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLastReportIdsLbResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getVersion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getVersionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="executeCustomCommand">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="command" type="xs:string" />
+      <xs:element minOccurs="0" name="params" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="executeCustomCommandResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="startLinear">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="startLinearResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="stop">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="stopResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="ping">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="pingResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

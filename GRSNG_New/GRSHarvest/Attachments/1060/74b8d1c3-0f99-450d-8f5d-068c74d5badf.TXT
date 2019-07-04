@@ -1,0 +1,1 @@
+{"ontologySynonymResultOutput":{"Entities":{"Entity":[{"@type":"Indication","@id":"3","@name":"Acne","Synonyms":""},{"@type":"Indication","@id":"1","@name":"Measles virus infection","Synonyms":{"Synonym":{"@ddapi":"yes","@idapi":"yes","@omics":"no","$":"Measles"}}}]}}}

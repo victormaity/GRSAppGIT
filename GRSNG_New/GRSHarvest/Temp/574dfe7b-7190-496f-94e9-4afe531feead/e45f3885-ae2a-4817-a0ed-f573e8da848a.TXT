@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.BrowseJournalsPage_Steps.iClickOnOnBrowseJournalsPage(BrowseJournalsPage_Steps.java:107);
+✽.And I click on "Tables of Contents of Journals" on BrowseJournals page(com.clarivateanalytics.wos.gui.cucumber.deployment/TableofContents.feature:149)

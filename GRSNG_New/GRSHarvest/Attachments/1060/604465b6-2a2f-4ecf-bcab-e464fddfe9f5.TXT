@@ -1,0 +1,1 @@
+          SELECT *         FROM         (SELECT DISTINCT ee.ete_event_id         FROM event_transcripts.et_events ee         JOIN event_transcripts.et_event_drugs eed         ON ee.ETE_EVENT_ID             =eed.ETED_EVENT_ID         WHERE eted_is_multiuse_synonym = 'N'         ORDER BY dbms_random.value         )         WHERE rownum <3     

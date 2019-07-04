@@ -1,0 +1,1 @@
+          Select * from (select source_id from CI_PUBLIC.jp_source_pr order by dbms_random.value)         WHERE rownum<2     

@@ -1,0 +1,11 @@
+Tech info:
+Exception cause: java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null. 
+ org.openqa.selenium.By.xpath(By.java:113);
+com.clarivateAnalytics.cortellis.pages.localization.LocalizationBasePage.getWebElementBasedOnLocatorType(LocalizationBasePage.java:63);
+com.clarivateAnalytics.cortellis.pages.localization.LocalizationBasePage.profileButton(LocalizationBasePage.java:135);
+com.clarivateAnalytics.cortellis.pages.localization.LocalizationBasePage$$FastClassBySpringCGLIB$$5bafc8d1.invoke(<generated>);
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204);
+org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:649);
+com.clarivateAnalytics.cortellis.pages.localization.LocalizationBasePage$$EnhancerBySpringCGLIB$$60f99eb0.profileButton(<generated>);
+com.clarivateAnalytics.cortellis.LocalizationStepDefinitions.ProfilePage.MyAccountStepDefinitions.i_click_the_profile_and_select_the_Dropdown(MyAccountStepDefinitions.java:33);
+✽.And I click the profile  and select the "MyAccount" Dropdown(Localization/ProfilePage/MyAccount.feature:9)

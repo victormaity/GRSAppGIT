@@ -1,0 +1,2477 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ExecutionTestSuiteModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsJava>true</IsJava>
+  <ExecutionTestSuites>
+    <ExecutionTestSuite>
+      <Name>debug</Name>
+      <Categories />
+      <Tests>
+        <string>explore_people_0055</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>All_Features_Old</Name>
+      <Categories />
+      <Tests>
+        <string>Service_scripts</string>
+        <string>Service_scripts_cleaning</string>
+        <string>Feature_DashboardClean</string>
+        <string>clean_dashboard_page_0001</string>
+        <string>clean_dashboard_page_0002</string>
+        <string>clean_dashboard_page_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_2LDD</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Close</string>
+        <string>2LDD_close_2LDD_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_2LDD</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_DisplayMoreItems</string>
+        <string>2LDD_display_more_items_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_2LDD</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_NavigationIn</string>
+        <string>2LDD_navigation_in_2LDD_0001</string>
+        <string>2LDD_navigation_in_2LDD_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_2LDD</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_NavigationTo</string>
+        <string>2LDD_navigation_to_2LDD_0001</string>
+        <string>2LDD_navigation_to_2LDD_0002</string>
+        <string>2LDD_navigation_to_2LDD_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_2LDD</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_NavigationToWoS</string>
+        <string>2LDD_navigation_to_WoS_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_2LDD</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Sorting</string>
+        <string>2LDD_sorting_2LDD_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Benchmarks</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_BaselineForOrganizations</string>
+        <string>baseline_for_organizations_0001</string>
+        <string>baseline_for_organizations_0002</string>
+        <string>baseline_for_organizations_0003</string>
+        <string>baseline_for_organizations_0004</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Benchmarks</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_BaselineForPeople</string>
+        <string>baseline_for_people_0001</string>
+        <string>baseline_for_people_0002</string>
+        <string>baseline_for_people_0003</string>
+        <string>baseline_for_people_0004</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Benchmarks</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_BaselineForRegions</string>
+        <string>baseline_for_regions_0001</string>
+        <string>baseline_for_regions_0002</string>
+        <string>baseline_for_regions_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Benchmarks</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_BaselineForResearchAreas</string>
+        <string>baseline_for_research_areas_0001</string>
+        <string>baseline_for_research_areas_0002</string>
+        <string>baseline_for_research_areas_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CollaborationsSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaboratingCountriesBySubjectAreaWoSDocsTile</string>
+        <string>collaborations_Collaborating_Countries_By_Subject_Area_WoS_Docs_tile_0001</string>
+        <string>collaborations_Collaborating_Countries_By_Subject_Area_WoS_Docs_tile_0002</string>
+        <string>collaborations_Collaborating_Countries_By_Subject_Area_WoS_Docs_tile_0003</string>
+        <string>collaborations_Collaborating_Countries_By_Subject_Area_WoS_Docs_tile_0004</string>
+        <string>collaborations_Collaborating_Countries_By_Subject_Area_WoS_Docs_tile_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CollaborationsSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaboratingCountriesTerritoriesWoSDocsTile</string>
+        <string>collaborations_Collaborating_Countries_Territories_WoS_Docs_tile_0001</string>
+        <string>collaborations_Collaborating_Countries_Territories_WoS_Docs_tile_0002</string>
+        <string>collaborations_Collaborating_Countries_Territories_WoS_Docs_tile_0003</string>
+        <string>collaborations_Collaborating_Countries_Territories_WoS_Docs_tile_0004</string>
+        <string>collaborations_Collaborating_Countries_Territories_WoS_Docs_tile_0005</string>
+        <string>collaborations_Collaborating_Countries_Territories_WoS_Docs_tile_0006</string>
+        <string>collaborations_Collaborating_Countries_Territories_WoS_Docs_tile_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CollaborationsSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaboratingCountriesTile</string>
+        <string>collaborations_Collaborating_Countries_tile_0001</string>
+        <string>collaborations_Collaborating_Countries_tile_0002</string>
+        <string>collaborations_Collaborating_Countries_tile_0003</string>
+        <string>collaborations_Collaborating_Countries_tile_0004</string>
+        <string>collaborations_Collaborating_Countries_tile_0005</string>
+        <string>collaborations_Collaborating_Countries_tile_0006</string>
+        <string>collaborations_Collaborating_Countries_tile_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CollaborationsSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaboratingInstitutionsByCountryTerritoryTile</string>
+        <string>collaborations_Collaborating_Institutions_By_Country_Territory_tile_0001</string>
+        <string>collaborations_Collaborating_Institutions_By_Country_Territory_tile_0002</string>
+        <string>collaborations_Collaborating_Institutions_By_Country_Territory_tile_0003</string>
+        <string>collaborations_Collaborating_Institutions_By_Country_Territory_tile_0004</string>
+        <string>collaborations_Collaborating_Institutions_By_Country_Territory_tile_0005</string>
+        <string>collaborations_Collaborating_Institutions_By_Country_Territory_tile_0006</string>
+        <string>collaborations_Collaborating_Institutions_By_Country_Territory_tile_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CollaborationsSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaboratingInstitutionsNetworkWoSDocsTile</string>
+        <string>Feature_CollaboratingInstitutionsNetwork2WoSDocsTile</string>
+        <string>collaborations_Collaborating_Institutions_Network_WoS_Docs_tile_0001</string>
+        <string>collaborations_Collaborating_Institutions_Network_WoS_Docs_tile_0002</string>
+        <string>collaborations_Collaborating_Institutions_Network2_WoS_Docs_tile_0003</string>
+        <string>collaborations_Collaborating_Institutions_Network_WoS_Docs_tile_0004</string>
+        <string>collaborations_Collaborating_Institutions_Network_WoS_Docs_tile_0005</string>
+        <string>collaborations_Collaborating_Institutions_Network_WoS_Docs_tile_0006</string>
+        <string>collaborations_Collaborating_Institutions_Network_WoS_Docs_tile_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CollaborationsSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaboratingInstitutionsWoSDocsTile</string>
+        <string>collaborations_Collaborating_Institutions_WoS_Docs_tile_0001</string>
+        <string>collaborations_Collaborating_Institutions_WoS_Docs_tile_0002</string>
+        <string>collaborations_Collaborating_Institutions_WoS_Docs_tile_0003</string>
+        <string>collaborations_Collaborating_Institutions_WoS_Docs_tile_0004</string>
+        <string>collaborations_Collaborating_Institutions_WoS_Docs_tile_0005</string>
+        <string>collaborations_Collaborating_Institutions_WoS_Docs_tile_0006</string>
+        <string>collaborations_Collaborating_Institutions_WoS_Docs_tile_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CollaborationsSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaborationsChangeInstitution</string>
+        <string>collaborations_change_institution_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CollaborationsSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaborationsCPage</string>
+        <string>collaborations_C_page_0001</string>
+        <string>collaborations_C_page_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CreateTilePopUp</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CreateTileCreateNewFolderOrReport</string>
+        <string>create_new_folder_or_report_0001</string>
+        <string>create_new_folder_or_report_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CreateTilePopUp</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CreateTileCreateTileFromExploreUI</string>
+        <string>create_tile_from_explore_UI_0001</string>
+        <string>create_tile_from_explore_UI_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_CustomerCases</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CustomerCases</string>
+        <string>customer_cases_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Dashboard</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_AddTile</string>
+        <string>dashboard_add_tile_0001</string>
+        <string>dashboard_add_tile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Dashboard</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_AnnotationForTile</string>
+        <string>dashboard_annotation_for_tile_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Dashboard</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_DeleteTile</string>
+        <string>dashboard_delete_tile_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Dashboard</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_DrillDownForTile</string>
+        <string>dashboard_drill_down_tile_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Dashboard</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RearrangeTile</string>
+        <string>dashboard_rearrange_tile_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Dashboard</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RenameTile</string>
+        <string>dashboard_rename_tile_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Dashboard</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveACopyTile</string>
+        <string>dashboard_save_a_copy_tile_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaboratingDepartmentsTile</string>
+        <string>Department_CollaboratingDepartmentsTile_0001</string>
+        <string>Department_CollaboratingDepartmentsTile_0002</string>
+        <string>Department_CollaboratingDepartmentsTile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CollaboratingOrganizationsTile</string>
+        <string>Department_CollaboratingOrganizationsTile_0001</string>
+        <string>Department_CollaboratingOrganizationsTile_0002</string>
+        <string>Department_CollaboratingOrganizationsTile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_DepartmentChangeDepartment</string>
+        <string>department_change_department_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_DepartmentReportDRPage</string>
+        <string>Department_DepartmentReportDRPage_0001</string>
+        <string>Department_DepartmentReportDRPage_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FrequentlyPublishedResearchAreasTile</string>
+        <string>Department_FrequentlyPublishedResearchAreasTile_0001</string>
+        <string>Department_FrequentlyPublishedResearchAreasTile_0002</string>
+        <string>Department_FrequentlyPublishedResearchAreasTile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_H-IndexTile</string>
+        <string>Department_H-IndexTile_0001</string>
+        <string>Department_H-IndexTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_HighImpactResearchAreasTile</string>
+        <string>Department_HighImpactResearchAreasTile_0001</string>
+        <string>Department_HighImpactResearchAreasTile_0002</string>
+        <string>Department_HighImpactResearchAreasTile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_IndustryCollaborationsTile</string>
+        <string>Department_IndustryCollaborationsTile_0001</string>
+        <string>Department_IndustryCollaborationsTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InternationalCollaborationsTile</string>
+        <string>Department_InternationalCollaborationsTile_0001</string>
+        <string>Department_InternationalCollaborationsTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_MostCitedWebofScienceDocumentsTile</string>
+        <string>Department_MostCitedWebofScienceDocumentsTile_0001</string>
+        <string>Department_MostCitedWebofScienceDocumentsTile_0002</string>
+        <string>Department_MostCitedWebofScienceDocumentsTile_0003</string>
+        <string>Department_MostCitedWebofScienceDocumentsTile_0004</string>
+        <string>Department_MostCitedWebofScienceDocumentsTile_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PercentDocumentsInTop10PercentTile</string>
+        <string>Department_PercentDocumentsInTop10PercentTile_0001</string>
+        <string>Department_PercentDocumentsInTop10PercentTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PercentIndustryCollaborationsTile</string>
+        <string>Department_PercentIndustryCollaborationsTile_0001</string>
+        <string>Department_PercentIndustryCollaborationsTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PercentInternationalCollaborationsTile</string>
+        <string>Department_PercentInternationalCollaborationsTile_0001</string>
+        <string>Department_PercentInternationalCollaborationsTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_TimesCitedTile</string>
+        <string>Department_TimesCitedTile_0001</string>
+        <string>Department_TimesCitedTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_TopJournalsTile</string>
+        <string>Department_TopJournalsTile_0001</string>
+        <string>Department_TopJournalsTile_0002</string>
+        <string>Department_TopJournalsTile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_WosDocsAndTimesCitedPerYearTile</string>
+        <string>Department_WosDocsAndTimesCitedPerYearTile_0001</string>
+        <string>Department_WosDocsAndTimesCitedPerYearTile_0002</string>
+        <string>Department_WosDocsAndTimesCitedPerYearTile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_DepartmentSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_WosDocsTile</string>
+        <string>Department_WosDocsTile_0001</string>
+        <string>Department_WosDocsTile_0002</string>
+        <string>Department_Report_tiles_003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>institution_profile_News_Feed_tile_0003</Name>
+      <Categories />
+      <Tests>
+        <string>institution_profile_News_Feed_tile_0004</string>
+        <string>institution_profile_News_Feed_tile_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>research_performance_News_Feed_tile_0003</Name>
+      <Categories />
+      <Tests>
+        <string>research_performance_News_Feed_tile_0004</string>
+        <string>research_performance_News_Feed_tile_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>sharing_email_message_0003</Name>
+      <Categories />
+      <Tests>
+        <string>sharing_email_Attached_file_0004</string>
+        <string>sharing_email_0001</string>
+        <string>sharing_email_0002</string>
+        <string>sharing_email_0005</string>
+        <string>sharing_email_0006</string>
+        <string>sharing_email_0007</string>
+        <string>sharing_email_0008</string>
+        <string>sharing_email_0009</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>trending_technology_Timeline_tile_0001</Name>
+      <Categories />
+      <Tests>
+        <string>trending_technology_Timeline_tile_0002</string>
+        <string>trending_technology_Timeline_tile_0003</string>
+        <string>trending_technology_Timeline_tile_0004</string>
+        <string>trending_technology_Timeline_tile_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>trending_technology_Toplist_tile_0001</Name>
+      <Categories />
+      <Tests>
+        <string>trending_technology_Toplist_tile_0002</string>
+        <string>trending_technology_Toplist_tile_0003</string>
+        <string>trending_technology_Toplist_tile_0004</string>
+        <string>trending_technology_Toplist_tile_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>trending_technology_TT_page_0001</Name>
+      <Categories />
+      <Tests>
+        <string>trending_technology_TT_page_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesAddIndicators</string>
+        <string>funding_agencies_add_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesByAttributesFilters</string>
+        <string>funding_agencies_by_attributes_filters_0001</string>
+        <string>funding_agencies_by_attributes_filters_0002</string>
+        <string>funding_agencies_by_attributes_filters_0003</string>
+        <string>funding_agencies_by_attributes_filters_0004</string>
+        <string>funding_agencies_by_attributes_filters_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesByResearchNetworkFilters</string>
+        <string>funding_agencies_by_research_network_filters_0001</string>
+        <string>funding_agencies_by_research_network_filters_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesByResearchOutputFilters</string>
+        <string>funding_agencies_by_research_output_filters_0001</string>
+        <string>funding_agencies_by_research_output_filters_0002</string>
+        <string>funding_agencies_by_research_output_filters_0003</string>
+        <string>funding_agencies_by_research_output_filters_0004</string>
+        <string>funding_agencies_by_research_output_filters_0005</string>
+        <string>funding_agencies_by_research_output_filters_0006</string>
+        <string>funding_agencies_by_research_output_filters_0007</string>
+        <string>funding_agencies_by_research_output_filters_0008</string>
+        <string>funding_agencies_by_research_output_filters_0009</string>
+        <string>funding_agencies_by_research_output_filters_0010</string>
+        <string>funding_agencies_by_research_output_filters_0011</string>
+        <string>funding_agencies_by_research_output_filters_0012</string>
+        <string>funding_agencies_by_research_output_filters_0013</string>
+        <string>funding_agencies_by_research_output_filters_0014</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesByTimeFilters</string>
+        <string>funding_agencies_by_time_filters_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesDisplayVisualization</string>
+        <string>funding_agencies_displaying_of_visualization_0001</string>
+        <string>funding_agencies_displaying_of_visualization_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesFilterSummary</string>
+        <string>funding_agencies_filter_summary_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesLoadMoreItems</string>
+        <string>funding_agencies_load_more_items_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesNavigationToFundingAgenciesContext</string>
+        <string>funding_agencies_navigation_to_explore_funding_agencies_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesRemoveIndicators</string>
+        <string>funding_agencies_remove_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesRestoreDefaults</string>
+        <string>funding_agencies_restore_defaults_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesResultsTableUnderbar</string>
+        <string>funding_agencies_results_table_underbar_0001</string>
+        <string>funding_agencies_results_table_underbar_0002</string>
+        <string>funding_agencies_results_table_underbar_0003</string>
+        <string>funding_agencies_results_table_underbar_0004</string>
+        <string>funding_agencies_results_table_underbar_0005</string>
+        <string>funding_agencies_results_table_underbar_0006</string>
+        <string>funding_agencies_results_table_underbar_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesSearchBox</string>
+        <string>funding_agencies_search_results_box_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesSorting</string>
+        <string>funding_agencies_sorting_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesThresholdsFilters</string>
+        <string>funding_agencies_thresholds_filters_0001</string>
+        <string>funding_agencies_thresholds_filters_0002</string>
+        <string>funding_agencies_thresholds_filters_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreFundingAgenciesContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FundingAgenciesVisualizationType</string>
+        <string>funding_agencies_visualization_type_0001</string>
+        <string>funding_agencies_visualization_type_0002</string>
+        <string>funding_agencies_visualization_type_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsAddIndicators</string>
+        <string>journals_add_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsByAttributesFilters</string>
+        <string>journals_by_attributes_filters_0001</string>
+        <string>journals_by_attributes_filters_0002</string>
+        <string>journals_by_attributes_filters_0003</string>
+        <string>journals_by_attributes_filters_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsByResearchNetworkFilters</string>
+        <string>journals_by_research_network_filters_0001</string>
+        <string>journals_by_research_network_filters_0002</string>
+        <string>journals_by_research_network_filters_0003</string>
+        <string>journals_by_research_network_filters_0004</string>
+        <string>journals_by_research_network_filters_0005</string>
+        <string>journals_by_research_network_filters_0006</string>
+        <string>journals_by_research_network_filters_0007</string>
+        <string>journals_by_research_network_filters_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsByResearchOutputFilters</string>
+        <string>journals_by_research_output_filters_0001</string>
+        <string>journals_by_research_output_filters_0002</string>
+        <string>journals_by_research_output_filters_0003</string>
+        <string>journals_by_research_output_filters_0004</string>
+        <string>journals_by_research_output_filters_0005</string>
+        <string>journals_by_research_output_filters_0006</string>
+        <string>journals_by_research_output_filters_0007</string>
+        <string>journals_by_research_output_filters_0008</string>
+        <string>journals_by_research_output_filters_0009</string>
+        <string>journals_by_research_output_filters_0010</string>
+        <string>journals_by_research_output_filters_0011</string>
+        <string>journals_by_research_output_filters_0012</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsByTimeFilters</string>
+        <string>journals_by_time_filters_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsDisplayVisualization</string>
+        <string>journals_displaying_of_visualization_0001</string>
+        <string>journals_displaying_of_visualization_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsFilterSummary</string>
+        <string>journals_filter_summary_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsLoadMoreItems</string>
+        <string>journals_load_more_items_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsNavigationToJournalsContext</string>
+        <string>journals_navigation_to_explore_journals_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsRemoveIndicators</string>
+        <string>journals_remove_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsRestoreDefaults</string>
+        <string>journals_restore_defaults_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsResultsTableUnderbar</string>
+        <string>journals_results_table_underbar_0001</string>
+        <string>journals_results_table_underbar_0002</string>
+        <string>journals_results_table_underbar_0003</string>
+        <string>journals_results_table_underbar_0004</string>
+        <string>journals_results_table_underbar_0005</string>
+        <string>journals_results_table_underbar_0006</string>
+        <string>journals_results_table_underbar_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsSearchBox</string>
+        <string>journals_search_results_box_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsSorting</string>
+        <string>journals_sorting_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsThresholdsFilters</string>
+        <string>journals_thresholds_filters_0001</string>
+        <string>journals_thresholds_filters_0002</string>
+        <string>journals_thresholds_filters_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreJournals</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsVisualizationType</string>
+        <string>journals_visualization_type_0001</string>
+        <string>journals_visualization_type_0002</string>
+        <string>journals_visualization_type_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsAddIndicators</string>
+        <string>organizations_add_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsByAttributesFilters</string>
+        <string>organizations_by_attributes_filters_0001</string>
+        <string>organizations_by_attributes_filters_0002</string>
+        <string>organizations_by_attributes_filters_0003</string>
+        <string>organizations_by_attributes_filters_0004</string>
+        <string>organizations_by_attributes_filters_0005</string>
+        <string>organizations_by_attributes_filters_0006</string>
+        <string>organizations_by_attributes_filters_0008</string>
+        <string>organizations_by_attributes_filters_0009</string>
+        <string>organizations_by_attributes_filters_0010</string>
+        <string>organizations_by_attributes_filters_0011</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsByResearchNetworkFilters</string>
+        <string>organizations_by_research_network_filters_0001</string>
+        <string>organizations_by_research_network_filters_0002</string>
+        <string>organizations_by_research_network_filters_0003</string>
+        <string>organizations_by_research_network_filters_0004</string>
+        <string>organizations_by_research_network_filters_0005</string>
+        <string>organizations_by_research_network_filters_0006</string>
+        <string>organizations_by_research_network_filters_0007</string>
+        <string>organizations_by_research_network_filters_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsByResearchOutputFilters</string>
+        <string>organizations_by_research_output_filters_0001</string>
+        <string>organizations_by_research_output_filters_0002</string>
+        <string>organizations_by_research_output_filters_0003</string>
+        <string>organizations_by_research_output_filters_0004</string>
+        <string>organizations_by_research_output_filters_0005</string>
+        <string>organizations_by_research_output_filters_0006</string>
+        <string>organizations_by_research_output_filters_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsByTimeFilters</string>
+        <string>organizations_by_time_filters_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsDisplayVisualization</string>
+        <string>organizations_displaying_of_visualization_0001</string>
+        <string>organizations_displaying_of_visualization_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsFilterSummary</string>
+        <string>organizations_filter_summary_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsLoadMoreItems</string>
+        <string>organizations_load_more_items_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsNavigationToOrgContext</string>
+        <string>organizations_navigation_to_explore_organizations_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsRemoveIndicators</string>
+        <string>organizations_remove_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsRestoreDefaults</string>
+        <string>organizations_restore_defaults_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsResultTableUnderbar</string>
+        <string>organizations_results_table_underbar_0001</string>
+        <string>organizations_results_table_underbar_0002</string>
+        <string>organizations_results_table_underbar_0003</string>
+        <string>organizations_results_table_underbar_0004</string>
+        <string>organizations_results_table_underbar_0005</string>
+        <string>organizations_results_table_underbar_0006</string>
+        <string>organizations_results_table_underbar_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsSearchBox</string>
+        <string>organizations_search_results_box_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsSorting</string>
+        <string>organizations_sorting_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsThresholdsFilters</string>
+        <string>organizations_thresholds_filters_0001</string>
+        <string>organizations_thresholds_filters_0002</string>
+        <string>organizations_thresholds_filters_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreOrganizationsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_OrganizationsVisualizationType</string>
+        <string>organizations_visualization_type_0001</string>
+        <string>organizations_visualization_type_0002</string>
+        <string>organizations_visualization_type_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleAddIndicators</string>
+        <string>people_add_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleByAttributesFilters</string>
+        <string>people_by_attributes_filters_0001</string>
+        <string>people_by_attributes_filters_0002</string>
+        <string>people_by_attributes_filters_0003</string>
+        <string>people_by_attributes_filters_0004</string>
+        <string>people_by_attributes_filters_0005</string>
+        <string>people_by_attributes_filters_0006</string>
+        <string>people_by_attributes_filters_0007</string>
+        <string>people_by_attributes_filters_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleByResearchNetworkFilters</string>
+        <string>people_by_research_network_filters_0001</string>
+        <string>people_by_research_network_filters_0002</string>
+        <string>people_by_research_network_filters_0003</string>
+        <string>people_by_research_network_filters_0004</string>
+        <string>people_by_research_network_filters_0005</string>
+        <string>people_by_research_network_filters_0006</string>
+        <string>people_by_research_network_filters_0007</string>
+        <string>people_by_research_network_filters_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleByResearchOutputFilters</string>
+        <string>people_by_research_output_filters_0001</string>
+        <string>people_by_research_output_filters_0002</string>
+        <string>people_by_research_output_filters_0003</string>
+        <string>people_by_research_output_filters_0004</string>
+        <string>people_by_research_output_filters_0005</string>
+        <string>people_by_research_output_filters_0006</string>
+        <string>people_by_research_output_filters_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleByTimeFilters</string>
+        <string>people_by_time_filters_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleDisplayVisualization</string>
+        <string>people_displaying_of_visualization_0001</string>
+        <string>people_displaying_of_visualization_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleFilterSummary</string>
+        <string>people_filter_summary_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleLoadMoreItems</string>
+        <string>people_load_more_items_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleNavigationToPeopleContext</string>
+        <string>people_navigation_to_explore_people_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleRemoveIndicators</string>
+        <string>people_remove_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleRestoreDefaults</string>
+        <string>people_restore_defaults_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleResultsTableUnderbar</string>
+        <string>people_results_table_underbar_0001</string>
+        <string>people_results_table_underbar_0002</string>
+        <string>people_results_table_underbar_0003</string>
+        <string>people_results_table_underbar_0004</string>
+        <string>people_results_table_underbar_0005</string>
+        <string>people_results_table_underbar_0006</string>
+        <string>people_results_table_underbar_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleSearchBox</string>
+        <string>people_search_results_box_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleSorting</string>
+        <string>people_sorting_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleThresholdsFilters</string>
+        <string>people_thresholds_filters_0001</string>
+        <string>people_thresholds_filters_0002</string>
+        <string>people_thresholds_filters_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExplorePeopleContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PeopleVisualizationType</string>
+        <string>people_visualization_type_0001</string>
+        <string>people_visualization_type_0002</string>
+        <string>people_visualization_type_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsAddIndicators</string>
+        <string>regions_add_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsByAttributesFilters</string>
+        <string>regions_by_attributes_filters_0001</string>
+        <string>regions_by_attributes_filters_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsByResearchNetworkFilters</string>
+        <string>regions_by_research_network_filters_0001</string>
+        <string>regions_by_research_network_filters_0002</string>
+        <string>regions_by_research_network_filters_0003</string>
+        <string>regions_by_research_network_filters_0004</string>
+        <string>regions_by_research_network_filters_0005</string>
+        <string>regions_by_research_network_filters_0006</string>
+        <string>regions_by_research_network_filters_0007</string>
+        <string>regions_by_research_network_filters_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsByResearchOutputFilters</string>
+        <string>regions_by_research_output_filters_0001</string>
+        <string>regions_by_research_output_filters_0002</string>
+        <string>regions_by_research_output_filters_0003</string>
+        <string>regions_by_research_output_filters_0004</string>
+        <string>regions_by_research_output_filters_0005</string>
+        <string>regions_by_research_output_filters_0006</string>
+        <string>regions_by_research_output_filters_0007</string>
+        <string>regions_by_research_output_filters_0008</string>
+        <string>regions_by_research_output_filters_0009</string>
+        <string>regions_by_research_output_filters_0010</string>
+        <string>regions_by_research_output_filters_0011</string>
+        <string>regions_by_research_output_filters_0012</string>
+        <string>regions_by_research_output_filters_0013</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsByTimeFilters</string>
+        <string>regions_by_time_filters_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsDisplayVisualization</string>
+        <string>regions_displaying_of_visualization_0001</string>
+        <string>regions_displaying_of_visualization_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsFilterSummary</string>
+        <string>regions_filter_summary_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsLoadMoreItems</string>
+        <string>regions_load_more_items_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsNavigationToRegionsContext</string>
+        <string>regions_navigation_to_explore_regions_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsRemoveIndicators</string>
+        <string>regions_remove_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsRestoreDefaults</string>
+        <string>regions_restore_defaults_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsResultsTableUnderbar</string>
+        <string>regions_results_table_underbar_0001</string>
+        <string>regions_results_table_underbar_0002</string>
+        <string>regions_results_table_underbar_0003</string>
+        <string>regions_results_table_underbar_0004</string>
+        <string>regions_results_table_underbar_0005</string>
+        <string>regions_results_table_underbar_0006</string>
+        <string>regions_results_table_underbar_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsSearchBox</string>
+        <string>regions_search_results_box_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsSorting</string>
+        <string>regions_sorting_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsThresholdsFilters</string>
+        <string>regions_thresholds_filters_0001</string>
+        <string>regions_thresholds_filters_0002</string>
+        <string>regions_thresholds_filters_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreRegionsContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RegionsVisualizationType</string>
+        <string>regions_visualization_type_0001</string>
+        <string>regions_visualization_type_0002</string>
+        <string>regions_visualization_type_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasAddIndicators</string>
+        <string>research_areas_add_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasByAttributesFilters</string>
+        <string>research_areas_by_attributes_filters_0001</string>
+        <string>research_areas_by_attributes_filters_0002</string>
+        <string>research_areas_by_attributes_filters_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasByResearchNetworkFilters</string>
+        <string>research_areas_by_research_network_filters_0001</string>
+        <string>research_areas_by_research_network_filters_0002</string>
+        <string>research_areas_by_research_network_filters_0003</string>
+        <string>research_areas_by_research_network_filters_0004</string>
+        <string>research_areas_by_research_network_filters_0005</string>
+        <string>research_areas_by_research_network_filters_0006</string>
+        <string>research_areas_by_research_network_filters_0007</string>
+        <string>research_areas_by_research_network_filters_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasByResearchOutputFilters</string>
+        <string>research_areas_by_research_output_filters_0001</string>
+        <string>research_areas_by_research_output_filters_0002</string>
+        <string>research_areas_by_research_output_filters_0003</string>
+        <string>research_areas_by_research_output_filters_0004</string>
+        <string>research_areas_by_research_output_filters_0005</string>
+        <string>research_areas_by_research_output_filters_0006</string>
+        <string>research_areas_by_research_output_filters_0007</string>
+        <string>research_areas_by_research_output_filters_0008</string>
+        <string>research_areas_by_research_output_filters_0009</string>
+        <string>research_areas_by_research_output_filters_0010</string>
+        <string>research_areas_by_research_output_filters_0011</string>
+        <string>research_areas_by_research_output_filters_0012</string>
+        <string>research_areas_by_research_output_filters_0013</string>
+        <string>research_areas_by_research_output_filters_0014</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasByTimeFilters</string>
+        <string>research_areas_by_time_filters_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasDisplayVisualization</string>
+        <string>research_areas_displaying_of_visualization_0001</string>
+        <string>research_areas_displaying_of_visualization_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasFilterSummary</string>
+        <string>research_areas_filter_summary_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasLoadMoreItems</string>
+        <string>research_areas_load_more_items_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasNavigationToResearchAreasContext</string>
+        <string>research_areas_navigation_to_explore_research_areas_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasRemoveIndicators</string>
+        <string>research_areas_remove_indicators_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasRestoreDefaults</string>
+        <string>research_areas_restore_defaults_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasResultsTableUnderbar</string>
+        <string>research_areas_results_table_underbar_0001</string>
+        <string>research_areas_results_table_underbar_0002</string>
+        <string>research_areas_results_table_underbar_0003</string>
+        <string>research_areas_results_table_underbar_0004</string>
+        <string>research_areas_results_table_underbar_0005</string>
+        <string>research_areas_results_table_underbar_0006</string>
+        <string>research_areas_results_table_underbar_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasSearchBox</string>
+        <string>research_areas_search_results_box_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasSorting</string>
+        <string>research_areas_sorting_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasThresholdsFilters</string>
+        <string>research_areas_thresholds_filters_0001</string>
+        <string>research_areas_thresholds_filters_0002</string>
+        <string>research_areas_thresholds_filters_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ExploreResearchAreasContext</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchAreasVisualizationType</string>
+        <string>research_areas_visualization_type_0001</string>
+        <string>research_areas_visualization_type_0002</string>
+        <string>research_areas_visualization_type_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Export</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ExportExportFromJournals</string>
+        <string>export_from_journals_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Export</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ExportExportFromOrganizations</string>
+        <string>export_from_organizations_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Export</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ExportExportFromPeople</string>
+        <string>export_from_people_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Export</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ExportExportFromRegions</string>
+        <string>export_from_regions_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Export</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ExportExportFromResearchAreas</string>
+        <string>export_from_research_area_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Export</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ExportExportTheseResultsPopUp</string>
+        <string>export_export_these_results_pop_up_0001</string>
+        <string>export_export_these_results_pop_up_0002</string>
+        <string>export_export_these_results_pop_up_0003</string>
+        <string>export_export_these_results_pop_up_0004</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_FacultyReportSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_H-Index</string>
+        <string>Faculty_H-Index_001</string>
+        <string>Faculty_H-Index_002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_FacultyReportSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_MostCitedWebofScienceDocumentsTile</string>
+        <string>FacultyReport_MostCitedWebofScienceDocumentsTile_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_FacultyReportSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PercentageDocumentsintop10Percentage</string>
+        <string>PercentageDocumentsintop10Percentage_001</string>
+        <string>PercentageDocumentsintop10Percentage_002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_FacultyReportSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FacultyReport_TimesCitedTile</string>
+        <string>FacultyReport_TimesCitedTile_001</string>
+        <string>FacultyReport_TimesCited_002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_FacultyReportSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_TopJournals</string>
+        <string>Faculty_TopJournals_0001</string>
+        <string>Faculty_TopJournals_0002</string>
+        <string>Faculty_TopJournals_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_FacultyReportSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveWebOfScienceTile</string>
+        <string>Faculty_WosDocsTile_0001</string>
+        <string>WebOfScience_002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_FacultyReportSystemreport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_WOSDocumentsAndTimesCitedPerYear.feature</string>
+        <string>Faculty_WebOfScienceDocumentsAndTimesCitedPerYear_001</string>
+        <string>Faculty_WosDocsAndTimesCitedPerYearTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_FooterPanel</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_FooterNavigation</string>
+        <string>footer_navigation_0001</string>
+        <string>footer_navigation_0002</string>
+        <string>footer_navigation_0003</string>
+        <string>footer_navigation_0004</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_HeaderPanel</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_HeaderChangeLocale</string>
+        <string>change_locale_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_HeaderPanel</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_HeaderNavigation</string>
+        <string>header_navigation_0001</string>
+        <string>header_navigation_0002</string>
+        <string>header_navigation_0003</string>
+        <string>header_navigation_0004</string>
+        <string>header_navigation_0005</string>
+        <string>header_navigation_0006</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_HeaderPanel</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_HeaderSignOut</string>
+        <string>sign_out_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_IncitesDataUpdatedDate</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_DataUpdatedDate</string>
+        <string>InCites_data_update_date_0001</string>
+        <string>InCites_data_update_date_0002</string>
+        <string>InCites_data_update_date_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileChangeInstitution</string>
+        <string>institution_profile_change_institution_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileCNCIOverallTile</string>
+        <string>institution_profile_CNCI_Overall_tile_0001</string>
+        <string>institution_profile_CNCI_Overall_tile_0002</string>
+        <string>institution_profile_CNCI_Overall_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileCollaboratingOrganizationsTile</string>
+        <string>institution_profile_Collaborating_Organizations_tile_0001</string>
+        <string>institution_profile_Collaborating_Organizations_tile_0002</string>
+        <string>institution_profile_Collaborating_Organizations_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileInternationalMixTile</string>
+        <string>institution_profile_International_Mix_tile_0001</string>
+        <string>institution_profile_International_Mix_tile_0002</string>
+        <string>institution_profile_International_Mix_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileIPPage</string>
+        <string>institution_profile_IP_page_0001</string>
+        <string>institution_profile_IP_page_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfilePercentInternationalCollaborationsTile</string>
+        <string>institution_profile_Percent_International_Collaborations_tile_0001</string>
+        <string>institution_profile_Percent_International_Collaborations_tile_0002</string>
+        <string>institution_profile_Percent_International_Collaborations_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileResearchAreasByCNCITile</string>
+        <string>institution_profile_Research_Areas_By_CNCI_tile_0001</string>
+        <string>institution_profile_Research_Areas_By_CNCI_tile_0002</string>
+        <string>institution_profile_Research_Areas_By_CNCI_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileResearchAreasByWoSDocsTile</string>
+        <string>institution_profile_Research_Areas_By_WoS_Docs_tile_0001</string>
+        <string>institution_profile_Research_Areas_By_WoS_Docs_tile_0002</string>
+        <string>institution_profile_Research_Areas_By_WoS_Docs_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileResearchIndicatorsTile</string>
+        <string>institution_profile_Research_Indicators_tile_0001</string>
+        <string>institution_profile_Research_Indicators_tile_0002</string>
+        <string>institution_profile_Research_Indicators_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileTeachingIndicatorsTile</string>
+        <string>institution_profile_Teaching_Indicators_tile_0001</string>
+        <string>institution_profile_Teaching_Indicators_tile_0002</string>
+        <string>institution_profile_Teaching_Indicators_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_InstitutionProfileSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_InstitutionProfileWoSDocsPerYearTile</string>
+        <string>institution_profile_WoS_Docs_Per_Year_tile_0001</string>
+        <string>institution_profile_WoS_Docs_Per_Year_tile_0002</string>
+        <string>institution_profile_WoS_Docs_Per_Year_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_LJURSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_AreUniversitiesAuthorsBeingCitedByRecentorOlderMaterial</string>
+        <string>universities_authors_being_cited_by_recent_or_older_material_0001</string>
+        <string>universities_authors_being_cited_by_recent_or_older_material_0002</string>
+        <string>universities_authors_being_cited_by_recent_or_older_material_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_LJURSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_AuthorsCitingRecentorOlderMaterialTile</string>
+        <string>author_citing_recent_or_older_material_tile_0001</string>
+        <string>author_citing_recent_or_older_material_tile_0002</string>
+        <string>author_citing_recent_or_older_material_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_LJURSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalByAuthorsCitingTile</string>
+        <string>journal_by_authors_citing_tile_001</string>
+        <string>journal_by_authors_citing_tile_002</string>
+        <string>journal_by_authors_citing_tile_003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_LJURSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsAreCitingByUniversitiesAuthorsTile</string>
+        <string>journals_are_citing_by_universities_authors_001</string>
+        <string>journals_are_citing_by_universities_authors_002</string>
+        <string>journals_are_citing_by_universities_authors_003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_LJURSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsByJNCITile</string>
+        <string>journals_by_JNCI_tile_0001</string>
+        <string>journals_by_JNCI_tile_0002</string>
+        <string>journals_by_JNCI_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_LJURSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_JournalsByWoSDocsTile</string>
+        <string>journals_by_wos_Docs_tile_001</string>
+        <string>journals_by_wos_Docs_tile_0002</string>
+        <string>journals_by_wos_Docs_tile_0003</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_LJURSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_LjurChangeInstitution</string>
+        <string>ljur_change_institution_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_LJURSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_LjurDPPage</string>
+        <string>ljur_DP_page_0001</string>
+        <string>ljur_DP_page_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_MyFolders</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_MyFoldersFolder</string>
+        <string>my_folders_folder_0001</string>
+        <string>my_folders_folder_0002</string>
+        <string>my_folders_folder_0003</string>
+        <string>my_folders_folder_0004</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_MyFolders</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_MyFoldersFolderTree</string>
+        <string>my_folders_folder_tree_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_MyFolders</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_MyFoldersReport</string>
+        <string>my_folders_report_0001</string>
+        <string>my_folders_report_0002</string>
+        <string>my_folders_report_0003</string>
+        <string>my_folders_report_0004</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_MyFolders</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_MyFoldersSearchBox</string>
+        <string>my_folders_search_box_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_MyFolders</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_MyFoldersSelectionOfFoldersReports</string>
+        <string>my_folders_selection_of_folders_reports_0001</string>
+        <string>my_folders_selection_of_folders_reports_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_NavigationBar</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_NavigationBarNavigationFromBar</string>
+        <string>navigation_from_navigation_bar_0001</string>
+        <string>navigation_from_navigation_bar_0002</string>
+        <string>navigation_from_navigation_bar_0003</string>
+        <string>navigation_from_navigation_bar_0004</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_NavigationBar</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_NavigationBarNewInInCitesPopUp</string>
+        <string>new_in_InCites_pop_up_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_PreviewPopUp</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PreviewPopUpClosePreview</string>
+        <string>preview_pop_up_close_preview_pop_up_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_PreviewPopUp</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PreviewPopUpDisplayMoreItems</string>
+        <string>preview_pop_up_display_more_items_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_PreviewPopUp</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PreviewPopUpFullAnalysis</string>
+        <string>preview_pop_up_full_analysis_0002</string>
+        <string>preview_pop_up_full_analysis_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_PreviewPopUp</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PreviewPopUpNavigationInPreview</string>
+        <string>preview_pop_up_navigation_in_preview_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_PreviewPopUp</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PreviewPopUpSorting</string>
+        <string>preview_pop_up_sorting_preview_pop_up_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Refocus</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RefocusFromFundingAgencies</string>
+        <string>refocus_refocus_from_funding_agencies_0001</string>
+        <string>refocus_refocus_from_funding_agencies_0002</string>
+        <string>refocus_refocus_from_funding_agencies_0003</string>
+        <string>refocus_refocus_from_funding_agencies_0004</string>
+        <string>refocus_refocus_from_funding_agencies_0005</string>
+        <string>refocus_refocus_from_funding_agencies_0006</string>
+        <string>refocus_refocus_from_funding_agencies_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Refocus</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RefocusFromJournals</string>
+        <string>refocus_refocus_from_journals_0001</string>
+        <string>refocus_refocus_from_journals_0002</string>
+        <string>refocus_refocus_from_journals_0003</string>
+        <string>refocus_refocus_from_journals_0004</string>
+        <string>refocus_refocus_from_journals_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Refocus</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RefocusFromOrganizations</string>
+        <string>refocus_refocus_from_organizations_0001</string>
+        <string>refocus_refocus_from_organizations_0002</string>
+        <string>refocus_refocus_from_organizations_0003</string>
+        <string>refocus_refocus_from_organizations_0004</string>
+        <string>refocus_refocus_from_organizations_0005</string>
+        <string>refocus_refocus_from_organizations_0006</string>
+        <string>refocus_refocus_from_organizations_0007</string>
+        <string>refocus_refocus_from_organizations_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Refocus</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RefocusFromPeople</string>
+        <string>refocus_refocus_from_people_0001</string>
+        <string>refocus_refocus_from_people_0002</string>
+        <string>refocus_refocus_from_people_0003</string>
+        <string>refocus_refocus_from_people_0004</string>
+        <string>refocus_refocus_from_people_0005</string>
+        <string>refocus_refocus_from_people_0006</string>
+        <string>refocus_refocus_from_people_0007</string>
+        <string>refocus_refocus_from_people_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Refocus</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RefocusFromRegions</string>
+        <string>refocus_refocus_from_regions_0001</string>
+        <string>refocus_refocus_from_regions_0002</string>
+        <string>refocus_refocus_from_regions_0003</string>
+        <string>refocus_refocus_from_regions_0004</string>
+        <string>refocus_refocus_from_regions_0005</string>
+        <string>refocus_refocus_from_regions_0006</string>
+        <string>refocus_refocus_from_regions_0007</string>
+        <string>refocus_refocus_from_regions_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Refocus</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RefocusFromResearchAreas</string>
+        <string>refocus_refocus_from_research_areas_0001</string>
+        <string>refocus_refocus_from_research_areas_0002</string>
+        <string>refocus_refocus_from_research_areas_0003</string>
+        <string>refocus_refocus_from_research_areas_0004</string>
+        <string>refocus_refocus_from_research_areas_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearcherSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearcherChangeReasearcherIDandORCID</string>
+        <string>researcher_change_researcherID_0001</string>
+        <string>researcher_change_ORCID_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearcherSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Researcher_H-IndexTile</string>
+        <string>researcher_H-IndexTile_0001</string>
+        <string>researcher_H-IndexTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearcherSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Researcher_IndustryCollaborationsTile</string>
+        <string>researcher_IndustryCollaborationsTile_0001</string>
+        <string>researcher_IndustryCollaborationsTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearcherSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Researcher_InternationalCollaborationsTile</string>
+        <string>researcher_InternationalCollaborationsTile_0001</string>
+        <string>researcher_InternationalCollaborationsTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearcherSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Researcher_PercentDocumentsInTop10PercentTile</string>
+        <string>researcher_PercentDocumentsInTop10PercentTile_0001</string>
+        <string>researcher_PercentDocumentsInTop10PercentTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearcherSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Researcher_PercentIndustryCollaborationsTile</string>
+        <string>researcher_PercentIndustryCollaborationsTile_0001</string>
+        <string>researcher_PercentIndustryCollaborationsTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearcherSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Researcher_PercentInternationalCollaborationsTile</string>
+        <string>researcher_PercentInternationalCollaborationsTile_0001</string>
+        <string>researcher_PercentInternationalCollaborationsTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearcherSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Researcher_TimesCitedTile</string>
+        <string>researcher_TimesCitedTile_0001</string>
+        <string>researcher_TimesCitedTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearcherSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Researcher_WOSDocsTile</string>
+        <string>researcher_WosDocsTile_0001</string>
+        <string>researcher_WosDocsTile_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearchPerformanceSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ChangeInstitution</string>
+        <string>research_performance_change_institution_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearchPerformanceSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CNCIPerYearTile</string>
+        <string>research_performance_CNCI_per_Year_tile_0001</string>
+        <string>research_performance_CNCI_per_Year_tile_0002</string>
+        <string>research_performance_CNCI_per_Year_tile_0003</string>
+        <string>research_performance_CNCI_per_Year_tile_0004</string>
+        <string>research_performance_CNCI_per_Year_tile_0005</string>
+        <string>research_performance_CNCI_per_Year_tile_0006</string>
+        <string>research_performance_CNCI_per_Year_tile_0007</string>
+        <string>research_performance_CNCI_per_Year_tile_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearchPerformanceSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchPerformancePercentOADocsperYearTile</string>
+        <string>research_performance_Percent_OA_Docs_Per_Year_tile_0001</string>
+        <string>research_performance_Percent_OA_Docs_Per_Year_tile_0002</string>
+        <string>research_performance_Percent_OA_Docs_Per_Year_tile_0003</string>
+        <string>research_performance_Percent_OA_Docs_Per_Year_tile_0004</string>
+        <string>research_performance_Percent_OA_Docs_Per_Year_tile_0005</string>
+        <string>research_performance_Percent_OA_Docs_Per_Year_tile_0006</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearchPerformanceSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchPerformanceRPPage</string>
+        <string>research_performance_RP_page_0001</string>
+        <string>research_performance_RP_page_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearchPerformanceSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchPerformanceSubjectAreasWoSDocsTile</string>
+        <string>research_performance_Subject_Areas_WoS_Docs_tile_0001</string>
+        <string>research_performance_Subject_Areas_WoS_Docs_tile_0002</string>
+        <string>research_performance_Subject_Areas_WoS_Docs_tile_0004</string>
+        <string>research_performance_Subject_Areas_WoS_Docs_tile_0005</string>
+        <string>research_performance_Subject_Areas_WoS_Docs_tile_0006</string>
+        <string>research_performance_Subject_Areas_WoS_Docs_tile_0007</string>
+        <string>research_performance_Subject_Areas_WoS_Docs_tile_0008</string>
+        <string>research_performance_Subject_Areas_WoS_Docs_tile_0009</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearchPerformanceSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchPerformanceTimesCitedPerYearTile</string>
+        <string>research_performance_Times_Cited_Per_Year_0001</string>
+        <string>research_performance_Times_Cited_Per_Year_0002</string>
+        <string>research_performance_Times_Cited_Per_Year_0004</string>
+        <string>research_performance_Times_Cited_Per_Year_0005</string>
+        <string>research_performance_Times_Cited_Per_Year_0006</string>
+        <string>research_performance_Times_Cited_Per_Year_0007</string>
+        <string>research_performance_Times_Cited_Per_Year_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ResearchPerformanceSystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ResearchPerformanceWoSDocsPerYearTile</string>
+        <string>research_performance_WoS_Docs_Per_Year_tile_0001</string>
+        <string>research_performance_WoS_Docs_Per_Year_tile_0002</string>
+        <string>research_performance_WoS_Docs_Per_Year_tile_0004</string>
+        <string>research_performance_WoS_Docs_Per_Year_tile_0005</string>
+        <string>research_performance_WoS_Docs_Per_Year_tile_0006</string>
+        <string>research_performance_WoS_Docs_Per_Year_tile_0007</string>
+        <string>research_performance_WoS_Docs_Per_Year_tile_0008</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_RestoreDefaultsIndicators</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_RestoreDefaultsIndicators</string>
+        <string>restore_defaults_indicators_0001</string>
+        <string>restore_defaults_indicators_0002</string>
+        <string>restore_defaults_indicators_0003</string>
+        <string>restore_defaults_indicators_0004</string>
+        <string>restore_defaults_indicators_0005</string>
+        <string>restore_defaults_indicators_0006</string>
+        <string>restore_defaults_indicators_0007</string>
+        <string>restore_defaults_indicators_0008</string>
+        <string>restore_defaults_indicators_0009</string>
+        <string>restore_defaults_indicators_0010</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveACopyPopUp</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CreateNewFolderOrReport</string>
+        <string>save_a_copy_create_folder_report_0001</string>
+        <string>save_a_copy_create_folder_report_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveACopyPopUp</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SavingCopy</string>
+        <string>save_a_copy_saving_of_copy_0001</string>
+        <string>save_a_copy_saving_of_copy_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveReportAs</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromCollaborations</string>
+        <string>save_report_as_save_from_collaborations_0001</string>
+        <string>save_report_as_save_from_collaborations_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveReportAs</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromDashboard</string>
+        <string>save_report_ss_save_from_dashboard_0001</string>
+        <string>save_report_ss_save_from_dashboard_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveReportAs</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromDepartmentReport</string>
+        <string>save_report_as_save_from_department_report_0001</string>
+        <string>save_report_as_save_from_department_report_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveReportAs</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromLJUR</string>
+        <string>save_report_as_save_from_LJUR_0001</string>
+        <string>save_report_as_save_from_LJUR_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveReportAs</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromResearcherReport</string>
+        <string>save_report_as_save_from_researcher_report_0001</string>
+        <string>save_report_as_save_from_researcher_report_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveReportAs</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromResearchPerformance</string>
+        <string>save_report_as_save_from_research_performance_0001</string>
+        <string>save_report_as_save_from_research_performance_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveReportAs</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromTrendingTechnology</string>
+        <string>save_report_as_save_from_trending_technology_0001</string>
+        <string>save_report_as_save_from_trending_technology_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveTile</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromFundingAgencies</string>
+        <string>save_from_funding_agencies_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveTile</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromJournals</string>
+        <string>save_from_journals_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveTile</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromOrganizations</string>
+        <string>save_from_organizations_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveTile</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromPeople</string>
+        <string>save_from_people_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveTile</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromRegions</string>
+        <string>save_from_regions_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SaveTile</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SaveFromResearchAreas</string>
+        <string>save_from_research_areas_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Sharing</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SharingEmail</string>
+        <string>sharing_email_message_0003</string>
+        <string>sharing_email_Attached_file_0004</string>
+        <string>sharing_email_0001</string>
+        <string>sharing_email_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_Sharing</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SharingOfReport</string>
+        <string>sharing_sharing_of_report_0002</string>
+        <string>sharing_sharing_of_report_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_SignIn</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_SignIn</string>
+        <string>signin_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_TrendingTechnologySystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_TimelineTile</string>
+        <string>trending_technology_Timeline_tile_0001</string>
+        <string>trending_technology_Timeline_tile_0002</string>
+        <string>trending_technology_Timeline_tile_0003</string>
+        <string>trending_technology_Timeline_tile_0004</string>
+        <string>trending_technology_Timeline_tile_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_TrendingTechnologySystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ToplistTile</string>
+        <string>trending_technology_Toplist_tile_0001</string>
+        <string>trending_technology_Toplist_tile_0002</string>
+        <string>trending_technology_Toplist_tile_0003</string>
+        <string>trending_technology_Toplist_tile_0004</string>
+        <string>trending_technology_Toplist_tile_0005</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_TrendingTechnologySystemReports</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_TTPage</string>
+        <string>trending_technology_TT_page_0001</string>
+        <string>trending_technology_TT_page_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ViewProfileButton</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ViewProfileButtonOnPageJournals</string>
+        <string>view_profile_button_on_page_journals_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ViewProfileButton</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ViewProfileButtonOnPageOrganizations</string>
+        <string>view_profile_button_on_page_organizations_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_WoSToInCites</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CreateNewDataset</string>
+        <string>WoS_to_InCites_create_new_dataset_0001</string>
+        <string>WoS_to_InCites_create_new_dataset_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_WoSToInCites</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Email</string>
+        <string>WoS_to_InCites_notification_email_0001</string>
+        <string>WoS_to_InCites_notification_email_0002</string>
+        <string>WoS_to_InCites_notification_email_0003</string>
+        <string>WoS_to_InCites_notification_email_0004</string>
+        <string>WoS_to_InCites_notification_email_0005</string>
+        <string>WoS_to_InCites_notification_email_0006</string>
+        <string>WoS_to_InCites_notification_email_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_FacultyReportSystemReport</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_MostCitedWebofScienceDocumentsTile</string>
+        <string>FacultyReport_MostCitedWebofScienceDocumentsTile_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ViewProfileButton</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ViewProfileButtonOnPageJournals</string>
+        <string>view_profile_button_on_page_journals_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_ViewProfileButton</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_ViewProfileButtonOnPageOrganizations</string>
+        <string>view_profile_button_on_page_organizations_0001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_WoSToInCites</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_CreateNewDataset</string>
+        <string>WoS_to_InCites_create_new_dataset_0001</string>
+        <string>WoS_to_InCites_create_new_dataset_0002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Features_WoSToInCites</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Email</string>
+        <string>WoS_to_InCites_notification_email_0001</string>
+        <string>WoS_to_InCites_notification_email_0002</string>
+        <string>WoS_to_InCites_notification_email_0003</string>
+        <string>WoS_to_InCites_notification_email_0004</string>
+        <string>WoS_to_InCites_notification_email_0005</string>
+        <string>WoS_to_InCites_notification_email_0006</string>
+        <string>WoS_to_InCites_notification_email_0007</string>
+      </Tests>
+    </ExecutionTestSuite>
+  </ExecutionTestSuites>
+</ExecutionTestSuiteModel>

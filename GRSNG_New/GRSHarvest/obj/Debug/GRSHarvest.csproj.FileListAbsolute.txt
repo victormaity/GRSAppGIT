@@ -1,0 +1,378 @@
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GRSHarvest.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GRSHarvest.pdb
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Core.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Windsor.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Ionic.Zip.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Microsoft.Practices.ServiceLocation.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Microsoft.Web.Infrastructure.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\mscorlib.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Newtonsoft.Json.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\RestSharp.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Helpers.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\TechTalk.JiraRestClient.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.Extended.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\QCClient.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\SharpSvn.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\nunit.framework.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.pdb
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.pdb
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Core.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Windsor.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Ionic.Zip.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Newtonsoft.Json.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\RestSharp.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.pdb
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.pdb
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.Extended.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\QCClient.pdb
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\SharpSvn.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\nunit.framework.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\normidna.nlp
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\normnfc.nlp
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\normnfd.nlp
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\normnfkc.nlp
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\normnfkd.nlp
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\SharpPlink-x64.svnExe
+F:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csprojResolveAssemblyReference.cache
+F:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.Properties.Resources.resources
+F:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csproj.GenerateResource.Cache
+F:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.pdb
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\ClosedXML.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\DocumentFormat.OpenXml.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\ClosedXML.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Mvc.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Razor.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.dll
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Helpers.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Mvc.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Razor.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.xml
+F:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GRSHarvest.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GRSHarvest.pdb
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Core.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Windsor.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Ionic.Zip.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Microsoft.Web.Infrastructure.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Newtonsoft.Json.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\RestSharp.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Helpers.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Mvc.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Razor.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\TechTalk.JiraRestClient.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.Extended.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\QCClient.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\SharpSvn.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\ClosedXML.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\LibGit2Sharp.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\nunit.framework.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\DocumentFormat.OpenXml.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.pdb
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.pdb
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Core.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Windsor.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Ionic.Zip.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Newtonsoft.Json.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\RestSharp.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Helpers.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Mvc.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Razor.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.pdb
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.pdb
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.Extended.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\QCClient.pdb
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\SharpSvn.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\ClosedXML.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\nunit.framework.xml
+E:\Jenkins\workspace\GRSNG\GRSHarvest\bin\SharpPlink-x64.svnExe
+E:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csprojResolveAssemblyReference.cache
+E:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.Properties.Resources.resources
+E:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csproj.GenerateResource.Cache
+E:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.dll
+E:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GRSHarvest.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GRSHarvest.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Core.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Windsor.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Ionic.Zip.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Microsoft.Web.Infrastructure.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Newtonsoft.Json.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\RestSharp.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Helpers.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Mvc.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Razor.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\TechTalk.JiraRestClient.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.Extended.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\QCClient.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\SharpSvn.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\ClosedXML.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\LibGit2Sharp.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\nunit.framework.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\DocumentFormat.OpenXml.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Core.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Windsor.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Ionic.Zip.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Newtonsoft.Json.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\RestSharp.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Helpers.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Mvc.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Razor.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\EntityFramework.Extended.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\SharpSvn.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\ClosedXML.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\LibGit2Sharp.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\LibGit2Sharp.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\nunit.framework.xml
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\SharpPlink-x64.svnExe
+D:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csprojResolveAssemblyReference.cache
+D:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.Properties.Resources.resources
+D:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csproj.GenerateResource.Cache
+D:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\QCClient.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.DataLINQ.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\GlobalReportingSystem.DataLINQ.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\NativeBinaries\amd64\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\NativeBinaries\x86\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\NativeBinaries\x86\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\Jenkins\workspace\GRSNG\GRSHarvest\bin\LibGit2Sharp.dll.config
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\NativeBinaries\amd64\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\NativeBinaries\x86\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\NativeBinaries\x86\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\LibGit2Sharp.dll.config
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GRSHarvest.dll.config
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GRSHarvest.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GRSHarvest.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Castle.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Castle.Windsor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\EntityFramework.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Ionic.Zip.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Microsoft.Practices.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Microsoft.Web.Infrastructure.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Newtonsoft.Json.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\RestSharp.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Helpers.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Mvc.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Razor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.WebPages.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\TechTalk.JiraRestClient.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Http.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\EntityFramework.Extended.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\QCClient.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\SharpSvn.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\ClosedXML.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.DataLINQ.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\LibGit2Sharp.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\nunit.framework.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\DocumentFormat.OpenXml.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Castle.Core.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Castle.Windsor.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\EntityFramework.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Ionic.Zip.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Newtonsoft.Json.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\RestSharp.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Helpers.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Mvc.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Razor.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.WebPages.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Http.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\EntityFramework.Extended.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\QCClient.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\SharpSvn.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\ClosedXML.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\GlobalReportingSystem.DataLINQ.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\LibGit2Sharp.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\LibGit2Sharp.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\nunit.framework.xml
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\bin\SharpPlink-x64.svnExe
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csprojResolveAssemblyReference.cache
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.Properties.Resources.resources
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csproj.GenerateResource.Cache
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.dll
+D:\GRS LATEST\GRS\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\LibGit2Sharp.dll.config
+E:\GRS_New\GRSNG\GRSHarvest\bin\NativeBinaries\amd64\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\NativeBinaries\amd64\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\NativeBinaries\x86\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\NativeBinaries\x86\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\NativeBinaries\osx\libgit2-785d8c4.dylib
+E:\GRS_New\GRSNG\GRSHarvest\bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+E:\GRS_New\GRSNG\GRSHarvest\bin\GRSHarvest.dll.config
+E:\GRS_New\GRSNG\GRSHarvest\bin\GRSHarvest.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\GRSHarvest.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\Castle.Core.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\Castle.Windsor.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\EntityFramework.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\Ionic.Zip.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\Microsoft.Practices.ServiceLocation.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\Microsoft.Web.Infrastructure.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\Newtonsoft.Json.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\RestSharp.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Helpers.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Mvc.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Razor.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.WebPages.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\TechTalk.JiraRestClient.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Http.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\EntityFramework.Extended.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\QCClient.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\ClosedXML.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.DataLINQ.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\SharpSvn.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\LibGit2Sharp.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\nunit.framework.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\DocumentFormat.OpenXml.dll
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Core.dll.config
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.ServiceLocation.dll.config
+E:\GRS_New\GRSNG\GRSHarvest\bin\Castle.Core.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\Castle.Windsor.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\EntityFramework.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\EntityFramework.SqlServer.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\Ionic.Zip.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\Newtonsoft.Json.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\RestSharp.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Helpers.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Mvc.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Razor.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.WebPages.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.WebPages.Deployment.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.WebPages.Razor.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Http.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.Data.dll.config
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.BL.dll.config
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Web.Http.WebHost.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\Castle.Facilities.WcfIntegration.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\System.Net.Http.Formatting.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\EntityFramework.Extended.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\QCClient.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\QCClient.dll.config
+E:\GRS_New\GRSNG\GRSHarvest\bin\ClosedXML.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.DataLINQ.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\GlobalReportingSystem.DataLINQ.dll.config
+E:\GRS_New\GRSNG\GRSHarvest\bin\SharpSvn.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\LibGit2Sharp.pdb
+E:\GRS_New\GRSNG\GRSHarvest\bin\LibGit2Sharp.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\nunit.framework.xml
+E:\GRS_New\GRSNG\GRSHarvest\bin\SharpPlink-x64.svnExe
+E:\GRS_New\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csprojAssemblyReference.cache
+E:\GRS_New\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.Properties.Resources.resources
+E:\GRS_New\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csproj.GenerateResource.cache
+E:\GRS_New\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csproj.CoreCompileInputs.cache
+E:\GRS_New\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.csproj.CopyComplete
+E:\GRS_New\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.dll
+E:\GRS_New\GRSNG\GRSHarvest\obj\Debug\GRSHarvest.pdb

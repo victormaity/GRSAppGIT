@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput xmlns:ns2="local" id="105"><Title>Rosacea</Title><Teaser>
+  Facts about Rosacea.
+  
+    Rosacea is a chronic, relapsing cutaneous inflammatory disorder affecting the blood vessels and pilosebaceous units of the face. Primarily affecting adults with fair skin, it is characterized by transient or persistent central facial erythema, visible blood vessels (telangiectasia), and acneiform papules and pustules, although symptoms and manifestations vary in p...</Teaser></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput>

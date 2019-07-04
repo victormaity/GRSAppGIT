@@ -1,0 +1,40 @@
+8
+
+dir
+151790
+http://sourcecontrol.int.thomsonreuters.com:8091/svn/qa_automation/GRS_NextGen/TestConsoleApplication/Properties
+http://sourcecontrol.int.thomsonreuters.com:8091/svn
+
+
+
+2014-09-19T09:27:12.447992Z
+118347
+aphilip
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4576ea35-741e-0410-a346-fc41942853a1
+
+AssemblyInfo.cs
+file
+
+
+
+
+2015-05-14T14:40:14.176000Z
+86f6cedb6305ae0e44992af92c405124
+2014-09-19T09:27:12.447992Z
+118347
+aphilip
+

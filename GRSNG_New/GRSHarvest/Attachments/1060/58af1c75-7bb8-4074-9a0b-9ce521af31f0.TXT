@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><sourceSummaryOutput><SourceId>487843</SourceId><Description>Press Release</Description><Title>InterMune announces first quarter financial results</Title><Authors><Author>InterMune Inc</Author></Authors><PublicationDetails><Date>2003-04-29T00:00:00Z</Date></PublicationDetails></sourceSummaryOutput>

@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node depth="3" leaf="false" name="Breast tumor" treeCode="END-BRE-TUM-" id="49"><hitSynonyms></hitSynonyms></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.OntologyTreeOutput>

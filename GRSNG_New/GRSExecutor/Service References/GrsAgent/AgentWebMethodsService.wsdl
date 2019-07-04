@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://webserver.agent.grs.thomsonreuters.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="AgentWebMethodsService" targetNamespace="http://webserver.agent.grs.thomsonreuters.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:3195/?xsd=1" namespace="http://webserver.agent.grs.thomsonreuters.com/" />
+    </xsd:schema>
+  </types>
+  <message name="stop">
+    <part name="parameters" element="tns:stop" />
+  </message>
+  <message name="stopResponse">
+    <part name="parameters" element="tns:stopResponse" />
+  </message>
+  <message name="startLoadbalanced">
+    <part name="parameters" element="tns:startLoadbalanced" />
+  </message>
+  <message name="startLoadbalancedResponse">
+    <part name="parameters" element="tns:startLoadbalancedResponse" />
+  </message>
+  <message name="removeLastReports">
+    <part name="parameters" element="tns:removeLastReports" />
+  </message>
+  <message name="removeLastReportsResponse">
+    <part name="parameters" element="tns:removeLastReportsResponse" />
+  </message>
+  <message name="getLastReportIdsLb">
+    <part name="parameters" element="tns:getLastReportIdsLb" />
+  </message>
+  <message name="getLastReportIdsLbResponse">
+    <part name="parameters" element="tns:getLastReportIdsLbResponse" />
+  </message>
+  <message name="executeCustomCommand">
+    <part name="parameters" element="tns:executeCustomCommand" />
+  </message>
+  <message name="executeCustomCommandResponse">
+    <part name="parameters" element="tns:executeCustomCommandResponse" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <message name="getVersion">
+    <part name="parameters" element="tns:getVersion" />
+  </message>
+  <message name="getVersionResponse">
+    <part name="parameters" element="tns:getVersionResponse" />
+  </message>
+  <message name="ping">
+    <part name="parameters" element="tns:ping" />
+  </message>
+  <message name="pingResponse">
+    <part name="parameters" element="tns:pingResponse" />
+  </message>
+  <message name="startLinear">
+    <part name="parameters" element="tns:startLinear" />
+  </message>
+  <message name="startLinearResponse">
+    <part name="parameters" element="tns:startLinearResponse" />
+  </message>
+  <portType name="AgentWebMethods">
+    <operation name="stop">
+      <input wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/stopRequest" message="tns:stop" />
+      <output wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/stopResponse" message="tns:stopResponse" />
+    </operation>
+    <operation name="startLoadbalanced">
+      <input wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/startLoadbalancedRequest" message="tns:startLoadbalanced" />
+      <output wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/startLoadbalancedResponse" message="tns:startLoadbalancedResponse" />
+    </operation>
+    <operation name="removeLastReports">
+      <input wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/removeLastReportsRequest" message="tns:removeLastReports" />
+      <output wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/removeLastReportsResponse" message="tns:removeLastReportsResponse" />
+    </operation>
+    <operation name="getLastReportIdsLb">
+      <input wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/getLastReportIdsLbRequest" message="tns:getLastReportIdsLb" />
+      <output wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/getLastReportIdsLbResponse" message="tns:getLastReportIdsLbResponse" />
+    </operation>
+    <operation name="executeCustomCommand">
+      <input wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/executeCustomCommandRequest" message="tns:executeCustomCommand" />
+      <output wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/executeCustomCommandResponse" message="tns:executeCustomCommandResponse" />
+      <fault wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/executeCustomCommand/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getVersion">
+      <input wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/getVersionRequest" message="tns:getVersion" />
+      <output wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/getVersionResponse" message="tns:getVersionResponse" />
+    </operation>
+    <operation name="ping">
+      <input wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/pingRequest" message="tns:ping" />
+      <output wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/pingResponse" message="tns:pingResponse" />
+    </operation>
+    <operation name="startLinear">
+      <input wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/startLinearRequest" message="tns:startLinear" />
+      <output wsam:Action="http://webserver.agent.grs.thomsonreuters.com/AgentWebMethods/startLinearResponse" message="tns:startLinearResponse" />
+    </operation>
+  </portType>
+  <binding name="AgentWebMethodsPortBinding" type="tns:AgentWebMethods">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="stop">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="startLoadbalanced">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="removeLastReports">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLastReportIdsLb">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="executeCustomCommand">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getVersion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ping">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="startLinear">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="AgentWebMethodsService">
+    <port name="AgentWebMethodsPort" binding="tns:AgentWebMethodsPortBinding">
+      <soap:address location="http://localhost:3195/" />
+    </port>
+  </service>
+</definitions>

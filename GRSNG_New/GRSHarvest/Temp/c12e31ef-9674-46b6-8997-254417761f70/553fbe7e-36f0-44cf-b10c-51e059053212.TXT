@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.iPerformAnotherSearchWithFieldAndQueryOnPageForCollection(ResultSummaryPage_Steps.java:1769);
+✽.Then I perform another search with field "Title" and query "Influence of rotating shiftwork in health and performance of air traffic controller: A review" on page "Basic Search" for collection "All Databases"(com.clarivateanalytics.wos.gui.cucumber.deployment/CCIssues.feature:97)

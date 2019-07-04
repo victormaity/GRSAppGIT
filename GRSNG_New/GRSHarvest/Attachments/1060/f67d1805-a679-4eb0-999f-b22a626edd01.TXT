@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=%22A+Randomized+Clinical+Trial+of+the+Tracheal+Tube+with+Subglottic+Secretion+Drainage+for+Preventing+Ventilator-associated+Pneumonia+%28VAP%29%22&hits=20&offset=0&filtersEnabled=0&queryLanguage=ssql

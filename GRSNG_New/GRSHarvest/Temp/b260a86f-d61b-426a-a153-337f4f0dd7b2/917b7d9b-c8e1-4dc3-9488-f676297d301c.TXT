@@ -1,0 +1,1 @@
+https://produs-api.cortellis.int.clarivate.com/api-ws/ws/rs/patents-v3/patent/export/structure?query=JOINED%28structures%3ASSS%28SMILES%2C%22c1ccc%28c%28c1%29C%28%3DO%29O%29OC%28%3DO%29%22%29%29&hits=10&fmt=xls&offset=0

@@ -1,0 +1,1 @@
+          Select distinct drd.regulatory_designation_id from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION drd join  ci_public_staging.jp_regulatory_designation_list rdl on (drd.regulatory_designation_id=rdl.REGULATORY_DESIGNATION_ID) where drd.DRUG_ID='9028'     

@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.iClickOnLinkOnPage(ResultSummaryPage_Steps.java:1261);
+✽.And I click on link "back to search" on page "Markedlist"(com.clarivateanalytics.wos.gui.cucumber.deployment/CompoundMarkedList.feature:31)

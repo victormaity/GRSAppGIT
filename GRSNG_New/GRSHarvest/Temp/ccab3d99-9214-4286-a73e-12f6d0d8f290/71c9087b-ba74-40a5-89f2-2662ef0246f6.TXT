@@ -1,0 +1,1 @@
+GET https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/companyAnalytics-v1/deal/search?query=Asia&filtersEnabled=1&hits=10&offset=0&querylanguage=ssql returned a response status of 500 Internal Server Error

@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.AnalyticsInput xmlns:ns2="local"><queryName>trialDurationsRefsByAction</queryName><parameters><parameter name="actionId">221</parameter></parameters></ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.AnalyticsInput>

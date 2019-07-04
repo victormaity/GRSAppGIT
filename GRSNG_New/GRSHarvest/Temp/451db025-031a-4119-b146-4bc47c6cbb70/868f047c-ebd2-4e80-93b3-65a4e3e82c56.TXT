@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.FullRecordPage_Steps.iSendRecordToIncludingAndOnPage(FullRecordPage_Steps.java:574);
+✽.And I send record to "Other File Formats" including "Full Record" and "Plain Text" on page "Full Record"(com.clarivateanalytics.wos.gui.cucumber.wosng/WOSNGTest.feature:908)

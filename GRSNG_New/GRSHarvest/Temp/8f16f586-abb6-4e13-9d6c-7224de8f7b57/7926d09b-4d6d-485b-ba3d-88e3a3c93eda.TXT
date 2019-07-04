@@ -1,0 +1,29 @@
+Tech info:
+Exception cause: org.openqa.selenium.ElementNotInteractableException: Element <option id="TI_search_field"> could not be scrolled into view
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBASDPC05844', ip: '10.10.246.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190509185224, moz:headless: false, moz:processID: 14196, moz:profile: C:\Users\RR00478812\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4210c579-ff2b-4b6c-a006-6928b44078b8 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83);
+org.openqa.selenium.support.ui.Select.setSelected(Select.java:324);
+org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:120);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.DropDown.selectByVisibleText(DropDown.java:86);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.SearchFieldRowPageObject.enterData(SearchFieldRowPageObject.java:92);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.SearchFieldRowPageObject.enterData(SearchFieldRowPageObject.java:150);
+com.clarivateanalytics.wos.gui.cucumber.pages.interfaces.SearchFieldRows.fillSearchFieldRows(SearchFieldRows.java:78);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.enterSearchQuery(BasicSearchPage.java:135);
+com.clarivateanalytics.wos.gui.cucumber.pages.searchpages.BasicSearchPage.runSearch(BasicSearchPage.java:162);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.I_perform_search_by_field_with_query_on_page(BasicSearchPage_Steps.java:176);
+✽.When I perform search by field "Title" with query "Section for gas turbine engine of vehicle, has damper assembly including first damper that is engaged with first blade and second damper that is engaged with second blade, where blades are attached to disk" on page "Basic Search"(com.clarivateanalytics.wos.gui.cucumber.deployment/CCIssues.feature:1141)

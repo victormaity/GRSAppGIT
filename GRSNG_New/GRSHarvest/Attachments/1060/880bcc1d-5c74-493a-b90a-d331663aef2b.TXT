@@ -1,0 +1,1 @@
+          select * from (SELECT drug_id FROM ls_charts.sales_dy_ww_mean where mean is not NULL  and not mean = '0' order by dbms_random.value) where rownum < 2     

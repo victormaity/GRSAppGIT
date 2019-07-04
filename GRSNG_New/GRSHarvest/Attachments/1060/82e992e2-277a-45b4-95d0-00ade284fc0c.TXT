@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Trials id="222727"><Title>Equivalence of Usual Interventions for Trypanosomiasis (EQUITY)</Title><Indications><Indication>Trypanosoma cruzi infection</Indication></Indications><Phase>Phase 2/Phase 3 Clinical</Phase><Drugs/><RecruitmentStatus>Recruiting</RecruitmentStatus></Trials>

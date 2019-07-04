@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model GlobalReportingSystem.Core.Models.GRS.UserProfileModel 
+<div class="page-header">
+    <h1>Profile
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            settings
+        </small>
+    </h1>
+</div>
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="alert alert-success alert-dismissible fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        @ViewBag.Message
+    </div>
+}
+<div class="row">
+    @using (Html.BeginForm("Profile", "Users", FormMethod.Post))
+    {
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right">Full Name</label>
+
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(p => p.FullName, new { @class = "col-xs-10 col-sm-5" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right">Password</label>
+
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(p => p.Password, new { @class = "col-xs-10 col-sm-5" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right">Email</label>
+
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(p => p.Email, new { @class = "col-xs-10 col-sm-5"})
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right">QC Login</label>
+
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(p => p.QCLogin, new { @class = "col-xs-10 col-sm-5" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right">QC Password</label>
+
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(p => p.QCPassword, new { @class = "col-xs-10 col-sm-5" })
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <button class="btn btn-info" type="submit">
+                <i class="ace-icon fa fa-check bigger-110"></i>
+                Submit
+            </button>
+        </div>
+    }
+</div>

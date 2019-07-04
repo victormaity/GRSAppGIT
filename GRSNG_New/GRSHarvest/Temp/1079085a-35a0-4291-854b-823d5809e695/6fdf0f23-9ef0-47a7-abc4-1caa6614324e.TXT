@@ -1,0 +1,1 @@
+http://mwb.us-west-2.produs.prod.cortellis.int.clarivate.com:8343/mr/RestOntologyService/v2/taxonomy/cellline/parent/10000%7C11913%7C

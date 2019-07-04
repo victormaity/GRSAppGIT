@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node depth="2" leaf="false" name="Infection by anatomical location" treeCode="INF-LOC-" id="1305" count="19298"><hitSynonyms></hitSynonyms></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.OntologyTreeOutput>

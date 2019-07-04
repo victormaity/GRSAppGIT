@@ -1,0 +1,85 @@
+﻿@model  GlobalReportingSystem.Core.Models.Entities.AccountForTestRun
+<div class="modal-body">
+    <div>
+        <label class="labelForm">
+            Name
+        </label>
+        <div class="input-group">
+            <input type="text" id="accountName-@Model.ID" class = "form-control labelForm" value="@Model.AccountName"/>
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            Login
+        </label>
+        <div class="input-group">
+            <input type="text" id="accountLogin-@Model.ID" class = "form-control labelForm" value="@Model.UserLogin"/>
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            Password
+        </label>
+        <div class="input-group">
+            <input type="text" id="accountPassword-@Model.ID" class = "form-control labelForm" value="@Model.UserPassword"/>
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+    </div>
+    <hr />
+    <div>
+        <label class="labelForm">
+            Comments
+        </label>
+        <div class="input-group">
+            <input type="text" id="accountComments-@Model.ID" class = "form-control labelForm" value="@Model.Comments"/>
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+    </div>
+    <hr />
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-sm" data-dismiss="modal">
+        <i class="ace-icon fa fa-times"></i>
+        Cancel
+    </button>
+
+    <button type="submit" class="btn btn-sm btn-primary" onclick="updateAccount(@Model.ID)">
+        <i class="ace-icon fa fa-check"></i>
+        Edit
+    </button>
+</div>
+
+<script>
+    function updateAccount(id) {
+        var name = $("#accountName-" + id)[0].value;
+        var login = $("#accountLogin-" + id)[0].value;
+        var password = $("#accountPassword-" + id)[0].value;
+        var comments = $("#accountComments-" + id)[0].value;
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("EditExecutionAccount")",
+            data: "{ 'id': " + id + ", 'name':'" + name + "','login':'" + login + "', 'password':'" + password + "', 'comments':'" + comments + "'}",
+            contentType: "application/json; charset=utf-8",
+            success: function () {
+                location.reload();
+            }
+        });
+    }
+</script>

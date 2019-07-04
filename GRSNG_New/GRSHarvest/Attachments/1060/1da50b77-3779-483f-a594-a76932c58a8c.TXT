@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node match="false" depth="1" leaf="false" name="Viruses" treeCode="2961|" id="2961"></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyTreeOutput>

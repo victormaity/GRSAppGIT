@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><sourceSummaryOutput><SourceId>325250</SourceId><Description>Conference Report</Description><Title>Digestive Disease Week (Part II) Orlando, FL, USA</Title><Authors><Author>Kibble A</Author></Authors><PublicationDetails><Issue>May 16-19</Issue><Year>1999</Year></PublicationDetails></sourceSummaryOutput>

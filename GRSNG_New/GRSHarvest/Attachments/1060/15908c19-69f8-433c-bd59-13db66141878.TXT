@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="136102"><Title>Ajinomoto to develop and market Dr Falk Pharma's budesonide enema in Japan for inflammatory bowel disease</Title><Principal>Dr Falk Pharma GmbH</Principal><Partner>Ajinomoto Co Inc</Partner><Type>Drug - Development/Commercialization License</Type><Status>Active</Status></Deal>

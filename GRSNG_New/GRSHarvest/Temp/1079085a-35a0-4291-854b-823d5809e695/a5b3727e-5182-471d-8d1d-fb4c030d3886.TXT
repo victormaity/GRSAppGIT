@@ -1,0 +1,1 @@
+          SELECT ancestor_id FROM (SELECT * FROM CG_PUBLIC_STAGING.ng_celllines_tree_ad tab1 WHERE (descendant_depth - ancestor_depth)=1 ORDER BY dbms_random.value) WHERE descendant_tree_code='10000|11913|'     

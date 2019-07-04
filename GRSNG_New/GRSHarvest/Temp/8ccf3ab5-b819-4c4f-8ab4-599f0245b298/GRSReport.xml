@@ -1,0 +1,43 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>Test_R3_Changes</test_cycle>
+    <url>https://tokenclient.wos-non-prod.oneplatform.build/tokens/QA1/client_ssl.cgi/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_03</user>
+    <ip>192.168.109.117</ip>
+    <start_time>05/09/2019 10:47:28</start_time>
+    <end_time>05/09/2019 10:48:51</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (32-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Acceptance INSPEC" start_time="5/9/2019 10:47:28 AM">
+    <TestCase name="INSPEC_AC_001" start_time="5/9/2019 10:47:52 AM" description="INSPEC General search checking" criticality="" state="notcompleted" end_time="5/9/2019 10:48:51 AM">
+      <step type="pass" description="Prerequisite: INSPEC General Search. Check Page Display " expected="Page is displayed correctly" time="5/9/2019 10:47:54 AM" inputdata="">
+        <substep valid="True" time="5/9/2019 10:47:52 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="5/9/2019 10:47:53 AM">Clicking Link 'INSPEC'. Expected result: True.</substep>
+        <substep valid="True" time="5/9/2019 10:47:54 AM">General Search page was opened</substep>
+      </step>
+      <step type="fail" description="Check search is performed by every field with all booleans operators." expected="Search is performed correct and booleans operators are worked correctly." time="5/9/2019 10:48:51 AM" inputdata="" actual="Failed to find 'Treatment Type' item in the Search Field Selection drop-down for the search row 3">
+        <substep valid="True" time="5/9/2019 10:47:54 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="5/9/2019 10:47:54 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="5/9/2019 10:47:54 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="5/9/2019 10:47:56 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="5/9/2019 10:47:56 AM">Check clear sreen</substep>
+        <substep valid="True" time="5/9/2019 10:47:56 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="5/9/2019 10:47:56 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="5/9/2019 10:47:57 AM">Clicking Link 'Add Another Field'. Expected result: True.</substep>
+        <substep valid="True" time="5/9/2019 10:48:00 AM">Clicking Link 'Add Another Field'. Expected result: True.</substep>
+        <substep valid="True" time="5/9/2019 10:48:03 AM">Clicking Link 'Add Another Field'. Expected result: True.</substep>
+        <substep valid="True" time="5/9/2019 10:48:14 AM">Enter search field - search field = Title, search term = Ukraine</substep>
+        <substep valid="True" time="5/9/2019 10:48:28 AM">Enter search field - search field = Author, search term = Alexander, boolean connector = OR</substep>
+        <substep valid="False" time="5/9/2019 10:48:46 AM" tech_info="Blocking exception caused by ThrowException method" screenshot="6655c0a0543e4ca591e5e4c804cb881f.jpg" screenshot_driver="279675f6644447ef81538b4e1f62dfd4.jpg">Failed to find 'Treatment Type' item in the Search Field Selection drop-down for the search row 3</substep>
+        <substep valid="True" time="5/9/2019 10:48:46 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="5/9/2019 10:48:51 AM">Dispose was successfully done</substep>
+      </step>
+      <step type="norun" description="Check search with Limits: timespan, databases, search settings and result setting. Check that search is performed correctly with date from calendar widget " expected="Search with Limits: timespan, databases, search settings and result setting is performed correctly" time="5/9/2019 10:47:52 AM" inputdata="" />
+    </TestCase>
+  </TestSet>
+</GRS_Report>

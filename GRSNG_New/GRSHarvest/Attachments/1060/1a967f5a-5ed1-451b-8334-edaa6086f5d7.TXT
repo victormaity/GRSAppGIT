@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.ExportTrialSitesV2Input xmlns:ns2="local"><format>MS_Excel</format><query>siteRecruitmentInfoTrialId:31297</query><offset>0</offset><hits>5</hits></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.ExportTrialSitesV2Input>

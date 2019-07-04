@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/118123/qa_automation/GRS_NextGen/GRSRunner
+END
+Web.Release.config
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/118123/qa_automation/GRS_NextGen/GRSRunner/Web.Release.config
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/118123/qa_automation/GRS_NextGen/GRSRunner/packages.config
+END
+GRSRunner.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/118123/qa_automation/GRS_NextGen/GRSRunner/GRSRunner.csproj
+END
+JenkinsIntegrationService.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/118123/qa_automation/GRS_NextGen/GRSRunner/JenkinsIntegrationService.asmx
+END
+Web.Debug.config
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/118123/qa_automation/GRS_NextGen/GRSRunner/Web.Debug.config
+END
+JenkinsIntegrationService.asmx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/118123/qa_automation/GRS_NextGen/GRSRunner/JenkinsIntegrationService.asmx.cs
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/118123/qa_automation/GRS_NextGen/GRSRunner/Web.config
+END

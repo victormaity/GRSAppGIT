@@ -1,0 +1,1 @@
+          SELECT * FROM(SELECT DISTINCT descendant_tree_code FROM CG_PUBLIC_STAGING.ng_celllines_tree_ad tab1 JOIN CG_PUBLIC_STAGING.gg_tissues tab2 ON tab1.ancestor_id = tab2.tissue_id WHERE descendant_depth != 1 AND ancestor_depth != descendant_depth ORDER BY dbms_random.value)WHERE rownum < 2     

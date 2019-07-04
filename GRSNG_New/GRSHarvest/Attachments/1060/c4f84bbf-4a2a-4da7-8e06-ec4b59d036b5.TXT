@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugRecordsInput xmlns:ns2="local"><idList>100025,100043,100028,100041,100023,100008,100033,10001,100007,100010,100035,100021,100020,10002,10003,100045,100015,100022,100019</idList></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugRecordsInput>

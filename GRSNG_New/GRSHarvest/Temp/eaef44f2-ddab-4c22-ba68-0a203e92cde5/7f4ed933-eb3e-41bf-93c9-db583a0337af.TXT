@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.summarypages.ResultsSummaryPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.AnalysisResultsPage 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.AnalysisResultsPage_Steps.iClickOnLink(AnalysisResultsPage_Steps.java:198);
+✽.And I click on "Time Cited" link(com.clarivateanalytics.wos.gui.cucumber.deployment/TotalCitingArticles.feature:49)

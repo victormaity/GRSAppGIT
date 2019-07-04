@@ -1,0 +1,126 @@
+﻿@model GlobalReportingSystem.Core.Models.GRS.TestCasesAndStepsModel
+<div class="widget-box">
+    <div class="widget-header">
+        <h5 class="widget-title" id="tc_container">Test Cases
+        </h5>
+        <input id="ts_id" type="hidden" value="">
+        @*        @if (Model.DedicatedSuits != null && Model.DedicatedSuits.Count != 0)
+        {
+            <span class="widget-toolbar" style="width: 350px;">
+                <div>
+                    <select class="form-control" id="form-field-select-ts" onchange="$('#compareBtn').removeAttr('disabled');">
+                        <option value="" selected="true" style="display: none;">Choose test run to compare...</option>
+                        @foreach (var suite in Model.DedicatedSuits)
+                        {
+                            <option value="@suite.ID">@suite.TSStart</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <button id="compareBtn" class="btn btn-xs" type="button" disabled="disabled" onclick="addTestRun();">
+                        Compare
+                    <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                    </button>
+                </div>
+            </span>
+        }*@
+    </div>
+    <div class="widget-body">
+
+        @*        <div class="widget-body">
+            <div class="widget-main">*@
+        <div class="widget-main" id="testLegend" style="width: 30% !important">
+            @{ Html.RenderPartial("GetTsLegend", Model);}
+        </div>
+        @*</div>
+        </div>*@
+        <div class="widget-main" id="testSuite">
+            <div class="widget-body" id="@Model.TestSuiteID">
+                <div class="widget-body" id="@Model.TestSuiteID">
+                    <div class="widget-main" style="width: 100%; overflow: auto">
+                        <table id="TestCases-@Model.TestSuiteID" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="10"></th>
+                                    <th>Time</th>
+                                    <th>Description</th>
+                                    <th>Expected</th>
+                                    <th>Actual</th>
+                                    <th>Status</th>
+                                    <th>Current Defect</th>
+                                    <th>Old Defects</th>
+                                    <th>Attachments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var testCase in Model.TestCases.Where(p => p.TCState != "pass"))
+                                {
+                                    var colorTest = testCase.TCState;
+
+                                    switch (testCase.TCState)
+                                    {
+                                        case "pass":
+                                            colorTest = "#EAFFE7";
+                                            break;
+                                        case "fail":
+                                            colorTest = "#FFE8D1";
+                                            break;
+                                        default:
+                                            colorTest = "#FFFDD4";
+                                            break;
+                                    }
+                            
+                                    <tr id="@("TC_" + testCase.ID)">
+                                        <td id="controlPanel" style="background-color:@colorTest">
+                                            <a><i class="fa fa-sort blue" onclick="renderTestSteps(@testCase.ID, '@Url.Action("GetTestStepsForQuickView", "TestCycle")')"></i></a>
+                                        </td>
+                                        <td colspan="12" style="text-align: center; background-color:@colorTest; cursor:pointer" onclick="renderTestSteps(@testCase.ID, '@Url.Action("GetTestStepsForQuickView", "TestCycle")')">
+                                            @*<b><i id="restart-@testCase.ID" class="fa fa-repeat" title="Click to re-run" onclick="reRunTestCase(@testCase.ID,@testCase.TCName)"></i></b>*@
+                                            <b>@testCase.TCName @(testCase.TCDescription != null ? "-" : "") @testCase.TCDescription</b>
+                                            <br>
+                                            (@(testCase.TCEndTime - testCase.TCStartTime))
+                            @if (!string.IsNullOrEmpty(testCase.qc_id) && (@Model.DedicatedLinearExecution != null || @Model.DedicatedLoadBalancedExecution != null))
+                            {
+                                <b><i id="restart-@testCase.ID" class="fa fa-repeat blue" title="Click to re-run" onclick="reRunTestCase(@testCase.ID,'@testCase.TCName','@Url.Action("ReRunTestCase", "PublicAccess")')"></i></b>
+                            }
+                                        </td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-hidden="true" class="modal" id="modal-form" style="display: none; /* max-width: 1000px !important; max-height: 1000px !important*/" tabindex="-1">
+    <div class="modal-dialog" style="width: 1200px !important">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h4 class="blue bigger" id="titleAttachment"></h4>
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#TestCases-@Model.TestSuiteID').dataTable(
+            {
+                "bAutoWidth": false,
+                "sWidth": false
+            }
+        );
+    });
+</script>

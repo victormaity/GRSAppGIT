@@ -1,0 +1,1 @@
+          SELECT family_id from (SELECT pfa.family_id FROM CI_PUBLIC.ng_pf_action_basic pfa JOIN CI_PUBLIC.ng_action_primary ap ON (pfa.action_id = ap.action_id) WHERE ap.action_name IS NOT NULL GROUP BY pfa.family_id ORDER BY dbms_random.value)         WHERE rownum<3     

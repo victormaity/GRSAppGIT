@@ -1,0 +1,54 @@
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.DataLINQ.dll.config
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.DataLINQ.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.DataLINQ.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.SqlServer.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.SqlServer.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\Newtonsoft.Json.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.csprojResolveAssemblyReference.cache
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Core.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Data.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.Extended.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Core.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Data.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.Extended.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.DataLINQ.dll.config
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.DataLINQ.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.DataLINQ.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.SqlServer.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Data.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.Extended.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Core.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Data.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.SqlServer.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\Newtonsoft.Json.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.Extended.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.csprojResolveAssemblyReference.cache
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.DataLINQ.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.DataLINQ.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.DataLINQ.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.SqlServer.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Core.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Data.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.Extended.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Core.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Core.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Data.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\GlobalReportingSystem.Data.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.SqlServer.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\bin\Debug\EntityFramework.Extended.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.csprojAssemblyReference.cache
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.csproj.CoreCompileInputs.cache
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.csproj.CopyComplete
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.DataLINQ\obj\Debug\GlobalReportingSystem.DataLINQ.pdb

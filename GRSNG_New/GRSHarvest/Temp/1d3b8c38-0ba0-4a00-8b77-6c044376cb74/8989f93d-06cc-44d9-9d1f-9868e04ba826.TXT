@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.ResultSummaryPage_Steps.iClickOnLinkOnPage(ResultSummaryPage_Steps.java:1264);
+✽.Then I click on link "Analyze Results" on page "Marked List"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.26_Stories.feature:207)

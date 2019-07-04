@@ -1,0 +1,36 @@
+Tech info:
+Exception cause: cucumber.runtime.CucumberException: Failed to instantiate class com.clarivate.stepdefinitions.ppc.GeneseqOCRStepDefs 
+ cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47);
+cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33);
+cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38);
+cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37);
+cucumber.runtime.Runtime.runStep(Runtime.java:300);
+cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44);
+cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39);
+cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44);
+cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102);
+cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63);
+cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18);
+org.junit.runners.ParentRunner$3.run(ParentRunner.java:290);
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71);
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288);
+org.junit.runners.ParentRunner.access$000(ParentRunner.java:58);
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268);
+org.junit.runners.ParentRunner.run(ParentRunner.java:363);
+cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70);
+cucumber.api.junit.Cucumber.runChild(Cucumber.java:95);
+cucumber.api.junit.Cucumber.runChild(Cucumber.java:38);
+org.junit.runners.ParentRunner$3.run(ParentRunner.java:290);
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71);
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288);
+org.junit.runners.ParentRunner.access$000(ParentRunner.java:58);
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268);
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26);
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27);
+org.junit.runners.ParentRunner.run(ParentRunner.java:363);
+cucumber.api.junit.Cucumber.run(Cucumber.java:100);
+org.junit.runner.JUnitCore.run(JUnitCore.java:137);
+com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68);
+com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47);
+com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242);
+com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)

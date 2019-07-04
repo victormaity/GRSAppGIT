@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><EventTranscript id="1923822"><Name>Q2 2008 ROSETTA GENOMICS LTD Earnings Conference Call</Name><Company>Rosetta Genomics Ltd</Company><Drugs><Drug>minaprine</Drug><Drug>bevacizumab</Drug></Drugs></EventTranscript>

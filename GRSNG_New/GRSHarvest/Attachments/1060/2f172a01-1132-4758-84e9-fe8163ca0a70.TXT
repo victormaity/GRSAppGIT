@@ -1,0 +1,1 @@
+          select * from (select trial_id from CI_PUBLIC_STAGING.JP_TRIAL where DEVELOPMENT_STATUS_ID='PNA' order by dbms_random.value)where rownum<11     

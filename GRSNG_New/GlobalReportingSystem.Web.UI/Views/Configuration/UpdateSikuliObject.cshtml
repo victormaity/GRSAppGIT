@@ -1,0 +1,81 @@
+﻿@model  GlobalReportingSystem.Core.Models.Entities.SikuliObject
+@*@using (Html.BeginForm("SaveCustomStatus", "Configuration", FormMethod.Post))
+{*@
+<div class="modal-body">
+    <div>
+        <label class="labelForm">
+            Name
+        </label>
+        <div class="input-group">
+            <input type="text" id="sikuliName-@Model.ID" class = "form-control labelForm" value="@Model.name"/>
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+
+        </div>
+        <hr />
+        <label class="labelForm">
+            Category
+        </label>
+        <div class="input-group">
+            <input type="text" id="sikuliCategory-@Model.ID" class = "form-control labelForm" value="@Model.cathegory"/>
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+        <hr />
+        <label class="labelForm">
+            Description
+        </label>
+        <div class="input-group">
+            <textarea id="sikuliDescription-@Model.ID" class = "form-control labelForm">@Model.description</textarea>
+            <span class="input-group-addon">
+                <i class="ace-icon fa fa-pencil bigger-110"></i>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+   @* <a class="red" onclick="updateSikuli();">
+                                            Save
+                                        </a>*@
+    <button onclick="updateSikuli(@Model.ID)" class="btn btn-info">
+        <i class="ace-icon fa fa-check"></i>
+        Save
+    </button>
+</div>
+
+<script>
+    function updateSikuli(id) {
+        var name = $("#sikuliName-"+id)[0].value;
+        var category = $("#sikuliCategory-" + id)[0].value;
+        var description = $("#sikuliDescription-" + id)[0].value;
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("UpdateSikuliObject")",
+            data: "{ 'category': '" + category + "','name': '" + name + "','description': '" + description + "','id':" +id + "}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            afterSend: function () {
+
+            },
+            /*  error: function (request, status, error)
+                { ShowMessage("Error", error); },*/
+            success: function (msg) {
+                /*  ShowMessage(msg.type, msg.text);
+                if (msg.Type != "Error")
+                    $("#remove-" + id).remove();*/
+                ShowMessage(msg.type, msg.text);
+                if (msg.type != "Error") {
+                    $("#RPname-" + id)[0].innerHTML = name;
+                    $("#RPdescription-" + id)[0].innerHTML = description;
+                    $("#RPcategory-" + id)[0].innerHTML = category;
+                    $("#RPmodifiedBy-" + id)[0].innerHTML = msg.userName;
+                    $("#RPmodifiedOn-" + id)[0].innerHTML = '@(DateTime.Now)';
+                };
+                // location.reload();
+            }
+        });
+    }
+</script>
+@*}*@

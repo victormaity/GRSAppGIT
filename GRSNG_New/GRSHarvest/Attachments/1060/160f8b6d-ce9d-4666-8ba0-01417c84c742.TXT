@@ -1,0 +1,1 @@
+          select * from (select PUBLIC_TITLE from CI_PUBLIC_STAGING.JP_TRIAL where DEVELOPMENT_STATUS_ID='PNA' and PUBLIC_TITLE IS NOT null order by dbms_random.value)where rownum<2     

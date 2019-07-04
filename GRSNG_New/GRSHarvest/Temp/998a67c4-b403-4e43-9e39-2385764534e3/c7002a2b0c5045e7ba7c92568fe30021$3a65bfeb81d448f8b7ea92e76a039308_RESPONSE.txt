@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.runAnalyzes" rc="OK">
+    <list>
+      <map>
+        <val name="Name">AU</val>
+        <val name="TotalCount">161</val>
+        <val name="NoDataCount">0</val>
+        <list name="Values">
+          <map>
+            <val name="Key">ALEXANDR P RASNITSYN</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">ANATOLY P VLASKIN</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">BABIENKO V</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">BARKEVYCH VALERIY</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">BARRICK JAMES E</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">BIZZARO DAVIDE</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">BOJCHAK MIHAJLO PETROVICH</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">BONDE JENSPETER E</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">CAI YIXIANG</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">CHEN FENG</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">CHEN KAI</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">CHEN RENFANG</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">CHEN XIAOLIU</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">CHEN XUESEN</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">CHEN YIN</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">CRUSE M RICHARD</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">DAVID NEWCOMBE</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">DE BEURS KIRSTEN M</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">DONG YINGBI</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">DU LE-TIAN</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">EVGENY E PERKOVSKY</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">FAN ZHENZHONG</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">FENG SHOUQIAN</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GAO QIN</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GAO YONG</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GIWERCMAN ALEKSANDER</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GONG JIANZHENG</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GONG LI-MING</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GONG XIUGANG</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GU MIN</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GU SIYU</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GUO AILING</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">GUO ZHIJUN</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">HAN LIMING</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">HAO LIBING</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">HE XU</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">HE ZHONGHU</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">HENEBRY GEOFFREY M</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">HOUGAARD KARIN S</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">HU KEYI</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">HU YAOHUI</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">HUANG HAIHUI</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">HUANG YONGZENG</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">JI GUIMING</val>
+            <val name="Value">1</val>
+          </map>
+          <map>
+            <val name="Key">QU YANYING</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">WANG ZHONGWEI</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">XIA XIANCHUN</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">YAN JUN</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">YANG FANGPING</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">ZHANG YONG</val>
+            <val name="Value">2</val>
+          </map>
+        </list>
+      </map>
+    </list>
+  </fn>
+</response>

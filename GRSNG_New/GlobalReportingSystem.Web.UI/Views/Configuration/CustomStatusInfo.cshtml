@@ -1,0 +1,149 @@
+﻿@using GlobalReportingSystem.Core.Constants
+@model GlobalReportingSystem.Core.Models.GRS.DB.Status
+@using (Html.BeginForm("SaveCustomStatus", "Configuration", FormMethod.Post, new { @id = "updateCustomStatuses" }))
+{
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-1">Status ID: </label>
+
+        <div class="col-sm-9">
+            @Html.TextBoxFor(p => p.StatusID, new { @class = "col-xs-10 col-sm-5", @id = "form-field-1", @type = "text" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1">Priority: </label>
+
+        <div class="col-sm-9">
+            @Html.TextBoxFor(p => p.Priority, new { @class = "col-xs-10 col-sm-5", @id = "form-field-1-1", @type = "text", @OnKeyPress = "NumericText()" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1-1">Name: </label>
+        <div class="col-sm-9">
+            @Html.TextBoxFor(p => p.StatusName, new { @class = "col-xs-10 col-sm-5", @id = "form-field-1-1-1", @type = "text" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="simple-colorpicker-1">Color: </label>
+        <div class="col-sm-9">
+            <select id="simple-colorpicker-1" class="hide" onchange="GetColor($('#simple-colorpicker-1 option:selected')[0].innerHTML)">
+                @if (Model != null)
+                {
+                    <option value="@Model.Color" selected="">@Model.Color</option>
+       
+                }
+                @{
+                var colors = new List<string>
+                    {
+                        "#ffad46", "#d06b64", "#f83a22", "#fa573c", "#ff7537", "#42d692", "#16a765", "#7bd148",
+                        "#b3dc6c", "#fbe983", "#fad165", "#92e1c0", "#9fe1e7", "#9fc6e7", "#4986e7", "#9a9cff", "#b99aff",
+                        "#c2c2c2", "#cabdbf", "#cca6ac", "#f691b2", "#cd74e6", "#a47ae2", "#555"
+                    };
+                foreach (var color in colors)
+                {
+                    if (Model == null || color != Model.Color)
+                    {
+                    <option value="@color">@color</option>
+                    }
+                }
+                }
+
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-8">Description: </label>
+        <div class="col-sm-9">
+            @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @id = "form-field-8" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="switch-field-1">Count as "Pass": </label>
+        <div class="col-xs-3">
+            @Html.CheckBoxFor(p => p.CountAsPass, new { @name = "switch-field-2", @class = "ace ace-switch ace-switch-2", @id = "switch-field-1" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="switch-field-2">Do not add to cache: </label>
+        <div class="col-xs-3">
+            @Html.CheckBoxFor(p => p.NotAddToCache, new { @name = "switch-field-2", @class = "ace ace-switch ace-switch-2", @id = "id-file-format" })
+        </div>
+    </div>
+    <div id="hiddenAreaGuid">
+        @Html.HiddenFor(p => p.UniqueID);
+    </div>
+    <div id="hiddenAreaColor">
+    </div>
+    <div class="clearfix form-actions">
+        <div class="col-md-offset-3 col-md-9">
+
+            <button type="submit" class="btn btn-info" id="SaveChangesBtn" onclick="">
+                Save
+															<i class="ace-icon fa fa-arrow-right icon-on-right bigger-110"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="hr hr-24"></div>
+
+
+}
+<script type="text/javascript">
+    jQuery(function ($) {
+
+
+        $('#colorpicker1').colorpicker();
+
+        $('#simple-colorpicker-1').ace_colorpicker();
+
+        $("#updateCustomStatuses").submit(function (event) {
+            var error = false;
+            
+            $(this).find("#form-field-1-1").each(function () {
+                if (!$(this).val().length) {
+                    ShowMessage("Error", "'Priority' must have a value!");
+                    $(this).focus();
+                    error = true;
+                    return false;
+                }
+            });
+            $(this).find("#Color").each(function () {
+                if (!$(this).val().length) {
+                    ShowMessage("Error", "Please, choose color for new custom status");
+                    $(this).focus();
+                    error = true;
+                    return false;
+                }
+            });
+
+            $(this).find("#Color").each(function () {
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    url: "@Url.Action("CheckUnique")",
+                    data: "{ 'color':'" + $(this).val() + "','statusName':'"+$("#form-field-1-1-1").val()+"','statusID':'"+$("#form-field-1").val()+"', uniqueID:'" + $("#UniqueID").val() + "'}", 
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        if (msg.type == "Error") {
+                            $(this).focus();
+                            error = true;
+                            ShowMessage(msg.type, msg.text);
+                        }
+
+                    }
+                });
+            });
+            if (error) {
+                event.preventDefault();
+            }
+        });
+
+    });
+
+    function GetColor(color) {
+        document.getElementById('hiddenAreaColor').innerHTML =
+            '<input data-val="true" data-val-required="The Color field is required." id="Color" name="Color" type="hidden" value="' + color + '"/>';
+    }
+    $(document).ready(GetColor($('#simple-colorpicker-1 option:selected')[0].innerHTML));
+
+</script>

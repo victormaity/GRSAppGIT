@@ -1,0 +1,8 @@
+Tech info:
+Exception cause: java.io.FileNotFoundException: C:\PEGASUS\BIOSIS\INIS\BiosisLuxidJsonArchiver.INI (The system cannot find the path specified) 
+ java.io.FileInputStream.open0(Native Method);
+java.io.FileInputStream.open(FileInputStream.java:195);
+java.io.FileInputStream.<init>(FileInputStream.java:138);
+java.io.FileReader.<init>(FileReader.java:72);
+com.clarivate.stepdefinitions.biosis.BiosisLuxIdJsonArchiverStepDefs.userHasFileToVerify(BiosisLuxIdJsonArchiverStepDefs.java:23);
+✽.Given User has "C:\PEGASUS\BIOSIS\INIS\BiosisLuxidJsonArchiver.INI" file to verify(BiosisLuxIdJsonArchiver.feature:6)

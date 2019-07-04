@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/synonymsID/drug?idType=IDAPI&ids=10001,10004&fmt=json

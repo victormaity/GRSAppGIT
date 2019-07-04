@@ -1,0 +1,1 @@
+          SELECT designation_name FROM (SELECT rdl.designation_name, drd.company_id , drd.drug_id FROM rs_drug.FF_DRUG_REGULATORY_DESIGNATION drd JOIN ci_public_staging.jp_regulatory_designation_list rdl ON (drd.regulatory_designation_id=rdl.REGULATORY_DESIGNATION_ID)) WHERE DRUG_ID IN (72635)     

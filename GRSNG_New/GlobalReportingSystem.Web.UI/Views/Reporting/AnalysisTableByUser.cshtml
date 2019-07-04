@@ -1,0 +1,34 @@
+﻿@using GlobalReportingSystem
+@model GlobalReportingSystem.Core.Models.GRS.UsersAndTestCasesModel
+@{
+    
+     if (@Model != null)
+    {
+        var totalCount = 0;
+        var counter = 0;
+        Model.TestCasesAndCycle.ForEach(p => totalCount += p.TestCases.Count);
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">@Model.FullName</h3>
+            <span>Total - @totalCount</span>
+        </div>
+        <div class="panel-body">
+            @foreach (var testCycleAndTestCases in Model.TestCasesAndCycle)
+            {
+                <h6 class="text-info">@testCycleAndTestCases.ParentTestCycleName</h6>
+                @String.Join(", ", testCycleAndTestCases.TestCases.Select(tc => tc.TCName))
+                if(counter != Model.TestCasesAndCycle.Count - 1)
+                {
+                    <hr />
+                }
+                counter++;
+            }
+            
+        </div>
+    </div>
+    
+    }
+}
+
+
+

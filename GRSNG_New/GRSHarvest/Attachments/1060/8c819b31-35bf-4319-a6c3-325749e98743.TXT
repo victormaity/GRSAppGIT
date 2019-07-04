@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.TaxonomyTopLevelInput xmlns:ns2="local"><enableCounts>Ancestor</enableCounts><type>ACtion</type></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.TaxonomyTopLevelInput>

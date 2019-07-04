@@ -1,0 +1,1 @@
+          select descendant_tree_code from (Select distinct descendant_tree_code,ancestor_tree_code,ancestor_id,tissue_name from ls_srv.ng_fluid_tree_ad tab1 join ls_srv.gg_tissues tab2 on tab1.ancestor_id=tab2.tissue_id where descendant_depth != 1 and ancestor_depth = descendant_depth - 1 order by dbms_random.value)         WHERE rownum<2     

@@ -1,0 +1,1 @@
+          Select * from (select source_id from CI_PUBLIC.jp_source_type join CI_PUBLIC.jp_source using (source_id) where source_type_id like 'OTHER' and issue is not null order by dbms_random.value)         WHERE rownum<2     

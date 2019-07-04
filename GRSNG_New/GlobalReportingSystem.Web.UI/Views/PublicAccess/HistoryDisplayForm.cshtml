@@ -1,0 +1,181 @@
+﻿@model List<GlobalReportingSystem.Core.Models.Entities.TestsExecution>
+<div aria-hidden="true" class="modal in" id="modal-form-history" style="display: none;" tabindex="-1">
+    <div class="modal-dialog" style="width: 80%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="blue bigger">History for account:</h4>
+            </div>
+            <div class="modal-body">
+                <table style="font-size: xx-small" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Project
+                            </th>
+                            <th>Machine
+                            </th>
+                            <th>Tests
+                            </th>
+                            <th>Browser
+                            </th>
+                            <th>Environment
+                            </th>
+                            <th>Account
+                            </th>
+                            <th>Configuration
+                            </th>
+                            <th>Subscribers
+                            </th>
+                            <th>Status
+                            </th>
+                            <th style="min-width:150px;">Reports
+                            </th>
+                            <th>Remote 
+                                Execution 
+                                Link
+                            </th>
+                            @* <th></th>*@
+                        </tr>
+                    </thead>
+                    <tbody id="execution_body">
+                        @Html.Partial("ExecutionsPartial", @Model)
+                    </tbody>
+                </table>
+                <button id="btnCoose" class="btn btn-success btn-sm" onclick="startExecutions();" disabled="disabled">
+                    Start Execution(s)
+                    <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                </button>
+                <button id="btnDelete" class="btn btn-danger btn-sm" onclick="removeLinearExecution()" disabled="disabled">
+                    Delete Execution(s)
+            <i class="ace-icon fa fa-trash-o icon-on-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        function sec() {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("ReturnExecutionsHistory", "PublicAccess")",
+                data: "{'user':'" + $('#hidden_user').val() + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () { },
+                error: function () { },
+                success: function (msg) {
+                    $("#execution_body").html(msg);
+                }
+            });
+        }
+
+        setInterval(sec, 60000);
+    });
+
+
+    $(".modal-dialog").onclose($("#btnCoose").attr("disabled", "disabled"));
+    $(".modal-dialog").onclose($("#btnDelete").attr("disabled", "disabled"));
+
+    function removeLinearExecution(id) {
+        var checkboxes = $('input:checkbox:checked').filter('#form-field-select-exec').parent().parent().parent();
+        for (var i = 0; i < checkboxes.length; i++) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("RemoveLinearElement", "Execution")",
+                data: "{ 'id': " + checkboxes[i].getAttribute('executionid') + "}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function () {
+                $("tr[id='" + id + "']").remove();
+            }
+        });
+    }
+}
+
+function startExecutions() {
+    var checkboxes = $('input:checkbox:checked').filter('#form-field-select-exec').parent().parent().parent();
+    for (var i = 0; i < checkboxes.length; i++) {
+        startExecution(checkboxes[i].getAttribute('executionid'));
+    }
+}
+
+function fillForm() {
+    $.ajax({
+        type: "POST",
+        url: "@Url.Action("GetExecutionData", "PublicAccess")",
+            async: false,
+            data: "{ 'executionId':'" + $(".radio.execution > label > input:checked").attr("id") + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+            },
+            error: function () { },
+            success: function (msg) {
+
+                while ($(".btn.btn-sm.btn-prev").attr("disabled") != "disabled")
+                    $('.btn.btn-sm.btn-prev').click();
+
+                $(".radio.project > label > input[id='" + msg.projId + "']")[0].click();
+                ////$('.btn.btn-success.btn-sm.btn-next').removeAttr("disabled");
+                changeStep();
+                //$(".radio.machine > label > input[id='" + msg.machine + "']")[0].click();
+
+                //$('.btn.btn-success.btn-sm.btn-next').click();
+                ////changeStep();
+                //$(".css-treeview > ul > li > label").click();
+                //$('.btn.btn-success.btn-sm.btn-next').click();
+                ////changeStep();
+                //$(".radio.browser > label > input")[0].checked = true;
+                //$('.btn.btn-success.btn-sm.btn-next').click();
+                ////changeStep();
+                //$(".radio.configuration > label > input")[0].checked = true;
+                //$('.btn.btn-success.btn-sm.btn-next').click();
+                ////changeStep();
+                //$(".radio.account > label > input")[0].checked = true;
+                //$('.btn.btn-success.btn-sm.btn-next').click();
+                ////changeStep();
+                //debugger;
+                //$(".radio.configuration > label > input")[0].checked = true;
+                //$('.btn.btn-success.btn-sm.btn-next').click();
+                ////changeStep();
+
+                //debugger;
+
+
+                for (var i = 0; i < 3; i++) {
+                    $('.btn.btn-success.btn-sm.btn-next').click();
+                }
+
+                $("#hidden_project").val(msg.projId);
+                $("#hidden_client").val(msg.machine);
+                $("#hidden_tests").val(msg.tests);
+                $("#hidden_framework").val(msg.frame);
+                $("#hidden_browser").val(msg.browser);
+                $("#hidden_account").val(msg.account);
+                $("#hidden_hostConf").val(msg.hostConf);
+                $("#hidden_execConf").val(msg.execConf);
+                $("#hidden_subscribers").val(msg.subscribers);
+
+                $('.btn.btn-success.btn-sm.btn-next').click();
+
+                var subscribers = msg.subscribers.split(',');
+                var subscribersLeft = [];
+                for (var i = 0; i < subscribers.length; i++) {
+                    if ($("input[id='" + subscribers[i] + "']").length > 0) {
+                        $("input[id='" + subscribers[i] + "']")[0].checked = true;
+                    } else {
+                        subscribersLeft.push(subscribers[i]);
+                    }
+                }
+                $("#subscribers").val(subscribersLeft.join());
+                $("#subscribers").click();
+                $(".close").click();
+            }
+        });
+    }
+</script>

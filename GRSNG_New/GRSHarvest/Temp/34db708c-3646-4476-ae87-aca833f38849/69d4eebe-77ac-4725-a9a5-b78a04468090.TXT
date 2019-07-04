@@ -1,0 +1,1 @@
+http://mwa.us-west-2.produs.prod.cortellis.int.clarivate.com:8335/mr/RestChemistrySearchService/v4/asyncSearch?dataset=patentFamily&searchQuery=JOINED%28structures%3ASSS%28SMILES%2C%22O%3DCc1ccc%28O%29c%28OC%29c1%22%29%29&queryLanguage=ssql&returnFields=structuresSmileString&returnLimit=5

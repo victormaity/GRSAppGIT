@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><PatentFamilySummaryOutputs><PatentFamilySummaryOutput id="1592094"><Title>Body fat measuring apparatus</Title><Assignee>Ya Man Ltd</Assignee><Familymembers>JP-2002017698</Familymembers><PatentNumber>JP-2002017698</PatentNumber></PatentFamilySummaryOutput></PatentFamilySummaryOutputs>

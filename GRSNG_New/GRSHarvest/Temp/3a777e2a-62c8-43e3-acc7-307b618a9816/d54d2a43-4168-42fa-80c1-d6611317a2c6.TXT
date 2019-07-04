@@ -1,0 +1,1 @@
+http://mwa.us-west-2.stable.dev.cortellis.int.clarivate.com:8200/mr/ChemistryService/v1/compound/8713-1/structure/image

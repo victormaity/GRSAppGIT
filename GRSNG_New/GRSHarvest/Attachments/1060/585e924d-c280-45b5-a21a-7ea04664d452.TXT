@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trials?idList=328395,342513,185745,381792,319222,345376,367326,235422,295202,200391

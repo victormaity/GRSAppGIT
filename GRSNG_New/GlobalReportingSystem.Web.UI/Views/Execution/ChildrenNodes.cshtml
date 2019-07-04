@@ -1,0 +1,29 @@
+﻿@using System.Activities.Statements
+@using System.Globalization;
+@using Castle.MicroKernel.Handlers
+@model GlobalReportingSystem.Core.Models.GRS.NodesAndId
+
+
+@if (Model != null && Model.Node != null)
+{
+    <ul>
+        @foreach (var n in Model.Node.Children)
+        {
+            var parentTmp = Model.Node.Parent;
+            string fullParent = Model.Node.Value;
+            while (parentTmp.Value != null)
+            {
+                fullParent = parentTmp.Value + "__" + fullParent;
+                parentTmp = parentTmp.Parent;
+            }
+            <li id="@(fullParent+"__"+n.Value)">
+                
+                <input type="checkbox" onchange="downloadChildren(@Model.id,'@(fullParent+"__"+n.Value)', '@Url.Action("DownloadChildren")');"/>
+                <label path="@(fullParent+"__"+n.Value)" class="draggableTest" title="@n.Value" chosen="0" 
+                       onclick="setDraggable($(this));$('.btn.btn-success.btn-sm.btn-next').removeAttr('disabled');" otype="test" oid="@(Model.id.ToString(CultureInfo.InvariantCulture))">
+                    @(n.Value)
+                </label>
+            </li>
+        }
+    </ul>
+}

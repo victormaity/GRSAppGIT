@@ -1,0 +1,44 @@
+﻿@using GlobalReportingSystem.Core.Models.GRS
+@model GlobalReportingSystem.Core.Models.GRS.TestCasesAndStepsModel
+<table width="100%" id="@Model.TestSuiteID">
+    <tbody>
+        <tr>
+            <td>
+                <div style="border: 1px solid black; border-color: lightgray; display: inline-block; width:100%;">
+                    <table class="table-borders-white" style="cursor: pointer; font-size: small; line-height: 15px; width:100%;">
+                        <tbody>
+                            <tr onclick="renderTestSuite(@Model.TestSuiteID, '', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")')">
+                                <td>Total Item(s)</td>
+                                <td><b>@Model.TotalCount</b></td>
+                            </tr>
+                            <tr class="bg-olive" onclick="renderTestSuite(@Model.TestSuiteID, 'passed', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")')">
+                                <td>Passed Item(s)</td>
+                                <td><b>@Model.PassCount</b></td>
+                            </tr>
+                            <tr class="bg-red" onclick="renderTestSuite(@Model.TestSuiteID, 'failed', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")')">
+                                <td>Failed Item(s)</td>
+                                <td><b>@Model.FailCount</b></td>
+                            </tr>
+                            <tr class="bg-peach" onclick="renderTestSuite(@Model.TestSuiteID, 'notcompleted', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")')">
+                                <td>Blocked Item(s)&nbsp;&nbsp;</td>
+                                <td><b>@Model.NotCompetedCount</b></td>
+                            </tr>
+                            <tr class="bg-light-grey" onclick="renderTestSuite(@Model.TestSuiteID, 'norun', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")')">
+                                <td>No Run Item(s)&nbsp;&nbsp;</td>
+                                <td><b>@Model.NoRunCount</b></td>
+                            </tr>
+                            <tr class="bg-light-red" onclick="renderTestSuite(@Model.TestSuiteID, 'notanalyzed', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")')">
+                                <td>Not Analyzed Failure(s)</td>
+                                <td><b>@Model.NotAnalyzedCount</b></td>
+                            </tr>
+                            <tr class="bg-light-blue" onclick="renderTestSuite(@Model.TestSuiteID, 'analyzed', '@Url.Action("GetTestSuiteName", "TestCycle")', '@Url.Action("GetTestSuite", "TestCycle")', '@Url.Content("~/Content/assets/css/images/loading.gif")')">
+                                <td>Analyzed Test(s)</td>
+                                <td><b>@Model.AnalyzedCount</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

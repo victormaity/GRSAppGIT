@@ -1,0 +1,16 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchFrameException: No frame element found by name or id loginIframe
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'INBASDPC09166', ip: '10.10.247.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown 
+ org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:925);
+com.clarivateAnalytics.cortellis.pages.LoginPage.loginActions(LoginPage.java:249);
+com.clarivateAnalytics.cortellis.pages.LoginPage.performLogin(LoginPage.java:179);
+com.clarivateAnalytics.cortellis.pages.LoginPage.login(LoginPage.java:324);
+com.clarivateAnalytics.cortellis.pages.LoginPage.login(LoginPage.java:330);
+com.clarivateAnalytics.cortellis.pages.LoginPage$$FastClassBySpringCGLIB$$6a92c83b.invoke(<generated>);
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204);
+org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:649);
+com.clarivateAnalytics.cortellis.pages.LoginPage$$EnhancerBySpringCGLIB$$e2542ada.login(<generated>);
+com.clarivateAnalytics.cortellis.StepDefinitions.LoginLogoutStepDef.iLoggedInAsAUserWithAccessToProject(LoginLogoutStepDef.java:593);
+✽.Given I logged in as a "CIExecCTIGOV" user with access to "Mercer" project(Mercer/19_Q1_SitesAndInvestigators/LS_40478[SiteResultsView]ListViewSorting.feature:6)

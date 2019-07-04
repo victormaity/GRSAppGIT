@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Action id="1" action="5-HT receptor agonist"><Synonyms><Synonym>Serotonin agonist</Synonym><Synonym>Serotonin Agonists</Synonym><Synonym>Serotonin receptor agonist</Synonym><Synonym>5HT agonist</Synonym><Synonym>Serotoninergic</Synonym></Synonyms></Action>

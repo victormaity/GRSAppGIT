@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Tools
+END
+Helper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Tools/Helper.cs
+END
+CookieWebClient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Tools/CookieWebClient.cs
+END
+TestSetMigrationState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Tools/TestSetMigrationState.cs
+END
+Serializer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/132465/qa_automation/GRS_NextGen/QCClient/Tools/Serializer.cs
+END

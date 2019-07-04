@@ -1,0 +1,1 @@
+{"ontologyTreeOutput":{"TaxonomyTree":{"Node":{"@depth":"3","@leaf":"false","@name":"Breast tumor","@treeCode":"END-BRE-TUM-","@id":"49","hitSynonyms":""}}}}

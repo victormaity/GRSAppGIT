@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput xmlns:ns2="local" id="53"><Title>Pulmonary Hypertension</Title><Teaser>
+  Facts about Pulmonary Hypertension.
+  
+    Pulmonary hypertension (PH), first described in 1891, is a life-threatening and relentlessly progressive lung disorder characterized by cellular proliferation and fibrosis of the small pulmonary arteries, which leads to a sustained increase in mean pulmonary arterial pressure, right ventricular overload and hypertrophy (Mandras, S.A. et al., 2014; L...</Teaser></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyDiseaseBriefingSummaryOutput>

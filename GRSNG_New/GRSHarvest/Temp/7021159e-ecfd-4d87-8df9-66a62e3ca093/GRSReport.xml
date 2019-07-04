@@ -1,0 +1,172 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>Test_R3_Changes</test_cycle>
+    <url>http://www-uw2.staging1.prod-wos.com/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_03</user>
+    <ip>192.168.109.117</ip>
+    <start_time>04/24/2019 11:01:58</start_time>
+    <end_time>04/24/2019 11:10:11</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (64-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Acceptance CABI" start_time="4/24/2019 11:01:58 AM">
+    <TestCase name="CABI_AC_002" start_time="4/24/2019 11:02:17 AM" description="CABI Result Summary checking" criticality="" state="notcompleted" end_time="4/24/2019 11:10:11 AM">
+      <step type="pass" description="Prerequisite: CABI Summary Results. Check Page Display " expected="Page is displayed correctly" time="4/24/2019 11:02:49 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:02:18 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:18 AM">Clicking Link 'CABI'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:20 AM">General Search page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:02:23 AM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:23 AM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:24 AM">Sign In Window was opened</substep>
+        <substep valid="True" time="4/24/2019 11:02:25 AM">Text box 'Email' is enabled</substep>
+        <substep valid="True" time="4/24/2019 11:02:25 AM">Text: 'quality.tester@testcases.com' was sent to the 'Email' textbox (XPath("//input[@id='email']")), textbox content after sending is 'quality.tester@testcases.com'</substep>
+        <substep valid="True" time="4/24/2019 11:02:26 AM">Text box 'Password' is enabled</substep>
+        <substep valid="True" time="4/24/2019 11:02:26 AM">Textbox: 'XPath("//input[@id='password']")' was cleared</substep>
+        <substep valid="True" time="4/24/2019 11:02:27 AM">Text: '!12345654321a' was sent to the 'Password' textbox (XPath("//input[@id='password']")), textbox content after sending is '!12345654321a'</substep>
+        <substep valid="True" time="4/24/2019 11:02:27 AM">Clicking Button 'SignIn'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:36 AM">General Search page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:02:36 AM">Click 'Clear All Fields' button</substep>
+        <substep valid="True" time="4/24/2019 11:02:36 AM">Clicking Button 'Clear All Fields'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:38 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="4/24/2019 11:02:38 AM">Check clear sreen</substep>
+        <substep valid="True" time="4/24/2019 11:02:38 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:39 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:48 AM">Enter search field - search field = Title, search term = Feasibility</substep>
+        <substep valid="True" time="4/24/2019 11:02:49 AM">Clicking Button 'Search'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Refine by each category, exclude by some " expected="Refining and excluding are performed properly" time="4/24/2019 11:03:19 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:02:54 AM">Checking/unchecking CheckBox 'JOURNAL ARTICLE checkBoxin section Document Types'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:54 AM">Select item 'JOURNAL ARTICLE' from section 'DOCUMENT TYPES' in Refine Panel.</substep>
+        <substep valid="True" time="4/24/2019 11:02:54 AM">Click Refine button on Refine Panel : </substep>
+        <substep valid="True" time="4/24/2019 11:02:54 AM">Clicking Button 'Refine'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:57 AM">Clicking Link 'More...'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:02:57 AM">&lt;!XML Content&gt;&lt;b&gt;Text-name of Text 'Refined by' equals: Refined by: DOCUMENT TYPES: (  JOURNAL ARTICLE  )&lt;/b&gt; &lt;!XML Content&gt;</substep>
+        <substep valid="True" time="4/24/2019 11:02:59 AM">Navigate back to Results Summary page.</substep>
+        <substep valid="True" time="4/24/2019 11:03:00 AM">Clicking Link 'More Options'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:03:12 AM">Checking/unchecking CheckBox 'Refine Value'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:03:12 AM">Clicking Button 'Exclude'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:03:14 AM">Clicking Link 'More...'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:03:15 AM">&lt;!XML Content&gt;&lt;b&gt;Text-name of Text 'Refined by' equals: Refined by:    [excluding]     CABICODES: (  PLANT PRODUCTION  )&lt;/b&gt; &lt;!XML Content&gt;</substep>
+        <substep valid="True" time="4/24/2019 11:03:17 AM">Navigate back to Results Summary page.</substep>
+        <substep valid="True" time="4/24/2019 11:03:19 AM">Navigate back to Results Summary page.</substep>
+      </step>
+      <step type="pass" description="Check the search terms are highlighted " expected="Search terms are highlighted correctly" time="4/24/2019 11:07:17 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:03:19 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="4/24/2019 11:03:19 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:03:26 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:03:47 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:03:47 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:03:48 AM">Go to the next record.</substep>
+        <substep valid="True" time="4/24/2019 11:03:48 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:04:11 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:04:11 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:04:12 AM">Go to the next record.</substep>
+        <substep valid="True" time="4/24/2019 11:04:13 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:04:34 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:04:34 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:04:36 AM">Go to the next record.</substep>
+        <substep valid="True" time="4/24/2019 11:04:36 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:04:57 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:04:57 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:04:59 AM">Go to the next record.</substep>
+        <substep valid="True" time="4/24/2019 11:04:59 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:05:20 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:05:20 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:05:22 AM">Go to the next record.</substep>
+        <substep valid="True" time="4/24/2019 11:05:22 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:05:43 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:05:43 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:05:45 AM">Go to the next record.</substep>
+        <substep valid="True" time="4/24/2019 11:05:45 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:06:07 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:06:07 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:06:09 AM">Go to the next record.</substep>
+        <substep valid="True" time="4/24/2019 11:06:09 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:06:30 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:06:30 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:06:32 AM">Go to the next record.</substep>
+        <substep valid="True" time="4/24/2019 11:06:32 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:06:53 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:06:53 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:06:55 AM">Go to the next record.</substep>
+        <substep valid="True" time="4/24/2019 11:06:55 AM">Full Record page was opened</substep>
+        <substep valid="True" time="4/24/2019 11:07:16 AM">Highlighted text equals 'Feasibility' as expected. Highlighted text is 'feasibility Journal article'.</substep>
+        <substep valid="True" time="4/24/2019 11:07:17 AM">Clicking Link 'Return to Search Results'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Check sort options in dropdown and perform sorting by every option " expected="Sort options are displeyed correctly and Sorting is performed properly" time="4/24/2019 11:07:27 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:07:19 AM">Clicking Link 'Click dropdown list'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:07:20 AM">'Sort by' list box contains all expected sort options</substep>
+        <substep valid="True" time="4/24/2019 11:07:25 AM">Clicking Link 'Times Cited: highest to lowest'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:07:27 AM">Check sorting by 'Times Cited -- highest to lowest' passed, sorting is descending</substep>
+      </step>
+      <step type="pass" description="Navigate to Analyze using link on the Refine panel and using link below the Sort option dropdown " expected="Analyze page is displayed correctly" time="4/24/2019 11:07:29 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:07:27 AM">Clicking Button 'Analyze Results'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:07:29 AM">Results Analysis page was loaded</substep>
+        <substep valid="True" time="4/24/2019 11:07:29 AM">Clicking Link 'Back To Previous Page'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Perform Print output for some option " expected="Print output for some options is performed correctly" time="4/24/2019 11:07:48 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:07:31 AM">Clicking Button ''Export' button'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:07:32 AM">Clicking Button ''Format For Print' button'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:07:33 AM">Click 'Print' output button</substep>
+        <substep valid="True" time="4/24/2019 11:07:33 AM">Print Records Window was opened</substep>
+        <substep valid="True" time="4/24/2019 11:07:35 AM">Radio Button 'Records from to' is enabled</substep>
+        <substep valid="True" time="4/24/2019 11:07:35 AM">Clicking Radio Button 'Records from to'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:07:41 AM">TextBox 'Records from' is enabled</substep>
+        <substep valid="True" time="4/24/2019 11:07:41 AM">Textbox: 'TSHFactory.Selenium.Locators' was cleared</substep>
+        <substep valid="True" time="4/24/2019 11:07:42 AM">Textbox: 'TSHFactory.Selenium.Locators' was cleared</substep>
+        <substep valid="True" time="4/24/2019 11:07:43 AM">Text: '1' was sent to the 'Records from' textbox (TSHFactory.Selenium.Locators), textbox content after sending is '1'</substep>
+        <substep valid="True" time="4/24/2019 11:07:44 AM">Text: '10' was sent to the 'Records to' textbox (TSHFactory.Selenium.Locators), textbox content after sending is '10'</substep>
+        <substep valid="True" time="4/24/2019 11:07:45 AM">Clicking Button 'Print'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:07:47 AM">'Format for print' page was loaded</substep>
+        <substep valid="True" time="4/24/2019 11:07:48 AM">Clicking Button 'Close'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Perform Save output. Try for all formats and some options " expected="Save output for all formats and for some options is performed correctly" time="4/24/2019 11:09:04 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:07:48 AM">Clicking Button ''Export' button'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:07:49 AM">Clicking Link 'Save to Other File Formats'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:07:50 AM">Send To File Window was opened</substep>
+        <substep valid="True" time="4/24/2019 11:07:51 AM">Textbox: 'TSHFactory.Selenium.Locators' was cleared</substep>
+        <substep valid="True" time="4/24/2019 11:07:51 AM">Textbox: 'TSHFactory.Selenium.Locators' was cleared</substep>
+        <substep valid="True" time="4/24/2019 11:07:51 AM">Clicking Radio Button 'Records from to'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:08:17 AM">Text: '1' was sent to the 'Records from' textbox (TSHFactory.Selenium.Locators), textbox content after sending is '1'</substep>
+        <substep valid="True" time="4/24/2019 11:08:28 AM">Text: '10' was sent to the 'Records from' textbox (TSHFactory.Selenium.Locators), textbox content after sending is '10'</substep>
+        <substep valid="True" time="4/24/2019 11:08:28 AM">Dropdown: 'HTML' options were  requested to be selected in 'Drop down 'File Format'' dropdown (TSHFactory.Selenium.Locators), selected option in dropdown after selection is 'HTML' </substep>
+        <substep valid="True" time="4/24/2019 11:08:28 AM">Dropdown: 'HTML' option was requested to be selected in 'Drop down 'File Format'' dropdown (TSHFactory.Selenium.Locators), selected option in dropdown after selection is 'HTML' </substep>
+        <substep valid="True" time="4/24/2019 11:08:29 AM">Clicking Button 'Send'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:04 AM">Sending Records Window was opened</substep>
+      </step>
+      <step type="pass" description="Add some records to Marked List. Try for all options " expected="All selected records are added to Marked List for all options and Marked List icon is appeared below the record's number" time="4/24/2019 11:09:27 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:09:24 AM">Checking/unchecking CheckBox 'checkbox for record #1'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:25 AM">Checking/unchecking CheckBox 'checkbox for record #2'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:25 AM">Clicking Button 'Add to Marked List button (output section)'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:27 AM">&lt;!XML Content&gt;&lt;b&gt;Text-name of Button 'Marked List' equals: Marked List 2&lt;/b&gt; &lt;!XML Content&gt;</substep>
+      </step>
+      <step type="pass" description="Email some selected records.Try for all formats and some options " expected="E-mail options page is displaye cprrectly. E-mails are correctly sendet and received on specified on E-mail options page address" time="4/24/2019 11:09:29 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:09:27 AM" screenshot="b6233f6e00ff42f7bf9c80a67b4b14a0.jpg" screenshot_driver="56e4149e5a4c43fb80124b3c9743a1c8.jpg">'Email' output button was clicked</substep>
+        <substep valid="True" time="4/24/2019 11:09:28 AM">Clicking Button ''Export' button'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:29 AM">Email Records Window was opened</substep>
+        <substep valid="True" time="4/24/2019 11:09:29 AM">Clicking Link 'Cancel'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Save some records to EndNote" expected="Processing Records page appears with Choose Destination dialog." time="4/24/2019 11:09:53 AM" inputdata="">
+        <substep valid="True" time="4/24/2019 11:09:30 AM">Clicking Button ''Export' button'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:31 AM">Clicking Button 'EndNote'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:32 AM">Send To Endnote Window was opened</substep>
+        <substep valid="True" time="4/24/2019 11:09:32 AM">Clicking Radio Button 'Records All'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:33 AM">Clicking Button 'Send'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:53 AM">SendingRecordsToEndnoteWindow was opened</substep>
+        <substep valid="True" time="4/24/2019 11:09:53 AM">Clicking Button 'Close'. Expected result: True.</substep>
+      </step>
+      <step type="fail" description="Save to FECYT CVN" expected="The pdf file is successfully saved and all previously selected records are shown in this file" time="4/24/2019 11:10:11 AM" inputdata="" actual="You are trying to click on Button'Save to FECYT CVN', that was not found.">
+        <substep valid="True" time="4/24/2019 11:09:54 AM">Clicking Button ''Export' button'. Expected result: True.</substep>
+        <substep valid="True" time="4/24/2019 11:09:55 AM">Clicking Button 'Save to FECYT CVN'. Expected result: True.</substep>
+        <substep valid="False" time="4/24/2019 11:10:05 AM" tech_info=" Locator: 'XPath(&quot;(//a[contains(text(),'FECYT CVN')])[1]&quot;)'" screenshot="f54e1dfbeb674d048ae6ef22592f0f2a.jpg" screenshot_driver="a4bee1a0138441be89f7b288e5ff72eb.jpg">You are trying to click on Button'Save to FECYT CVN', that was not found.</substep>
+        <substep valid="True" time="4/24/2019 11:10:06 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="4/24/2019 11:10:11 AM">Dispose was successfully done</substep>
+      </step>
+      <step type="norun" description="Save some records to RefWorks" expected="Processing Records page is displayed in the same tab.RefWorks login Center page is displayed in another window/tab.Selected records are added to RefWorks" time="4/24/2019 11:02:17 AM" inputdata="" />
+    </TestCase>
+  </TestSet>
+</GRS_Report>

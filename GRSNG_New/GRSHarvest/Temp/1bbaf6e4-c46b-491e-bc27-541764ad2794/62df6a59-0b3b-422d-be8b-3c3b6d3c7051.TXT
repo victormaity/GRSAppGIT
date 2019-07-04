@@ -1,0 +1,31 @@
+Tech info:
+Exception cause: org.openqa.selenium.StaleElementReferenceException: The element reference of <select id="selectPageSize_top" class="j-custom-select number_rec_per_page select2-hidden-accessible"> stale: either the element is no longer attached to the DOM or the page has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'INBASDPC10013', ip: '10.10.242.13', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 13168, moz:profile: C:\Users\AB0036~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f38f10ba-cb45-4e59-bc1b-f3ce63b8dafb
+*** Element info: {Using=tag name, value=option} 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279);
+org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:195);
+org.openqa.selenium.remote.RemoteWebElement.findElementsByTagName(RemoteWebElement.java:275);
+org.openqa.selenium.By$ByTagName.findElements(By.java:327);
+org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:171);
+org.openqa.selenium.support.ui.Select.getOptions(Select.java:70);
+org.openqa.selenium.support.ui.Select.getFirstSelectedOption(Select.java:94);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.DropDown.getFirstSelectedOption(DropDown.java:74);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.DropDown.selectedOption(DropDown.java:47);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.DropDown.selectByVisibleText(DropDown.java:89);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.CitedReferenceSearch_Steps.iSelectFromTheShowRecordsDropdownOnPage(CitedReferenceSearch_Steps.java:847);
+✽.And I select "25" from the show records dropdown on page "cited reference search step2"(com/clarivateanalytics/wos/gui/cucumber/Deployment/CitedReferenceSearch.feature:459)

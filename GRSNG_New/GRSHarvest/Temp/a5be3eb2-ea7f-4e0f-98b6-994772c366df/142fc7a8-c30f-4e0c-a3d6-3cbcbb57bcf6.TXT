@@ -1,0 +1,1 @@
+          select * from (select trial_id from RS_TRIAL.FF_TRIAL where ENROLMENT_END_DATE IS NOT NULL order by dbms_random.value)where rownum<2     

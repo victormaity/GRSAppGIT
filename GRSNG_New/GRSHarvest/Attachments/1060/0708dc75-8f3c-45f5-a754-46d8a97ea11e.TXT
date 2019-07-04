@@ -1,0 +1,1 @@
+          SELECT primary_indication_id,         listagg(indication_name, ' ; ') WITHIN GROUP (         ORDER BY indication_name) AS indication_name         FROM ls_srv.JP_INDICATION         GROUP BY primary_indication_id         HAVING COUNT(primary_indication_id)>1         ORDER BY dbms_random.value      

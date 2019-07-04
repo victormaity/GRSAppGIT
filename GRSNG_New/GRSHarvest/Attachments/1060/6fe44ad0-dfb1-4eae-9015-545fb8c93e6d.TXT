@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialResultsInput xmlns:ns2="local"><filtersEnabled>1</filtersEnabled><hits>10</hits><offset>0</offset><query>trialContactNames:André-Michael Beer</query><queryLanguage>ssql</queryLanguage></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialResultsInput>

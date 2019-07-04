@@ -1,0 +1,256 @@
+﻿@{
+    ViewBag.Title = "Release Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+@model  GlobalReportingSystem.Core.Models.GRS.ReleaseInfoModel
+<div class="page-header">
+    <h1>Release Details Configuration
+    <small>
+        <i class="ace-icon fa fa-angle-double-right"></i>
+        Manage your release details here
+    </small>
+    </h1>
+</div>
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Project Release Details</h5>
+
+            <!-- #section:custom/widget-box.toolbar -->
+            <div class="widget-toolbar">
+                <div class="widget-menu">
+                    <a href="#modal-form" data-action="settings" role="button" data-toggle="modal">
+                        <i class="ace-icon fa fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- /section:custom/widget-box.toolbar -->
+        </div>
+
+        <div class="widget-body">
+            <div class="widget-main">
+                <table id="testcyclestable" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Release Name</th>
+                            <th>Release Date</th>
+                            <th>Comments</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var release in Model.ReleaseFromDb)
+                        {
+                            <tr id="@release.ID">
+                                <td>@release.ReleaseName</td>
+                                <td>@release.ReleaseDate.ToString("MM/dd/yyyy")</td>
+                                <td>@release.Comment</td>
+
+                                <td>
+                                    <div class="hidden-sm hidden-xs action-buttons">
+                                        <a href="#update-@release.ID" data-action="settings" role="button" data-toggle="modal" class="green" onclick="showForm('@release.ID','false') ">
+                                            <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                        </a>
+                                        <div aria-hidden="true" class="modal in" id="update-@release.ID" style="display: none;" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">x</button>
+                                                        <h4 class="blue bigger">Please change following fields</h4>
+                                                    </div>
+                                                    <div>
+                                                        @{ Html.RenderPartial("UpdateReleaseInfo", release);}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class='red' onclick='DeleteReleaseInfo(@release.ID,"@release.ReleaseName")' title="Delete '@release.ReleaseName' release.">
+                                        <i class='ace-icon fa fa-trash-o bigger-130'></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /section:custom/widget-box -->
+</div>
+
+@*Modal Forms*@
+<div aria-hidden="true" class="modal" id="modal-form" style="display: none;" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="blue bigger">Please fill the following fields</h4>
+            </div>
+            @using (Html.BeginForm("AddReleaseInfo", "Configuration", FormMethod.Post))
+            {
+                <div class="modal-body">
+                    <div>
+                        <label for="form-field-mask-1">
+                            Release Name
+                        <small class="text-success">(display)</small>
+                        </label>
+                        <div class="input-group">
+                            @Html.TextBoxFor(p => p.ReleaseName, new { @class = "form-control" })
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm btn-default" type="button">
+                                    <i class="ace-icon fa fa-pencil bigger-110"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <!-- /section:plugins/input.masked-input -->
+                    </div>
+                    <hr />
+                    <div>
+                        <label for="form-field-mask-1">
+                            Release Date
+                        <small class="text-success"></small>
+                        </label>
+                        <div class="input-group">
+                            @Html.TextBoxFor(p => p.ReleaseDate, new { @class = "form-control input-mask-date widthbox dpsun", @readonly="readonly", @Value = DateTime.Now.ToString("dd/MM/yyyy") })
+                            @*<span class="input-group-btn">
+                                <button class="btn btn-sm btn-default" type="button"><i class="ace-icon fa fa-calendar bigger-110"></i></button>
+                            </span>*@
+                        </div>
+                        <!-- /section:plugins/input.masked-input -->
+                    </div>
+                    <hr />
+                    <div>
+                        <label for="form-field-11">Comment</label>
+                        @Html.TextAreaFor(p => p.Comment, new { @class = "autosize-transition form-control", @style = "overflow: hidden; word-wrap: break-word; resize: horizontal; height: 52px;" })                        
+                    </div>
+
+                </div>
+            <div class="modal-footer">
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <i class="ace-icon fa fa-times"></i>
+                    Cancel
+                </button>
+                <button type="submit" class="btn btn-sm btn-primary">
+                    <i class="ace-icon fa fa-check"></i>
+                    Add
+                </button>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div aria-hidden="true" class="modal" id="modal-confirm-delete-testcycle" style="display: none;" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="blue bigger">Please Confirm?</h4>
+            </div>
+            <br />
+            <div class="modal-body">
+                <span style="color: red; font-weight: 600;">Are you sure?</span>
+                <br />
+                you want to delete this release details "<span id="spnReleaseName" style="color: red; font-weight: 600;"></span>"&nbsp;permanently.
+                <br />
+                <br />
+                Note: if you delete release info then it will delete only from here for now. All of its data will remain unchange until you change team name from test cycle. once changed in test cycle, you can not retrive back in future.
+                <br />
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-sm btn-primary" data-dismiss="modal">
+                    <i class="ace-icon fa fa-times"></i>
+                    Cancel
+                </button>
+                <button id="confirmDelete" class="btn btn-sm btn-primary" onclick="confirmDelete()">
+                    <i class="ace-icon fa fa-check"></i>
+                    Confirm Delete
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Scripts Secion*@
+
+<script type="text/javascript">
+    var rdelete = "";
+
+    function DeleteReleaseInfo(releaseId, releaseName) {
+        rdelete = releaseId;
+        $("#spnReleaseName").html(releaseName);
+        $("#modal-confirm-delete-testcycle").modal("show");
+    }
+
+    function confirmDelete() {
+        $("#modal-confirm-delete-testcycle").modal("hide");
+        if (rdelete != "" && rdelete != null && rdelete != "undefined") {
+            $.ajax({
+                type: 'post',
+                url: '@Url.Action("DeleteReleaseInfo", "Configuration")',
+                async: true,
+                data: '{"ReleaseInfoId":' + rdelete + '}',
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                beforeSend: function () {
+                    document.getElementById("blockBack").style.display = '';
+                    document.getElementById("divmiddle").style.display = '';
+                },
+                complete: function () {
+                    document.getElementById("blockBack").style.display = 'none';
+                    document.getElementById("divmiddle").style.display = 'none';
+                },
+                error: function () { },
+                success: function (response) { //{ IsDeleted = false, IsException = true, Message = message };
+                    if (response.IsException == true) { ShowMessage("Error", response.Message); }
+                    else {
+                        ShowMessage("Success", response.Message + " <br />Page will refresh in 5 seconds.");
+
+                        setTimeout(function () {
+                            location.reload();
+                        }, 5000);
+                    }
+                }
+            });
+            rdelete = "";
+        }
+    }
+</script>
+<script>
+    $(function () {
+        $(".dpsun").datepicker({
+            showButtonPanel: true,
+            changeMonth: true,
+            changeYear: true,            
+            dateFormat: "mm/dd/yy",
+            showOn: "button",
+            buttonImage: "../Content/calnew.png",
+            buttonImageHeight: "28px",
+            buttonImageWidth: "28px",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+        $(".dpsun").datepicker("option", "minDate", null)
+        $(".dpsun").datepicker("option", "maxDate", null)
+        $('img[title="Select date"]').css({ 'height': '28px', 'width': '28px', 'cursor': 'pointer' });
+    });
+</script>
+<style type="text/css">
+    .ui-datepicker-trigger {
+        z-index: 999999999999!important;
+    }
+
+    .ui-datepicker {
+        z-index: 999999999999!important;
+    }
+
+    .widthbox {
+        width: 221px!important;
+    }
+</style>

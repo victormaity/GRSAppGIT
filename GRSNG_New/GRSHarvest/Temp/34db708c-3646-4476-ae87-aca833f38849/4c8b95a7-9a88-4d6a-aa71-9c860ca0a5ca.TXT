@@ -1,0 +1,1 @@
+http://mwa.us-west-2.produs.prod.cortellis.int.clarivate.com:8335/mr/RestChemistrySearchService/v4/pollAsyncSearch?token=c67e43be-91f3-4843-b726-53f6d04d91ee

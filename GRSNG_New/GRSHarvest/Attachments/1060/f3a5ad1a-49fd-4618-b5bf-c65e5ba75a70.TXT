@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><trialSourcesOutput><Sources><Source id="1493194" type="SERIAL">Median effective dose (ED50) of paracetamol and morphine for postoperative pain: a study of interaction</Source></Sources></trialSourcesOutput>

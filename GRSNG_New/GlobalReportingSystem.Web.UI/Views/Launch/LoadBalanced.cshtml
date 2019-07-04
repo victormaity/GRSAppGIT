@@ -1,0 +1,784 @@
+﻿@{
+    ViewBag.Title = "GRS:Load Balanced";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Configuration
+@using GlobalReportingSystem.BL.Helper
+@model GlobalReportingSystem.Core.Models.GRS.LoadBalancedLaunchModel
+<div class="page-header">
+    <h1>Load Balanced
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Distributed tests execution
+        </small>
+    </h1>
+</div>
+<input id="isJava" type="hidden" value="@Model.ProjectInfo.IsJava.ToString()"/>
+
+<div class="row">
+    <div class="widget-container-col ui-sortable">
+        <!-- #section:custom/widget-box -->
+        <div class="widget-box">
+            <div class="widget-header">
+                <h5 class="widget-title">Machines Container @(Model.Single ? "(full screen mode)" : "")</h5>
+
+                <!-- #section:custom/widget-box.toolbar -->
+                <div class="widget-toolbar">
+                    <div class="widget-menu">
+                        @if (!Model.ProjectInfo.IsFrameworkSynced)
+                        {
+                            <a role="button" onclick="ShowMessage('Error','SVN syncronisation is not performed.');">
+                                <i class="ace-icon fa fa-plus"></i>
+                            </a>
+                        }
+                        else
+                        {
+                            <a onclick="addLoadBalancedSection()" @*href="@Url.Action("AddLoadBalancedSection", new { @frameworkId = ip.ID })"*@ style="cursor:pointer">
+                                <i class="ace-icon fa fa-plus"></i>
+                            </a>
+                            <br />
+                        }
+                    </div>
+                </div>
+
+                <!-- /section:custom/widget-box.toolbar -->
+            </div>
+            <div class="widget-body">
+                <div class="widget-main">
+                    <div class="row">
+                        @foreach (var loadBalancedElement in Model.NewLoadBalancedList)
+                        {
+                            @Html.Partial("LoadBalancedSection", loadBalancedElement)
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /section:custom/widget-box -->
+    </div>
+</div>
+
+
+<div title="Select IP Address" id="machines" style="display: none" class="dialog">
+    @foreach (var ip in Model.ProjectInfo.Project.Clients.OrderBy(p => p.RemoteMachineIP))
+    {
+        <a onclick="setLbMachine(@ip.ID, -1)" @*href="@Url.Action("SetLbMachine", new { @clientId = ip.ID, @machineId = -1 })"*@ class="btn btn-primary btn-minier" style="cursor:pointer">
+            <i class="ace-icon fa fa-laptop"></i>
+            @ip.RemoteMachineIP
+        </a>
+        <br />
+    }
+</div>
+<div title="Select Account" id="accounts" style="display: none" class="dialog">
+    @foreach (var ip in Model.ProjectInfo.Project.AccountForTestRuns.OrderBy(p => p.AccountName))
+    {
+        <a onclick="setLbAccount(@ip.ID, -1)" @*href="@Url.Action("SetLbAccount", new { @accountId = ip.ID, @machineId = -1 })"*@ class="btn btn-primary btn-minier" style="cursor:pointer">
+            <i class="ace-icon fa fa-user"></i>
+            @ip.AccountName
+        </a>
+        <br />
+    }
+</div>
+<div title="Select Environment" id="environments" style="display: none" class="dialog">
+    @foreach (var ip in Model.ProjectInfo.Project.HostsConfigurations.OrderBy(p => p.EnvironmentName))
+    {
+        <a onclick="setLbEnvironment(@ip.ID, -1)" @*href="@Url.Action("SetLbEnvironment", new { @environmentId = ip.ID, @machineId = -1 })"*@ class="btn btn-primary btn-minier" style="cursor:pointer">
+            <i class="ace-icon fa fa-flask align-top bigger-125"></i>
+            @ip.EnvironmentName
+        </a>
+        <br />
+    }
+</div>
+<div title="Select Browser" id="browsers" style="display: none" class="dialog">
+    <a onclick="setLbBrowser('IE',-1)" @*href="@Url.Action("SetLbBrowser", new { @browser = "IE", @machineId = -1 })"*@ class="btn btn-primary btn-minier" style="cursor:pointer">
+        <i class="ace-icon fa fa-globe"></i>
+        Internet Explorer
+    </a>
+    <br />
+    <a onclick="setLbBrowser('FF',-1)" @*href="@Url.Action("SetLbBrowser", new { @browser = "FF", @machineId = -1 })"*@ class="btn btn-primary btn-minier" style="cursor:pointer">
+        <i class="ace-icon fa fa-globe"></i>
+        Firefox
+    </a>
+    <br />
+    <a onclick="setLbBrowser('CH',-1)" @*href="@Url.Action("SetLbBrowser", new { @browser = "CH", @machineId = -1 })"*@ class="btn btn-primary btn-minier" style="cursor:pointer">
+        <i class="ace-icon fa fa-globe"></i>
+        Google Chrome
+    </a>
+    <br />
+</div>
+<div title="Select Configuration" id="configurations" style="display: none" class="dialog">
+    @foreach (var ip in Model.ProjectInfo.Project.ExecutionConfigurations.OrderBy(p => p.Name))
+    {
+        <a onclick="setLbExecutionConfig(@ip.ID,-1)" @*href="@Url.Action("SetLbExecutionConfig", new { @confId = ip.ID, @machineId = -1 })"*@ class="btn btn-primary btn-minier" style="cursor:pointer">
+            <i class="ace-icon fa fa-wrench"></i>
+            @ip.Name
+        </a>
+        <br />
+    }
+</div>
+<div title="Select Priority" id="priority" style="display: none" class="dialog">
+    @foreach (var priority in ConfigurationManager.AppSettings["executionPriorities"].Split('_'))
+    {
+        <input type="checkbox" value="@priority" />@priority
+@*<a href="@Url.Action("SetLbPriority", new { @priority = priority, @machineId = -1 })" class="btn btn-primary btn-minier">
+            <i class="ace-icon fa fa-exclamation"></i>
+            @priority
+        </a>*@
+        <br />
+    }
+    <button class="btn btn-primary" onclick="SetPriority()">Save</button>
+</div>
+<div id="include_exclude" title="Categories" style="display: none; font-size: smaller" class="dialog">
+    <i class="fa fa-spinner fa-spin"></i>
+    <div id="include_exclude_container"></div>
+    <button class="btn btn-primary" onclick="AddCategory()">Include</button>
+</div>
+<div title="Select Target Test Cycle" id="testcycles" style="display: none" class="dialog">
+    @foreach (var ip in Model.ProjectInfo.Project.TestCycles.Where(p => !p.isInnactive.HasValue || !p.isInnactive.Value).OrderByDescending(p => p.ID))
+    {
+        <a onclick="setLbTargetTc(@ip.ID,-1)" @*href="@Url.Action("SetLbTargetTc", new { @cycleId = ip.ID, @machineId = -1 })"*@ class="btn btn-primary btn-minier" style="cursor:pointer">
+            <i class="ace-icon fa fa-repeat align-top bigger-125"></i>
+            @ip.CycleName
+        </a>
+        <br />
+    }
+    <a onclick="setLbTargetTc(0,-1)" @*href="@Url.Action("SetLbTargetTc", new { @cycleId = 0, @machineId = -1 })"*@ class="btn btn-primary btn-minier" style="cursor:pointer">
+        <i class="ace-icon fa fa-repeat align-top bigger-125"></i>
+        ACTIVE
+    </a>
+    <br />
+</div>
+
+@{Html.RenderPartial("RelDisplayForm");}
+@{Html.RenderPartial("TestsToAddForm");}
+
+<script type="text/javascript" src="@Url.Content("~/Content/assets/js/jquery.cookie.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/assets/js/jquery-ui.min.js")"></script>
+
+
+
+<script type="text/javascript">
+    $(window).unload(function () {
+        var top = $(window).scrollTop();
+        $.cookie('wtop', top);
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var top = $.cookie('wtop');
+        $(window).scrollTop(top);
+    });
+</script>
+
+<script type="text/javascript">
+    function ShowRELInForm(REL) {
+        //debugger;
+        var textREL = window.location.href.split('?')[0].replace("LoadBalanced", "RunRel") + "?type=lb&REL=" + REL;
+        $("#model-bodyREL")[0].innerHTML = "<a href='" + textREL + "'>" + textREL + "</a>";
+    }
+    function SetPriority() {
+        var machineId = $("#priority").attr("machineId");
+        var priors = new Array();
+        var checkboxes = $("#priority>input:checked");
+        for (var x = 0; x < checkboxes.length; x++) {
+            priors.push(checkboxes[x].attributes["value"].value);
+        }
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("SetPriorityForMachine", "Execution")",
+            async: true,
+            data: "{'id':'" + machineId + "', priorities:'" + priors + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                $("#include_exclude>i").show();
+            },
+            error: function () {
+            },
+            success: function (msg) {
+                if (msg.type == "Error") {
+                    $("#include_exclude>i").hide();
+                    ShowMessage(msg.type, msg.text);
+                } else {
+                    $("#loadingBar").hide();
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                    $("div > [machineId='" + machineId + "'][id!='priority']").replaceWith(msg);
+                    //location.reload();
+                }
+            }
+        });
+    }
+    function updatePriorities(id) {
+        $("#priority").attr("machineId", id);
+    }
+    function AddCategory() {
+        //debugger;
+        var machineId = $("#include_exclude").attr("machineId");
+        var checkboxes = $("#include_exclude_container>input:checked");
+        var cats = new Array();
+        var include = $("#include_exclude>button").text() == "Include";
+        for (var x = 0; x < checkboxes.length; x++) {
+            cats.push(checkboxes[x].attributes["value"].value);
+        }
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("SetCategoriesForMachine", "Execution")",
+            async: true,
+            data: "{'id':'" + machineId + "', categories:'" + cats + "', 'include':" + include + "}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                $("#include_exclude>i").show();
+            },
+            error: function () {
+            },
+            success: function (msg) {
+                if (msg.type == "Error") {
+                    $("#include_exclude>i").hide();
+                    ShowMessage(msg.type, msg.text);
+                } else {
+                    $("#loadingBar").hide();
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                    $("div > [machineId='" + machineId + "'][id!='include_exclude']").replaceWith(msg);
+                    //location.reload();
+                }
+                //location.reload();
+            }
+        });
+    }
+    function updateCategories(element, id, include) {
+        if (include) {
+            $("#include_exclude>button").text("Include");
+
+        } else {
+            $("#include_exclude>button").text("Exclude");
+        }
+        $("#include_exclude").attr("machineid", element.attributes["machineId"].value);
+        var url = "";
+        if(id === -1){
+            url = "@Url.Action("GetCategoriesForFramework", "Launch")";
+        }
+        else{
+            url = "@Url.Action("GetCategoriesForFramework", "Execution")";
+        }
+        $.ajax({
+            type: "POST",
+            url: url,
+            async: true,
+            data: "{'id':'" + id + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+                $("#include_exclude>i").show();
+            },
+            error: function () { },
+            success: function (msg) {
+                if (msg.type == "Error") {
+                    $("#include_exclude>i").hide();
+                    ShowMessage(msg.type, msg.text);
+                } else {
+                    $.ajax({
+                        type: "POST",
+                        url: "@Url.Action("GetCategoriesForMachine", "Execution")",
+                        async: true,
+                        data: "{'id':'" + $("#include_exclude").attr("machineid") + "','include':'" + include + "'}",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        beforeSend: function () {
+                        },
+                        error: function () {
+
+                        },
+                        success: function (selectedCategories) {
+                            if (msg.type == "Error") {
+                                $("#include_exclude>i").hide();
+                                ShowMessage(msg.type, msg.text);
+                            } else {
+                                $("#include_exclude>i").hide();
+                                $("#include_exclude_container").empty();
+                                if (msg.length == 0) {
+                                    $("#include_exclude_container").append("<i class='fa fa-exclamation-circle red'></i>No categories detected for selected framework");
+                                    $("#include_exclude>button").addClass("disabled");
+                                } else {
+                                    $("#include_exclude>button").removeClass("disabled");
+                                    for (var category in msg) {
+                                        $("#include_exclude_container").append("<input type='checkbox' value='" + msg[category] + "'>" + msg[category] + "</input><br />");
+                                        for (var i in selectedCategories) {
+                                            if (msg[category] == selectedCategories[i]) {
+                                                $("#include_exclude_container>input[value='" + msg[category] + "']").prop('checked', true);
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                        }
+                    });
+                }
+            }
+        });
+    }
+</script>
+
+<script type="text/javascript">
+    $(".dialogInvoker").click(function (e) {
+        $(".ui-dialog:visible").find(".dialog").dialog("close");
+        var machineId = $(this).attr("machineid");
+        var targetDialog = $(this).attr("targetdialog");
+        var obj = $("#" + targetDialog + ">a");
+        if (machineId != -2) {
+            for (var i = 0; i < obj.length; i++) {
+                //var theHref = obj[i].attributes["href"].value;
+                //theHref = theHref.substring(0, theHref.lastIndexOf('=') + 1) + machineId;
+                //obj[i].attributes["href"].value = theHref;
+                //debugger;
+                var theHref = obj[i].attributes["onclick"].value;
+                theHref = theHref.substring(0, theHref.lastIndexOf(',') + 1) + machineId + ")";
+                obj[i].attributes["onclick"].value = theHref;
+            }
+        }
+        var x = e.pageX - $(document).scrollLeft();
+        var y = e.pageY - $(document).scrollTop();
+        var theDialog = $("#" + targetDialog).dialog({ autoOpen: false });
+        theDialog.dialog("option", "position", [x, y]);
+        theDialog.dialog("open");
+    });
+</script>
+
+<script type="text/javascript">
+    function loadTests(id) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("RenderTests")",
+            async: true,
+            data: "",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                $("#loadingBar").show();
+            },
+            error: function ()
+            { },
+            success: function (msg) {
+                $("#loadingBar").hide();
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    $("#tests").html(msg);
+                }
+            }
+        });
+    }
+
+    function downloadChildren(id, parent) {
+        if (!$("#" + parent + ">ul").is("*")) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("DownloadChildren")",
+                data: "{ 'id': " + id + ", 'parent':'" + parent + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "html",
+                beforeSend: function () {
+                    $("label[path='" + parent + "']").append("<i class='fa fa-spinner fa-spin'/>");
+                },
+                error: function () { },
+                success: function (msg) {
+                    if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                        ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                    } else {
+                        $("#" + parent).append(msg);
+                        $("label[path='" + parent + "']>i").remove();
+                        setDraggable();
+                    }
+                }
+            });
+        }
+    }
+
+    function setDraggable(element) {
+        if (element.attr("chosen") == "0") {
+            element.attr("chosen", "1");
+            element.css("font-weight", "bold");
+        } else {
+            element.attr("chosen", "0");
+            element.css("font-weight", "");
+        }
+    }
+
+    function setSectionId(id) {
+        $("#addnewtests").attr("onclick", "addTests(" + id + ")");
+    }
+
+    function addTests(id) {
+        var selectedElements = $("label[chosen='1']");
+        var isJava = $("#isJava").val();
+
+        var key = "AddAll";
+        if ($("#addAllTestSets:checked").length != 0)
+            key = "AddAllTestSets";
+        else if ($("#addAllTestCases:checked").length != 0)
+            key = "AddAllTestCases";
+
+        var arr = new Array();
+        for (var x = 0; x < selectedElements.length; x++) {
+            arr.push(selectedElements[x].attributes["path"].value);
+        }
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("AddLbTests")",
+            data: "{ 'sectionId': " + id + ", 'tests':'" + arr + "', 'key':'" + key + "', 'isJava':'" + isJava + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+                $("#loadingBar").show();
+            },
+            error: function () { },
+            success: function (msg) {
+                if (msg.type == "Error") {
+                    ShowMessage(msg.type, msg.text);
+                } else {
+                    location.reload();
+                }
+            }
+        });
+    }
+
+    function startLoadBalanced(lbId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("StartLoadBalanced", "Launch")",
+            data: "{ 'id': " + lbId + "}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+                $("#start_spin").addClass("fa-spin");
+            },
+            error: function () { },
+            success: function (msg) {
+                $("#start_spin").removeClass("fa-spin");
+                ShowMessage(msg.type, msg.text);
+            }
+        });
+    }
+
+    function stopLoadBalanced(lbId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("StopExecution", "Launch")",
+            data: "{ 'executionId': " + lbId + ", 'type':'loadballanced'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+                $("#start_spin").addClass("fa-spin");
+            },
+            error: function () { },
+            success: function (msg) {
+                $("#start_spin").removeClass("fa-spin");
+                ShowMessage(msg.type, msg.text);
+            }
+        });
+    }
+
+    function addLoadBalancedMachine(id) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("AddLoadBalancedMachine", "Execution")",
+            data: "{ 'sectionId': " + id + " }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    $("#lbMachines-" + id).append(msg);
+                }
+            }
+        });
+    }
+
+    function removeLoadBalancedSection(id) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("RemoveLoadBalancedSection", "Execution")",
+            data: "{ 'id': " + id + " }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    $("#lbe-" + id).remove();
+                }
+            }
+        });
+    }
+
+    function removeLoadBalancedMachine(id) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("RemoveLoadBalancedMachine", "Execution")",
+            data: "{ 'id': " + id + " }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    $("div > [machineId='" + id + "']").remove();
+                }
+            }
+        });
+    }
+
+    @*href="@Url.Action("SetLbMachine", new { @clientId = ip.ID, @machineId = -1 })"*@
+    function setLbMachine(clientId, machineId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("SetLbMachine", "Execution")",
+            data: "{ 'clientId': '" + clientId + "', 'machineId':'" + machineId + "' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    //$("#machines"). attr("style", "display: none");
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                    $("div > [machineId='" + machineId + "']").replaceWith(msg);
+                }
+            }
+        });
+    }
+
+    @*href = "@Url.Action("SetLbAccount", new { @accountId = ip.ID, @machineId = -1 })"*@
+    function setLbAccount(accountid, machineId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("SetLbAccount", "Execution")",
+            data: "{ 'accountid': '" + accountid + "', 'machineId':'" + machineId + "' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    //$("#machines"). attr("style", "display: none");
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                    $("div > [machineId='" + machineId + "']").replaceWith(msg);
+                }
+            }
+        });
+    }
+
+    @*href = "@Url.Action("SetLbEnvironment", new { @environmentId = ip.ID, @machineId = -1 })"*@
+    function setLbEnvironment(environmentId, machineId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("SetLbEnvironment", "Execution")",
+            data: "{ 'environmentId': '" + environmentId + "', 'machineId':'" + machineId + "' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    //$("#machines"). attr("style", "display: none");
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                    $("div > [machineId='" + machineId + "']").replaceWith(msg);
+                }
+            }
+        });
+    }
+
+    @*href = "@Url.Action("SetLbBrowser", new { @browser = "IE", @machineId = -1 })"*@
+    function setLbBrowser(browser, machineId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("SetLbBrowser", "Execution")",
+            data: "{ 'browser': '" + browser + "', 'machineId':'" + machineId + "' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    //$("#machines"). attr("style", "display: none");
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                    $("div > [machineId='" + machineId + "']").replaceWith(msg);
+                }
+            }
+        });
+    }
+
+    @*href="@Url.Action("SetLbExecutionConfig", new { @confId = ip.ID, @machineId = -1 })"*@
+    function setLbExecutionConfig(confId, machineId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("SetLbExecutionConfig", "Execution")",
+            data: "{ 'confId': '" + confId + "', 'machineId':'" + machineId + "' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    //$("#machines"). attr("style", "display: none");
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                    $("div > [machineId='" + machineId + "']").replaceWith(msg);
+                }
+            }
+        });
+    }
+
+    @*href="@Url.Action("SetLbTargetTc", new { @cycleId = ip.ID, @machineId = -1 })"*@
+    function setLbTargetTc(cycleId, machineId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("SetLbTargetTc", "Execution")",
+            data: "{ 'cycleId': '" + cycleId + "', 'machineId':'" + machineId + "' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    //$("#machines"). attr("style", "display: none");
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                    $("div > [machineId='" + machineId + "']").replaceWith(msg);
+                }
+            }
+        });
+    }
+
+    @*href="@Url.Action("AddLoadBalancedSection", new { @frameworkId = ip.ID })"*@
+    function addLoadBalancedSection() {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("AddLoadBalancedSection", "Execution")",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                //debugger;
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    //$("#machines"). attr("style", "display: none");
+                    $(".ui-dialog:visible").find(".dialog").dialog("close");
+                    $(".widget-body .widget-main .row").append(msg);
+                }
+            }
+        });
+    }
+
+    function removeLbTests(testRun, testId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("RemoveLbTest", "Execution")",
+            data: "{ 'tests': '" + testId + "' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    for (var i = 0; i < testId.length; i++) {
+                        $(testRun + ':checked[id=' + testId[i] + ']').parent().parent().remove();
+                    }
+                }
+            }
+        });
+    }
+
+    function resetLbTests(testRun, testId) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("ResetLbTest", "Execution")",
+            data: "{ 'tests': '" + testId + "' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () { },
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                } else {
+                    for (var i = 0; i < testId.length; i++) {
+                        $($(testRun + ':checked[id=' + testId[i] + ']').parent().parent()).find('td')[2].innerHTML = "Ready";
+                        $($(testRun + ':checked[id=' + testId[i] + ']').parent().parent()).find('td')[3].innerHTML = "";
+                        $($(testRun + ':checked[id=' + testId[i] + ']').parent().parent()).find('td')[4].innerHTML = "";
+                        $($(testRun + ':checked[id=' + testId[i] + ']').parent().parent()).find('td')[5].innerHTML = "";
+                    }
+                }
+            }
+        });
+    }
+
+    function pingLb(id) {
+        $.post("@Url.Action("GetLoadBalancedMashines", "Execution")", { executionId: id })
+            .done(function (data) {
+                var machines = data;
+
+                for (var i = 0; i < machines.length; i++) {
+                    $.ajax({
+                        type: "POST",
+                        url: "@Url.Action("PingLb", "Launch")",
+                        data: "{ 'mashineIp': '" + machines[i] + "'}",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "text",
+                        async: false,
+                        beforeSend: function () {
+                            $("a[title='Ping'] > i").attr("disabled", "true");
+                            $("a[title='Ping'] > i").addClass("fa-spin");
+                        },
+                        error: function () { },
+                        success: function (msg) {
+                            $("a[title='Ping'] > i").removeAttr("disabled");
+                            $("a[title='Ping'] > i").removeClass("fa-spin");
+                            var machine = $("#lbMachines-" + id + " a:contains(" + machines[i] + ")").parent().parent().siblings(".widget-body");
+                            if (msg == "free")
+                                machine.css({ 'background': "#EAFFE7" });
+                            else if (msg == "busy")
+                                machine.css({ 'background': "#FFFDD4" });
+                            else
+                                machine.css({ 'background': "#FFE8D1" });
+                        }
+                    });
+                }
+            });
+        }
+</script>
+
+

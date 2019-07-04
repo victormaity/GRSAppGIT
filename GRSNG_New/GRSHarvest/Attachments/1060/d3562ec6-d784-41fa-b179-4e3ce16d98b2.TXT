@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><EventTranscript id="5237615"><Name>Emergent BioSolutions Inc. at Piper Jaffray Healthcare Conference</Name><Company>Emergent BioSolutions Inc</Company><Drugs><Drug>otlertuzumab</Drug><Drug>bendamustine</Drug><Drug>AV-7909</Drug><Drug>rituximab</Drug><Drug>rPA-102</Drug></Drugs></EventTranscript>

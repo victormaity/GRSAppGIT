@@ -1,0 +1,6 @@
+Tech info:
+Exception cause: java.lang.ClassCastException: com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.BasicSearchPage cannot be cast to com.clarivateanalytics.wos.gui.cucumber.pages.SavedSearchesAndAlertsPage 
+ java.util.ArrayList.rangeCheck(ArrayList.java:657);
+java.util.ArrayList.get(ArrayList.java:433);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.SavedSearchesAndAlertsPage_Steps.iCheckThatAlertStatusIsChangedFromOFFToONWhenEditedAccordingly(SavedSearchesAndAlertsPage_Steps.java:731);
+✽.Then I check that alert status is changed from 'OFF' to ON when Edited accordingly(com/clarivateanalytics/wos/gui/cucumber/Deployment/SavedSearchesAndAlerts.feature:684)

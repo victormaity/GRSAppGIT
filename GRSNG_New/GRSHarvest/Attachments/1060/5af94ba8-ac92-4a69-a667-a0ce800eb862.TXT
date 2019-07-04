@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="235903"><Title>Otsuka to develop and commercialize Akebia's Vadadustat for anemia related to CKD in the US</Title><Principal>Akebia Therapeutics Inc</Principal><Partner>Otsuka Holdings Co Ltd</Partner><Type>Drug - Development/Commercialization License</Type><Status>Active</Status></Deal>

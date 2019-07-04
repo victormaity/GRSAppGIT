@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/synonymsID/target?ids=129349148250283,1637046786648053&fmt=json

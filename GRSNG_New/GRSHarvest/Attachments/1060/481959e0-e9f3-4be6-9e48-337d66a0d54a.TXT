@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Meeting id="897442" title="Characterization of a Novel Series of gp120 Inhibitors"><ConferenceName>21st International Conference on Antiviral Research</ConferenceName><StartDate>2008-04-13T00:00:00Z</StartDate><EndDate>2008-04-17T00:00:00Z</EndDate><City>Montreal</City><Country>Canada</Country></Meeting>

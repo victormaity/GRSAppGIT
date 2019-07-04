@@ -1,0 +1,9 @@
+Tech info:
+Exception cause: java.util.NoSuchElementException: Cannot locate an element using com.thomsonreuters.cucumberfactory.typesfactory.Factory.InvocationHandlers.HTMLInvocationHandler@127d7908 
+ com.thomsonreuters.cucumberfactory.typesfactory.Factory.InvocationHandlers.HTMLInvocationHandler.invoke(HTMLInvocationHandler.java:34);
+com.sun.proxy.$Proxy20.click(Unknown Source);
+com.thomsonreuters.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:56);
+com.thomsonreuters.incites.cucumber.pages.AnaliticsPages.AnaliticsPage.navigatorClick(AnaliticsPage.java:92);
+com.thomsonreuters.incites.cucumber.pages.AnaliticsPages.AnaliticsPage.NavigateToCreateNewTilePage(AnaliticsPage.java:131);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.CreateNewTilePageSteps.I_have_applied_filter_from_subsection_with_text(CreateNewTilePageSteps.java:1263);
+✽.When I have applied filter "Research Area" with text "ASTRONOMY & ASTROPHYSICS" from subsection "By Attributes" on page "Explore Regions"(src/test/resources/com.thomsonreuters.incites.cucumber/ExploreResearchAreasContext/ResearchAreasByAttributesFilters.feature:185)

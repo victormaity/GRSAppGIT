@@ -1,0 +1,1 @@
+          select REPLACE(ds.full_sort_order,'00','')  AS full_order from RS_DRUG.FF_DRUG_DEVELOPMENT_HISTORY his         JOIN  rs_drug.ff_dev_status_and_reas_for_dx ds ON his.status_id= ds.status_id where his.drug_id='55923'         ORDER BY his.status_id     

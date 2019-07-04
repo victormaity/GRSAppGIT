@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="167968"><Title>Acquisition of majority stake of GENEART</Title><Principal>Geneart AG</Principal><Partner>Applied Biosystems</Partner><Type>Company - M&amp;A (in whole or part)</Type><Status>Active</Status></Deal>

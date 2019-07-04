@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialResultsInput xmlns:ns2="local"><filtersEnabled>0</filtersEnabled><hits>2000</hits><offset>1500</offset><query>cold</query><queryLanguage>ssql</queryLanguage><sortBy>-trialPhase</sortBy></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialResultsInput>

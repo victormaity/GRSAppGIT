@@ -1,0 +1,48 @@
+<GRS_Report>
+  <client_info>
+    <project>SearchEngineTests</project>
+    <test_cycle>WOS _MWS _6.36.5</test_cycle>
+    <url>http://mws-uw2.qa1.dev-wos.com/esti/xrpc</url>
+    <environment>
+    </environment>
+    <user>michael.lelyakov@thomsonreuters.com</user>
+    <ip>192.168.229.74</ip>
+    <start_time>05/16/2019 02:38:45</start_time>
+    <end_time>05/16/2019 02:38:45</end_time>
+    <browser>No Browser</browser>
+    <os>Windows 7 (64-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="runAnalyzesTests.CSCD.PositiveTests" start_time="5/16/2019 2:38:45 PM">
+    <TestCase name="SE_RQ_RP_P_" start_time="5/16/2019 2:38:45 PM" description="Retrieve parameters: check AnalyzeParameters:  check DIS field data and descending sort by 'Value'. Flow - Positive_Analyze_Sorting" criticality="" state="pass" end_time="5/16/2019 2:38:45 PM">
+      <step type="pass" description="Get valid SID for test case with ID '14'" expected="In Response get valid SIDs" time="5/16/2019 2:38:45 PM" inputdata="">
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Positive_Analyze_Sorting - Retrieving the SID; username is 'fastwosall'; password is 'fastwosall'PositiveTestsCommonFlow: SID returned is: G2GcmsicsK5i5vG1Bll</substep>
+      </step>
+      <step type="pass" description="Sending parent 'runQuery' request with ID '1842" expected="retrieving valid data" time="5/16/2019 2:38:45 PM" inputdata="" attachment="2ce15e0feb0c4232885a649b12d8fecc$b6ffb277a7d948178126251deb9147ed_REQUEST.txt;26cde29d021847f08cf16fee74dffb76$b6ffb277a7d948178126251deb9147ed_RESPONSE.txt">
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Sending parent 'runQuery' request with ID '1842' and retrieving query id - response was returned for the parent request: Returned query id is '1'</substep>
+      </step>
+      <step type="pass" description="Send SE.runAnalyzes request" expected="In Response get valid results" time="5/16/2019 2:38:45 PM" inputdata="" attachment="49c2e8b540da41b6b9ea1f7b01f9e886$3fb01d6bb26646b7824c211b688d0f50_REQUEST.txt;e79464667ed7438fa94817a6fbb4d582$3fb01d6bb26646b7824c211b688d0f50_RESPONSE.txt">
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Positive_Analyze_Sorting - Sending request, then retrieving the GUID and response XML Response message was returned.</substep>
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Positive_Analyze_Sorting - Checking descending sort of the analyze results items for the sort by 'Value' for the 'AU' analyze field.</substep>
+      </step>
+      <step type="pass" description="Close session G2GcmsicsK5i5vG1Bll'" expected="Get valid Response" time="5/16/2019 2:38:45 PM" inputdata="">
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Positive_Analyze_Sorting - Close session with SID: 'G2GcmsicsK5i5vG1Bll Positive_Analyze_Sorting - Session was closed</substep>
+      </step>
+    </TestCase>
+    <TestCase name="SE_RQ_RP_P_" start_time="5/16/2019 2:38:45 PM" description="Retrieve parameters: check AnalyzeParameters:  check DIS field data and descending sort by 'Value'. Flow - Positive_Analyze_Sorting" criticality="" state="pass" end_time="5/16/2019 2:38:45 PM">
+      <step type="pass" description="Get valid SID for test case with ID '15'" expected="In Response get valid SIDs" time="5/16/2019 2:38:45 PM" inputdata="">
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Positive_Analyze_Sorting - Retrieving the SID; username is 'fastwosall'; password is 'fastwosall'PositiveTestsCommonFlow: SID returned is: G1I33pDbwxydynxjQU9</substep>
+      </step>
+      <step type="pass" description="Sending parent 'runQuery' request with ID '1845" expected="retrieving valid data" time="5/16/2019 2:38:45 PM" inputdata="" attachment="e1e506f3f45443c48445dea1151448f9$0e7648b9f34e434991632f1deb1aadbc_REQUEST.txt;33cfc30326bb4069a485841e8516dd80$0e7648b9f34e434991632f1deb1aadbc_RESPONSE.txt">
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Sending parent 'runQuery' request with ID '1845' and retrieving query id - response was returned for the parent request: Returned query id is '1'</substep>
+      </step>
+      <step type="pass" description="Send SE.runAnalyzes request" expected="In Response get valid results" time="5/16/2019 2:38:45 PM" inputdata="" attachment="1701d6ee4b124d9f9108b64a142f5ecb$3a65bfeb81d448f8b7ea92e76a039308_REQUEST.txt;c7002a2b0c5045e7ba7c92568fe30021$3a65bfeb81d448f8b7ea92e76a039308_RESPONSE.txt">
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Positive_Analyze_Sorting - Sending request, then retrieving the GUID and response XML Response message was returned.</substep>
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Positive_Analyze_Sorting - Checking ascending sort of the analyze results items for the sort by 'Field' for the 'AU' analyze field.</substep>
+      </step>
+      <step type="pass" description="Close session G1I33pDbwxydynxjQU9'" expected="Get valid Response" time="5/16/2019 2:38:45 PM" inputdata="">
+        <substep valid="True" time="5/16/2019 2:38:45 PM">Positive_Analyze_Sorting - Close session with SID: 'G1I33pDbwxydynxjQU9 Positive_Analyze_Sorting - Session was closed</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

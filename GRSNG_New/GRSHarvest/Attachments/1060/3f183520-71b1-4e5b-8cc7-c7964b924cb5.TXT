@@ -1,0 +1,1 @@
+{"NamedEntityRecognition":{"Entities":{"Entity":{"@start":"0","@end":"4","@originalForm":"Fiber","@id":"68705190","@type":"SiTargets","@name":"Fiber","@synonym":"Fiber","@normalizedSynonym":"fiber","@multiUseSynonym":"true","@jaroWinklerDistance":"100","@sentence":"1","@token":"1"}},"Sentences":{"sentence":{"@end":"4","@number":"1","@start":"0"}}}}

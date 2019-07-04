@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.SynonymsIdInput xmlns:ns2="local"><idList><id>100001</id><id>100002</id></idList><idType>ddapi</idType><taxonomyType>drug</taxonomyType></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.SynonymsIdInput>

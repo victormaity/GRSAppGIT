@@ -1,0 +1,1 @@
+          select * from(select ANCESTOR_ID from CI_PUBLIC_STAGING.JP_INDICATION_TREE_AD t,CI_PUBLIC_STAGING.JP_DEAL_INDICATION i where t.DESCENDANT_ID = i.INDICATION_ID and is_primary='Y' order by dbms_random.value)where rownum<2     

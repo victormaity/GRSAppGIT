@@ -1,0 +1,580 @@
+﻿@{
+    ViewBag.Title = "TestCycles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+@model  GlobalReportingSystem.Core.Models.GRS.CyclesModel 
+<div class="page-header">
+    <h1>Test Cycles Configuration
+    <small>
+        <i class="ace-icon fa fa-angle-double-right"></i>
+        Manage your test cycles here
+    </small>
+    </h1>
+</div>
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Project Test Cycles</h5>
+
+            <!-- #section:custom/widget-box.toolbar -->
+            <div class="widget-toolbar">
+                <div class="widget-menu">
+                    <a href="#modal-form" data-action="settings" role="button" data-toggle="modal">
+                        <i class="ace-icon fa fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- /section:custom/widget-box.toolbar -->
+        </div>
+
+        <div class="widget-body">
+            <div class="widget-main">
+
+                <table class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="middle" style="vertical-align: middle!important;">
+                            <div class="col-sm-8" style="padding-left: 0px!important;">
+                                <div align="middle" class="col-sm-3" style="text-align: left!important; padding-left: 0px!important; vertical-align: middle!important; padding-top: 6px!important;">
+                                    <label class="col-sm-12 control-label no-padding-left">Select test cycle type</label>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select id="selFilterTestCycle" style="width: 100%!important;">
+                                        <option value="ALL">All</option>
+                                        <option value="ALLACTIVE">All Active</option>
+                                        <option value="ALLINACTIVE">All Inactive</option>
+                                        <option value="THISYEAR">This Year</option>
+                                        <option value="LASTONEYEAR">Last One Year</option>
+                                        <option value="LASTSIXMONTH">Last Six Month</option>
+                                        <option value="THISMONTH" selected>This Month</option>
+                                        <option value="LASTONEMONTH">Last One Month</option>
+                                        <option value="LASTONEWEEK">Last One Week</option>
+                                        <option value="YESTERDAY">Yesterday</option>
+                                        <option value="TODAY">Today</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2">
+                                    <span class="help-inline col-xs-12 col-sm-7">
+                                        <label class="middle">
+                                            <input type="button" value="Filter Test Cycle" id="btnFilterTestCycle" title="Filter Test Cycle" class="btn btn-info btn-sm" onclick="FilterTestCycle();">
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table id="testcyclestable" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Started</th>
+                            <th>Finished</th>
+                            <th>Comments</th>
+                            <th>Active</th>
+                            <th>Enabled</th>
+                            <th>Actions</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var cycle in Model.CyclesFromDb)
+                        {
+                            <tr id="@cycle.ID">
+                                <td>@cycle.CycleName</td>
+                                <td>@cycle.CycleStart.ToString("d")</td>
+                                <td>@cycle.CycleEnd.ToString("d")</td>
+                                <td>@cycle.CycleComments</td>
+                                <td>@if (cycle.CycleIsCurrent.HasValue && cycle.CycleIsCurrent.Value)
+                                    {
+                                    <i class="green ace-icon fa fa-check-circle-o bigger-130" />
+                                    }
+                                    else
+                                    {
+                                    <i class="red ace-icon fa fa-times-circle-o bigger-130" />
+                                    }
+
+                                </td>
+                                <td>@if (cycle.isInnactive.HasValue)
+                                    {
+                                    <i class='ace-icon @(cycle.isInnactive.Value ? "red fa fa-times-circle-o bigger-130" : "green fa fa-check-circle-o bigger-130")' />
+                                    }
+                                    else
+                                    {
+                                    <i class="green ace-icon fa fa-check-circle-o bigger-130" />
+                                    }
+                                </td>
+                                <td>
+                                    <div class="hidden-sm hidden-xs action-buttons">
+                                        @if (!cycle.isInnactive.HasValue || !cycle.isInnactive.Value)
+                                        {
+                                            <a class="blue" href='@Url.Action("SetCurrentTestCycle", "Configuration", new { @id = cycle.ID })'>
+                                                <i class="ace-icon fa fa-check bigger-130"></i>
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            <a class="blue" href='@Url.Action("SetCurrentTestCycle", "Configuration", new { @id = cycle.ID })' style="display: none">
+                                                <i class="ace-icon fa fa-check bigger-130" hidden></i>
+                                            </a>
+                                        }                                        
+                                        &nbsp;
+                                        <a href="#update-@cycle.ID" data-action="settings" role="button" data-toggle="modal" class="green" onclick="showForm('@cycle.ID','false') ">
+                                            <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                        </a>
+                                        <div aria-hidden="true" class="modal in" id="update-@cycle.ID" style="display: none;" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">x</button>
+                                                        <h4 class="blue bigger">Please change following fields</h4>
+                                                    </div>
+                                                    <div>
+                                                        @{
+                                                        var pmodel = new GlobalReportingSystem.Core.Models.GRS.ForPartial();
+                                                            pmodel.CycleData = cycle;
+                                                            pmodel.TeamFromDb = Model.TeamFromDb;
+                                                            pmodel.ReleaseFromDb =Model.ReleaseFromDb;
+                                                        }
+                                                        @{ Html.RenderPartial("UpdateTestCycles", pmodel);}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>@if (cycle.isInnactive == true)
+                                    {
+                                        <img id="redshow" src="~/Content/img/Power-Button-Green.png" height="20" width="20" style="cursor: pointer;" title="Activate '@cycle.CycleName' test cycle" onclick="setTestCycleInnactive(@cycle.ID)" />
+                                    }
+                                    else
+                                    {
+                                        <img id="greenshow" src="~/Content/img/Power-Button-Red.png" height="20" width="20" style="cursor: pointer;" title="Deactivate '@cycle.CycleName' test cycle" onclick="setTestCycleInnactive(@cycle.ID)" />
+                                    }
+                                    &nbsp;&nbsp;
+                                    @if (!cycle.isInnactive.HasValue)
+                                    {
+                                        <a class='red' onclick='DeleteTestCycle(@cycle.ID,"@cycle.CycleName")' title="Delete '@cycle.CycleName' test cycle">
+                                            <i class='ace-icon fa fa-trash-o bigger-130'></i>
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        @*<a class='@(cycle.isInnactive.Value ? "green" : "red")' onclick='DeleteTestCycle(@cycle.ID,"@cycle.CycleName")'>
+                                            <i class='ace-icon fa fa-trash-o bigger-130'></i>
+                                        </a>*@
+                                        <a class='red' onclick='DeleteTestCycle(@cycle.ID,"@cycle.CycleName")' title="Delete '@cycle.CycleName' test cycle">
+                                            <i class='ace-icon fa fa-trash-o bigger-130'></i>
+                                        </a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /section:custom/widget-box -->
+</div>
+
+@*Modal Forms*@
+<div aria-hidden="true" class="modal" id="modal-form" style="display: none;" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="blue bigger">Please fill the following fields</h4>
+            </div>
+            @using (Html.BeginForm("TestCycles", "Configuration", FormMethod.Post,  new { id = "formAddCycle" }))
+            {
+                <div class="modal-body">
+                    <div>
+                        <label for="form-field-mask-1">
+                            Cycle Name<span style="color: red;"> *</span>
+                        <small class="text-success">(display)</small>
+                        </label>
+                        <!-- #section:plugins/input.masked-input -->
+                        <div class="input-group">
+                            @Html.TextBoxFor(p => p.Name, new { @class = "form-control", @id="txtAddCycleName" })
+                            @*<input class="" type="text" id="form-field-mask-1">*@
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm btn-default" type="button">
+                                    <i class="ace-icon fa fa-pencil bigger-110"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <span id="spnAddErrorCycleName" style="color: red;"></span>
+                        <!-- /section:plugins/input.masked-input -->
+                    </div>
+                    <hr />
+                    <div>
+                        <label for="form-field-mask-1">
+                            Start Date<span style="color: red;"> *</span>
+                        <small class="text-success">(begining of regression)</small>
+                        </label>
+                        <!-- #section:plugins/input.masked-input -->
+                        <div class="input-group">
+                            @Html.TextBoxFor(p => p.Start, new { @class = "form-control input-mask-date dpsun widthbox", @readonly="readonly", @Value = DateTime.Now.ToString("MM/dd/yyyy"), @id="txtAddStartDate" })
+                            @*<input class="" value='@DateTime.Now.ToString("d")' type='text' id='form-field-mask-1'>
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm btn-default" type="button">
+                                    <i class="ace-icon fa fa-calendar bigger-110"></i>
+                                </button>
+                            </span>*@
+                        </div>
+                        <!-- /section:plugins/input.masked-input -->
+                        <span id="spnAddErrorStartDate" style="color: red;"></span>
+                    </div>
+                    <hr />
+                    <div>
+                        <label for="form-field-mask-1">
+                            End Date<span style="color: red;"> *</span>
+                        <small class="text-success">(end of regression)</small>
+                        </label>
+                        <!-- #section:plugins/input.masked-input -->
+                        <div class="input-group">
+                            @Html.TextBoxFor(p => p.End, new { @class = "form-control input-mask-date dpsun widthbox", @readonly="readonly", @Value = DateTime.Now.AddDays(7).ToString("MM/dd/yyyy"), @id="txtAddEndDate" })
+                            @*<input class='form-control input-mask-date' value='@DateTime.Now.AddDays(7).ToString("d")' type='text' id='form-field-mask-1'>
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm btn-default" type="button">
+                                    <i class="ace-icon fa fa-calendar bigger-110"></i>
+                                </button>
+                            </span>*@
+                        </div>
+                        <!-- /section:plugins/input.masked-input -->
+                        <span id="spnAddErrorEndDate" style="color: red;"></span>
+                    </div>
+                    <hr />
+                    <div>
+                        <label for="form-field-11">Comments</label>
+                        @Html.TextAreaFor(p => p.Comments, new { @class = "autosize-transition form-control", @style = "overflow: hidden; word-wrap: break-word; resize: horizontal; height: 52px;", @id="txtAddComment" })
+                        @*<textarea id="form-field-11" class="autosize-transition form-control" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 52px;"></textarea>*@
+                    </div>
+                    <hr />
+                    <div>
+                        <label for="form-field-mask-1">Release Name<span style="color: red;"> *</span></label>
+                        <div class="input-group">
+                            @Html.DropDownListFor(model => model.ReleaseId, new SelectList(Model.ReleaseFromDb, "Value", "Text", Model.ReleaseId), new{@class = "width250", @id="ddlAddRelease"})
+                            @*@Html.TextBoxFor(p => p.ReleaseName, new { @class = "form-control" })
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm btn-default" type="button"><i class="ace-icon fa fa-pencil bigger-110"></i></button>
+                            </span>*@                            
+                        </div>
+                        @if(Model.ReleaseFromDb.Count() == 0)
+                        {
+                            <div style="color:red;">Note: Please ask your project admin to add Release name.</div>
+                        }
+                        <span id="spnAddErrorReleaseName" style="color: red;"></span>
+                    </div>
+                    <hr />
+                    @*<div>
+                        <label for="form-field-mask-1">Release Date<small class="text-success"></small></label>
+                        <div class="input-group">
+                            @Html.TextBoxFor(p => p.ReleaseDate, new { @class = "form-control input-mask-date releasedatepick", @Value = DateTime.Now.ToString("d") })
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm btn-default" type="button"><i class="ace-icon fa fa-calendar bigger-110"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                    <hr />*@
+                    <div>
+                        <label for="form-field-mask-1">Team Name<span style="color: red;"> *</span></label>
+                        <div class="input-group">
+                            @Html.DropDownListFor(model => model.TeamId, new SelectList(Model.TeamFromDb, "Value", "Text", Model.TeamId), new{@class = "width250", @id="ddlAddTeam"})
+                            @*@Html.TextBoxFor(p => p.TeamName, new { @class = "form-control" })
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm btn-default" type="button"><i class="ace-icon fa fa-pencil bigger-110"></i></button>
+                            </span>*@                            
+                        </div>
+                        @if(Model.TeamFromDb.Count() == 0)
+                        {
+                            <div style="color:red;">Note: Please ask your project admin to add Team name.</div>
+                        }
+                    </div>
+                    <span id="spnAddErrorTeamName" style="color: red;"></span>
+                </div>
+            <div class="modal-footer">
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <i class="ace-icon fa fa-times"></i>
+                    Cancel
+                </button>
+                <div id="btnformsubmit" class="btn btn-sm btn-primary">
+                    <i class="ace-icon fa fa-check"></i>
+                    Add
+                </div>
+                @*<button type="submit" class="btn btn-sm btn-primary">
+                    <i class="ace-icon fa fa-check"></i>
+                    Add
+                </button>*@
+            </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div aria-hidden="true" class="modal" id="modal-confirm-delete-testcycle" style="display: none;" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="blue bigger">Please Confirm?</h4>
+            </div>
+            <br />
+            <div class="modal-body">
+                <span style="color: red; font-weight: 600;">Are you sure?</span>
+                <br />
+                you want to delete this testcycle "<span id="spnCycleName" style="color: red; font-weight: 600;"></span>"&nbsp;permanently.
+                <br />
+                <br />
+                Note: Once you delete test cycle and all of its data, you can not retrive back in future.
+                <br />
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-sm btn-primary" data-dismiss="modal">
+                    <i class="ace-icon fa fa-times"></i>
+                    Cancel
+                </button>
+                <button id="confirmDelete" class="btn btn-sm btn-primary" onclick="confirmDelete()">
+                    <i class="ace-icon fa fa-check"></i>
+                    Confirm Delete
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Scripts Secion*@
+
+<script type="text/javascript">
+    var cdelete = "";
+    $(document).ready(function () {
+        var currentoption = getUrlVars()["testcycletype"];
+        if (currentoption == "" || currentoption == null || currentoption == "undefined") {
+            $("#selFilterTestCycle").val("THISMONTH");
+        }
+        else {
+            $("#selFilterTestCycle").val(currentoption);
+        }
+    });
+
+    function FilterTestCycle() {
+        var valueofoption = $("#selFilterTestCycle option:selected").val();
+        window.location.href = window.location.protocol + "//" + window.location.hostname + window.location.pathname + "?testcycletype=" + valueofoption;
+    }
+
+    function getUrlVars() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+
+    function DeleteTestCycle(cycleId, cycleName) {
+        var currentoption = getUrlVars()["testcycletype"];
+        var testcyclerefresh;
+        if (currentoption == "" || currentoption == null || currentoption == "undefined") { testcyclerefresh = "THISMONTH"; }
+        else { testcyclerefresh = currentoption; }
+        cdelete = cycleId;
+        $("#spnCycleName").html(cycleName);
+        $("#modal-confirm-delete-testcycle").modal("show");
+    }
+
+    function confirmDelete() {
+        $("#modal-confirm-delete-testcycle").modal("hide");
+        if (cdelete != "" && cdelete != null && cdelete != "undefined") {
+            $.ajax({
+                type: 'post',
+                url: '@Url.Action("DeleteTestCycle", "Configuration")',
+                async: true,
+                data: '{"testCycleId":' + cdelete + '}',
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                beforeSend: function () {
+                    document.getElementById("blockBack").style.display = '';
+                    document.getElementById("divmiddle").style.display = '';
+                },
+                complete: function () {
+                    document.getElementById("blockBack").style.display = 'none';
+                    document.getElementById("divmiddle").style.display = 'none';
+                },
+                error: function () { },
+                success: function (response) { //{ IsDeleted = false, IsException = true, Message = message };
+                    if (response.IsException == true) { ShowMessage("Error", response.Message); }
+                    else {
+                        ShowMessage("Success", response.Message + " <br />Page will refresh in 5 seconds.");
+
+                        setTimeout(function () {
+                            location.reload();
+                        }, 5000);
+                    }
+                }
+            });
+            cdelete = "";
+        }
+    }
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#spnAddErrorCycleName").html("");
+        $("#spnAddErrorStartDate").html("");
+        $("#spnAddErrorEndDate").html("");
+        $("#spnAddErrorReleaseName").html("");
+        $("#spnAddErrorTeamName").html("");
+
+
+        $("#btnformsubmit").click(function () {
+            $("#spnAddErrorCycleName").html("");
+            $("#spnAddErrorStartDate").html("");
+            $("#spnAddErrorEndDate").html("");
+            $("#spnAddErrorReleaseName").html("");
+            $("#spnAddErrorTeamName").html("");
+
+            var _addCycleName = $("#txtAddCycleName").val();
+            var _addStartDate = $("#txtAddStartDate").val();
+            var _addEndDate = $("#txtAddEndDate").val();
+            var _addReleaseName = $("#ddlAddRelease").val();
+            var _addTeamName = $("#ddlAddTeam").val();
+
+            var isAddValid = true;
+
+            if (_addCycleName == "") { isAddValid = false; $("#spnAddErrorCycleName").html("Please enter cycle name."); }
+            if (_addStartDate == "") { isAddValid = false; $("#spnAddErrorStartDate").html("Please select start date."); }
+            if (_addEndDate == "") { isAddValid = false; $("#spnAddErrorEndDate").html("Please select end date"); }
+            if (_addReleaseName == "0" || _addReleaseName == "") { isAddValid = false; $("#spnAddErrorReleaseName").html("Please select release date."); }
+            if (_addTeamName == "0" || _addTeamName == "") { isAddValid = false; $("#spnAddErrorTeamName").html("Please select team name."); }
+            
+            if (isAddValid == true) {
+                $("#spnAddErrorCycleName").html("");
+                $("#spnAddErrorStartDate").html("");
+                $("#spnAddErrorEndDate").html("");
+                $("#spnAddErrorReleaseName").html("");
+                $("#spnAddErrorTeamName").html("");
+                //var data = "Cycle Name: " + _addCycleName + ", Start Date: " + _addStartDate + ", End Date" + _addEndDate + ", Release Name" + _addReleaseName + ", Team Name" + _addTeamName;
+                //alert(data);
+                $("#formAddCycle").submit();
+            }
+            
+        });
+    });
+</script>
+
+<script>
+    function setTestCycleInnactive(cycleId) {
+        $.ajax({
+            type: 'post',
+            url: '@Url.Action("SetTestCycleInnactive", "Configuration")',
+            async: true,
+            data: '{"id":' + cycleId + '}',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            beforeSend: function () {
+                document.getElementById("blockBack").style.display = '';
+                document.getElementById("divmiddle").style.display = '';
+            },
+            complete: function () {
+                document.getElementById("blockBack").style.display = 'none';
+                document.getElementById("divmiddle").style.display = 'none';
+            },
+            error: function () { },
+            success: function (msg) {
+                if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                }
+                else {
+                    var iObject = $($("tr[id=" + cycleId + "] > td")[5]).find("i[class*=red]");
+                    var wasActive = false;
+                    if (iObject.length == 0) {
+                        iObject = $($("tr[id=" + cycleId + "] > td")[5]).find("i[class*=green]");
+                        wasActive = true;
+                    }
+                    if (wasActive) {
+                        iObject.removeClass("green");
+                        iObject.addClass("red");
+                        iObject.removeClass("fa-check-circle-o");
+                        iObject.addClass("fa-times-circle-o");
+                        $($("tr[id=" + cycleId + "] > td")[6]).find("a > i[class*=fa-check]").parent().css("display", "none");
+                        //$($("tr[id=" + cycleId + "] > td")[6]).find("a > i[class*=fa-trash]").removeClass("red");
+                        //$($("tr[id=" + cycleId + "] > td")[6]).find("a > i[class*=fa-trash]").addClass("green");
+                    }
+                    else {
+                        iObject.removeClass("red");
+                        iObject.addClass("green");
+                        iObject.removeClass("fa-times-circle-o");
+                        iObject.addClass("fa-check-circle-o");
+                        $($("tr[id=" + cycleId + "] > td")[6]).find("a > i[class*=fa-check]").parent().css("display", "inline-block");
+                        //$($("tr[id=" + cycleId + "] > td")[6]).find("a > i[class*=fa-trash]").removeClass("green");
+                        //$($("tr[id=" + cycleId + "] > td")[6]).find("a > i[class*=fa-trash]").addClass("red");
+                    }
+
+                    var srcofimg = $($("tr[id=" + cycleId + "] > td")[7]).find("img").attr("src");
+                    if (srcofimg == "/nggrs/Content/img/Power-Button-Green.png") {
+                        $($("tr[id=" + cycleId + "] > td")[7]).find("img").attr("src", "/nggrs/Content/img/Power-Button-Red.png");
+                    }
+                    else {
+                        $($("tr[id=" + cycleId + "] > td")[7]).find("img").attr("src", "/nggrs/Content/img/Power-Button-Green.png");
+                    }
+                }
+            }
+        });
+    }
+</script>
+
+
+<script>
+    $(function () {
+        $(".dpsun").datepicker({
+            showButtonPanel: true,
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: "mm/dd/yy",
+            showOn: "button",
+            buttonImage: "../Content/calnew.png",
+            buttonImageHeight: "28px",
+            buttonImageWidth: "28px",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+        $(".dpsun").datepicker("option", "minDate", null)
+        $(".dpsun").datepicker("option", "maxDate", null)
+        $('img[title="Select date"]').css({ 'height': '28px', 'width': '28px', 'cursor': 'pointer' });
+    });
+</script>
+<style type="text/css">
+    .ui-datepicker-trigger {
+        z-index: 999999999999!important;
+    }
+
+    .ui-datepicker {
+        z-index: 999999999999!important;
+    }
+
+    .widthbox {
+        width: 221px!important;
+    }
+
+    .width100p {
+        width: 100%;
+    }
+
+    .width250 {
+        width: 250px;
+    }
+</style>
+
+
+
+@*<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+*@

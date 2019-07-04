@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node match="false" depth="2" leaf="false" name="Extracellular Fluid" treeCode="-1547554450|-981349676|" id="-981349676"></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyTreeOutput>

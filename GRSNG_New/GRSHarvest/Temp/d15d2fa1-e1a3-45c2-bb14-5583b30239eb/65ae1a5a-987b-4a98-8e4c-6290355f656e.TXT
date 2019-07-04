@@ -1,0 +1,6 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:42);
+org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:116);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.AnalysisResultsPage_Steps.iSelectFromDropdown(AnalysisResultsPage_Steps.java:790);
+✽.And I select "Save to Other File Formats" from "Save To" dropdown(com/clarivateanalytics/wos/gui/cucumber/Deployment/CCIssues.feature:658)

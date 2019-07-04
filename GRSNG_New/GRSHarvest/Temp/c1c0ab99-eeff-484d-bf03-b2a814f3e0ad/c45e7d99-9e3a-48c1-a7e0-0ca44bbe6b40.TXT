@@ -1,0 +1,1 @@
+https://produs-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/trial/search?query=%22Three-Dimensional+Transesophageal+Echocardiography+to+Assess+Right+Ventricular+Function+by+Pressure-Volume+Loops+during+Left+Ventricular+Assist+Device+Surgery%22&hits=20&offset=0&filtersEnabled=0&queryLanguage=ssql

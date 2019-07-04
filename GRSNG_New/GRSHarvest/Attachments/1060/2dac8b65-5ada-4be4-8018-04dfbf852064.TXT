@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><PatentFamilySummaryOutputs><PatentFamilySummaryOutput id="100009"><Title>Methylation Process</Title><Assignee>ASHLAND OIL INC</Assignee><Familymembers>GB-01398560</Familymembers><PatentNumber>GB-01398560</PatentNumber></PatentFamilySummaryOutput></PatentFamilySummaryOutputs>

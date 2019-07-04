@@ -1,0 +1,1 @@
+          SELECT *         FROM         (SELECT primary_action_id,         listagg(action_name, ' ; ') WITHIN GROUP (         ORDER BY action_name) AS action_name         FROM CI_PUBLIC_STAGING.JP_Action         GROUP BY primary_Action_id         HAVING COUNT(primary_action_id)>1         )         WHERE rownum<3     

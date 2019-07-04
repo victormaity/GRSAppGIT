@@ -1,0 +1,40 @@
+﻿@model List<GlobalReportingSystem.Core.Models.Entities.TestSuit>
+@{
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="bugList">
+                <table class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th title="Test Suite">Test Suite</th>
+                            <th title="Passed">Passed</th>
+                            <th title="Failed">Failed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int sumPass = 0;
+                            int sumFail = 0;
+
+                            foreach (var item in Model)
+                            {
+                            <tr>
+                                <td>@item.TSName</td>
+                                <td>@item.PassedTestCases</td>
+                                <td>@item.FailedTestCases</td>
+                            </tr>
+                                sumPass += @item.PassedTestCases ?? default(int);
+                                sumFail += @item.FailedTestCases ?? default(int);
+                            }
+                            <tr>
+                                <td>Total</td>
+                                <td>@sumPass</td>
+                                <td>@sumFail</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}

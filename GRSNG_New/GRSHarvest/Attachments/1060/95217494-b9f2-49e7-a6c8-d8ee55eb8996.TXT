@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.CompaniesLinkedToTaxonomyInput xmlns:ns2="local"><treeCode>IMM-415-HYP-</treeCode><type>Indication</type></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.CompaniesLinkedToTaxonomyInput>

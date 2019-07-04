@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.ExportTrialResultsInput xmlns:ns2="local"><format>MS_Excel</format><query>"The Use of Barbed Sutures in Total Hip Arthroplasty"</query><offset>0</offset><hits>10</hits><sortBy>-trialPhase</sortBy></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.ExportTrialResultsInput>

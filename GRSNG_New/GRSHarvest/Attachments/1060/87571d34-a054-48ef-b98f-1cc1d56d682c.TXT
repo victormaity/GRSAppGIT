@@ -1,0 +1,1 @@
+          Select designation_type_id from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION where DRUG_ID='73170'     

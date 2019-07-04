@@ -1,0 +1,1 @@
+          Select ras.status_name         from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION drd         join  ci_public_staging.jp_reg_application_status ras on (drd.designation_status_id=ras.status_id) where drd.DRUG_ID='95696'     

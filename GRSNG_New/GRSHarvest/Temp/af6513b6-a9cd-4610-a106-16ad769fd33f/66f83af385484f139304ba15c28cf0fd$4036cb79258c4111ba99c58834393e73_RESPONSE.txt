@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.runAnalyzes" rc="OK">
+    <list>
+      <map>
+        <val name="Name">AU</val>
+        <val name="TotalCount">100000</val>
+        <val name="NoDataCount">877</val>
+        <list name="Values">
+          <map>
+            <val name="Key">ANONYMOUS</val>
+            <val name="Value">617</val>
+          </map>
+          <map>
+            <val name="Key">DECUYPERE E</val>
+            <val name="Value">269</val>
+          </map>
+          <map>
+            <val name="Key">HAESEBROUCK F</val>
+            <val name="Value">156</val>
+          </map>
+          <map>
+            <val name="Key">CAPUA I</val>
+            <val name="Value">147</val>
+          </map>
+          <map>
+            <val name="Key">FURUSE M</val>
+            <val name="Value">145</val>
+          </map>
+          <map>
+            <val name="Key">BUYSE J</val>
+            <val name="Value">144</val>
+          </map>
+          <map>
+            <val name="Key">DUCATELLE R</val>
+            <val name="Value">139</val>
+          </map>
+          <map>
+            <val name="Key">SWAYNE D E</val>
+            <val name="Value">138</val>
+          </map>
+          <map>
+            <val name="Key">ALBINO L F T</val>
+            <val name="Value">134</val>
+          </map>
+          <map>
+            <val name="Key">ROSTAGNO H S</val>
+            <val name="Value">132</val>
+          </map>
+          <map>
+            <val name="Key">LILLEHOJ H S</val>
+            <val name="Value">130</val>
+          </map>
+          <map>
+            <val name="Key">WEBSTER R G</val>
+            <val name="Value">129</val>
+          </map>
+          <map>
+            <val name="Key">NESTOR K E</val>
+            <val name="Value">126</val>
+          </map>
+          <map>
+            <val name="Key">WALDROUP P W</val>
+            <val name="Value">125</val>
+          </map>
+          <map>
+            <val name="Key">LEESON S</val>
+            <val name="Value">124</val>
+          </map>
+          <map>
+            <val name="Key">LIU XIUFAN</val>
+            <val name="Value">123</val>
+          </map>
+          <map>
+            <val name="Key">KIDD M T</val>
+            <val name="Value">119</val>
+          </map>
+          <map>
+            <val name="Key">SIEGEL P B</val>
+            <val name="Value">118</val>
+          </map>
+          <map>
+            <val name="Key">COX N A</val>
+            <val name="Value">116</val>
+          </map>
+          <map>
+            <val name="Key">HAFEZ H M</val>
+            <val name="Value">115</val>
+          </map>
+          <map>
+            <val name="Key">RAVINDRAN V</val>
+            <val name="Value">114</val>
+          </map>
+          <map>
+            <val name="Key">MANDAL A B</val>
+            <val name="Value">113</val>
+          </map>
+          <map>
+            <val name="Key">ALEXANDER D J</val>
+            <val name="Value">110</val>
+          </map>
+          <map>
+            <val name="Key">HARGIS B M</val>
+            <val name="Value">109</val>
+          </map>
+          <map>
+            <val name="Key">HOCKING P M</val>
+            <val name="Value">109</val>
+          </map>
+          <map>
+            <val name="Key">PARSONS C M</val>
+            <val name="Value">108</val>
+          </map>
+          <map>
+            <val name="Key">KORELESKI J</val>
+            <val name="Value">107</val>
+          </map>
+          <map>
+            <val name="Key">BUHR R J</val>
+            <val name="Value">105</val>
+          </map>
+          <map>
+            <val name="Key">CHENG ANCHUN</val>
+            <val name="Value">105</val>
+          </map>
+          <map>
+            <val name="Key">JUNQUEIRA O M</val>
+            <val name="Value">105</val>
+          </map>
+          <map>
+            <val name="Key">LAMONT S J</val>
+            <val name="Value">105</val>
+          </map>
+          <map>
+            <val name="Key">BRANTON S L</val>
+            <val name="Value">104</val>
+          </map>
+          <map>
+            <val name="Key">RAO S V R</val>
+            <val name="Value">104</val>
+          </map>
+          <map>
+            <val name="Key">AKIBA Y</val>
+            <val name="Value">102</val>
+          </map>
+          <map>
+            <val name="Key">KATARIA J M</val>
+            <val name="Value">101</val>
+          </map>
+          <map>
+            <val name="Key">MOLLER A P</val>
+            <val name="Value">101</val>
+          </map>
+          <map>
+            <val name="Key">WANG MINGSHU</val>
+            <val name="Value">99</val>
+          </map>
+          <map>
+            <val name="Key">BERRANG M E</val>
+            <val name="Value">98</val>
+          </map>
+          <map>
+            <val name="Key">NISBET D J</val>
+            <val name="Value">98</val>
+          </map>
+          <map>
+            <val name="Key">SAKOMURA N K</val>
+            <val name="Value">98</val>
+          </map>
+          <map>
+            <val name="Key">PANDA A K</val>
+            <val name="Value">97</val>
+          </map>
+          <map>
+            <val name="Key">SUAREZ D L</val>
+            <val name="Value">97</val>
+          </map>
+          <map>
+            <val name="Key">YOSHIMURA Y</val>
+            <val name="Value">97</val>
+          </map>
+          <map>
+            <val name="Key">RICKE S C</val>
+            <val name="Value">94</val>
+          </map>
+          <map>
+            <val name="Key">BISGAARD M</val>
+            <val name="Value">92</val>
+          </map>
+          <map>
+            <val name="Key">DUBEY J P</val>
+            <val name="Value">92</val>
+          </map>
+          <map>
+            <val name="Key">JEROCH H</val>
+            <val name="Value">92</val>
+          </map>
+          <map>
+            <val name="Key">MACARI M</val>
+            <val name="Value">92</val>
+          </map>
+          <map>
+            <val name="Key">RAJU M V L N</val>
+            <val name="Value">90</val>
+          </map>
+          <map>
+            <val name="Key">SHIVAZAD M</val>
+            <val name="Value">90</val>
+          </map>
+        </list>
+      </map>
+    </list>
+  </fn>
+</response>

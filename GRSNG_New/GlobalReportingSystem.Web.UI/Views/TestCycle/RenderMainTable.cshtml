@@ -1,0 +1,75 @@
+﻿@model GlobalReportingSystem.Core.Models.GRS.TestCasesAndStepsModel
+<div class="widget-body">
+    <div class="widget-main" style="width: 100%">
+        <table id="TestCases" class="table table-bordered table-hover" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th width="10"></th>
+                    <th>Time</th>
+                    <th>Description</th>
+                    <th>Expected</th>
+                    <th>Actual</th>
+                    <th>Current Status</th>
+                    <th>Global Status</th>
+                    <th>Current Defect</th>
+                    <th>Old Defects</th>
+                    <th>Attachments</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var testCase in Model.TestCases)
+                {
+                    var colorTest = testCase.TCState;
+
+                    switch (testCase.TCState)
+                    {
+                        case "pass":
+                            colorTest = "#EAFFE7";
+                            break;
+                        case "fail":
+                            colorTest = "#FFE8D1";
+                            break;
+                        default:
+                            colorTest = "#FFFDD4";
+                            break;
+                    }
+                            
+                    <tr id="@("TC_" + testCase.ID)">
+                        <td id="controlPanel" style="background-color:@colorTest">
+                            <a><i class="fa fa-level-down fa-flip-horizontal" onclick="renderTestSteps(@testCase.ID, '@Url.Action("GetTestSteps", "TestCycle")')"></i></a>
+                        </td>
+                        <td colspan="12" style="text-align: center; background-color:@colorTest; cursor:pointer" onclick="renderTestSteps(@testCase.ID, '@Url.Action("GetTestSteps", "TestCycle")')">
+                            <b>@testCase.TCName - @testCase.TCDescription</b>
+                            <br>
+                            (@(testCase.TCEndTime - testCase.TCStartTime))
+                            @if (!string.IsNullOrEmpty(testCase.qc_id) && (@Model.DedicatedLinearExecution != null || @Model.DedicatedLoadBalancedExecution != null))
+                            {
+                                <b><i id="restart-@testCase.ID" class="fa fa-repeat blue" title="Click to re-run" onclick="reRunTestCase(@testCase.ID,'@testCase.TCName','@Url.Action("ReRunTestCase", "PublicAccess")')"></i></b>
+                            }
+                        </td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#TestCases').dataTable(
+            {
+                "bAutoWidth": false,
+                "sWidth": false
+            }
+        );
+    }
+    );
+</script>

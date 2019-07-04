@@ -1,0 +1,39 @@
+﻿@model List<GlobalReportingSystem.Core.Models.Entities.TestCase>
+@{
+    if (Model.Count != 0)
+    {
+        <div class="page-header">
+            <h1>@Model.First().TestSuit.TestCycle.CycleName</h1>
+        </div>
+    }
+}
+@{
+    var testers = @Model.Where(t => t.User != null).Select(p => p.User).Distinct().ToList();
+}
+@if (testers.Count == 0)
+{
+    <p>Selected test cycle has not been analyzed.</p>
+}
+else
+{
+    foreach (var tester in testers)
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">@tester.USerFullName</h3>
+                <span>Total - @Model.Where(t => t.User != null).Where(p => p.User.ID == tester.ID).Select(p => p.TCName).ToList().Count.ToString()</span>
+            </div>
+            <div class="panel-body">
+                @String.Join(", ", @Model.Where(t => t.User != null).Where(p => p.User.ID == tester.ID).Select(p => p.TCName).ToList())
+            </div>
+        </div>
+    }
+
+}
+
+
+@if (Model.Count == 0)
+{
+    <p>There is no data for selected test cycle.</p>
+}
+

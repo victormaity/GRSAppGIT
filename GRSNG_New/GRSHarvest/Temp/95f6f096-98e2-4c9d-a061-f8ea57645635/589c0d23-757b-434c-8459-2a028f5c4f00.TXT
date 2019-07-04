@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.SavedSearchesAndAlertsPage_Steps.iAccessPageFromPageSavedSearchesAndAlerts(SavedSearchesAndAlertsPage_Steps.java:60);
+✽.And I access page "Add Journals" from  page 'Saved Searches and Alerts'(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:1010)

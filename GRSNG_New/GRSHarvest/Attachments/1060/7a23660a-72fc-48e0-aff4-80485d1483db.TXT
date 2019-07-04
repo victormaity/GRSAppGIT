@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.IdMappingsInput xmlns:ns2="local"><idList><id>1590</id></idList><idType>integrity%20indciation</idType><taxonomyType>disease</taxonomyType></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.IdMappingsInput>

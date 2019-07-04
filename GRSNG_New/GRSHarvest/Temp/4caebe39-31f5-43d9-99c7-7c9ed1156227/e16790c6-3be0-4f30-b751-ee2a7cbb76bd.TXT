@@ -1,0 +1,1 @@
+          select drugactivecompanyidall from( SELECT dcp.drug_id ,         co.company_id  AS drugactivecompanyidall         FROM ls_srv.drug_company_primary dcp         JOIN ls_srv.company co ON (co.company_id = dcp.company_id)         ORDER BY dcp.drug_id,co.company_id) where drug_id='108527'     

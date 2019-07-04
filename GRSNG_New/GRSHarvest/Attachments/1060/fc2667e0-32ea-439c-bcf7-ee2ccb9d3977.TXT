@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.TaxonomyOutput xmlns:ns2="local"><TaxonomyTree><Node depth="1" leaf="false" name="Cardiovascular disease" treeCode="CAR-" id="57"></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.TaxonomyOutput>

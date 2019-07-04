@@ -1,0 +1,37 @@
+﻿@model List<GlobalReportingSystem.Core.Models.GRS.TestCaseDetails>
+@{
+    ViewBag.Title = "BugList";
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="myModalLabel">Test Cases failed by bug @Model.Select(p => p.bugId).First()</h4>
+</div>
+<div class="modal-body">
+    <table class="table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Test Suite Name</th>
+                <th>Test Case Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tcGroup in Model.GroupBy(p => p.TestSuiteName))
+            {
+                <tr>
+                    <td>@tcGroup.Key</td>
+                    <td>@string.Join("; ", tcGroup.Select(p => p.TCName).ToList())</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+
+
+
+
+

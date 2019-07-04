@@ -1,0 +1,1 @@
+{"ontologyTreeOutput":{"TaxonomyTree":{"Node":{"@depth":"2","@leaf":"false","@name":"Infection by anatomical location","@treeCode":"INF-LOC-","@id":"1305","hitSynonyms":""}}}}

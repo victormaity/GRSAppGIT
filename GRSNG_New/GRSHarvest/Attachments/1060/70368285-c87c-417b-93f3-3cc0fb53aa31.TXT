@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.TaxonomyInput xmlns:ns2="local"><type>Action</type><treeCode>CEL-CAN-ANB-</treeCode></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.TaxonomyInput>

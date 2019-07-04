@@ -1,0 +1,1 @@
+{"ontologyTreeOutput":{"TaxonomyTree":{"Node":{"@match":"false","@depth":"10","@leaf":"false","@name":"gamma-aminobutyric acid transmembrane transporter activity","@treeCode":"-4|-203997763|-228356956|-19007942|-554706027|-602317250|-1260937752|-276497224|-1602845243|-2030450373|","@id":"-2030450373"}}}}

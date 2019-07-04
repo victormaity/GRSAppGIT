@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.OntologyTreeOutput xmlns:ns2="local"><TaxonomyTree><Node depth="1" leaf="false" name="Alzheimers disease" treeCode="1000061-" id="1000061"></Node></TaxonomyTree></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.OntologyTreeOutput>

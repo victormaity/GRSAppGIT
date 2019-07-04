@@ -1,0 +1,1 @@
+          Select ind.indication_name         from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION drd         join  ci_public_staging.jp_indication ind on (drd.indication_code=ind.indication_id) where drd.DRUG_ID in (100134,100134,100632,100632)     

@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/drugs-v2/taxonomy/TECH/search/oral?expandHierarchy=0&showDuplicates=true

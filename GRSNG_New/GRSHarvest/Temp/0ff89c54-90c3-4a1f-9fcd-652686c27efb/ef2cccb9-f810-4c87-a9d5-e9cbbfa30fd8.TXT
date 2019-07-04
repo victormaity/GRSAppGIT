@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.util.NoSuchElementException: No value present 
+ com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.ResultSummaryPage_Steps.iClickOnLinkOnPage(ResultSummaryPage_Steps.java:1421);
+✽.Then I click on link "Did you mean" on page "Basic Search"(com/clarivateanalytics/wos/gui/cucumber/Deployment/ResultSummary.feature:312)

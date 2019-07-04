@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialTaxonomySearchInput xmlns:ns2="local"><treeType>Patient Segment</treeType><searchString>agent</searchString><treeCodeFilter>1000222-</treeCodeFilter><operationType>toplevel</operationType></ns2:com.thomsonreuters.ls.service.contract.soap.trials.v2.TrialTaxonomySearchInput>

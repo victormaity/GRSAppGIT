@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/ner?text=Takeda%20oltipraz%20omadacycline%20Pain%20Allergy%20Spinal%20cord%20injury&fmt=json

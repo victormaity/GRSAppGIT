@@ -1,0 +1,1 @@
+GET https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/trials-v2/site/search?query=siteRecruitmentInfoTrialId:354251&hits=10&offset=0&filtersEnabled=1 returned a response status of 500 Internal Server Error

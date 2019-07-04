@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://GRSUri.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://GRSUri.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GRSUri.com/">
+      <s:element name="AcceptReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZipFile" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskId" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AcceptReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AcceptReportResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AcceptReportTest">
+        <s:complexType />
+      </s:element>
+      <s:element name="AcceptReportTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AcceptReportTestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="currentCycle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProjectName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="currentCycleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="currentCycleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="isProjectExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProjectName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="isProjectExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="isProjectExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AcceptReportSoapIn">
+    <wsdl:part name="parameters" element="tns:AcceptReport" />
+  </wsdl:message>
+  <wsdl:message name="AcceptReportSoapOut">
+    <wsdl:part name="parameters" element="tns:AcceptReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="AcceptReportTestSoapIn">
+    <wsdl:part name="parameters" element="tns:AcceptReportTest" />
+  </wsdl:message>
+  <wsdl:message name="AcceptReportTestSoapOut">
+    <wsdl:part name="parameters" element="tns:AcceptReportTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="currentCycleSoapIn">
+    <wsdl:part name="parameters" element="tns:currentCycle" />
+  </wsdl:message>
+  <wsdl:message name="currentCycleSoapOut">
+    <wsdl:part name="parameters" element="tns:currentCycleResponse" />
+  </wsdl:message>
+  <wsdl:message name="isProjectExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:isProjectExists" />
+  </wsdl:message>
+  <wsdl:message name="isProjectExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:isProjectExistsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceConnectorSoap">
+    <wsdl:operation name="AcceptReport">
+      <wsdl:input message="tns:AcceptReportSoapIn" />
+      <wsdl:output message="tns:AcceptReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AcceptReportTest">
+      <wsdl:input message="tns:AcceptReportTestSoapIn" />
+      <wsdl:output message="tns:AcceptReportTestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="currentCycle">
+      <wsdl:input message="tns:currentCycleSoapIn" />
+      <wsdl:output message="tns:currentCycleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="isProjectExists">
+      <wsdl:input message="tns:isProjectExistsSoapIn" />
+      <wsdl:output message="tns:isProjectExistsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceConnectorSoap" type="tns:ServiceConnectorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AcceptReport">
+      <soap:operation soapAction="http://GRSUri.com/AcceptReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcceptReportTest">
+      <soap:operation soapAction="http://GRSUri.com/AcceptReportTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="currentCycle">
+      <soap:operation soapAction="http://GRSUri.com/currentCycle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isProjectExists">
+      <soap:operation soapAction="http://GRSUri.com/isProjectExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceConnectorSoap12" type="tns:ServiceConnectorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AcceptReport">
+      <soap12:operation soapAction="http://GRSUri.com/AcceptReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcceptReportTest">
+      <soap12:operation soapAction="http://GRSUri.com/AcceptReportTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="currentCycle">
+      <soap12:operation soapAction="http://GRSUri.com/currentCycle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isProjectExists">
+      <soap12:operation soapAction="http://GRSUri.com/isProjectExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceConnector">
+    <wsdl:port name="ServiceConnectorSoap" binding="tns:ServiceConnectorSoap">
+      <soap:address location="http://10.236.4.153/nggrs/harvest/ServiceConnector.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceConnectorSoap12" binding="tns:ServiceConnectorSoap12">
+      <soap12:address location="http://10.236.4.153/nggrs/harvest/ServiceConnector.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

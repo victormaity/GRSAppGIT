@@ -1,0 +1,1 @@
+          (select * from (SELECT  source_id FROM ls_srv.jp_source_conf sc ORDER BY dbms_random.value) where rownum<=1)     

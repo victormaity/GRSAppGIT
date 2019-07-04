@@ -1,0 +1,1 @@
+https://prodeu-api.cortellis.int.clarivate.com/api-ws/ws/rs/deals-v2/deals?idList=107149,119806,120534,136931,142022

@@ -1,0 +1,1 @@
+          Select com.company_name         from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION drd         join  ci_public_staging.jp_company com on (drd.company_id=com.company_id) where drd.DRUG_ID='58193'     

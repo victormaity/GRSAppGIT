@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.runAnalyzes" rc="OK">
+    <list>
+      <map>
+        <val name="Name">AU</val>
+        <val name="TotalCount">871</val>
+        <val name="NoDataCount">0</val>
+        <list name="Values">
+          <map>
+            <val name="Key">ANONYMOUS</val>
+            <val name="Value">7</val>
+          </map>
+          <map>
+            <val name="Key">RENGEL Z</val>
+            <val name="Value">7</val>
+          </map>
+          <map>
+            <val name="Key">BOOTH RE</val>
+            <val name="Value">6</val>
+          </map>
+          <map>
+            <val name="Key">BREWSTER JT</val>
+            <val name="Value">6</val>
+          </map>
+          <map>
+            <val name="Key">TANG C</val>
+            <val name="Value">6</val>
+          </map>
+          <map>
+            <val name="Key">SEREGINA LY</val>
+            <val name="Value">5</val>
+          </map>
+          <map>
+            <val name="Key">SINITSYNA L</val>
+            <val name="Value">5</val>
+          </map>
+          <map>
+            <val name="Key">ZEROVA MD</val>
+            <val name="Value">5</val>
+          </map>
+          <map>
+            <val name="Key">DVORYAK S</val>
+            <val name="Value">4</val>
+          </map>
+          <map>
+            <val name="Key">SHEN JB</val>
+            <val name="Value">4</val>
+          </map>
+          <map>
+            <val name="Key">SWEETINGHAM MW</val>
+            <val name="Value">4</val>
+          </map>
+          <map>
+            <val name="Key">TANG CX</val>
+            <val name="Value">4</val>
+          </map>
+          <map>
+            <val name="Key">VOITENKO VP</val>
+            <val name="Value">4</val>
+          </map>
+          <map>
+            <val name="Key">ZHANG FS</val>
+            <val name="Value">4</val>
+          </map>
+          <map>
+            <val name="Key">CHECHULIN Y</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">HASKER E</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">LAMBERS H</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">RADZEVICH SP</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">SHU LZ</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">SIDORENKO AP</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">THOMAS GJ</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">TURCHENKO LV</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">VAISERMAN AM</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">VAN DER WERF MJ</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">VEEN J</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">YEGOROVA OB</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">YEKELCHYK S</val>
+            <val name="Value">3</val>
+          </map>
+          <map>
+            <val name="Key">AASTED A</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">ABRAMENKO IV</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">ADHIKARI K</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">BAKLASHOV KV</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">BAKULA B</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">BELOVA NV</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">BEREZOVSKAYA OP</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">BOLLAND MDA</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">BULAVIN LA</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">CHURYUMOV KI</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">CORNELISSEN G</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">DELUGA W</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">DELYUKOV A</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">DROPPO JG</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">EREMENKO VA</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">FUKUSHIMA S</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">GLUZMAN DF</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">GONCHAROV A</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">GONCHAROV AA</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">GORGO Y</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">GUZ AN</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">HALBERG F</val>
+            <val name="Value">2</val>
+          </map>
+          <map>
+            <val name="Key">JILGE W</val>
+            <val name="Value">2</val>
+          </map>
+        </list>
+      </map>
+    </list>
+  </fn>
+</response>

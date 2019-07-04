@@ -1,0 +1,1 @@
+          select * from (SELECT source_id FROM jp_ng_fast.source_press_release order by dbms_random.value)where rownum<3     

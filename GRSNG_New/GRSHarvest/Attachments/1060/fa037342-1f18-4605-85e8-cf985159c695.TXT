@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.ExportDrugResultsResponse xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="local" xsi:type="xs:string">exportDrugResults1.xls</ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.ExportDrugResultsResponse>

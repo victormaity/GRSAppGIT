@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/tissue/search/muscle?operationType=flat&treeCodeFilter=-234642734%7C-446655584%7C&fmt=json

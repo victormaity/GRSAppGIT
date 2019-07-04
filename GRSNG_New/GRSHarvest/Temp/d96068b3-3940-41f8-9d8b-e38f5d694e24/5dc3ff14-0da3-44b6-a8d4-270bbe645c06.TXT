@@ -1,0 +1,1 @@
+http://mwa.us-west-2.produs.prod.cortellis.int.clarivate.com:8200/mr/ChemistryService/v1/compound/8713-1/structure/mol

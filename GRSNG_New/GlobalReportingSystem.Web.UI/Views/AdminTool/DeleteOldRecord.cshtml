@@ -1,0 +1,167 @@
+﻿@{
+    ViewBag.Title = "Old Record Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <h1>Admin Tool
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Delete Old Record and Files
+        </small>
+    </h1>
+</div>
+
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Delete Old Records and Files</h5>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                @{
+                    if(ViewBag.CanShow == true)
+                    {
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 8px;">
+                            <tr>
+                                <td style="width: 150px!important;">Project Name<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                                <td style="width: 250px!important;">
+                                    <select style="width: 240px;" id="selectProject">
+                                        <option value="0">--Please Select Project--</option>
+                                        @{
+                                            foreach(var item in Model)
+                                            {
+                                                <option value="@item.ID.ToString()">@item.DisplayName</option>
+                                            }
+                                        }
+                                    </select>
+                                </td>
+                                <td>
+                                    <span id="spnProjectNameErrorMessage" style="color: #db0b0b;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 150px!important;">Select Date<span style="color: #db0b0b;">*</span></td>
+                                <td style="width: 250px!important;">
+                                    <input type="text" id="datepickerDateBefore" style="width: 210px;" readonly>
+                                </td>
+                                <td><span id="spnDateErrorMessage" style="color: #db0b0b;"></span></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 150px!important;"></td>
+                                <td colspan="2">
+                                    <div>
+                                        <span>
+                                            <label class="middle">
+                                                <input type="button" value="Delete old records and file" id="btnDeleteOldRecord" title="Delete old record and files before selected date" class="btn btn-info btn-sm" style="font-weight: bold;">
+                                            </label>
+                                        </span>
+
+                                        <span style="margin-left: 10px!important;">
+                                            <label class="middle">
+                                                <input type="button" value="Reset" id="btnReset" title="Reset input field" class="btn btn-info btn-sm" style="font-weight: bold;">
+                                            </label>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                }
+                    else
+                    {
+                        <div style="height: auto; padding: 15px!important; background-color: #E6E6E6; font-size: 14px; color: #DC143C; font-weight: 600; text-align: center">
+                            You are not authorized to visit this page.
+                        </div>
+                }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $("#datepickerDateBefore").datepicker({
+            showButtonPanel: true,
+            changeMonth: true,
+            changeYear: true,
+            maxDate: "0",
+            dateFormat: "mm/dd/yy",
+            showOn: "button",
+            buttonImage: "../Content/calnew.png",
+            buttonImageHeight: "28px",
+            buttonImageWidth: "28px",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+        $('img[title="Select date"]').css({ 'height': '28px', 'width': '28px', 'cursor': 'pointer' });
+        $("#selectProject").val("0");
+        $('#datepickerDateBefore').val("");
+        $("#spnProjectNameErrorMessage").html("");
+        $("#spnDateErrorMessage").html("");
+
+        $('#btnDeleteOldRecord').click(function () {
+            $("#spnProjectNameErrorMessage").html("");
+            $("#spnDateErrorMessage").html("");
+
+            var id = $('#selectProject').val();
+            var isProjectSelected = false;
+            if (id != null && id != "" != undefined) {
+                var parseid = parseInt(id);
+                if (id > 0) {
+                    isProjectSelected = true;
+                }
+            }
+
+            var seldate = $('#datepickerDateBefore').val();
+            var isDateSelected = false;
+            if (seldate != null && seldate != "" && seldate != undefined) {
+                isDateSelected = true;
+            }
+
+            if (isProjectSelected) { $("#spnProjectNameErrorMessage").html(""); }
+            else { $("#spnProjectNameErrorMessage").html("Please select project."); }
+            if (isDateSelected) { $("#spnDateErrorMessage").html(""); }
+            else { $("#spnDateErrorMessage").html("Please select date from calendar."); }
+
+            if (isProjectSelected && isDateSelected) {
+                if (confirm("Please confirm! \nDo you really want to delete records.\n\nOnce record will delete, can not revert back.")) {
+                    var datatosend = JSON.stringify({
+                        "projectId": id, "beforeDate": seldate
+                    });
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("DeleteOldRecord", "AdminTool")',
+                        async: true,
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: 'json',
+                        data: datatosend,
+                        beforeSend: function () {                            
+                            document.getElementById("blockBack").style.display = '';
+                            document.getElementById("divmiddle").style.display = '';
+                        },
+                        complete: function () {
+                            document.getElementById("blockBack").style.display = 'none';
+                            document.getElementById("divmiddle").style.display = 'none';
+                        },
+                        error: function () {
+                        },
+                        success: function (response) {
+                            ShowMessage(response.type, response.text);
+                        }
+                    });
+                }
+                else {
+
+                }
+            }
+        });
+
+        $('#btnReset').click(function () {
+            $("#selectProject").val("0");
+            $('#datepickerDateBefore').val("");
+            $("#spnProjectNameErrorMessage").html("");
+            $("#spnDateErrorMessage").html("");
+        });
+    });
+</script>

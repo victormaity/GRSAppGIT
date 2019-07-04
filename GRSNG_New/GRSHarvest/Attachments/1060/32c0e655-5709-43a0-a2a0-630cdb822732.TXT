@@ -1,0 +1,1 @@
+          Select DESIGNATION_STATUS_ID from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION where DRUG_ID='44521'     

@@ -1,0 +1,25 @@
+<request xmlns="http://www.isinet.com/xrpc41" src="app.id=QA Automation">
+  <fn name="SearchEngine.getReferencesByDoc">
+    <list>
+      <val name="DatabaseID">FASTRDB</val>
+      <val name="QueryLanguage">en</val>
+      <val name="UID">WOS:000289242700001</val>
+      <map name="RetrieveParameters">
+        <val name="FirstRecord">1</val>
+        <val name="Count">500</val>
+        <list name="Fields">
+          <map>
+            <val name="Language">en</val>
+            <val name="Name">AU</val>
+            <val name="Sort">D</val>
+          </map>
+        </list>
+        <map name="Options">
+          <val name="View">Fields</val>
+          <val name="HighLight">Off</val>
+          <val name="RecordIDs">Off</val>
+        </map>
+      </map>
+    </list>
+  </fn>
+</request>

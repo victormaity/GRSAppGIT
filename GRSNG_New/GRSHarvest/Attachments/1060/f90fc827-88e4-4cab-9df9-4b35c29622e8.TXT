@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/taxonomy/molfunction/parent/-4%7C-203997763%7C-228356956%7C-19007942%7C-554706027%7C-602317250%7C-1260937752%7C-276497224%7C-1602845243%7C-2030450373%7C-2032929696%7C?fmt=json

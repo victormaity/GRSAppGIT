@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><EventTranscript id="3720910"><Name>Q4 2010 EXACT Sciences Corporation Earnings Conference Call</Name><Company>Exact Sciences Corp</Company><Drugs><Drug>Lais</Drug><Drug>CM-AT</Drug></Drugs></EventTranscript>

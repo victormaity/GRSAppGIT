@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/ner?text=Tyrosine-protein%20kinase%20receptor%20UFO&fmt=json

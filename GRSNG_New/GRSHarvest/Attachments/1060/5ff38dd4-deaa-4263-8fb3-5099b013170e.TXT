@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><trialSourcesOutput><Sources><Source id="1259114" type="TRIAL">NUC40032: Pre-emptive Lamivudine and Chemotherapy-induced Hepatitis B Virus Reactivation in Patients with Hematological Malignancies</Source></Sources></trialSourcesOutput>

@@ -1,0 +1,18 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//span[contains(text(),'Imperial College London')]/ancestor::tr[contains(@class,'item frozen ng-scope')]//input"}
+Command duration or timeout: 3.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'INBASDLP00628', ip: '10.10.245.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cd2d8b74-9f60-4b17-89ec-04ec2c4a134c
+*** Element info: {Using=xpath, value=.//span[contains(text(),'Imperial College London')]/ancestor::tr[contains(@class,'item frozen ng-scope')]//input}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'INBASDLP00628', ip: '10.10.245.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown 
+ com.thomsonreuters.cucumberfactory.typesfactory.Types.HTMLElement.findElement(HTMLElement.java:145);
+com.thomsonreuters.incites.cucumber.pages.AnaliticsPages.CreateNewTilePage.itemFromTable_CheckBox(CreateNewTilePage.java:289);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.CreateNewTilePageSteps.i_have_selected_checkbox_for_items_in_Result_table_on_page(CreateNewTilePageSteps.java:2684);
+✽.When I have selected checkbox for items "University of Oxford;University of Cambridge;Imperial College London;University of Edinburgh;University College London;University of Bristol;Kings College London;University of Sheffield;University of Glasgow;University of Southampton;University of Manchester;University of Birmingham;University of Leeds;University of Liverpool;University of Nottingham" in Result table on page "Explore Organizations"(src/test/resources/com.thomsonreuters.incites.cucumber/ExploreOrganizationsContext/OrganizationsByAttributesFilters.feature:18)

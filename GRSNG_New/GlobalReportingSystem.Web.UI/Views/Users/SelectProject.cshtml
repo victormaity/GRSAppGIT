@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "GRS: Select Project";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+@model GlobalReportingSystem.Core.Models.GRS.AuthenticationModel 
+
+<div id="login-box" class="login-box visible widget-box no-border">
+    <div class="widget-body">
+        @using (Html.BeginForm("SelectProject", "Users", FormMethod.Post))
+        {
+                 
+            <div class="widget-main" style="text-align: center">
+                @Html.DropDownListFor(p => p.SelectedProject, new SelectList(Model.ProjectIds,
+                            "Id", "ProjectName",
+                            Model.SelectedProject))
+                <div class="space"></div>
+
+                <div class="clearfix">
+                    <button type="submit" class="btn btn-success">Proceed<i class="ace-icon fa fa-arrow-right icon-on-right"></i></button>
+                </div>
+
+            </div>
+        }
+    </div>
+</div>
+<div>
+    @*<a style="cursor: pointer; float: left;" href='@Request.Url.ToString().Replace(@"/Users/SelectProject", "")/GAgent/Setup.exe'>Download GAgent </a>*@
+
+    @*<a style="cursor: pointer; float: right;" href='@Request.Url.ToString().Replace(@"/Users/SelectProject", "")/GAgent/GAgent-java.zip'>Download Java GAgent </a>*@
+
+    @*<a style="cursor: pointer; float: right;" href='@Request.Url.ToString().Replace(@"/Users/SelectProject", "")/GAgent/GAgent-java-AWS.zip'>Download Java GAgent AWS</a>*@
+
+    <a style="cursor: pointer; float: right;" href='@Request.Url.ToString().Replace(@"/Users/SelectProject", "")/GAgent/GAgent-Java-AWS-Clarivate.zip'>Download Java GAgent AWS</a>
+
+</div>

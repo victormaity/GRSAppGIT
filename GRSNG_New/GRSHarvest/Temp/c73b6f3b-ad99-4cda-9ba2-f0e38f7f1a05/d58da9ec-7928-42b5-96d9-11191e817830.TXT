@@ -1,0 +1,24 @@
+Tech info:
+Exception cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//apps-uw2.qa1.dev-wos.com/WOS_GeneralSearch_input.do%3Fproduct%3DWOS%26SID%3DG2vcrrwcMSJF2GIEWfg%26search_mode%3DGeneralSearch&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20apps-uw2.qa1.dev-wos.com.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'INBASDPC09883', ip: '10.10.243.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\ss00501688\AppData\Local\Temp\rust_mozprofile.2I2hUd1M5buL, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0.4, platformVersion=10.0, moz:processID=8156, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: d98ab215-a07d-49be-921e-b7ec5906684e 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275);
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.click(HTMLElement.java:58);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.CollectionDropdownPageObject.selectCollection(CollectionDropdownPageObject.java:73);
+com.clarivateanalytics.wos.gui.cucumber.pages.interfaces.SelectCollectionDropdownInterface.selectCollection(SelectCollectionDropdownInterface.java:19);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.CommonSteps.I_select_collection(CommonSteps.java:60);
+✽.Given I select collection "Web of Science Core Collection"(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:1292)

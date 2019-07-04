@@ -1,0 +1,1 @@
+GET https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/regulatory-v2/regulatory/grc/GIP_Flowtest_Sept14_2 returned a response status of 503 Service Unavailable

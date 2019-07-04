@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomson.ls.soa.stack.soaservices.service.soap.v2.export.ExportResponse xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="local" xsi:type="xs:string">927bd0dc-7c0a-423c-b5e5-72b756fac7ff</ns2:com.thomson.ls.soa.stack.soaservices.service.soap.v2.export.ExportResponse>

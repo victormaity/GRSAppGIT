@@ -1,0 +1,111 @@
+﻿@model GlobalReportingSystem.Core.Models.GRS.TestCasesAndProject
+           
+@using System.Web.Configuration@{
+    var attachmentsPath = WebConfigurationManager.AppSettings["attachmentsPath"];
+}
+
+@foreach (var testStep in @Model.TestCaseAndAnalysis.TestStepAndAnalysis)
+{
+    <tr id="@testStep.TestStep.ID" key="TC @Model.TestCaseAndAnalysis.TestCase.ID">
+        <td valign="center">
+            <div style="width: 12px;">
+                <i style="cursor:pointer"></i>
+            </div>
+        </td>
+        <td>@testStep.TestStep.StepStartTime</td>
+        <td>
+            <div style="white-space:pre; max-width: 250px; word-wrap: break-word;">@testStep.TestStep.StepDescription</div>
+        </td>
+        <td>
+            <div style="white-space:pre; max-width: 150px; word-wrap: break-word;">@testStep.TestStep.StepExpected</div>
+        </td>
+        <td>
+            <div style="white-space:pre; max-width: 300px; word-wrap: break-word;">@testStep.TestStep.StepActual</div>
+        </td>
+        @switch (testStep.TestStep.StepType)
+        {
+            case "pass":
+            <td bgcolor="#90EE90"><b style="color: #1c94c4; font-weight: 800;">Pass</b></td>
+                break;
+            case "fail":
+            <td bgcolor='#FF7568'><b style='color: white; font-weight: 800;'>Fail</b></td>
+                break;
+            default:
+            <td bgcolor='orange'><b style='font-weight: 800;'>NR</b></td>
+                break;
+        }
+
+        <td>@foreach (var defect in testStep.CurrentDefects.Split(','))
+            {
+            <p>
+                <a style='cursor:pointer' target='_blank' href="@Model.Bugtracker/browse/@defect">@defect</a>&nbsp;
+            </p>
+            }
+        </td>
+        <td>@foreach (var defect in testStep.OldDefects.Split(','))
+            {
+            <p id="olddef-@defect">
+                <a style='cursor:pointer' target='_blank' title='@defect' ondblclick="deleteOldDefect('olddef-@defect',@testStep.TestStep.ID);"
+                   onclick="openLink('@Model.Bugtracker/browse/@defect')">@defect&nbsp;</a>
+                @*olddef-@defect*@
+            </p>
+            }
+        </td>
+        <td>
+            @if (testStep.TestStep.Attachments != null)
+            {
+                foreach (var attachment in testStep.TestStep.Attachments.Split(';'))
+                {
+                    var Ext = attachment.ToLower().Split('.').Last();
+                    var cl = "fa fa-file-image-o";
+                    if (Ext == "xml")
+                    {
+                        cl = "fa fa-file-code-o";
+                    }
+                    else if (Ext == "txt")
+                    {
+                        cl = "fa fa-file-text-o";
+                    }
+                <span title="@attachment.Split('$').Last()">
+                    @{
+                    string extension = attachment.Split('.').Last().ToLower();
+                    string isImage = string.Empty;
+                    switch (extension)
+                    {
+                        case "png":
+                        case "jpg":
+                        case "bmp":
+                        case "flv":
+                        case "avi":
+                            isImage = "true";
+                            break;
+                        default:
+                            isImage = "false";
+                            break;
+                    }
+                   
+                    }
+                    <a href="#modal-form" onclick=" showscreenshot('@Model.ProjectID/@attachment', @isImage,'true', '@attachmentsPath') " data-action="settings" role="button" data-toggle="modal">
+                        <i class="@cl"></i>
+                    </a>
+                </span>
+                }
+            }
+            @foreach (var subStep in testStep.TestStep.SubSteps)
+            {
+                if (subStep.SubStepScreenShot != null)
+                {
+                    foreach (var screenshot in subStep.SubStepScreenShot.Split(';'))
+                    {
+                        var cl = "fa fa-file-image-o";
+                <span title="@screenshot.Split('$').Last()">
+                    <a href="#modal-form" onclick=" showscreenshot('@screenshot', 'true','false', '@attachmentsPath') " data-action="settings" role="button" data-toggle="modal">
+                        <i class="@cl"></i>
+                    </a>
+                </span>
+                    }
+                }
+            }
+        </td>
+    </tr>
+}

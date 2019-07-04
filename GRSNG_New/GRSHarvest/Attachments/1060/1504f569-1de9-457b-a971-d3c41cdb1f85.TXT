@@ -1,0 +1,1 @@
+          SELECT *         FROM (         (SELECT SOURCE_ID FROM ls_srv.JP_SOURCE_SERIAL_PUB         ))         WHERE rownum <2      

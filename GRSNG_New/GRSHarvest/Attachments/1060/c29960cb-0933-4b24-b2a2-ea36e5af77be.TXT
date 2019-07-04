@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/ner?text=LOC105373835_%28HUMAN%29_transcript&fmt=json

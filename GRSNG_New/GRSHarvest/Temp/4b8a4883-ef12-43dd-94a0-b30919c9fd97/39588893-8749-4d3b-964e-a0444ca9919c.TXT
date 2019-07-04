@@ -1,0 +1,1 @@
+trialProtocol is not a valid return field for TrialEntityExtendedAll dataset.

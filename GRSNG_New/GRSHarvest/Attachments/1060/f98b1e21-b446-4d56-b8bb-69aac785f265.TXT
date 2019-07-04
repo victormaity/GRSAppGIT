@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput xmlns:ns2="local"><treeType>molfunction</treeType><searchString>acid</searchString><treeCodeFilter>-4%7C-1005343639%7C-749058023%7C-898659605</treeCodeFilter><operationType>toplevel</operationType></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.TaxonomySearchInput>

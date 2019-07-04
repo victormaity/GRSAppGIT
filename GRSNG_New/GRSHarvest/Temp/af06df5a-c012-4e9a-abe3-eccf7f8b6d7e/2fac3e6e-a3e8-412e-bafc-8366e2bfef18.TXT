@@ -1,0 +1,11 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'WIN-T8JHR40ALO2', ip: '10.152.82.49', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=D:\Users\WoSWin7_09\AppData\Local\Temp\1\rust_mozprofile.0Vq2PFbFZlaz, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=6.1, moz:processID=29880, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: a94ce91b-cd15-4dfa-8897-78e414f06934
+*** Element info: {Using=xpath, value=//div[@class='search-results']//nobr[contains(text(),'Full Text from Publisher')]} 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.iVerifyAllTheLinksInTheHelpMenu(BasicSearchPage_Steps.java:652);
+✽.Then I verify all the 'links' in the help menu(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:965)

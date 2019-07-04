@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><EventTranscript id="1475378"><Name>Preliminary 2006 Genmab A/S Earnings Conference Call</Name><Company>Genmab A/S</Company><Drugs><Drug>zanolimumab</Drug><Drug>daratumumab</Drug><Drug>tositumomab</Drug><Drug>nelarabine</Drug><Drug>AMG-714</Drug></Drugs></EventTranscript>

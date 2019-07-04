@@ -1,0 +1,363 @@
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.pdb
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Core.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Windsor.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.SqlServer.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Core.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Microsoft.CSharp.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Microsoft.Web.Infrastructure.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Newtonsoft.Json.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.ComponentModel.DataAnnotations.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Configuration.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Data.DataSetExtensions.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Data.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Drawing.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.EnterpriseServices.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Net.Http.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Net.Http.Formatting.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Net.Http.WebRequest.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Abstractions.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.ApplicationServices.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.DynamicData.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Entity.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Extensions.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Helpers.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Http.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Http.WebHost.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Mvc.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Razor.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Routing.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Services.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Deployment.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Razor.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Data.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.BL.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Facilities.WcfIntegration.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.Extended.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\QCClient.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\SharpSvn.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\ClosedXML.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Ionic.Zip.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\TechTalk.JiraRestClient.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\nunit.framework.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\DocumentFormat.OpenXml.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\RestSharp.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Core.pdb
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.ServiceLocation.pdb
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Core.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Windsor.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.SqlServer.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Helpers.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Mvc.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Razor.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Deployment.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Razor.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Newtonsoft.Json.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Net.Http.Formatting.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Http.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Http.WebHost.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Data.pdb
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.BL.pdb
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Facilities.WcfIntegration.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.Extended.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\QCClient.pdb
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\SharpSvn.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\ClosedXML.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Ionic.Zip.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\nunit.framework.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\RestSharp.xml
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\SharpPlink-x64.svnExe
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.csprojResolveAssemblyReference.cache
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.dll
+E:\Jenkins\workspace\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\NativeBinaries\amd64\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\NativeBinaries\x86\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\NativeBinaries\x86\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.dll.config
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Core.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Windsor.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.SqlServer.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Core.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Microsoft.CSharp.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Microsoft.Web.Infrastructure.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Newtonsoft.Json.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.ComponentModel.DataAnnotations.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Configuration.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Data.DataSetExtensions.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Data.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Drawing.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.EnterpriseServices.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Net.Http.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Net.Http.Formatting.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Net.Http.WebRequest.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Abstractions.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.ApplicationServices.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.DynamicData.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Entity.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Extensions.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Helpers.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Http.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Http.WebHost.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Mvc.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Razor.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Routing.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Services.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Deployment.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Razor.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Data.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.BL.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Facilities.WcfIntegration.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.Extended.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\QCClient.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\SharpSvn.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\ClosedXML.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Ionic.Zip.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\TechTalk.JiraRestClient.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\nunit.framework.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\DocumentFormat.OpenXml.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\RestSharp.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.ServiceLocation.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Core.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Windsor.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.SqlServer.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Helpers.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Mvc.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Razor.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Deployment.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Razor.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Newtonsoft.Json.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Net.Http.Formatting.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Http.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\System.Web.Http.WebHost.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Data.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Castle.Facilities.WcfIntegration.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\EntityFramework.Extended.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\SharpSvn.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\ClosedXML.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\Ionic.Zip.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\nunit.framework.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\RestSharp.xml
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\SharpPlink-x64.svnExe
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.csprojResolveAssemblyReference.cache
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Core.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.BL.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\QCClient.pdb
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.DataLINQ.dll
+D:\Jenkins\workspace\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.DataLINQ.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\NativeBinaries\amd64\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\NativeBinaries\x86\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\NativeBinaries\x86\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.dll.config
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.dll.config
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Castle.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Castle.Windsor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\EntityFramework.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\EntityFramework.SqlServer.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Microsoft.CSharp.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Microsoft.Practices.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Microsoft.Web.Infrastructure.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Newtonsoft.Json.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.ComponentModel.DataAnnotations.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Configuration.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Data.DataSetExtensions.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Data.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Drawing.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.EnterpriseServices.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Net.Http.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Net.Http.Formatting.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Net.Http.WebRequest.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Abstractions.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.ApplicationServices.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.DynamicData.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Entity.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Extensions.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Helpers.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Http.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Http.WebHost.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Mvc.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Razor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Routing.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Services.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Deployment.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Razor.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Data.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.BL.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Castle.Facilities.WcfIntegration.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\EntityFramework.Extended.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\QCClient.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\SharpSvn.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\ClosedXML.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.DataLINQ.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Ionic.Zip.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\TechTalk.JiraRestClient.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\nunit.framework.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\DocumentFormat.OpenXml.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\RestSharp.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Core.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.ServiceLocation.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Castle.Core.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Castle.Windsor.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\EntityFramework.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\EntityFramework.SqlServer.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Helpers.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Mvc.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Razor.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Deployment.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Razor.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Newtonsoft.Json.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Net.Http.Formatting.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Http.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\System.Web.Http.WebHost.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Data.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.BL.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Castle.Facilities.WcfIntegration.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\EntityFramework.Extended.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\QCClient.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\SharpSvn.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\ClosedXML.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.DataLINQ.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\Ionic.Zip.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.pdb
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\nunit.framework.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\RestSharp.xml
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\bin\SharpPlink-x64.svnExe
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.csprojResolveAssemblyReference.cache
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.dll
+D:\GRS LATEST\GRS\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.dll.config
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\NativeBinaries\amd64\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\NativeBinaries\amd64\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\NativeBinaries\x86\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\NativeBinaries\x86\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\NativeBinaries\osx\libgit2-785d8c4.dylib
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.dll.config
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GRSAnalyzer.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Castle.Core.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Castle.Windsor.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\EntityFramework.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\EntityFramework.SqlServer.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Core.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.ServiceLocation.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Microsoft.CSharp.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Microsoft.Practices.ServiceLocation.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Microsoft.Web.Infrastructure.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Newtonsoft.Json.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.ComponentModel.DataAnnotations.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Configuration.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Data.DataSetExtensions.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Data.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Drawing.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.EnterpriseServices.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Net.Http.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Net.Http.Formatting.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Net.Http.WebRequest.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Abstractions.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.ApplicationServices.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.DynamicData.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Entity.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Extensions.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Helpers.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Http.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Http.WebHost.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Mvc.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Razor.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Routing.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Services.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Deployment.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Razor.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Data.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.BL.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Castle.Facilities.WcfIntegration.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\EntityFramework.Extended.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\QCClient.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\ClosedXML.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.DataLINQ.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Ionic.Zip.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\SharpSvn.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\TechTalk.JiraRestClient.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\nunit.framework.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\DocumentFormat.OpenXml.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\RestSharp.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Core.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Core.dll.config
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.ServiceLocation.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.ServiceLocation.dll.config
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Castle.Core.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Castle.Windsor.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\EntityFramework.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\EntityFramework.SqlServer.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Helpers.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Mvc.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Razor.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Deployment.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.WebPages.Razor.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Newtonsoft.Json.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Net.Http.Formatting.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Http.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\System.Web.Http.WebHost.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Data.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.Data.dll.config
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.BL.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.BL.dll.config
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Castle.Facilities.WcfIntegration.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\EntityFramework.Extended.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\QCClient.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\QCClient.dll.config
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\ClosedXML.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.DataLINQ.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\GlobalReportingSystem.DataLINQ.dll.config
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\Ionic.Zip.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\SharpSvn.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.pdb
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\LibGit2Sharp.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\nunit.framework.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\RestSharp.xml
+E:\GRS_New\GRSNG\GRSAnalyzer\bin\SharpPlink-x64.svnExe
+E:\GRS_New\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.csprojAssemblyReference.cache
+E:\GRS_New\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.csproj.CoreCompileInputs.cache
+E:\GRS_New\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.csproj.CopyComplete
+E:\GRS_New\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.dll
+E:\GRS_New\GRSNG\GRSAnalyzer\obj\Debug\GRSAnalyzer.pdb

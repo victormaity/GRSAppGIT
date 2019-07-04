@@ -1,0 +1,1 @@
+          select to_char(ENROLMENT_END_DATE,'YYYY-mm-dd"T"HH24:MI:SS"Z"') from RS_TRIAL.FF_TRIAL where trial_id='166001'     

@@ -1,0 +1,1 @@
+          select count (*) from CI_PUBLIC_STAGING.jp_action_tree_ad tree,CI_PUBLIC_STAGING.jp_action ac where tree.descendant_depth = 1 and tree.descendant_id = ac.action_id     

@@ -1,0 +1,1 @@
+          select * from (select drug_id from RS_DRUG.FF_DRUG_DEVELOPMENT_HISTORY ORDER BY dbms_random.value) where rownum<2     

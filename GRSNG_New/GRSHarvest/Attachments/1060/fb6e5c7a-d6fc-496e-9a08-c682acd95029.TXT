@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Deal id="128699"><Title>Authorized generic version of Bristol-Myers Squibb's Monopril to enter US market</Title><Principal>Bristol-Myers Squibb Co</Principal><Partner>Undisclosed</Partner><Type>Drug - Authorized Generic</Type><Status>Active</Status></Deal>

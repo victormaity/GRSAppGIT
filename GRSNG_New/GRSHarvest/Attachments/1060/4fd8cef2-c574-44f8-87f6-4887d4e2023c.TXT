@@ -1,0 +1,1 @@
+          select * from (select name from ls_srv.tner_biomarker_names Where Lower(Name) Not In (Select Lower(Stopword) From ls_srv.Tner_Stopword ) order by dbms_random.value)         WHERE rownum<2     

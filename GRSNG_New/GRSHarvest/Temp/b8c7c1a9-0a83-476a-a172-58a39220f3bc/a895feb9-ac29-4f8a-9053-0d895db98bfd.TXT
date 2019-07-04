@@ -1,0 +1,22 @@
+Tech info:
+Exception cause: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //img[contains(@alt,'Publons') and @class='large'] (tried for 20 second(s) with 500 MILLISECONDS interval) 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279);
+org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179);
+org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:255);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.findElement(HTMLElement.java:108);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.TopToolbarPageObject.link_Language(TopToolbarPageObject.java:105);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.TopToolbarPageObject.performLanguageChange(TopToolbarPageObject.java:237);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.BasicSearchPage_Steps.I_change_language_to(BasicSearchPage_Steps.java:303);
+✽.And I change language to "Simplified Chinese"(com.clarivateanalytics.wos.gui.cucumber.deployment/WoS_5.30_R2_Stories.feature:499)

@@ -1,0 +1,1 @@
+{"technologyTreeTaxonomyOutput":{"serviceExecutionTime":0,"TaxonomyTree":{"Node":{"@depth":"2","@leaf":"false","@name":"Cell culture","@treeCode":"BIO-CEL-","@id":"127","@count":"919"}}}}

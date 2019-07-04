@@ -1,0 +1,24 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//span[text()='THE Ranked']/..//button"}
+Command duration or timeout: 30.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'INBASDPC05093', ip: '10.10.245.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 07c449e4-99d4-462f-af32-77ab67b45d6d
+*** Element info: {Using=xpath, value=//span[text()='THE Ranked']/..//button} 
+ sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206);
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355);
+com.thomsonreuters.incites.cucumber.pages.Shared.ManageIndicatorsWindow.ClickButton_Add_Indicators(ManageIndicatorsWindow.java:92);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.ManageIndicatorsWindowSteps.ClickButtonADD_ByName(ManageIndicatorsWindowSteps.java:58);
+com.thomsonreuters.incites.cucumber.Pages_Definition.SystemReports.ManageIndicatorsWindowSteps.I_have_removed_indicator_with_pop_up_Manage_Indicators_from_Result_table_on_page_Explore_People(ManageIndicatorsWindowSteps.java:138);
+✽.When I have removed indicator "THE Ranked" with pop-up 'Manage Indicators' from Result table on page "Explore Organizations"(src/test/resources/com.thomsonreuters.incites.cucumber/ExploreOrganizationsContext/OrganizationsRemoveIndicators.feature:9)

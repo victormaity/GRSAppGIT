@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><EventTranscript id="1542633"><Name>Q1 2007 GenVec, Inc. Earnings Conference Call</Name><Company>GenVec Inc</Company><Drugs><Drug>bevacizumab</Drug><Drug>AD-35</Drug><Drug>cetuximab</Drug><Drug>erlotinib</Drug><Drug>golnerminogene pradenovec</Drug></Drugs></EventTranscript>

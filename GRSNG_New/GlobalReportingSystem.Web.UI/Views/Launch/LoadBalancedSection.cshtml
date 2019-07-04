@@ -1,0 +1,175 @@
+﻿@model GlobalReportingSystem.Core.Models.GRS.NewLoadBalancedItem
+
+<div class="col-xs-12 col-sm-12 widget-container-col ui-sortable" id="lbe-@Model.NewLoadBalanced.ID">
+    <div class="widget-box widget-color-blue">
+        <!-- #section:custom/widget-box.options -->
+        <div class="widget-header">
+            <h5 class="widget-title bigger lighter">
+                <i class="ace-icon fa fa-table"></i>
+                Load Balanced Section # @Model.NewLoadBalanced.ID - @(Model.NewLoadBalanced.FilesStorage == null ? "From_SVN" : Model.NewLoadBalanced.FilesStorage.Name)
+            </h5>
+
+            <div class="widget-toolbar">
+                <div class="widget-menu">
+                    <a title="Start" onclick="startLoadBalanced(@Model.NewLoadBalanced.ID)" data-action="settings" role="button" data-toggle="modal">
+                        <i class="ace-icon fa fa-play"></i>
+                    </a>
+                    <a title="Stop" onclick="stopLoadBalanced(@Model.NewLoadBalanced.ID);" data-action="settings" role="button" data-toggle="modal">
+                        <i class="ace-icon fa fa-stop"></i>
+                    </a>
+
+                    <a href="#" data-action="fullscreen" role="button" data-toggle="modal" style="color: #D3E4ED;">
+                        @if (Model.Single)
+                        { <i class="ace-icon fa fa-compress"></i> }
+                        else
+                        { <i class="ace-icon fa fa-expand"></i> }
+                    </a>
+
+                    <a data-action="collapse">
+                        <i class="ace-icon fa fa-chevron-down"></i>
+                    </a>
+                    <a onclick="removeLoadBalancedSection(@Model.NewLoadBalanced.ID);" @*href="@Url.Action("RemoveLoadBalancedSection", new { @id = loadBalancedElement.ID })"*@ data-action="settings" role="button" data-toggle="modal">
+                        <i class="ace-icon fa fa-times"></i>
+                    </a>
+
+                    <i id="start_spin" class="fa fa-spinner"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- /section:custom/widget-box.options -->
+        <div class="widget-body">
+            <div classs="widget-main no-padding">
+
+                <div>
+                    <!-- Machines -->
+                    <div class="col-xs-12 col-sm-6 widget-container-col ui-sortable">
+                        <div class="widget-box widget-color-green">
+                            <!-- #section:custom/widget-box.options -->
+                            <div class="widget-header">
+                                <h5 class="widget-title bigger lighter">
+                                    <i class="ace-icon fa fa-table"></i>
+                                    Machines
+                                </h5>
+                                <div class="widget-toolbar">
+                                    <div class="widget-menu">
+                                        <a title="Add" onclick="addLoadBalancedMachine(@Model.NewLoadBalanced.ID)" @*href="@Url.Action("AddLoadBalancedMachine", new { @sectionId = loadBalancedElement.ID })"*@ data-action="settings" role="button" data-toggle="modal">
+                                            <i class="ace-icon fa fa-plus"></i>
+                                        </a>
+                                        <a title="Show REL" href="#modal-form2" data-action="settings" role="button" data-toggle="modal" onclick="ShowRELInForm('@Model.NewLoadBalanced.RemoteExecutionLink');" >
+                                                    <i class="fa fa-external-link"></i>
+                                                </a>
+                                        <a title="Ping" onclick="pingLb(@Model.NewLoadBalanced.ID);" data-action="settings" role="button" data-toggle="modal" style="color: #D3E4ED">
+                                            <i class="ace-icon fa fa-check-circle-o"></i>
+                                        </a>
+                                        <a data-action="collapse">
+                                            <i class="ace-icon fa fa-chevron-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- /section:custom/widget-box.options -->
+                            <div class="widget-body">
+                                <div class="widget-main no-padding" id="lbMachines-@Model.NewLoadBalanced.ID">
+                                    @foreach (var machine in Model.NewLoadBalanced.LoadBalancedMachines)
+                                    {
+                                        @Html.Partial("LoadBalancedMachine", machine)
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tests -->
+                    <div class="col-xs-12 col-sm-6 widget-container-col ui-sortable">
+                        <div class="widget-box widget-color-green">
+                            <!-- #section:custom/widget-box.options -->
+                            <div class="widget-header">
+                                <h5 class="widget-title bigger lighter">
+                                    <i class="ace-icon fa fa-table"></i>
+                                    Tests
+                                </h5>
+                                <div class="widget-toolbar">
+                                    <div class="widget-menu">
+                                        <a href="#modal-form" data-action="settings" role="button" onclick="loadTests(@Model.NewLoadBalanced.FrameworkId);setSectionId(@Model.NewLoadBalanced.ID);" data-toggle="modal">
+                                            <i class="ace-icon fa fa-plus"></i>
+                                        </a>
+                                        <a data-action="collapse">
+                                            <i class="ace-icon fa fa-chevron-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- /section:custom/widget-box.options -->
+                            <div class="widget-body" style="max-height: 332px; overflow: auto;">
+                                <div class="widget-main no-padding">
+                                    <table style="font-size: xx-small" class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="btn-group">
+                                                        <button data-toggle="dropdown" class="btn btn-inverse btn-xs dropdown-toggle">
+                                                            <i class="fa fa-info-circle"></i>
+                                                            <span class="ace-icon fa fa-caret-down icon-on-right"></span>
+                                                        </button>
+
+                                                        <ul class="dropdown-menu dropdown-inverse">
+                                                            <li>
+                                                                <a style="cursor:pointer" onclick="$('.@(Model.NewLoadBalanced.ID + "_")testsSelector').prop('checked', true);">Select All</a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a style="cursor:pointer" onclick="$('.@(Model.NewLoadBalanced.ID + "_")testsSelector').prop('checked', false);">Deselect All</a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a style="cursor:pointer" onclick="removeLbTests('.@(Model.NewLoadBalanced.ID + "_")testsSelector', $('.@(Model.NewLoadBalanced.ID + "_")testsSelector:checked[id]').map(function() { return jQuery(this).attr('id')}).get())">Remove Selected </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a style="cursor:pointer" onclick="resetLbTests('.@(Model.NewLoadBalanced.ID + "_")testsSelector', $('.@(Model.NewLoadBalanced.ID + "_")testsSelector:checked[id]').map(function() { return jQuery(this).attr('id')}).get())">Reset Selected</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </th>
+                                                <th>Test 
+                                                </th>
+                                                <th>Status 
+                                                </th>
+                                                <th>Machine 
+                                                </th>
+                                                <th>Started 
+                                                </th>
+                                                <th>Finished 
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var test in Model.NewLoadBalanced.LoadBalancedTests)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" id="@(test.ID)" class="@(Model.NewLoadBalanced.ID + "_testsSelector")"/></td>
+                                                    <td><span class="tooltip-warning" data-placement="left" title="@test.TestName">@test.TestName.Split('.').Last()</span></td>
+                                                    <td>@test.Status</td>
+                                                    <td>@test.MachineIP</td>
+                                                    <td>@(test.StartedAt.HasValue ? test.StartedAt.Value.ToString("t") : "")</td>
+                                                    <td>@(test.FinishedAt.HasValue ? test.FinishedAt.Value.ToString("t") : "")</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

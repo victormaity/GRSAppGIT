@@ -1,0 +1,1 @@
+          Select con.country_name         from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION drd         join  ci_public_staging.jp_country con on (drd.country_code=con.country_id) where drd.DRUG_ID='102094'     

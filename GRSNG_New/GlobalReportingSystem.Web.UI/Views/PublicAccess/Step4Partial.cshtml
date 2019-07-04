@@ -1,0 +1,93 @@
+﻿@model GlobalReportingSystem.Core.Models.GRS.PublicAccess.FullConfigurationModel
+<div>
+    @{
+        if (Model.BrowserList.Count != 0)
+        {
+        <label class="control-label bolder blue">Available browsers:</label>
+            foreach (var browser in Model.BrowserList)
+            {
+        <div class="radio browser">
+            <label>
+                <input name="form-field-radio1" type="radio" class="ace" id="@browser.Key"/>
+                <span class="lbl">@browser.Value</span>
+            </label>
+        </div>
+            }
+        }
+    }
+</div>
+<br />
+<div>
+    @{
+        if (Model.HostsConfigurations.Count != 0)
+        {
+        <label class="control-label bolder blue">Available hosts:</label>
+            foreach (var configuration in Model.HostsConfigurations)
+            {
+        <div class="radio configuration">
+            <label>
+                <input name="form-field-radio2" type="radio" class="ace" id="@configuration.ID">
+                <span class="lbl">@configuration.EnvironmentName (@configuration.ApplicationURL)</span>
+            </label>
+        </div>
+            }
+        }
+    }
+</div>
+<br />
+<div>
+    @{
+        if (Model.AccountForTestRuns.Count != 0)
+        {
+        <label class="control-label bolder blue">Available accounts:</label>
+            foreach (var account in Model.AccountForTestRuns)
+            {
+        <div class="radio account">
+            <label>
+                <input name="form-field-radio3" type="radio" class="ace" id="@account.ID">
+                <span class="lbl">@account.AccountName (@account.UserLogin/@account.UserPassword)</span>
+            </label>
+        </div>
+            }
+        }
+    }
+</div>
+<br />
+<div>
+    @{
+        if (Model.ExecutionConfigurations.Count != 0)
+        {
+        <label class="control-label bolder blue">Available configurations:</label>
+            foreach (var configuration in Model.ExecutionConfigurations)
+            {
+        <div class="radio execconfiguration">
+            <label>
+                <input name="form-field-radio4" type="radio" class="ace" id="@configuration.ID">
+                <span class="lbl">@configuration.Name</span>
+            </label>
+        </div>
+            }
+        <div class="radio execconfiguration">
+            <label>
+                <input name="form-field-radio4" type="radio" class="ace" id="">
+                <span class="lbl">Default Configuration</span>
+            </label>
+        </div>
+        }
+    }
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".ace").click(function () {
+            if (
+                ($(".radio.browser > label > input:checked").length != 0 || $(".radio.browser > label > input").length == 0) &&
+                ($(".radio.configuration > label > input:checked").length != 0 || $(".radio.configuration > label > input").length == 0) &&
+                ($(".radio.account > label > input:checked").length != 0 || $(".radio.account > label > input").length == 0) &&
+                ($(".radio.execconfiguration > label > input:checked").length != 0 || $(".radio.execconfiguration > label > input").length == 0)
+               ) {
+                $(".btn-next").removeAttr("disabled");
+            }
+        });
+    });
+</script>

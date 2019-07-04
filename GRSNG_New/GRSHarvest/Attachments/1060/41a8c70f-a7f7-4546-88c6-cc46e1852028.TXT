@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugResultsInput xmlns:ns2="local"><filtersEnabled>true</filtersEnabled><hits>20</hits><offset>0</offset><query>drugRegulatoryDesignations::10</query></ns2:com.thomsonreuters.ls.service.contract.soap.drugs.v2.DrugResultsInput>

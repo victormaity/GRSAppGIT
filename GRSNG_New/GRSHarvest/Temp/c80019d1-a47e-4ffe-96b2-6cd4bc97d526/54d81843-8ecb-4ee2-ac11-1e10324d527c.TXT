@@ -1,0 +1,6 @@
+Tech info:
+Exception cause: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0 
+ java.util.ArrayList.rangeCheck(ArrayList.java:653);
+java.util.ArrayList.get(ArrayList.java:429);
+com.clarivate.stepdefinitions.biosis.BiosisCommonStepDefs.theStatusOfTheSamplePatentShouldBeAtIfNotStatusShouldBeChangedUsingSetitemCommand(BiosisCommonStepDefs.java:55);
+✽.Then The status of the sample patent should be at "WN" , if not status should be changed using 'setitem' command(BIOSISPreIndex.feature:26)

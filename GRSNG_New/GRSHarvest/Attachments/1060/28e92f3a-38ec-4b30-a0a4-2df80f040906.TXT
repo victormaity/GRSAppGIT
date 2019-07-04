@@ -1,0 +1,1 @@
+          Select COUNTRY_CODE from  rs_drug.FF_DRUG_REGULATORY_DESIGNATION where DRUG_ID='34449'     

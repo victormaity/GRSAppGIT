@@ -1,0 +1,40 @@
+8
+
+dir
+151790
+http://sourcecontrol.int.thomsonreuters.com:8091/svn/qa_automation/GRS_NextGen/QCClient/Client
+http://sourcecontrol.int.thomsonreuters.com:8091/svn
+
+
+
+2015-04-20T13:40:13.997327Z
+132465
+c152496
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4576ea35-741e-0410-a346-fc41942853a1
+
+RestClient.cs
+file
+
+
+
+
+2015-05-14T14:40:10.890000Z
+445f651b87ec23dd41a90cbcd75239e8
+2015-04-20T13:40:13.997327Z
+132465
+c152496
+

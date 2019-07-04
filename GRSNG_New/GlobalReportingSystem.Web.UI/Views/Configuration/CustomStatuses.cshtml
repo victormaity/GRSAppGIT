@@ -1,0 +1,106 @@
+﻿@using GlobalReportingSystem.Core.Constants;
+@using GlobalReportingSystem.Core.Models.GRS.DB
+@model List<GlobalReportingSystem.Core.Models.GRS.DB.Status>
+@{
+    ViewBag.Title = "CustomStatuses";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-content">
+
+    <!-- /section:settings.box -->
+    <div class="page-header">
+        <h1>Custom Statuses
+							<small>
+                                <i class="ace-icon fa fa-angle-double-right"></i>
+                                Custom statuses modification
+                            </small>
+        </h1>
+    </div>
+    <!-- /.page-header -->
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- PAGE CONTENT BEGINS -->
+            <form class="form-horizontal" role="form">
+                <!-- #section:elements.form -->
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="form-field-select-2">Available Statuses: </label>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="form-field-select-2" multiple="multiple">
+                            <option value="AL" style="color: lightgray !important" onclick="getCurrentCustomStatus($(this),false)" id="AddNewOption">@Labels.AddNew</option>
+                            @foreach (var item in Model)
+                            {
+                                <option onclick="getCurrentCustomStatus($(this),false)">@item.StatusName</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div id="customStatusInfo"></div>
+            </form>
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.page-content -->
+
+<script type="text/javascript">
+    jQuery(function ($) {
+
+
+        $('#colorpicker1').colorpicker();
+
+        $('#simple-colorpicker-1').ace_colorpicker();
+
+       
+
+    });
+
+    function getCurrentCustomStatus(element, isFirst) {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("CustomStatusInfo")",
+            data: "{ 'statusName':'" + element[0].innerHTML + "'}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            beforeSend: function () {
+                $("#loadingBar").show();
+            },
+            error: function (request, status, error) {
+            },
+            success: function (msg) {
+                $("#customStatusInfo").html(msg);
+                var option = document.getElementById("AddNewOption");
+                var bt2 = document.getElementById("SaveChangesBtn");
+
+                if (isFirst && !option.selected) {
+                    bt2.disabled = true;
+                } else {
+                        bt2.disabled = false;
+                   }
+                if ($('#form-field-1-1-1')[0].value == "Add new...") {
+                    $('#form-field-1-1-1')[0].value = "";
+                }
+                $('div.col-xs-3')[1].innerHTML =  $('div.col-xs-3')[1].innerHTML.replace('<input name="NotAddToCache" type="hidden" value="false">','<span class="lbl"></span><input name="NotAddToCache" type="hidden" value="false">');
+                $('div.col-xs-3')[0].innerHTML = $('div.col-xs-3')[0].innerHTML.replace('<input name="CountAsPass" type="hidden" value="false">','<span class="lbl"></span><input name="CountAsPass" type="hidden" value="false">');
+            }
+        });
+
+    }
+
+    $(document).ready(function() {
+        getCurrentCustomStatus([document.getElementById("AddNewOption")], true);
+        ShowMessage("Error",'@ViewBag.Error');
+    });
+
+    function NumericText() {
+        var key = window.event.keyCode;
+        if (key < 48 || key > 57) {
+            window.event.returnValue = false;
+        }
+    }
+</script>
+
+
+
+<!-- /.span -->
+

@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.TaxonomyInput xmlns:ns2="local"><type>Indication</type><treeCode>INF-LOC-URI-</treeCode><enableCounts>Ancestor </enableCounts></ns2:com.thomsonreuters.ls.service.contract.analytics.v2.soap.TaxonomyInput>

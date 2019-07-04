@@ -1,0 +1,48 @@
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\QCClient.dll.config
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\QCClient.dll
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\QCClient.pdb
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\mscorlib.dll
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\nunit.framework.dll
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\nunit.framework.xml
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\normidna.nlp
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\normnfc.nlp
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\normnfd.nlp
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\normnfkc.nlp
+F:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\normnfkd.nlp
+F:\Jenkins\workspace\GRSNG\QCClient\obj\Debug\QCClient.csprojResolveAssemblyReference.cache
+F:\Jenkins\workspace\GRSNG\QCClient\obj\Debug\QCClient.dll
+F:\Jenkins\workspace\GRSNG\QCClient\obj\Debug\QCClient.pdb
+E:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\QCClient.dll.config
+E:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\QCClient.dll
+E:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\QCClient.pdb
+E:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\nunit.framework.dll
+E:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\nunit.framework.xml
+E:\Jenkins\workspace\GRSNG\QCClient\obj\Debug\QCClient.dll
+E:\Jenkins\workspace\GRSNG\QCClient\obj\Debug\QCClient.pdb
+E:\Jenkins\workspace\GRSNG\QCClient\obj\Debug\QCClient.csprojResolveAssemblyReference.cache
+D:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\QCClient.dll
+D:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\QCClient.dll.config
+D:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\nunit.framework.dll
+D:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\nunit.framework.xml
+D:\Jenkins\workspace\GRSNG\QCClient\obj\Debug\QCClient.csprojResolveAssemblyReference.cache
+D:\Jenkins\workspace\GRSNG\QCClient\obj\Debug\QCClient.dll
+D:\Jenkins\workspace\GRSNG\QCClient\obj\Debug\QCClient.pdb
+D:\Jenkins\workspace\GRSNG\QCClient\bin\Debug\QCClient.pdb
+D:\GRS LATEST\GRS\GRSNG\QCClient\bin\Debug\QCClient.dll.config
+D:\GRS LATEST\GRS\GRSNG\QCClient\bin\Debug\QCClient.dll
+D:\GRS LATEST\GRS\GRSNG\QCClient\bin\Debug\QCClient.pdb
+D:\GRS LATEST\GRS\GRSNG\QCClient\bin\Debug\nunit.framework.dll
+D:\GRS LATEST\GRS\GRSNG\QCClient\bin\Debug\nunit.framework.xml
+D:\GRS LATEST\GRS\GRSNG\QCClient\obj\Debug\QCClient.csprojResolveAssemblyReference.cache
+D:\GRS LATEST\GRS\GRSNG\QCClient\obj\Debug\QCClient.dll
+D:\GRS LATEST\GRS\GRSNG\QCClient\obj\Debug\QCClient.pdb
+E:\GRS_New\GRSNG\QCClient\bin\Debug\QCClient.dll.config
+E:\GRS_New\GRSNG\QCClient\bin\Debug\QCClient.dll
+E:\GRS_New\GRSNG\QCClient\bin\Debug\QCClient.pdb
+E:\GRS_New\GRSNG\QCClient\bin\Debug\nunit.framework.dll
+E:\GRS_New\GRSNG\QCClient\bin\Debug\nunit.framework.xml
+E:\GRS_New\GRSNG\QCClient\obj\Debug\QCClient.csprojAssemblyReference.cache
+E:\GRS_New\GRSNG\QCClient\obj\Debug\QCClient.csproj.CoreCompileInputs.cache
+E:\GRS_New\GRSNG\QCClient\obj\Debug\QCClient.csproj.CopyComplete
+E:\GRS_New\GRSNG\QCClient\obj\Debug\QCClient.dll
+E:\GRS_New\GRSNG\QCClient\obj\Debug\QCClient.pdb

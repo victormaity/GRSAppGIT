@@ -1,0 +1,1 @@
+Error processing API service: Counts not available for type [ta]. Count availabe for type: TECHNOLOGY, ACTION, INDICATION

@@ -1,0 +1,1 @@
+GET https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/ontologies-v1/sourceSummary&type=SERIAL&fmt=json returned a response status of 400 Bad Request

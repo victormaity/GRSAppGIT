@@ -1,0 +1,1 @@
+          select ENROLMENT_RATE from RS_TRIAL.FF_TRIAL where trial_id='111273'     

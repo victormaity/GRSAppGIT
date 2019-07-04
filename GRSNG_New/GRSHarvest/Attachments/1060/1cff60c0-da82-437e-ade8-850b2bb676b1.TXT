@@ -1,0 +1,1 @@
+{"ontologyTreeOutput":{"TaxonomyTree":{"Node":{"@depth":"1","@leaf":"false","@name":"Shionogi & Co Ltd","@treeCode":"19898","@id":"19898","hitSynonyms":""}}}}

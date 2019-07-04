@@ -1,0 +1,166 @@
+﻿@model GlobalReportingSystem.Core.Models.GRS.TestCasesAndProject
+@using System.Text.RegularExpressions
+@using System.Web.Configuration
+@{
+    var attachmentsPath = WebConfigurationManager.AppSettings["attachmentsPath"];
+    var testStepAndAnalysis = @Model.TestCaseAndAnalysis.TestStepAndAnalysis.OrderBy(p => p.TestStep.SortOrder).ToList();
+}
+
+
+
+@foreach (var testStep in testStepAndAnalysis)
+{
+    <tr id="@testStep.TestStep.ID" key="TC @Model.TestCaseAndAnalysis.TestCase.ID">
+        <td valign="center">
+            <div style="width: 12px;">
+                <i class="fa fa-sort blue fa-2x" style="cursor:pointer" onclick="renderSubSteps(@testStep.TestStep.ID, @Model.TestCaseAndAnalysis.TestCase.ID)"></i>
+            </div>
+        </td>
+        <td>@testStep.TestStep.StepStartTime</td>
+        <td>
+            <div style="white-space:normal; max-width: 250px; word-wrap: break-word;">@Html.Raw(HttpUtility.HtmlDecode(testStep.TestStep.StepDescription))</div>
+        </td>
+        <td>
+            <div style="white-space:normal; max-width: 150px; word-wrap: break-word;">@testStep.TestStep.StepExpected</div>
+        </td>
+        <td>
+                @if (!String.IsNullOrEmpty(testStep.TestStep.StepActual) && (testStep.TestStep.StepActual.Contains("&lt;html&gt;") || testStep.TestStep.StepActual.Contains("<html>")))
+                {
+                         <div style="white-space:normal; max-width: 300px; word-wrap: break-word;">
+                        @HttpUtility.HtmlDecode(testStep.TestStep.StepActual);
+                             </div>
+                }
+                else{
+                    <div style="white-space:normal; max-width: 300px; word-wrap: break-word;">
+                    @Html.Raw(HttpUtility.HtmlDecode(testStep.TestStep.StepActual))
+                    </div>
+                }
+        </td>
+        @switch (testStep.TestStep.StepType)
+        {
+            case "pass":
+            <td class="step-pass"><b style="color: #1c94c4; font-weight: 800;">Pass</b></td>
+                break;
+            case "fail":
+            <td class="step-fail"><b style='color: white; font-weight: 800;'>Fail</b></td>
+                break;
+            default:
+            <td class="step-default"><b style='font-weight: 800;'>NR</b></td>
+                break;
+        }
+
+        <td>@testStep.Status</td>
+        <td id="cd">@foreach (var defect in testStep.CurrentDefects.Split(','))
+            {
+                <p>
+                    <a title='@defect' data-trigger="hover" data-poload="@Url.Action("GetJiraHtmlIssue", "TestCycle", new {@jiraid=defect })">@defect</a>
+                    @*<a data-toggle="modal" data-target="#defectModal" data-identifier="@defect" style="cursor:pointer">@defect</a>*@&nbsp;
+                </p>
+            }
+        </td>
+        <td id="od">@foreach (var defect in testStep.OldDefects.Split(','))
+            {
+                if(!String.IsNullOrEmpty(defect))
+                { 
+                    <div id="olddef-@defect">
+                        <a style='cursor:pointer' title='@defect'
+                           class="popovers" data-toggle="popover"
+                           data-content="
+                            <a href='@Model.Bugtracker.TrimEnd('/')/browse/@defect' target='_blank' title='Open bugtracker'>Browse</a>
+                            <br /><a style='cursor: pointer' onclick='deleteOldDefect(&quot;@defect&quot;,@testStep.TestStep.ID);' title='Delete selected defect'>Remove</a>"
+                            >@defect
+                        </a>
+                        @*olddef-@defect*@
+                        
+                    </div>
+                }
+            }
+        </td>
+        <td>
+            @if (testStep.TestStep.Attachments != null)
+            {
+                foreach (var attachment in testStep.TestStep.Attachments.Split(';'))
+                {
+                    var Ext = attachment.ToLower().Split('.').Last();
+                    var cl = "fa fa-file-image-o";
+                    if (Ext == "xml")
+                    {
+                        cl = "fa fa-file-code-o";
+                    }
+                    else if (Ext == "txt")
+                    {
+                        cl = "fa fa-file-text-o";
+                    }
+                <span title="@attachment.Split('$').Last()">
+                    @{
+                    string extension = attachment.Split('.').Last().ToLower();
+                    string isImage = string.Empty;
+                    switch (extension)
+                    {
+                        case "png":
+                        case "jpg":
+                        case "bmp":
+                        case "flv":
+                        case "avi":
+                            isImage = "true";
+                            break;
+                        default:
+                            isImage = "false";
+                            break;
+                    }
+                   
+                    }
+                    <a href="#modal-form" onclick="showscreenshot('@Model.ProjectID/@attachment', @isImage,'true', '@attachmentsPath') " data-action="settings" role="button" data-toggle="modal">
+                        <i class="@cl"></i>
+                    </a>
+                </span>
+                }
+            }
+            @foreach (var subStep in testStep.TestStep.SubSteps)
+            {
+                if (subStep.SubStepScreenShot != null)
+                {
+                    foreach (var screenshot in subStep.SubStepScreenShot.Split(';'))
+                    {
+                        var cl = "fa fa-file-image-o";
+                <span title="@screenshot.Split('$').Last()">
+                    <a href="#modal-form" onclick=" showscreenshot('@screenshot', 'true','false', '@attachmentsPath') " data-action="settings" role="button" data-toggle="modal">
+                        <i class="@cl"></i>
+                    </a>
+                </span>
+                    }
+                }
+            }
+             @foreach (var subStep in testStep.TestStep.SubSteps)
+            {
+                if (subStep.SubStepScreenShotDriver != null)
+                {
+                    foreach (var screenshot in subStep.SubStepScreenShotDriver.Split(';'))
+                    {
+                        var cl = "fa fa-file-image-o";
+                <span title="@screenshot.Split('$').Last()">
+                    <a href="#modal-form" onclick=" showscreenshot('@screenshot', 'true','false', '@attachmentsPath') " data-action="settings" role="button" data-toggle="modal">
+                        <i class="@cl"></i>
+                    </a>
+                </span>
+                    }
+                }
+            }
+        </td>
+    </tr>
+}
+
+<script>
+    $("#od a").popover({ html: true });
+    $('*[data-poload]').click(function () {
+        var e = $(this);
+        e.off('hover');
+        $.get(e.data('poload'), function (d) {
+            e.popover({
+                content: d,
+                container: 'body',
+                html: true,
+            }).popover('show');
+        });
+    });
+</script>

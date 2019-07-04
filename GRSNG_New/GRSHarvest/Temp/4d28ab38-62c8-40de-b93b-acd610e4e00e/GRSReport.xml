@@ -1,0 +1,474 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>5.32_R2_Release2</test_cycle>
+    <url>https://tokenclient.wos-non-prod.oneplatform.build/tokens/QA1/client_ssl.cgi/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_03</user>
+    <ip>192.168.109.117</ip>
+    <start_time>02/22/2019 08:47:52</start_time>
+    <end_time>02/22/2019 09:10:50</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (64-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Related Records" start_time="2/22/2019 8:47:52 AM">
+    <TestCase name="SCIELO_RR_041" start_time="2/22/2019 8:48:10 AM" description="Refine Results -Categories" criticality="" state="pass" end_time="2/22/2019 8:49:07 AM">
+      <step type="pass" description="Prerequisite: Related Records page/SCIELO. Check Display All categories (SCIELO specific categories) display as expected and in correct prioritized order with correct default open categories for &quot;SciELO Categories&quot; and &quot;Document Types&quot;." expected="All categories (SCIELO specific categories) Should display as expected and in correct prioritized order with correct default open categories for &quot;SciELO Categories&quot; and &quot;Document Types&quot;." time="2/22/2019 8:48:50 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 8:48:10 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:48:11 AM">Clicking Link 'SCIELO'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:48:12 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:48:12 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="2/22/2019 8:48:12 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="2/22/2019 8:48:12 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:48:14 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="2/22/2019 8:48:14 AM">Check clear sreen</substep>
+        <substep valid="True" time="2/22/2019 8:48:14 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:48:14 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:48:24 AM">Enter search field - search field = Title, search term = Biodiesel: an overview</substep>
+        <substep valid="True" time="2/22/2019 8:48:24 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:48:28 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 8:48:28 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:48:35 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:48:35 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:48:39 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 8:48:39 AM">Click Refine button on Refine Panel : </substep>
+        <substep valid="True" time="2/22/2019 8:48:39 AM">Clicking Link 'View all options'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:48:40 AM">Link 'Refine SectionSciELO Categories' is displayed</substep>
+        <substep valid="True" time="2/22/2019 8:48:40 AM">Link 'Refine SectionDocument Types' is displayed</substep>
+        <substep valid="True" time="2/22/2019 8:48:40 AM">Link 'Refine SectionResearch Areas' is displayed</substep>
+        <substep valid="True" time="2/22/2019 8:48:41 AM">Link 'Refine SectionAuthors' is displayed</substep>
+        <substep valid="True" time="2/22/2019 8:48:41 AM">Link 'Refine SectionSource Titles' is displayed</substep>
+        <substep valid="True" time="2/22/2019 8:48:41 AM">Link 'Refine SectionPublication Years' is displayed</substep>
+        <substep valid="True" time="2/22/2019 8:48:41 AM">Link 'Refine SectionInstitutions' is displayed</substep>
+        <substep valid="True" time="2/22/2019 8:48:41 AM">Link 'Refine SectionLanguages' is displayed</substep>
+        <substep valid="True" time="2/22/2019 8:48:41 AM">Link 'Refine SectionCountries/Regions' is displayed</substep>
+        <substep valid="True" time="2/22/2019 8:48:41 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 8:48:46 AM">Dispose was successfully done</substep>
+        <substep valid="True" time="2/22/2019 8:48:46 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 8:48:50 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+    <TestCase name="SCIELO_RR_042" start_time="2/22/2019 8:49:07 AM" description="Refine Results-Analyze Button" criticality="" state="pass" end_time="2/22/2019 8:50:05 AM">
+      <step type="pass" description="Prerequisite: Related Records page/SCIELO At the bottom of the Refine Panel below &quot;Countries/Territories&quot; Category check for instructional Text as &quot;For advanced refine options, use&quot;" expected="&quot;For advanced refine options, use&quot; text should be displayed" time="2/22/2019 8:49:37 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 8:49:07 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:49:08 AM">Clicking Link 'SCIELO'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:49:09 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:49:09 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="2/22/2019 8:49:09 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="2/22/2019 8:49:10 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:49:11 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="2/22/2019 8:49:11 AM">Check clear sreen</substep>
+        <substep valid="True" time="2/22/2019 8:49:11 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:49:12 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:49:21 AM">Enter search field - search field = Title, search term = Biodiesel: an overview</substep>
+        <substep valid="True" time="2/22/2019 8:49:21 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:49:25 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 8:49:25 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:49:32 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:49:32 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:49:36 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 8:49:37 AM">Text of Text 'For advanced refine options use' equals: 'For advanced refine options, use'. &lt;br /&gt; Current text is: 'For advanced refine options, use'</substep>
+      </step>
+      <step type="pass" description="At the bottom of the Refine Panel below &quot;Countries/Territories&quot; check for Analyze Results Button " expected="&quot;Analyze Results&quot; button should be Displayed" time="2/22/2019 8:49:37 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 8:49:37 AM">Button 'Analyze Results' is displayed</substep>
+      </step>
+      <step type="pass" description="Mouse over Analyze Results button " expected="Alt-Text &quot; Use the Results Analysis tool&quot; is displayed" time="2/22/2019 8:49:37 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 8:49:37 AM">Alt text of Button 'Analyze Results' is correct. &lt;br /&gt; Actual :'Use the Results Analysis tool' </substep>
+      </step>
+      <step type="pass" description="Click on Analyze Results button " expected="&quot;Results Analysis&quot; page is displayed" time="2/22/2019 8:49:48 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 8:49:37 AM">Clicking Button 'Analyze Results'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:49:39 AM">Results Analysis page was loaded</substep>
+        <substep valid="True" time="2/22/2019 8:49:39 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 8:49:44 AM">Dispose was successfully done</substep>
+        <substep valid="True" time="2/22/2019 8:49:44 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 8:49:48 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+    <TestCase name="SCIELO_RR_049" start_time="2/22/2019 8:50:05 AM" description="Refine Results-Authors" criticality="" state="fail" end_time="2/22/2019 8:55:44 AM">
+      <step type="pass" description="Prerequisite: 1) Related Records page/SCIELO 2) Parent Record is for TI=&quot; Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT &quot;Select any check box for Authors category in the Refine Panel input data Inputs and sources of hydrocarbons in sediments from Cienfuegos bay, Cuba" expected="" time="2/22/2019 8:50:53 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 8:50:05 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:06 AM">Clicking Link 'SCIELO'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:07 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:50:07 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="2/22/2019 8:50:07 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="2/22/2019 8:50:07 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:09 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="2/22/2019 8:50:09 AM">Check clear sreen</substep>
+        <substep valid="True" time="2/22/2019 8:50:09 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:10 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:19 AM">Enter search field - search field = Title, search term = Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT</substep>
+        <substep valid="True" time="2/22/2019 8:50:19 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:23 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 8:50:24 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:30 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:50:31 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:35 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 8:50:35 AM">Clicking Link 'Refine SectionAuthors'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:41 AM">Clicking Link 'More Options'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:52 AM">Checking/unchecking CheckBox 'Refine Value'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:50:53 AM">Clicking Button 'Refine'. Expected result: True.</substep>
+      </step>
+      <step type="fail" description="Click on Refine button in the Refine Panel. In the Refined SCIELO Related Records Page check that Results are refined for the selected input data in the Authors categories. Also the Refined by query should be displayed as &quot; Refined by: Authors: (selected checkbox)&quot; appended to the Parent Record in the Related Records page." expected="In the Refined SCIELO Related Records Page verify the Results are refined for the selected input data, in the Authors, categories. Also the Refined by query should be displayed as &quot; Refined by: Authors: (selected checkbox) &quot; appended to the Parent Record in the Related Records page." time="2/22/2019 8:55:26 AM" inputdata="" actual="Text element 'Refine By' is not found">
+        <substep valid="True" time="2/22/2019 8:50:55 AM">Clicking Link 'More...'. Expected result: True.</substep>
+        <substep valid="False" time="2/22/2019 8:51:06 AM" screenshot="a3501c6a7c4e42918919b7f1484aa222.jpg" screenshot_driver="956dd53ec93249e08c7cf34b68235665.jpg">Text element 'Refine By' is not found</substep>
+        <substep valid="True" time="2/22/2019 8:51:06 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 8:51:06 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:51:13 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:51:33 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Andrade, Luciana A. Z.; Felfili, Jeanine Maria; Violatti, Luciano'.</substep>
+        <substep valid="True" time="2/22/2019 8:51:34 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:51:35 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:51:35 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:51:57 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Assunção, Sérgio Lelis  [  1  ]  ; Felfili, Jeanine Maria  [  1  ]'.</substep>
+        <substep valid="True" time="2/22/2019 8:51:58 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:51:59 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:51:59 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:52:20 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Souza, Cynthia Domingues de  [  2  ]  ; Felfili, Jeanine Maria  [  1  ]'.</substep>
+        <substep valid="True" time="2/22/2019 8:52:21 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:52:22 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:52:23 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:52:44 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Libano, Andrea Marilza  [  2  ]  ; Felfili, Jeanine Maria  [  1  ]'.</substep>
+        <substep valid="True" time="2/22/2019 8:52:44 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:52:45 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:52:46 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:53:07 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Felfili, Jeanine Maria  [  1  ]  ; Fagg, Christopher William  [  1  ]'.</substep>
+        <substep valid="True" time="2/22/2019 8:53:07 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:53:09 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:53:09 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:53:30 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Nascimento, André R. Terra  [  2  ]  ; Felfili, Jeanine Maria  [  1  ]  ; Meirelles, Elisa Maria  [  1  ]'.</substep>
+        <substep valid="True" time="2/22/2019 8:53:30 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:53:32 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:53:32 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:53:53 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Munhoz, Cássia Beatriz Rodrigues  [  2  ]  ; Felfili, Jeanine Maria  [  1  ], Group Author(s):  Angiosperm Phylogeny Grp'.</substep>
+        <substep valid="True" time="2/22/2019 8:53:53 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:53:55 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:53:55 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:54:17 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Marimon, Beatriz Schwantes  [  1,3  ]  ; Felfili, Jeanine Maria  [  2  ]'.</substep>
+        <substep valid="True" time="2/22/2019 8:54:17 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:54:19 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:54:19 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:54:41 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Marimon, Beatriz Schwantes  [  2  ]  ; Felfili, Jeanine Maria  [  1  ]  ; Lima, Edson de Souza  [  1  ]  ; Duarte, Wânia M. Gonçalves  [  1  ]  ; Marimon-Júnior, Ben Hur  [  1  ]'.</substep>
+        <substep valid="True" time="2/22/2019 8:54:41 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:54:42 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:54:43 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:55:04 AM">Fields 'Authors' contains 'FELFILI JEANINE MARIA' as expected. Field text is 'By:Munhoz, Cássia Beatriz Rodrigues  [  2  ]  ; Felfili, Jeanine Maria  [  1  ], Group Author(s):  Angiosperm Phylogeny Grp'.</substep>
+        <substep valid="True" time="2/22/2019 8:55:04 AM">Clicking Link 'Return to Search Results'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:55:06 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 8:55:06 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:55:13 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:55:13 AM">Click 'view related records' link.</substep>
+        <substep valid="True" time="2/22/2019 8:55:13 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:55:17 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 8:55:17 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 8:55:17 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 8:55:22 AM">Dispose was successfully done</substep>
+        <substep valid="True" time="2/22/2019 8:55:22 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 8:55:26 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+    <TestCase name="SCIELO_RR_050" start_time="2/22/2019 8:55:44 AM" description="Refine Results-Source Title" criticality="" state="notcompleted" end_time="2/22/2019 8:56:47 AM">
+      <step type="fail" description="Prerequisite: 1) Related Records page/SCIELO 2) Parent Record is for TI=&quot; Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT &quot;Select any check box for Source Titles category in the Refine Panel " expected="" time="2/22/2019 8:56:26 AM" inputdata="" actual="Unexpected runtime error  : Can't find Link 'Refine SectionSource Titles'.">
+        <substep valid="True" time="2/22/2019 8:55:44 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:55:45 AM">Clicking Link 'SCIELO'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:55:46 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:55:46 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="2/22/2019 8:55:46 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="2/22/2019 8:55:46 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:55:48 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="2/22/2019 8:55:48 AM">Check clear sreen</substep>
+        <substep valid="True" time="2/22/2019 8:55:48 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:55:48 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:55:58 AM">Enter search field - search field = Title, search term = Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT</substep>
+        <substep valid="True" time="2/22/2019 8:55:58 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:56:02 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 8:56:02 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:56:09 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:56:09 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:56:11 AM">Related Records page was loaded</substep>
+        <substep valid="False" time="2/22/2019 8:56:17 AM" tech_info=" &lt;br /&gt; Locator: 'XPath(&quot;//a[contains(text(), 'Source Titles')]/following-sibling::i&quot;)'. &lt;br /&gt; Searching time (seconds): 5.3280693" screenshot="93f7eb6bcd354f3fa10fef6cdc93deaa.jpg" screenshot_driver="c1612a9ae2b24279b129620580cce60c.jpg">Can't find Link 'Refine SectionSource Titles'.</substep>
+        <substep valid="False" time="2/22/2019 8:56:17 AM" screenshot="0eea087d463f48d68987611ff4002a42.jpg" screenshot_driver="a4e6ee62312d426fa84cf774964e1319.jpg">Unexpected runtime error  : Can't find Link 'Refine SectionSource Titles'.</substep>
+        <substep valid="True" time="2/22/2019 8:56:17 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 8:56:22 AM">Dispose was successfully done</substep>
+        <substep valid="True" time="2/22/2019 8:56:22 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 8:56:26 AM">Dispose was successfully done</substep>
+      </step>
+      <step type="norun" description="Click on Refine button in the Refine Panel. In the Refined SCIELO Related Records Page check that Results are refined for the selected input data in the Source Titles category. Also the Refined by query should be displayed as &quot; Refined by: Source Titles: (selected checkbox)&quot; appended to the Parent Record in the Related Records page." expected="In the Refined SCIELO Related Records Page verify the Results are refined for the selected input data, in the Source Titles, category. Also the Refined by query should be displayed as &quot; Refined by: Source Titles: (selected checkbox)&quot; appended to the Parent Record in the Related Records page." time="2/22/2019 8:55:44 AM" inputdata="" />
+    </TestCase>
+    <TestCase name="SCIELO_RR_051" start_time="2/22/2019 8:56:47 AM" description="Refine Results-Publication Years" criticality="" state="fail" end_time="2/22/2019 9:02:18 AM">
+      <step type="pass" description="Prerequisite: 1) Related Records page/SCIELO 2) Parent Record is for TI=&quot; Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT &quot; Select any check box for Publication Years category in the Refine Panel " expected="" time="2/22/2019 8:57:29 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 8:56:47 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:56:48 AM">Clicking Link 'SCIELO'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:56:49 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:56:49 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="2/22/2019 8:56:49 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="2/22/2019 8:56:49 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:56:51 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="2/22/2019 8:56:51 AM">Check clear sreen</substep>
+        <substep valid="True" time="2/22/2019 8:56:51 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:56:51 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:01 AM">Enter search field - search field = Title, search term = Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT</substep>
+        <substep valid="True" time="2/22/2019 8:57:01 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:05 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 8:57:05 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:12 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:57:12 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:16 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 8:57:17 AM">Clicking Link 'More Options'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:28 AM">Checking/unchecking CheckBox 'Refine Value'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:29 AM">Clicking Button 'Refine'. Expected result: True.</substep>
+      </step>
+      <step type="fail" description="Click on Refine button in the Refine Panel. In the Refined SCIELO Related Records Page check that Results are refined for the selected input data in the Publication Years category. Also the Refined by query should be displayed as &quot; Refined by: Publication Years: (selected checkbox)&quot; appended to the Parent Record in the Related Records page." expected="In the Refined SCIELO Related Records Page verify the Results are refined for the selected input data, in the Publication Years, category. Also the Refined by query should be displayed as &quot; Refined by: Publication Years: (selected checkbox)&quot; appended to the Parent Record in the Related Records page." time="2/22/2019 9:02:00 AM" inputdata="" actual="Text element 'Refine By' is not found">
+        <substep valid="True" time="2/22/2019 8:57:31 AM">Clicking Link 'More...'. Expected result: True.</substep>
+        <substep valid="False" time="2/22/2019 8:57:42 AM" screenshot="9b3a51f4c9df4a64aa3d9a3227d1e87b.jpg" screenshot_driver="12dd37f345624c75a62bc237a9de7eb7.jpg">Text element 'Refine By' is not found</substep>
+        <substep valid="True" time="2/22/2019 8:57:42 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 8:57:42 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:57:49 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:09 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-08'.</substep>
+        <substep valid="True" time="2/22/2019 8:58:09 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:11 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:58:11 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:33 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-09'.</substep>
+        <substep valid="True" time="2/22/2019 8:58:33 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:35 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:58:35 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:58:57 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-09'.</substep>
+        <substep valid="True" time="2/22/2019 8:58:57 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:58:58 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:58:59 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:20 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-02'.</substep>
+        <substep valid="True" time="2/22/2019 8:59:20 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:21 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:59:22 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 8:59:43 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-12'.</substep>
+        <substep valid="True" time="2/22/2019 8:59:43 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 8:59:45 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 8:59:45 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:06 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-12'.</substep>
+        <substep valid="True" time="2/22/2019 9:00:06 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:08 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:00:08 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:29 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-09'.</substep>
+        <substep valid="True" time="2/22/2019 9:00:29 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:31 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:00:31 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:00:53 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-09'.</substep>
+        <substep valid="True" time="2/22/2019 9:00:53 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:00:55 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:00:55 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:17 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-06'.</substep>
+        <substep valid="True" time="2/22/2019 9:01:17 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:19 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:01:19 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:40 AM">Fields 'Publication Years' contains '2008' as expected. Field text is 'Published:2008-05'.</substep>
+        <substep valid="True" time="2/22/2019 9:01:40 AM">Clicking Link 'Return to Search Results'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:42 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 9:01:42 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:49 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:01:49 AM">Click 'view related records' link.</substep>
+        <substep valid="True" time="2/22/2019 9:01:49 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:01:51 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 9:01:51 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 9:01:51 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 9:01:56 AM">Dispose was successfully done</substep>
+        <substep valid="True" time="2/22/2019 9:01:56 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 9:02:00 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+    <TestCase name="SCIELO_RR_052" start_time="2/22/2019 9:02:18 AM" description="Refine Results-Institutions" criticality="" state="fail" end_time="2/22/2019 9:04:32 AM">
+      <step type="pass" description="Prerequisite: 1) Related Records page/SCIELO 2) Parent Record is for TI=&quot; Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT &quot; Select any check box for Publication Years category in the Refine Panel " expected="" time="2/22/2019 9:03:03 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 9:02:18 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:19 AM">Clicking Link 'SCIELO'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:20 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:20 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="2/22/2019 9:02:20 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="2/22/2019 9:02:20 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:22 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="2/22/2019 9:02:22 AM">Check clear sreen</substep>
+        <substep valid="True" time="2/22/2019 9:02:22 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:22 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:32 AM">Enter search field - search field = Title, search term = Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT</substep>
+        <substep valid="True" time="2/22/2019 9:02:32 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:36 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 9:02:36 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:43 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:02:43 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:45 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 9:02:45 AM">Clicking Link 'Refine SectionInstitutions'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:02:51 AM">Clicking Link 'More Options'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:03 AM">Checking/unchecking CheckBox 'Refine Value'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:03 AM">Clicking Button 'Refine'. Expected result: True.</substep>
+      </step>
+      <step type="fail" description="Click on Refine button in the Refine Panel. In the Refined SCIELO Related Records Page check that Results are refined for the selected input data in the Institutions category. Also the Refined by query should be displayed as &quot; Refined by: Institutions : (selected checkbox)&quot; appended to the Parent Record in the Related Records page." expected="In the Refined SCIELO Related Records Page verify the Results are refined for the selected input data, in the Organizations-Enhanced, category. Also the Refined by query should be displayed as &quot; Refined by: Organizations-Enhanced: (selected checkbox) &quot; appended to the Parent Record in the Related Records page." time="2/22/2019 9:04:14 AM" inputdata="" actual="Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL'.">
+        <substep valid="True" time="2/22/2019 9:03:06 AM">Clicking Link 'More...'. Expected result: True.</substep>
+        <substep valid="False" time="2/22/2019 9:03:17 AM" screenshot="eed18156f3d64497afb552b508ae85a5.jpg" screenshot_driver="f2376b61065f46f290fd07d95b00a989.jpg">Text element 'Refine By' is not found</substep>
+        <substep valid="True" time="2/22/2019 9:03:17 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 9:03:17 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:24 AM">Full Record page was opened</substep>
+        <substep valid="False" time="2/22/2019 9:03:24 AM" screenshot="8002e81f39cf41b792b6dff9e9503b31.jpg" screenshot_driver="4d02969e1de8459999bc1692b82f9c37.jpg">Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL  [ 2 ] PROJETO FOGO  [ 3 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="True" time="2/22/2019 9:03:24 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:26 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:03:26 AM">Full Record page was opened</substep>
+        <substep valid="False" time="2/22/2019 9:03:27 AM" screenshot="bfa0002a347946138ebe2c5c242a1096.jpg" screenshot_driver="1bfa626b14c04c7687a95e115c262be9.jpg">Field 'Institutions' doesn't contain 'UNIVERSIDADE'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL  [ 2 ] UNIVERSIDADE DO ESTADO DE MATO GROSSO, BRAZIL'.</substep>
+        <substep valid="False" time="2/22/2019 9:03:27 AM" screenshot="96312393f3e644a0a958fd01b0d80acd.jpg" screenshot_driver="b939be0021ef4738b1a8dc51fbc40e5a.jpg">Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL  [ 2 ] UNIVERSIDADE DO ESTADO DE MATO GROSSO, BRAZIL'.</substep>
+        <substep valid="True" time="2/22/2019 9:03:27 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:29 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:03:29 AM">Full Record page was opened</substep>
+        <substep valid="False" time="2/22/2019 9:03:30 AM" screenshot="86a448be6df446798fa3af43ab700ffb.jpg" screenshot_driver="d0ac39a5999c4086a77c2dc8606e913f.jpg">Field 'Institutions' doesn't contain 'UNIVERSIDADE'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL  [ 2 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="False" time="2/22/2019 9:03:30 AM" screenshot="64278f14c8ea4c96a77b1e60a9567b7e.jpg" screenshot_driver="24ef2aa4066943dc90d11f343ec51b80.jpg">Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL  [ 2 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="True" time="2/22/2019 9:03:30 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:32 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:03:32 AM">Full Record page was opened</substep>
+        <substep valid="False" time="2/22/2019 9:03:33 AM" screenshot="1a8b2e004a2d46e084a891933c6e340e.jpg" screenshot_driver="d788d004a80942529ea9707e19fda0d5.jpg">Field 'Institutions' doesn't contain 'UNIVERSIDADE'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE FEDERAL DE VIÇOSA, BRAZIL  [ 2 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL  [ 3 ] UNIVERSIDADE FEDERAL DE VIÇOSA, BRAZIL'.</substep>
+        <substep valid="False" time="2/22/2019 9:03:33 AM" screenshot="563461884b50431b82add391fc2b7b8b.jpg" screenshot_driver="e29e61f6d4304787bef9d745b63a2c7f.jpg">Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE FEDERAL DE VIÇOSA, BRAZIL  [ 2 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL  [ 3 ] UNIVERSIDADE FEDERAL DE VIÇOSA, BRAZIL'.</substep>
+        <substep valid="True" time="2/22/2019 9:03:34 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:35 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:03:35 AM">Full Record page was opened</substep>
+        <substep valid="False" time="2/22/2019 9:03:36 AM" screenshot="bfd1488214f546c98df4e79b221e5ac1.jpg" screenshot_driver="ba3a4c9b08cd44a284e8ddbf2932167c.jpg">Field 'Institutions' doesn't contain 'UNIVERSIDADE'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="False" time="2/22/2019 9:03:37 AM" screenshot="e98a2a2ba820448e8a6bbbbee8396f97.jpg" screenshot_driver="56af9017ef36425da1bd5e844669e0d6.jpg">Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="True" time="2/22/2019 9:03:37 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:38 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:03:39 AM">Full Record page was opened</substep>
+        <substep valid="False" time="2/22/2019 9:03:40 AM" screenshot="be9d85ad2e3140be947547b81662e50d.jpg" screenshot_driver="2319b8855f964c248f371bd1d43db4f1.jpg">Field 'Institutions' doesn't contain 'UNIVERSIDADE'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="False" time="2/22/2019 9:03:40 AM" screenshot="6e4fff7cfea044959cb4ff84aaf08260.jpg" screenshot_driver="a10cb333f84f4bac88ae7756d33a526a.jpg">Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="True" time="2/22/2019 9:03:40 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:41 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:03:42 AM">Full Record page was opened</substep>
+        <substep valid="False" time="2/22/2019 9:03:43 AM" screenshot="ace3ea959e5642de9a75abfbf0f0da09.jpg" screenshot_driver="02d9eb691a604e8c945f81416a46f700.jpg">Field 'Institutions' doesn't contain 'UNIVERSIDADE'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL  [ 2 ] INSTITUTO BRASILEIRO DO MEIO AMBIENTE E DOS RECURSOS NATURAIS RENOVÁVEIS, BRASIL'.</substep>
+        <substep valid="False" time="2/22/2019 9:03:43 AM" screenshot="47837b800b8845afa76ab917eda5e059.jpg" screenshot_driver="071311bf7e7c479c9f7868417715bc9c.jpg">Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL  [ 2 ] INSTITUTO BRASILEIRO DO MEIO AMBIENTE E DOS RECURSOS NATURAIS RENOVÁVEIS, BRASIL'.</substep>
+        <substep valid="True" time="2/22/2019 9:03:43 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:45 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:03:45 AM">Full Record page was opened</substep>
+        <substep valid="False" time="2/22/2019 9:03:46 AM" screenshot="ea93356240084cebbb6a961859b61e60.jpg" screenshot_driver="41da7783db36439e9dfdc7de2d2a4c1d.jpg">Field 'Institutions' doesn't contain 'UNIVERSIDADE'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="False" time="2/22/2019 9:03:46 AM" screenshot="8ce4be470e244364a8af48891ae41675.jpg" screenshot_driver="201ea734763b4f579e8c19249d332f9c.jpg">Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="True" time="2/22/2019 9:03:46 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:48 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:03:48 AM">Full Record page was opened</substep>
+        <substep valid="False" time="2/22/2019 9:03:49 AM" screenshot="cf8ad10e60b548b1b7587d859fcec719.jpg" screenshot_driver="001d8ca95a3b4221a50f24a3431c97ba.jpg">Field 'Institutions' doesn't contain 'UNIVERSIDADE'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="False" time="2/22/2019 9:03:49 AM" screenshot="6ee95146b65a4d26bfb29cff49b4a456.jpg" screenshot_driver="e8530c34bc7b45a193d68cf4a1bf1d45.jpg">Field 'Institutions' doesn't contain 'DE BRASILIA'. Field text is 'ADDRESSES:  [ 1 ] UNIVERSIDADE DE BRASÍLIA, BRAZIL'.</substep>
+        <substep valid="True" time="2/22/2019 9:03:49 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:51 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:03:52 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:03:53 AM">Clicking Link 'Return to Search Results'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:03:54 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 9:03:54 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:03 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:03 AM">Click 'view related records' link.</substep>
+        <substep valid="True" time="2/22/2019 9:04:03 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:05 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 9:04:05 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 9:04:05 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 9:04:10 AM">Dispose was successfully done</substep>
+        <substep valid="True" time="2/22/2019 9:04:10 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 9:04:14 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+    <TestCase name="SCIELO_RR_053" start_time="2/22/2019 9:04:32 AM" description="Refine Results-Languages" criticality="" state="notcompleted" end_time="2/22/2019 9:05:33 AM">
+      <step type="fail" description="Prerequisite: 1) Related Records page/SCIELO 2) Parent Record is for TI=&quot; Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT &quot; Select any check box for Publication Years category in the Refine Panel " expected="" time="2/22/2019 9:05:16 AM" inputdata="" actual="Unexpected runtime error  : Can't find Link 'Refine SectionLanguages'.">
+        <substep valid="True" time="2/22/2019 9:04:32 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:33 AM">Clicking Link 'SCIELO'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:34 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:34 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="2/22/2019 9:04:34 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="2/22/2019 9:04:34 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:36 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="2/22/2019 9:04:36 AM">Check clear sreen</substep>
+        <substep valid="True" time="2/22/2019 9:04:36 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:36 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:46 AM">Enter search field - search field = Title, search term = Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT</substep>
+        <substep valid="True" time="2/22/2019 9:04:46 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:50 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 9:04:50 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:04:57 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:04:57 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:01 AM">Related Records page was loaded</substep>
+        <substep valid="False" time="2/22/2019 9:05:07 AM" tech_info=" &lt;br /&gt; Locator: 'XPath(&quot;//a[contains(text(), 'Languages')]/following-sibling::i&quot;)'. &lt;br /&gt; Searching time (seconds): 5.3124075" screenshot="ad146d04e8cf4c56beec01f1912fee4c.jpg" screenshot_driver="e132b495f07d452ab3b4790a1f31a3a3.jpg">Can't find Link 'Refine SectionLanguages'.</substep>
+        <substep valid="False" time="2/22/2019 9:05:07 AM" screenshot="beeb0ac9ab2548f99655e062e8ab59e0.jpg" screenshot_driver="fa692f0262be417ea4a16da70a76f40f.jpg">Unexpected runtime error  : Can't find Link 'Refine SectionLanguages'.</substep>
+        <substep valid="True" time="2/22/2019 9:05:07 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 9:05:12 AM">Dispose was successfully done</substep>
+        <substep valid="True" time="2/22/2019 9:05:12 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 9:05:16 AM">Dispose was successfully done</substep>
+      </step>
+      <step type="norun" description="Click on Refine button in the Refine Panel. In the Refined SCIELO Related Records Page check that Results are refined for the selected input data in the Languages category. Also the Refined by query should be displayed as &quot; Refined by: Languages: (selected checkbox)&quot; appended to the Parent Record in the Related Records page." expected="In the Refined SCIELO Related Records Page verify the Results are refined for the selected input data, in the Languages, category. Also the Refined by query should be displayed as &quot; Refined by: Languages: (selected checkbox)&quot; appended to the Parent Record in the Related Records page." time="2/22/2019 9:04:32 AM" inputdata="" />
+    </TestCase>
+    <TestCase name="SCIELO_RR_054" start_time="2/22/2019 9:05:33 AM" description="Refine Results-Countries/Territories" criticality="" state="fail" end_time="2/22/2019 9:10:50 AM">
+      <step type="pass" description="Prerequisite: 1) Related Records page/SCIELO 2) Parent Record is for TI=&quot; Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT &quot; Select any check box for Publication Years category in the Refine Panel " expected="" time="2/22/2019 9:06:19 AM" inputdata="">
+        <substep valid="True" time="2/22/2019 9:05:34 AM">Clicking Link 'Selected database link'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:34 AM">Clicking Link 'SCIELO'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:35 AM">General Search page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:36 AM">Button 'Clear Field' is enabled</substep>
+        <substep valid="True" time="2/22/2019 9:05:36 AM">Click 'Clear Field' button</substep>
+        <substep valid="True" time="2/22/2019 9:05:36 AM">Clicking Button 'Clear Field'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:37 AM">Button 'Search' displayed during 0 seconds</substep>
+        <substep valid="True" time="2/22/2019 9:05:37 AM">Check clear sreen</substep>
+        <substep valid="True" time="2/22/2019 9:05:37 AM">Clicking Button 'Select years dropDown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:38 AM">Clicking Button 'Select all years from dropdown'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:48 AM">Enter search field - search field = Title, search term = Composição florística e fitossociologia do cerrado sentido restrito no município de Água Boa - MT</substep>
+        <substep valid="True" time="2/22/2019 9:05:48 AM">Clicking Button 'Search'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:52 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 9:05:52 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:05:59 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:05:59 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:01 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 9:06:01 AM">Clicking Link 'Refine SectionCountries/Regions'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:07 AM">Clicking Link 'More Options'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:19 AM">Checking/unchecking CheckBox 'Refine Value'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:19 AM">Clicking Button 'Refine'. Expected result: True.</substep>
+      </step>
+      <step type="fail" description="Click on Refine button in the Refine Panel. In the Refined SCIELO Related Records Page check that Results are refined for the selected input data in the Countries/Territories category. Also the Refined by query should be displayed as &quot; Refined by: Countries/Territories: (selected checkbox)&quot; appended to the Parent Record in the Related Records page." expected="In the Refined SCIELO Related Records Page verify the Results are refined for the selected input data, in the Countries/Territories, category. Also the Refined by query should be displayed as &quot; Refined by: Countries/Territories: (selected checkbox)&quot; appended to the Parent Record in the Related Records page." time="2/22/2019 9:10:50 AM" inputdata="" actual="Text element 'Refine By' is not found">
+        <substep valid="True" time="2/22/2019 9:06:22 AM">Clicking Link 'More...'. Expected result: True.</substep>
+        <substep valid="False" time="2/22/2019 9:06:33 AM" screenshot="9e67540d1acb40f1a9a80a483df864a1.jpg" screenshot_driver="69f46644cfc242c7bd3c53a5cf3c729f.jpg">Text element 'Refine By' is not found</substep>
+        <substep valid="True" time="2/22/2019 9:06:33 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 9:06:33 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:06:40 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:00 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] Universidade de Brasília, Brasília, Brasil  [ 2 ] Universidade do Estado de Mato Grosso, Nova Xavantina, Brasil  [ 3 ] Embrapa, Brasília, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:07:00 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:02 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:07:02 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:24 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] Universidade do Estado de Mato Grosso, Brazil  [ 2 ] Universidade de Brasília, Brazil  [ 3 ] Universidade do Estado de Mato Grosso, Brazil  [ 4 ] Universidade de Brasília, Brazil  [ 5 ] Secretaria de Estado do Meio Ambiente, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:07:24 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:26 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:07:26 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:07:47 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] Universidade Federal do Ceará, Brazil  [ 2 ] Universidade Estadual de Campinas, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:07:48 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:07:49 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:07:50 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:11 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] Embrapa Pantanal, Corumbá, Brasil  [ 2 ] Universidade Estadual Paulista, Rio Claro, Brasil  [ 3 ] Universidade Federal de São Carlos, Araras, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:08:11 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:08:13 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:08:13 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:34 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] Universidade Federal do Ceará, Brazil  [ 2 ] Universidade Estadual de Campinas, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:08:34 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:08:36 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:08:36 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:08:57 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] Universidade Estadual Paulista, Rio Claro, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:08:57 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:00 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:09:00 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:09:21 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] University of Kansas, United States  [ 2 ] Centro de Referência em Informação Ambiental, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:09:21 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:23 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:09:24 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:09:45 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] Universidade de Brasília, Brazil  [ 2 ] Univesidade de Brasília, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:09:46 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:09:47 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:09:47 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:10:09 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] Universidade Federal de Uberlândia, Uberlândia, Brasil  [ 2 ] Universidade Federal de Uberlândia, Uberlândia, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:10:09 AM">Clicking Link 'Next'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:10:10 AM">Go to the next record.</substep>
+        <substep valid="True" time="2/22/2019 9:10:11 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:10:32 AM">Fields 'Countries/Territories' contains 'BRASIL' as expected. Field text is 'Addresses:  [ 1 ] Universidade Federal Rural do Rio de Janeiro, Brazil  [ 2 ] Empresa Brasileira de Pesquisa Agropecuária, Brasil  [ 3 ] Instituto Federal do Espírito Santo, Brazil  [ 4 ] Empresa Brasileira de Pesquisa Agropecuária, Brasil'.</substep>
+        <substep valid="True" time="2/22/2019 9:10:32 AM">Clicking Link 'Return to Search Results'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:10:34 AM">Click on Full Record Title link for record #1 on Results Summary page</substep>
+        <substep valid="True" time="2/22/2019 9:10:34 AM">Clicking Link 'First Title'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:10:41 AM">Full Record page was opened</substep>
+        <substep valid="True" time="2/22/2019 9:10:41 AM">Click 'view related records' link.</substep>
+        <substep valid="True" time="2/22/2019 9:10:41 AM">Clicking Link 'View related records'. Expected result: True.</substep>
+        <substep valid="True" time="2/22/2019 9:10:45 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 9:10:45 AM">Related Records page was loaded</substep>
+        <substep valid="True" time="2/22/2019 9:10:45 AM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="2/22/2019 9:10:50 AM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

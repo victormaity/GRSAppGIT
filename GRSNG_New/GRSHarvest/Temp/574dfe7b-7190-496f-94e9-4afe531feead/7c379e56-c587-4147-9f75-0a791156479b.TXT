@@ -1,0 +1,21 @@
+Tech info:
+Exception cause: java.lang.NullPointerException 
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method);
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.CollectionDropdownPageObject.dropDown_SelectCollection(CollectionDropdownPageObject.java:31);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.CollectionDropdownPageObject.selectCollection(CollectionDropdownPageObject.java:67);
+com.clarivateanalytics.wos.gui.cucumber.pages.interfaces.SelectCollectionDropdownInterface.selectCollection(SelectCollectionDropdownInterface.java:19);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.CommonSteps.I_select_collection(CommonSteps.java:58);
+✽.Given I select collection "Current Contents Connect"(com.clarivateanalytics.wos.gui.cucumber.deployment/TableofContents.feature:333)

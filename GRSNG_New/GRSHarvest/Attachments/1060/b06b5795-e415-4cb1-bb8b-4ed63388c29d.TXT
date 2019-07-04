@@ -1,0 +1,1 @@
+ArmCount,Biomarkers,Condition,Controls,DevStatus,DevStatusId,Drug,DrugId,EnrollmentCount,Interventions,Patients,ProtocolAcronym,ProtocolTitle,Reference,Sponsor,TrialId,TrialStartDate,TrialStatus

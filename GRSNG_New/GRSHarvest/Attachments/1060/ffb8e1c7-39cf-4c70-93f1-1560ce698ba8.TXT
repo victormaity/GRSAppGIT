@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.NamedEntityRecognitionInput xmlns:ns2="local"><text>hsa-mir-4688</text></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.NamedEntityRecognitionInput>

@@ -1,0 +1,19 @@
+Tech info:
+Exception cause: java.util.NoSuchElementException: No value present 
+ sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416);
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408);
+com.clarivateanalytics.wos.gui.cucumber.pages.Interfaces.SearchPageCommonElementsInterface.errorMessage(SearchPageCommonElementsInterface.java:65);
+com.clarivateanalytics.wos.gui.cucumber.pages.SearchPages.AdvancedSearchPage.runSearch(AdvancedSearchPage.java:480);
+com.clarivateanalytics.wos.gui.cucumber.Steps_Definition.AdvancedSearchPage_Steps.I_have_performed_search_by_query_on_page(AdvancedSearchPage_Steps.java:82);
+✽.When I perform search by query "TI=(metrod AND holex)" on page "Advanced Search"(com/clarivateanalytics/wos/gui/cucumber/Deployment/ResultSummary.feature:322)

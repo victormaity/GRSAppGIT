@@ -1,0 +1,1 @@
+https://stable-api.cortellis.int.clarivate.com/api-ws/ws/rs/analytics-v2/taxonomy/Action/children/ANT-?includeDescendants=1&countDataSet=trials&enableCounts=Ancestor&fmt=xml

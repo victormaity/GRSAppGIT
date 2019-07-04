@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ExecutionTestSuiteModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsJava>true</IsJava>
+  <ExecutionTestSuites>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_AbstractExport</Name>
+      <Categories />
+      <Tests>
+        <string>AbstractExport_TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>ABEXP</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_AbstractImport</Name>
+      <Categories />
+      <Tests>
+        <string>AbstractImport_TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>ABIMT</string>
+        <string>AbstractImport_TC002</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_BeSerach_PPC_High</Name>
+      <Categories />
+      <Tests />
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_BibXmlExport</Name>
+      <Categories />
+      <Tests>
+        <string>BIBXMLExport_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_ChemGrading</Name>
+      <Categories />
+      <Tests>
+        <string>ChemGrading_TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>CHGRD</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>ChooseBasic_TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>CB</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ErolExport_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>EE</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>FileUnzipUtility_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>FUZUT</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>GeneseqOCR_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>GOCR</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ICAPAutoWFMReport_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>IAWR</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ICAPDBArchive_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>IDBA</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ICAPQUERYPROCESSOR_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>ICQPR</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>ImageExport_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>ImageImportForDataPro</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>ImportFRTextFile_001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>IPCSort_001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>JPMATToPDFConverter_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_MATExport</Name>
+      <Categories />
+      <Tests>
+        <string>MATExport_TC001</string>
+        <string>PPC</string>
+        <string>Medium</string>
+        <string>MATET</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>MATImport_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>MATI</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>MATPDFImport_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>MATXMLImport_TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>MaXmI</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>MATXMLExport_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>PharmaGrading_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Patent_Rcpt</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PatentRcpt_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>PatentKindCodeChange__TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>PTKCC</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>PatentListForDatPro</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>PLDPR</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>PatSumPreprocessor_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_PCIScheduleDCAP</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_PciScheduleDcap</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PCIUnzipICAP_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>PCIUI</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>PciExportFromDocDb</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PDFConversion_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>PDFC</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PDFCONVSG_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>PDFCS</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_PrescanPolymerAI</Name>
+      <Categories />
+      <Tests>
+        <string>PrescanPolymerAI_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_PrescanPolymerMC</Name>
+      <Categories />
+      <Tests>
+        <string>PrescanPolymerMC_TC001</string>
+        <string>PPC</string>
+        <string>Medium</string>
+        <string>PSPMC</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_21PrescanRouting</Name>
+      <Categories />
+      <Tests>
+        <string>PrescanRouting_TC001</string>
+        <string>PPC</string>
+        <string>Medium</string>
+        <string>PRSRT</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>PrescanGeneseq_TC001</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>ReorderImport_TC001</Name>
+      <Categories />
+      <Tests>
+        <string>PPC</string>
+        <string>High</string>
+        <string>RI</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_Schedule_PPC_High</Name>
+      <Categories />
+      <Tests />
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_Schedule2_PPC_High_TC002</Name>
+      <Categories />
+      <Tests />
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>Feature_Schedule3_PPC_High_TC001</Name>
+      <Categories />
+      <Tests />
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression_Schedule4</Name>
+      <Categories />
+      <Tests>
+        <string>Feature_Schedule4_TC001_PPC_High_SCDL4</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>SYSTRANProcessor_001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>SYSTP</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>USABESearch_TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>USBSR</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>USAConversionreview_TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>USCVR</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>USADPSExportPLD_TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>USDPS</string>
+      </Tests>
+    </ExecutionTestSuite>
+    <ExecutionTestSuite>
+      <Name>PPC_Regression</Name>
+      <Categories />
+      <Tests>
+        <string>USAPatentReceipt_TC001</string>
+        <string>PPC</string>
+        <string>High</string>
+        <string>PTRCT</string>
+      </Tests>
+    </ExecutionTestSuite>
+  </ExecutionTestSuites>
+</ExecutionTestSuiteModel>

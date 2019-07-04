@@ -1,0 +1,198 @@
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.dll.config
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Core.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Windsor.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\ClosedXML.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Core.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Ionic.Zip.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\QCClient.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\RestSharp.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.UI.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\TechTalk.JiraRestClient.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\nunit.framework.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Core.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\QCClient.pdb
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Core.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Windsor.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\ClosedXML.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Ionic.Zip.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\RestSharp.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.UI.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\nunit.framework.xml
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpPlink-x64.svnExe
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csprojResolveAssemblyReference.cache
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.Properties.Resources.resources
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csproj.GenerateResource.Cache
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.dll
+E:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\amd64\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\x86\git2-785d8c4.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\x86\git2-785d8c4.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.dll.config
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.dll.config
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Core.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Windsor.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\ClosedXML.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Core.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Ionic.Zip.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\QCClient.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\RestSharp.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.UI.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\TechTalk.JiraRestClient.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\nunit.framework.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Core.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Windsor.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\ClosedXML.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\Ionic.Zip.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\RestSharp.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.UI.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\nunit.framework.xml
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpPlink-x64.svnExe
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csprojResolveAssemblyReference.cache
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.Properties.Resources.resources
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csproj.GenerateResource.Cache
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Core.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\QCClient.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.DataLINQ.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.DataLINQ.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Data.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.Extended.dll
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Data.pdb
+D:\Jenkins\workspace\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.Extended.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\amd64\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\amd64\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\x86\git2-785d8c4.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\x86\git2-785d8c4.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\osx\libgit2-785d8c4.dylib
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.dll.config
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.dll.config
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Windsor.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\ClosedXML.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\DocumentFormat.OpenXml.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.SqlServer.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Core.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.DataLINQ.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\Ionic.Zip.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\QCClient.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\RestSharp.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.UI.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\TechTalk.JiraRestClient.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Data.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\nunit.framework.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.Extended.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Core.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.DataLINQ.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\QCClient.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Core.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Windsor.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\ClosedXML.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.SqlServer.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\Ionic.Zip.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\RestSharp.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.UI.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Data.pdb
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\nunit.framework.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.Extended.xml
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpPlink-x64.svnExe
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csprojResolveAssemblyReference.cache
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.Properties.Resources.resources
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csproj.GenerateResource.Cache
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.dll
+D:\GRS LATEST\GRS\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\amd64\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\amd64\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\x86\git2-785d8c4.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\x86\git2-785d8c4.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\osx\libgit2-785d8c4.dylib
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\NativeBinaries\linux\amd64\libgit2-785d8c4.so
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.BL.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Core.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Windsor.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\ClosedXML.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\DocumentFormat.OpenXml.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.SqlServer.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Core.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.DataLINQ.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\Ionic.Zip.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\QCClient.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\RestSharp.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.UI.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\TechTalk.JiraRestClient.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Data.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\nunit.framework.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.Extended.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Core.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Core.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.DataLINQ.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.DataLINQ.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\QCClient.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\QCClient.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Core.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\Castle.Windsor.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\ClosedXML.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.SqlServer.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\Ionic.Zip.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\LibGit2Sharp.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\RestSharp.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpSvn.UI.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Data.pdb
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\GlobalReportingSystem.Data.dll.config
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\nunit.framework.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\EntityFramework.Extended.xml
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\bin\Debug\SharpPlink-x64.svnExe
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csprojAssemblyReference.cache
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.Properties.Resources.resources
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csproj.GenerateResource.cache
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csproj.CoreCompileInputs.cache
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.csproj.CopyComplete
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.dll
+E:\GRS_New\GRSNG\GlobalReportingSystem.BL\obj\Debug\GlobalReportingSystem.BL.pdb

@@ -1,0 +1,94 @@
+<GRS_Report>
+  <client_info>
+    <project>WOK_GUI</project>
+    <test_cycle>5.32_R3_Release12_Iteration</test_cycle>
+    <url>https://tokenclient.wos-non-prod.oneplatform.build/tokens/QA1/client_ssl.cgi/</url>
+    <environment>
+    </environment>
+    <user>TRPRIVATECLOUD\WoSWin7_01</user>
+    <ip>192.168.68.181</ip>
+    <start_time>04/15/2019 05:41:14</start_time>
+    <end_time>04/15/2019 05:43:29</end_time>
+    <browser>firefox </browser>
+    <os>Windows 7 (64-bit)</os>
+    <free_space>-1</free_space>
+  </client_info>
+  <TestSet name="Personalization Menu Details" start_time="4/15/2019 5:41:14 PM">
+    <TestCase name="MySett_001" start_time="4/15/2019 5:41:33 PM" description="Display of Product Branding Graphics" criticality="High" state="pass" end_time="4/15/2019 5:42:27 PM">
+      <step type="pass" description="Prerequisite: 1. My Settings Check for Product Branding graphics for 'WEB OF SCIENCE™' at top of page." expected="'WEB OF SCIENCE™' graphic is displayed at top of the page." time="4/15/2019 5:41:57 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 5:41:37 PM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:41:37 PM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:41:38 PM">Sign In Window was opened</substep>
+        <substep valid="True" time="4/15/2019 5:41:39 PM">Text box 'Email' is enabled</substep>
+        <substep valid="True" time="4/15/2019 5:41:40 PM">Text: 'quality.tester@testcases.com' was sent to the 'Email' textbox (XPath("//input[@id='email']")), textbox content after sending is 'quality.tester@testcases.com'</substep>
+        <substep valid="True" time="4/15/2019 5:41:40 PM">Text box 'Password' is enabled</substep>
+        <substep valid="True" time="4/15/2019 5:41:41 PM">Textbox: 'XPath("//input[@id='password']")' was cleared</substep>
+        <substep valid="True" time="4/15/2019 5:41:41 PM">Text: '!12345654321a' was sent to the 'Password' textbox (XPath("//input[@id='password']")), textbox content after sending is '!12345654321a'</substep>
+        <substep valid="True" time="4/15/2019 5:41:41 PM">Clicking Button 'SignIn'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:41:50 PM">General Search page was opened</substep>
+        <substep valid="True" time="4/15/2019 5:41:50 PM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:41:51 PM">Clicking Link 'Settings'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:41:57 PM">My Settings page was opened</substep>
+        <substep valid="True" time="4/15/2019 5:41:57 PM">Link 'Web of Science' is displayed</substep>
+      </step>
+      <step type="pass" description="Check for Product Branding graphics Alt-Text for 'WEB OF SCIENCE™' page by placing the mouse cursor over the product branding graphic." expected="Alt-text for 'WEB OF SCIENCE™' graphic is displayed as 'Web Of Science' when the mouse cursor is placed over the product branding graphics." time="4/15/2019 5:41:57 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 5:41:57 PM">&lt;!XML Content&gt;&lt;b&gt;Alt-text of Link 'EndNoteTM' equals: Web of Science All Databases Search&lt;/b&gt; &lt;!XML Content&gt;</substep>
+      </step>
+      <step type="pass" description="Check for THOMSON REUTERS™ graphics at top right of My Settings Page" expected="Graphic displays correctly" time="4/15/2019 5:41:57 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 5:41:57 PM">Link 'Clarivate Analytics' is displayed</substep>
+      </step>
+      <step type="pass" description="Check for THOMSON REUTERS™ graphic Alt text by placing the mouse cursor over the THOMSON REUTERS™ branding graphic." expected="Alt text for 'THOMSON REUTERS™' graphic is displayed as ”Thomson Reuters” when the mouse cursor is placed over the product branding graphics." time="4/15/2019 5:41:57 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 5:41:57 PM">&lt;!XML Content&gt;&lt;b&gt;Alt-text of Link 'Clarivate Analytics' equals: Clarivate Analytics Logo&lt;/b&gt; &lt;!XML Content&gt;</substep>
+      </step>
+      <step type="pass" description="Click 'WEB OF SCIENCE™' at top of page." expected="General Search page is displayed" time="4/15/2019 5:42:08 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 5:41:57 PM">Clicking Link 'Web of Science'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:41:59 PM">General Search page was opened</substep>
+        <substep valid="True" time="4/15/2019 5:41:59 PM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="4/15/2019 5:42:04 PM">Dispose was successfully done</substep>
+        <substep valid="True" time="4/15/2019 5:42:04 PM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="4/15/2019 5:42:08 PM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+    <TestCase name="MySett_050_1" start_time="4/15/2019 5:42:27 PM" description="Select a Starting Application - Applying 'KCI - Korean Journal Database' collection as starting application." criticality="Medium" state="pass" end_time="4/15/2019 5:43:29 PM">
+      <step type="pass" description="Prerequisite:My Settings- Select a Starting Application Select a radio button for 'KCI - Korean Journal Database' and click' Submit Changes button'" expected="" time="4/15/2019 5:42:52 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 5:42:30 PM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:42:31 PM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:42:32 PM">Sign In Window was opened</substep>
+        <substep valid="True" time="4/15/2019 5:42:33 PM">Text box 'Email' is enabled</substep>
+        <substep valid="True" time="4/15/2019 5:42:33 PM">Text: 'workingTest@gmail.com' was sent to the 'Email' textbox (XPath("//input[@id='email']")), textbox content after sending is 'workingTest@gmail.com'</substep>
+        <substep valid="True" time="4/15/2019 5:42:34 PM">Text box 'Password' is enabled</substep>
+        <substep valid="True" time="4/15/2019 5:42:34 PM">Textbox: 'XPath("//input[@id='password']")' was cleared</substep>
+        <substep valid="True" time="4/15/2019 5:42:35 PM">Text: 'passw0rd!' was sent to the 'Password' textbox (XPath("//input[@id='password']")), textbox content after sending is 'passw0rd!'</substep>
+        <substep valid="True" time="4/15/2019 5:42:35 PM">Clicking Button 'SignIn'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:42:44 PM">General Search page was opened</substep>
+        <substep valid="True" time="4/15/2019 5:42:44 PM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:42:44 PM">Clicking Link 'Settings'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:42:50 PM">My Settings page was opened</substep>
+        <substep valid="True" time="4/15/2019 5:42:50 PM">Clicking Link 'Select a Starting Application Link'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:42:51 PM">Select a Starting Application page was opened</substep>
+        <substep valid="True" time="4/15/2019 5:42:52 PM">Radio_Button: '' was selected before</substep>
+        <substep valid="True" time="4/15/2019 5:42:52 PM">Clicking Button 'Submit Changes button'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Click 'Edit My Information' link and select 'Sign me in automatically' radio button, then press 'Submit Changes' button " expected="" time="4/15/2019 5:42:54 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 5:42:53 PM">Clicking Link 'Edit My Information'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:42:54 PM">My Settings page was opened</substep>
+        <substep valid="True" time="4/15/2019 5:42:54 PM">Selecting Radio Button 'Auto Sign In On'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:42:54 PM">Text: 'passw0rd!' was sent to the 'Current Password' textbox (XPath("//input[@name='currPassword']")), textbox content after sending is 'passw0rd!'</substep>
+        <substep valid="True" time="4/15/2019 5:42:54 PM">Clicking Button 'Submit Changes'. Expected result: True.</substep>
+      </step>
+      <step type="pass" description="Click Log out link from Top Toolbar" expected="" time="4/15/2019 5:42:27 PM" inputdata="" />
+      <step type="pass" description="Sign to WOK using auto sign in" expected="KCI - Korean Journal Database collection is selected by default." time="4/15/2019 5:43:29 PM" inputdata="">
+        <substep valid="True" time="4/15/2019 5:42:55 PM">Log out from WOK and open new connection</substep>
+        <substep valid="True" time="4/15/2019 5:43:01 PM">Clicking Link 'Sign In'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:43:01 PM">Clicking Link 'Sign Out'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:43:02 PM">Clicking Link 'Open New Connection'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:43:08 PM">Clicking Radio Button 'Token CGI'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:43:19 PM" tech_info="&lt;br /&gt; Clickers that were requested to click: 'Jquery, SeleniumClick, SendKeyEnter, SimulateMouseClick'.  &lt;br /&gt; Clickers that was send actions methods to element: SeleniumClick, SendKeyEnter.  &lt;br /&gt; Clicking time (seconds): 10.5489233 ">Clicking exception: Object reference not set to an instance of an object.</substep>
+        <substep valid="True" time="4/15/2019 5:43:19 PM">Clicking Button 'Continue'. Expected result: True.</substep>
+        <substep valid="True" time="4/15/2019 5:43:24 PM">General Search page was opened</substep>
+        <substep valid="True" time="4/15/2019 5:43:25 PM">Disposing current IWebDriver</substep>
+        <substep valid="True" time="4/15/2019 5:43:29 PM">Dispose was successfully done</substep>
+      </step>
+    </TestCase>
+  </TestSet>
+</GRS_Report>

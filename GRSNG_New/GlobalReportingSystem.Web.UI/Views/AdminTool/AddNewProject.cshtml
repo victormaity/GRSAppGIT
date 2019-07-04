@@ -1,0 +1,186 @@
+﻿@{
+    ViewBag.Title = "Add New project";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model GlobalReportingSystem.Core.Models.GRS.AdminToolAddNewProject
+<div class="page-header">
+    <h1>Admin Tool
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Add New Project
+        </small>
+    </h1>
+</div>
+
+@using (Html.BeginForm("AddNewProject", "AdminTool", FormMethod.Post))
+{
+    <div class="left">
+        @{
+            if(ViewBag.CanShow == true)
+            {
+                <table style="width: 100%; border-collapse: separate; border-spacing: 8px;">
+                    <tr>
+                        <td colspan="3" style="padding-top: 5px!important; padding-bottom: 5px!important;"><b><u>Project Details</u></b></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">Project Name&nbsp;<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.ProjectName, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.ProjectName, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">Display Name&nbsp;<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.DisplayName, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.DisplayName, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">Project Type&nbsp;<span style="color: #db0b0b; font-weight: 600;">*</span></td>
+                        <td class="twidth">@Html.DropDownListFor(model => model.ProjectTypeID, new SelectList(Model.ProjectTypeList, "Value", "Text", Model.ProjectTypeID))</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding-top: 5px!important; padding-bottom: 5px!important;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding-top: 5px!important; padding-bottom: 5px!important;"><b><u>QC Details</u></b></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">QC Location</td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.QCLocation, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.QCLocation, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">QC server</td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.QCServer, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.QCServer, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">QC Result Path</td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.QcResultsPath, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.QcResultsPath, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">QC Test Plan</td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.QCTestPlan, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.QCTestPlan, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding-top: 5px!important; padding-bottom: 5px!important;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding-top: 5px!important; padding-bottom: 5px!important;"><b><u>Other Details</u></b></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">Custom Status</td>
+                        <td class="twidth">@Html.TextAreaFor(model => model.CustomStatuses, new { @class = "autosize-transition form-control" })
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">Notification Result Delivery</td>
+                        <td class="twidth">@Html.RadioButtonFor(model => model.Notification_ResultsDelivery, true ) Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.RadioButtonFor(model => model.Notification_ResultsDelivery, false, new { @checked = true } ) No</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">Auto Analysis</td>
+                        <td class="twidth">@Html.RadioButtonFor(model => model.AutoAnalysis, true ) Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.RadioButtonFor(model => model.AutoAnalysis, false, new { @checked = true } ) No</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">Is Public</td>
+                        <td class="twidth">@Html.RadioButtonFor(model => model.isPublic, true ) Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.RadioButtonFor(model => model.isPublic, false, new { @checked = true } ) No</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">Is GUI</td>
+                        <td class="twidth">@Html.RadioButtonFor(model => model.isGUI, true ) Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.RadioButtonFor(model => model.isGUI, false, new { @checked = true } ) No</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding-top: 5px!important; padding-bottom: 5px!important;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding-top: 5px!important; padding-bottom: 5px!important;"><b><u>Version Repository Details</u></b></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">Default Project Repository</td>
+                        <td class="twidth">@Html.RadioButtonFor(model => model.IsGITDefault, true ) GIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.RadioButtonFor(model => model.IsGITDefault, false, new { @checked = true } ) SVN</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">GIT Path</td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.GITPath, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.GITPath, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><span style="font-size: 11px; color: red">System will provide default username and password for "GIT.SAMI.INT.THOMSONREUTERS.COM"</span></td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">GIT Username</td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.GITUSER, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.GITUSER, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">GIT Password</td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.GITPASSWORD, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.GITPASSWORD, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">SVN Path</td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.SVNpath, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.SVNpath, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">SVN Login</td>
+                        <td class="twidth">@Html.TextBoxFor(model => model.SVNlogin, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.SVNlogin, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth">SVN Password</td>
+                        <td class="twidth">@Html.PasswordFor(model => model.SVNpassword, new { @class="textboxstyle" })</td>
+                        <td>@Html.ValidationMessageFor(model => model.SVNpassword, "", new {@class="validationColor"})</td>
+                    </tr>
+                    <tr>
+                        <td class="lwidth"></td>
+                        <td class="twidth">
+                            <button type="submit" class="btn btn-sm btn-success">Submit</button></td>
+                        <td></td>
+                    </tr>
+                </table>
+        }
+            else
+            {
+                <div style="height: auto; padding: 15px!important; background-color: #E6E6E6; font-size: 14px; color: #DC143C; font-weight: 600; text-align: center">
+                    You are not authorized to visit this page.
+                </div>
+        }
+        }        
+    </div>
+}
+
+<style type="text/css">
+    .textboxstyle {
+        width: 230px!important;
+    }
+
+    .validationColor {
+        color: red;
+    }
+
+    .lwidth {
+        width: 170px!important;
+    }
+
+    .twidth {
+        width: 250px!important;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        var ismessage = "@ViewBag.Message";
+        if (ismessage != null && ismessage != "") {
+            ShowMessage("Message", "@ViewBag.Message");
+        }
+
+    });
+</script>

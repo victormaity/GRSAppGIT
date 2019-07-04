@@ -1,0 +1,29 @@
+Tech info:
+Exception cause: org.openqa.selenium.NoSuchElementException: Unable to locate element: //li[contains(text(),'All years')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'WIN-J27D56MDAI8', ip: '10.152.82.77', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12632, moz:profile: D:\Users\WoSWin7_08\AppData..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c8afc3d6-bcdc-4fab-a928-5b91bd888e9a
+*** Element info: {Using=xpath, value=//li[contains(text(),'All years')]} 
+ sun.reflect.GeneratedConstructorAccessor41.newInstance(Unknown Source);
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45);
+java.lang.reflect.Constructor.newInstance(Constructor.java:423);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122);
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49);
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164);
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83);
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600);
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279);
+org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179);
+org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:255);
+org.openqa.selenium.By$ByXPath.findElement(By.java:361);
+org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175);
+com.clarivateanalytics.cucumberfactory.typesfactory.Types.HTMLElement.findElement(HTMLElement.java:108);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.CollectionDropdownPageObject.link_collectionByName(CollectionDropdownPageObject.java:36);
+com.clarivateanalytics.wos.gui.cucumber.pages.accessoryclasses.CollectionDropdownPageObject.selectCollection(CollectionDropdownPageObject.java:73);
+com.clarivateanalytics.wos.gui.cucumber.pages.interfaces.SelectCollectionDropdownInterface.selectCollection(SelectCollectionDropdownInterface.java:19);
+com.clarivateanalytics.wos.gui.cucumber.steps_definition.CommonSteps.I_select_collection(CommonSteps.java:60);
+✽.Given I select collection "SciELO Citation Index"(com.clarivateanalytics.wos.gui.cucumber.deployment/SharedReference.feature:202)

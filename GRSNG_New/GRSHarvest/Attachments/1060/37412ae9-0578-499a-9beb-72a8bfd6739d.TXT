@@ -1,0 +1,1 @@
+          select drug_id from rs_drug.ff_drug  where rownum<20 ORDER BY dbms_random.value     

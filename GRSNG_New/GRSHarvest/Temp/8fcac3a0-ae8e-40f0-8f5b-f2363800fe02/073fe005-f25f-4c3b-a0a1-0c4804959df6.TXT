@@ -1,0 +1,4 @@
+Tech info:
+Exception cause: java.nio.file.NoSuchFileException: D:\Ria\Wos_BDD\wos-gui_bdd\savedrecs.txt 
+ com.clarivateanalytics.wos.gui.cucumber.steps_definition.CommonSteps.I_select_collection(CommonSteps.java:57);
+✽.Given I select collection "Derwent Innovations Index"(com.clarivateanalytics.wos.gui.cucumber.deployment/P1defects.feature:715)

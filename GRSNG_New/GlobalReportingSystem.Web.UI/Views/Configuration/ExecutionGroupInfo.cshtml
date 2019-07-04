@@ -1,0 +1,318 @@
+﻿@{
+    ViewBag.Title = "Execution Group";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model GlobalReportingSystem.Core.Models.GRS.AddExecutionGroupModel
+<div class="page-header">
+    <h1>Execution Group
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Manage your Execution Group here
+        </small>
+    </h1>
+</div>
+
+<div class="widget-container-col ui-sortable">
+    <!-- #section:custom/widget-box -->
+    <div class="widget-box">
+        <div class="widget-header">
+            <h5 class="widget-title">Execution Groups</h5>
+
+            <!-- #section:custom/widget-box.toolbar -->
+            <div class="widget-toolbar">
+                <div class="widget-menu">
+                    <a href="#modal-form" data-action="settings" role="button" data-toggle="modal">
+                        <i class="ace-icon fa fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- /section:custom/widget-box.toolbar -->
+        </div>
+
+        <div class="widget-body">
+            <div class="widget-main">
+                @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                {
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">
+                            <i class="ace-icon fa fa-times"></i>
+                        </button>
+
+                        <strong>
+                            <i class="ace-icon fa fa-times"></i>
+                            Error!
+                        </strong>
+
+                        @ViewBag.ErrorMessage
+                        <br>
+                    </div>
+                }
+                <table id="testcyclestable" class="table table-striped table-bordered table-hover dataTable" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Group Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var PGroup in ViewBag.GroupList)
+                        {
+                            <tr>
+                                <td style="width: 80%!important;">@PGroup.GroupName</td>
+                                <td>
+                                    <!--data-toggle="modal" data-target="#myModal"-->
+                                    <button type="submit" class="btn btn-sm btn-primary" onclick="editExecutionGroup('@PGroup.Id', '@PGroup.GroupName')">
+                                        <i class="ace-icon fa fa-pencil"></i>Edit
+                                    </button>
+                                    <button type="submit" class="btn btn-sm btn-danger" onclick="deleteExecutionGroup('@PGroup.Id', '@PGroup.GroupName')">
+                                        <i class="ace-icon fa fa-cancel"></i>Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /section:custom/widget-box -->
+</div>
+
+<div aria-hidden="true" class="modal" id="modal-form" style="display: none;" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="blue bigger">Add Execution Group</h4>
+            </div>
+
+            @using (Html.BeginForm("ExecutionGroupInfo", "Configuration", FormMethod.Post))
+            {
+                <div class="modal-body">
+                    <div>
+                        <label for="form-field-mask-1">
+                            Group Name
+                        <small class="text-success">(display)</small>
+                        </label>
+
+                        <!-- #section:plugins/input.masked-input -->
+                        <div class="input-group">
+                            @Html.TextBoxFor(p => p.GroupName, new { @class = "form-control" })
+                            @*
+                            <input class="" type="text" id="form-field-mask-1">*@
+                            <span class="input-group-btn">
+                                <p class="btn btn-sm btn-default">
+                                    <i class="ace-icon fa fa-pencil bigger-110"></i>
+                                </p>
+                            </span>
+                        </div>
+
+                        <!-- /section:plugins/input.masked-input -->
+                    </div>
+                    <hr />
+                </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <i class="ace-icon fa fa-times"></i>
+                    Cancel
+                </button>
+
+                <button type="submit" class="btn btn-sm btn-primary">
+                    <i class="ace-icon fa fa-check"></i>
+                    Add
+                </button>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- The Modal update -->
+<div class="modal" id="EditExecutionGroupModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <table style="border-collapse: collapse; width: 100%;">
+                    <tr>
+                        <td>
+                            <h4 class="modal-title">Execution Group <span class="h5 text-danger">(Edit)</span> </h4>
+                        </td>
+                        <td style="width: 20px;">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div>
+                    <label for="form-field-mask-1">
+                        Group Name
+                        <small class="text-success">(display)</small>
+                    </label>
+                    <div class="input-group">
+                        <input type="text" id="txtEditExecutionGroupName" class="form-control" />
+                        <span class="input-group-btn">
+                            <p class="btn btn-sm btn-default">
+                                <i class="ace-icon fa fa-pencil bigger-110"></i>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <hr />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnediteg">Update</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="DeleteExecutionGroupModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <table style="border-collapse: collapse; width: 100%;">
+                    <tr>
+                        <td>
+                            <h4 class="modal-title">Execution Group <span class="h5 text-danger">(Delete)</span> </h4>
+                        </td>
+                        <td style="width: 20px;">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div>
+                    <label for="form-field-mask-1">
+                        Group Name
+                        <small class="text-success">(display)</small>
+                    </label>
+                    <div class="input-group">
+                        <input type="text" id="txtDeleteExecutionGroupName" class="form-control" readonly="readonly" />
+                        <span class="input-group-btn">
+                            <p class="btn btn-sm btn-default">
+                                <i class="ace-icon fa fa-pencil bigger-110"></i>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="text text-danger">
+                    <h5>Are you sure?</h5>
+                    You want to delete "<span style="font-weight: 600" id="spnExecutionGroupName"></span>" permanently.
+                    <br />
+                    <h6><b>Note:</b> Execution Group Name once deleted, can not retrieve back. this will delete all the record linked with this group name from system.</h6>
+                </div>
+                <hr />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnDeleteEG">Delete</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+    });
+
+    function editExecutionGroup(executionGroupId, executionGroupName) {
+        $("#txtEditExecutionGroupName").val(executionGroupName);
+        $('#EditExecutionGroupModal').modal('show');
+
+        $("#btnediteg").click(function () {
+            var newexecutiongroupname = $("#txtEditExecutionGroupName").val();
+
+            $.ajax({
+                type: 'post',
+                url: '@Url.Action("UpdateExecutionGroup", "Configuration")',
+                async: true,
+                data: JSON.stringify({ 'Id': executionGroupId, 'GroupName': newexecutiongroupname }),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                beforeSend: function () {
+                    document.getElementById('blockBack').style.display = '';
+                    document.getElementById('divmiddle').style.display = '';
+                },
+                complete: function () {
+                    document.getElementById('blockBack').style.display = 'none';
+                    document.getElementById('divmiddle').style.display = 'none';
+                },
+                error: function () { },
+                success: function (msg) {
+                    //if (IsJsonString(msg) && jQuery.parseJSON(msg).type == "Error") {
+                    //    ShowMessage(jQuery.parseJSON(msg).type, jQuery.parseJSON(msg).text);
+                    //}
+
+                    $('#txtEditExecutionGroupName').val('');
+                    $('#EditExecutionGroupModal').modal('hide');
+                    if (msg.ResultReturnId == 0) {
+                        window.location.href = '@Url.Action("ExecutionGroupInfo", "Configuration")';
+                    }
+                    else {
+                        $("#pmessage").html(msg.ResultReturnMessage);
+                        $("#modelErrorHandlerPop").modal('show');
+                    }
+                }
+            });
+        });
+    }
+
+    function deleteExecutionGroup(executionGroupId, executionGroupName) {
+        $("#txtDeleteExecutionGroupName").val(executionGroupName);
+        $("#spnExecutionGroupName").html(executionGroupName);
+        $('#DeleteExecutionGroupModal').modal('show');
+
+        $("#btnDeleteEG").click(function () {
+            $.ajax({
+                type: 'post',
+                url: '@Url.Action("DeleteExecutionGroup", "Configuration")',
+                async: true,
+                data: JSON.stringify({ 'ExecutionGroupId': executionGroupId }),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                beforeSend: function () {
+                    document.getElementById('blockBack').style.display = '';
+                    document.getElementById('divmiddle').style.display = '';
+                },
+                complete: function () {
+                    document.getElementById('blockBack').style.display = 'none';
+                    document.getElementById('divmiddle').style.display = 'none';
+                },
+                error: function () { },
+                success: function (msg) {                    
+                    $('#txtDeleteExecutionGroupName').val('');
+                    $('#spnExecutionGroupName').html('');
+                    $('#DeleteExecutionGroupModal').modal('hide');
+                    if (msg.ResultReturnId == 0) {
+                        window.location.href = '@Url.Action("ExecutionGroupInfo", "Configuration")';
+                    }
+                    else {
+                        $('#pmessage').html(msg.ResultReturnMessage);
+                        $("#modelErrorHandlerPop").modal('show');
+                    }
+                }
+            });
+        });
+    }
+</script>

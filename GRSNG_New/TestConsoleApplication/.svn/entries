@@ -1,0 +1,79 @@
+8
+
+dir
+151790
+http://sourcecontrol.int.thomsonreuters.com:8091/svn/qa_automation/GRS_NextGen/TestConsoleApplication
+http://sourcecontrol.int.thomsonreuters.com:8091/svn
+
+
+
+2014-09-22T15:29:24.018669Z
+118507
+asemeni
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4576ea35-741e-0410-a346-fc41942853a1
+
+App.config
+file
+
+
+
+
+2015-05-14T14:40:14.198000Z
+5acc28a1b13daf52c61307a2be2801a6
+2014-09-19T10:31:48.733061Z
+118354
+asemeni
+
+Program.cs
+file
+
+
+
+
+2015-05-14T14:40:14.207000Z
+c960ae7012557d92973426131406439f
+2014-09-19T09:27:12.447992Z
+118347
+aphilip
+
+Properties
+dir
+
+TestConsoleApplication.csproj
+file
+
+
+
+
+2015-05-14T14:40:14.202000Z
+1a73adfe1db119b6d343b8f8c5580f1c
+2014-09-22T15:29:24.018669Z
+118507
+asemeni
+
+packages.config
+file
+
+
+
+
+2015-05-14T14:40:14.214000Z
+a5c7d509e2ccc501de3ec59476a14186
+2014-09-19T10:31:48.733061Z
+118354
+asemeni
+

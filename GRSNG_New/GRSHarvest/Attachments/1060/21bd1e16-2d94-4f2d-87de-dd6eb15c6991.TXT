@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyNamedEntityRecognitionOutput xmlns:ns2="local"><Entities></Entities><Sentences><sentence end="50" number="1" start="0"></sentence></Sentences></ns2:com.thomsonreuters.ls.service.contract.soap.ontology.v1.OntologyNamedEntityRecognitionOutput>

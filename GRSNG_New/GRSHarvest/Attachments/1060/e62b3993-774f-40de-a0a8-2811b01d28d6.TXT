@@ -1,0 +1,1 @@
+Error processing API service: Invalid searchQuery length [1]. Minimum required is three characters
